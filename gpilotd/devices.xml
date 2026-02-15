@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device-list>
+
+ <!-- Update this list by adding the hex values for the vendor and
+ product ids under a new "device" node.  Set use_net=false *only* if
+ the USB device uses the old PADP protocol over USB, this should not
+ apply to any new devices and only applies to the Handspring visor as
+ far as i know -->
+
+ <!-- Aceeca -->
+
+ <!-- Aceeca MEZ1000 -->
+ <device vendor_id="4766" product_id="0001"/>
+
+ <!-- Acer -->
+
+ <!-- Acer S50/S60 -->
+ <device vendor_id="0502" product_id="0736"/>
+
+ <!-- Garmin -->
+
+ <!-- Garmin Ique 3600 -->
+ <device vendor_id="091e" product_id="0004"/>
+
+ <!-- GSPDA -->
+
+ <!-- GSPDA xplore m68 / Hagenuk S200 -->
+ <device vendor_id="115e" product_id="f100"/>
+
+ <!-- Handspring -->
+
+ <!-- Handspring Visor and Treo 300 -->
+ <device vendor_id="082d" product_id="0100" use_net="false"/>
+ <!-- Handspring Treo -->
+ <device vendor_id="082d" product_id="0200" />
+ <!-- Handspring Treo 600 -->
+ <device vendor_id="082d" product_id="0300" />
+
+ <!-- Kyocera -->
+
+ <!-- Kyocera 7135 -->
+ <device vendor_id="0c88" product_id="0021"/>
+
+ <!-- Palm -->
+
+ <!-- Palm M500 -->
+ <device vendor_id="0830" product_id="0001" />
+ <!-- Palm M505 -->
+ <device vendor_id="0830" product_id="0002" />
+ <!-- Palm M515 -->
+ <device vendor_id="0830" product_id="0003" />
+ <!-- Palm I705 -->
+ <device vendor_id="0830" product_id="0020" />
+ <!-- Palm Tungsten Z -->
+ <device vendor_id="0830" product_id="0031" />
+ <!-- Palm M125 -->
+ <device vendor_id="0830" product_id="0040" />
+ <!-- Palm M130 -->
+ <device vendor_id="0830" product_id="0050" />
+ <!-- Palm Tungsten T -->
+ <device vendor_id="0830" product_id="0060" />
+ <!-- Palm Zire 31 -->
+ <device vendor_id="0830" product_id="0061" />
+ <!-- Palm Zire -->
+ <device vendor_id="0830" product_id="0070" />
+ <!-- Palm M100 -->
+ <device vendor_id="0830" product_id="0080" />
+
+ <!-- Samsung -->
+
+ <!-- Samsung SCH-I330 -->
+ <device vendor_id="04e8" product_id="8001" />
+ <!-- Samsung SPH-I500 -->
+ <device vendor_id="04e8" product_id="6601" />
+
+ <!-- Sony -->
+
+ <!-- Sony Clie 3.5 -->
+ <device vendor_id="054c" product_id="0038" />
+ <!-- Sony Clie 4.0 -->
+ <device vendor_id="054c" product_id="0066" />
+ <!-- Sony Clie S360 -->
+ <device vendor_id="054c" product_id="0095" />
+ <!-- Sony Clie 4.1 -->
+ <device vendor_id="054c" product_id="009a" />
+ <!-- Sony Clie NZ90V -->
+ <device vendor_id="054c" product_id="00c9" />
+ <!-- Sony Clie NX60 -->
+ <device vendor_id="054c" product_id="00da" />
+ <!-- Sony Clie NZ90V -->
+ <device vendor_id="054c" product_id="00e9" />
+ <!-- Sony Clie UX50 -->
+ <device vendor_id="054c" product_id="0144" />
+ <!-- Sony Clie TJ25 -->
+ <device vendor_id="054c" product_id="0169" />
+
+ <!-- Tapwave -->
+
+ <!-- Tapwave Zodiac -->
+ <device vendor_id="12ef" product_id="0100" />
+
+</device-list>

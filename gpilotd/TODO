@@ -1,0 +1,29 @@
+Add a command line switch to specify the pid file
+
+support conduit paths
+
+Write the global version of gpilotd
+
+Add the application protocol support
+
+Fix the code that detects when user has pressed hotsync.  It currently
+forks whenever a serial event occurs(So it forks when the pilot is
+placed on the cradle).  This is bad due to resources, things will
+still work because of pilot-link's timeouts.  Doing this will probably
+take modifications to the pilot-link library to have a function to see
+if a hotsync was requested, and if so continue it, if not return.  For
+now things work OK.
+
+Add locking to the write_sync_stamp code so two sync's for the same
+users pilots don't clobber each other.
+
+Clean up the code a bit. :)
+
+Make gpilotd honor the archive bits of the DB.
+
+CORBA part:
+- monitor_on/off aren't implemented
+- when responding, and cb object is lost, remove from notify
+  list
+- remember notify objects across restarts ?
+-----------

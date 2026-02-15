@@ -1,0 +1,271 @@
+	- multiple conduits pr. DB (and don't try and solve
+	  the puzzles this can cause)
+
+	- install without doing full sync
+
+	- capplet should ensure pilot homedir exists,
+	and during pilot name, update homedir
+
+	- fix libgpilotdCM/gpilotd buildorder by moving stuff into
+	libgpilotdconduit (remove note in README when done)
+
+	- merge backup and file conduit
+		. installs can immediate copy shite into
+		the backupdir
+		. no need to intercommunicate for restore
+
+	- gobify gnome-pilot-structures
+
+	- applet should cyclon untill conduit begins progress reporting
+	done
+
+Ingnore the rest of this file....
+
+TODO for 0.2.0 "Rasende Hest", targeted for August Gnome
+ - first release of this will be 0.1.50
+ - 0.1.50 to 0.1.99 is for stabilizing & finishing.
+ - when stable and ready for August Gnome, jump to 0.2.0
+
+	vadim:
+		- FIX MEMO_FILE CRASH.
+                  #(hopefully 100%) Fixed in 0.1.51
+		- updated pilot-link capplet and 
+		  druid configger
+		  #(90%)
+		- multipilot support in pilot_applet
+		  #(90%)
+		- restore dialog in pilot_applet
+		  #(50%)
+		- progress bar/message stuff in applet
+		  #(75%)
+		- backup capplet needs support for exclude files, and
+		  option to not backup handled bases
+		- use new libgpilotd everywhere.
+		  #(99%)
+		- display gpilotd messages, when it does them...
+		- combine all conduit capplets into one.
+		- add conduit config screen to druid.
+
+	eskil:	
+		- handle strlen > 14 devices properly. Eg. by
+		  patching pilot-link
+
+		- catch the pilotid=0 and do something useful
+
+		- ensure that gnomecal conduit and MAL works
+	 	  # Fine, thanks for asking!
+
+		- make progress info optionable (and move it to 
+		  gnome-pilot-conduit.c for speed)
+		  # moved into gnome-pilot-conduit
+                  # need to make a gpilotd option to disable it
+
+		- make an idl call to get list of db's, that
+		  can both take a cached list and get it from
+		  the pilot. This is to make backupconduitcapplet
+		  a bit more intelligent.
+		  # Call implemented
+
+		- proper gnome-config stuff (meaning using gnome-config
+		  instead of own script)
+		  # 100%
+	
+		- use new conduitmgmt lib
+		  # 100%
+
+		- make the .conduit files' libline relocatable, either
+		  by .conduit.in or at runtime
+		  # 100%, done via conduit.in's, s/@prefix@/$prefix/
+	
+		- make idl call to send messages via the client
+		  instead of gpilotd gui
+		  # No, Wait for grapewine, which will be a uniform
+		    system message thingy.
+
+		- recode lib-gpilotd to a real GTK+ object using gob 
+		  #(95%) What is left to do is implement the methods
+		   that 1) gpilotd doens't support yet 2) nobody uses
+		   yet. Can be postponed to a later release.
+
+		- conduit loading via <name>.conduit files (ala gnorba), this
+		  is needed for the druid thing and for druid and applet.
+		  !And make them relocatable!
+		  #it is now being split into two objects
+		  # gnome_pilot_conduit_management
+	          # (this is done)
+                  # gnome_pilot_conduit_config
+                  # (this is done)
+                  # debugging both....
+                  # (this is as done as such stuff ever is :-) )
+
+		- handle USB
+		  gpilotd must not bind the port upon start.
+		  but either busywait to detect sync or 
+		  there must be an option in the applet to do it.
+	
+	both:
+		- update README
+		- error checking on all pi_* and dlp_* calls.
+		- go through bug reports
+		  * corba related coredumps
+		  * sync on empty calendars 
+		  * problem if syncId == 0 
+		  * double-delete
+		- archieving in abs
+		- cleanup the messages from conduits
+
+	unsorted:
+		- request-conduit support in pilot_applet
+		- ask reg. restore on new pilot
+		- passwd/other protection on restore ? (especially
+		  pilotid = 0)
+		- store last sync time per conduit.
+
+	future:
+		- Make gpilotd multithreaded (await glib 1.4 
+		  with full thread support)
+		- with threads, make a cancel_sync call
+		- Use OAF, and reconnect to already running
+		  clients
+
+# This is older stuff, most repeated above
+
+gpilotd:
+	- corba stuff: Need to implement the progress bar stuff, also
+	a condut_error(string) call, that lets the conduit inform the
+	user of a problem.
+	UPDATE: Mostly done, now need to implement auto progress crap
+	in SyncAbs. I'll most like need to require SyncAbs conduits to
+	1) return the number of local records
+	2) for each record, return its index, like the dlp_* calls.
+
+	- corba stuff 2: Really need to walk through the FIXME's in
+	orbit_daemon_glue.c
+
+	- corba stuff 4: Some reconnection mechanism, so a restarted
+	gpilotd and an old panel_applet can talk to each other.
+	NOTE: if the clients register in goad, gpilotd just has to traverse the
+	list of alreadyrunning gnome/pilot/client:1.0 objects, make a "reconnect"
+	call thereby causing them to reconnect.
+
+	- corba stuff 5: Many of the get_yadayad calls might be slow when there
+	are many pilots. But while there are no more then <10, they should be ok.
+	When they hit 100, it should definitely be hashes.
+
+	- pilot id = 0, when syncing a pilot that has an id==0, needs
+	to ask user if/which pilot profile he wants to restore. Don't forget
+	that password thing, which probably also needs a tune-up.
+
+	- There may be an issue if SyncPCId = 0 or PilotId = 0. 
+
+	- The number field in GPilotPilot has to go. It is currently only used
+	to enum the pilots in the gpilotd list. If this is changed to :
+		[General]
+		pilots=355 3551 3737
+
+		[Pilot355]
+		...
+	it would be much prettier...
+
+	- gncal conduit. gnomecal has "end after x recurrences". Pilot does not.
+	Calc end date and insert into record.
+
+	- change of base_dir should 
+	1) make the gpilot-capplet show a warning, suggesting the user move his 
+	   data (perhaps even offering to do it)
+	2) reflect the change in the conduits, thus they should only save the suffix.
+
+	- need a uniform way to get the ~/.gnome/gnome-pilot.d dir for conduits and stuff.
+
+
+	- Make progress an disablable option
+
+	- Create a real gtk object, see drafts/gnome-pilot.gob.
+	UPDATE: This also goes for gnome-pilot-conduit objects.
+
+	- Major conduit rework, so conduits can be loaded at startup, and 
+	  not at sync. The conduits get_conduit should then not take
+	  the pilot id as parameter, the presync can then via dbinfo load the
+	  appropriate pilot config.
+
+conduits:
+	- Add logic for conduits to create new categories on pilot if necessary.
+
+# this stuff is much older, I should check for anything important and nuke the rest
+
+conduits:
+	For complete "office" integration, develop the following conduits:
+		o email
+		o gnomecard <> AddressDB
+		o gnomecal <> DateDB
+		o gnucash <> expense
+	And perhaps a conduit for a pilot timetracker <> gnometimetracker,
+	or deveper an opensource PalmOS timetracker.
+
+gpilotd:
+	The following CORBA operations are yet to be implemented
+		o get_* info access methods (work is being done)
+		o timeout of requests
+		o cancellation of requests
+		o get/set userid reflected in hotsync log
+
+gpilotd:
+	solve the enumeration of requests when deleting problem (see queue_io.c bottom).
+
+lib-gpilotd:
+	reconnect if the server dies.
+
+idl/orbit_daemon_glue: use real objects instead of transmitting IORS.
+
+pilot-link:
+	Support of archieving in the SyncAbs system.
+
+# This is ancient times
+
+gpilot-fileman: Allow users to fetch a lists of databases and prcs from their 
+	        pilot.  This should probably be done by having a 2
+                tabs in the main window.  The first tab is for
+                installing and contains the current view, the second
+                tab contains a GUI interface for entering a list of db
+                names and recovering them.  This feature is currently
+                non-essential but would be nice.  The thing is that I
+                would like to use the conduit daemon to perform all
+                operations for this program including this.  I don't
+                want to add the code here and then have to move or
+                change it later.
+
+gpilot-fileman: Implement the set selected files function in the multifile 
+		widget
+
+gpilot-fileman: Implement a select all button in the multi file widget
+                that selects all files in the current directory
+                displayed.
+
+gpilot-fileman: Make the CLists scroll correctly when any row is too large for
+                display, not just the title.
+
+gpilot-fileman: Have the Install option ghosted out until someone
+                selects a file.  We just need to attach a
+                handler to the "file_selected" signal and
+                "file_unselected" signal and maintain a count of the
+                total selected files.
+
+gpilot-fileman: Bugfix: If child dies unexpectedly and doesn't report
+                any error the parent will segfault, we should check
+                the return value of the reads to see what happened and
+                bail if it doesn't make sense.
+
+gpilot-fileman: Make preferences actually save some information so you
+                don't have to set the serial port over and over again.
+                Also add a default backup directory in the preferences.
+
+gpilot-fileman: Make the left filebox in the multifile widget a drag
+                source and the right filebox a drop target, anyone
+                know how to do this?
+
+Make g_error print its messages to a message box instead of to the
+console.  
+
+# This is the beginning of time...
+
+Integrate the existing pilot applet into this distro.

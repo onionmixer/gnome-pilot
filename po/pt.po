@@ -1,0 +1,2082 @@
+# Portuguese translation for Gnome-Pilot
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Carlos Morgado <chbm@chbm.nu>, 2001.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot 0.1.47\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2003-02-02 16:14+0000\n"
+"Last-Translator: Carlos Morgado <chbm@chbm.nu>\n"
+"Language-Team: Portuguese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Escolher o Pilot"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Directório"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Mostrar avisos"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Executar quando clickado"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "Propriedades de GNOME PilotSync"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "Identificação (ID) do utilizador do Pilot"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Recuperar Pilot"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Sincronizar cradle"
+
+#: applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "progresso do gnome-pilot"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "Sincronizando..."
+
+#: applet/pilot.c:163
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s Sincronizando"
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr "DB %v de %u"
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "Pronto para sincronizar"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Pedido %ld foi executado\n"
+
+#: applet/pilot.c:228
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Sincronizando: %s"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Iniciado\n"
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Finalizado: %s"
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Acabado\n"
+
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr "%v de %u registos"
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"O Pilot está a sincronizar.\n"
+"Por favor espere que termine."
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "Não conectado. Reinicie o daemon para reconectar"
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Não ligado ao gpilotd.\n"
+"Por favor reinicie o daemon."
+
+#: applet/pilot.c:373
+msgid "gnome-pilot applet"
+msgstr "Applet Gnome Pilot"
+
+#: applet/pilot.c:375
+#, fuzzy
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "(C) 2000 Free Software Foundation"
+
+#: applet/pilot.c:376
+#, fuzzy
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "Um monitor DnD e GUI para o gpilot"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr "cancelando %d"
+
+#: applet/pilot.c:524
+#, c-format
+msgid "Restoring %s"
+msgstr "Recuperando %s"
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "NÃ£o existe directÃ³rio de onde recuperar."
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Prima sincronizar no cradle para recuperar\n"
+" ou cancele a operaÃ§Ã£o."
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "Pedido de recuperaÃ§Ã£o falhou"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Está a decorrer um Sync.\n"
+"Tem a certeza que quer reinicilizar o daemon?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "A tentar ligar ao daemon GnomePilot"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "NÃ£o hÃ¡ registo do Ãºltima Sync."
+
+#: applet/pilot.c:687
+msgid "Continue"
+msgstr "Continuar"
+
+#: applet/pilot.c:689
+msgid "Pause Daemon"
+msgstr "Suspender o serviço"
+
+#: applet/pilot.c:709
+msgid "Daemon paused..."
+msgstr "Daemon suspenso..."
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Não conectado. Reinicie o daemon para reconectar"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "ExecuÃ§Ã£o de %s falhou"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "instalando \"%s\" em \"%s\""
+
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr "tipo DnD desconhecido"
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr "destruir gpilot-applet"
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "Incapaz de encontrar pilot-applet.glade"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr ""
+
+#: applet/pilot.schemas.in.h:2
+#, fuzzy
+msgid "Display notices in popup windows"
+msgstr "Mostrar avisos"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Opções do Pilot"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Nome"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "Identificação (ID)"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "Nome do utilizador (username) no Pilot"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Porto"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Velocidade"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Tipo de Sincronização"
+
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Nome da conduta (conduit)"
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Acção para sincronizar"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Tem a certeza que deseja apagar o pilot %s ?"
+
+#: capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "_Editar este pilot..."
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "Editar o Pilot seleccionado"
+
+#: capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "Apagar este pilot"
+
+#: capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "Apagar o Pilot selecionado"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, fuzzy, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Tem a certeza que deseja apagar o dispositivo %s(%s) ?"
+
+#: capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "Editar este dispositivo..."
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "Editar o dispositivo seleccionado"
+
+#: capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "Apagar este dispositivo"
+
+#: capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "Apagar o dispositivo selecionado"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Não consigo instanciar a Conduit %s"
+
+#: capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "Activar esta Conduit"
+
+#: capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "Desactivar a Conduit seleccionada"
+
+#: capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "Desactivar esta Conduit"
+
+#: capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "Activar a Conduit seleccionada"
+
+#: capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "Definições..."
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "Modificar as definições da Conduit seleccionada"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr ""
+"Incapaz de criar janela de opções do Pilot. Configuração incorrecta da "
+"Conduit."
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"A configuração não terminou e as opções não serão\n"
+"gravadas. Tem a certeza que quer sair ?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Vou enviar o seguinte para o Pilot.\n"
+"Nome do Utilizador (username): %s\n"
+"ID: %d\n"
+"Por favor coloque o Pilot em %s (%s) e carregue no botão HotSync"
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Prestes para ler o Nome do Utilizador e o ID do Pilot.\n"
+"Por favor coloque o Pilot em %s (%s) e carregue no botão HotSync."
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "Falhou o envio do pedido para o gpilotd"
+
+#: capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"ID e Nome do Utilizador lido com sucesso.\n"
+"Utilizador (username): %s\n"
+"ID: %d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Por favor coloque o Pilot em %s (%s) carregue no botão HotSync ou cancele a "
+"operação."
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "A tentativa de ler o ID do pilot falhou"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "A tentativa de escrever o ID do pilot falhou"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "Acção:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Adicionar..."
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Escolha Dispositivo do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Acção da Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Descrição da Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Opções da Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Condutas"
+
+#: capplet/gpilotd-capplet.glade.h:15
+#, fuzzy
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Parabéns, configurou o gnome-pilot!\n"
+"\n"
+"Pode modificar as definições do gnome-pilot em qualquer altura\n"
+"a partir das páginas PilotLink e Conduits no Centro de Controlo.\n"
+"\n"
+"Pode acompanhar a sincronização no gnome-pilot adicionando \n"
+"a applet PilotLink ao painel."
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Opções do Cradle"
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Apagar"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Opções do Dispositivo"
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Dispositivos do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Desactivado"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Editar..."
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Activado"
+
+#: capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "Introduza o nome de utilizador que deseja que seja guardado no Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr "Ler Nome do Utilizador e ID de um pilot que já foi usado."
+
+#: capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "Ler do pilot"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Opções do Gnome Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Sincronização Inicial"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+msgid "IrDA"
+msgstr "IrDA"
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Directório base local"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr "Rede"
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr "Não, nunca usei software de Sincronização com este Pilot."
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "Nenhum"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr "Acção Singular da Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Atributos do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "IdentificaÃ§Ã£o do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Nome do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "Nome do Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Pilots"
+
+#: capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "Enviar para o Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr "Serial"
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Escrever Nome de Utilizador e ID num Pilot novo."
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr ""
+"Define o directório raiz onde os archivos de todos os Pilots vão ser "
+"guardados."
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Definições..."
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Sucesso"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "O nome do seu Pilot. É apenas utilizado para identificação."
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"Este ID identifica o seu Pilot e deve ser único entre os diferentes Pilots "
+"que utiliza."
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Tempo de espera"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr "USB"
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Nome do utilizador (username) no Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Nome do Utilizador e ID para colocar no Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Nome do utilizador (username):"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "Bemvindo ao gnome-pilot!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Sim, já usei software de sincronização com este Pilot."
+
+#: capplet/gpilotd-capplet.glade.h:67
+#, fuzzy
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Parece que está a usar o gnome-pilot pela primeira vez.\n"
+"Os seguintes passos vão configurar o gnome-pilot para sincronizar.\n"
+"Pode alterar as opções mais tarde a partir do\n"
+"painal PilotLink no Centro de Controlo do Gnome.\n"
+"\n"
+"Carregue em 'Próximo' para continuar.\n"
+"Carregue em 'Cancelar' para configurar manualmente."
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Iniciar apenas o Druida"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Erro a inicializar a capplet gpilot"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Erro a carregar o estado do pilot, abortando"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Incapaz de ligar ao daemon GnomePilot"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr ""
+"Não posso correr o Druida se já existiram Pilots ou Cradles configurados"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr ""
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+#, fuzzy
+msgid "PalmOS Devices"
+msgstr "Dispositivo do Pilot"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "Usar opções da conduit"
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "Sincronizar"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "Copiar a partir do pilot"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "Copiar para o pilot"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "Fundir a partir do pilot"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "Fundir para o pilot"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "Activado"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "Tem que ter pelo menos um dispositivo configurado"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"O directório base existe mas tem as permissões erradas.\n"
+"Por favor corrija-as ou escolha outro directório"
+
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"O directório base especificado existe mas não é um directório.\n"
+"Por favor transforme-o num directório ou escolha outro"
+
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Não foi possível criar o directório de base especificado.\n"
+"Por favor verifique as permissões do caminhos especificado ou escolha outro "
+"directório"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"O caminho especificado para o diréctorio base é inválido.\n"
+"Por favor escolha outro directório"
+
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "Sem permissões de leitura/escrita em"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "Verifique as permissões do dispositivo e tente de novo"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr "Verificando DBs removidas"
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr "Mudando do nome de %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr "para %s"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s não modificado desde a última sincronização"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "Arquivando %s"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Incapaz de criar ficheiro de backup %s"
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr "Recolhendo informação de sincronização..."
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "DirectÃ³rio de Backup"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "Arquivar apenas entradas alteradas"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "Eliminar entrada local se apagada no pilot"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr "número de arquivos antigos a manter"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "Instalação de %s falhou"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Instalando %s a partir de %s..."
+
+#: conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "Instalando %s..."
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Instalar imediatamente"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Instalar mais tarde"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Pilot onde instalar"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PILOT"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Incapaz de lêr nomes do pilot"
+
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Os seguintes ficheiros falharam :\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Instalando em %s:\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Nenhum ficheiro para instalar"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Prima sincronizar no cradle para instalar\n"
+" ou cancele a operação."
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+msgid "Gnome Pilot File Manager"
+msgstr "Gestor de Ficheiros do Gnome Pilot"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr "Copyright Manish and Neil Vachharajani (C) 1998"
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+"Gere ficheiros e aplicações no seu Palm Pilot\n"
+"Palm Pilot é uma marca registada da 3com Inc."
+
+#: gpilot-fileman/fileman.c:71
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Sair realmente do Gestor de Ficheiros Gnome Pilot ?"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "Ops, isto não devia acontecer, nomes insuficientes\n"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr "Abortando..."
+
+#: gpilot-fileman/fileman.c:244
+msgid "No files to install!!"
+msgstr "Nenhum ficheiro para instalar!!!"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr "Progresso da intalação"
+
+#: gpilot-fileman/fileman.c:256
+msgid "Installing... "
+msgstr "Instalando..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "Prima o botão HotSync do seu pilot agora!"
+
+#: gpilot-fileman/fileman.c:442
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "Incapaz de criar o directório para guardar DBs a instalar!"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr "Local escolhido para os backups não é um directorio!"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr "Progresso do Backup"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr "Fazendo Backup..."
+
+#: gpilot-fileman/fileman.c:484
+msgid "Unable to open status pipe"
+msgstr "Incapaz de ler estado"
+
+#: gpilot-fileman/fileman.c:495
+msgid "Unable to open message pipe"
+msgstr "Incapaz de lêr mensagens"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr "Incapaz de fork()"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr "Directório de Backup"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "Sobre"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr "Sobre o gpilot-fileman"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr "Instalar ficheiros"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr "Instala ficheiros selecionados no Pilot"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr "Fazer Backup"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr "Faz backup dos ficheiros selecionados do Pilot"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "Propriedades"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "Propriedades do Gestor de Ficheiros Gnome Pilot"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "Sair"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr "Saí da aplicação"
+
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "Ficheiro"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "Ajuda"
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr "Adicionar ->"
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr "<- Remover"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr "<- Remover Todos"
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr "Ficheiros Selecionados"
+
+#: gpilot-fileman/pilotfunc.c:88
+msgid "Unable to bind to pilot\n"
+msgstr "Incapaz de ligar ao pilot\n"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr "Cancelando"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, c-format
+msgid "Unable to open '%s'!"
+msgstr "Incapaz de abrir '%s'!"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, c-format
+msgid "Install failed %s."
+msgstr "Instalação falhou %s."
+
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "Cancelado, backup NÃO completo"
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr "Falhou, incapaz de criar ficheiro\n"
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr "Falhou, incapaz de fazer backup da base de dados\n"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr "Dispositivo do Pilot"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr "Confirmar saída"
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "Geral"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+#, fuzzy
+msgid "Gnome-Pilot daemon"
+msgstr "Opções do Gnome Pilot"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "registo apagado no pilot modificado localmente, não apagado\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "registo apagado localmente modificado no pilot, não apagado\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "conflito na fusão, registos do pilot e locais trocados\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+#, fuzzy
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr ""
+"conflito entre arquivo e mudanças, registos locais e do pilot trocados\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+#, fuzzy
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr ""
+"conflito entre arquivo e mudanças, registos locais enviados para o pilot\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+#, fuzzy
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr ""
+"conflito entre arquivo e mudanças, registo do pilot gravado localmente\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Inicialização das conduits falhou, abortando a operação"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr ""
+"Incapaz de apagar todos os registos na base de dados do pilot, abortando"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "A conduit não devolveu um registo"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Incapaz de apagar todos os registos na base de dados local, abortando"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Erro na conduit, incapaz de encontrar um dos novos registos"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "Copia para o Pilot falhou!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "Copiar a partir do Pilot falhou!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "Fundir para o Pilot falhou!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "Fundir a partir do Pilot falhou!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Sincronização falhou!"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Incapaz de abrir o dispositivo %s (%s): razão: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot incapaz de abrir o dispositivo %s (%s).\n"
+"Razão: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "Tipo de dispositivo desconhecido"
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Número de dispositivos é 0"
+
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nenhum cradle configurado.\n"
+"Por favor corra o gpilotd-control-applet (use o gnomecc)\n"
+"para configurar o gnome-pilot."
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Não está disponível nenhum dispositivo acedivel"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Número de Pilots configurados é 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nenhum pilot configurado.\n"
+"Por favor corra o gpilotd-control-applet (use o gnomecc)\n"
+"para configurar o gnome-pilot."
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "Incapaz de ligar ao pilot"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "Pilot desconhecido, nenhum ID/nome igual a %ld"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr "Usar o gnomecc para configurar o pilot"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Pilot desconhecido - nenhum pilot tem ID %ld\n"
+"Use o gnomecc para configurar o ID do pilot"
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "O cradle %s tem %d eventos"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "Escrevendo a informação sobre o utilizador..."
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "Acção para sincronizar"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "Lendo a informação sobre o utilizador..."
+
+#: gpilotd/gpilotd.c:463
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Pedido de NetSync detectado, sincronizando o pilot"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Botão HotSync pressionado, sincronizando o pilot"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "Identificação (ID) do pilot é %ld, nome é %s, proprietário é %s"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "No hospedeiro %s\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "No hospedeiro %d\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "Sincronização terminada"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "Sincronização terminou demasiado cedo"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"O directório base %s é inválido.\n"
+"Por favor corrija o problema ou escolha outro directório."
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+#, fuzzy
+msgid "An error occured while getting the pilot's system data"
+msgstr "Ocorreu um erro enquanto lia a informação sobre o utilizador do pilot"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "Ocorreu um erro enquanto lia a informação sobre o utilizador do pilot"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Completei os eventos para o Cradle %s (%s)"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "Acordei com %s"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "Observando %s (%s, %s)"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Observando %s (%s)"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Saindo (SIGTERM)..."
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "Saindo (SIGINT)..."
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr ""
+"Incapaz de abrir ou criar ficheiro %s com previlégio de leitura/escrita"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Incapaz de encontrar directório 'home' para uid %d"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr "Incapaz de criar o directório para guardar DBs a instalar"
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr "Fazendo shutdown a dispositivos"
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "Relendo a configuração..."
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr "non-backup conduit in backup conduit list"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s arquivado\n"
+
+#: gpilotd/manager.c:275
+#, c-format
+msgid "%s backup failed\n"
+msgstr "backup de %s falhou\n"
+
+#: gpilotd/manager.c:300
+msgid "Collecting synchronization info..."
+msgstr "Recolhendo informação de sincronização..."
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Sincronizando %s\n"
+
+#: gpilotd/manager.c:427
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Copiar para o %s\n"
+
+#: gpilotd/manager.c:445
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Copiar a partir do pilot %s\n"
+
+#: gpilotd/manager.c:463
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Fundir para o pilot %s\n"
+
+#: gpilotd/manager.c:481
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Fundir a partir do pilot %s\n"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Primeira sincronização da conduta %s..."
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "unknown syncing action (%d = %s).\n"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Carregando %d conduits..."
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Conduta (conduit) \"%s\" desconhecida na configuração!"
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Carregamento da conduta \"%s\" falhou!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Carregamento da conduta \"%s\" falhou!\n"
+
+#: gpilotd/manager.c:764
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Escrevendo a informação sobre o utilizador em %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Conduta %s pedida, mas não encontrada"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Conduta %s não pode ser pedida"
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(DB desconhecida)"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Erro na fila, entrada não existente"
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "fault: no request found for pilot %d, request %d"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "carregamento de modulos não suportado, fatal!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Reconher informação sobre o sistema"
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Suspender o daemon"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Reactivar o daemon"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Reiniciar o daemon"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Atribuir ID do utilizador e nome"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "ID para o pilot"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Instalar ficheiro"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FICHEIRO"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Recuperar directório"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIRECTÓRIO"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Executar Conduta"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CONDUTA"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Nome do utilizador (username) no Pilot"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "NOME DO UTILIZADOR"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Monitorizar as acções do Pilot especificado"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Monitorizar todos os Pilots"
+
+#: utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "listar Pilots por login (todos para todos os pilots)"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Especificar o Pilot a ser utilizado (por omissão MyPilot)"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOT"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Especificar o Cradle a ser utilizado (por omissão Cradle0)"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "NOME DO CRADLE"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Listar as bases do Pilot especificado"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"CUIDADO!!\n"
+"Isto é uma ferramenta para algumas partes do pacote gnome-pilot.\n"
+"A menos que saiba o que está a fazer não utilize esta ferramenta."
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "listar Condutas disponíveis"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "conduta a ser utilizada"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "listar todos os atributos"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "especificar Pilot a ser utilizado"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "PILOTID"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "listar atributos"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "listar Condutas disponíveis e os seus estados"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "activar conduitas especificadas"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "desactivar condutas especificadas"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "activar, e fazer o primeiro Sync \"Lento\""
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "carregando e destruir a conduta"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "Não consegui examinar a porta para"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "A porta deve apontar para uma porta serie USB"
+
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "A porta deve ser um device tipo char (/dev) mas não é para"
+
+#~ msgid "Sync Type"
+#~ msgstr "Tipo de Sincronização"
+
+#~ msgid "Advanced"
+#~ msgstr "Avançado"
+
+#~ msgid ""
+#~ "Default conduit action for Synhronization. In most cases you dont want to "
+#~ "change this setting, but individual conduits instead."
+#~ msgstr ""
+#~ "Acção por emissão para Sincronização. Na maior parte dos casos quer mudar "
+#~ "as definições individuais das Conduits em vez desta definação."
+
+#~ msgid "Sync PCId"
+#~ msgstr "Identificação do PC (SyncPCid)"
+
+#~ msgid "Copying to pilot..."
+#~ msgstr "Copiando para o pilot..."
+
+#~ msgid "Copying from pilot..."
+#~ msgstr "Copiando do pilot..."
+
+#~ msgid "Merging to pilot..."
+#~ msgstr "Fundindo para o pilot..."
+
+#~ msgid "Merging from pilot..."
+#~ msgstr "Fundindo a partir do pilot..."
+
+#~ msgid "Using conduit settings for sync..."
+#~ msgstr "Utilizando opções da conduit para sincronização..."
+
+#~ msgid "Restore..."
+#~ msgstr "Recuperar..."
+
+#~ msgid "Last sync log..."
+#~ msgstr "Registo dos últimos Sync..."
+
+#~ msgid "Conduit Settings..."
+#~ msgstr "Opções da Conduta..."
+
+#~ msgid "Pilot Link Settings..."
+#~ msgstr "Opções do Pilot Link..."
+
+#~ msgid "Properties..."
+#~ msgstr "Propriedades..."
+
+#~ msgid ""
+#~ "A dnd and gui monitor for gpilotd.\n"
+#~ "Visit Website at http://eskil.org/gnome-pilot"
+#~ msgstr ""
+#~ "Um monitor DragNDrop e GUI para o gpilotd.\n"
+#~ "Visite o WebSite em http://eskil.org/gnome-pilot"
+
+#~ msgid "%P %%"
+#~ msgstr "%P %%"
+
+#~ msgid "Applet options"
+#~ msgstr "Opções da Applet"
+
+#~ msgid "Stop"
+#~ msgstr "Parar"
+
+#~ msgid "saving session"
+#~ msgstr "gravando sessÃ£o"
+
+#~ msgid "About..."
+#~ msgstr "Sobre..."
+
+#~ msgid "Resume daemon"
+#~ msgstr "Reactivar o daemon"
+
+#~ msgid "Can't create applet!\n"
+#~ msgstr "NÃ£o consigo criar applet!\n"
+
+#~ msgid "The gnome-pilot daemon is already running"
+#~ msgstr "Daemon gnome-pilot jÃ¡ estÃ¡ activo"
+
+#~ msgid "Gnome Pilot Conduits"
+#~ msgstr "Conduits do GnomePilot"
+
+#~ msgid "Handspring USB"
+#~ msgstr "Handsprint USB"
+
+#~ msgid "\n"
+#~ msgstr "\n"
+
+#~ msgid ""
+#~ "/dev/pilot\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3\n"
+#~ "/dev/ttyqe\n"
+#~ msgstr ""
+#~ "/dev/pilot\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3\n"
+#~ "/dev/ttyqe\n"
+
+#~ msgid ""
+#~ "/dev/pilot\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3\n"
+#~ msgstr ""
+#~ "/dev/pilot\n"
+#~ "/dev/ttyS0\n"
+#~ "/dev/ttyS1\n"
+#~ "/dev/ttyS2\n"
+#~ "/dev/ttyS3\n"
+
+#~ msgid "Disabled\n"
+#~ msgstr "Desactivado\n"
+
+#~ msgid "Backup of %s failed!"
+#~ msgstr "Falhou o arquivo de %s !"
+
+#~ msgid "Restoring %s from %s... "
+#~ msgstr "Recuperando %s a partir de %s..."
+
+#~ msgid "Restore of %s failed"
+#~ msgstr "Pedido de recuperaÃ§Ã£o de %s falhou"
+
+#~ msgid "Listening on %s (%s)"
+#~ msgstr "Observando %s (%s)"
+
+#~ msgid "%s this request.type == %d is not a install/restore"
+#~ msgstr "%s this request.type == %d is not a install/restore"
+
+#~ msgid "Please specify a cradle port"
+#~ msgstr "Por favor especifique o porto do cradle"
+
+#~ msgid ""
+#~ "Press synchronize on the %s (%s)\n"
+#~ "or cancel the operation."
+#~ msgstr ""
+#~ "Prima sincronizar no %s (%s)\n"
+#~ "ou cancele a operaÃ§Ã£o."
+
+#~ msgid "Pilot with this id or name already exists."
+#~ msgstr "JÃ¡ existe um pilot com esta identificaÃ§Ã£o ou nome."
+
+#~ msgid "Cradle with this port or name already exists."
+#~ msgstr "JÃ¡ existe um Cradle com este porto ou nome."
+
+#~ msgid "Cannot find gpilotd-capplet.glade"
+#~ msgstr "NÃ£o consigo encontrar gpilotd-capplet.glade"
+
+#~ msgid "Successfully sent UserName and ID to pilot."
+#~ msgstr "Nome do Utilizador e ID enviado com sucesso para o Pilot"
+
+#~ msgid ""
+#~ "Congratulations!\n"
+#~ "\n"
+#~ "You have succesfully installed gnome-pilot.\n"
+#~ "\n"
+#~ "You can now setup individual conduits options from \n"
+#~ "control-center. If you started PilotSync applet you must \n"
+#~ "select \"Restart daemon\" menu.\n"
+#~ msgstr ""
+#~ "ParabÃ©ns!\n"
+#~ "\n"
+#~ "Instalou com sucesso o gnome-pilot.\n"
+#~ "\n"
+#~ "Pode agora configurar as opÃ§Ãµes das condutas (Conduits) a \n"
+#~ "partir do Centro de Controlo. Se arrancou a Applet PilotSync \n"
+#~ "tem que seleccionar o menu \"Reiniciar daemon\".\n"
+
+#~ msgid "Pilot "
+#~ msgstr "Nome do Pilot"
+
+#~ msgid "window1"
+#~ msgstr "janela1"
+
+#~ msgid "Eskil Heyn Olsen <deity@eskil.dk>"
+#~ msgstr "Eskil Heyn Olsen <deity@eskil.dk>"
+
+#~ msgid "Gpilotd backup conduit"
+#~ msgstr "Gpilotd - conduta (conduit) de Backup"
+
+#~ msgid "(C) 1998 the Free Software Foundation"
+#~ msgstr "(C) 1998 the Free Software Foundation"
+
+#~ msgid ""
+#~ "Configuration utility for the backup conduit.\n"
+#~ "The backup conduit is responsible for copying files from the pilot to the "
+#~ "local host, without doing any conversion, whereby ensuring that a proper "
+#~ "restore can be done"
+#~ msgstr ""
+#~ "UtilitÃ¡rio de configuraÃ§Ã£o para a conduit de Backup.\n"
+#~ "A conduit de Backup Ã© responsÃ¡vel por copiar ficheiros do pilot para "
+#~ "ohospedeiro local, sem fazer nenhuma conversÃ£o, de modo a garantir que "
+#~ "Ã© possÃ­vel recupera-los para o pilot"
+
+#~ msgid "gnome-unknown.xpm"
+#~ msgstr "gnome-unknown.xpm"
+
+#~ msgid "Conduit state"
+#~ msgstr "Estado da conduta (conduit)"
+
+#~ msgid ""
+#~ "No pilot configured, please choose the\n"
+#~ "'Pilot Link Properties' capplet first."
+#~ msgstr ""
+#~ "Nenhum pilot configurado, por favor escolha\n"
+#~ "a capplet 'Propriedades da ligaÃ§Ã£o ao Pilot' primeiro."
+
+#~ msgid "Not connected to the gnome-pilot daemon"
+#~ msgstr "NÃ£o ligado ao daemon gnome-pilot"
+
+#~ msgid ""
+#~ "An error occured when trying to fetch\n"
+#~ "pilot list from the gnome-pilot daemon"
+#~ msgstr ""
+#~ "Ocorreu um erro enquanto lia a lista de\n"
+#~ "Pilots a partir do daemon gnome-pilot"
+
+#~ msgid ""
+#~ "Could not create object for conduit.\n"
+#~ "Perhaps the conduit isn't properly installed ?"
+#~ msgstr ""
+#~ "NÃ£o fui capaz de criar o objecto para a conduta (conduit).\n"
+#~ "Talvez a conduta (conduit) nÃ£o esteja bem instalada ?"
+
+#~ msgid "delete"
+#~ msgstr "apagar"
+
+#~ msgid "Gpilotd SendMail conduit"
+#~ msgstr "Gpilot - conduta (conduit) SendMail"
+
+#~ msgid ""
+#~ "Configuration utility for the SendMail conduit.\n"
+#~ "The SendMail conduit is responsible for sending out mail composed on the "
+#~ "pilot"
+#~ msgstr ""
+#~ "UtilitÃ¡rio de configuraÃ§Ã£o para a conduit SendMail.\n"
+#~ "A conduit SendMail Ã© responsÃ¡vel por enviar o email escrito no pilot"
+
+#~ msgid "From E-mail Address"
+#~ msgstr "EndereÃ§o de E-mail de origem (From)"
+
+#~ msgid "MH Mail directory"
+#~ msgstr "DirectÃ³rio de Mail MH"
+
+#~ msgid "mbox file"
+#~ msgstr "ficheiro de email (mbox)"
+
+#~ msgid "Mailer location"
+#~ msgstr "LocalizaÃ§Ã£o do Mailer"
+
+#~ msgid "Mail sent from pilot"
+#~ msgstr "Correio enviado do pilot"
+
+#~ msgid "Mail on Host"
+#~ msgstr "Correio no hospedeiro"
+
+#~ msgid "SendMail options"
+#~ msgstr "OpÃ§Ãµes do SendMail"
+
+#~ msgid "Unknown Currency Symbol"
+#~ msgstr "Simbolo de Moeda desconhecido"
+
+#~ msgid "No dir specified. Please run expense conduit capplet first."
+#~ msgstr ""
+#~ "Nenhum directÃ³rio especificado. Por favor execute a caplet memo_file"
+
+#~ msgid "Day/Month/Year"
+#~ msgstr "Dia/MÃªs/Ano"
+
+#~ msgid "Month/Day/Year"
+#~ msgstr "MÃªs/Dia/Ano"
+
+#~ msgid "Since 1970-01-01 (in sec)"
+#~ msgstr "Desde 1970-01-01 (em segundos)"
+
+#~ msgid "Local format"
+#~ msgstr "Formato local"
+
+#~ msgid "Simple"
+#~ msgstr "Simples"
+
+#~ msgid "Complex"
+#~ msgstr "Complexo"
+
+#~ msgid "Patrick Decowski <decowski@mit.edu>"
+#~ msgstr "Patrick Decowski <decowski@mit.edu>"
+
+#~ msgid "Gpilotd Expense conduit"
+#~ msgstr "Gpilotd - conduta (conduit) de Despesas (expense)"
+
+#~ msgid "(C) 1999 the Free Software Foundation"
+#~ msgstr "(C) 1999 the Free Software Foundation"
+
+#~ msgid ""
+#~ "Configuration utility for the Expense conduit.\n"
+#~ "The Expense conduit is responsible for getting expenses records from the "
+#~ "pilot"
+#~ msgstr ""
+#~ "UtilitÃ¡rio de configuraÃ§Ã£o para a conduta de Despesas (Expense).\n"
+#~ "A conduta de despesas Ã© responsÃ¡vel pela leitura dos registos de "
+#~ "despesas a partir do pilot"
+
+#~ msgid "Expense Directory"
+#~ msgstr "DirectÃ³rio das Despesas:"
+
+#~ msgid "Directory Mode"
+#~ msgstr "Modo do directÃ³rio:"
+
+#~ msgid "File Mode"
+#~ msgstr "Modo dos ficheiros:"
+
+#~ msgid "Date Format"
+#~ msgstr "Formato da Data"
+
+#~ msgid "Output Format"
+#~ msgstr "Formato de SaÃ­da"
+
+#~ msgid "Expense options"
+#~ msgstr "OpÃ§Ãµes de Despesas"
+
+#~ msgid "Gpilotd file conduit"
+#~ msgstr "Gpilotd - conduta de ficheiros (file conduit)"
+
+#~ msgid ""
+#~ "Configuration utility for the file conduit.\n"
+#~ "The file conduit is responsible for installing files from the host to the "
+#~ "pilot"
+#~ msgstr ""
+#~ "UtilitÃ¡rio de configuraÃ§Ã£o para a conduit de ficheiros.\n"
+#~ "A conduit de ficheiros Ã© responsÃ¡vel pela instalaÃ§Ã£o de ficheiros do "
+#~ "hospedeiro para o pilot"
+
+#~ msgid "Copy From Pilot"
+#~ msgstr "Copiar a partir do Pilot"
+
+#~ msgid "Copy To Pilot"
+#~ msgstr "Copiar para o Pilot"
+
+#~ msgid "Merge From Pilot"
+#~ msgstr "Fundir a partir do Pilot"
+
+#~ msgid "Merge To Pilot"
+#~ msgstr "Fundir para o Pilot"
+
+#~ msgid "Vadim Strizhevsky <vadim@optonline.net>"
+#~ msgstr "Vadim Strizhevsky <vadim@optonline.net>"
+
+#~ msgid "Gpilotd memo_file conduit"
+#~ msgstr "Gpilotd - conduit Memos"
+
+#~ msgid ""
+#~ "Configuration utility for the memo_file conduit.\n"
+#~ "The memo_file conduit syncronizes memos from the pilot with text files on "
+#~ "the local host"
+#~ msgstr ""
+#~ "UtilitÃ¡rio de configuraÃ§Ã£o para a conduit Memos.\n"
+#~ "A conduit Memos sincroniza os memos do pilot com ficheiros de texto no "
+#~ "hospedeiro local."
+
+#~ msgid "Synchronize Action"
+#~ msgstr "AcÃ§Ã£o para sincronizar"
+
+#~ msgid "Memos directory:"
+#~ msgstr "DirectÃ³rio dos memos:"
+
+#~ msgid "Ignore start:"
+#~ msgstr "Ignorar inÃ­cio:"
+
+#~ msgid "Ignore end:"
+#~ msgstr "Ignorar fim:"
+
+#~ msgid "Directory mode:"
+#~ msgstr "Modo do directÃ³rio:"
+
+#~ msgid "Files mode:"
+#~ msgstr "Modo dos ficheiros:"
+
+#~ msgid "Secret files mode:"
+#~ msgstr "Modo dos ficheiros secretos:"
+
+#~ msgid "Memo Conduit State"
+#~ msgstr "Estado da conduit Memos"
+
+#~ msgid "No dir specified. Please run memo_file conduit capplet first."
+#~ msgstr ""
+#~ "Nenhum directÃ³rio especificado. Por favor execute a caplet memo_file"
+
+#, fuzzy
+#~ msgid "Gpilotd memo conduit"
+#~ msgstr "Gpilotd - conduit Memos"
+
+#~ msgid "Configuration utility for the memo conduit.\n"
+#~ msgstr "UtilitÃ¡rio de configuraÃ§Ã£o para a conduta Memo.\n"
+
+#~ msgid "Cannot initialze the GnomePilot Daemon"
+#~ msgstr "Incapaz de inicializar o daemon GnomePilot"
+
+#~ msgid "(C) 1998 Eskil Heyn Olsen"
+#~ msgstr "(C) 1998 Eskil Heyn Olsen"
+
+#~ msgid "Module loading not supported."
+#~ msgstr "Carregamento de modulos nÃ£o suportado"
+
+#~ msgid "Malformed conduit, cannot find conduit_get_gpilot_conduit: %s"
+#~ msgstr "Malformed conduit, cannot find conduit_get_gpilot_conduit: %s"
+
+#~ msgid "Malformed conduit, cannot find conduit_destroy_gpilot_conduit: %s"
+#~ msgstr "Malformed conduit, cannot find conduit_destroy_gpilot_conduit: %s"
+
+#~ msgid "Conduit %s has no name"
+#~ msgstr "Conduit %s nÃ£o tem nome"
+
+#~ msgid "Ready to Synchronize"
+#~ msgstr "Pronto para Sincronizar"
+
+#~ msgid ""
+#~ "No directory to restore from.\n"
+#~ "Please set the directory in the properties dialog."
+#~ msgstr ""
+#~ "Sem directÃ³rio de onde recuperar.\n"
+#~ "Por favor seleccione o directÃ³rio no dialogo Propriedades"
+
+#~ msgid "Cannot initialize the GnomePilot Daemon"
+#~ msgstr "Incapaz de inicializar o daemon GnomePilot"
+
+#~ msgid "SyncPCid is a integer that uniquely identifies your PC"
+#~ msgstr "O SyncPCid Ã© um inteiro que identifica o seu PC inequivocamente"
+
+#~ msgid "Warning - unrecognized device %s, changing to /dev/pilot"
+#~ msgstr "Aviso - dispositivo %s nÃ£o reconhecido, mudando para /dev/pilot"
+
+#~ msgid "Warning - unrecognized speed %d, changing to 9600"
+#~ msgstr "Aviso - velocidade %s nÃ£o reconhecida, mudando para 9600"
+
+#~ msgid "Host ID"
+#~ msgstr "IdentificaÃ§Ã£o (ID) do hospedeiro"
+
+#~ msgid "User Configuration"
+#~ msgstr "ConfiguraÃ§Ã£o do Utilizador"
+
+#~ msgid ""
+#~ "More than one set of cradle information located.\n"
+#~ "This tool only handles a single cradle, aborting..."
+#~ msgstr ""
+#~ "Encontrada informaÃ§Ã£o sobre mais do que um cradle.\n"
+#~ "Esta ferramenta apenas Ã© capaz de gerir um cradle, abortando..."
+
+#~ msgid ""
+#~ "More than one set of pilot information located.\n"
+#~ "This tool only handles a single pilot, aborting..."
+#~ msgstr ""
+#~ "Encontrada informaÃ§Ã£o sobre mais do que um pilot.\n"
+#~ "Esta ferramenta apenas Ã© capaz de gerir um pilot, abortando..."
+
+#~ msgid "Cannot start the GnomePilot daemon"
+#~ msgstr "Incapaz de arrancar o daemon GnomePilot"
+
+#~ msgid "This is a critical error, stopping gpilotd"
+#~ msgstr "Isto Ã© um erro crÃ­tico, parando o gpilotd"
+
+#~ msgid "An error occured while listening for sync button press!"
+#~ msgstr "Ocorreu um erro enquanto esperava pelo botÃ£o de HotSync!"
+
+#~ msgid "Unknown pilot, no userID/username/pwd match"
+#~ msgstr "Pilot desconhecido, nenhum ID/nome/senha encontrados"
+
+#~ msgid "What, child exited, but wasn't pending???"
+#~ msgstr "Que, filho terminou, mas nÃ£o estava pendente???"
+
+#~ msgid "Malformed conduit %s, cannot find conduit_get_gpilot_conduit: %s"
+#~ msgstr "Malformed conduit %s, cannot find conduit_get_gpilot_conduit: %s"
+
+#~ msgid "Malformed conduit %s, cannot find conduit_destroy_gpilot_conduit: %s"
+#~ msgstr ""
+#~ "Malformed conduit %s, cannot find conduit_destroy_gpilot_conduit: %s"

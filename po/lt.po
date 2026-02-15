@@ -1,0 +1,1411 @@
+# Lithuanian translation of gnome-pilot.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-pilot package.
+# Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
+# Žygimantas Beručka <zygis@gnome.org>, 2005.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-11-12 11:21+0100\n"
+"PO-Revision-Date: 2005-11-24 15:19+0200\n"
+"Last-Translator: Žygimantas Beručka <zygis@gnome.org>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "Reikmuo"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Pasirinkite pilotą"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Aplankas"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Rodyti pranešimus"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Vykdyti, kai paspausta"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync savybės"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "Piloto ID"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Atkurti pilotą"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Sinchronizavimo pradžia"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot progresas"
+
+#: ../applet/pilot.c:136
+msgid "Synchronizing..."
+msgstr "Sinchronizuojama..."
+
+#: ../applet/pilot.c:164
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s sinchronizuojama"
+
+#: ../applet/pilot.c:169
+msgid "Database %v of %u"
+msgstr "%v duomenų bazė iš %u"
+
+#: ../applet/pilot.c:188 ../applet/pilot.c:777 ../applet/pilot.c:930
+msgid "Ready to synchronize"
+msgstr "Paruošta sinchronizavimui"
+
+#: ../applet/pilot.c:208
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Prašymas %ld buvo užbaigtas\n"
+
+#: ../applet/pilot.c:229
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s sinchronizuojama: %s"
+
+#: ../applet/pilot.c:234
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: pradėta\n"
+
+#: ../applet/pilot.c:248
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s pabaigta: %s"
+
+#: ../applet/pilot.c:253
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: baigta\n"
+
+#: ../applet/pilot.c:278
+msgid "%v of %u records"
+msgstr "%v įrašas iš %u"
+
+#: ../applet/pilot.c:354
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Pilotas šiuo metu sinchronizuojamas.\n"
+"Palaukite kol bus užbaigta."
+
+#: ../applet/pilot.c:357
+msgid "Not connected. Please restart daemon."
+msgstr "Neprijungta. Perkraukite demoną."
+
+#: ../applet/pilot.c:359
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Neprijungta prie gpilotd.\n"
+"Perkraukite demoną."
+
+#: ../applet/pilot.c:374
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot įtaisas"
+
+#: ../applet/pilot.c:376
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "Autorinės teisės priklauso 2000-2003 Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:377
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "gpilotd dnd ir gui monitorius.\n"
+
+#: ../applet/pilot.c:469 ../applet/pilot.c:495
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Rodant pagalbą įvyko klaida: %s"
+
+#: ../applet/pilot.c:533
+#, c-format
+msgid "cancelling %d"
+msgstr "atšaukiama %d"
+
+#: ../applet/pilot.c:585
+#, c-format
+msgid "Restoring %s"
+msgstr "Atkuriama %s"
+
+#: ../applet/pilot.c:627
+msgid "No directory to restore from."
+msgstr "Nėra aplanko iš kurio atkurti."
+
+#: ../applet/pilot.c:635
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Norėdami atstatyti, lopšyje spauskite „Sinchronizuoti“\n"
+" arba atšaukite šią operaciją."
+
+#: ../applet/pilot.c:644
+msgid "Restore request failed"
+msgstr "Atkūrimo užklausos įvykdyti nepavyko"
+
+#: ../applet/pilot.c:682
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Pilotas šiuo metu sinchronizuojamas.\n"
+"Ar tikrai norite perkrauti demoną?"
+
+#: ../applet/pilot.c:692 ../applet/pilot.c:1262
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Bandoma susiekti su GnomePilot demonu"
+
+#: ../applet/pilot.c:708
+msgid "There's no last sync on record."
+msgstr "Įraše nėra paskutinio sinchronizavimo ar įrašo."
+
+#: ../applet/pilot.c:748
+msgid "Continue"
+msgstr "Tęsti"
+
+#: ../applet/pilot.c:750
+msgid "Pause Daemon"
+msgstr "Pristabdyti demoną"
+
+#: ../applet/pilot.c:770
+msgid "Daemon paused..."
+msgstr "Demonas pristabdytas..."
+
+#: ../applet/pilot.c:911
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Neprisijungta. Norėdami prisijungti pekraukite demoną"
+
+#: ../applet/pilot.c:1095
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s vykdymas nepavyko"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1221
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "įdiegiama „%s“ į „%s“"
+
+#: ../applet/pilot.c:1231
+msgid "unknown dnd type"
+msgstr "nežinomas dnd tipas"
+
+#: ../applet/pilot.c:1239
+msgid "destroy gpilot-applet"
+msgstr "sunaikinti gpilot-applet"
+
+#: ../applet/pilot.c:1326
+msgid "Cannot find pilot-applet.glade"
+msgstr "Nepavyko surasti pilot-applet.glade"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Komanda vykdoma spragtelėjus įtaisą"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Pranešimus rodyti iššokančiuose languose"
+
+#: ../capplet/gnome-pilot-capplet.c:211 ../capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Pilot nustatymai"
+
+#: ../capplet/gnome-pilot-capplet.c:378 ../capplet/gnome-pilot-capplet.c:460
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Vardas"
+
+#: ../capplet/gnome-pilot-capplet.c:380 ../capplet/gpilotd-capplet.glade.h:34
+#: ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "Naudotojo vardas"
+
+#: ../capplet/gnome-pilot-capplet.c:462 ../capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Prievadas"
+
+#: ../capplet/gnome-pilot-capplet.c:464 ../capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Greitis"
+
+#: ../capplet/gnome-pilot-capplet.c:466 ../capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Tipas"
+
+#: ../capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Kanalas"
+
+#: ../capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Sinchronizavimo veiksmas"
+
+#: ../capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Ar tikrai norite ištrinti %s pilotą?"
+
+#: ../capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "_Redaguoti šį pilotą..."
+
+#: ../capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "Redaguoti šiuo metu pasirinktą pilotą"
+
+#: ../capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "_Ištrinti šį pilotą"
+
+#: ../capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "Ištrinti šiuo metu pasirinktą pilotą"
+
+#: ../capplet/gnome-pilot-capplet.c:938
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Ar tikrai norite ištrinti %s įrenginį?"
+
+#: ../capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "_Redaguoti šį įrenginį..."
+
+#: ../capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "Redaguoti šiuo metu pasirinktą įrenginį"
+
+#: ../capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "_Ištrinti šį įrenginį"
+
+#: ../capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "Ištrinti šiuo metu pasirinktą įrenginį"
+
+#: ../capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Nepavyko inicializuoti %s kanalo."
+
+#: ../capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "Į_jungti šį kanalą"
+
+#: ../capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "Išjungti dabar pažymėtą kanalą"
+
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "_Išjungti šį kanalą"
+
+#: ../capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "Įjungti dabar pažymėtą kanalą"
+
+#: ../capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "_Nustatymai..."
+
+#: ../capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "Modifikuoti dabar pažymėto kanalo nustatymus"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr ""
+"Nepavyko sukurti piloto nustatymų lango. Neteisinga kanalo konfigūracija."
+
+#: ../capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Konfigūravimas nebaigtas ir nustatymai išsaugoti\n"
+"nebus. Ar tikrai norite baigti?"
+
+#: ../capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Pilotui bus persiųsti šie duomenys:\n"
+"Naudotojo vardas: %s\n"
+"ID: %d\n"
+"Nustatykite pilotą į %s (%s) ir paspauskite HotSync mygtuką."
+
+#. do get_from_pilot
+#: ../capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Ruošiamasi iš piloto gauti naudotojo vardą ir ID.\n"
+"\n"
+"Nustatykite pilotą į %s (%s) ir paspauskite HotSync mygtuką."
+
+#: ../capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "Nepavyko gpilotd nusiųsti užklausos"
+
+#: ../capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"Naudotojo vardas ir ID iš piloto gauti sėkmingai.\n"
+"Naudotojo vardas: %s\n"
+"ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:374
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Nustatykite pilotą į %s (%s) ir paspauskite HotSync mygtuką arba atšaukite "
+"operaciją."
+
+#: ../capplet/gnome-pilot-pdialog.c:410
+msgid "The request to get pilot id failed"
+msgstr "Užlausa gauti piloto id nesėkminga"
+
+#: ../capplet/gnome-pilot-pdialog.c:450
+msgid "The request to set pilot id failed"
+msgstr "Prašymas nustatyti piloto id nepavyko"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "Veiksmas:"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Pridėti..."
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Pasirinkti įrenginį"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Kanalo veiksmai"
+
+#: ../capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Kanalo aprašymas"
+
+#: ../capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Kanalo nustatymai"
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Kanalai"
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Sveikiname, gnome-pilot yra sukonfigūruota!\n"
+"\n"
+"Galite pakeisti gnome-pilot nustatymus bet kuriuo metu,\n"
+"valdymo centre PilotLink ir Conduits kortelėse.\n"
+"\n"
+"Galite stebėti gnome-pilot sinchronizavimą įdėdami\n"
+"PilotLink įtaisą į skydelį."
+
+#: ../capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Lopšio nustatymai"
+
+#: ../capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Ištrinti"
+
+#: ../capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Įrenginio nustatymai"
+
+#: ../capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Įrenginiai"
+
+#: ../capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Išjungti"
+
+#: ../capplet/gpilotd-capplet.glade.h:27 ../capplet/util.c:88
+#: ../capplet/util.c:424
+msgid "Disabled"
+msgstr "Išjungtas"
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Redaguoti..."
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Įjungti"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "Įveskite Jūsų pilote išsaugotiną naudotojo vardą"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr ""
+"Gauti naudotojo vardą ir ID iš egzistuojančio piloto, kuriuo buvo naudojamąsi anksčiau."
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "Gauti iš piloto"
+
+#: ../capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Gnome Pilot nustatymai"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Pradinė sinchronizacija"
+
+#: ../capplet/gpilotd-capplet.glade.h:36 ../capplet/util.c:414
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Vietinis bazinis aplankas"
+
+#: ../capplet/gpilotd-capplet.glade.h:39 ../capplet/util.c:415
+msgid "Network"
+msgstr "Tinklas"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr "Ne, aš niekada nenaudojau sinchronizavimo programų su šiuo pilotu."
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:129
+msgid "None"
+msgstr "Nėra"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr "Vienkartinis veiksmas:"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Piloto atributai"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "Piloto identifikacija"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Piloto pavadinimas"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "Piloto pavadinimas:"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Pilotai"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "Nusiųsti pilotui"
+
+#: ../capplet/gpilotd-capplet.glade.h:51 ../capplet/util.c:416
+msgid "Serial"
+msgstr "Serijinis"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Nustatyti naujam pilotui naudotojo vardą ir ID."
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "Nustatykite šakninį aplanką visos piloto byloms saugoti."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Nustatymai..."
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Pavyko"
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "Jūsų piloto pavadinimas. Jis naudojamas tik identifikacijai."
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"Šis skaitinis ID identifikuoja Jūsų pilotą ir turi būti kitoks nei kitų Jūsų "
+"naudojamų pilotų."
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Baigėsi laiko limitas"
+
+#: ../capplet/gpilotd-capplet.glade.h:61 ../capplet/util.c:413
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Naudotojo vardas"
+
+#: ../capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Pilote nustatomas naudotojo vardas ir ID"
+
+#: ../capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Naudotojo vardas:"
+
+#: ../capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "Sveiki atvykę į gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Taip, aš naudojausi sinchronizavimo programine įranga su šiuo pilotu anksčiau."
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Atrodo, Jūs pasileidote gnome-pilot pirmą kartą.\n"
+"Sekančiuose žingsniuose gnome-pilot bus paruoštas\n"
+"sinchronizacijai.\n"
+"Jūs galėsite bet kada vėliau pakeisti nustatymus\n"
+"PilotLink skydelyje GNOME valdymo centre.\n"
+"\n"
+"Spauskite „Toliau“ jei norite tęsti.\n"
+"Spauskite „Atšaukti“ jei norite išeiti."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Tik paleisti vedlį"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Klaida inicializuojant gpilotd įtaisą"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Klaida įkeliant piloto būseną, nutraukiama"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Nepavyko susisiekti su GnomePilot demonu"
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr "Negalima paleisti vedlio jei pilotai ar lopšiai jau sukonfigūruoti"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Konfigūruoti PalmOS įrenginius"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS įrenginiai"
+
+#. Default to 57600
+#: ../capplet/util.c:36 ../capplet/util.c:405
+msgid "Use conduit settings"
+msgstr "Naudoti kanalo nustatymus"
+
+#: ../capplet/util.c:37 ../capplet/util.c:398
+msgid "Synchronize"
+msgstr "Sinchronizuoti"
+
+#: ../capplet/util.c:38 ../capplet/util.c:399
+msgid "Copy from pilot"
+msgstr "Kopijuoti iš piloto"
+
+#: ../capplet/util.c:39 ../capplet/util.c:400
+msgid "Copy to pilot"
+msgstr "Kopijuoti į pilotą"
+
+#: ../capplet/util.c:40 ../capplet/util.c:401
+msgid "Merge from pilot"
+msgstr "Sulieti iš piloto"
+
+#: ../capplet/util.c:41 ../capplet/util.c:402
+msgid "Merge to pilot"
+msgstr "Sulieti į pilotą"
+
+#: ../capplet/util.c:95 ../capplet/util.c:426
+msgid "Enabled"
+msgstr "Įjungtas"
+
+#: ../capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "Jūs turite turėti bent vieną įrenginio sąranką"
+
+#: ../capplet/util.c:464
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Nurodytas bazinis aplankas egzistuoja, bet turi neteisingus leidimus.\n"
+"Pataisykite arba pasirinkite kitą aplanką"
+
+#: ../capplet/util.c:469
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Nurodytas bazinis aplankas egzistuoja, bet tai nėra aplankas.\n"
+"Padarykite jį aplanku arba pasirinkite kitą aplanką"
+
+#: ../capplet/util.c:476
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Nebuvo įmanoma sukurti nurodyto bazinio aplanko.\n"
+"Patvirtinkite šio kelio leidimus arba pasirinkite kitą aplanką"
+
+#: ../capplet/util.c:481
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Nurodytas bazinio aplanko kelias yra netinkamas.\n"
+"Pasirinkite kitą aplanką"
+
+#: ../capplet/util.c:583
+msgid "Read/Write permissions failed on"
+msgstr "Skaitymo/rašymo teisės nepavyko"
+
+#: ../capplet/util.c:585
+msgid "Check the permissions on the device and retry"
+msgstr "Patikrinkite šio įrenginio leidimus ir pakartokite"
+
+#: ../conduits/backup/backup_conduit.c:238
+msgid "Checking for removed databases"
+msgstr "Ieškoma pašalintų duomenų bazių"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:245
+#, c-format
+msgid "Renaming %s"
+msgstr "Pervadinama %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:252
+#, c-format
+msgid "to %s"
+msgstr "į %s"
+
+#: ../conduits/backup/backup_conduit.c:429
+#: ../conduits/backup/backup_conduit.c:433
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s nemodifikuotas nuo paskutinės sinchronizacijos"
+
+#: ../conduits/backup/backup_conduit.c:445
+#: ../conduits/backup/backup_conduit.c:447
+#, c-format
+msgid "Making backup of %s"
+msgstr "Daroma %s atsarginė kopija"
+
+#: ../conduits/backup/backup_conduit.c:454
+#: ../conduits/backup/backup_conduit.c:456
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Nepavyko sukurti atasrginės kopijos bylos %s"
+
+#: ../conduits/backup/backup_conduit.c:724
+msgid "Collecting restore information..."
+msgstr "Renkama atstatymo informacija..."
+
+#: ../conduits/backup/backup_conduit.c:848
+msgid "Backup directory"
+msgstr "Atsarginių kopijų aplankas"
+
+#: ../conduits/backup/backup_conduit.c:858
+msgid "Only backup changed bases"
+msgstr "Daryti tik modifikuotų bazių atsargines kopijas"
+
+#: ../conduits/backup/backup_conduit.c:865
+msgid "Remove local base if deleted on pilot"
+msgstr "Pašalinti vietinę bazę, jeigu ištrinta pilote"
+
+#: ../conduits/backup/backup_conduit.c:872
+msgid "# of old backups to keep"
+msgstr "saugomų senų atsarginių kopijų kiekis"
+
+#: ../conduits/file/file_conduit.c:240 ../conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "Įdiegti %s nepavyko"
+
+#: ../conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Įdiegti %s iš %s..."
+
+#: ../conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "Įdiegiama %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Įdiegti tuoj pat"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Įdiegimas atidėtas"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Pilotas į kurį įdiegti"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PILOT"
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Nepavyko gauti pilotų pavadinimų"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Sekančios bylos nepavyko:\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Įdiegiama į %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Nėra įdiegtinų"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Norėdami įdiegti, lopšyje spauskite „sinchronizuoti“\n"
+"arba atšaukite operaciją."
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilot demonas"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "ištrintas lokaliai modifikuotas piloto įrašas, netrinama\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "ištrintas pilote modifikuotas lokalus įrašas, netrinama\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "suliejimo konfliktas, piloto ir lokalus įrašai sukeisti\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr "archyvo ir pakeitimų konfliktas, piloto ir lokalus įrašai sukeisti\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "archyvo ir pakeitimų konfliktas, lokalus įrašas nusiųstas į pilotą\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr "archyvo ir pakeitimų konfliktas, piloto įrašas išsaugotas lokaliai\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Nepavyko inicializuoti kanalų, nutraukiama operacija"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr "Nepavyko ištrinti visų įrašų piloto duomenų bazėje, operacija nutraukiama."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Kanalas negrąžino įrašo"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Nepavyko ištrinti visų įrašų vietinėje duomenų bazėje, operacija nutraukiama."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Kanalo klaida, naujai pridėtas įrašas nerastas"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "Kopijuoti į pilotą nepavyko!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "Kopijuoti iš piloto nepavyko!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "Suliejimas į pilotą nepavyko!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "Suliejimas iš piloto nepavyko!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Sinchronizavimas nepavyko!"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Nepavyko atverti įrenginio %s (%s): priežastis „%s“."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot nepavyko atverti įrenginio %s (%s).\n"
+"Priežastis: „%s“."
+
+#: ../gpilotd/gnome-pilot-structures.c:665
+#: ../gpilotd/gnome-pilot-structures.c:716
+#: ../gpilotd/gnome-pilot-structures.c:744
+#: ../gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "Nežinomas įrenginio tipas"
+
+#: ../gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Įrenginių skaičius yra sukonfigūruotas į 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nėra konfigūruotinų lopšių.\n"
+"Norėdami sukonfigūruoti gnome-pilot, paleiskite\n"
+"gpilotd-control-applet (naudokite gnomecc)."
+
+#: ../gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Nėra prieinamų įrenginių"
+
+#: ../gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Pilotų skaičius yra sukonfigūruotas į 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nėra sukonfigūruotų pilotų.\n"
+"Norėdami sukonfigūruoti gnome-pilot, paleiskite\n"
+"gpilotd-control-applet (naudokite gnomecc)."
+
+#: ../gpilotd/gpilotd.c:177
+msgid "Unable to bind to pilot"
+msgstr "Nepavyko susieti piloto"
+
+#: ../gpilotd/gpilotd.c:333
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "Nežinomas pilotas, nėra naudotojo ID/naudotojo vardo atitinkančio %ld"
+
+#: ../gpilotd/gpilotd.c:340
+msgid "Use gnomecc to configure pilot"
+msgstr "Piloto konfigūravimui naudokite gnomecc"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:345 ../gpilotd/gpilotd.c:550
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Nežinomas pilotas - nėra pilotų atitinkančių ID %ld\n"
+"Naudokite gnomecc nustatyti piloto ID"
+
+#: ../gpilotd/gpilotd.c:369
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "Lopšys %s turi %d įvykius"
+
+#: ../gpilotd/gpilotd.c:381
+msgid "Setting userinfo..."
+msgstr "Nustatoma naudotojo informacija..."
+
+#: ../gpilotd/gpilotd.c:386
+msgid "Sync continues"
+msgstr "Sinchronizacija tęsiasi"
+
+#: ../gpilotd/gpilotd.c:405
+msgid "Getting userinfo..."
+msgstr "Gaunama naudotojo informacija..."
+
+#: ../gpilotd/gpilotd.c:467
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Aptikta NetSync užklausa, pilotas sinchronizuojamas"
+
+#: ../gpilotd/gpilotd.c:469
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Paspaustas HotSync mygtukas, pilotas sinchronizuojamas"
+
+#: ../gpilotd/gpilotd.c:471
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "Piloto ID yra %ld, pavadinimas yra %s, savininkas %s "
+
+#: ../gpilotd/gpilotd.c:481
+#, c-format
+msgid "On host %s\n"
+msgstr "Kompiuteryje %s\n"
+
+#: ../gpilotd/gpilotd.c:483
+#, c-format
+msgid "On host %d\n"
+msgstr "Kompiuteryje %d\n"
+
+#: ../gpilotd/gpilotd.c:502
+msgid "Synchronization ended"
+msgstr "Sinchronizacija baigta"
+
+#: ../gpilotd/gpilotd.c:505
+msgid "Synchronization ended early"
+msgstr "Sinchronizacija baigta anksti"
+
+#: ../gpilotd/gpilotd.c:537
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Bazinis aplankas %s yra neteisingas.\n"
+"Pataisykite jį arba naudokite gnomecc pasirinkti naują aplanką."
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:602
+msgid "An error occured while getting the pilot's system data"
+msgstr "Gaunant piloto sistemos duomenis įvyko klaida"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:607
+msgid "An error occured while getting the pilot's user data"
+msgstr "Gaunant piloto naudotojo duomenis įvyko klaida"
+
+#: ../gpilotd/gpilotd.c:612
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "%s (%s) lopšio atlikti veiksmai"
+
+#: ../gpilotd/gpilotd.c:660 ../gpilotd/gpilotd.c:744
+#, c-format
+msgid "Woke on %s"
+msgstr "%s pažadino"
+
+#: ../gpilotd/gpilotd.c:981
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "Stebima %s (%s, %s)"
+
+#: ../gpilotd/gpilotd.c:983
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Stebima %s (%s)"
+
+#: ../gpilotd/gpilotd.c:996
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Uždaroma (gauta SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1004
+msgid "Exiting (caught SIGINT)..."
+msgstr "Uždaroma (gauta SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1059
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr "Nepavyko atverti ar sukurti bylos %s su skaitymo/rašymo privilegijomis"
+
+#: ../gpilotd/gpilotd.c:1065
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Nepavyko rasti uid0 %d namų aplanko"
+
+#: ../gpilotd/gpilotd.c:1069
+msgid "Unable to create file installation queue directory"
+msgstr "Nepavyko sukurti bylų įdiegimo eilės aplanko"
+
+#: ../gpilotd/gpilotd.c:1094
+msgid "Shutting down devices"
+msgstr "Įrenginiai išjungiami"
+
+#: ../gpilotd/gpilotd.c:1096
+msgid "Rereading configuration..."
+msgstr "Konfigūracija skaitoma iš naujo..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "ne atsarginis kanalas atsarginių kanalų sąraše"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "padaryta %s atsarginė kopija\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "padaryti %s atsarginės kopijos nepavyko\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "Renkama sinchronizavimo informacija..."
+
+#: ../gpilotd/manager.c:429
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Sinchronizuojama %s\n"
+
+#: ../gpilotd/manager.c:448
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Kopijuoti į pilotą %s\n"
+
+#: ../gpilotd/manager.c:466
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Kopijuoti iš piloto %s\n"
+
+#: ../gpilotd/manager.c:484
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Sulieti į pilotą %s\n"
+
+#: ../gpilotd/manager.c:502
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Sulieti iš piloto %s\n"
+
+#: ../gpilotd/manager.c:530
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Pirmas kanalo %s sinchronizavimas..."
+
+#: ../gpilotd/manager.c:554
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "nežinomas sinchronizavimo veiksmas (%d = %s).\n"
+
+#: ../gpilotd/manager.c:680
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Paruošiami %d lopšiai..."
+
+#: ../gpilotd/manager.c:685 ../gpilotd/manager.c:686
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Konfigūruojamas nežinomas lopšys „%s“!"
+
+#: ../gpilotd/manager.c:695
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Nepavyko įkelti lopšio „%s“!"
+
+#: ../gpilotd/manager.c:696
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Nepavyko įkelti lopšio „%s“!\n"
+
+#: ../gpilotd/manager.c:785
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Nustatoma naudotojo/id į %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:817
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Užklaustas lopšys %s, bet nerastas"
+
+#: ../gpilotd/manager.c:827
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Lopšys %s negali būti užklaustas"
+
+#: ../gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(nežinomas DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Klaida eilėje, neegzistuojantis įrašas"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "klaida: pilotui %d nerasta jokių užklausų, užklausa %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "modulių įkėlimas nepalaikomas, kritinė klaida!"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Gauti sistemos informaciją"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Pristabdyti demoną"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Tęst demono darbą"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Perkrauti demoną"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Nustatyti naudotojo id ir pavadinimą"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "ID pilotui"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Įdiegti bylą"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "BYLA"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Atstatyti aplanką"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "APLANKAS"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Paleisti kanalą"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "KANALAS"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Nustatytinas naudotojo vardas"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "NAUDOTOJO VARDAS"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Stebėti nurodytus pilotų veiksmus"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Stebėti visus pilotus"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "parodyti pilotus pagal prisijungimo vardą (visus visiems pilotams)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "PRISIJUNGIMO VARDAS"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Nurodykite tvarkytiną pilotą (numatytasis yra MyPilot)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTOPAVADINIMAS"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Nurodykite tvarkytiną lopšį (numatytasis yra Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "LOPŠIOPAVADINIMAS"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Parodyti nurodyto piloto bazes"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"SAUGOKITĖS!!\n"
+"Šis įrankis yra skirtas tam tikroms gnome-pilot paketo dalims.\n"
+"Nenaudokite šio įrankio, nebent tikrai žinote, ką darote."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "parodyti prieinamus kanalus"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "tvarkytinas lopšys"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "parodyti visus požymius"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "nurodykite tvarkytiną pilotą"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "PILOTOID"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "parodyti požymius"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "parodyti prieinamus kanalus ir jų būsenas"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "įjungti nurodytą kanalą"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "išjungti nurodytą kanalą"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "įjungti ir nustatyti „firstsync“ į „slow“"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "paruošti ir sunaikinti kanalą"
+

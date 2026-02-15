@@ -1,0 +1,96 @@
+GNOME Pilot 4.0.1
+=================
+
+This is a fork of the original [GNOME Pilot](https://wiki.gnome.org/action/show/Attic/GnomePilot)
+project (last upstream release: 2.32.1, 2011), modernized to build and run on
+current Linux distributions (Ubuntu 22.04+ / GNOME 42+).
+
+Upstream source: https://download.gnome.org/sources/gnome-pilot/
+
+Overview
+--------
+
+GNOME Pilot provides a daemon (`gpilotd`) that monitors for Palm PDA
+connections on one or more devices. It has an API for creating conduits,
+and includes default conduits for backing up and installing files.
+
+Additional conduits are available in the companion package
+[gnome-pilot-conduits](https://github.com/onionmixer/gnome-pilot-conduits).
+
+What Changed (Migration from upstream 2.32.1)
+----------------------------------------------
+
+| Component           | Upstream (2.32.1)                 | This Fork (4.0.1)                              |
+|---------------------|-----------------------------------|-------------------------------------------------|
+| GTK                 | GTK 2 / GTK 3                    | GTK 4 (>= 4.6)                                 |
+| System Tray         | GNOME Panel applet (libpanelapplet) | Standalone `gpilot-tray` via D-Bus SNI        |
+| Tray Menu           | In-process GTK menu               | libdbusmenu-glib (D-Bus exported)              |
+| Settings Storage    | GConf                             | GSettings                                       |
+| Translations        | Intltool                          | Native gettext (`msgfmt --desktop`)             |
+| D-Bus Binding       | dbus-glib                         | GDBus (GLib native)                             |
+| Code Generation     | GOB2                              | Hand-maintained C source                        |
+| Device Detection    | HAL                               | GUDev (gudev-1.0)                               |
+| Panel Applet        | libpanelapplet-4.0 + Bonobo       | Removed (replaced by gpilot-tray)              |
+
+### System Tray (gpilot-tray)
+
+The old GNOME Panel applet (`pilot.c`) depended on `libpanelapplet-4.0`, which
+is unavailable in GNOME 40+. It has been replaced with `gpilot-tray`, a
+standalone system tray application that implements the
+`org.kde.StatusNotifierItem` D-Bus protocol directly via GDBus. Context menus
+are exported over D-Bus using `libdbusmenu-glib`.
+
+Requirements
+------------
+
+- GTK 4 (>= 4.6)
+- GLib (>= 2.72)
+- pilot-link (>= 0.13.1)
+- libxml2
+- GUDev (gudev-1.0)
+- libdbusmenu-glib (dbusmenu-glib-0.4) — for gpilot-tray
+
+Building
+--------
+
+```sh
+./configure --prefix=/usr --enable-tray --enable-usb --enable-network
+make
+make install
+```
+
+For Debian/Ubuntu packaging:
+
+```sh
+dpkg-buildpackage -us -uc -b
+```
+
+Usage
+-----
+
+Start the system tray icon:
+
+```sh
+gpilot-tray &
+```
+
+Configure devices and conduits via the GNOME Pilot settings capplet, or
+right-click the tray icon for the context menu (Restore, Pause, Restart
+Daemon, Sync Log, Settings, etc.).
+
+Configuration files are stored in `~/.gnome-pilot/`.
+
+Bug Reports
+-----------
+
+Please report issues at https://github.com/onionmixer/gnome-pilot/issues
+
+License
+-------
+
+GPL-2.0-or-later
+
+Original Authors
+-----------------
+
+Eskil Heyn Olsen, JP Rosevear, and the GNOME community (1998-2011).

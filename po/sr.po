@@ -1,0 +1,1610 @@
+# Serbian translation of gnome-pilot
+# Courtesy of Prevod.org team (http://www.prevod.org/) -- 2003.
+#
+# This file is distributed under the same license as the gnome-pilot package.
+#
+# Maintainer: Данило Шеган <dsegan@gmx.net>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2003-09-07 14:02+0200\n"
+"Last-Translator: Данило Шеган <dsegan@gmx.net>\n"
+"Language-Team: Serbian (sr) <serbiangnome-lista@nongnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "Користан алат"
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Изабери пилота"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Директоријум"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Прикажи обавештења"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Изврши по клику"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "Особине Гномовог усклађивача са Пилотом"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "ИБ пилота"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Поврати пилота"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Подножје за усклађивање"
+
+#: applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "ток gnome-pilot-а"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "Усклађује..."
+
+#: applet/pilot.c:163
+#, c-format
+msgid "%s Synchronizing"
+msgstr "Усклађује %s"
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr "База %v од %u"
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "Спремно за усклађивање"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Захтев %ld је извршен\n"
+
+#: applet/pilot.c:228
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "Усклађивање %s : %s"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: започето\n"
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr "Завршено %s : %s"
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: завршено\n"
+
+# bug: plural-forms
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr "слогова: %v од %u"
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Пилот се управо усклађује.\n"
+"Сачекајте да заврши."
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "Није повезан. Поново покрените услужни програм."
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Није повезан на gpilotd.\n"
+"Поново покрените услужни програм."
+
+#: applet/pilot.c:373
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot програмче"
+
+#: applet/pilot.c:375
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "© 2000–2003 — Задужбина за Слободни Софтвер"
+
+#: applet/pilot.c:376
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "Праћење превлачења и пуштања, и корисничког сучеља за gpilotd.\n"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr "отказује %d"
+
+#: applet/pilot.c:524
+#, c-format
+msgid "Restoring %s"
+msgstr "Враћа %s"
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "Нема из ког директоријума да вратим."
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Изаберите усклађивање на подножју да\n"
+"вратите или откажете радњу."
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "Неуспео захтев за враћање"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Усклађивање пилота је управо у току.\n"
+"Да ли сте сигурни да желите поново покренете услужни програм?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Покушава да се повеже са услужним програмом Гномовог пилота"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "Није забележено последње усклађивање."
+
+#: applet/pilot.c:687
+msgid "Continue"
+msgstr "Настави"
+
+#: applet/pilot.c:689
+msgid "Pause Daemon"
+msgstr "Привремено заустави услужни програм"
+
+#: applet/pilot.c:709
+msgid "Daemon paused..."
+msgstr "Услужни програм је привремено заустављен..."
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Није повезан. Поново покрените услужни програм да се повежете"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Неуспело извршавање „%s“."
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "инсталира „%s“ у „%s“."
+
+# bug: dnd is not easily translated
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr "непозната врста превлачења и пуштања"
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr "уклони gpilot-applet"
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "Не могу да пронађем pilot-applet.glade"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Наредба коју треба извршити по клику на програмче"
+
+#: applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Прикажи обавештења у искачућим прозорима"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Подешавања пилота"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Име"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ИБ"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "Корисничко име"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Порт"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Брзина"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Врста"
+
+# Они служе за разна преношења података између пилот-уређаја и других уређаја
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Преносник"
+
+# bug: "synchronize some action", or "action that synchronizes"???
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Радња усклађивања"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Да ли сте сигурни да желите да уклоните пилота %s?"
+
+#: capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "_Уреди овог пилота..."
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "Уреди тренутно изабраног пилота"
+
+#: capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "У_клони овог пилота"
+
+#: capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "Уклони тренутно изабраног пилота"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Да ли сте сигурни да желите да обришете уређај %s?"
+
+#: capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "У_реди овај уређај..."
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "Уреди тренутно изабрани уређај"
+
+#: capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "У_клони овај уређај"
+
+#: capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "Уклони тренутно изабрани уређај"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Не може да покрене преносника %s."
+
+#: capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "Укључи _овог преносника"
+
+#: capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "Искључи тренутно изабраног преносника"
+
+#: capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "_Искључи овог преносника"
+
+#: capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "Укључи тренутно изабраног преносника"
+
+#: capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "_Подешавања..."
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "Измени подешавања изабраног преносника"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr ""
+"Не могу да образујем прозор са подешавањима пилота. Неисправна подешавања "
+"преносника."
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Постављање није завршено и подешавања неће бити сачувана. Сигурно желите да "
+"изађете?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Управо ће послати наредне податке пилоту.\n"
+"Корисничко име: %s\n"
+"ИБ: %d\n"
+"Молим убаците пилота у %s (%s) и притисните дугме за усклађивање."
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Управо ће преузети корисничко име и ИБ са пилота.\n"
+"Молим убаците пилота у %s (%s) и притисните дугме за усклађивање."
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "Нисам успео са слањем захтева gpilotd-у"
+
+#: capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"Успешно је преузео корисничко име и ИБ од пилота.\n"
+"Корисничко име: %s\n"
+"ИБ: %d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Молим убаците пилота у %s (%s) и притисните дугме за усклађивање, или "
+"обуставите ову радњу."
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "Неуспео захтев за добијање ИБ-а пилота"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "Неуспео захтев за постављање ИБ-а пилота"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "Радња:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Додај..."
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Изаберите уређај"
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Радње са преносником"
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Опис преносника"
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Подешавања преносника"
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Преносници"
+
+#: capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Честитамо, подесили сте Гномовог пилота!\n"
+"\n"
+"Можете изменити подешавања Гномовог пилота у сваком тренутку\n"
+"помоћу листова „Веза пилота“ и „Преносници“ у контролном центру.\n"
+"\n"
+"Можете пратити усклађивање Гномовог пилота додавањем програмчета \n"
+"за везу са пилотом на ваш панел."
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Подешавања подножја"
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Уклони"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Подешавања уређаја"
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Уређаји"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Искључи"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "Искључено"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Уреди..."
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Укључи"
+
+#: capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "Унесите корисничко име које желите да држите на вашем пилоту"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr ""
+"Преузмите корисничко име и ИБ са постојећег пилота који је раније коришћен."
+
+#: capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "Преузми са пилота"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Подешавања Гномовог пилота"
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Првобитно усклађивање"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+msgid "IrDA"
+msgstr "IrDA"
+
+# bug: basedir -> base directory
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Локални основни директоријум"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr "Мрежа"
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr ""
+"Не, никад нисам раније користио програме за усклађивање са овим пилотом. "
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "Ништа"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr "Једновремена радња:"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Својства пилота"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "Идентификација пилота"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Име пилота"
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "Име пилота:"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Пилоти"
+
+#: capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "Пошаљи пилоту"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr "Редно"
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Посатви корисничко име и ИБ за новог пилота."
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "Постави корени директоријум за смештање свих датотека пилота."
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Подешавања..."
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Успешно"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "Име за вашег пилота. Користи се само за распознавање."
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"Овај целобројни ИБ означава вашег пилота и мора бити јединствен међу свим "
+"пилотима које користите."
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Временско ограничење"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr "USB"
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Корисничко име"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Корисничко име и ИБ за постављање на пилоту"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Корисничко име:"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "Добродошли у Гномов пилот!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Да, раније сам користио програме за усклађивање са овим пилотом. "
+
+#: capplet/gpilotd-capplet.glade.h:67
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Изгледа да по први пут покрећете Гномовог пилота.\n"
+"Наредни кораци ће припремити програм за усклађивање.\n"
+"Накнадно ћете увек моћи да измените све изборе из листа „Веза пилот“ у "
+"Гномовом контролном центру.\n"
+"\n"
+"Притисните „Напред“ да наставите.\n"
+"Притисните „Откажи“ да изађете."
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Покрени само помоћника"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Грешка при припремању контролног програмчета за gpilotd"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Грешка при учтавању стања пилота, одустаје"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Не могу да се прикључим услужном програму Гномовог пилота"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr ""
+"Не могу да покренем помоћника уколико су пилоти или подножја већ подешена"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Подеси ПалмОС уређаје"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "ПалмОС уређаји"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "Користи подешавања преносника"
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "Усклади"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "Пренеси са пилота"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "Пренеси на пилот"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "Споји са пилота"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "Споји на пилота"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "Укључено"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "Морате имати подешен бар један уређај"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Наведени основни директоријум постоји али има неодговарајућа овлашћења.\n"
+"Молим поправите то или изаберите неки други директоријум"
+
+# bug: directory is not a directory???
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Наведени основни директоријум постоји али није директоријум.\n"
+"Молим учините га дирекоријумом или изаберите неки други директоријум"
+
+# bug: permitions -> permissions
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Нисам могао да образујем наведени основни директоријум.\n"
+"Молим проверите овлашћења за унету путању или изаберите неки други "
+"директоријум"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Путања наведена за основни директоријум је неисправна.\n"
+"Молим изаберите неки други директоријум"
+
+# bug: string composition
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "Неисправна овлашћења за читање/писање за"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "Проверите овлашћења за уређај и покушајте поново"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr "Проверава за уклоњене базе података"
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr "Преименује %s"
+
+# bug: what's wrong with "Renaming %s to %s"???
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr "на %s"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s није измењен од последњег усклађивања"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "Прави резервни примерак за %s"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Не могу да направим резервни примерак датотеке %s."
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr "Скупља податке за враћање..."
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "Директоријум за резерве"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "Направи резервне примерке само измењених база"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "Уклони локалну базу ако је уклоњена са пилота"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr "колико старих резервних примерака да држи"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "Неуспешна инсталација %s"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Инсталира %s са %s..."
+
+#: conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "Инсталира %s..."
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Инсталирај одмах"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Одложена инсталација"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Који пилот да инсталира"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "ПИЛОТ"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Не могу да сазнам имена пилота"
+
+# Овде недостаје превод за једнину.
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Следеће датотеке су неисправне :\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Инсталирам на %s:\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Нема датотека које треба инсталирати"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Притисните дугме за усклађивање на подножју да инсталирате или откажите "
+"радњу."
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+msgid "Gnome Pilot File Manager"
+msgstr "Управник датотека Гномовог пилота"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr ""
+"Сва права задржана 1998 — Маниш (Manish) и Нејл Вахараџани (Neil "
+"Vachharajani)"
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+"Управља датотекама и прогамима на вашем Палм Пилоту\n"
+"Palm Pilot је заштићена робна марка 3com-а."
+
+#: gpilot-fileman/fileman.c:71
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Сигурно желите да изађете из управника датотека?"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "Овај, ово не треба да се деси, недовољно имена датотека\n"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr "Обуставља..."
+
+#: gpilot-fileman/fileman.c:244
+msgid "No files to install!!"
+msgstr "Нема датотека које треба да инсталира!"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr "Ток инсталације"
+
+#: gpilot-fileman/fileman.c:256
+msgid "Installing... "
+msgstr "Инсталирам..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "Сада притисните дугме за усклађивање на вашем пилоту!"
+
+# bug: too many exlamations (!!!)
+#: gpilot-fileman/fileman.c:442
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "Не могу да отворим или направим изабрано име као директоријум!"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr "Изабрано место за резервне примерке није директоријум!"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr "Ток прављења резервних примерака"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr "Прави резервне примерке..."
+
+#: gpilot-fileman/fileman.c:484
+msgid "Unable to open status pipe"
+msgstr "Не могу да отворим цевку за стање"
+
+#: gpilot-fileman/fileman.c:495
+msgid "Unable to open message pipe"
+msgstr "Не могу да отворим цевку за поруке"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr "Не могу да поделим процес"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr "Директоријум за резервне примерке"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "О програму"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr "О управнику датотека Гномовог пилта"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr "Инсталирај датотеке"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr "Инсталира изабране датотеке на повезаног пилота"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr "Резервни примерци за пилота"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr "Прави резервне примерке датотека са повезаног пилота"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "Особине"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "Особине за управника датотека Гномовог пилота"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "Изађи"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr "Излази из програма"
+
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "Датотека"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "Помоћ"
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr "Додај ->"
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr "<- Уклони"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr "<- Уклони све"
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr "Изабране датотеке"
+
+#: gpilot-fileman/pilotfunc.c:88
+msgid "Unable to bind to pilot\n"
+msgstr "Не могу да се привежем на пилота\n"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr "Излази по отказу"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, c-format
+msgid "Unable to open '%s'!"
+msgstr "Не могу да отворим „%s“!"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, c-format
+msgid "Install failed %s."
+msgstr "Неуспешна инсталација %s."
+
+# bug: unclear, perhaps "NOT all data is backed up"
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "Излази по отказу, НИСУ направљени резервни примерци свих података."
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr "Неуспешно, не могу да направим датотеку\n"
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr "Неуспешно, не могу да направим резервни примерак базе\n"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr "Пилот уређај"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr "Потврди по излазу"
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "Опште"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Услужни програм Гномовог пилота"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "обрисан слог пилота је измењен у локалу, не брише\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "обрисан локални слогје измењен на пилоту, не брише\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "сукоб при спајању, замењени су локални и слогови пилота\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr "сукоб при архивирању и измени, замењени су локални и слогови пилота\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "сукоб при архивирању и измени, локални слог је послат пилоту\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr "сукоб при архивирању и измени, слог са пилота је снимљен у локалу\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Покретање преносника није успело, обуставља рад"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr "Не могу да уклоним све слогове из базе пилота, обуставља рад."
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "Преносник није вратио слог"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Не могу да уклоним све слогове из локалне базе, обуставља рад."
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Грешка у преноснику, не могу да пронађем новододати слог"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "Пренос на пилота није успео!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "Пренос са пилота није успео!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "Спајање на пилоту није успело!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "Спајање са пилотом није успело!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Усклађивање није успело!"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Нисам могао да отворим уређај %s (%s): разлог: „%s“."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"Гномов пилот није могао да отвори уређај %s (%s).\n"
+"Разлог: „%s“."
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "Непозната врста уређаја"
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Број уређаја је подешен на 0"
+
+# bug: s/configure/configured/
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Нема подешених подножја.\n"
+"Молим користите gpilotd-control-applet (користите \n"
+"контролни центар) за подешавање Гномовог пилота."
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Нема доступних уређаја"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Број пилота је подешен на 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Нема подешених пилота.\n"
+"Молим користите gpilotd-control-applet (користите \n"
+"контролни центар) за подешавање Гномовог пилота."
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "Не могу да се привежем са пилотом"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "Непознат пилот, не поклапа се ИБ/име корисника %ld"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr "Користите Гномов контролни центар за подешавање пилота"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Непознат пилот — ниједан пилот не одговара ИБ-у %ld\n"
+"Користите Гномов контролни центар за подешавање ИБ-а пилота"
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "Подножје %s има %d догађаја"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "Поставља податке корисника..."
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "Усклађивање се наставља"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "Добавља податке корисника..."
+
+#: gpilotd/gpilotd.c:463
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Примећен је захтев за мрежним усклађивањем, усклађује пилота"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Притиснуто је дугме за усклађивање, усклађује пилота"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "ИБ пилота је %ld, име је %s, власник је %s"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "На домаћину %s\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "На домаћину %d\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "Усклађивање је завршено"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "Усклађивање је прерано завршено"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Основни директоријум %s је неисправан. \n"
+"Молим поправите га или користите Гномов контролни центар да изаберете неки "
+"други директоријум."
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+msgid "An error occured while getting the pilot's system data"
+msgstr "Дошло је до грешке при преузимању системских података пилота"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "Дошло је до грешке при преузимању корисничких података пилота"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Завршени догађаји за поднођје %s (%s)"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "Пробуди на %s"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "Прати %s (%s, %s)"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Прати %s (%s)"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Излази (примио сам SIGTERM)..."
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "Излази (примио сам SIGINT)..."
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr ""
+"Не могу да отворим или направим датотеку %s са овлашћењима за читање и писање"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Не могу да нађем лични директоријум за КИБ %d"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr "Не могу да направим директоријум за ред инсталације датотека"
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr "Гасим уређаје"
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "Поново чита подешавања..."
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr "не-резервни преносни у списку преносника за резервне примерке"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr "Направљен је резервни примерак за %s\n"
+
+#: gpilotd/manager.c:275
+#, c-format
+msgid "%s backup failed\n"
+msgstr "Неуспешно прављење резервног примерка за %s\n"
+
+#: gpilotd/manager.c:300
+msgid "Collecting synchronization info..."
+msgstr "Скупља податке о усклађивању..."
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Усклађује %s\n"
+
+#: gpilotd/manager.c:427
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Пренеси на пилота %s\n"
+
+#: gpilotd/manager.c:445
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Пренеси са пилота %s\n"
+
+#: gpilotd/manager.c:463
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Споји на пилоту %s\n"
+
+#: gpilotd/manager.c:481
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Споји са пилота %s\n"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Прво усклађивање преносника %s..."
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "непозната радња усклађивања (%d = %s).\n"
+
+# bug: plural-forms
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Образује %d преносника..."
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Непознат преносник „%s“ у подешавањима!"
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Неуспешно учитавање преносника „%s“!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Неуспешно учитавање преносника „%s“!\n"
+
+#: gpilotd/manager.c:764
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Поставља корисника/ИБ na %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Тражен је преносник %s, али није нађен"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Не може да тражи преносника %s"
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(непозната база)"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Грешка у реду, непостојећи унос"
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "грешка: захтев није нађен за пилота %d, захтев %d"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "учитавање модула није подржано, кобно!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Сазнај податке о систему"
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Привремено заустави услужни програм"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Настави покретање услужног програма"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Поново покрени услужни програм"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Постави ИБ и име корисника"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "ИБ овог пилота"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Инсталирај датотеку"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "ДАТОТЕКА"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Врати директоријум"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "ДИРЕКТОРИЈУМ"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Покрени преносника"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "ПРЕНОСНИК"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Постави корисничко име"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "КОРИСНИЧКО-ИМЕ"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Прати деловање наведених пилота"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Прати све пилоте"
+
+#: utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "испиши пилоте према пријави (све за све пилоте)"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "ПРИЈАВА"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Наведите пилота на којем радите (подразумева се MyPilot)"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "НАЗИВ-ПИЛОТА"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Наведите подножје на којем радите (подразумева се Cradle0)"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "НАЗИВ-ПОДНОЖЈА"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Испишите базе наведених пилота"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"ПАЖЊА!!!\n"
+"Овај алат је саставни део Гномово пилота.\n"
+"Уколико не знате шта радите, не користите овај програм."
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "списак доступних преносника"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "преносник на којем да радим"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "испиши све особине"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "наведите пилота на којем да радим"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "ИБПИЛОТА"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "особине списка"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "списак доступних преносника и њиховог стања"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "укључи наведеног преносника"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "искључи наведеног преносника"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "укључи, и постави прво усклађивање на споро"
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "образуј и уклони преносника"
+
+# bug: string composition
+#~ msgid "Could not examine the port for"
+#~ msgstr "Не могу да испитам порт ради"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "Порт треба да указује на USB серијски порт"
+
+# bug: string composition: "for ..." can in many languages have different word order: use "for %s"
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "Порт треба да представља знаковни нарочити уређај, али није за"

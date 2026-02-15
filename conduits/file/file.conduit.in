@@ -1,0 +1,7 @@
+<gnome-pilot-conduit version="1.0">
+	<conduit id="gpfile1" type="shlib" location="@LIBDIR@/gnome-pilot/conduits/libfile_conduit-3.0.so"/>
+	<name value="File"/>
+	<conduit-attribute name="description" value="Installs files on the PDA"/>
+	<conduit-attribute name="default-synctype" value="custom"/>
+     	<conduit-attribute name="settings" value="FALSE"/>
+</gnome-pilot-conduit>

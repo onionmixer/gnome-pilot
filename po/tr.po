@@ -1,0 +1,1973 @@
+# -------------------------------------------------------
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Fatih Demir <kabalak@gmx.net>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot 0.1.53\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2000-07-29 21:46+0200\n"
+"Last-Translator: Fatih Demir <kabalak@gmx.net>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Pilot'u seç"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Dizin"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Ikazları göster"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Tıklayınca çalıştır"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME Pilot Eşleştirme özellikleri"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "Pilot ID'si"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Pilot'a geri yükle"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Yuvayı eşleştir"
+
+#: applet/pilot-applet.glade.h:10
+#, fuzzy
+msgid "gnome-pilot progress"
+msgstr "Gnome-Pilot eşleştirme ilerlemesi"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "Eşleştiriyorum ..."
+
+#: applet/pilot.c:163
+#, fuzzy, c-format
+msgid "%s Synchronizing"
+msgstr "Eşleştiriyorum ..."
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr ""
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "Eşleştirmeye hazırım"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr ""
+
+#: applet/pilot.c:228
+#, fuzzy, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s'yi eşleştiriyorum\n"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr ""
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr ""
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr ""
+
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr ""
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Pilot şimdi eşleştiriliyor.\n"
+"Lütfen eşleştirmesinin bitmesini bekle."
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "Bağlantı yok. Lütfen sunucuyu yeniden başlat"
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"gpilotd'ye bağlı değilim.\n"
+"Lütfen sunucuyu yeniden başlat."
+
+#: applet/pilot.c:373
+#, fuzzy
+msgid "gnome-pilot applet"
+msgstr "Gnome Pilot uygulağı"
+
+#: applet/pilot.c:375
+#, fuzzy
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "Tel'if hakkı (C) 2000 Free Software Foundation"
+
+#: applet/pilot.c:376
+#, fuzzy
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr ""
+"gpilotd için bir görüntülü gösterge.\n"
+"Wesitesi : http://www.gnome.org/gnome-pilot"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr ""
+
+#: applet/pilot.c:524
+#, fuzzy, c-format
+msgid "Restoring %s"
+msgstr "%s'yi %s'den geri yükliyorum ..."
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "Geriye yüklenecek dizin yok."
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Geriye yüklemek için lütfen yuvayı eşleştir\n"
+" yada işlemi iptal et."
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "Geriye yükleme isteği başarısız oldu"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Pilot eşleştirmesi şimdi uygulanıyor.\n"
+"Sunucuyu yeniden başlatmaktan emin misin ?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "GnomePilot sunucusuna bağlanmayı deniyorum"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "Birimde son eşleştirme yoktur."
+
+#: applet/pilot.c:687
+#, fuzzy
+msgid "Continue"
+msgstr "Eşleştirme devam ediyor"
+
+#: applet/pilot.c:689
+#, fuzzy
+msgid "Pause Daemon"
+msgstr "Sunucuyu durdur"
+
+#: applet/pilot.c:709
+#, fuzzy
+msgid "Daemon paused..."
+msgstr "Sunucu ara verdi"
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Bağlantı yok. Yeniden bağlanmak için sunucuyu yeniden başlat"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s'nin çalıştırılması başarısız oldu"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, fuzzy, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "%s'ye yükliyorum :\n"
+
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr ""
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr ""
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "pilot-applet.glade dosyasını bulamadım"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr ""
+
+#: applet/pilot.schemas.in.h:2
+#, fuzzy
+msgid "Display notices in popup windows"
+msgstr "Ikazları göster"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Pilot ayarları"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Isim"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "Kullanıcı adı"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Kapı"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "hız"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+#, fuzzy
+msgid "Type"
+msgstr "Eşleştirme tipi"
+
+#: capplet/gnome-pilot-capplet.c:572
+#, fuzzy
+msgid "Conduit"
+msgstr "Parça ismi"
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Eşleştirme eylemi"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Pilot %s'yi silmekten emin misin ?"
+
+#: capplet/gnome-pilot-capplet.c:799
+#, fuzzy
+msgid "_Edit this pilot..."
+msgstr "Bu noktayı değiştir ..."
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr ""
+
+#: capplet/gnome-pilot-capplet.c:802
+#, fuzzy
+msgid "_Delete this pilot"
+msgstr "Bu noktayı sil"
+
+#: capplet/gnome-pilot-capplet.c:803
+#, fuzzy
+msgid "Delete the currently selected pilot"
+msgstr "Bu noktayı sil"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, fuzzy, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Aygıt %s ( %s )'yi silmekten emin misin ?"
+
+#: capplet/gnome-pilot-capplet.c:959
+#, fuzzy
+msgid "_Edit this device..."
+msgstr "Bu aygıtı değiştir ..."
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr ""
+
+#: capplet/gnome-pilot-capplet.c:962
+#, fuzzy
+msgid "_Delete this device"
+msgstr "Bu aygıtı sil"
+
+#: capplet/gnome-pilot-capplet.c:963
+#, fuzzy
+msgid "Delete the currently selected device"
+msgstr "Bu aygıtı sil"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, fuzzy, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%d parçayı başlatıyorum ..."
+
+#: capplet/gnome-pilot-capplet.c:1165
+#, fuzzy
+msgid "_Enable this conduit"
+msgstr "belirtilen parçayı aç"
+
+#: capplet/gnome-pilot-capplet.c:1166
+#, fuzzy
+msgid "Disable the currently selected conduit"
+msgstr "belirtilen parçayı kapat"
+
+#: capplet/gnome-pilot-capplet.c:1168
+#, fuzzy
+msgid "_Disable this conduit"
+msgstr "belirtilen parçayı kapat"
+
+#: capplet/gnome-pilot-capplet.c:1169
+#, fuzzy
+msgid "Enable the currently selected conduit"
+msgstr "belirtilen parçayı aç"
+
+#: capplet/gnome-pilot-capplet.c:1174
+#, fuzzy
+msgid "_Settings..."
+msgstr "Ayarlar"
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr ""
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr ""
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Kurulum tamamen bitirilmemiş ve ayarlar kaydedilmeyektir.\n"
+"Yine de cıkmak istediğinden emin misin ?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Bu bilgileri Pilot'a göndermek üzereyim.\n"
+"Kullanıcı adı : %s\n"
+"Numara : %d\n"
+"Lütfen Pilot'u %s ( %s )'ye koy ve eşleştirme basmasına bas."
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Kullanıcı adını ve numarayı Pilot'tan almak üzereyim.\n"
+"Lütfen Pilot'u %s ( %s )'ye koy ve eşleştirme basmasına bas."
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "gpilotd'ye isteği gönderemedim"
+
+#: capplet/gnome-pilot-druid.c:669
+#, fuzzy, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"Kullanıcı adını ve numarasını başærıyla Pilot'tan aldım.\n"
+"Kullanıcı adı : %s\n"
+"Numara : %d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "Pilot numarasını alma işlemi başarısız oldu"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "Pilot numarasını belirtme işleme başarısız oldu"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+#, fuzzy
+msgid "/dev/ttyS0"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:4
+#, fuzzy
+msgid "/dev/ttyS1"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:5
+#, fuzzy
+msgid "/dev/ttyS2"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:6
+#, fuzzy
+msgid "/dev/ttyS3"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:7
+#, fuzzy
+msgid "/dev/ttyqe"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:8
+#, fuzzy
+msgid "Action:"
+msgstr "Eşleştirme eylemi"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Ekle ..."
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Aygıtı seç"
+
+#: capplet/gpilotd-capplet.glade.h:11
+#, fuzzy
+msgid "Conduit Actions"
+msgstr "Hatırlatma Parçası Seçenekleri"
+
+#: capplet/gpilotd-capplet.glade.h:12
+#, fuzzy
+msgid "Conduit Description"
+msgstr "Hatırlatma Parçası Seçenekleri"
+
+#: capplet/gpilotd-capplet.glade.h:13
+#, fuzzy
+msgid "Conduit Settings"
+msgstr "Parça ayarları ..."
+
+#: capplet/gpilotd-capplet.glade.h:14
+#, fuzzy
+msgid "Conduits"
+msgstr "Parça ismi"
+
+#: capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Yuva ayarları"
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Sil"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Aygıt ayarları"
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Aygıtlar"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Kapat"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "Kapalı"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Değiştir ..."
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Aç"
+
+#: capplet/gpilotd-capplet.glade.h:30
+#, fuzzy
+msgid "Enter user name you want stored on your pilot"
+msgstr "Pilot %s'yi silmekten emin misin ?"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr "Önceden kullanılmış kullanıcı adını ve numarasını Pilot'tan al."
+
+#: capplet/gpilotd-capplet.glade.h:32
+#, fuzzy
+msgid "Get from pilot"
+msgstr "pilot'tan al"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Gnome Pilot ayarları"
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Ilk eşleştirme"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+#, fuzzy
+msgid "IrDA"
+msgstr "ID"
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Yerel ana dizin"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr "Hayır, bu Pilot'la hiç bir eşleştirme uygulaması tanışamadı."
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:42
+#, fuzzy
+msgid "One Time Action:"
+msgstr "Hatırlatma Parçası Seçenekleri"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Pilot özellikleri"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "Pilot tanımlaması"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Pilot ismi"
+
+#: capplet/gpilotd-capplet.glade.h:46
+#, fuzzy
+msgid "Pilot Name:"
+msgstr "Pilot ismi"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Pilot'lar"
+
+#: capplet/gpilotd-capplet.glade.h:50
+#, fuzzy
+msgid "Send to pilot"
+msgstr "pilot'a gönder"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Kullanıcı adını ve numarasını yeni bir Pilot'ta oturt."
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:54
+#, fuzzy
+msgid "Settings..."
+msgstr "Ayarlar"
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Başarı"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Kullanıcı adı"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Pilot'ta oturtulacak kullanıcı adı ve ID"
+
+#: capplet/gpilotd-capplet.glade.h:64
+#, fuzzy
+msgid "User Name:"
+msgstr "Kullanıcı adı"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "gnome-pilot'a hoşgeldin!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Evet, bu Pilot'la başka eşleştirme uygulamasını kullandım."
+
+#: capplet/gpilotd-capplet.glade.h:67
+#, fuzzy
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"gnome-pilot'u ilk çalıştırmışa benziyorsun.\n"
+"Bazı bilgilerle gnome-pilot eşleştirmek için kuracaktır.\n"
+"Seçenekleri sonradan GNOME Ayarlar Merkezinden\n"
+"her zaman değiştirebilirsin.\n"
+"\n"
+"Devam etmek için 'Ileri''ye bas.\n"
+"Kurulumu iptal etmek için 'Iptal''a bas."
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Sadece sihirbazı başlat"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "gpilotd yönetim uygulağını başlatırken bir hata oluştu"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Pilot'un durumunu yüklerken bir hata oluştu, bitiriyorum"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "GnomePilot sunucusuna bağlanamadım"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr "Pilot'lar yada yuvalar zaten ayarlanmış ise, sihirbazı çalıştıramam"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr ""
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+#, fuzzy
+msgid "PalmOS Devices"
+msgstr "Pilot ID'si"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "Parça ayarlarını kullan"
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "Eşleştir"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "Pilot'tan kopyala"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "Pilot'a kopyala"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "Pilot'tan birleştir"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "Pilot'a birleştir"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "Açık"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "En azından bir aygıtın ayarlanması lazım"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Belirtilen ana dizin var, fakat o dizinin erişim hakları yanlış.\n"
+"Lütfen bunu düzelt yada başka bir dizini seç."
+
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Belirtilen ana dizin var, fakat orası bir dizin değildir.\n"
+"Lütfen orayı ya bir dizin yap yada başka bir dizini seç."
+
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Belirtilen ana dizin yaratılınamadı.\n"
+"Lütfen o belirtilen dizinlemeye göre erişim haklarına sahip olduğunu te'min "
+"et yadabaşka bir dizin belirle"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Ana dizin için belirtilen dizinleme geçersizdir.\n"
+"Lütfen başka bir dizin belirle"
+
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "Okuma/Yazma hakları burada başarışiz oldu"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "Lütfen aygıtın erişim haklarını gözden geçir ve bir daha dene"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr ""
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr ""
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr ""
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "son eşleştirmeden beri %s değişmemiş"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "%s'yi yedekliyorum"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Yedekleme dosyası %s'yi yaratamadım"
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr ""
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "Yedekleme dizini"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "Sadece değişmiş tabanları yedekle"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "Yerel taban Pilot'ta silindiyse, yerel tabanı da sil"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr ""
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, fuzzy, c-format
+msgid "Install of %s failed"
+msgstr "%s'nin yüklenmesi başarısız oldu"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "%s'yi %s'den yükliyorum ..."
+
+#: conduits/file/file_conduit.c:289
+#, fuzzy, c-format
+msgid "Installing %s..."
+msgstr "%s'yi %s'den yükliyorum ..."
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Derhal yükle"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Gecikmeli yükle"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Yüklenecek Pilot"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PILOT"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Pilot isimlerini alamadım"
+
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Bu dosyalarda hata oldu :\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "%s'ye yükliyorum :\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Yüklencek dosya yok"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Yuva'daki eşleştirme basmasını basıp işlemi başlat\n"
+" yada işlemi iptal et."
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+#, fuzzy
+msgid "Gnome Pilot File Manager"
+msgstr "Gnome Pilot ayarları"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+
+#: gpilot-fileman/fileman.c:71
+#, fuzzy
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Gnome Pilot ayarları"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+#, fuzzy
+msgid "Aborting..."
+msgstr "Bilgi ..."
+
+#: gpilot-fileman/fileman.c:244
+#, fuzzy
+msgid "No files to install!!"
+msgstr "Yüklencek dosya yok"
+
+#: gpilot-fileman/fileman.c:252
+#, fuzzy
+msgid "Install Progress"
+msgstr "Dosyayı yükle"
+
+#: gpilot-fileman/fileman.c:256
+#, fuzzy
+msgid "Installing... "
+msgstr "%s'yi %s'den yükliyorum ..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:442
+#, fuzzy
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "Dosya %s'yi bu okuma/yazma haklarıyla okuyamadım/yaratamadım"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:463
+#, fuzzy
+msgid "Backup Progress"
+msgstr "Yedekleme dizini"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr ""
+
+#: gpilot-fileman/fileman.c:484
+#, fuzzy
+msgid "Unable to open status pipe"
+msgstr "Pilot'a bağlanamadım"
+
+#: gpilot-fileman/fileman.c:495
+#, fuzzy
+msgid "Unable to open message pipe"
+msgstr "Pilot isimlerini alamadım"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:573
+#, fuzzy
+msgid "Backup Directory"
+msgstr "Yedekleme dizini"
+
+#: gpilot-fileman/fileman.c:591
+#, fuzzy
+msgid "About"
+msgstr "Bilgi ..."
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:602
+#, fuzzy
+msgid "Install Files"
+msgstr "Dosyayı yükle"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:608
+#, fuzzy
+msgid "Backup Pilot"
+msgstr "Yedekleme seçenekleri"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:615
+#, fuzzy
+msgid "Properties"
+msgstr "Özellikler ..."
+
+#: gpilot-fileman/fileman.c:615
+#, fuzzy
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "Gnome Pilot ayarları"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:631
+#, fuzzy
+msgid "File"
+msgstr "dosya"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr ""
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr ""
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr ""
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr ""
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr ""
+
+#: gpilot-fileman/pilotfunc.c:88
+#, fuzzy
+msgid "Unable to bind to pilot\n"
+msgstr "Pilot'a bağlanamadım"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr ""
+
+#: gpilot-fileman/pilotfunc.c:119
+#, fuzzy, c-format
+msgid "Unable to open '%s'!"
+msgstr "Pilot'a bağlanamadım"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, fuzzy, c-format
+msgid "Install failed %s."
+msgstr "Dosyayı yükle"
+
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr ""
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr ""
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr ""
+
+#: gpilot-fileman/preferences.c:82
+#, fuzzy
+msgid "Pilot Device"
+msgstr "Pilot ID'si"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr ""
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr ""
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+#, fuzzy
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome Pilot ayarları"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Parçanın başlat#_lması başarısız oldu, işlemi bitiriyorum."
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr ""
+"Pilot'un bilgi tabanındaki yekin kayıtlar silinemez, işlemi bitiriyorum."
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "Parça bir kaydı geri veremedi"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Yerel bilgi tabanındaki yekin kayıtlar silinemez, işlem bitiriliyor."
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Parçada hata var, yeni eklenmiş kayıt bulunamadı"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+#, fuzzy
+msgid "Copy to pilot failed!"
+msgstr "Pilot'a kopyala"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+#, fuzzy
+msgid "Copy from pilot failed!"
+msgstr "Pilot'tan kopyala"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+#, fuzzy
+msgid "Merge to pilot failed!"
+msgstr "Pilot'a birleştir"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+#, fuzzy
+msgid "Merge from pilot failed!"
+msgstr "Pilot'tan birleştir"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+#, fuzzy
+msgid "Synchronization failed!"
+msgstr "Eşleştirme bitirildi"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Aygıt %s ( %s )'yi açamadım; nedeni : \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot aygıt %s ( %s )'yi açamadı.\n"
+"Nedeni : \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr ""
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Ayarlanılmış aygıtların sayısı 0"
+
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Hiç bir yuva ayarlanmamış.\n"
+"Lütfen 'gpilotd-control-applet' uygulamasını\n"
+"çalıştır yada gnomecc'yi kullan."
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Erişilir aygıt yok"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Ayarlanılmış Pilot'ların sayısı 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Hiç bir Pilot ayarlanmamış.\n"
+"Lütfen 'gpilotd-control-applet' uygulamasını\n"
+"çalıştır yada gnomecc'yi kullan."
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "Pilot'a bağlanamadım"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "Bilinmeyen Pilot, %ld'ye uyan numara/kullanıcı adı yok"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr ""
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Bilinmeyen Pilot - hiç bir %ld numaralı Pilot yok\n"
+"Pilot'un numarasını belirtmek için lütfen gnomecc'yi kullan"
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "Yuva %s'nin %d işlemi var"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "Kullanıcı bilgilerini oturtuyorum ..."
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "Eşleştirme devam ediyor"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "Kullanıcı bilgilerini alıyorum ..."
+
+#: gpilotd/gpilotd.c:463
+#, fuzzy
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Eşleştirme düğmesine basıldı, Pilot'u eşleştiriyorum"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Eşleştirme düğmesine basıldı, Pilot'u eşleştiriyorum"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "Pilot numarası %ld, ismi %s, sahibi %s"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "Ortam %s\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "Ortam %d\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "Eşleştirme bitirildi"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "Eşleştirme erken bitirildi"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Ana dizin %s geçersizdir.\n"
+"Lütfen bunu düzelt yada gnomecc ile başka bir dizin belirt."
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+#, fuzzy
+msgid "An error occured while getting the pilot's system data"
+msgstr "Pilot'un kullanıcı bilgilerini alırken bir hata oluştu"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "Pilot'un kullanıcı bilgilerini alırken bir hata oluştu"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Yuva %s ( %s ) için işlemler tamam"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "%s ile uyandım"
+
+#: gpilotd/gpilotd.c:977
+#, fuzzy, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "%s ( %s )'yi gözliyorum"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s ( %s )'yi gözliyorum"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Bitiriliyorum ( SIGTERM aldım ) ..."
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "Bitiriliyorum ( SIGINT aldım ) ..."
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr "Dosya %s'yi bu okuma/yazma haklarıyla okuyamadım/yaratamadım"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Uid %d için bir bark dizini bulamadım"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr ""
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr ""
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "Ayarları yeniden okuyorum ..."
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr ""
+"yedekleme parçaları listesinde yedeklemeyle alakası olmayan bir parça var"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr ""
+
+#: gpilotd/manager.c:275
+#, fuzzy, c-format
+msgid "%s backup failed\n"
+msgstr "%s'nin yedeklemesi başarısız oldu!"
+
+#: gpilotd/manager.c:300
+#, fuzzy
+msgid "Collecting synchronization info..."
+msgstr "Parça %s'nin ilk eşleştirmesidir ..."
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s'yi eşleştiriyorum\n"
+
+#: gpilotd/manager.c:427
+#, fuzzy, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Pilot'a kopyala"
+
+#: gpilotd/manager.c:445
+#, fuzzy, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Pilot'tan kopyala"
+
+#: gpilotd/manager.c:463
+#, fuzzy, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Pilot'a birleştir"
+
+#: gpilotd/manager.c:481
+#, fuzzy, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Pilot'tan birleştir"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Parça %s'nin ilk eşleştirmesidir ..."
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "bilinmeyen eşleştirme işlemi ( %d = %s ).\n"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d parçayı başlatıyorum ..."
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, fuzzy, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Bilinmeyen parça \"%s\" ayarlamada!"
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Parça \"%s\" yüklenemedi!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Parça \"%s\" yüklenemedi!\n"
+
+#: gpilotd/manager.c:764
+#, fuzzy, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Kullanıcı bilgilerini oturtuyorum ..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Parça %s istendi, fakatt bulunamadı"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Parça %s istenemez"
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "( bilinmeyen bilgi tabanı )"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr ""
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "hata : Pilot %d için bir istek bulunmadı, istek %d"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "modül yüklemesi desteklenmiyor; bu bir ağır hatadır!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr ""
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Sunucuyu durdur"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Sunucuyu yeniden çalıştır"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Sunucuyu yeniden başlat"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Kullanıcı adını ve numarasını belirle"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "Pilot'un numarası"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Dosyayı yükle"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "DOSYA"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Dizini geriye yükle"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIZIN"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Parçayı çalıştır"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "PARÇA"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Oturtulacak kullanıcı adı"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "KULLANICIADI"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Belirtilen Pilot'ların işlemlerini gözle"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Yekin Pilot'ları gözle"
+
+#: utils/gpilotd-client.c:51
+#, fuzzy
+msgid "list pilots by login (all for all pilots)"
+msgstr "Pilot'ları girişlere göre sırala"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "GIRIŞ"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Işlenecek Pilot'u belirle ( 'MyPilot' )"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTADI"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Işlenecek yuvayı belirle ( 'Cradle0' )"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "YUVAADI"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Pilot'un tabanlarını sırala"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"DIKKAT !!!\n"
+"Bu uygulama gnome-pilot paketinin bazı bölümleri için gereklidir.\n"
+"Ne yaptığını tam bilmediğin sürece bu uygulamayı kullanma."
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "erişilir parçaları sıralar"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "işletilicek parça"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "yekin özellikleri sırala"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "işletilicek pilot'u belirle"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "PILOTID"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "özellikleri sırala"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "erişilir parçaları ve durumlarını sırala"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "belirtilen parçayı aç"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "belirtilen parçayı kapat"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "aç ve ilk eşleştirmeyi yavaşlat"
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "durdur ve parçayı öldür"
+
+#~ msgid "Sync Type"
+#~ msgstr "Eşleştirme tipi"
+
+#~ msgid "Advanced"
+#~ msgstr "Gelişmiş"
+
+#, fuzzy
+#~ msgid "Sync PCId"
+#~ msgstr "Eşleştirme PC ID'si"
+
+#~ msgid "Copying to pilot..."
+#~ msgstr "Pilot'a kopyalıyorum ..."
+
+#~ msgid "Copying from pilot..."
+#~ msgstr "Pilot'tan kopyalıyorum ..."
+
+#~ msgid "Merging to pilot..."
+#~ msgstr "Pilot'a birleştiriyorum ..."
+
+#~ msgid "Merging from pilot..."
+#~ msgstr "Pilot'tan birleştiriyorum ..."
+
+#~ msgid "Using conduit settings for sync..."
+#~ msgstr "Eşleştirme için parça ayarlarını kullanıyorum ..."
+
+#~ msgid "Restore..."
+#~ msgstr "Geriye yükle ..."
+
+#~ msgid "Last sync log..."
+#~ msgstr "Son eşleştirmenin kaydı ..."
+
+#~ msgid "Conduit Settings..."
+#~ msgstr "Parça ayarları ..."
+
+#~ msgid "Pilot Link Settings..."
+#~ msgstr "Pilot bağı ayarları ..."
+
+#~ msgid "Properties..."
+#~ msgstr "Özellikler ..."
+
+#~ msgid "%P %%"
+#~ msgstr "%% %P"
+
+#~ msgid "Applet options"
+#~ msgstr "Uygulak seçenekleri"
+
+#~ msgid "Resume daemon"
+#~ msgstr "Sunucuyu yeniden başlat"
+
+#~ msgid "About..."
+#~ msgstr "Bilgi ..."
+
+#~ msgid "The gnome-pilot daemon is already running"
+#~ msgstr "gnome-pilot sunucusu zaten çalışıyor"
+
+#, fuzzy
+#~ msgid "Gnome Pilot Conduits"
+#~ msgstr "GnomePilot parçaları"
+
+#~ msgid "\n"
+#~ msgstr "\n"
+
+#, fuzzy
+#~ msgid "Disabled\n"
+#~ msgstr "Kapalı"
+
+#~ msgid "Restoring %s from %s... "
+#~ msgstr "%s'yi %s'den geri yükliyorum ..."
+
+#~ msgid "Restore of %s failed"
+#~ msgstr "%s'nin geriye yüklenmesi başarısız oldu"
+
+#, fuzzy
+#~ msgid "Listening on %s (%s)"
+#~ msgstr "%s ( %s )'yi gözliyorum"
+
+#~ msgid "%s this request.type == %d is not a install/restore"
+#~ msgstr "%s bu isteğin tipidir == %d bir yükleme/geriye yükleme değildir"
+
+#~ msgid "Please specify a cradle port"
+#~ msgstr "Lütfen bir yuva kapısını belirt"
+
+#~ msgid ""
+#~ "Press synchronize on the %s (%s)\n"
+#~ "or cancel the operation."
+#~ msgstr ""
+#~ "Lütfen %s ( %s )'de eşleştir yada\n"
+#~ "işlemi iptal et."
+
+#~ msgid "Pilot with this id or name already exists."
+#~ msgstr "Bu isimli yada numaralı bir Pilot zaten var."
+
+#~ msgid "Cradle with this port or name already exists."
+#~ msgstr "Bu isimli yada numaralı bir yuva zaten var."
+
+#~ msgid "Cannot find gpilotd-capplet.glade"
+#~ msgstr "gpilotd-capplet.glade dosyasını bulamadım"
+
+#~ msgid "Successfully sent UserName and ID to pilot."
+#~ msgstr "Kullanıcı adını ve numarasını başærıyla Pilot'a gönderdim."
+
+#~ msgid ""
+#~ "Congratulations!\n"
+#~ "\n"
+#~ "You have succesfully installed gnome-pilot.\n"
+#~ "\n"
+#~ "You can now setup individual conduits options from \n"
+#~ "control-center. If you started PilotSync applet you must \n"
+#~ "select \"Restart daemon\" menu.\n"
+#~ msgstr ""
+#~ "Tebrikler!\n"
+#~ "\n"
+#~ "gnome-pilot'u başarıyla yükledin.\n"
+#~ "\n"
+#~ "Şimdi ayarlar merkezinden diğer ayarları \n"
+#~ "değiştirebilirsin. PilotSync uygulağını başlattıysan \n"
+#~ "daha önce \"Sunucuyu yeniden başlat\" mönüsüne gitmek zorundasın.\n"
+
+#~ msgid "Pilot "
+#~ msgstr "Pilot "
+
+#~ msgid "Eskil Heyn Olsen <deity@eskil.dk>"
+#~ msgstr "Eskil Heyn Olsen <deity@eskil.dk>"
+
+#~ msgid "Gpilotd backup conduit"
+#~ msgstr "Gpilotd yedekleme parçası"
+
+#~ msgid "(C) 1998 the Free Software Foundation"
+#~ msgstr "Tel'if hakkı (C) 1998 the Free Software Foundation"
+
+#~ msgid ""
+#~ "Configuration utility for the backup conduit.\n"
+#~ "The backup conduit is responsible for copying files from the pilot to the "
+#~ "local host, without doing any conversion, whereby ensuring that a proper "
+#~ "restore can be done"
+#~ msgstr ""
+#~ "Yedekleme parçası için ayarlama uygulaması.\n"
+#~ "Yedekleme parçası Pilot'tan dosyaların masaüstüne gelmesini sağlar ve "
+#~ "gelecekte geriye yüklemeleri imkanlaştırır ( bu arada hiç bir şekil "
+#~ "dönüştürmesini yapmaz )"
+
+#~ msgid "gnome-unknown.xpm"
+#~ msgstr "gnome-unknown.xpm"
+
+#~ msgid "Conduit state"
+#~ msgstr "Parça durumu"
+
+#~ msgid ""
+#~ "No pilot configured, please choose the\n"
+#~ "'Pilot Link Properties' capplet first."
+#~ msgstr ""
+#~ "Bir pilot ayarlanmamış, lütfen önce\n"
+#~ "Pilot bağı özellikleriyle bir pilot'u ayarla."
+
+#~ msgid "Not connected to the gnome-pilot daemon"
+#~ msgstr "gnome-pilot sunucusuna bağlantı yok"
+
+#~ msgid ""
+#~ "An error occured when trying to fetch\n"
+#~ "pilot list from the gnome-pilot daemon"
+#~ msgstr ""
+#~ "gnome-pilot sunucusundan Pilot'lar listesini\n"
+#~ "alırken bir hata oluştu"
+
+#~ msgid ""
+#~ "Could not create object for conduit.\n"
+#~ "Perhaps the conduit isn't properly installed ?"
+#~ msgstr ""
+#~ "Parça için gerekli bir nesneiy yaratamadım.\n"
+#~ "Acaba parça dosdoğru yüklenmedi mi ?"
+
+#~ msgid "delete"
+#~ msgstr "sil"
+
+#~ msgid "Gpilotd SendMail conduit"
+#~ msgstr "Gpilotd ePosta gönderme parçası"
+
+#~ msgid ""
+#~ "Configuration utility for the SendMail conduit.\n"
+#~ "The SendMail conduit is responsible for sending out mail composed on the "
+#~ "pilot"
+#~ msgstr ""
+#~ "ePosta gönderme parçasını ayarlama uygulaması.\n"
+#~ "Bu parça Pilot'la yazılmış ePostaları göndermek için sorumludur"
+
+#~ msgid "From E-mail Address"
+#~ msgstr "Gönderenin ePosta adresi"
+
+#~ msgid "MH Mail directory"
+#~ msgstr "MH ePosta dizini"
+
+#, fuzzy
+#~ msgid "mbox file"
+#~ msgstr "dosya"
+
+#~ msgid "Mailer location"
+#~ msgstr "ePostayı gönderen uygulamanın mekanı"
+
+#~ msgid "Mail sent from pilot"
+#~ msgstr "Pilot'tan gönderilen ePostayı"
+
+#~ msgid "Mail on Host"
+#~ msgstr "Sunucudaki ePosta"
+
+#~ msgid "SendMail options"
+#~ msgstr "ePosta gönderme seçenekleri"
+
+#~ msgid "Unknown Currency Symbol"
+#~ msgstr "Bilinmeyen para birimi işareti"
+
+#~ msgid "No dir specified. Please run expense conduit capplet first."
+#~ msgstr ""
+#~ "Hiç bir dizin belirtilmemiş. Lütfe daha önce yönetim uygulağını çalıştır."
+
+#~ msgid "Day/Month/Year"
+#~ msgstr "Gün/Ay/Yıl"
+
+#~ msgid "Month/Day/Year"
+#~ msgstr "Ay/Gün/Yıl"
+
+#~ msgid "Since 1970-01-01 (in sec)"
+#~ msgstr "1970-00-01'den berigeçen saniyeler"
+
+#~ msgid "Local format"
+#~ msgstr "Yerel şekillendirme"
+
+#~ msgid "Simple"
+#~ msgstr "Kolay"
+
+#~ msgid "Complex"
+#~ msgstr "Gelişmiş"
+
+#~ msgid "Patrick Decowski <decowski@mit.edu>"
+#~ msgstr "Patrick Decowski <decowski@mit.edu>"
+
+#~ msgid "Gpilotd Expense conduit"
+#~ msgstr "Gpilotd harcamalar parçası"
+
+#~ msgid "(C) 1999 the Free Software Foundation"
+#~ msgstr "Te'if hakkı (C) 1999 the Free Software Foundation"
+
+#~ msgid ""
+#~ "Configuration utility for the Expense conduit.\n"
+#~ "The Expense conduit is responsible for getting expenses records from the "
+#~ "pilot"
+#~ msgstr ""
+#~ "Harcamalar parçası için ayarlama uygulaması.\n"
+#~ "Harcamalar parçası Pilot'tan harcamalar kayıtlarını okumaktan sorumludur"
+
+#~ msgid "Expense Directory"
+#~ msgstr "Harcamalar dizini"
+
+#~ msgid "Directory Mode"
+#~ msgstr "Dizin türü"
+
+#~ msgid "File Mode"
+#~ msgstr "Dosya türü"
+
+#~ msgid "Date Format"
+#~ msgstr "Tarih türü"
+
+#~ msgid "Output Format"
+#~ msgstr "Yazma şekillendirmesi"
+
+#~ msgid "Expense options"
+#~ msgstr "Harcamalar seçenekleri"
+
+#~ msgid "Gpilotd file conduit"
+#~ msgstr "Gpilotd dosya parçası"
+
+#~ msgid ""
+#~ "Configuration utility for the file conduit.\n"
+#~ "The file conduit is responsible for installing files from the host to the "
+#~ "pilot"
+#~ msgstr ""
+#~ "Dosya parçası için ayarlama uygulaması.\n"
+#~ "Bu parçanın görevi yerel ortamdan dosyaları Pilot'a taşımaktır "
+
+#~ msgid "Copy From Pilot"
+#~ msgstr "Pilot'tan kopyala"
+
+#~ msgid "Copy To Pilot"
+#~ msgstr "Pilot'a kopyala"
+
+#~ msgid "Merge From Pilot"
+#~ msgstr "Pilot'tan birleştir"
+
+#~ msgid "Merge To Pilot"
+#~ msgstr "Pilot'a birleştir"
+
+#~ msgid "Vadim Strizhevsky <vadim@optonline.net>"
+#~ msgstr "Vadim Strizhevsky <vadim@optonline.net>"
+
+#~ msgid "Gpilotd memo_file conduit"
+#~ msgstr "Gpilotd hatırlatma dosyaları parçası"
+
+#~ msgid ""
+#~ "Configuration utility for the memo_file conduit.\n"
+#~ "The memo_file conduit syncronizes memos from the pilot with text files on "
+#~ "the local host"
+#~ msgstr ""
+#~ "Hatırlatma dosyaları parçası için ayarlama uyguması.\n"
+#~ "Hatırlatma dosyaları parçası görevi, Pilot'taki hatırlatmaları yerel "
+#~ "dosyadakihatırlatmalarla eşleştirmektir"
+
+#~ msgid "Synchronize Action"
+#~ msgstr "Eşleştirme işlemi"
+
+#~ msgid "Memos directory:"
+#~ msgstr "Hatırlatmalar dizini :"
+
+#~ msgid "Ignore start:"
+#~ msgstr "Başlangıçı gözönüne alma :"
+
+#~ msgid "Ignore end:"
+#~ msgstr "Bitişi gözönüne alma :"
+
+#~ msgid "Directory mode:"
+#~ msgstr "Dizin türü :"
+
+#~ msgid "Files mode:"
+#~ msgstr "Dosya türü :"
+
+#~ msgid "Secret files mode:"
+#~ msgstr "Gizli dosyalar türü :"
+
+#~ msgid "Memo Conduit State"
+#~ msgstr "Hatırlatma Parçası Durumu"
+
+#~ msgid "No dir specified. Please run memo_file conduit capplet first."
+#~ msgstr ""
+#~ "Hiç bir dizin belirtilmemiş. Lütfen daha önceden hatırlatma dosyası "
+#~ "parçasının ayarlama uygulağını çalıştır."
+
+#: applet/gpilot-applet.desktop.in:4
+msgid "PilotSync"
+msgstr "PilotSync"
+

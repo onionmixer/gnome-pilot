@@ -1,0 +1,5 @@
+gpilot-fileman/fileman.c
+gpilot-fileman/multifile.c
+gpilot-fileman/pilotfunc.c
+gpilot-fileman/preferences.c
+gpilotd/gnome-pilot-conduit-management.c

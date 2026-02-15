@@ -1,0 +1,204 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2001-03-12  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd-capplet.glade: touch up
+
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* util.c (fill_conduit_sync_type_menu): set the index correctly
+	
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-cdialog.c (fill_widgets): always fill the sync
+	action menu
+
+	* util.c (fill_conduit_sync_type_menu): accomadate customs sync
+	types a bit better
+	
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_popup): rearrange to
+	plug leak
+	
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduitcap.c (get_state): for popups
+	(get_current_state): use get_state
+	(check_conduits_buttons): always popup the conduit dialog, even if
+	its just for the sync type
+	(gpcc_conduits_popup): sensitize/de-sensitize popup menu widgets
+
+	* gnome-pilot-cdialog.c (fill_widgets): if the item has no
+	settings window, hide the frame
+
+	* util.c (show_popup_menu): tidy
+
+2001-01-14  JP Rosevear  <jpr@ximian.com>
+
+	* Makefile.am: Include GNOME_LIBDIR in ldadd
+
+2000-12-31  Peter Williams  <peterw@helixcode.com>
+
+	* gpilotd-control-applet.c (doTrySettings): Don't check for read-write permissions
+	on the port if it's USB, because we'll get a no-device error.
+
+2000-07-30  Fatih Demir	 <kabalak@gmx.net>
+
+	* PalmPilot.directory: Oops, forgot one entry.
+
+2000-07-29  Fatih Demir  <kabalak@gmx.net> 
+
+	* gpilotd-control-applet.desktop & Conduits.directory &\
+		PalmPilot.directory : Added the Turkish desktop entries.
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* Makefile.am (gpilotd_control_applet_LDADD): added
+	BONOBO_VFS_GNOME_LIBS
+
+2000-05-16  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c: Fix the bug the prevents
+	correct usage of the capplet in cased druid was canceled.
+	Fixes bug #10562
+
+2000-04-16  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c: Initialized selected item for
+	coduit list. Fixes bug #9043
+
+2000-03-25  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c: Make sure to create basedir if it doesn't 	
+	exist. Based on suggestion/patch by Carlos Morgado <chbm@chbm.nu>.
+	Make default speed 57600. Make sure to correctly reconnect to gpilotd.
+
+	When druid is activated by the capplet, make sure that capplet is
+	updated with setup information after druid is finished.
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (INCLUDES): automake juju to make distcheck work.
+
+2000-03-01  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c : set/get_user_info requests should
+	be IMMEDIATE not PERSISTENT.
+
+2000-02-27  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c, Makefile.am: Switch to new libgpilotd.
+
+2000-02-17  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c: Popup error dialog in addition to 
+	error logging.
+
+2000-02-12  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c, pilot.c: Fix a memory problem.
+	When adding a new device or pilot startup with a unique
+	names that don't exist already.
+
+	* gpilotd-capplet.glade: Add /dev/ttyqe, the default POSE port,
+	to port list.
+
+2000-02-02  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-control-applet.c, gpilotd-capplet.glade : Add popup
+	menu to clists on right click. Menu will let user to delete 
+	or edit pilots and devices.
+
+2000-01-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (Rootdir): Link with libgilotdOLD now
+
+2000-01-30  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* *.*: Major reworking of the capplet gui. It is now uses
+	libglade to load the gui. It is now a bit nicer and supports
+	seting up of multiple devices and pilots.
+
+	Also new druid for the initial setup. Druid starts automatically
+	by the capplet when it detects that there are no pilots/devices setup.
+	Can be started by itself with "gpilotd-control-applet --druid".
+	pilot_applet will do that in case it is added to the panel and detects
+	that gnome-pilot is not setup yet.
+
+	still TODO: better pixmap for druid, Spell checking of the gui strings.
+	And if you have any other suggestions on gui improvements or
+	can help with the pixmap please let me know.
+
+	more TODO: Add multipilot support for individual capplets. Currently
+	they just pick the first pilot.
+	
+2000-01-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c (send_to_pilot_cb): Check error state
+	for gpilotd_set_user_info.
+	(readDeviceCfg): Ensure that the device has a name, as
+	gpilotd_set_user_info fails otherwise.
+	(saveSettingsAndRestartDaemon): As my least contrib to harassing
+	Vadim, I've removed getGpilotdpid method and call.
+
+1999-12-27  Martin Norbäck  <d95mback@dtek.chalmers.se>
+
+	* gpilotd-control-applet.desktop: Added Swedish translation
+
+1999-12-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c: Made alterations to conduit callbacks.
+
+1999-12-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c: Added callbacks for the conduit
+ 	error/message/progress stuff.
+
+1999-12-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c (setPilotCfg): Default pilot name is
+	now "MyPilot" as opposed to "My Pilot".
+
+1999-12-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c (main): Applied Tahara Yuusuke NLS patch.
+
+1999-12-07  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c (doTrySettings): Fixed garbled output
+	when notifying about r/w permissions on device.
+
+1999-11-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-control-applet.c: Added callbacks for gpilotd_conduit_start/end
+
+1999-10-27 Vadim Strizhvesky <vadim@optonline.net>
+
+	* backup-conduit-control-applet.c: Implement Partrick Decowski
+	sugestion to change the state on "delete_text".
+
+1999-10-26 Vadim Strizhvesky <vadim@optonline.net>
+
+	* gpilotd-control-applet.c: show menuitems of the menu for
+	GtkOptionMenu so that it looks normal.
+	
+1999-10-25 Vadim Strizhvesky <vadim@optonline.net>
+
+	* pilot.c: Add omitted gnome_config_pop_prefix and fix a log message.
+	
+1999-10-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.[ch]: added sync_type to PilotState, and pilot.c loads it.
+
+	* gpilotd-control-applet.c: removed old NO_BAUD #ifdefs, and the
+	old getHomeDir call. Added an optionmenu for sync_type. Help
+	button now tries to open a help page - now need someone to write
+	it (me?!). Also changed some snprintf calls to g_snprintf or
+	g_strdup_print. Fixed i18n strings.
+
+1999-10-23 Vadim Strizhvesky <vadim@optonline.net>
+	
+	* gpilotd-control-applet.c: remove fixed seting of baud clist
+	sizing, so that it is automatic.

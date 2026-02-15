@@ -1,0 +1,410 @@
+
+gnome-pilot 4.0.1, 2026-02-14
+------------------------------
+Port to GTK4/GNOME 42, GDBus, GSettings, modern EDS API.
+
+gnome-pilot 2.91.93 'Oscar', 2011-09-10
+---------------------------------------
+Bugfix release
+
+Fix for #647479, #657658, #657365.
+           * gnome-pilot-3.0.pc.in: Fix for #647479. Thanks to Tamas Nemeth
+           * conduits/evolution-data-server/e-calendar.conduit.in: fix typo #657658.
+                  Thanks Matt McCutchen.
+           * conduits/backup/Makefile.am: fix missing include path #657365
+           * conduits/test/Makefile.am: ditto.  Thanks Matt McCutchen.
+
+Thanks to the translation teams:
+ Russian: Yulia Poyarko <ypoyarko@redhat.com>
+ Czech: Marek <marek@manet.cz>
+ German: Mario Bl<C3><A4>ttermann <mariobl@gnome.org>
+ Danish: Joe Hansen <joedalton2@yahoo.dk>
+ Slovenian: Andrej <C5><BD>nidar<C5><A1>i<C4><8D> <andrej.znidarsic@gmail.com>
+ Spanish: Daniel Mustieles <daniel.mustieles@gmail.com>
+ French: Claude Paroz <claude@2xlibre.net>
+ Swedish: Daniel Nylander <po@danielnylander.se>
+
+gnome-pilot 2.91.92 'Ellie', 2011-03-20
+----------------------------------------
+This version of gnome-pilot requires gnome-3.  It has been tested
+against gnome version 2.91.91.  This version is largely complete,
+but has not been heavily tested, so there may well be problems still
+lurking.  
+
+Note that there is no support for gnome-shell, but the panel-applet
+should work (ported from bonobo to dbus) in fallback mode.
+
+Significant changes and bug fixes since 2.32.0:
+   - complete port to gtk3/gnome3, #590215
+   - update all libraries to major version 3, including conduits.  Should
+     allow parallel installs with gnome-2 if desired.
+   - migrated applet to use libpanel4 (dbus instead of bonobo) #592604, #630725
+   - fix crash in configuration applet when configuring multiple Evolution
+	conduits #644319
+   - fix crash in configuration applet caused by non-ASCII characters in
+	owner name, introduced in migration to dbus in 2.32.0
+   - fix gob rules to support parallel builds, and todo conduit map-file patch  #634874,634869.
+   - Fix map-file path for todo conduit. #634869
+   - fix include problem when using a separate build directory.  #634880
+   - Use dbus directly for device detection, instead of HAL. #593936
+   - Use gnome-doc-utils (Mario Bl<C3><A4>ttermann)
+
+Thanks to Matt McCutchen for several bug-fixes and improvements (#634874, #634869,
+#634880, #634873).
+
+Thanks to the translation team for their great work:
+   - Daniel Mustieles (es)
+   - Yinghua Wang (zh_CN)
+   - Daniel Nylander (sv)
+   - Andrea Zagli (it)
+   - Kjartan Maraas (nb)
+   - Antonio Fernandes C. Neto (pt_BR)
+   - Inaki Larranaga (eu)
+
+
+gnome-pilot 2.32.0 'Frankie', 2010-09-26
+----------------------------------------
+Significant code changes moving towards gnome-3: removal of libgnome,
+libgnomeui, removal of deprecated gtk API.
+
+Also, migrated Evolution conduits from evolution code base to gnome-pilot.
+
+Change versioning from 2.0.x to 2.32.x, to reflect signifcant code
+changes since 2.0.17.
+
+Many thanks to Halton Huo for work on many of the gnome-3 migration
+items below.
+
+Bug Fixes:
+   - #594214: Remove deprecated GTK/glib symbols
+   - #590215: Remove libgnome/libgnomeui dependency
+   - #589501: convert applet to GtkBuilder
+   - #597328: remove obsolete gpilotd-conduit-mgmt.h
+   - #619315: Move evolution conduits from evo to gnome-pilot
+   - #592604: Migrate from bonobo to dbus
+   - #610782: support more versions of autoconf
+   - #607142: Clean up of build system
+   - #590225: remove gnome_help and gnome-open calls
+   - #584894: pilot applet is not visible on the panel on gnome2.26
+   - #569481: Use stock gnome pda icon
+   - #569193: remove obsolete SUSE-specific GNOMEPATH
+   - #570724: avoid using deprecated gnome-i18n in favour or glib-i18n
+   - #568404: only gpilotd binary needs to be linked with libhal
+
+Thanks to the translations team, as ever.
+
+
+gnome-pilot 2.0.17 'Pippi', 2009-01-07
+--------------------------------------
+Bug Fixes:
+   - #484509: Avoid obsolete HAL info.bus API.  Use hal pda.platform
+		property instead (keep info.bus for backwards compatibility).
+		With thanks to Frederic Crozat.
+   - #528701: remove unused applet desktop file
+   - #508262: fix long-standing build-order bug by moving libgpilotdcm
+		code to gpilotd/ directory.
+   - #491921: stray slash breaks rpath for libraries
+
+Updated translations:
+     ar (Djihed Afifi)
+     ca (Gil Forcada)
+     el (Simos Xenitellis)
+     en_GB (Philip Withnall)
+     fr (Stephane Raimbault)
+     it (Luca Ferretti)
+     fi (Ilkka Tuohela)
+     nb (Kjartan Maraas)
+     ne (Pawan Chitrakar)
+     oc (Yannig Marchegay)
+     pt_BR (Jonh Wendell)
+     sv (Daniel Nylander)
+     vi (Clytie Siddall)
+
+gnome-pilot 2.0.16 'Quixote', 2008-02-27
+----------------------------------------
+New Features:
+   - Support for Bluetooth sync, via the bluez support in
+     pilot-link 0.12
+   - Support for specification of the PDA charset via
+     the configuration applet (Jerry Yu and Matt Davey)
+
+
+Bug Fixes:
+   - (Ubuntu bug #81396): don't close a database if we got
+      an error when opening it.
+   - #464385: use LINGUAS file (Gilles Dartiguelongue)
+   - #410666: 64 bit compatibility in file_conduit (Devin Carraway)
+   - #431145: avoid circular dependency between libgpilotdcm and libgpilotd
+   - #400554: Add intltool support to the gnome-pilot applet. (Kjarten
+      Maraas)
+   - #399039: add HardwareSettings to categories (Denis Washington)
+   - #385434: make sysfs/usbfs check linux-specific (Jerry Yu)
+   - #385444: [solaris] workaround for lack of sync notification (Jerry Yu)
+
+And as usual, thanks to all our translators, including:
+Yannig Marchegay, Raivis Dejus, Pema Geyleg, ituohela, Joan Duran,
+pachimho, Inaki Larranaga Murgoitio, jorgegonz, Daniel Nylander, stephaner,
+Gabor Kelemen, algol, rdejus, dlodge, Djihed Afifi, Jonathan Ernst,
+Claude Paroz, Stephane Raimbault, Xavi Conder, Andrea Zagli, Tino
+Meinen, Takeshi AIHANA, Francisco Javier F. Serrador.
+
+
+
+
+gnome-pilot 2.0.15 'Alice', 2006-11-22
+--------------------------------------
+
+This is primarily a bugfix release, to patch issues that cropped up
+with the new features introduced in version 2.0.14.
+
+   - #357602.  Fix memory leak in the usbfs scanning code (with
+	       thanks to Brian Warner)
+   - #362565.  Add a 400ms pause between HAL detection of a USB
+	       device and the first attempt to sync.  Several
+	       devices were reported to reset themselves if
+	       communication was attempted too soon after the
+	       first appearance of the USB device.
+   - #365181.  Fix a long-standing bug that probably turned up
+	       now because of the multiple attempts to add a new
+	       pilot due to #362565.  Avoid accessing freed memory
+	       when the 'add pilot' dialog is opened multiple times.
+
+Other changes:
+   - Maintainership has passed from JP Rosevear to Matt Davey.
+     Many thanks to JP for stepping in when gnome-pilot could
+     otherwise have died a nasty death by abandonment.
+   - #364589.  With thanks to Glynn Foster.  Tweaks to window
+	       placement to support multihead displays.  Also,
+	       added missing description to .server file for
+	       panel applet.
+   - Fix another long-standing bug, that could cause garbage to
+     be shown when a configured conduit was unavailable (e.g.
+     if the .conduit files were in the wrong place after an upgrade).
+   - Fix distcheck target
+
+New translation:
+     * ar:    New arabic translation, with thanks to Djihed Afifi
+
+Updated translations:
+     sv (Daniel Nylander)
+     en_GB (David Lodge)
+     hu (Gabor Kelemen)
+     fi (Ilkka Tuohela)
+     ca (Josep Puigdemont i Casamaj�)
+     es (Francisco Javier F. Serrador)
+     ne (Pawan Chitrakar)
+     it (Alessio Frusciante, Andrea Zagli)
+     el (Kostas Papadimas)
+
+gnome-pilot 2.0.14 'Felix', 2006-09-06
+--------------------------------------
+ 
+Significant changes:
+   - Add support for libusb syncing with pilot-link 0.12.x
+   - Fix network hotsync.  Use pilot-link to create the listen socket
+     by binding to port "net:". (MD)
+   - HAL is used by default for detecting USB connections (Jeffrey
+     Stedfast, MD).  When HAL is not available, use /sys/bus/usb
+     in preference to /proc/bus/usb (Martin Ammermueller, MD)
+   - Fix applet message area, and fix transparency for applet panel icon.
+   - Ported to the pilot-link 0.12.0 API, with continuing support for
+     0.11.* (Mark Adams, Dave Malcolm, Veerapuram Varadhan, JP,
+     others)
+   - Big cleanup of the UI, to make it more compatible with the HIG.
+     (Daniel Thompson, MD).
+   - Improve robustness of binding, by attempting to connect multiple
+     times.  This can solve problems where, for example, HAL
+     notifications are received before the device is ready for binding
+     (patch by Nathan Owens).
+   - Support for international character sets, with pilot-link 0.12.x.
+     Users should set the PILOT_CHARSET to an appropriate value (i.e.
+     one recognised by iconv).
+
+Many many bugfixes, including:
+     * rh#189294: avoid using freed memory. (MD)
+     * #113979: Support for non-UTF8 locales, using PILOT_CHARSET
+     * #118328: applet does not show output of conduits
+     * #130520: write backup_conduit exclude_files
+		properly (Dennis Lambe Jr, JP)
+     * #136010: gpilotd crashes when trying to backup NetLibrary (pilot-link-0.12.x)
+     * #149063: gpilotd crashes if usbfs is not mounted
+     * #151179: don't hard code static object files
+     * #155888: gpilotd-control-applet doesn't follow HIG
+     * #164728: use stock icon for applet (Gordon Ingram)
+     * #173109: gnome-pilot doesn't compile with pilot-link 0.12.0-pre2
+     * #309077: fix memory leaks (Mark Adams)
+     * #309130: avoid memory leak and use of uninitialised memory
+		in backup_conduit (Mark Adams)
+     * #313203: put desktop file in non-deprecated location (MD)
+     * #322903: Avoid trying to sync more than one USB device.(MD)
+     * #322905, #322906: sanity check basedir and backupdir in
+		capplet (Jerry Yu)
+     * #328392: add missing variable init in backup_conduit (MD)
+     * various build cleanups.
+     * removed all compiler warnings up to gcc 3.x.(MD)
+
+Updated translations:
+     * zh_TW: Chao-Hsiung Liao
+     * zh_HK: Chao-Hsiung Liao
+     * xh:    Adi Attar
+     * vi:    Clytie Siddall
+     * uk:    Maxim Dziumanenko
+     * sv:    Daniel Nylander
+     * sk:    Marcel Telka
+     * pt_BR: Raphael Higino
+     * nl:    Vincent van Adrighem
+     * ne:    Pawan Chitrakar
+     * lt:    Zygimantas Berucka
+     * ja:    Takeshi Aihana
+     * it:    Alessio Frusciante, Andrea Zagli
+     * fi:    Ilkka Tuohela
+     * fr:    redfox
+     * eu:    Inaki Larranaga
+     * es:    Francisco Javier F. Serrador
+     * en_GB: Gareth Owen
+     * de:    Hendrik Richter, Hendrik Brandt
+     * cs:    Miloslav Trmac
+
+gnome-pilot 2.0.13 'Lucky', 2005-04-04
+--------------------------------------
+
+Bugzilla bugs fixed (see http://bugzilla.gnome.org):
+
+   #148582 - gpilot-applet crashes with a left-click from toolbar (JP)
+   #168401 - capplet desktop file has multiple icon fields (Crispin Flowerday)
+   #166024 - DnD --> gnome-pilot causes busy loop (Chris Lee, JP)
+   #142710 - Malformed desktop entry (JP)
+
+Other bugs
+
+   - Add kyocera 7135 and zire 31 devices (JP)
+   - Warning fixes (Dave Malcolm)
+
+Updated translations:
+	-rw (Steve Murphy)
+	-xh (Adi Attar)
+	-de (Hendrik Brandt)
+	-cs (Miloslav Trmac)
+	-en_CA (Adam Weinberger)
+	-nb (Kjartan Maraas)
+	-es (Francisco Javier F. Serrador)
+	-sv (Christian Rose)
+	-hu (Laszlo Dvornik)
+	-fr (Christophe Merlet)
+	-zh_TW (Abel Cheung)
+
+0.1.66
+
+	Update to work with pilot-link 0.11.x for USB device support
+
+	Fix capplet bug with one time sync option
+
+0.1.65
+	
+	Capplet fixes, including a couple of crashers
+
+	Capplet has ability to allow "one time sync" type option
+
+0.1.64
+
+	Applet fixes
+	
+	Build fixes (for new orbit releases)
+
+0.1.63
+
+	Fixed RealBadBug in backup conduit, that caused loss of
+	category info.
+
+	Stop spamming about "Not root, won't yadayada"
+	
+	Applet turns yellow on pause
+
+	Daemon notifies all monitoring clients of pause/unpause
+
+0.1.62
+	Better restore and install progress bars (in applet)
+
+	HDB UUCP locking (only if you're root, and untested for great
+	joy)
+
+	Bugfixes (eskil & jpr)
+
+	Fixes to the cli tools (eskil)
+	
+0.1.61
+	More intelligent about pilot_id == 0
+
+	applet better at handling daemon death
+
+	changes in the conduit api structure
+
+	better progress bar system for the conduits
+
+	Moved non-core conduits to gnome-pilot-conduits (JP Rosewear)
+
+0.1.58
+	Fixed bug in backupconduits "move old backup" feature.
+	
+	First cut a network sync support (Evgeny Zislis)
+
+0.1.57
+	gnome-vfs support in ligpilotd, applet now supports DND of 
+	URLs like http://foo.bar/crack.prc (bug 6135)
+
+	.conduit location is GNOME_PATH aware (bug 6211)
+
+	applet not built if OAF is enabled
+
+0.1.56
+	New SyncAbs now on by default
+	
+	USB on by default
+
+	Fix to initial config druid, pilot usernames can now have
+	spaces.
+
+0.1.55
+	Fix for IrDA
+
+	New Conduit structure (JP Rosevear)
+
+RELEASED 0.1.54
+
+0.1.54
+	Backup conduit make backups of backups. (Robert Mibus).
+	
+	USB visor (Dave Camp)
+
+	Partial OAF support (HelixCode), only available by setting 
+	compile flags.
+
+	Possible "fix" for the IrDA bug. It now g_errors on long
+	port names which crash the underlying library.
+
+0.1.53
+	[gnome-pim-conduits] Fix to calender conduit (Robert Mibus)
+
+	Fix to memo_file_conduit (Christopher A. Craig)
+
+	Fixed capplet bug that prevented using it when druid was Canceled.
+
+	Fixed set_user_info bug.
+
+0.1.52
+	minor bug fixes
+
+	moved the gnomecc applets to Peripherals/Conduits
+
+0.1.51
+	conduit progress stepping no longer locked, but can now be
+	set in ~/.gnome/gnome-pilot.d/gpilotd.
+
+	gpilotd hopefully slightly more stable when pilot cancels/is
+	removed.
+
+	sync can continue after the set_userinfo, thereby eliminating 
+	the revive requirement.	
+
+	memo_file should hopefully be really fixed now.
+

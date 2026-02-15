@@ -1,0 +1,153 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* Makefile.am: Remove capplet foo
+
+2001-02-28  JP Rosevear  <jpr@ximian.com>
+
+	* file.conduit.in: update
+
+2000-07-29  Fatih Demir  <kabalak@gmx.net> 
+
+	* file-conduit-control-applet.desktop: Added the Turkish desktop entries.
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* gpilot_install_file.c: include liboaf
+
+	* Makefile.am (gpilot_install_file_LDADD): added BONOBO_VFS_GNOME_LIBS
+
+2000-05-02  Jacob Berkman  <jacob@helixcode.com>
+
+	* Makefile.am: copy .desktop to panel's Settings dir
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (INCLUDES): automake juju to make distcheck pass.
+
+	* file-conduit-control-applet.c: Fixed some #includes and vamped 
+	to use the gnome-pilot-conduit-config object
+
+2000-02-28  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am: some automake voodoo
+
+2000-02-27  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* file-conduit-control-applet.c (main): Also fixed to use new
+	libgpilotdcm. And removed -lefence :)
+
+	* gpilot_install_file.c (main): Fixed argument to get_pilots and
+	some warnings.
+
+	* file-conduit-control-applet.c (get_pilot_id_from_gpilotd): Fixed 
+	argument to get_pilots.
+
+2000-02-26  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* Makefile.am, file-conduit-control-applet.c, file_conduit.[ch]: 
+	Switch to using new libgpilotd. Call bindtextdomain for translation. 
+	Move the load/save/copy config functions out of the header file and into
+	the capplet. Conduit only needs a specialized load_config function that
+	generates an error if config is not found. 
+
+
+2000-01-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot_install_file.c (main): use new libgpilotd, also takes
+	--pilot=/-p argument for receiving pilot, if not given, defaults
+	to pilot[0].
+
+	* Makefile.am (gpilot_install_file_LDADD): link with libgpilotdOLD
+ 	and libgpilotdconduitOLD
+	
+
+2000-01-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* file_conduit.c (gnome_real_pilot_conduit_file_install_db): Print 
+	db name instead of file being installed.
+
+	* gpilot_install_file.c (main): Applied Tahara Yuusuke
+	<m5021212@u-aizu.ac.jp> NLS patch.
+
+	* file_conduit.c
+	(gnome_real_pilot_conduit_file_restore_directory): calls
+	gnome_pilot_conduit_message when restoring.
+	(gnome_real_pilot_conduit_file_install_db): and installing db's.
+	(gnome_real_pilot_conduit_file_restore_directory): Reduced stack
+	usage and also fixed some leaks.
+
+2000-01-08  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* file-conduit-control-applet.c: Added pilotID argument
+	to gpilotd_conduit_mgmt_new.
+
+2000-01-05  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot_install_file.c: swapped current/total in argument list.
+
+1999-12-29  Martin Norbäck  <d95mback@dtek.chalmers.se>
+
+	* file-conduit-control-applet.desktop: Added Swedish Translation
+
+1999-12-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot_install_file.c: Made alterations to conduit callbacks.
+
+1999-12-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot_install_file.c: Added callbacks for the conduit
+ 	error/message/progress stuff.
+
+1999-12-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* file_conduit.c
+	(gnome_real_pilot_conduit_file_restore_directory): Write a
+	"Restoring <file> ..." line for every file.
+
+1999-12-03  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* file_conduit.c: Meddling with includes to make distcheck work
+
+1999-11-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot_install_file.c: Added callbacks for gpilotd_conduit_start/end
+
+1999-11-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am: Added G_LOG_DOMAIN=fileconduit
+
+1999-11-01  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am: uses PISOCK_LIBDIR
+
+1999-10-26  Eskil Olsen <deity@eskil.dk>
+
+	* Makefile.am: fixed bug#3106, can't test, since Mandrake 6.1 suckest.
+
+1999-10-22  Alan Shutko  <ats@acm.org>
+
+      * gpilot_install_file.c (main): fixed argument handling.  popt
+      doesn't remove options it finds, so --now was both being treated
+      as a file and setting the option.  Now uses poptGetArgs (as per
+      Havoc's book).
+
+1999-10-23 Vadim Strizhvesky <vadim@optonline.net>
+
+	* file-conduit-control-applet.c: fixed some messages to pertain to 
+	this conduit. Fix calling gtk_widget_set_sensitive on NULL widget.
+	Also if enabled state is not treated as changed immedeiately.
+
+1999-10-22  Eskil Olsen <deity@eskil.dk>
+
+	* file-conduit-control-applet.c: patched pilot_id reading and
+ 	use. Also did some fixed that capplet signal are passed curState
+	as user data.
+
+	* file_conduit.h: fixed the load_config so no more warnings should 
+	arise. Also fixed dupe_configuration
+
+	* gpilot_install_file.c: changed the gpilotd_get_pilots call to
+ 	gpilotd_get_pilot_names. And some warning fixes.

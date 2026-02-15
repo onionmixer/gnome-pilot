@@ -1,0 +1,105 @@
+GNOME PilotSync applet 0.3.0pre (PRERELEASE VERSION)
+-------------------------------
+
+Applet for the 3Com Pilot devices.
+
+This is a mixture of the fish_applet and pilot-xfer. Its purpose is to
+be able to sync the pilot simply by pressing the sync button on the cradle.
+
+Version 0.1.0 was put together quite fast while studying for exams,
+and wasn't that useful. Version 0.2.0 has more features, but we can
+still argue about the interface.
+
+The sync icons were "borrowed" from KPilot, the KDE pilot package.
+
+The webpage for the thingie is http://www.dbc.dk/~deity/pilot_applet.html
+
+I'd like to avoid too many "neat features" that people wouldn't use
+anyway, eg. removal of files to install, since it'll only increase the
+applet size and isn't that useful.
+
+----------------------------------------------------------------------------
+
+"Manualwritteninfiveminutes" :
+
+See the INSTALL file for installation. When thats done, you should be
+able to launch the applet from the panel menu (panel->add applet->
+utility->PilotSync). 
+
+First time you start it, it might say that it can't open the pilot
+device. Right-click on the panel icon, choose properties and the
+everything to your liking. 
+
+The option "display cryptic messages" will turn on some logging to
+/dev/console, but first the next time you start the applet.
+
+To restore the files from the backdir, select "Restore" in the menu
+and press the sync button. The abort, select "Abort restore" (no
+shit!).
+
+To use other programs that communicate with the pilot, select
+"Pause". The tooltip now changes to indicate the applet isn't
+monitoring the device anymore. Select "Resume" to resume monitoring.
+
+REMEMBER: If you choose "Remove from panel", you loose the properties.
+(void in version 0.3.0pre)
+
+----------------------------------------------------------------------------
+
+Features of version 0.3.0pre :
+  o launch a program on right click, by default gpilot-fileman,
+    the applet pauses listening for the pilot until the child
+    terminates
+  o now stores configuration i ~/.gnome/gnome-pilot instead of
+    within the panel cfg file, thus the cfg is no longer lost
+    when the applet is removed
+
+Features of version 0.2.0 :
+  o Can restore the pilot (pilot-xfer -r)
+  o Installs files, files installed by dragging them onto the panel icon
+    (pilot-xfer -i). Multiple files can be dragged.
+  o Can stop listening so other programs can talk with the pilot
+  o Writes status messages to /dev/console, can be switched off
+  o Supports file exclusion
+
+Features of version 0.1.0 :
+  o Currently acts as a pilot-xfer -u
+  o Configurable comm port
+  o Configurable destination dir
+
+----------------------------------------------------------------------------
+
+Upcoming:
+  o Install feature, so the applet can also be used for installing apps.
+  o A "don't listen"  feature, so you can used pilot-xfer without quitting
+    the applet.
+  o Autorun programs after completed sync (to convert db's to local
+    file format), a conduit system.
+  o Use a child program (modified pilot-xfer) to handle pilot
+    communications. This should decrease the memory requirements of 
+    the appelt when idle.
+  o Selectable icon for to satisfy peoples various tastes, for now, 
+    modify the icon and recompile, a milestone in userfriendliness.
+  o Instead of writing to /dev/console, maybe popup a small window
+    with the status messages
+
+----------------------------------------------------------------------------
+
+Todo:
+  o Improve error handling when eg. the device is unavailble.
+
+----------------------------------------------------------------------------
+
+Futuristic:
+  o A more complete desktop suite, eg. import datebook to GnomeCal etc.
+
+----------------------------------------------------------------------------
+
+Things:
+  o during sync, the applet won't respond to mouseclicks. When the
+    applets uses a child process for pilot communications, this 
+    won't be the case.
+
+----------------------------------------------------------------------------
+
+Eskil Olsen, June 1998

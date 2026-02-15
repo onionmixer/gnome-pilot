@@ -1,0 +1,1701 @@
+# translation of gnome-pilot.master.ta.po to Tamil
+# Tamil translation of gnome-pilot.
+# Copyright (C) 2009 gnome-pilot's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-pilot package.
+#
+# I. Felix <ifelix@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot.master.ta\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-pilot&component=general\n"
+"POT-Creation-Date: 2009-10-22 10:00+0000\n"
+"PO-Revision-Date: 2009-10-28 16:09+0530\n"
+"Last-Translator: I. Felix <ifelix@redhat.com>\n"
+"Language-Team: Tamil <fedora-trans-ta@redhat.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot அப்லெட்"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "PalmOS சாதனங்களில் உங்களது தரவினை ஒத்திசைக்கவும்"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "வசதி"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "PDAவை தேர்ந்தெடு"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync பண்புகள்"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "PDAவ  மறுசேமி"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "அடைவு (_D)"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "அறிக்கைளைக் காட்டு (_D)"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "சொடுக்கப்பட்டதும் இயக்கு (_E)"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "_PDA ID"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "_Sync cradle"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot முன்னேற்றம்"
+
+#: ../applet/pilot.c:185
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s ஒத்திசைக்கிறது"
+
+#: ../applet/pilot.c:190
+msgid "Database %v of %u"
+msgstr "தரவுத்தளம் %v இல் %u"
+
+#: ../applet/pilot.c:284
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "விண்ணப்பம் %ld முடிந்தது\n"
+
+#: ../applet/pilot.c:306
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s ஒத்திசைக்கிறது : %s"
+
+#: ../applet/pilot.c:311
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: துவங்கியது\n"
+
+#: ../applet/pilot.c:326
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s முடிவடைந்தது : %s"
+
+#: ../applet/pilot.c:331
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: முடிவடைந்தது\n"
+
+#: ../applet/pilot.c:357
+msgid "%v of %u records"
+msgstr "%v இல் %u பதிவுகள்"
+
+#: ../applet/pilot.c:437
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA தற்போது ஒத்திசைக்கிறது.\n"
+"அது முடிவடையும் வரை காத்திருக்கவும்."
+
+#: ../applet/pilot.c:440
+msgid "Not connected. Please restart daemon."
+msgstr "இணைக்கப்படவில்லை. செயற்களத்தை மறுதுவக்கவும்."
+
+#: ../applet/pilot.c:443
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"gpilotdஉடன் இணைக்கப்படவில்லை.\n"
+"செயற்களத்தை மறுதுவக்கவும்."
+
+#: ../applet/pilot.c:472
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot அப்லெட்"
+
+#: ../applet/pilot.c:474
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Copyright 2000-2006 Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:475
+msgid "A PalmOS PDA monitor.\n"
+msgstr "ஒரு PalmOS PDA கணினி.\n"
+
+#: ../applet/pilot.c:573 ../applet/pilot.c:600
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "உதவியை காட்டும்போது பிழை ஏற்பட்டது: %s"
+
+#: ../applet/pilot.c:686
+#, c-format
+msgid "Restoring %s"
+msgstr "%sஐ மறுசேமிக்கிறது"
+
+#: ../applet/pilot.c:729
+msgid "No directory to restore from."
+msgstr "இதிலிருந்து மறுசேமிக்க அடைவு இல்லை"
+
+#: ../applet/pilot.c:741
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"cradleஇலில் ஒத்திசைவை அழுத்தி மறுசேமி\n"
+"அல்லது செயல்பாட்டை ரத்து செய்."
+
+#: ../applet/pilot.c:747
+#, c-format
+msgid "cancelling %d"
+msgstr "ரத்துசெய்கிறது %d"
+
+#: ../applet/pilot.c:752
+msgid "Restore request failed"
+msgstr "மறுசேமிப்பு கோரிக்கை தோல்வியுற்றது"
+
+#: ../applet/pilot.c:793
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"PDA ஒத்திசை செயலில் தற்போது உள்ளது.\n"
+"செயற்களத்தை நீங்கள் மறுதுவக்க விரும்புகிறீர்களா?"
+
+#: ../applet/pilot.c:806 ../applet/pilot.c:1375
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "GnomePilotடை செயற்களத்துடன் இணைக்க முயற்சிக்கிறது"
+
+#: ../applet/pilot.c:823
+msgid "There's no last sync on record."
+msgstr "பதிவில் கடைசி ஒத்திசைவு இல்லை."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:846
+msgid "Restore..."
+msgstr "மறுசேமிப்பு..."
+
+#: ../applet/pilot.c:846
+msgid "Restart"
+msgstr "மறுதுவக்கு"
+
+#: ../applet/pilot.c:846
+msgid "Last log..."
+msgstr "கடைசி பதிவு..."
+
+#: ../applet/pilot.c:847
+msgid "Preferences..."
+msgstr "முன்னுரிமைகள்..."
+
+#: ../applet/pilot.c:847
+msgid "Help"
+msgstr "உதவி"
+
+#: ../applet/pilot.c:847
+msgid "About"
+msgstr "பற்றி"
+
+#: ../applet/pilot.c:869
+msgid "Continue"
+msgstr "தொடரவும்"
+
+#: ../applet/pilot.c:871
+msgid "Pause Daemon"
+msgstr "செயற்களத்தை இடைநிறுத்து"
+
+#: ../applet/pilot.c:891
+msgid "Daemon paused..."
+msgstr "செநற்களம் இடைநிறுத்தப்பட்டது..."
+
+#: ../applet/pilot.c:898 ../applet/pilot.c:1052
+msgid "Ready to synchronize"
+msgstr "ஒத்திசைவுக்கு தயார்"
+
+#: ../applet/pilot.c:1033
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "இணைக்கப்படவில்லை. மறுஇணைப்புக்கு செயற்களத்தை மறுதுவக்கு"
+
+#: ../applet/pilot.c:1210
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%sஐ செயல்படுத்துவது தோல்வி"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1336
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "நிறுவுகிறது \"%s\" க்கு \"%s\""
+
+#: ../applet/pilot.c:1346
+msgid "unknown dnd type"
+msgstr "தெரியாத dnd வகை"
+
+#: ../applet/pilot.c:1354
+msgid "destroy gpilot-applet"
+msgstr "gpilot-applet அழி"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "ஆப்லெட் சொடுக்கும் போது கட்டளையை இயக்க முடியவில்லை"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "பாப்பப் சாளரங்களில் அறிவிப்பை காட்டு"
+
+#: ../capplet/gnome-pilot-capplet.c:228 ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot அமைவுகள்"
+
+#: ../capplet/gnome-pilot-capplet.c:394 ../capplet/gnome-pilot-capplet.c:470
+msgid "Name"
+msgstr "பெயர்"
+
+#: ../capplet/gnome-pilot-capplet.c:396 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:398
+msgid "Owner"
+msgstr "உரிமையாளர்"
+
+#: ../capplet/gnome-pilot-capplet.c:472
+msgid "Type"
+msgstr "வகை"
+
+#: ../capplet/gnome-pilot-capplet.c:574
+msgid "Conduit"
+msgstr "தொடர்பு"
+
+#: ../capplet/gnome-pilot-capplet.c:576
+msgid "Sync Action"
+msgstr "ஒத்திசை செயல்"
+
+#: ../capplet/gnome-pilot-capplet.c:790
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "PDA `%s' அழிக்க நீங்கள் விரும்புகிறீர்களா?"
+
+#: ../capplet/gnome-pilot-capplet.c:814
+msgid "_Edit this PDA..."
+msgstr "இந்த PDAவை திருத்து ...(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "Edit the currently selected PDA"
+msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட PDAவை திருத்து"
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "_Delete this PDA"
+msgstr "இந்த PDAவை அழி (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "Delete the currently selected PDA"
+msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட PDAவை அழிக்கவும்"
+
+#: ../capplet/gnome-pilot-capplet.c:969
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "%s சாதனத்தை நீங்கள் அழிக்க விரும்புகிறீர்களா?"
+
+#: ../capplet/gnome-pilot-capplet.c:990
+msgid "_Edit this device..."
+msgstr "இந்த சாதனத்தை திருத்து ...(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "Edit the currently selected device"
+msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட சாதனத்தை திருத்து"
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "_Delete this device"
+msgstr "இந்த சாதனத்தை அழி (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "Delete the currently selected device"
+msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட சாதனத்தை அழிக்கவும்"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%s conduitஐ துவக்க முடியவில்லை."
+
+#: ../capplet/gnome-pilot-capplet.c:1217
+msgid "_Enable this conduit"
+msgstr "இந்த தொடர்பை செநல்படுத்து (_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "Disable the currently selected conduit"
+msgstr "தற்போது தேர்ந்தெடுத்த தொடர்பை செயல்நீக்கு"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "_Disable this conduit"
+msgstr "இந்த தொடர்பை செயல்நீக்கு (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "Enable the currently selected conduit"
+msgstr "தற்போது தேர்ந்தெடுக்கப்பட்ட தொடர்பை செயல்படுத்து"
+
+#: ../capplet/gnome-pilot-capplet.c:1221 ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "அமைவுகள் (_S)..."
+
+#: ../capplet/gnome-pilot-capplet.c:1222
+msgid "Modify the currently selected conduit's settings"
+msgstr "தற்போது தேர்தெடுக்கப்பட்ட conduit's அமைவுகளை மாற்று"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:205
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "PDA இமைவுகள் சாரளத்தை உருவாக்க முடியவில்லை. தவறான தொடர்பு கட்டமைப்பு."
+
+#: ../capplet/gnome-pilot-assistant.c:518
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"அமைவு இன்னும் முடிக்கப்படவில்லை அமைவு சேமிக்கப்படும்\n"
+"வெளியேற வேண்டுமா?"
+
+#: ../capplet/gnome-pilot-assistant.c:737
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"பின்வரும் தரவை PDAக்கு அனுப்ப வேண்டும்.\n"
+"உரிமையாளர் பெயர்: %s\n"
+"PDA ID: %d\n"
+"PDA ஐ  %s (%s)இல் போட்டு HotSync பொத்தானை அழுத்தவும்."
+
+#: ../capplet/gnome-pilot-assistant.c:762
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"உரிமையாளர் பெயர் மற்றும் IDஐ PDAவிலிருந்து எடுக்கிறது.\n"
+"PDAஐ  %s (%s)இல் போட்டு HotSync பொத்தானை அழுத்தவும்."
+
+#: ../capplet/gnome-pilot-assistant.c:778
+msgid "Failed sending request to gpilotd"
+msgstr "gpilotd க்கு கோரிக்கை அனுப்புவது தோல்வியுற்றது"
+
+#: ../capplet/gnome-pilot-assistant.c:948
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"உரிமையாளர் பெயர் மற்றும் ID ஐ PDAஇலிருந்து பெற்றது.\n"
+"உரிமையாளர் பெயர்: %s\n"
+"PDA ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:460
+#, c-format
+msgid "Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr "PDA ஐ %s (%s)இல் போட்டு HotSync button ஐ அழுத்தவும் அல்லது செயல்பாட்டை ரத்து செய்யவும்."
+
+#: ../capplet/gnome-pilot-pdialog.c:495
+msgid "The request to get PDA ID failed"
+msgstr "PDA குறியீட்டை பெறுவதற்கான கோரிக்கை தோல்வியுற்றது"
+
+#: ../capplet/gnome-pilot-pdialog.c:539
+msgid "The request to set PDA ID failed"
+msgstr "PDA குறியீட்டை அமைப்பதற்கானான கோரிக்கை தோல்வியுற்றது"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>தொடர்பு செயல்பாடுகள்</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>தொடர்பு அமைவுகள்</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA பண்புகள்</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA அடையாளம் காட்டுதல்</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">இந்த செயல்பாட்டிற்கு எந்த சாதனத்தை பயன்படுத்த "
+"வேண்டும்?</span>\n"
+"\n"
+"நீங்கள் ஒன்றுக்கும் மேற்பட்ட சாதனத்தை வைத்திருப்பதால் நீங்கள் அவற்றை அடையாளப்படுத்த வேண்டும் இந்த "
+"செயல்பாட்டிற்கு."
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "PDAஇன் எழுத்துரு அமை (_h):"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "தொடர்புகள் (_o)"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "சாதனத்தை தேர்ந்தெடு"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"மற்றொரு கணினியில் இதற்கு முன்பே ஒத்திசை மென்பொருளை நீங்கள் பயன்படுத்தி இருந்தால் இந்த "
+"விருப்பத்தை தேர்ந்தெடுக்கவும்"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "தொடர்பு அமைவுகள்"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"வாழ்த்துக்கள், gnome-pilot கட்டமைக்கப்பட்டது!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "செயல்நீக்கம் (_i)"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "சாதனங்கள் (_v)"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "விளக்கம்:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "சாதன அமைவுகள்"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "சாதனம்:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "நீங்கள PDAவில் சேமிக்க விரும்பினால் உரிமையாளர் பெயரை உள்ளிடவும்"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "உரிமையாளர்களின் பெயரை  மற்றும் குறியீட்டை PDAவிலிருந்து பெறவும்"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "துவக்க ஒத்திசைவு"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "பிணையம் (_w)"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "உரிமையாளர் (_w):"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "உரிமையாளர் பெயர் மற்றும் ID PDAஇல் அமைக்கபட வேண்டும்"
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "உரிமையாளர்:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "PDA பண்புகள்"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "PDA அடையாளம் காட்டுதல்"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "PDA அமைவுகள்"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "P_DA:"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "பின்வரும் சிக்கலை பொருத்தவும்..."
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "வேகம் (_p):"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid "Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"உரிமையாளர் பெயர் மற்றும் ID PDAக்கு அனுப்புகிறது, எந்த இருக்கும் அடையாளத்தையும் "
+"மேலெழுதுகிறது"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "அனைத்து PDA கோப்புகளுக்கு சேமிக்கப்பட்ட ரூட் அடைவை அமை"
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "வெற்றி"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "உங்களுடைய PDAவின் பெயர்.  இது அடையாளம் காட்டுவதற்கு மட்டுமே பயன்படும்."
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"இந்த முழு எண் ID உங்கள் PDAஐ அடையாளப்படுத்துகிறது மற்றும் பல்வேறு PDAகளுக்கிடையே நீங்கள் "
+"பயன்படுத்துவதற்கு தனித்தன்மையானது."
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "நேரமுடிந்தது (_m):"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "gnome-pilotக்கு வரவேற்கிறது!"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"நீங்கள் gnome-pilot ஐ முதல் முறை இயக்குகிறீர்கள்.\n"
+"பின்வரும் வழிமுறை gnome-pilot ஐ ஒத்திசைக்க அமைக்கிறது. \n"
+"நீங்கள் எந்த வாய்ப்பையும் பின்னர் மாற்றலாம்\n"
+"PilotLink பேனல் Gnome Control Centerஅல்.\n"
+"\n"
+"'முன்னோக்கு' என்பதை அழுத்தி தொடரவும்.\n"
+"'ரத்து' என்பதை சொடுக்கி வெளியேறவும்."
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "செயல்பாடு (_A):"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "சேர்க்கவும் (_A)..."
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "ஃப்ளூடூத் (_B)"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "அழிக்கவும் (_D)"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "சாதனம் (_D):"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "திருத்தவும் (_E)..."
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "செயல்படுத்து (_E)"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "PDAவிலிருந்து பெறவும் (_G)"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "உள்ளமை கோப்புறை (_L):"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "PDA வின் பெயர் (_N):"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "பெயர் (_N):"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "இல்லை, இந்த PDA உடன் இதற்கு முன்பு நான் ஒத்திசை மென்பொருளை பயன்படுத்தியதே இல்லை."
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "ஒரு முறை செயல் (_O):"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "உரிமையாளர் (_O):"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "_PDA ID:"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "_PDAs"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "PDAக்கு அனுப்பவும் (_S)"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "வரிசை (_S)"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "வகை (_T):"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "ஆம், இந்த PDA உடன் இதற்கு முன்பு நான் ஒத்திசை மென்பொருளை பயன்படுத்தி இருக்கிறேன்."
+
+#: ../capplet/gpilotd-control-applet.c:89
+#| msgid "gnome-pilot Settings"
+msgid " - configure gnome-pilot settings"
+msgstr " - gnome-pilot அமைவுகளை கட்டமை"
+
+#: ../capplet/gpilotd-control-applet.c:91
+#: ../capplet/gpilotd-control-applet.c:100
+#, c-format
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "gpilotd cappletஐ துவக்குவதில் பிழை: %s"
+
+#: ../capplet/gpilotd-control-applet.c:106
+#: ../capplet/gpilotd-control-applet.c:107
+msgid "Error loading PDA state, aborting"
+msgstr "PDA நிலையை ஏற்றும் போது பிழை, வெளியேறுகிறது"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "GnomePilot செயற்களத்தை  இணைக்க முடியவில்லை"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOS சாதனங்களை கட்டமை"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS சாதனங்கள்"
+
+#: ../capplet/pilot.c:118
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "gpilotd/General/sync_PC_Id விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:132
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr "gpilotd/General/progress_stepping விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:166
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "gpilotd/%s/type விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:188
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "gpilotd/%s/name விசையை ஏற்ற முடியவில்லை: iசாதனம், %s"
+
+#: ../capplet/pilot.c:206
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "gpilotd/%s/speed விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:215
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "gpilotd/%s/timeout விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:257
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr " gpilotd/%s/name விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/pilot.c:267
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "gpilotd/%s/pilotid விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../capplet/util.c:123 ../capplet/util.c:512
+msgid "Disabled"
+msgstr "செயல்நீக்கம்"
+
+#: ../capplet/util.c:129 ../capplet/util.c:514
+msgid "Enabled"
+msgstr "செயல்படுகிறது"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#: ../capplet/util.c:310
+msgid "You must have at least one device setup"
+msgstr "நீங்கள் ஒரு சாதன அமைப்பையாவது வைத்திருக்க வேண்டும்"
+
+#: ../capplet/util.c:485
+msgid "Synchronize"
+msgstr "ஒத்திசை"
+
+#: ../capplet/util.c:486
+msgid "Copy from PDA"
+msgstr "PDAவிலிருந்து நகலெடு"
+
+#: ../capplet/util.c:487
+msgid "Copy to PDA"
+msgstr "PDAக்கு நகலெடு"
+
+#: ../capplet/util.c:488
+msgid "Merge from PDA"
+msgstr "PDAலிருந்து ஒருங்கினைக்கிறது"
+
+#: ../capplet/util.c:489
+msgid "Merge to PDA"
+msgstr "PDAக்கு ஒருங்கினைக்கிறது"
+
+#: ../capplet/util.c:492
+msgid "Use conduit settings"
+msgstr "தொடர்பு அமைவுகளைப் பயன்படுத்து"
+
+#: ../capplet/util.c:500
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:501
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:502
+msgid "Network"
+msgstr "பிணையம்"
+
+#: ../capplet/util.c:503
+msgid "Bluetooth"
+msgstr "ஃப்டூளூத்"
+
+#: ../capplet/util.c:504
+msgid "Serial"
+msgstr "வரிசை"
+
+#: ../capplet/util.c:551
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"சரிசெய்யவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../capplet/util.c:556
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் ஒரு அடைவு இல்லை.\n"
+"சரிசெய்யவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../capplet/util.c:563
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"அனுமதியை குறிப்பிட்ட பாதையில் சரிபார்க்கவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../capplet/util.c:568
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../capplet/util.c:595
+#, c-format
+#| msgid ""
+#| "`%s' is not a valid character set identifier.  Please enter a valid "
+#| "identifier or select from the available options."
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"`%s' ஒரு சரியான எழுத்து அமை அடையாளப்படுத்தி இல்லை.\n"
+" ஒரு சரியான  அடையாளப்படுத்தியை உள்ளீடவும் அல்லது கிடைக்கப்பெறும் விருப்பங்களிலிருந்து தேர்ந்தெடுக்கவும்."
+
+#: ../capplet/util.c:718
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "சாதனம் 'usb:' சாதனங்களின் வகை USBக்கு சரியாக உள்ளது"
+
+#: ../capplet/util.c:727
+msgid "Read/Write permissions failed on"
+msgstr "வாசி/எழுதும் அனுமதிகள் தோல்வி"
+
+#: ../capplet/util.c:729
+msgid "Check the permissions on the device and retry"
+msgstr "சாதனத்திலிருந்து அனுமதி பெற்று மறுமுயற்சி செய்யவும்"
+
+#: ../capplet/util.c:742 ../gpilotd/gpilotd.c:1350
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"அடைவு %s அல்லது வாசிப்பு கோப்பு %sஐ தேட முடியவில்லை.  usbfs அல்லது sysfs "
+"ஏற்றப்பட்டது."
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr "backup-conduit/%s/updated_only விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr "backup-conduit/%s/remove_deleted விசையை ஏற்ற முடியவில்லை: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "நீக்கப்பட்ட தரவுதளங்களை சரிபார்க்கிறது"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:273
+#, c-format
+msgid "Renaming %s"
+msgstr "R%sக்கு மறுபெயரிடுகிறது"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:280
+#, c-format
+msgid "to %s"
+msgstr "%sக்கு"
+
+#: ../conduits/backup/backup_conduit.c:458
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s கடைசி ஒத்திசைவில் மாற்ற முடியவில்லை"
+
+#: ../conduits/backup/backup_conduit.c:474
+#: ../conduits/backup/backup_conduit.c:476
+#, c-format
+msgid "Making backup of %s"
+msgstr "%sக்கு பின்சேமிப்பு செய்கிறது"
+
+#: ../conduits/backup/backup_conduit.c:483
+#: ../conduits/backup/backup_conduit.c:485
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "பின்சேமிப்பு %s கோப்பினை உருவாக்க முடியவில்லை"
+
+#: ../conduits/backup/backup_conduit.c:761
+msgid "Collecting restore information..."
+msgstr "மறுசேமிப்பு தகவலை சேர்க்கிறது..."
+
+#: ../conduits/backup/backup_conduit.c:888
+msgid "_Backup directory:"
+msgstr "பின் சேமிப்பு அடைவு (_B):"
+
+#: ../conduits/backup/backup_conduit.c:901
+msgid "Backup directory"
+msgstr "பின்சேமிப்பு அடைவு"
+
+#: ../conduits/backup/backup_conduit.c:903
+msgid "O_nly backup changed bases"
+msgstr "பின்சேமிப்பு மட்டுமே அடிப்படையை மாற்றியது (_n)"
+
+#: ../conduits/backup/backup_conduit.c:913
+msgid "Only backup changed bases"
+msgstr "பின்சேமிப்பு மட்டுமே அடிப்படையை மாற்றியது"
+
+#: ../conduits/backup/backup_conduit.c:915
+msgid "_Remove local base if deleted on pilot"
+msgstr "உள்ளமை அடிப்படையை பைலட்டை அழித்தால் நீக்கு (_R)"
+
+#: ../conduits/backup/backup_conduit.c:925
+msgid "Remove local base if deleted on pilot"
+msgstr "உள்ளமை அடிப்படையை பைலட்டை அழித்தால் நீக்கு"
+
+#: ../conduits/backup/backup_conduit.c:927
+msgid "# of old backups to _keep"
+msgstr "வைக்க # பழைய பின்சேமிப்புகள் (_k)"
+
+#: ../conduits/backup/backup_conduit.c:938
+msgid "# of old backups to keep"
+msgstr "வைக்க # பழைய பின்சேமிப்புகள் "
+
+#: ../conduits/backup/backup_conduit.c:976
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"சரிசெய்யவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../conduits/backup/backup_conduit.c:981
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"ஒரு அடைவை உருவாக்கவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../conduits/backup/backup_conduit.c:988
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை அடைவு உள்ளது ஆனால் தவறான அனுமதிகள்.\n"
+"குறிப்பிட்ட பாதையின்ச அனுமதிகளை சரிபார்க்கவும் அல்லது வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../conduits/backup/backup_conduit.c:993
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"குறிப்பிட்ட அடிப்படை பின்சேமிப்பு அடைவு தவறாறது.\n"
+"வேறு அடைவை தேர்ந்தெடுக்கவும்"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "%s ஐ நிறுவுவது தோல்வியுற்றது"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Installing %s லிருந்து %s நிறுவப்பட்டுவிட்டது..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "%sஐ நிறுவுகிறது..."
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "Install immediately"
+msgstr "உடனடியாக நிறுவவும்"
+
+#: ../conduits/file/gpilot_install_file.c:47
+msgid "Install delayed"
+msgstr "நிறுவல் தாமனதமானது"
+
+#: ../conduits/file/gpilot_install_file.c:48
+msgid "PDA to install to"
+msgstr "நிறுவ PDA"
+
+#: ../conduits/file/gpilot_install_file.c:48
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:49
+#| msgid "FILE"
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#: ../conduits/file/gpilot_install_file.c:49
+#| msgid "Install of %s failed"
+msgid "list of files"
+msgstr "கோப்புகளின் பட்டியல்"
+
+#: ../conduits/file/gpilot_install_file.c:107
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd"
+msgstr "gpilotd ஐ துவக்குவதில் பிழை"
+
+#: ../conduits/file/gpilot_install_file.c:122
+#: ../conduits/file/gpilot_install_file.c:123
+msgid "Unable to get PDA names"
+msgstr "PDA பெயர்களை பெற முடியவில்லை"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "பின்வரும் கோப்புகள் தோல்வியுற்றது :\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "%sக்கு நிறுவுகிறது:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "நிறுவதற்கு எந்த கோப்பும் இல்லை"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"நிறுவ ஒத்திசைவை அழுத்தவும்\n"
+"அல்லது செயல்பாட்டை ரத்து செய்யவும்"
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilot செயற்களம்"
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:684
+msgid "module loading not supported, fatal!"
+msgstr "தொகுதி ஏற்றியது துணைபுரியவில்லை, முக்கியமானது!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "அழிக்கப்பட்ட PDA பதிவு உள்ளமைவாக மாற்றகப்பட்டது, அழிக்கப்படவில்லை\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "அழிக்கப்பட்ட உள்ளமை பதிவு PDA ஆக மாற்றப்பட்டது, அழிக்கப்படவில்லை\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:143
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "இணைத்தல் முரண், PDA மற்றும் உள்ளமை பதிவு இடமாற்றப்பட்டது\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "காப்பு மற்றும் மாற்றம் முரண், PDA மற்றும் உள்ளமை பதிவு இட மாற்றப்பட்டது\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "காப்பு மற்றும் மாற்றம் முரண், உள்ளமை பதிவு PDAக்கு அனுப்பப்பட்டது\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "காப்பு மற்றும் மாற்றம் முரண், உள்ளமைவாக PDA பதிவு சேமிக்கப்பட்டது\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:424
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:499
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:564
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:593
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:622
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Conduits துவக்குதல் தோல்வி, செயல்பாட்டை கைவிடுகிறது"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:437
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "PDA தரவுத்தளத்தில் அனைத்தையும் அழிக்க முடியவில்லை, செயல்பாட்டை கைவிடுகிறது."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:448
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1026
+msgid "Conduit did not return a record"
+msgstr "Conduit ஒரு பதிவை கொடுக்கும்"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:505
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "அனைத்து பதிவையும் உள்ளமை தரவுத்தளத்தில் அழிக்கிறது, செயல்பாட்டை வெளியேற்றுகிறது"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1431
+msgid "Error in conduit, newly added record could not be found"
+msgstr "conduitஇல் பிழை, புதிதாக சேர்க்கப்பட்ட பதிவு காணப்படவில்லை"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "PDA க்கு நகலெடுப்பது தோல்வியுற்றது!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "PDA விலிருந்து நகலெடுப்பது தோல்வியுற்றது!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "PDA க்கு ஒருங்கினைப்பது தோல்வியுற்றது!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "PDA விலிருந்து ஒருங்கினைப்பது தோல்வியுற்றது!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "ஒத்திசைவு தோல்வியுற்றது!"
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "சாதனம் %s (%s)ஐ திறக்க முடியவில்லை: காரணம்: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot சாதனம் %s (%s)ஐ திறக்க முடியவில்லை.\n"
+"காரணம்: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+"Bluetooth சாதனம் [%s]: சாக்கெட்டை பிணைக்க முடியவில்லை: err %d (check pilot-link "
+"was compiled with bluetooth support)"
+
+#: ../gpilotd/gnome-pilot-structures.c:469
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "சாதனம் [%s, %s]: சாக்கெட்டை பிணைக்க முடியவில்லை: err %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:549
+#: ../gpilotd/gnome-pilot-structures.c:602
+#: ../gpilotd/gnome-pilot-structures.c:633
+#: ../gpilotd/gnome-pilot-structures.c:661
+msgid "Unknown device type"
+msgstr "தெரியாத சாதன வகை"
+
+#: ../gpilotd/gnome-pilot-structures.c:679
+msgid "Number of devices is configured to 0"
+msgstr "0க்கு பல சாதனங்கள் கட்டமைக்கப்பட்டுள்ளன"
+
+#: ../gpilotd/gnome-pilot-structures.c:681
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"சாதனம் எதுவும் கட்டமைக்கப்படவில்லை.\n"
+"gpilotd-control-appletஐ இயக்கவும் (gnomeccஐ பயன்படுத்தவும்)\n"
+"gnome-pilotஐ கட்டமைக்க."
+
+#: ../gpilotd/gnome-pilot-structures.c:702
+msgid "No accessible devices available"
+msgstr "அணுகக்கூடிய சாதனங்கள் இல்லை"
+
+#: ../gpilotd/gnome-pilot-structures.c:721
+msgid "Number of PDAs is configured to 0"
+msgstr "0க்கு கட்டமைக்க PDAகளின் எண்ணிக்கை"
+
+#: ../gpilotd/gnome-pilot-structures.c:723
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"PDAகள் கட்டமைக்கப்படவில்லை.\n"
+"gpilotd-control-appletஐ இயக்கி (gnomecc பயன்படுத்தி)\n"
+"gnome-pilot கட்டமைக்கவும்."
+
+#: ../gpilotd/gnome-pilot-structures.c:786 ../gpilotd/gpilotd.c:695
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "pilot_charset எதுவும் கட்டமைக்கப்படவில்லை.  `%s' பயன்படுத்தி."
+
+#: ../gpilotd/gpilotd.c:241
+msgid "Unable to bind to PDA"
+msgstr "PDAஉடன் பிணைக்க முடியவில்லை"
+
+#: ../gpilotd/gpilotd.c:382
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+"சாதனம் `%s'ஐ பயன்படுத்தி இணைக்க முடியவில்லை, துறை `%s'இல். உங்கள் கட்டமைப்பை சரிகார்த்து "
+"புதிய வடிவில் libusb `usb:' ஒத்திசைக்கவும், ஆனால் பழைய `visor' கர்னல் தொகுதி "
+"ஏற்றப்பட்டுள்ளது. நீங்கள் ஒரு `ttyUSB...' சாதனத்தை தேர்ந்தெடுக்க வேண்டும்."
+
+#: ../gpilotd/gpilotd.c:397
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+"சாதனம் `%s'ஐ பயன்படுத்தி இணைக்க முடியவில்லை, துறை `%s'இல். உங்கள் கட்டமைப்பை சரிபார்த்து "
+"புதிய வடிவில் `ttyUSB' ஒத்திசைக்கவும், ஆனால் பழைய `visor' கர்னல் தொகுதி "
+"ஏற்றப்பட்டுள்ளது. நீங்கள் ஒரு `usb:' சாதனத்தை தேர்ந்தெடுக்க வேண்டும்."
+
+#: ../gpilotd/gpilotd.c:488
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "தெரியாத PDA, எந்த பயனர்ஐடி/பெயர் பொருந்தவில்லை %ld"
+
+#: ../gpilotd/gpilotd.c:495
+msgid "Use gnomecc to configure PDA"
+msgstr "PDAவை கட்டமைக்க gnomecc வை பயன்படுத்து"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:500
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"தெரியாத PDA -  PDA எதுவும் IDஉடன் பொருந்தவில்லை %ld\n"
+" gnomecc ஐ பயன்படுத்தி gnome-pilotஐ கட்டமைக்கவும்"
+
+#: ../gpilotd/gpilotd.c:524
+#, c-format
+msgid "Device %s has %d events"
+msgstr "சாதனம் %sஆனது %d நிகழ்வுகளை பெற்றுள்ளது"
+
+#: ../gpilotd/gpilotd.c:537
+msgid "Setting userinfo..."
+msgstr "அமைவுகள் பயனர் தகவல்..."
+
+#: ../gpilotd/gpilotd.c:542
+msgid "Sync continues"
+msgstr "ஒத்திசை தொடர்கிறது"
+
+#: ../gpilotd/gpilotd.c:561
+msgid "Getting userinfo..."
+msgstr "பயனர் தகவலை பெறுகிறது..."
+
+#: ../gpilotd/gpilotd.c:623
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync விண்ணப்பம் கண்டறியப்பட்டது, PDAஐ ஒத்திசைக்கிறது"
+
+#: ../gpilotd/gpilotd.c:625
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Bluetooth விண்ணப்பம் கண்டறியப்பட்டது PDAவை ஒத்திசைக்கிறது"
+
+#: ../gpilotd/gpilotd.c:627
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync பொத்தான் அழுத்தப்பட்டது,  PDAஐ ஒத்திசைக்கிறது"
+
+#: ../gpilotd/gpilotd.c:629
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDAகுறியீடு %ld, பெயரானது %s, உரிமையாளர் %s"
+
+#: ../gpilotd/gpilotd.c:639
+#, c-format
+msgid "On host %s\n"
+msgstr ""
+"%s புரவலத்தினுள்\n"
+"\n"
+
+#: ../gpilotd/gpilotd.c:641
+#, c-format
+msgid "On host %d\n"
+msgstr "%d புரவலத்தினுள்\n"
+
+#: ../gpilotd/gpilotd.c:660
+msgid "Synchronization ended"
+msgstr "ஒத்திசைவு முடிவடைந்தது"
+
+#: ../gpilotd/gpilotd.c:663
+msgid "Synchronization ended early"
+msgstr "விரைவில் ஒத்திசைவு முடிவடையும்"
+
+#: ../gpilotd/gpilotd.c:709
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "`%s' அறிந்த iconv எழுத்துரு வகை இல்லை, `%s' ஐ பயன்படுத்துகிறது."
+
+#: ../gpilotd/gpilotd.c:732
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"தள அடைவு %s சரியானது.\n"
+"அதை பொருத்து அல்லது மற்றொரு அடைவைத் தேர்ந்தெடுக்க gnomecc வை பயன்படுத்தவும்."
+
+#: ../gpilotd/gpilotd.c:745
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"தெரியாத PDA - PDA எதுவும் பொருந்தவில்லை ID %ldக்கு\n"
+"gpilotd-control-appletஐ பயன்படுத்தி PDAஇன் IDஐ அமை"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:796
+msgid "An error occurred while getting the PDA's system data"
+msgstr "PDA'கள் கணினி தரவை பெறும் போது ஒரு பிழை ஏற்ப்பட்டுவிட்டது"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:805
+msgid "An error occurred while getting the PDA's user data"
+msgstr "PDA'கள் பயனர் தரவை பெறும் போது ஒரு பிழை ஏற்ப்பட்டுவிட்டது"
+
+#: ../gpilotd/gpilotd.c:810
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "சாதனம் %sகான நிகழ்வுகள் முடிவடைந்தன (%s)"
+
+#: ../gpilotd/gpilotd.c:871
+#, c-format
+msgid "Woke on %s"
+msgstr "%sஇல் விழி"
+
+#: ../gpilotd/gpilotd.c:952
+#, c-format
+msgid "Woke on network: %s"
+msgstr "பிணையத்தில் விழி: %s"
+
+#: ../gpilotd/gpilotd.c:1522
+#, c-format
+msgid "Watching %s (network)"
+msgstr "%sஐ கவனிக்கிறது (பிணையம்)"
+
+#: ../gpilotd/gpilotd.c:1524
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "%sஐ கவனிக்கிறது (ஃப்ளூடூத்)"
+
+#: ../gpilotd/gpilotd.c:1526
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%sஐ கவனிக்கிறது (%s)"
+
+#: ../gpilotd/gpilotd.c:1540
+msgid "Exiting (caught SIGTERM)..."
+msgstr "வெளியேறுகிறது (caught SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1549
+msgid "Exiting (caught SIGINT)..."
+msgstr " வெளியேறுகிறது (caught SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1581
+msgid "Unable to create file installation queue directory"
+msgstr "கோப்பு நிறுவல் வரிசை அடைவை உருவாக்க முடியவில்லை"
+
+#: ../gpilotd/gpilotd.c:1631
+msgid "Shutting down devices"
+msgstr "சாதனங்களைப் பணி நிறுத்துகிறது"
+
+#: ../gpilotd/gpilotd.c:1633
+msgid "Rereading configuration..."
+msgstr "மறுவாசிப்பு கட்டமைப்பு..."
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "பின்சேமிப்பு தொடர்பு பட்டியலில் பின்சேமிப்பு தொடர்புகள் இல்லை"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s பின்சேமிக்கப்பட்டது\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s பின்சேமிப்பு தோல்வி\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "ஒத்திசைக்கும் தகவலை சேர்க்கிறது..."
+
+#: ../gpilotd/manager.c:428
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%sஐ ஒத்திசைக்கிறது\n"
+
+#: ../gpilotd/manager.c:447
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "PDA %sக்கு நகலெடுக்கிறது\n"
+
+#: ../gpilotd/manager.c:465
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "PDA %sலிருந்து நகலெடுக்கிறது\n"
+
+#: ../gpilotd/manager.c:483
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "PDA %sக்கு ஒருங்கினைக்கிறது\n"
+
+#: ../gpilotd/manager.c:501
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "PDA %s விலிருந்து ஒருங்கினைக்கிறது\n"
+
+#: ../gpilotd/manager.c:529
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Conduit %s's முதல் ஒத்திசைவு..."
+
+#: ../gpilotd/manager.c:553
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "தெரியாத ஒத்திசைக்கும் செயல் (%d = %s).\n"
+
+#: ../gpilotd/manager.c:679
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "உடனடியாக செய்கிறது %d conduits..."
+
+#: ../gpilotd/manager.c:684 ../gpilotd/manager.c:685
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "தெரியாத தொடர்பு \"%s\" கட்டமைப்பில் இருக்கிறது!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "ஏற்றப்படும் தொடர்பு \"%s\" தோல்வியுற்றது!"
+
+#: ../gpilotd/manager.c:695
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "ஏற்றப்படும் தொடர்பு \"%s\" தோல்வியுற்றது!\n"
+
+#: ../gpilotd/manager.c:785
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "அமைவுகளின் குறியீடு/%d/%sக்கு உரிமையாளர்..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:817
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "தொடர்பு %s கோரப்பட்டது, ஆனால் காணப்படவில்லை"
+
+#: ../gpilotd/manager.c:827
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "தொடர்பு %s கோரப்படவில்லை"
+
+#: ../gpilotd/orbit_daemon_glue.c:1748
+msgid "(unknown DB)"
+msgstr "(தெரியாத DB)"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "வரிசையில் பிழை, இல்லாத உள்ளீடு"
+
+#: ../gpilotd/queue_io.c:453
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "தவறு: PDA %dக்கு எந்த கோரிக்கையும் காணப்படவுல்லை, கோரிக்கை %d"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "கணினி தகவலை பெறு"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "செயற்களத்தை இடைநிறுத்து"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "இடைநிறுத்தப்படாத செயற்களம்"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "செயற்களத்தை மறுதுவக்கு"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "பயனர் குறியீடு மற்றும் பெநரை அமைக்கவும்"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "PDAஐ கான குறியீடு"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "கோப்பை நிறுவு"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "கோப்பு"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "அடைவை மறுசேமிக்கவும்"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "அடைவு"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "தொடர்பு இயங்குகிறது"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:28
+msgid "CONDUIT"
+msgstr "தொடர்பு"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "பயனர் பெயரை அமைக்க வேண்டும்"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "பயனர்பெயர்"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "குறிப்பிட்ட PDAகளின் செயல்களை கவனிக்கவும்"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "அனைத்து  PDAகளையும் கவனிக்கவும்"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr "PDAகளை புகுபதிவால் பட்டியலிடு(அனைத்து pilotகளுக்கும்)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "செயல்படுத்த PDA ஐ குறிப்பிடு (முன்னிருப்பு MyPDA)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTNAME"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "ஒரு cradleஐ செயல்படுத்த குறிப்பிடவும் (முன்னிருப்பு Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "CRADLENAME"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "குறிப்பிட்ட PDAஇன் அடிப்படைகளை பட்டியலிடு"
+
+#: ../utils/gpilotd-client.c:365
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd-client"
+msgstr "gpilotd-க்ளையண்ட்டை துவக்குவதில் பிழை"
+
+#: ../utils/gpilotd-client.c:369 ../utils/gpilotdcm-client.c:118
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"எச்சரிக்கை!!\n"
+"இது gnome-pilot தொகுப்பின் சில பகுதிகளை கொண்டுள்ளது.\n"
+"இது பற்றி தெரியவில்லையெனில் இதனை பயன்படுத்த வேண்டாம்."
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "lists available conduits"
+msgstr "கிடைக்ககூடிய தொடர்புகளின் பட்டியல்கள்"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "conduit to operate on"
+msgstr "செயல்பாட்டிற்கு தொடரவும்"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list all attributes"
+msgstr "அனைத்து பண்புகளின் பட்டியல்"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "specify PDA to operate on"
+msgstr "செயல்படுத்துவதற்கு  குறிப்பட்ட PDA"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list attributes"
+msgstr "பண்புகளின் பட்டியல்"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "list available conduits and their state"
+msgstr "கிடைக்ககூடிய தொடர்புகளின் பட்டியல் மற்றும் அவற்றின் நிலை"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable specified conduit"
+msgstr "குறிப்பிடப்பட்ட செயல்படும் தொடர்பு"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "disable specified conduit"
+msgstr "குறிப்பிடப்பட்ட செயல்நீக்கு தொடர்பு"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "enable, and set firstsync to slow"
+msgstr "செயல்படுத்திர firstsyncஐ மெதுவாக்கவும்"
+
+#: ../utils/gpilotdcm-client.c:36
+msgid "instantiate and destroy the conduit"
+msgstr "conduitஐ துவக்கி அழிக்கிறது"
+
+#: ../utils/gpilotdcm-client.c:114
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotdcm-client"
+msgstr "gpilotdcm-க்ளையண்ட்டை துவக்குவதில் பிழை"
+

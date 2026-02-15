@@ -1,0 +1,1746 @@
+# translation of gnome-pilot to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-pilot package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-04-01 14:46-0700\n"
+"PO-Revision-Date: 2005-03-31 20:55-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"ULL NAME <EMAIL@ADDRESS>\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr ""
+
+# svx/source\gallery2\gallery.src:RID_SVXDLG_GALLERY_SEARCH_PROGRESS.FL_SEARCH_DIR.text
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Ububiko"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:5
+#, fuzzy
+msgid "Execute when clicked"
+msgstr "Ryari:"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr ""
+
+#: applet/pilot-applet.glade.h:10
+#, fuzzy
+msgid "gnome-pilot progress"
+msgstr "Aho bigeze"
+
+#: applet/pilot.c:136
+msgid "Synchronizing..."
+msgstr ""
+
+#: applet/pilot.c:164
+#, c-format
+msgid "%s Synchronizing"
+msgstr ""
+
+#: applet/pilot.c:169
+#, fuzzy
+msgid "Database %v of %u"
+msgstr "Bya"
+
+#: applet/pilot.c:188 applet/pilot.c:777 applet/pilot.c:929
+#, fuzzy
+msgid "Ready to synchronize"
+msgstr "Kuri Kuringaniza"
+
+#: applet/pilot.c:208
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr ""
+
+#: applet/pilot.c:229
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr ""
+
+#: applet/pilot.c:234
+#, c-format
+msgid "%s: Started\n"
+msgstr ""
+
+#: applet/pilot.c:248
+#, c-format
+msgid "%s Finished : %s"
+msgstr ""
+
+#: applet/pilot.c:253
+#, c-format
+msgid "%s: Ended\n"
+msgstr ""
+
+#: applet/pilot.c:278
+#, fuzzy
+msgid "%v of %u records"
+msgstr "%vBya Ibyabitswe"
+
+#: applet/pilot.c:354
+#, fuzzy
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr "ni Tegereza kugirango Kuri Kurangiza"
+
+#: applet/pilot.c:357
+#, fuzzy
+msgid "Not connected. Please restart daemon."
+msgstr "Ongera utangire"
+
+#: applet/pilot.c:359
+#, fuzzy
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr "Kuri Ongera utangire"
+
+#: applet/pilot.c:374
+#, fuzzy
+msgid "gnome-pilot applet"
+msgstr "Apuleti..."
+
+#: applet/pilot.c:376
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr ""
+
+#: applet/pilot.c:377
+#, fuzzy
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "A Na kugirango"
+
+#: applet/pilot.c:469 applet/pilot.c:495
+#, fuzzy, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Ikosa Ifashayobora"
+
+# # @name NS_MSG_CANCELLING
+#: applet/pilot.c:533
+#, fuzzy, c-format
+msgid "cancelling %d"
+msgstr "Kureka..."
+
+#: applet/pilot.c:585
+#, c-format
+msgid "Restoring %s"
+msgstr ""
+
+#: applet/pilot.c:627
+#, fuzzy
+msgid "No directory to restore from."
+msgstr "bushyinguro Kuri Kugarura Bivuye"
+
+#: applet/pilot.c:635
+#, fuzzy
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr "Kuringaniza ku i Kuri Cyangwa Kureka i"
+
+#: applet/pilot.c:644
+#, fuzzy
+msgid "Restore request failed"
+msgstr "Kubaza... Byanze"
+
+#: applet/pilot.c:682
+#, fuzzy
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr "ni in Aho bigeze Kuri Ongera utangire"
+
+#: applet/pilot.c:692 applet/pilot.c:1274
+#, fuzzy
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Kuri Kwihuza Kuri i"
+
+#: applet/pilot.c:708
+#, fuzzy
+msgid "There's no last sync on record."
+msgstr "Oya Iheruka ku Icyabitswe"
+
+#: applet/pilot.c:748
+msgid "Continue"
+msgstr "Gukomeza"
+
+#: applet/pilot.c:750
+msgid "Pause Daemon"
+msgstr ""
+
+#: applet/pilot.c:770
+#, fuzzy
+msgid "Daemon paused..."
+msgstr "Mu karuhuko"
+
+#: applet/pilot.c:910
+#, fuzzy
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Kuri"
+
+#: applet/pilot.c:1102
+#, fuzzy, c-format
+msgid "Execution of %s failed"
+msgstr "Bya Byanze"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1233
+#, fuzzy, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "gukora iyinjizaporogaramu: %s%s Kuri"
+
+#: applet/pilot.c:1243
+#, fuzzy
+msgid "unknown dnd type"
+msgstr "Kitazwi Ubwoko"
+
+#: applet/pilot.c:1251
+#, fuzzy
+msgid "destroy gpilot-applet"
+msgstr "Apuleti..."
+
+#: applet/pilot.c:1338
+#, fuzzy
+msgid "Cannot find pilot-applet.glade"
+msgstr "Gushaka Apuleti..."
+
+#: applet/pilot.schemas.in.h:1
+#, fuzzy
+msgid "Command to execute when the applet is clicked"
+msgstr "Kuri Gukora Ryari: i Apuleti... ni"
+
+#: applet/pilot.schemas.in.h:2
+#, fuzzy
+msgid "Display notices in popup windows"
+msgstr "in"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr ""
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Izina"
+
+# svtools/source\dialogs\addresstemplate.src:STR_FIELD_ID.text
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: capplet/gnome-pilot-capplet.c:382
+#, fuzzy
+msgid "UserName"
+msgstr "Izina ry'ukoresha"
+
+# framework/source\services\logindialog.src:RID_DLG_LOGIN.RID_FT_SECURITYPROXYPORT.text
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Umuyoboro"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Umuvuduko"
+
+# filter/source\xsltdialog\xmlfilterdialogstrings.src:STR_COLUMN_HEADER_TYPE.text
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Ubwoko"
+
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr ""
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr ""
+
+#: capplet/gnome-pilot-capplet.c:775
+#, fuzzy, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Kuri Gusiba"
+
+#: capplet/gnome-pilot-capplet.c:799
+#, fuzzy
+msgid "_Edit this pilot..."
+msgstr "iyi"
+
+#: capplet/gnome-pilot-capplet.c:800
+#, fuzzy
+msgid "Edit the currently selected pilot"
+msgstr "i Byahiswemo"
+
+#: capplet/gnome-pilot-capplet.c:802
+#, fuzzy
+msgid "_Delete this pilot"
+msgstr "iyi"
+
+#: capplet/gnome-pilot-capplet.c:803
+#, fuzzy
+msgid "Delete the currently selected pilot"
+msgstr "i Byahiswemo"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, fuzzy, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Kuri Gusiba APAREYE"
+
+#: capplet/gnome-pilot-capplet.c:959
+#, fuzzy
+msgid "_Edit this device..."
+msgstr "iyi APAREYE"
+
+#: capplet/gnome-pilot-capplet.c:960
+#, fuzzy
+msgid "Edit the currently selected device"
+msgstr "i Byahiswemo APAREYE"
+
+#: capplet/gnome-pilot-capplet.c:962
+#, fuzzy
+msgid "_Delete this device"
+msgstr "iyi APAREYE"
+
+#: capplet/gnome-pilot-capplet.c:963
+#, fuzzy
+msgid "Delete the currently selected device"
+msgstr "i Byahiswemo APAREYE"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, fuzzy, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Kuri"
+
+#: capplet/gnome-pilot-capplet.c:1165
+#, fuzzy
+msgid "_Enable this conduit"
+msgstr "iyi"
+
+#: capplet/gnome-pilot-capplet.c:1166
+#, fuzzy
+msgid "Disable the currently selected conduit"
+msgstr "i Byahiswemo"
+
+#: capplet/gnome-pilot-capplet.c:1168
+#, fuzzy
+msgid "_Disable this conduit"
+msgstr "iyi"
+
+#: capplet/gnome-pilot-capplet.c:1169
+#, fuzzy
+msgid "Enable the currently selected conduit"
+msgstr "i Byahiswemo"
+
+# wizards/source\euro\euro.src:STEP_LASTPAGE_+_3.text
+#: capplet/gnome-pilot-capplet.c:1174
+#, fuzzy
+msgid "_Settings..."
+msgstr "Amagenamiterere:"
+
+#: capplet/gnome-pilot-capplet.c:1175
+#, fuzzy
+msgid "Modify the currently selected conduit's settings"
+msgstr "i Byahiswemo Amagenamiterere"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+#, fuzzy
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr "Kuri Kurema Amagenamiterere Idirishya Iboneza"
+
+#: capplet/gnome-pilot-druid.c:411
+#, fuzzy
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr "OYA Byuzuye Na Amagenamiterere Kuri Kuvamo"
+
+#: capplet/gnome-pilot-druid.c:503
+#, fuzzy, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr "Kuri Kohereza i Ibyatanzwe Kuri i Gushyira in Na Kanda Akabuto"
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, fuzzy, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr "Kuri Na Bivuye i Gushyira in Na Kanda Akabuto"
+
+#: capplet/gnome-pilot-druid.c:538
+#, fuzzy
+msgid "Failed sending request to gpilotd"
+msgstr "Kubaza... Kuri"
+
+#: capplet/gnome-pilot-druid.c:669
+#, fuzzy, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr "Na Bivuye"
+
+#: capplet/gnome-pilot-pdialog.c:374
+#, fuzzy, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr "Gushyira in Na Kanda Akabuto Cyangwa Kureka i"
+
+#: capplet/gnome-pilot-pdialog.c:410
+#, fuzzy
+msgid "The request to get pilot id failed"
+msgstr "Kubaza... Kuri Kubona ID Byanze"
+
+#: capplet/gnome-pilot-pdialog.c:450
+#, fuzzy
+msgid "The request to set pilot id failed"
+msgstr "Kubaza... Kuri Gushyiraho ID Byanze"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:8
+#, fuzzy
+msgid "Action:"
+msgstr "Igikorwa:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Kingeraho"
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:15
+#, fuzzy
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Nibyiza ni Guhindura>> Amagenamiterere ku Igihe Bivuye Na Amasimbuka in "
+"Igenzura hagati Bya ku Wongera Apuleti... Kuri"
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr ""
+
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.text
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Gusiba"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:424
+msgid "Disabled"
+msgstr "Yahagaritswe"
+
+# dbaccess/source/ui/inc/toolbox.hrc:MID_DBUI_QUERY_EDIT_JOINCONNECTION.text
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Kwandika..."
+
+# svx/source\dialog\paragrph.src:RID_SVXPAGE_EXT_PARAGRAPH.BTN_PAGEBREAK.text
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Gushoboza"
+
+#: capplet/gpilotd-capplet.glade.h:30
+#, fuzzy
+msgid "Enter user name you want stored on your pilot"
+msgstr "Ukoresha: Izina: ku"
+
+#: capplet/gpilotd-capplet.glade.h:31
+#, fuzzy
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr "Na Bivuye Mbere"
+
+#: capplet/gpilotd-capplet.glade.h:32
+#, fuzzy
+msgid "Get from pilot"
+msgstr "Bivuye"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:414
+msgid "IrDA"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr ""
+
+# 4032
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:415
+msgid "Network"
+msgstr "urusobe"
+
+#: capplet/gpilotd-capplet.glade.h:40
+#, fuzzy
+msgid "No, I've never used sync software with this pilot before."
+msgstr "Nta narimwe Na: iyi Mbere"
+
+# goodies/source\filter.vcl\eps\dlgeps.src:DLG_EXPORT_EPS.RB_COMPRESSION_NONE.text
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "Nta na kimwe"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:50
+#, fuzzy
+msgid "Send to pilot"
+msgstr "Kuri"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:416
+msgid "Serial"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:52
+#, fuzzy
+msgid "Set User Name and ID to a new pilot."
+msgstr "Na Kuri a Gishya"
+
+#: capplet/gpilotd-capplet.glade.h:53
+#, fuzzy
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "i Imizi bushyinguro kugirango Byose Idosiye Kuri"
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Amaboneza..."
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Ibyatunganye"
+
+#: capplet/gpilotd-capplet.glade.h:57
+#, fuzzy
+msgid "The name for your pilot. It is only used for identification."
+msgstr "Izina: kugirango ni kugirango irangamimerere"
+
+#: capplet/gpilotd-capplet.glade.h:58
+#, fuzzy
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr "Umubare wuzuye Na Cyo nyine hagati Gukoresha"
+
+# offmgr/source\offapp\dialog\connpooloptions.src:RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.text
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Igihe cyarenze"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:413
+msgid "USB"
+msgstr ""
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Izinakoresha"
+
+#: capplet/gpilotd-capplet.glade.h:63
+#, fuzzy
+msgid "User Name and ID to set on the Pilot"
+msgstr "Na Kuri Gushyiraho ku i"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Izina ry'ukoresha:"
+
+#: capplet/gpilotd-capplet.glade.h:65
+#, fuzzy
+msgid "Welcome to gnome-pilot!"
+msgstr "Kuri"
+
+#: capplet/gpilotd-capplet.glade.h:66
+#, fuzzy
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Na: iyi Mbere"
+
+#: capplet/gpilotd-capplet.glade.h:67
+#, fuzzy
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Kuri kugirango i Itangira Igihe Intambwe Imikorere kugirango Buri gihe "
+"Guhindura>> Amahitamo in Kuri urifuzagukomeza Kuri Gusohoka"
+
+#: capplet/gpilotd-control-applet.c:81
+#, fuzzy
+msgid "Start druid only"
+msgstr "Gutangira"
+
+#: capplet/gpilotd-control-applet.c:103
+#, fuzzy
+msgid "Error initializing gpilotd capplet"
+msgstr "Gutangiza"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+#, fuzzy
+msgid "Error loading pilot state, aborting"
+msgstr "Itangira... Leta"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+#, fuzzy
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Kwihuza Kuri i"
+
+#: capplet/gpilotd-control-applet.c:132
+#, fuzzy
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr "Gukoresha NIBA Cyangwa"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr ""
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr ""
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:405
+#, fuzzy
+msgid "Use conduit settings"
+msgstr "Amagenamiterere"
+
+# svx/source\dialog\border.src:RID_SVXPAGE_BORDER.CB_SYNC.text
+#: capplet/util.c:37 capplet/util.c:398
+msgid "Synchronize"
+msgstr "Kuringaniza"
+
+#: capplet/util.c:38 capplet/util.c:399
+#, fuzzy
+msgid "Copy from pilot"
+msgstr "Bivuye"
+
+#: capplet/util.c:39 capplet/util.c:400
+#, fuzzy
+msgid "Copy to pilot"
+msgstr "Kuri"
+
+#: capplet/util.c:40 capplet/util.c:401
+#, fuzzy
+msgid "Merge from pilot"
+msgstr "Bivuye"
+
+#: capplet/util.c:41 capplet/util.c:402
+#, fuzzy
+msgid "Merge to pilot"
+msgstr "Kuri"
+
+#: capplet/util.c:95 capplet/util.c:426
+msgid "Enabled"
+msgstr "Bikora"
+
+#: capplet/util.c:234
+#, fuzzy
+msgid "You must have at least one device setup"
+msgstr "ku APAREYE Imikorere"
+
+#: capplet/util.c:464
+#, fuzzy
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr "SHINGIRO bushyinguro i Uruhushya Cyangwa Guhitamo bushyinguro"
+
+#: capplet/util.c:469
+#, fuzzy
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"SHINGIRO bushyinguro ni OYA a bushyinguro Ubwoko a bushyinguro Cyangwa "
+"Guhitamo bushyinguro"
+
+#: capplet/util.c:476
+#, fuzzy
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Kuri Kurema i SHINGIRO bushyinguro i ku i Inzira Cyangwa Guhitamo bushyinguro"
+
+#: capplet/util.c:481
+#, fuzzy
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr "Inzira kugirango i SHINGIRO bushyinguro ni Sibyo Guhitamo bushyinguro"
+
+#: capplet/util.c:583
+#, fuzzy
+msgid "Read/Write permissions failed on"
+msgstr "Uruhushya Byanze ku"
+
+#: capplet/util.c:585
+#, fuzzy
+msgid "Check the permissions on the device and retry"
+msgstr "i Uruhushya ku i APAREYE Na Ongera ugerageze"
+
+#: conduits/backup/backup_conduit.c:236
+#, fuzzy
+msgid "Checking for removed databases"
+msgstr "kugirango Cyavanyweho Ububikoshingiro"
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr ""
+
+# sw/source\ui\envelp\mailmrge.src:DLG_MAILMERGE.FT_BIS.text
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, fuzzy, c-format
+msgid "to %s"
+msgstr "Kuri:"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, fuzzy, c-format
+msgid "%s not modified since last sync"
+msgstr "%sOYA Byahinduwe guhera Iheruka"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, fuzzy, c-format
+msgid "Making backup of %s"
+msgstr "Inyibutsa Bya"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, fuzzy, c-format
+msgid "Could not create backup file %s"
+msgstr "OYA Kurema Inyibutsa IDOSIYE"
+
+#: conduits/backup/backup_conduit.c:646
+#, fuzzy
+msgid "Collecting restore information..."
+msgstr "Kugarura Ibisobanuro"
+
+#: conduits/backup/backup_conduit.c:770
+#, fuzzy
+msgid "Backup directory"
+msgstr "bushyinguro"
+
+#: conduits/backup/backup_conduit.c:780
+#, fuzzy
+msgid "Only backup changed bases"
+msgstr "Inyibutsa Byahinduwe"
+
+#: conduits/backup/backup_conduit.c:787
+#, fuzzy
+msgid "Remove local base if deleted on pilot"
+msgstr "SHINGIRO NIBA Cyasibwe ku"
+
+#: conduits/backup/backup_conduit.c:794
+#, fuzzy
+msgid "# of old backups to keep"
+msgstr "#Bya ki/ bishaje Ibyashyinguwe Kuri Gumana:"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, fuzzy, c-format
+msgid "Install of %s failed"
+msgstr "Bya Byanze"
+
+#: conduits/file/file_conduit.c:287
+#, fuzzy, c-format
+msgid "Installing %s from %s..."
+msgstr "Bivuye"
+
+# --------------------------------------------------------------------
+#   Install Actions
+# --------------------------------------------------------------------
+#: conduits/file/file_conduit.c:289
+#, fuzzy, c-format
+msgid "Installing %s..."
+msgstr "gukora iyinjizaporogaramu: %s%s"
+
+#: conduits/file/gpilot_install_file.c:44
+#, fuzzy
+msgid "Install immediately"
+msgstr "Ako kanya"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr ""
+
+#: conduits/file/gpilot_install_file.c:46
+#, fuzzy
+msgid "Pilot to install to"
+msgstr "Kuri Kwinjiza porogaramu Kuri"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr ""
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+#, fuzzy
+msgid "Unable to get pilot names"
+msgstr "Kuri Kubona Amazina"
+
+#: conduits/file/gpilot_install_file.c:158
+#, fuzzy
+msgid "Following files failed :\n"
+msgstr "Idosiye Byanze"
+
+#: conduits/file/gpilot_install_file.c:170
+#, fuzzy, c-format
+msgid "Installing to %s:\n"
+msgstr "Kuri"
+
+#: conduits/file/gpilot_install_file.c:191
+#, fuzzy
+msgid "No files to install"
+msgstr "Idosiye Kuri Kwinjiza porogaramu"
+
+#: conduits/file/gpilot_install_file.c:194
+#, fuzzy
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr "Kuringaniza ku i Kuri Cyangwa Kureka i"
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+#, fuzzy
+msgid "Gnome Pilot File Manager"
+msgstr "Idosiye"
+
+#: gpilot-fileman/fileman.c:31
+#, fuzzy
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr "Na C"
+
+#: gpilot-fileman/fileman.c:34
+#, fuzzy
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr "Idosiye Na Porogaramu ku ni a Bya"
+
+#: gpilot-fileman/fileman.c:71
+#, fuzzy
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Kuvamo Idosiye"
+
+#: gpilot-fileman/fileman.c:173
+#, fuzzy
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "iyi OYA"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr ""
+
+#: gpilot-fileman/fileman.c:244
+#, fuzzy
+msgid "No files to install!!"
+msgstr "Idosiye Kuri Kwinjiza porogaramu"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:256
+#, fuzzy
+msgid "Installing... "
+msgstr "Gukora iyinjizaporogaramu..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+#, fuzzy
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "i Akabuto ku NONEAHA"
+
+#: gpilot-fileman/fileman.c:442
+#, fuzzy
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "Kuri Gufungura Cyangwa Kurema Izina: Nka a bushyinguro"
+
+#: gpilot-fileman/fileman.c:452
+#, fuzzy
+msgid "Chosen backup location is not a directory!"
+msgstr "Inyibutsa Ahantu ni OYA a bushyinguro"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:465
+#, fuzzy
+msgid "Backing up... "
+msgstr "Hejuru"
+
+#: gpilot-fileman/fileman.c:484
+#, fuzzy
+msgid "Unable to open status pipe"
+msgstr "Kuri Gufungura Imimerere"
+
+#: gpilot-fileman/fileman.c:495
+#, fuzzy
+msgid "Unable to open message pipe"
+msgstr "Kuri Gufungura Ubutumwa"
+
+#: gpilot-fileman/fileman.c:506
+#, fuzzy
+msgid "Unable to fork"
+msgstr "Kuri"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "Bigyanye"
+
+#: gpilot-fileman/fileman.c:591
+#, fuzzy
+msgid "About the gpilot-fileman"
+msgstr "i"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:602
+#, fuzzy
+msgid "Installs selected files to the connected Pilot"
+msgstr "Byahiswemo Idosiye Kuri i"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr ""
+
+#: gpilot-fileman/fileman.c:608
+#, fuzzy
+msgid "Back's up selected files from the connected Pilot"
+msgstr "Hejuru Byahiswemo Idosiye Bivuye i"
+
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_POPUP_BRKPROPS.text
+# #-#-#-#-#  basctl.pot (PACKAGE VERSION)  #-#-#-#-#
+# basctl/source\basicide\tbxctl.src:RID_TOOLBOX.SID_SHOW_PROPERTYBROWSER.text
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "indangakintu"
+
+#: gpilot-fileman/fileman.c:615
+#, fuzzy
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "kugirango i Idosiye"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "Kuvamo"
+
+#: gpilot-fileman/fileman.c:623
+#, fuzzy
+msgid "Quits the application"
+msgstr "i Porogaramu"
+
+# sc/source\ui\src\scfuncs.src:RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DDE.4.text
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "Idosiye"
+
+# scp/source\office\profile.lng:STR_VALUE_TEMPLATE_SERVICES_HELP.text
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "Ifashayobora"
+
+# setup2/source\ui\pages\pprofile.src:RESID_PAGE_PAGEPROFILE.PB_ADDNEW.text
+#: gpilot-fileman/multifile.c:286
+#, fuzzy
+msgid "Add ->"
+msgstr "Kongera>>"
+
+# sfx2/source\toolbox\tbxcust.src:RID_TOOLBOXCUSTOMIZE.BTN_TB_REMOVE.text
+#: gpilot-fileman/multifile.c:287
+#, fuzzy
+msgid "<- Remove"
+msgstr "<-Gukuraho"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr ""
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr ""
+
+#: gpilot-fileman/pilotfunc.c:88
+#, fuzzy
+msgid "Unable to bind to pilot\n"
+msgstr "Kuri Kuri"
+
+#: gpilot-fileman/pilotfunc.c:113
+#, fuzzy
+msgid "Exiting on cancel"
+msgstr "ku Kureka"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, fuzzy, c-format
+msgid "Unable to open '%s'!"
+msgstr "Kuri Gufungura"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, fuzzy, c-format
+msgid "Install failed %s."
+msgstr "Byanze"
+
+#: gpilot-fileman/pilotfunc.c:211
+#, fuzzy
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "ku Kureka Byose Ibyatanzwe Hejuru"
+
+#: gpilot-fileman/pilotfunc.c:246
+#, fuzzy
+msgid "Failed, unable to create file\n"
+msgstr "Kuri Kurema"
+
+#: gpilot-fileman/pilotfunc.c:254
+#, fuzzy
+msgid "Failed, unable to back up database\n"
+msgstr "Kuri Inyuma Hejuru"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr ""
+
+#: gpilot-fileman/preferences.c:89
+#, fuzzy
+msgid "Confirm on quit"
+msgstr "ku Kuvamo"
+
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+# #-#-#-#-#  dbaccess.pot (PACKAGE VERSION)  #-#-#-#-#
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "Rusange"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr ""
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+#, fuzzy
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "Cyasibwe Icyabitswe Byahinduwe OYA"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+#, fuzzy
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "Cyasibwe Icyabitswe Byahinduwe ku OYA"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+#, fuzzy
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "Gukomatanya Na Icyabitswe"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+#, fuzzy
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr "Na Guhindura>> Na Icyabitswe"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+#, fuzzy
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "Na Guhindura>> Icyabitswe Yoherejwe: Kuri"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+#, fuzzy
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr "Na Guhindura>> Icyabitswe"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+#, fuzzy
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Byanze"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+#, fuzzy
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr "Kuri Gusiba Byose Ibyabitswe in Ububikoshingiro"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+#, fuzzy
+msgid "Conduit did not return a record"
+msgstr "OYA Garuka a Icyabitswe"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+#, fuzzy
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Kuri Gusiba Byose Ibyabitswe in Ububikoshingiro"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+#, fuzzy
+msgid "Error in conduit, newly added record could not be found"
+msgstr "in Kyongewe Icyabitswe OYA Byabonetse"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+#, fuzzy
+msgid "Copy to pilot failed!"
+msgstr "Kuri Byanze"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+#, fuzzy
+msgid "Copy from pilot failed!"
+msgstr "Bivuye Byanze"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+#, fuzzy
+msgid "Merge to pilot failed!"
+msgstr "Kuri Byanze"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+#, fuzzy
+msgid "Merge from pilot failed!"
+msgstr "Bivuye Byanze"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+#, fuzzy
+msgid "Synchronization failed!"
+msgstr "Byanze"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, fuzzy, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "OYA Gufungura APAREYE"
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, fuzzy, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr "OYA Gufungura APAREYE"
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+#, fuzzy
+msgid "Unknown device type"
+msgstr "APAREYE Ubwoko"
+
+#: gpilotd/gnome-pilot-structures.c:785
+#, fuzzy
+msgid "Number of devices is configured to 0"
+msgstr "Bya ni Kuri 0"
+
+#: gpilotd/gnome-pilot-structures.c:787
+#, fuzzy
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Kugena Imiterere Gukoresha Igenzura Apuleti... Gukoresha Kuri Kugena "
+"Imiterere"
+
+#: gpilotd/gnome-pilot-structures.c:808
+#, fuzzy
+msgid "No accessible devices available"
+msgstr "Bihari"
+
+#: gpilotd/gnome-pilot-structures.c:823
+#, fuzzy
+msgid "Number of pilots is configured to 0"
+msgstr "Bya ni Kuri 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+#, fuzzy
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr "Gukoresha Igenzura Apuleti... Gukoresha Kuri Kugena Imiterere"
+
+#: gpilotd/gpilotd.c:173
+#, fuzzy
+msgid "Unable to bind to pilot"
+msgstr "Kuri Kuri"
+
+#: gpilotd/gpilotd.c:329
+#, fuzzy, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "Oya Izina ry'ukoresha BIHUYE"
+
+#: gpilotd/gpilotd.c:336
+#, fuzzy
+msgid "Use gnomecc to configure pilot"
+msgstr "Kuri Kugena Imiterere"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, fuzzy, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr "Oya Kuri Gushyiraho"
+
+#: gpilotd/gpilotd.c:365
+#, fuzzy, c-format
+msgid "Cradle %s has %d events"
+msgstr "Ibyabaye"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr ""
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr ""
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr ""
+
+#: gpilotd/gpilotd.c:463
+#, fuzzy
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Kubaza..."
+
+#: gpilotd/gpilotd.c:465
+#, fuzzy
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Akabuto"
+
+#: gpilotd/gpilotd.c:467
+#, fuzzy, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "ni Izina: ni ni"
+
+#: gpilotd/gpilotd.c:477
+#, fuzzy, c-format
+msgid "On host %s\n"
+msgstr "Ubuturo"
+
+#: gpilotd/gpilotd.c:479
+#, fuzzy, c-format
+msgid "On host %d\n"
+msgstr "Ubuturo"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr ""
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr ""
+
+#: gpilotd/gpilotd.c:533
+#, fuzzy, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"SHINGIRO bushyinguro ni Sibyo Cyangwa Gukoresha Kuri Guhitamo bushyinguro"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+#, fuzzy
+msgid "An error occured while getting the pilot's system data"
+msgstr "Ikosa i Sisitemu Ibyatanzwe"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+#, fuzzy
+msgid "An error occured while getting the pilot's user data"
+msgstr "Ikosa i Ukoresha: Ibyatanzwe"
+
+#: gpilotd/gpilotd.c:608
+#, fuzzy, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Ibyabaye kugirango"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, fuzzy, c-format
+msgid "Woke on %s"
+msgstr "ku"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr ""
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr ""
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr ""
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr ""
+
+#: gpilotd/gpilotd.c:1055
+#, fuzzy, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr "Kuri Gufungura Cyangwa Kurema IDOSIYE Na: Gusoma Kwandika"
+
+#: gpilotd/gpilotd.c:1061
+#, fuzzy, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Kuri Gushaka Ku Ntangiriro bushyinguro kugirango UID"
+
+#: gpilotd/gpilotd.c:1065
+#, fuzzy
+msgid "Unable to create file installation queue directory"
+msgstr "Kuri Kurema IDOSIYE iyinjizaporogaramu Umurongo bushyinguro"
+
+#: gpilotd/gpilotd.c:1090
+#, fuzzy
+msgid "Shutting down devices"
+msgstr "Hasi"
+
+#: gpilotd/gpilotd.c:1092
+#, fuzzy
+msgid "Rereading configuration..."
+msgstr "Iboneza"
+
+#: gpilotd/manager.c:265
+#, fuzzy
+msgid "non-backup conduit in backup conduit list"
+msgstr "Inyibutsa in Inyibutsa Urutonde"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr ""
+
+#: gpilotd/manager.c:275
+#, fuzzy, c-format
+msgid "%s backup failed\n"
+msgstr "%sInyibutsa"
+
+#: gpilotd/manager.c:300
+#, fuzzy
+msgid "Collecting synchronization info..."
+msgstr "Ibisobanuro"
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr ""
+
+#: gpilotd/manager.c:427
+#, fuzzy, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Kuri"
+
+#: gpilotd/manager.c:445
+#, fuzzy, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Bivuye"
+
+#: gpilotd/manager.c:463
+#, fuzzy, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Kuri"
+
+#: gpilotd/manager.c:481
+#, fuzzy, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Bivuye"
+
+#: gpilotd/manager.c:509
+#, fuzzy, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "S Itangira"
+
+#: gpilotd/manager.c:533
+#, fuzzy, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "Kitazwi Igikorwa"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr ""
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, fuzzy, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "in Kugena Imiterere"
+
+#: gpilotd/manager.c:674
+#, fuzzy, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Byanze"
+
+#: gpilotd/manager.c:675
+#, fuzzy, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Byanze"
+
+#: gpilotd/manager.c:764
+#, fuzzy, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Ukoresha: ID Kuri"
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, fuzzy, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "OYA Byabonetse"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr ""
+
+#: gpilotd/orbit_daemon_glue.c:1753
+#, fuzzy
+msgid "(unknown DB)"
+msgstr "(Kitazwi"
+
+#: gpilotd/queue_io.c:96
+#, fuzzy
+msgid "Error in queue, non-existing entry"
+msgstr "in Umurongo Icyinjijwe"
+
+#: gpilotd/queue_io.c:436
+#, fuzzy, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "Oya Kubaza... Byabonetse kugirango Kubaza..."
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+#, fuzzy
+msgid "module loading not supported, fatal!"
+msgstr "Modire Itangira... OYA"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr ""
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr ""
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr ""
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr ""
+
+#: utils/gpilotd-client.c:43
+#, fuzzy
+msgid "Set user id and name"
+msgstr "Ukoresha: ID Na Izina:"
+
+#: utils/gpilotd-client.c:44
+#, fuzzy
+msgid "ID for the pilot"
+msgstr "kugirango i"
+
+#: utils/gpilotd-client.c:45
+#, fuzzy
+msgid "Install file"
+msgstr "IDOSIYE"
+
+# sc/source\ui\src\globstr.src:RID_GLOBSTR.STR_HFCMD_FILE.text
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "IDOSIYE"
+
+#: utils/gpilotd-client.c:46
+#, fuzzy
+msgid "Restore directory"
+msgstr "bushyinguro"
+
+# svtools/source\dialogs\filedlg2.src:STR_FILEDLG_DIR.text
+#: utils/gpilotd-client.c:46
+#, fuzzy
+msgid "DIRECTORY"
+msgstr "Ububiko"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr ""
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr ""
+
+#: utils/gpilotd-client.c:48
+#, fuzzy
+msgid "Username to set"
+msgstr "Kuri Gushyiraho"
+
+#: utils/gpilotd-client.c:48
+#, fuzzy
+msgid "USERNAME"
+msgstr "Izina ry'ukoresha"
+
+#: utils/gpilotd-client.c:49
+#, fuzzy
+msgid "Monitor the specified pilots actions"
+msgstr "i"
+
+#: utils/gpilotd-client.c:50
+#, fuzzy
+msgid "Monitor all pilots"
+msgstr "Byose"
+
+#: utils/gpilotd-client.c:51
+#, fuzzy
+msgid "list pilots by login (all for all pilots)"
+msgstr "Urutonde ku Ifashayinjira Byose kugirango Byose"
+
+# framework/source\services\logindialog.src:RID_DLG_LOGIN.RID_PB_OK.text
+#: utils/gpilotd-client.c:51
+#, fuzzy
+msgid "LOGIN"
+msgstr "Ifashayinjira"
+
+#: utils/gpilotd-client.c:52
+#, fuzzy
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Kuri ku Kuri"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr ""
+
+#: utils/gpilotd-client.c:53
+#, fuzzy
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "a Kuri ku Kuri"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr ""
+
+#: utils/gpilotd-client.c:54
+#, fuzzy
+msgid "List the specifed pilot's bases"
+msgstr "i"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+#, fuzzy
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr "ni a kugirango Bya i Gukoresha iyi"
+
+#: utils/gpilotdcm-client.c:26
+#, fuzzy
+msgid "lists available conduits"
+msgstr "Intonde Bihari"
+
+#: utils/gpilotdcm-client.c:27
+#, fuzzy
+msgid "conduit to operate on"
+msgstr "Kuri ku"
+
+#: utils/gpilotdcm-client.c:28
+#, fuzzy
+msgid "list all attributes"
+msgstr "Urutonde Byose Ibiranga"
+
+#: utils/gpilotdcm-client.c:29
+#, fuzzy
+msgid "specify pilot to operate on"
+msgstr "Kuri ku"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr ""
+
+#: utils/gpilotdcm-client.c:30
+#, fuzzy
+msgid "list attributes"
+msgstr "Urutonde Ibiranga"
+
+#: utils/gpilotdcm-client.c:31
+#, fuzzy
+msgid "list available conduits and their state"
+msgstr "Urutonde Bihari Na Leta"
+
+#: utils/gpilotdcm-client.c:32
+#, fuzzy
+msgid "enable specified conduit"
+msgstr "Gushoboza"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr ""
+
+#: utils/gpilotdcm-client.c:34
+#, fuzzy
+msgid "enable, and set firstsync to slow"
+msgstr "Gushoboza Na Gushyiraho Kuri Buhoro"
+
+#: utils/gpilotdcm-client.c:35
+#, fuzzy
+msgid "instantiate and destroy the conduit"
+msgstr "Na i"

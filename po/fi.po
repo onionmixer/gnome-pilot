@@ -1,0 +1,1719 @@
+# Gnome-pilot Finnish Translation.
+# Gnome Finnish Translation Team
+# http://gnome.fi/
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Jarmo Kielosto <jarmoki@kolumbus.fi>, 2000.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2006.
+# Timo Jyrinki <timo.jyrinki@iki.fi>
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-26 11:21+0300\n"
+"PO-Revision-Date: 2007-02-23 08:19+0300\n"
+"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot-sovelma"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "Synkronoi tietosi PalmOS-laitteista"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "Apuohjelmat"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose PDA"
+msgstr "Valitse PDA"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSyncin ominaisuudet"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Restore PDA"
+msgstr "Palauta PDA"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "_Directory"
+msgstr "_Kansio"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "_Display notices"
+msgstr "_Näytä huomautukset"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "_Execute when clicked"
+msgstr "_Suorita napsautettaessa"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "_PDA ID"
+msgstr "_PDA:n tunniste"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "_Sync cradle"
+msgstr "_Synkronointitelakka"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "gnome-pilotin edistyminen"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "Synkronoidaan %s"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr "Tietokanta %v/%u"
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Tehtävä %ld valmistunut\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "Synkronoidaan %s: %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: aloitettu\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s valmis: %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: lopetettu\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr "%v/%u tietuetta"
+
+#: ../applet/pilot.c:419
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA:n synkronointi on kesken.\n"
+"Odota, että se valmistuu."
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "Ei yhdistetty. Käynnistä palvelinprosessi uudestaan."
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Ei yhteyttä palvelinprosessiin gpilotd.\n"
+"Käynnistä palvelinprosessi uudestaan."
+
+#: ../applet/pilot.c:442
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot-sovelma"
+
+#: ../applet/pilot.c:444
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Tekijänoikeudet (C) 2000-2006 Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:445
+msgid "A PalmOS PDA monitor.\n"
+msgstr "PalmOS PDA:n tarkkailija.\n"
+
+#: ../applet/pilot.c:541 ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Virhe näytettäessä ohjetta: %s"
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "perutaan %d"
+
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "Palautetaan %s"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "Ei kansiota, josta palauttaa."
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Paina telakan synkronoi-nappia jatkaaksesi\n"
+"tai peru toiminto."
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "Palautuspyyntö epäonnistui"
+
+#: ../applet/pilot.c:754
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"PDA:n synkronointi on käynnissä.\n"
+"Haluatko varmasti käynnistää palvelinprosessin uudestaan?"
+
+#: ../applet/pilot.c:764 ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Yritetään yhdistää GnomePilot-palvelinprosessiin"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "Viimeistä synkronointia ei löydy lokista."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:803
+msgid "Restore..."
+msgstr "Palauta..."
+
+#: ../applet/pilot.c:803
+msgid "Restart"
+msgstr "Käynnistä uudelleen"
+
+#: ../applet/pilot.c:803
+msgid "Last log..."
+msgstr "Viimeisin loki..."
+
+#: ../applet/pilot.c:804
+msgid "Preferences..."
+msgstr "Asetukset..."
+
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr "Ohje"
+
+#: ../applet/pilot.c:804
+msgid "About"
+msgstr "Tietoja"
+
+#: ../applet/pilot.c:826
+msgid "Continue"
+msgstr "Jatka"
+
+#: ../applet/pilot.c:828
+msgid "Pause Daemon"
+msgstr "Pysäytä palvelinprosessi"
+
+#: ../applet/pilot.c:848
+msgid "Daemon paused..."
+msgstr "Palvelinprosessi pysäytetty..."
+
+#: ../applet/pilot.c:855 ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "Valmis synkronoimaan"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Ei yhdistetty. Käynnistä palvelinprosessi uudestaan"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Suorittaminen epäonnistui: %s"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1300
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "asennetaan \"%s\" kohteeseen \"%s\""
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "tuntematon dnd-tyyppi"
+
+#: ../applet/pilot.c:1318
+msgid "destroy gpilot-applet"
+msgstr "tuhoa gpilot-sovelma"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "Tiedostoa pilot-applet.glade ei löydy"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Suoritettava komento, kun sovelmaa napsautetaan"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Näytä huomautukset ponnahdusikkunoissa"
+
+#: ../capplet/gnome-pilot-capplet.c:215 ../capplet/gpilotd-capplet.glade.h:89
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilotin asetukset"
+
+# capplet/gpilotd-capplet-strings.c:8 capplet/gpilotd-capplet-strings.c:16
+# capplet/gpilotd-capplet-strings.c:28 capplet/gpilotd-capplet-strings.c:73
+#: ../capplet/gnome-pilot-capplet.c:383 ../capplet/gnome-pilot-capplet.c:463
+msgid "Name"
+msgstr "Nimi"
+
+# capplet/gpilotd-capplet-strings.c:9 capplet/gpilotd-capplet-strings.c:48
+#: ../capplet/gnome-pilot-capplet.c:385 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "Tunniste"
+
+#: ../capplet/gnome-pilot-capplet.c:387
+msgid "Owner"
+msgstr "Omistaja"
+
+# capplet/gpilotd-capplet-strings.c:19 capplet/gpilotd-capplet-strings.c:41
+#: ../capplet/gnome-pilot-capplet.c:465
+msgid "Type"
+msgstr "Tyyppi"
+
+#: ../capplet/gnome-pilot-capplet.c:571
+msgid "Conduit"
+msgstr "Kanava"
+
+# capplet/gpilotd-capplet-strings.c:56 capplet/gpilotd-capplet-strings.c:99
+#: ../capplet/gnome-pilot-capplet.c:573
+msgid "Sync Action"
+msgstr "Synkronointitoiminto"
+
+#: ../capplet/gnome-pilot-capplet.c:783
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Haluatko varmasti poistaa PDA:n \"%s\"?"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+msgid "_Edit this PDA..."
+msgstr "_Muokkaa tätä PDA:ta..."
+
+#: ../capplet/gnome-pilot-capplet.c:808
+msgid "Edit the currently selected PDA"
+msgstr "Muokkaa valittua PDA:ta"
+
+#: ../capplet/gnome-pilot-capplet.c:810
+msgid "_Delete this PDA"
+msgstr "_Poista tämä PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:811
+msgid "Delete the currently selected PDA"
+msgstr "Poista valittu PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:944
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Haluatko varmasti poistaa laitteen %s?"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+msgid "_Edit this device..."
+msgstr "_Muokkaa tätä laitetta..."
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Edit the currently selected device"
+msgstr "Muokkaa valittua laitetta"
+
+#: ../capplet/gnome-pilot-capplet.c:968
+msgid "_Delete this device"
+msgstr "_Poista tämä laite"
+
+#: ../capplet/gnome-pilot-capplet.c:969
+msgid "Delete the currently selected device"
+msgstr "Poista tämä laite"
+
+#: ../capplet/gnome-pilot-capplet.c:1131
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Kanavan %s käyttöönotto epäonnistui."
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+msgid "_Enable this conduit"
+msgstr "_Ota tämä kanava käyttöön"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+msgid "Disable the currently selected conduit"
+msgstr "Poista valittu kanava käytöstä"
+
+#: ../capplet/gnome-pilot-capplet.c:1174
+msgid "_Disable this conduit"
+msgstr "_Poista tämä kanava käytöstä"
+
+#: ../capplet/gnome-pilot-capplet.c:1175
+msgid "Enable the currently selected conduit"
+msgstr "Ota valittu kanava käyttöön"
+
+#: ../capplet/gnome-pilot-capplet.c:1180 ../capplet/gpilotd-capplet.glade.h:85
+msgid "_Settings..."
+msgstr "A_setukset..."
+
+#: ../capplet/gnome-pilot-capplet.c:1181
+msgid "Modify the currently selected conduit's settings"
+msgstr "Muokkaa valitun kanavan asetuksia"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:210
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "PDA:n asetusikkunaa ei voitu luoda. Virheelliset kanavan asetukset."
+
+#: ../capplet/gnome-pilot-druid.c:488
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Asennus ei valmistunut, joten asetuksia ei tallenneta.\n"
+"Haluatko varmasti lopettaa?"
+
+#: ../capplet/gnome-pilot-druid.c:611
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Valmiina lähetämään seuraavat tiedot PDA:han.\n"
+"Käyttäjätunnus: %s\n"
+"PDA ID: %d\n"
+"Aseta PDA telakkaan %s (%s) ja paina HotSync-painiketta."
+
+#: ../capplet/gnome-pilot-druid.c:636
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Valmiina hakemaan käyttäjätunnus ja ID PDA:sta.\n"
+"Aseta PDA telakkaan %s (%s) ja paina HotSync-painiketta."
+
+#: ../capplet/gnome-pilot-druid.c:652
+msgid "Failed sending request to gpilotd"
+msgstr "Pyynnön lähettäminen palvelinprosessille gpilotd epäonnistui"
+
+#: ../capplet/gnome-pilot-druid.c:803
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Omistajan nimi ja tunniste haettiin onnistuneesti PDA:sta.\n"
+"Omistajan nimi: %s\n"
+"PDA:n tunniste: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:432
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Liitä PDA telakkaan %s (%s) ja paina HotSync-painiketta, tai peru toimenpide."
+
+#: ../capplet/gnome-pilot-pdialog.c:467
+msgid "The request to get PDA ID failed"
+msgstr "Pyyntö tunnisteen (ID) hakemiseen PDA:lta epäonnistui"
+
+#: ../capplet/gnome-pilot-pdialog.c:511
+msgid "The request to set PDA ID failed"
+msgstr "PDA:n tunnisteen (ID) asetuspyyntö epäonnistui"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyUSB0"
+msgstr "/dev/ttyUSB0"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyUSB1"
+msgstr "/dev/ttyUSB1"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Kanavan toiminnot</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Kanavan asetukset</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA:n ominaisuudet</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA:n tunnistetiedot</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Mitä laitetta käytetään tälle "
+"toimenpiteelle</span>\n"
+"\n"
+"Koska järjestelmässä on määritelty useita PDA-yhteyksiä, sinun täytyy valita "
+"laite jota käytetään tälle toimenpiteelle."
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "BIG5"
+msgstr "BIG5"
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "CP1252"
+msgstr "CP1252"
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid "C_harset of PDA:"
+msgstr "PDA:n _merkistö:"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid "C_onduits"
+msgstr "_Kanavat"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Choose Device"
+msgstr "Valitse laite"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Valitse tämä toiminto jos olet käyttänyt synkronointiohjelmaa aiemmin, "
+"vaikka olisit käyttänyt sitä toiselta tietokoneelta."
+
+#: ../capplet/gpilotd-capplet.glade.h:20
+msgid "Conduit Settings"
+msgstr "Kanavan asetukset"
+
+#: ../capplet/gpilotd-capplet.glade.h:21
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Gnome-pilot on nyt valmis käyttöön!\n"
+"\n"
+"Voit muuttaa gnome-pilotin asetuksia milloin haluat \n"
+"työpöydän asetusten kohdasta \"PalmOS-laitteet\"\n"
+"\n"
+"Voit seurata synkronoinnin tilaa lisäämällä PilotLink-\n"
+"sovelman paneeliin."
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "D_isable"
+msgstr "Poista _käytöstä"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "De_vices"
+msgstr "_Laitteet"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Description:"
+msgstr "Kuvaus:"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Device Settings"
+msgstr "Laiteasetukset"
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+msgid "Device:"
+msgstr "Laite:"
+
+#: ../capplet/gpilotd-capplet.glade.h:33 ../capplet/util.c:74
+#: ../capplet/util.c:438
+msgid "Disabled"
+msgstr "Ei käytössä"
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Syötä PDA:han tallennettava omistajan nimi"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "GB18030"
+msgstr "GB18030"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "GBK"
+msgstr "GBK"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Hae omistajan nimi ja tunniste (ID) PDA:sta"
+
+# capplet/gpilotd-capplet-strings.c:44 capplet/gpilotd-capplet-strings.c:88
+# capplet/gpilotd-control-applet.c:701 capplet/gpilotd-control-applet.c:742
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Initial Sync"
+msgstr "Ensimmäinen synkronointi"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr "_Verkko"
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:115
+msgid "None"
+msgstr "Ei mitään"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr "O_mistaja:"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Omistajan nimi ja tunniste (ID) tälle PDA:lle"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr "Omistaja:"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "PDA Attributes"
+msgstr "PDA:n ominaisuudet"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "PDA Identification"
+msgstr "PDA:n tunnistetiedot"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+msgid "PDA Settings"
+msgstr "PDA:n asetukset"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "P_DA:"
+msgstr "P_DA:"
+
+# capplet/gpilotd-capplet-strings.c:17 capplet/gpilotd-capplet-strings.c:29
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Portti"
+
+# capplet/gpilotd-capplet-strings.c:18 capplet/gpilotd-capplet-strings.c:30
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "S_peed:"
+msgstr "No_peus:"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"Lähetä omistajan nimi ja tunniste PDA:han, ylikirjoittaen olemassaolevat "
+"tunnistetiedot"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set the character set used on your PDA."
+msgstr "Aseta PDA-laitteessa käytetty merkistö."
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Aseta juurikansio, johon kaikki PDA:n tiedostot tallennetaan."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "Onnistui"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "PDA:n nimi. Nimeä käytetään vain pilotin tunnistamiseen."
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"Tämä kokonaislukuna ilmoitettu tunniste (ID) tunnistaa PDA:n ja sen täytyy "
+"olla eri kaikille käyttämillesi PDA-laitteille."
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "Ti_meout:"
+msgstr "_Aikakatkaisu:"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "Tervetuloa gnome-pilotiin!"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Olet käyttämässä Gnome Pilottia ensimmäistä kertaa.\n"
+"Seuraavat vaiheet asentavat gnome-pilotin synkronointivalmiiksi.\n"
+"Voit myöhemmin muuttaa kaikkia asetuksia työpöydän asetusten\n"
+"kohdasta \"PalmOS-laitteet\".\n"
+"\n"
+"Valitse 'Seuraava' jatkaaksesi.\n"
+"Valitse 'Peru' poistuaksesi."
+
+# capplet/gpilotd-capplet-strings.c:56 capplet/gpilotd-capplet-strings.c:99
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "_Action:"
+msgstr "_Toiminto:"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Add..."
+msgstr "_Lisää..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+msgid "_Delete"
+msgstr "_Poista"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Device:"
+msgstr "L_aite:"
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Edit..."
+msgstr "_Muokkaa..."
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+msgid "_Enable"
+msgstr "Ota _käyttöön"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_Get from PDA"
+msgstr "_Hae PDA:sta"
+
+# capplet/gpilotd-capplet-strings.c:44 capplet/gpilotd-capplet-strings.c:88
+# capplet/gpilotd-control-applet.c:701 capplet/gpilotd-control-applet.c:742
+#: ../capplet/gpilotd-capplet.glade.h:74
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:75
+msgid "_Local folder:"
+msgstr "_Paikallinen kansio:"
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_Name of PDA:"
+msgstr "PDA:n _nimi:"
+
+# capplet/gpilotd-capplet-strings.c:8 capplet/gpilotd-capplet-strings.c:16
+# capplet/gpilotd-capplet-strings.c:28 capplet/gpilotd-capplet-strings.c:73
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_Name:"
+msgstr "_Nimi:"
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Ei, en ole käyttänyt synkronointiohjelmistoa tämän PDA:n kanssa."
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+msgid "_One time action:"
+msgstr "_Kerran suoritettava toiminto:"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_Owner:"
+msgstr "_Omistaja:"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_PDA ID:"
+msgstr "_PDA:n tunniste:"
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_PDAs"
+msgstr "_PDA-laitteet"
+
+#: ../capplet/gpilotd-capplet.glade.h:83
+msgid "_Send to PDA"
+msgstr "_Lähetä PDA:han"
+
+# capplet/gpilotd-capplet-strings.c:42 capplet/gpilotd-capplet-strings.c:86
+# capplet/gpilotd-control-applet.c:697 capplet/gpilotd-control-applet.c:737
+#: ../capplet/gpilotd-capplet.glade.h:84
+msgid "_Serial"
+msgstr "_Sarjaportti"
+
+# capplet/gpilotd-capplet-strings.c:19 capplet/gpilotd-capplet-strings.c:41
+#: ../capplet/gpilotd-capplet.glade.h:86
+msgid "_Type:"
+msgstr "_Tyyppi:"
+
+#: ../capplet/gpilotd-capplet.glade.h:87
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:88
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Kyllä, olen käyttänyt synkronointiohjelmistoa tämän PDA:n kanssa."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Käynnistä vain asetusohjelma"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Virhe alustettaessa gpilotd-sovelmaa"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading PDA state, aborting"
+msgstr "Virhe ladattaessa PDA:n tilaa, keskeytetään"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Yhteyttä GnomePilotin palvelinprosessiin ei voida luoda"
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr ""
+"Ohjattua asennusta ei voida suorittaa, jos PDA:ita tai telakoita on jo "
+"määritelty"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Määrittele PalmOS-laitteita"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS-laitteet"
+
+# conduits/backup/backup-conduit-control-applet.c:340
+# conduits/email/email-conduit-control-applet.c:267
+# conduits/expense/expense-conduit-control-applet.c:315
+#: ../capplet/util.c:81 ../capplet/util.c:440
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: ../capplet/util.c:238
+msgid "You must have at least one device setup"
+msgstr "Vähintään yksi laite täytyy olla määriteltynä"
+
+# capplet/gpilotd-control-applet.c:517 capplet/gpilotd-control-applet.c:1091
+#: ../capplet/util.c:411
+msgid "Synchronize"
+msgstr "Synkronoi"
+
+#: ../capplet/util.c:412
+msgid "Copy from PDA"
+msgstr "Kopioi PDA:sta"
+
+#: ../capplet/util.c:413
+msgid "Copy to PDA"
+msgstr "Kopioi PDA:han"
+
+#: ../capplet/util.c:414
+msgid "Merge from PDA"
+msgstr "Yhdistä PDA:sta"
+
+#: ../capplet/util.c:415
+msgid "Merge to PDA"
+msgstr "Yhdistä PDA:han"
+
+#: ../capplet/util.c:418
+msgid "Use conduit settings"
+msgstr "Käytä kanavan asetuksia"
+
+#: ../capplet/util.c:426
+msgid "USB"
+msgstr "USB"
+
+# capplet/gpilotd-capplet-strings.c:44 capplet/gpilotd-capplet-strings.c:88
+# capplet/gpilotd-control-applet.c:701 capplet/gpilotd-control-applet.c:742
+#: ../capplet/util.c:427
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:428
+msgid "Network"
+msgstr "Verkko"
+
+#: ../capplet/util.c:429
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+# capplet/gpilotd-capplet-strings.c:42 capplet/gpilotd-capplet-strings.c:86
+# capplet/gpilotd-control-applet.c:697 capplet/gpilotd-control-applet.c:737
+#: ../capplet/util.c:430
+msgid "Serial"
+msgstr "Sarjaportti"
+
+#: ../capplet/util.c:478
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Määritelty peruskansio on olemassa, mutta väärillä oikeuksilla.\n"
+"Korjaa oikeudet tai valitse toinen kansio"
+
+#: ../capplet/util.c:483
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Määritelty peruskansio on olemassa, mutta ei ole kansio.\n"
+"Tee siitä kansio tai valitse toinen kansio"
+
+#: ../capplet/util.c:490
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Ei ollut mahdollista luoda määriteltyä peruskansiota.\n"
+"Tarkista oikeudet valitussa polussa tai valitse toinen kansio"
+
+#: ../capplet/util.c:495
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Polku valittuun peruskansioon ei kelpaa.\n"
+"Valitse toinen kansio"
+
+#: ../capplet/util.c:523
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.  Please enter a valid "
+"identifier or select from the available options."
+msgstr ""
+"\"%s\" ei ole kelvollinen merkistön tunniste. Syötä kelvollinen "
+"merkistökoodi tai valitse vaihtoehdoista."
+
+#: ../capplet/util.c:647
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Laite 'usb:' on kelvollinen vain USB-laitteille"
+
+#: ../capplet/util.c:658
+msgid "Read/Write permissions failed on"
+msgstr "Luku/kirjoitusoikeudet epäonnistuivat laitteelle"
+
+#: ../capplet/util.c:660
+msgid "Check the permissions on the device and retry"
+msgstr "Tarkista laitteen oikeudet ja yritä uudestaan"
+
+#: ../capplet/util.c:675 ../gpilotd/gpilotd.c:1332
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Kansiota %s ei löydy tai tiedostoa %s ei voi lukea. Tarkista, että usbfs tai "
+"sysfs on liitetty."
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "Etsitään poistettuja tietokantoja"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "Nimetään uudestaan %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "nimelle %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "Tiedostoa %s ei muokattu viime synkronoinnin jälkeen"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "Tehdään varmuuskopio: %s"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Varmuuskopiotiedoston %s luominen ei onnistunut"
+
+#: ../conduits/backup/backup_conduit.c:736
+msgid "Collecting restore information..."
+msgstr "Kerätään palautustietoja..."
+
+#: ../conduits/backup/backup_conduit.c:860
+msgid "_Backup directory:"
+msgstr "_Varmuuskopiokansio:"
+
+#: ../conduits/backup/backup_conduit.c:873
+msgid "Backup directory"
+msgstr "Varmuuskopiokansio"
+
+#: ../conduits/backup/backup_conduit.c:875
+msgid "O_nly backup changed bases"
+msgstr "Varmuuskopioi vain _muuttuneet kannat"
+
+#: ../conduits/backup/backup_conduit.c:885
+msgid "Only backup changed bases"
+msgstr "Varmuuskopioi vain muuttuneet kannat"
+
+#: ../conduits/backup/backup_conduit.c:887
+msgid "_Remove local base if deleted on pilot"
+msgstr "Poista _paikallinen kanta, jos se on poistettu PDA:sta"
+
+#: ../conduits/backup/backup_conduit.c:897
+msgid "Remove local base if deleted on pilot"
+msgstr "Poista paikallinen kanta, jos se on poistettu PDA:sta"
+
+#: ../conduits/backup/backup_conduit.c:899
+msgid "# of old backups to _keep"
+msgstr "Vanhojen varmuuskopioiden _lukumäärä"
+
+#: ../conduits/backup/backup_conduit.c:910
+msgid "# of old backups to keep"
+msgstr "Kuinka monta vanhaa varmuuskopioita säilytetään"
+
+#: ../conduits/backup/backup_conduit.c:948
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Määritelty varmuuskopiokansio on olemassa, mutta väärillä oikeuksilla.\n"
+"Korjaa kansion oikeudet tai valitse toinen kansio"
+
+#: ../conduits/backup/backup_conduit.c:953
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Määritelty varmuuskopiokansio on olemassa, mutta ei ole kansio.\n"
+"Tee siitä kansio tai valitse toinen kansio"
+
+#: ../conduits/backup/backup_conduit.c:960
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Määriteltyä varmuuskopiokansiota ei voitu luoda.\n"
+"Tarkista valitun kansion polun oikeudet tai valitse toinen kansio"
+
+#: ../conduits/backup/backup_conduit.c:965
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Valitun varmuuskopiokansion polkunimi on virheellinen.\n"
+"Valitse toinen kansio"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Tiedoston %s asennus epäonnistui"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Asennetaan %s kohteesta %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Asennetaan %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Asenna välittömästi"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Asenna myöhemmin"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA to install to"
+msgstr "PDA, johon asennetaan"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr "PDA"
+
+# conduits/file/gpilot_install_file.c:126
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get PDA names"
+msgstr "PDA:iden nimiä ei voida hakea"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Seuraavat tiedostot epäonnistuivat:\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Asennetaan kohteeseen %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Ei asennettavia tiedostoja"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Paina synkronoi telakassa asentaaksesi\n"
+"tai peru toiminto."
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilotin palvelinprosessi"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "poistettua PDA:n tietuetta on muokattu tietokoneella, ei poisteta\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "poistettua paikallista tietuetta on muokattu PDA:ssa, ei poisteta\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr ""
+"ristiriita yhdistettäessä, PDA:n tietue ja paikallinen tietue vaihdettu "
+"keskenään\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr ""
+"arkistoinnin ja muutoksen ristiriita, PDA:n tietue ja paikallinen tietue "
+"vaihdettu keskenään\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr ""
+"arkistoinnin ja muutoksen ristiriita, paikallinen tietue lähetetty PDA:han\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr ""
+"arkistoinnin ja muutoksen ristiriita, PDA:n tietue tallennettu "
+"paikallisesti\n"
+
+# gpilotd/gnome-pilot-conduit-standard-abs.c:427
+# gpilotd/gnome-pilot-conduit-standard-abs.c:493
+# gpilotd/gnome-pilot-conduit-standard-abs.c:549
+# gpilotd/gnome-pilot-conduit-standard-abs.c:573
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Kanavan alustus epäonnistui, peruutetaan toiminto"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Kaikkien tietueiden poisto PDA:n tietokannasta epäonnistui, keskeytetään "
+"toimenpide."
+
+# gpilotd/gnome-pilot-conduit-standard-abs.c:452
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Kanava ei palauttanut tietuetta"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Kaikkien tietueiden poisto paikallista tietokannasta epäonnistui, "
+"keskeytetään toimenpide"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Virhe kanavassa, lisättyä tietuetta ei löytynyt"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "Kopiointi PDA:han epäonnistui"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "Kopiointi PDA:sta epäonnistui!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "Yhdistäminen PDA:han epäonnistui!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "Yhdistäminen PDA:sta epäonnistui!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Synkronointi epäonnistui!"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Laitteen %s (%s) avaus ei onnistu: syy: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot ei voinut avata laitetta %s (%s).\n"
+"Syy: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:449
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+"Bluetooth-laite (%s): pistokkeeseen ei voi sitoa: virhe %d. Tarkista että "
+"pilot-link on käännetty bluetooth-tuen kanssa."
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Laite (%s, %s): Pistokkeeseen ei voi sitoa: virhe %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:539
+#: ../gpilotd/gnome-pilot-structures.c:590
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Tuntematon laitetyyppi"
+
+#: ../gpilotd/gnome-pilot-structures.c:663
+msgid "Number of devices is configured to 0"
+msgstr "Laitteiden lukumäärä on asetettu arvoon 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:665
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Laitteita ei ole määritelty.\n"
+"Suorita \"gpilotd-control-applet\"\n"
+"gnome-pilotin asetuksten määrittelemiseksi."
+
+#: ../gpilotd/gnome-pilot-structures.c:686
+msgid "No accessible devices available"
+msgstr "Laitteita ei ole käytettävissä"
+
+#: ../gpilotd/gnome-pilot-structures.c:701
+msgid "Number of PDAs is configured to 0"
+msgstr "PDA:iden lukumäärä on asetettu arvoon 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:703
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Yhtään PDA:ta ei ole määritelty.\n"
+"Suorita \"gpilotd-control-applet\"\n"
+"gnome-pilotin asetusten määrittelemiseksi."
+
+#: ../gpilotd/gnome-pilot-structures.c:766 ../gpilotd/gpilotd.c:687
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Pilotin _meristöä ei ole asetettu, käytetään oletusta \"%s\"."
+
+#: ../gpilotd/gpilotd.c:236
+msgid "Unable to bind to PDA"
+msgstr "PDA:n yhdistäminen epäonnistui"
+
+#: ../gpilotd/gpilotd.c:374
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+"Laitteeseen \"%s\" portissa \"%s\" ei saatu yhteyttä. Tarkista asetuksesi. "
+"Pyysit käyttämään uutta libusb-kirjaston \"usb:\"-synkronointia, mutta vanha "
+"'visor'-moduli on ladattu ytimessä. Voi olla että laitteelle täytyy käyttää "
+"\"ttyUSB...\"-laitenimeä."
+
+#: ../gpilotd/gpilotd.c:389
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+"Laitteeseen \"%s\" portissa \"%s\" ei saatu yhteyttä. Tarkista asetuksesi. "
+"Pyysit käyttämään vanhaa libusb-kirjaston \"usb:\"-synkronointia, mutta "
+"ytimen modulia \"visor\" ollut saatavilla. Voi olla että laitteelle täytyy "
+"käyttää \"usb\"-laitenimeä."
+
+#: ../gpilotd/gpilotd.c:480
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Tuntematon PDA, yksikään ID/käyttäjätunnus ei täsmää: %ld"
+
+#: ../gpilotd/gpilotd.c:487
+msgid "Use gnomecc to configure PDA"
+msgstr "Määrittele PDA:t työpöydän asetuksista"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:492
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Tuntematon PDA - määritellyt PDA:t eivät vastaa tunnistetta %ld\n"
+"Käytä komentoa gnomecc, jos haluat asettaa pilotin tunnisteen"
+
+#: ../gpilotd/gpilotd.c:516
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Laitteella %s on %d tapahtumaa"
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Setting userinfo..."
+msgstr "Asetetaan käyttäjätietoja..."
+
+#: ../gpilotd/gpilotd.c:534
+msgid "Sync continues"
+msgstr "Synkronointi jatkuu"
+
+#: ../gpilotd/gpilotd.c:553
+msgid "Getting userinfo..."
+msgstr "Haetaan käyttäjätietoja..."
+
+#: ../gpilotd/gpilotd.c:615
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync-kysely havaittu, synkronoidaan PDA"
+
+#: ../gpilotd/gpilotd.c:617
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Bluetooth-kysely havaittu, synkronoidaan PDA"
+
+#: ../gpilotd/gpilotd.c:619
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync-painiketta painettu, synkronoidaan PDA"
+
+#: ../gpilotd/gpilotd.c:621
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA:n tunniste on %ld, nimi on %s, omistaja on %s"
+
+#: ../gpilotd/gpilotd.c:631
+#, c-format
+msgid "On host %s\n"
+msgstr "Isännällä %s\n"
+
+#: ../gpilotd/gpilotd.c:633
+#, c-format
+msgid "On host %d\n"
+msgstr "Isännällä %d\n"
+
+#: ../gpilotd/gpilotd.c:652
+msgid "Synchronization ended"
+msgstr "Synkronointi päättynyt"
+
+#: ../gpilotd/gpilotd.c:655
+msgid "Synchronization ended early"
+msgstr "Synkronointi päättyi ajoissa"
+
+#: ../gpilotd/gpilotd.c:701
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "\"%s\" ei ole tunnistettu iconv-merkistö, käytetään merkistöä \"%s\"."
+
+#: ../gpilotd/gpilotd.c:724
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Peruskansio %s ei kelpaa.\n"
+"Korjaa se tai käytä komentokeskusta valitaksesi toinen kansio."
+
+#: ../gpilotd/gpilotd.c:737
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Tuntematon PDA - tunniste %ld ei ole tunnettu\n"
+"Käytä komentoa gpilotd-control-applet, jos haluat asettaa PDA:n tunnisteen"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:788
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Tapahtui virhe haettaessa PDA:n järjestelmätietoja"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:797
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Tapahtui virhe haettaessa PDA:n käyttäjätietoja"
+
+#: ../gpilotd/gpilotd.c:802
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Laitteen %s tehtävät valmistuivat (%s)"
+
+#: ../gpilotd/gpilotd.c:863
+#, c-format
+msgid "Woke on %s"
+msgstr "Herättiin tilaan %s"
+
+#: ../gpilotd/gpilotd.c:944
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Herätys verkosta: %s"
+
+#: ../gpilotd/gpilotd.c:1504
+#, c-format
+msgid "Watching %s (network)"
+msgstr "Tarkkaillaan laitetta %s (verkossa)"
+
+#: ../gpilotd/gpilotd.c:1506
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "Tarkkaillaan laitetta %s (bluetooth)"
+
+#: ../gpilotd/gpilotd.c:1508
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Tarkkaillaan laitetta %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1522
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Poistutaan (saatiin SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1531
+msgid "Exiting (caught SIGINT)..."
+msgstr "Poistutaan (saatiin SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1563
+msgid "Unable to create file installation queue directory"
+msgstr "Tiedostojen asennusjonon kansiota ei voitu luoda"
+
+#: ../gpilotd/gpilotd.c:1613
+msgid "Shutting down devices"
+msgstr "Sammutetaan laitteet"
+
+#: ../gpilotd/gpilotd.c:1615
+msgid "Rereading configuration..."
+msgstr "Luetaan asetukset uudelleen..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "muu kuin varmuuskopiointikanava varmuuskopiointikanavien listassa"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s varmuuskopioitu\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "Varmuuskopiointi epäonnistui: %s!\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "Kerätään synkronointitietoja..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Synkronoidaan %s\n"
+
+#: ../gpilotd/manager.c:446
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Kopioi PDA:han %s\n"
+
+#: ../gpilotd/manager.c:464
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Kopioi PDA:sta %s\n"
+
+#: ../gpilotd/manager.c:482
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Yhdistä PDA:han %s\n"
+
+#: ../gpilotd/manager.c:500
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Yhdistä PDA:sta %s\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Kanavan %s ensimmäinen synkronointi..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "tuntematon synkronointi toiminto (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Alustetaan %d kanavaa..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Tuntematon kanava \"%s\" asetuksissa!"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Kanavan \"%s\" lataaminen epäonnistui!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Kanavan\"%s\" lataaminen epäonnistui!\n"
+
+#: ../gpilotd/manager.c:783
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Asetetaan tunniste ja käyttäjä %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Kanavaa %s pyydettiin, mutta sitä ei löydy"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Kanavaa %s ei voida pyytää"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(tuntematon DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Virhe jonossa (kohdetta ei ole olemassa)"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "virhe: pyyntöä PDA:lle %d ei löydy (pyyntö %d)"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "modulien lataus ei ole tuettu, paha!"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Hae järjestelmätiedot"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Pysäytä palvelinprosessi"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Jatka palvelinprosessin suoritusta"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Käynnistä palvelinprosessi uudelleen"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Aseta ID ja käyttäjätunnus"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "PDA-laitteen tunniste"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Asenna tiedosto"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "TIEDOSTO"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Palautuskansio"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "HAKEMISTO"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Suorita kanava"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "KANAVA"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Asetettava käyttäjätunnus"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "KÄYTTÄJÄTUNNUS"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "Tarkkaile annetun PDA-laitteen toimintoja"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "Tarkkaile kaikkia PDA-laitteita"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr "listaa PDA-laitteet kirjautumisnimen mukaan (all listaa kaikki)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Anna käytettävä PDA (oletuksena MyPDA)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTIN NIMI"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Valitse käytettävä telakka (oletuksena Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "TELAKAN NIMI"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Näytä annetut PDA:n kannat"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"VAROITUS!!\n"
+"Tämä on työkalu gnome-pilotin tietyille osille.\n"
+"Älä käytä tätä työkalua, ellet tiedä mitä teet."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "listaa käytettävissä olevat kanavat"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "käytettävä kanava"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "näytä kaikki attribuutit"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify PDA to operate on"
+msgstr "määrittele käytettävä PDA-laite"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "näytä ominaisuudet"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "näytä käytettävissä olevat kanavat ja niiden tilat"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "ota käytöön annettu kanava"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "poista käytöstä annettu kanava"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "ota käyttöön ja aseta ensimmäinen synkronointi hitaaksi"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "alusta ja tuhoa kanava"
+
+#: ../applet/gpilot-applet.desktop.in.h:1
+msgid "PilotSync"
+msgstr "PilotSync"
+
+#: ../applet/gpilot-applet.desktop.in.h:2
+msgid "Synchroniser for PalmOS PDAs"
+msgstr "Synkronoija PalmOS PDA-laitteille"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.GnomePilot.applet" path="/org/gnome/gnome-pilot/applet/">
+    <key name="pop-ups" type="b">
+      <default>true</default>
+      <summary>Display notices in popup windows</summary>
+      <description>Display notices in popup windows</description>
+    </key>
+    <key name="exec-when-clicked" type="s">
+      <default>'gpilotd-control-applet'</default>
+      <summary>Command to execute when the applet is clicked</summary>
+      <description>Command to execute when the applet is clicked</description>
+    </key>
+  </schema>
+</schemalist>

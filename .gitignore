@@ -1,0 +1,72 @@
+# Autoconf/Automake/Libtool generated files
+Makefile
+Makefile.in
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+config.guess
+configure
+aclocal.m4
+stamp-h1
+libtool
+ltmain.sh
+compile
+depcomp
+install-sh
+missing
+mkinstalldirs
+
+# Autoconf caches and temp directories
+autom4te.cache/
+conf[A-Za-z0-9]*/
+
+# Compiled objects and libraries
+*.o
+*.lo
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.soT
+.libs/
+.deps/
+
+# Compiled executables
+gpilotd/gpilotd
+gpilotd/gpilotd-session-wrapper
+capplet/gpilotd-control-applet
+applet/gpilot-tray
+conduits/file/gpilot-install-file
+utils/gpilotd-client
+utils/gpilotdcm-client
+utils/gnome-pilot-make-password
+
+# Generated source files (from gdbus-codegen / glib-genmarshal)
+gpilotd/gpmarshal.c
+gpilotd/gpmarshal.h
+gpilotd/gpilot-daemon-generated.c
+gpilotd/gpilot-daemon-generated.h
+
+# Generated config/data files
+gnome-pilot-4.0.pc
+capplet/gpilotd-control-applet.desktop
+capplet/gpilotd-control-applet.desktop.in
+conduits/*/palm.keys
+conduits/*/*.conduit
+
+# Compiled translation files
+*.gmo
+
+# Debian package build artifacts
+debian/.debhelper/
+debian/*.debhelper
+debian/*.substvars
+debian/files
+debian/debhelper-build-stamp
+debian/gnome-pilot/
+debian/gnome-pilot-dbgsym/
+debian/*.log
+debian/autoreconf.*

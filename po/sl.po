@@ -1,0 +1,1773 @@
+# Slovenian translations for gnome-pilot.
+# Copyright (C) 2009 gnome-pilot's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-pilot package.
+#
+# Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2009 - 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-pilot&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-26 20:01+0000\n"
+"PO-Revision-Date: 2011-03-28 08:36+0100\n"
+"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "Izbor dlančnika"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "Lastnosti GNOME Pilot usklajevanja"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "Obnovi dlančnik"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "_Mapa"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "_Prikaz obvestil"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "_Izvedi ob kliku"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "ID _dlančnika"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "_Uskladi zibko"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "napredek gnome-pilot"
+
+#: ../applet/pilot.c:186
+#, c-format
+msgid "%s Synchronizing"
+msgstr "Usklajevanje %s"
+
+#: ../applet/pilot.c:191
+msgid "Connecting..."
+msgstr "Povezovanje ..."
+
+#: ../applet/pilot.c:209
+#: ../applet/pilot.c:907
+#: ../applet/pilot.c:1051
+msgid "Ready to synchronize"
+msgstr "Pripravljeno na usklajevanje"
+
+#: ../applet/pilot.c:290
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Zahteva %ld je dokončana\n"
+
+#: ../applet/pilot.c:312
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s usklajevanje : %s"
+
+#: ../applet/pilot.c:317
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s zagnano\n"
+
+#: ../applet/pilot.c:332
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s končano: %s"
+
+#: ../applet/pilot.c:337
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s končano\n"
+
+#: ../applet/pilot.c:362
+#, c-format
+msgid "%d of %d records"
+msgstr "%d od %d zapisov"
+
+#: ../applet/pilot.c:382
+#, c-format
+msgid "Database %d of %d"
+msgstr "Podatkovna zbirka %d od %d"
+
+#: ../applet/pilot.c:443
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Podatki na dlančniku se usklajujejo.\n"
+"Počakajte na konec opravila."
+
+#: ../applet/pilot.c:448
+msgid "Not connected. Please restart daemon."
+msgstr "Ni povezave. Ponovno zaženite ozadnji program."
+
+#: ../applet/pilot.c:452
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Ni povezave z gpilotd.\n"
+"Treba bo ponovno zagnati ozadnji program."
+
+#: ../applet/pilot.c:481
+msgid "gnome-pilot applet"
+msgstr "aplet gnome-pilot"
+
+#: ../applet/pilot.c:483
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Zasluge 2000-2006 Free Software Foundation, Inc"
+
+#: ../applet/pilot.c:484
+msgid "A PalmOS PDA monitor.\n"
+msgstr "Nadzornik PalmOS dlančnikov.\n"
+
+#: ../applet/pilot.c:582
+#: ../applet/pilot.c:609
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Prišlo je do napake med prikazovanjem pomoči: %s"
+
+#: ../applet/pilot.c:695
+#, c-format
+msgid "Restoring %s"
+msgstr "Obnavljanje %s"
+
+#: ../applet/pilot.c:738
+msgid "No directory to restore from."
+msgstr "Ni mape za obnavljanje"
+
+#: ../applet/pilot.c:750
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Pritisnite tipko za obnavljanje ali preklic\n"
+" opravila usklajevanja."
+
+#: ../applet/pilot.c:756
+#, c-format
+msgid "cancelling %d"
+msgstr "poteka preklic %d"
+
+#: ../applet/pilot.c:761
+msgid "Restore request failed"
+msgstr "Zahteva po obnovi je spodletela"
+
+#: ../applet/pilot.c:802
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Usklajevanje dlančnika je v teku.\n"
+"Ali ste prepričani, da želite ponovno zagnati ozadnji program?"
+
+#: ../applet/pilot.c:817
+#: ../applet/pilot.c:1371
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Poskus povezovanja z ozadnjim programom GnomePilot"
+
+#: ../applet/pilot.c:834
+msgid "There's no last sync on record."
+msgstr "Ni zapisa zadnjega usklajevanja."
+
+#: ../applet/pilot.c:839
+msgid "_Restore"
+msgstr "_Obnovi"
+
+#: ../applet/pilot.c:840
+msgid "_Pause/Resume"
+msgstr "_Premor/nadaljevanje"
+
+#: ../applet/pilot.c:841
+msgid "R_estart"
+msgstr "_Znova zaženi"
+
+#: ../applet/pilot.c:842
+msgid "_Log"
+msgstr "D_nevnik"
+
+#: ../applet/pilot.c:843
+msgid "_Props"
+msgstr "P_redlogi"
+
+#: ../applet/pilot.c:844
+msgid "_Help"
+msgstr "Pomo_č"
+
+#: ../applet/pilot.c:845
+msgid "_About"
+msgstr "_O programu"
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:856
+msgid "Restore..."
+msgstr "Obnovi ..."
+
+#: ../applet/pilot.c:856
+msgid "Restart"
+msgstr "Ponovno začni"
+
+#: ../applet/pilot.c:856
+msgid "Last log..."
+msgstr "Zadnji dnevnik ..."
+
+#: ../applet/pilot.c:857
+msgid "Preferences..."
+msgstr "Možnosti ..."
+
+#: ../applet/pilot.c:857
+msgid "Help"
+msgstr "Pomoč"
+
+#: ../applet/pilot.c:857
+msgid "About"
+msgstr "O programu"
+
+#: ../applet/pilot.c:870
+msgid "Continue"
+msgstr "Nadaljuj"
+
+#: ../applet/pilot.c:872
+msgid "Pause Daemon"
+msgstr "Naredi premor ozadnjega programa"
+
+#: ../applet/pilot.c:898
+msgid "Daemon paused..."
+msgstr "Ozadnji program je v premoru ..."
+
+#: ../applet/pilot.c:1039
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Ni povezave. Za povezavo je treba ponovno zagnati ozadnji program"
+
+#: ../applet/pilot.c:1210
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Izvajanje %s je spodletelo"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1336
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "nameščanje \"%s\" v \"%s\""
+
+#: ../applet/pilot.c:1346
+msgid "unknown dnd type"
+msgstr "neznana vrsta dnd"
+
+#: ../applet/pilot.c:1354
+msgid "destroy gpilot-applet"
+msgstr "uniči gpilot aplet"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Ukaz za izvedbo ob kliku apleta"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Pokaže obvestila v pojavnih oknih"
+
+#: ../capplet/gnome-pilot-capplet.c:228
+#: ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "Nastavitve gnome-pilot"
+
+#: ../capplet/gnome-pilot-capplet.c:395
+#: ../capplet/gnome-pilot-capplet.c:471
+msgid "Name"
+msgstr "Ime"
+
+#: ../capplet/gnome-pilot-capplet.c:397
+#: ../utils/gpilotd-client.c:43
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:399
+msgid "Owner"
+msgstr "Lastnik"
+
+#: ../capplet/gnome-pilot-capplet.c:473
+msgid "Type"
+msgstr "Vrsta"
+
+#: ../capplet/gnome-pilot-capplet.c:575
+msgid "Conduit"
+msgstr "Veznik"
+
+#: ../capplet/gnome-pilot-capplet.c:577
+msgid "Sync Action"
+msgstr "Usklajevanje"
+
+#: ../capplet/gnome-pilot-capplet.c:791
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Ali ste prepričani, da želite izbrisati dlančnik `%s'?"
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "_Edit this PDA..."
+msgstr "_Uredi dlančnik ..."
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "Edit the currently selected PDA"
+msgstr "Uredi trenutno izbrani dlančnik"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "_Delete this PDA"
+msgstr "_Izbriši dlančnik"
+
+#: ../capplet/gnome-pilot-capplet.c:818
+msgid "Delete the currently selected PDA"
+msgstr "Izbriše trenutno izbrani dlančnik"
+
+#: ../capplet/gnome-pilot-capplet.c:970
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Ali ste prepričani, da želite izbrisati napravo %s?"
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "_Edit this device..."
+msgstr "_Uredi napravo ..."
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "Edit the currently selected device"
+msgstr "Uredi trenutno izbrano napravo"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "_Delete this device"
+msgstr "_Izbriši napravo"
+
+#: ../capplet/gnome-pilot-capplet.c:994
+msgid "Delete the currently selected device"
+msgstr "Izbriše trenutno izbrano napravo"
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Ni mogoče odločiti veznika %s."
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "_Enable this conduit"
+msgstr "_Omogoči veznik"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "Disable the currently selected conduit"
+msgstr "Onemogoči trenutno izbran veznik"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "_Disable this conduit"
+msgstr "_Onemogoči veznik"
+
+#: ../capplet/gnome-pilot-capplet.c:1221
+msgid "Enable the currently selected conduit"
+msgstr "Omogoči trenutno izbran veznik"
+
+#: ../capplet/gnome-pilot-capplet.c:1222
+#: ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "_Nastavitve ..."
+
+#: ../capplet/gnome-pilot-capplet.c:1223
+msgid "Modify the currently selected conduit's settings"
+msgstr "Spremeni nastavitve trenutno izbranega veznika"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:204
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "Ni mogoče ustvariti okna nastavitev dlančnika. Napačna nastavitev veznika."
+
+#: ../capplet/gnome-pilot-assistant.c:504
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Nastavitveni program ni končal opravila, zato nastavitve ne\n"
+"bodo shranjene. Ali ste prepričani, da želite končati program?"
+
+#: ../capplet/gnome-pilot-assistant.c:723
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Naslednji podatki so pripravljeni za pošiljanje na dlančnik.\n"
+"Ime lastnika: %s\n"
+"ID dlančnika: %d\n"
+"Postavite dlančnik v %s (%s) in pritisnite gumb za hitro usklajevanje."
+
+#: ../capplet/gnome-pilot-assistant.c:744
+#: ../capplet/gnome-pilot-assistant.c:765
+msgid "Failed sending request to gpilotd"
+msgstr "Pošiljanje zahteve programu gpilotd je spodletelo"
+
+#: ../capplet/gnome-pilot-assistant.c:752
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Program je pripravljen na pridobivanje imena in ID lastnika iz dlančnika.\n"
+"Vstavite dlančnik v %s (%s) in pritisnite gumb za hitro usklajevanje."
+
+#: ../capplet/gnome-pilot-assistant.c:936
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Ime in ID lastnika sta bila uspešno pridobljena iz dlančnika.\n"
+"Ime lastnika: %s\n"
+"ID dlančnika: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:438
+#, c-format
+msgid "Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr "Vstavite dlančnik v %s (%s) in pritisnite gumb Hitro usklajevanje ali prekličite dejanje."
+
+#: ../capplet/gnome-pilot-pdialog.c:473
+msgid "The request to get PDA ID failed"
+msgstr "Zahteva pridobivanja ID dlančnika je spodletela"
+
+#: ../capplet/gnome-pilot-pdialog.c:512
+msgid "The request to set PDA ID failed"
+msgstr "Zahteva nastavljanja ID dlančnika je spodletela"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Dejanja veznika</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Nastavitve veznika</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>Atributi dlančnika</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>Določitev dlančnika</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Katera naprava naj bo uporabljena za to dejanje?</span>\n"
+"\n"
+"Za ta računalnik je določenih več naprav, zato je treba določiti katera naj bo uporabljena za to dejanje."
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "_Znakovni nabor dlančnika:"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "_Vezniki"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "Izbor naprave"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid "Choose this option if you have used sync software before, even on another computer"
+msgstr "Možnost izberite v primeru, da ste program usklajevanja že uporabili"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "Nastavitve veznika"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Program gnome-pilot je nastavljen!\n"
+"\n"
+"Nastavitve gnome-pilot lahko kadarkoli spremenite v\n"
+"zavihkih PilotLink in veznik v nadzornem središču.\n"
+"\n"
+"Usklajevanje gnome-pilot lahko nadzirate z dodajanjem\n"
+"PilotLink apleta na plut."
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "O_nemogoči"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "Na_prave"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "Opis:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "Nastavitve naprave"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "Naprava:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Vnesite ime lastnika, ki ga želite shraniti na dlančnik"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Pridobi ime in ID lastnika z dlančnika"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "Začetno usklajevanje"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "Omr_ežje"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "L_astnik:"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Ime in ID lastnika dlančniku"
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "Lastnik:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "Atributi dlančnika"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "Določitev dlančnika"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "Nastavitve dlančnika"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "D_lančnik:"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "Popravite naslednjo težavo ..."
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "_Hitrost:"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid "Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr "Pošlje ID in ime lastnika na dlančnik in prepiše morebitno obstoječo istovetnost"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Nastavi korensko mapo za vse shranjene datoteke dlančnika."
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "Uspešno zaključeno"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Ime dlančnika. Uporabljeno samo za določitev."
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid "This integer ID identifies your PDA and must be unique between different PDAs that you use."
+msgstr "Število določa dlančnik in mora biti edinstveno med uporabljenimi dlančniki."
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "_Časovna omejitev:"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "Dobrodošli v gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Videti je, da gnome-pilot uporabljate prvič.\n"
+"Naslednji koraki bodo gnome-pilot nastavili za uskladitev.\n"
+"Vse možnosti je mogoče spremeniti kasneje v\n"
+"PilotLink pultu v Gnome nadzornem središču.\n"
+"\n"
+"Za nadaljevanje pritisnite 'Naprej'.\n"
+"Za izhod pritisnite 'Prekliči'."
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "_Dejanje:"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "_Dodaj ..."
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "_Izbriši"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "_Naprava:"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "_Uredi ..."
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "_Omogoči"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "_Pridobi iz dlančnika"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "_Krajevna mapa:"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "I_me dlančnika:"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "_Ime:"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Ne, na tem dlančniku usklajevalni program še ni bil uporabljen."
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "_Enkratno dejanje:"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "_Lastnik:"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "ID _dlančnika:"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "_Dlančniki"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "_Pošlji na dlančnik"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "_Vrstna številka"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "Vrs_ta:"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Da, na tem dlančniku je bil usklajevalni program že uporabljen."
+
+#: ../capplet/gpilotd-control-applet.c:84
+msgid " - configure gnome-pilot settings"
+msgstr "- nastavi nastavitve gnome-pilot"
+
+#: ../capplet/gpilotd-control-applet.c:86
+#: ../capplet/gpilotd-control-applet.c:95
+#, c-format
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "Napaka med zaganjanjem capleta gpilotd: %s"
+
+#: ../capplet/gpilotd-control-applet.c:101
+#: ../capplet/gpilotd-control-applet.c:102
+msgid "Error loading PDA state, aborting"
+msgstr "Napaka med nalaganjem stanja dlančnika; dejanje je preklicano"
+
+#: ../capplet/gpilotd-control-applet.c:109
+#: ../capplet/gpilotd-control-applet.c:110
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Ni se mogoče povezati z ozadnjim programom GnomePilot"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Nastavitev naprav PalmOS"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "Naprave PalmOS"
+
+#: ../capplet/pilot.c:116
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "Ključa gpilotd/General/sync_PC_Id ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:130
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr "Ključa gpilotd/General/progress_stepping ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:164
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "Ključa gpilotd/%s/type ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:186
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "Ključa gpilotd/%s/name ni mogoče naložiti: iDevice, %s"
+
+#: ../capplet/pilot.c:204
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "Ključa gpilotd/%s/speed ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:213
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "Ključa gpilotd/%s/timeout ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:254
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr "Ključa gpilotd/%s/name ni mogoče naložiti: %s"
+
+#: ../capplet/pilot.c:264
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "Ključa gpilotd/%s/pilotid ni mogoče naložiti: %s"
+
+#: ../capplet/util.c:123
+#: ../capplet/util.c:513
+msgid "Disabled"
+msgstr "Onemogočeno"
+
+#: ../capplet/util.c:129
+#: ../capplet/util.c:515
+msgid "Enabled"
+msgstr "Omogočeno"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "Nihče"
+
+#: ../capplet/util.c:315
+msgid "You must have at least one device setup"
+msgstr "Nastavljena mora biti vsaj ena naprava"
+
+#: ../capplet/util.c:486
+msgid "Synchronize"
+msgstr "Uskladi"
+
+#: ../capplet/util.c:487
+msgid "Copy from PDA"
+msgstr "Kopiraj z dlančnika"
+
+#: ../capplet/util.c:488
+msgid "Copy to PDA"
+msgstr "Kopiraj na dlančnik"
+
+#: ../capplet/util.c:489
+msgid "Merge from PDA"
+msgstr "Združi z dlančnika"
+
+#: ../capplet/util.c:490
+msgid "Merge to PDA"
+msgstr "Združi na dlančnik"
+
+#: ../capplet/util.c:493
+msgid "Use conduit settings"
+msgstr "Uporabi nastavitve veznika"
+
+#: ../capplet/util.c:501
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:502
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:503
+msgid "Network"
+msgstr "Omrežje"
+
+#: ../capplet/util.c:504
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:505
+msgid "Serial"
+msgstr "Zaporedno"
+
+#: ../capplet/util.c:552
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Izbrana osnovna mapa obstaja, vendar nima določenih ustreznih dovoljenj.\n"
+"Popravite dovoljenja ali izberite drugo mapo."
+
+#: ../capplet/util.c:557
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Izbrana osnovna mapa obstaja, vendar ni prava mapa.\n"
+"Spremenite jo v pravo mapo ali pa izberite drugo mapo."
+
+#: ../capplet/util.c:564
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another directory"
+msgstr ""
+"Osnovne mape ni mogoče ustvariti.\n"
+"Preverite dovoljenja izbrane poti ali izberite drugo mapo."
+
+#: ../capplet/util.c:569
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Pot osnovne mape je neveljavna.\n"
+"Izberite drugo mapo."
+
+#: ../capplet/util.c:593
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"`%s' ni veljavno določilo znakovnega niza.\n"
+"Vnesite veljavno določilo ali izberite med razpoložljivimi možnostmi."
+
+#: ../capplet/util.c:706
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Naprava 'usb:' je veljavna samo za vrste naprav USB"
+
+#: ../capplet/util.c:714
+msgid "Read/Write permissions failed on"
+msgstr "Dovoljenja branja/pisanja so spodletela na"
+
+#: ../capplet/util.c:716
+msgid "Check the permissions on the device and retry"
+msgstr "Preverite dovoljenja na napravi in poskusite znova"
+
+#: ../capplet/util.c:728
+#: ../gpilotd/gpilot-daemon.c:1261
+#, c-format
+msgid "Failed to find directory %s or read file %s.  Check that usbfs or sysfs is mounted."
+msgstr "Iskanje mape %s oziroma branje datoteke %s je spodletelo. Preverite, da je usbds ali sysds priklopljen."
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr "Ključa backup-conduit/%s/updated_only ni mogoče naložiti: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr "Ključa backup-conduit/%s/remove_deleted ni mogoče naložiti: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "Preverjanje za odstranjene zbirke podatkov"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:274
+#, c-format
+msgid "Renaming %s"
+msgstr "Preimenovanje %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:282
+#, c-format
+msgid "to %s"
+msgstr "v %s"
+
+#: ../conduits/backup/backup_conduit.c:457
+#: ../conduits/backup/backup_conduit.c:461
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s nespremenjenih od zadnje uskladitve"
+
+#: ../conduits/backup/backup_conduit.c:473
+#: ../conduits/backup/backup_conduit.c:475
+#, c-format
+msgid "Making backup of %s"
+msgstr "Ustvarjanje varnostne kopije %s"
+
+#: ../conduits/backup/backup_conduit.c:482
+#: ../conduits/backup/backup_conduit.c:484
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Datoteke varnostne kopije %s ni mogoče ustvariti"
+
+#: ../conduits/backup/backup_conduit.c:684
+msgid "Collecting restore information..."
+msgstr "Pridobivanje podrobnosti obnavljanja ..."
+
+#: ../conduits/backup/backup_conduit.c:811
+msgid "_Backup directory:"
+msgstr "Mapa _varnostnih kopij:"
+
+#: ../conduits/backup/backup_conduit.c:825
+msgid "Backup directory"
+msgstr "Mapa varnostnih kopij"
+
+#: ../conduits/backup/backup_conduit.c:827
+msgid "O_nly backup changed bases"
+msgstr "Ustvari varnostno kopijo _le spremenjenih osnovnih map"
+
+#: ../conduits/backup/backup_conduit.c:837
+msgid "Only backup changed bases"
+msgstr "Ustvari varnostno kopijo le spremenjenih osnovnih map"
+
+#: ../conduits/backup/backup_conduit.c:839
+msgid "_Remove local base if deleted on pilot"
+msgstr "_Odstrani krajevno osnovno mapo, ko je izbrisana na dlančniku"
+
+#: ../conduits/backup/backup_conduit.c:849
+msgid "Remove local base if deleted on pilot"
+msgstr "Odstrani krajevno osnovno mapo, ko je izbrisana na dlančniku"
+
+#: ../conduits/backup/backup_conduit.c:851
+msgid "# of old backups to _keep"
+msgstr "št. _ohranjenih starih varnostnih kopij "
+
+#: ../conduits/backup/backup_conduit.c:862
+msgid "# of old backups to keep"
+msgstr "št. ohranjenih starih varnostnih kopij "
+
+#: ../conduits/backup/backup_conduit.c:900
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Izbrana mapa varnostnih kopij obstaja, vendar nima določenih ustreznih dovoljenj.\n"
+"Popravite dovoljenja ali izberite drugo mapo."
+
+#: ../conduits/backup/backup_conduit.c:905
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Izbrana mapa varnostnih kopij obstaja, vendar ni prava mapa.\n"
+"Spremenite jo v mapo ali izberite drugo mapo."
+
+#: ../conduits/backup/backup_conduit.c:912
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another directory"
+msgstr ""
+"Mape varnostnih kopij ni bilo mogoče ustvariti.\n"
+"Preverite dovoljenja izbrane poti ali izberite drugo mapo."
+
+#: ../conduits/backup/backup_conduit.c:917
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Pot mape varnostnih kopij je neveljavna.\n"
+"Izberite drugo mapo."
+
+#: ../conduits/evolution-data-server/address-conduit.c:593
+msgid "Default Sync Address:"
+msgstr "Privzet usklajevalni naslov:"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1594
+#: ../conduits/evolution-data-server/address-conduit.c:1595
+msgid "Could not load address book"
+msgstr "Ni mogoče naložiti imenika"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1666
+#: ../conduits/evolution-data-server/address-conduit.c:1669
+msgid "Could not read pilot's Address application block"
+msgstr "Ni mogoče prebrati Pilotovega imenika"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:250
+msgid "Split Multi-Day Events:"
+msgstr "Razdeli večdnevne dogodke:"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1496
+#: ../conduits/evolution-data-server/calendar-conduit.c:1497
+#: ../conduits/evolution-data-server/memo-conduit.c:787
+#: ../conduits/evolution-data-server/memo-conduit.c:788
+#: ../conduits/evolution-data-server/todo-conduit.c:990
+#: ../conduits/evolution-data-server/todo-conduit.c:991
+msgid "Could not start evolution-data-server"
+msgstr "Ni mogoče zagnati evolution-data-server"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1598
+#: ../conduits/evolution-data-server/calendar-conduit.c:1601
+msgid "Could not read pilot's Calendar application block"
+msgstr "Ni mogoče prebrati Pilotovega koledarja"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:96
+msgid "Sync with:"
+msgstr "Uskladi z:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:104
+msgid "Sync Private Records:"
+msgstr "Uskladi zasebne zapise:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:113
+msgid "Sync Categories:"
+msgstr "Kategorije usklajevanja:"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:875
+#: ../conduits/evolution-data-server/memo-conduit.c:878
+msgid "Could not read pilot's Memo application block"
+msgstr "Ni mogoče prebrati Pilotovega zapiska"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:918
+#: ../conduits/evolution-data-server/memo-conduit.c:921
+msgid "Could not write pilot's Memo application block"
+msgstr "Ni mogoče zapisati Pilotovega zapiska"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:227
+msgid "Default Priority:"
+msgstr "Privzeta prednost:"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1068
+#: ../conduits/evolution-data-server/todo-conduit.c:1071
+msgid "Could not read pilot's ToDo application block"
+msgstr "Ni mogoče prebrati Pilotovega seznama opravil"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1111
+#: ../conduits/evolution-data-server/todo-conduit.c:1114
+msgid "Could not write pilot's ToDo application block"
+msgstr "Ni mogoče zapisati Pilotovega seznama opravil"
+
+#: ../conduits/file/file_conduit.c:243
+#: ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Namestitev %s je spodletela"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Nameščanje %s iz %s ..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Nameščanje %s ..."
+
+#: ../conduits/file/gpilot_install_file.c:41
+msgid "Install immediately"
+msgstr "Namesti takoj"
+
+#: ../conduits/file/gpilot_install_file.c:42
+msgid "Install delayed"
+msgstr "Namestitev je preložena"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA to install to"
+msgstr "Dlančnik za namestitev"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA"
+msgstr "Dlančnik"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "[FILE...]"
+msgstr "[DATOTEKA...]"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "list of files"
+msgstr "Seznam datotek"
+
+#: ../conduits/file/gpilot_install_file.c:97
+#: ../utils/gpilotd-client.c:466
+#: ../utils/gpilotdcm-client.c:107
+#, c-format
+msgid "Error parsing commandline arguments: %s"
+msgstr "Napaka med razčlenjevanjem argumentov: %s"
+
+#: ../conduits/file/gpilot_install_file.c:113
+#: ../conduits/file/gpilot_install_file.c:114
+msgid "Unable to get PDA names"
+msgstr "Imena dlančnika ni mogoče pridobiti"
+
+#: ../conduits/file/gpilot_install_file.c:149
+msgid "Following files failed :\n"
+msgstr "Naslednje datoteke so spodletele:\n"
+
+#: ../conduits/file/gpilot_install_file.c:161
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Nameščanje na %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:182
+msgid "No files to install"
+msgstr "Ni datotek za namestitev"
+
+#: ../conduits/file/gpilot_install_file.c:185
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Za namestitev pritisnite uskladi\n"
+"ali pa prekličite dejanje."
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:683
+msgid "module loading not supported, fatal!"
+msgstr "nalaganje modulov ni podprto; usodna napaka!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:135
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "izbrisan zapis dlančnika je krajevno spremenjen; ne bo izbrisan\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "izbrisan krajevni zapis je spremenjen na dlančniku; ne bo izbrisan\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "združi spor, zapis dlančnika in krajevni zapis sta zamenjana\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "arhiviraj in spremeni spor, zapis dlančnika in krajevni zapis bosta zamenjana\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "arhiviraj in spremeni spor, krajevni zapis bo poslan na dlančnik\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "arhiviraj in spremeni spor, zapis dlančnika bo shranjen krajevno\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:457
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:532
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:593
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:622
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:651
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Začenjanje veznika je spodletelo; dejanje je preklicano"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:470
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "Vseh zapisov v zbirki podatkov dlančnika ni mogoče izbrisati, preklic dejanja"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:481
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1071
+msgid "Conduit did not return a record"
+msgstr "Veznik ni vrnil zapisa"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:538
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Vseh zapisov v krajevni zbirki podatkov ni mogoče izbrisati, preklic dejanja"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1472
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Napaka v vezniku, novo dodanega zapisa ni mogoče najti"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:517
+msgid "Copy to PDA failed!"
+msgstr "Kopiranje na dlančnik je spodletelo!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:541
+msgid "Copy from PDA failed!"
+msgstr "Kopiranje z dlančnika je spodletelo!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:565
+msgid "Merge to PDA failed!"
+msgstr "Združevanje na dlančnik je spodletelo!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:589
+msgid "Merge from PDA failed!"
+msgstr "Združevanje z dlančnika je spodletelo!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:644
+msgid "Synchronization failed!"
+msgstr "Usklajevanje ni uspelo!"
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Naprave %s (%s) ni mogoče odpreti: vzrok: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"S programom GnomePilot ni mogoče odpreti naprave %s (%s).\n"
+"Vzrok: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:446
+#, c-format
+msgid "Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was compiled with bluetooth support)"
+msgstr "Bluetooth naprava [%s]: vtiča ni mogoče vezati: napaka %d (preverite, če je pilot-link kodno preveden z bluetooth podporo)"
+
+#: ../gpilotd/gnome-pilot-structures.c:456
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Naprava [%s, %s]: vtiča ni mogoče vezati: napaka %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:536
+#: ../gpilotd/gnome-pilot-structures.c:589
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Neznana vrsta naprave"
+
+#: ../gpilotd/gnome-pilot-structures.c:666
+msgid "Number of devices is configured to 0"
+msgstr "Število nastavljenih naprav je 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:668
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nastavljena ni nobene naprave.\n"
+"Zaženite gpilotd-control-aplet (uporabite gnomecc)\n"
+"za nastavitev naprav gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:689
+msgid "No accessible devices available"
+msgstr "Ni razpoložljivih naprav"
+
+#: ../gpilotd/gnome-pilot-structures.c:708
+msgid "Number of PDAs is configured to 0"
+msgstr "Število nastavljenih dlančnikov je 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:710
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nastavljenega ni nobenega dlančnika.\n"
+"Poženite gpilotd-control-aplet (uporabite gnomecc)\n"
+"za nastavitev gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:772
+#: ../gpilotd/gpilot-daemon.c:822
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Znakovni niz naprave ni določen. Uporabljen bo `%s'."
+
+#: ../gpilotd/gpilot-daemon.c:373
+msgid "Unable to bind to PDA"
+msgstr "Dlančnika ni mogoče vezati"
+
+#: ../gpilotd/gpilot-daemon.c:503
+#, c-format
+msgid "Failed to connect using device `%s', on port `%s'.  Check your configuration, as you requested new-style libusb `usb:' syncing, but have the old-style `visor' kernel module loaded.  You may need to select a `ttyUSB...' device."
+msgstr "Povezava z napravo `%s' na vratih `%s' je spodletela. Preverite nastavitve, saj je zahtevan nov slog libusb `usb:' usklajevanja, vendar ni naloženega slogovnega jedrnega modula `visor'. Izbrati bo treba `ttyUSB...' napravo."
+
+#: ../gpilotd/gpilot-daemon.c:518
+#, c-format
+msgid "Failed to connect using device `%s', on port `%s'.  Check your configuration, as you requested old-style usbserial `ttyUSB' syncing, but do not have the usbserial `visor' kernel module loaded.  You may need to select a `usb:' device."
+msgstr "Povezava z napravo `%s' na vratih `%s' je spodletela. Preverite nastavitve, saj je zahtevan nov zaporedni usb slog usklajevanja `usb:', vendar ni naloženega zaporednega usb jedrnega modula `visor'. Izbrati bo treba `usb:' napravo."
+
+#: ../gpilotd/gpilot-daemon.c:608
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Neznan dlančnik, ni ID uporabnika/uporabniškega imena, ki bi bil skladen z %ld"
+
+#: ../gpilotd/gpilot-daemon.c:615
+msgid "Use gnomecc to configure PDA"
+msgstr "Za nastavitev dlančnika uporabi gnomecc"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilot-daemon.c:620
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Neznan dlančnik - ni dlančnika skladnega z ID %ld\n"
+"Uporabite gnomecc za nastavitev gnome-pilot"
+
+#: ../gpilotd/gpilot-daemon.c:645
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Naprava %s ima %d dogodkov"
+
+#: ../gpilotd/gpilot-daemon.c:658
+msgid "Setting userinfo..."
+msgstr "Nastavljanje podrobnosti uporabnika ..."
+
+#: ../gpilotd/gpilot-daemon.c:670
+msgid "Sync continues"
+msgstr "Usklajevanje se nadaljuje"
+
+#: ../gpilotd/gpilot-daemon.c:689
+msgid "Getting userinfo..."
+msgstr "Pridobivanje podrobnosti uporabnika ..."
+
+#: ../gpilotd/gpilot-daemon.c:751
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "Zaznana je spletna zahteva usklajevanja; poteka usklajevanje dlančnika"
+
+#: ../gpilotd/gpilot-daemon.c:753
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Zaznana je bluetooth zahteva usklajevanja; poteka usklajevanje dlančnika"
+
+#: ../gpilotd/gpilot-daemon.c:755
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "Gumb hitro usklajevanje je bil pritisnjen; poteka usklajevanje dlančnika"
+
+#: ../gpilotd/gpilot-daemon.c:757
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "ID dlančnika je %ld, ime %s in lastnik %s"
+
+#: ../gpilotd/gpilot-daemon.c:767
+#, c-format
+msgid "On host %s\n"
+msgstr "Na gostitelju %s\n"
+
+#: ../gpilotd/gpilot-daemon.c:769
+#, c-format
+msgid "On host %d\n"
+msgstr "Na gostitelju %d\n"
+
+#: ../gpilotd/gpilot-daemon.c:788
+msgid "Synchronization ended"
+msgstr "Usklajevanje je končano"
+
+#: ../gpilotd/gpilot-daemon.c:791
+msgid "Synchronization ended early"
+msgstr "Usklajevanje se je končalo prehitro"
+
+#: ../gpilotd/gpilot-daemon.c:836
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "`%s' ni prepoznan kot znakovni niz iconv, uporabljen bo `%s'."
+
+#: ../gpilotd/gpilot-daemon.c:858
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Osnovna mapa %s je neveljavna.\n"
+"Popravite jo ali uporabite gnomecc za izbor druge mape."
+
+#: ../gpilotd/gpilot-daemon.c:871
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Neznan dlančnik - ni dlančnika skladnega z ID %ld\n"
+"Uporabite aplet gpilotd-control za nastavitev ID dlančnika."
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1003
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Prišlo je do napake med pridobivanjem sistemskih podatkov dlančnika."
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1010
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Prišlo je do napake med pridobivanjem uporabniških podatkov dlančnika."
+
+#: ../gpilotd/gpilot-daemon.c:1015
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Končani dogodki za napravo %s (%s)"
+
+#: ../gpilotd/gpilot-daemon.c:1080
+#, c-format
+msgid "Woke on %s"
+msgstr "Povrnjen iz mirovanja ob %s"
+
+#: ../gpilotd/gpilot-daemon.c:1161
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Povrnjen iz mirovanja v omrežju: %s"
+
+#: ../gpilotd/gpilot-daemon.c:1431
+#, c-format
+msgid "Watching %s (network)"
+msgstr "Opazovanje %s (omrežje)"
+
+#: ../gpilotd/gpilot-daemon.c:1433
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "Opazovanje %s (bluetooth)"
+
+#: ../gpilotd/gpilot-daemon.c:1435
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Opazovanje %s (%s)"
+
+#: ../gpilotd/gpilot-daemon.c:1567
+msgid "Shutting down devices"
+msgstr "Izklapljanje naprav"
+
+#: ../gpilotd/gpilot-daemon.c:1569
+msgid "Rereading configuration..."
+msgstr "Ponovno branje nastavitve ..."
+
+#: ../gpilotd/gpilot-daemon.c:2482
+msgid "(unknown DB)"
+msgstr "(neznana ZP)"
+
+#: ../gpilotd/gpilotd.c:54
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Izhod (prejet SIGTERM) ..."
+
+#: ../gpilotd/gpilotd.c:62
+msgid "Exiting (caught SIGINT)..."
+msgstr "Izhod (prejet SIGINT) ..."
+
+#: ../gpilotd/gpilotd.c:93
+msgid "Unable to create file installation queue directory"
+msgstr "Mape čakalne vrste namestitev datotek ni mogoče ustvariti"
+
+#: ../gpilotd/gpilotd.c:209
+msgid "gpilotd already running; exiting ...\n"
+msgstr "gpilotd že teče; končevanje ...\n"
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "veznik brez varnostne kopije v seznamu veznikov z varnostno kopijo"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "varnostna kopija %s je narejena\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "ustvarjanje varnostne kopije %s je spodletelo\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "Pridobivanje podrobnosti usklajevanja ..."
+
+#: ../gpilotd/manager.c:420
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Usklajevanje %s\n"
+
+#: ../gpilotd/manager.c:439
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Kopiraj na dlančnik %s\n"
+
+#: ../gpilotd/manager.c:457
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Kopiraj z dlančnika %s\n"
+
+#: ../gpilotd/manager.c:475
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Združi na dlančnik %s\n"
+
+#: ../gpilotd/manager.c:493
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Združi z dlančnika %s\n"
+
+#: ../gpilotd/manager.c:521
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Prvo usklajevanje veznika %s ..."
+
+#: ../gpilotd/manager.c:545
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "neznano dejanje usklajevanja (%d = %s).\n"
+
+#: ../gpilotd/manager.c:671
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Odločanje %d veznikov ..."
+
+#: ../gpilotd/manager.c:676
+#: ../gpilotd/manager.c:677
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "V nastavitvah je neznani veznik \"%s\"!"
+
+#: ../gpilotd/manager.c:686
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Nalaganje veznika \"%s\" je spodletelo!"
+
+#: ../gpilotd/manager.c:687
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Nalaganje veznika \"%s\" je spodletelo!\n"
+
+#: ../gpilotd/manager.c:777
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Nastavljanje id/lastnika na %d/%s ..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:809
+#, c-format
+msgid "Conduit %s requested, but not found.  Is it enabled?"
+msgstr "Veznik %s je zahtevan, vendar ga ni mogoče najti. Ali je omogočen?"
+
+#: ../gpilotd/manager.c:819
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Veznika %s ni mogoče zahtevati"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "Napaka v čakalni vrsti; neobstoječi vnos"
+
+#: ../gpilotd/queue_io.c:454
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "napaka: za dlančnik %d, ni mogoče najti zahteve %d"
+
+#: ../utils/gpilotd-client.c:38
+msgid "Get System Info"
+msgstr "Pridobi podrobnosti o sistemu"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Pause daemon"
+msgstr "Premor ozadnjega programa"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Unpause daemon"
+msgstr "Končaj premor ozadnjega programa"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Restart daemon"
+msgstr "Ponoven zagon ozadnjega programa"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Set user id and name"
+msgstr "Nastavitev id in imena uporabnika"
+
+#: ../utils/gpilotd-client.c:43
+msgid "ID for the PDA"
+msgstr "ID dlančnika"
+
+#: ../utils/gpilotd-client.c:44
+msgid "Install file"
+msgstr "Namestitev datoteke"
+
+#: ../utils/gpilotd-client.c:44
+msgid "FILE"
+msgstr "DATOTEKA"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Restore directory"
+msgstr "Obnovi mapo"
+
+#: ../utils/gpilotd-client.c:45
+msgid "DIRECTORY"
+msgstr "Mapa"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Run conduit"
+msgstr "Zaženi veznik"
+
+#: ../utils/gpilotd-client.c:46
+#: ../utils/gpilotdcm-client.c:26
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Username to set"
+msgstr "Uporabniško ime za nastavitev"
+
+#: ../utils/gpilotd-client.c:47
+msgid "USERNAME"
+msgstr "Uporabniško ime"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Monitor all PDAs"
+msgstr "Nadziraj vse dlančnike"
+
+#: ../utils/gpilotd-client.c:49
+msgid "list PDAs by login (all for all pilots)"
+msgstr "razvrsti dlančnike po prijavi (vse za vse dlančnike)"
+
+#: ../utils/gpilotd-client.c:49
+msgid "LOGIN"
+msgstr "PRIJAVA"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Določitev dlančnika za delovanje (privzeto MyPDA)"
+
+#: ../utils/gpilotd-client.c:50
+msgid "PILOTNAME"
+msgstr "IMEDLANČNIKA"
+
+#: ../utils/gpilotd-client.c:51
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Določitev zbirke za delovanje (privzeto Cradle0)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "CRADLENAME"
+msgstr "IMEZIBKE"
+
+#: ../utils/gpilotd-client.c:52
+msgid "List users"
+msgstr "Naštej uporabnike"
+
+#: ../utils/gpilotd-client.c:53
+msgid "List cradles"
+msgstr "Naštej zibke"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Izpiši seznam osnovnih map določenih dlančnikov"
+
+#: ../utils/gpilotd-client.c:472
+#: ../utils/gpilotdcm-client.c:113
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"OPOZORILO!!\n"
+"To je orodje za nekatere dele paketa gnome-pilot.\n"
+"Uporaba tega orodja lahko poškoduje podatke."
+
+#: ../utils/gpilotdcm-client.c:25
+msgid "lists available conduits"
+msgstr "izpiši razpoložljive veznike"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "conduit to operate on"
+msgstr "veznik za delovanje"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "list all attributes"
+msgstr "seznam vseh atributov"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "specify PDA to operate on"
+msgstr "določitev dlančnika za delovanje"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "PDA_ID"
+msgstr "_ID dlančnika"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list attributes"
+msgstr "seznam atributov"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list available conduits and their state"
+msgstr "izpiši razpoložljive veznike in njihovo stanje"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "enable specified conduit"
+msgstr "omogoči določen veznik"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "disable specified conduit"
+msgstr "onemogoči določen veznik"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable, and set firstsync to slow"
+msgstr "omogoči in določi počasno prvo usklajevanje"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "instantiate and destroy the conduit"
+msgstr "odloči in uniči veznik"
+
+#~ msgid "Pilot Applet"
+#~ msgstr "Aplet Pilot"
+#~ msgid "Synchronize your data on PalmOS devices"
+#~ msgstr "Usklajevanje podatkov na napravah PalmOS"
+#~ msgid "Utility"
+#~ msgstr "Pripomoček"
+#~ msgid "Synchronizing..."
+#~ msgstr "Usklajevanje ..."
+#~ msgid "Error initializing gpilotd"
+#~ msgstr "Napaka med zaganjanjem gpilotd"
+#~ msgid "Gnome-Pilot daemon"
+#~ msgstr "Ozadnji program Gnome-Pilot"
+#~ msgid "Monitor the specified PDA's actions"
+#~ msgstr "Nadziranje dejanj določenega dlančnika"
+#~ msgid "Error initializing gpilotd-client"
+#~ msgstr "Napaka med zaganjanjem gpilotd-client"
+#~ msgid "Error initializing gpilotdcm-client"
+#~ msgstr "Napaka med zaganjanjem gpilotdcm-client"
+

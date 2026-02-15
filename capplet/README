@@ -1,0 +1,5 @@
+This is a control center applet ('capplet') to plug into the centralized
+control center Jonathan Blandford is working on. It will let a user
+configure the port their pilot cradle is on, the username/id for
+the pilot, and configure the various conduits.
+

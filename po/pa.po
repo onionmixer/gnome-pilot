@@ -1,0 +1,1579 @@
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2004-06-08 10:40+0530\n"
+"Last-Translator: Amanpreet Singh Alam <amanlinux@netscape.net>\n"
+"Language-Team: Punjabi <punlinux-i18n@lists.sourceforge.>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "ਉਪਯੋਗਤਾ"
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "ਪਾਇਲਟ ਚੁਣੋ"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "ਡਾਇਰੈਕਟਰੀ"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "ਨੋਟਿਸ ਵਿਖਾਓ"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "ਦਬਾਉਣ ਤੇ ਚਲਾਓ"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਸਮਕਾਲੀ ਵਿਸ਼ੇਸ਼ਤਾਵਾ"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "ਪਾਇਲਟ ਸ਼ੰਨ ਨੰ"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "ਪਾਇਲਟ ਮੁਡ਼ ਲੋਡ ਕਰੋ"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "ਸਮਕਾਲੀ ਕਰਡਲੀ"
+
+#: applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਉਨੱਤੀ"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "ਸਮਕਾਲੀ ਬਣਾਉਣ਼ਾ਼"
+
+#: applet/pilot.c:163
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s ਸਮਕਾਲੀ ਬਣਾਉਣਾ"
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr "%u ਦਾ %v ਡੈਟਾ-ਬੇਸ"
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "ਸਮਕਾਲੀ ਬਣਾਉਣ ਲਈ ਤਿਆਰ"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "%ld  ਮੰਗ ਸੰਪੂਰਨ ਹੋ ਗਈ ਹੈ\n"
+
+#: applet/pilot.c:228
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s, %s ਨੂੰ ਸਮਕਾਲੀ ਬਣਾ ਰਿਹਾ ਹੈ"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: ਸ਼ੁਰੂ ਹੋ ਗਿਆ ਹੈ\n"
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s ਨੇ %s ਨੂੰ ਖਤਮ ਕੀਤਾ"
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s ਦਾ ਅੰਤ ਹੋ ਗਿਆ\n"
+
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr "%v  ਰਿਕਾਰਡ ਦਾ %u"
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"ਪਾਇਲਟ ਹੁਣ ਸਮਕਾਲੀ ਬਣਾ ਰਿਹਾ ਹੈ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਦੇ ਖਤਮ ਹੋਣ ਦੀ ਉਡੀਕ ਕਰੋ"
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "ਜੁਡ਼ਿਆ ਨਹੀ, ਕਿਰਪਾ ਕਰਕੇ ਡੈਮਨ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ "
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਨਾਲ ਜੁਡ਼ਿਆ ਨਹੀ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਡੈਮਨ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: applet/pilot.c:373
+msgid "gnome-pilot applet"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਐਪਲਿਟ"
+
+#: applet/pilot.c:375
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "ਹੱਕ ਰਾਖਵੇ ਹਨ ੨੦੦੦-੨੦੦੩ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਡੇਸ਼ਨ ਕੋਲ"
+
+#: applet/pilot.c:376
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "ਇੱਕ dnd ਅਤੇ gui ਮਾਨੀਟਰ gpilotd ਲਈ।\n"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr "ਰੱਦ ਕਰ ਰਿਹਾ ਹੈ %d"
+
+#: applet/pilot.c:524
+#, c-format
+msgid "Restoring %s"
+msgstr "ਮੁਡ਼ ਸੰਭਾਲ ਰਿਹਾ ਹੈ %s"
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਲਈ ਕੋਈ ਡਾਇਰੈਕਟਰੀ ਨਹੀ ਹੈ"
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਲਈ ਕਰਾਡਲੀ ਉਪਰ ਸਮਕਾਲੀ ਦਬਾਓ\n"
+"ਜਾਂ ਕਿਰਿਆ ਰੱਦ ਕਰੋ"
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਦੀ ਮੰਗ ਅਸਫਲ ਹੋਈ"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"ਪਾਇਲਟ ਸਮਕਾਲ ਹੁਣ ਉਨਤੀ ਵਿਚ ਹੈ ।\n"
+"ਕੀ ਤੁਸੀ ਪੱਕੇ ਤੌਰ ਤੇ ਡੈਮਨ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ ਨਾਲ ਜੋਡ਼ਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ ।"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "ਉਥੇ ਰਿਕਾਰਡ ਉਪਰ ਕੋਈ ਆਖਰੀ ਸਮਕਾਲ ਨਹੀ ਹੈ"
+
+#: applet/pilot.c:687
+msgid "Continue"
+msgstr "ਜਾਰੀ ਰਹੋ"
+
+#: applet/pilot.c:689
+msgid "Pause Daemon"
+msgstr "ਡੈਮਨ ਨੂੰ ਵਿਰਾਮ ਕਰੋ"
+
+#: applet/pilot.c:709
+msgid "Daemon paused..."
+msgstr "ਡੈਮਨ ਵਿਰਾਮ ਹੋਇਆ਼"
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "ਜੁਡ਼ਿਆ ਨਹੀ, ਫਿਰ ਜੋਡ਼ਨ ਲਈ ਡੈਮਨ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s ਨੂੰ ਚਾਲੂ ਕਰਨ ਦੀ ਕਾਰਵਾਈ ਅਸਫਲ ਹੋਈ ਹੈ"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "\"%s\" ਉਪੱਰ \"%s\" ਨੂੰ ਸਥਾਪਿਤ ਕਰਨਾ"
+
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr "ਅਣਜਾਣੀ dnd ਕਿਸਮ"
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਐਪਲਿਟ ਖਤਮ ਕਰੋ"
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "ਪਾਇਲਟ ਐਪਲਿਟ ਰਸਤਾ ਨਹੀ ਲੱਭ ਸਕਦਾ ਹੈ"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "ਐਪਲਿਟ ਦਬਾਉਣ ਤੇ ਚੱਲਣ ਵਾਲੀ ਕਮਾਡ"
+
+#: applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "ਖੁੱਲਦੇ ਝਰੋਖਿਆ ਵਿਚ ਨੋਟਿਸ ਵਿਖਾਓ"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "ਪਾਇਲਟ ਨਿਰਧਾਰਨ"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "ਨਾਉ"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ਸੰਨਾ ਨੰ"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "ਉਪਯੋਗੀ ਦਾ ਨਾਉ"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "ਪੋਰਟ"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "ਚਾਲ"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "ਕਿਸਮ"
+
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Conduit"
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "ਸਮਕਾਲੀ ਕਿਰਿਆ"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "ਕੀ ਤੁਸੀ ਪੱਕੇ ਤੌਰ ਤੇ %s ਪਾਇਲਟ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "ਇਸ ਪਾਇਲਟ ਨੂੰ ਸੋਧੋ"
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ ਪਾਇਲਟ ਨੂੰ ਸੋਧੋ"
+
+#: capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "ਇਹ ਪਾਇਲਟ ਨੂੰ ਮਿਟਾਓ"
+
+#: capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ ਪਾਇਲਟ ਨੂੰ ਮਿਟਾਓ"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "ਕੀ ਤੁਸੀ ਪੱਕੇ ਤੌਰ ਤੇ %s ਯੰਤਰ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "ਇਸ ਯੰਤਰ ਨੂੰ ਸੋਧ਼ੋ਼"
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ ਯੰਤਰ ਨੂੰ ਸੋਧੋ"
+
+#: capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "ਇਹ ਯੰਤਰ ਨੂੰ ਮਿਟਾਓ"
+
+#: capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ ਯੰਤਰ ਨੂੰ ਮਿਟਾਓ"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%s conduit ਨੂੰ ਝੱਟਪਟ ਕਰਨ ਵਿਚ ਅਸਮੱਰਥ"
+
+#: capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "ਇਸ conduit ਨੂੰ ਯੋਗ ਕਰੋ"
+
+#: capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ conduit ਨੂੰ ਅਯੋਗ ਕਰੋ"
+
+#: capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "ਇਸ conduit ਨੂੰ ਅਯੋਗ ਕਰੋ"
+
+#: capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "ਹੁਣੇ ਚੁਣੇ ਗਏੲ conduit ਨੂੰ ਯੋਗ ਕਰੋ"
+
+#: capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "ਨਿਰਧਾਰਨ ਼"
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "ਹੁਣੇ ਚੁਣੀਆ ਗਈਆ conduit ਨਿਰਧਾਰਨਾਂ ਨੂੰ ਬਦਲੋ"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr "ਪਾਇਲਟ ਨਿਰਧਾਰਨ ਝਰੋਖਾ ਬਣਾਉਣ ਲਈ ਅਸਮਰਥ । ਗਲਤ conduit ਬਣਤਰ "
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"ਸੈਟਅੱਪ ਸੰਪੂਰਨ ਨਹੀ ਹੋਇਆ ਅਤੇ ਨਿਰਧਾਰਨ ਸੰਭਾਲਿਆ ਨਹੀ ਜਾਵੇਗਾ\n"
+"ਕੀ ਤੁਸੀ ਯਕੀਨਨ ਛੱਡਣਾ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"ਪਾਇਲਟ ਨੂੰ ਹੇਠਲੇ ਅੰਕਡ਼ੇ ਭੇਜਣ ਬਾਰੇ।\n"
+"ਉਪਯੋਗੀ ਨਾਉ:%s\n"
+"ਸ਼ੰਨ ਨੰ: %d\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਪਾਇਲਟ ਨੂੰ %s (%s) ਵਿਚ ਰੱਖੋ ਅਤੇ ਤੇਜ਼-ਸਮਕਾਲ ਬਟਨ ਦਬਾਓ"
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"ਪਾਇਲਟ ਤੋ ਉਪਯੋਗੀ ਨਾਉ ਅਤੇ ਸ਼ੰਨ ਨੰ  ਮੁਡ਼ ਪ੍ਾਪਤ ਕਰਨ ਬਾਰੇ\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਪਾਇਲਟ ਨੂੰ %s (%s) ਵਿੱਚ ਰੱਖੋ ਅਤੇ ਤੇਜ਼-ਸਮਕਾਲ ਬਟਨ ਦਬਾਓ"
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਨੂੰ ਮੰਗ ਭੇਜਣ ਵਿਚ ਅਸਫਲ ਹੈ"
+
+#: capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"ਪਾਇਲਟ ਤੋ ਉਪਯੋਗੀ ਨਾਉ ਅਤੇ ਸ਼ੰਨ ਨੰ ਸਫਲਤਾ ਪੂਰਵਕ ਪ੍ਾਪਤ ਕੀਤਾ ।\n"
+"ਉਪਯੋਗੀ ਨਾਉ: %s\n"
+"ਸ਼ੰਨ ਨੰ:·%d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr "ਕਿਰਪਾ ਕਰਕੇ ਪਾਇਲਟ ਨੂੰ %s (%s) ਵਿੱਚ ਰੱਖੋ ਅਤੇ ਗਰਮ ਸਮਕਾਲ ਬਟਨ ਦੱਬਾ ਜਾ ਕਿਰਿਆ ਰੱਦ ਕਰੋ"
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "ਪਾਇਲਟ ਸੰਨ ਨੰ  ਪ੍ਾਪਤ ਕਰਨ ਦੀ ਮੰਗ ਅਸਫਲ"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "ਪਾਇਲਟ ਸ਼ੰਨ ਨੰ ਠੀਕ ਕਰਨ ਦੀ ਮੰਗ ਅਸਫਲ"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "ਕਾਰਵਾਈ:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "ਜੋਡ਼਼ੋ਼"
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "ਯੰਤਰ ਚੁਣੋ"
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Conduit ਕਾਰਵਾਈਆਂ"
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Conduit ਵਰਨਣ"
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Conduit ਨਿਰਧਾਰਨ"
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Conduits"
+
+#: capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"ਮੁਬਾਰਕ, ਗਨੋਮ ਪਾਇਲਟ ਦੀ ਸੰਰਚਨਾ ਪੂਰੀ ਹੋ ਗਈ ਹੈ ।\n"
+"\n"
+"ਤੁਸੀ ਕਿਸੇ ਸਮੇ ਕੰਟਰੋਲ ਸੈਟਰ ਵਿੱਚ ਪਾਇਲਟ-ਸੰਬੰਧ ਅਤੇ Conduits ਬਟਨਾ ਤੋ \n"
+"ਗਨੋਮ ਪਾਇਲਟ ਦੇ ਨਿਰਧਾਰਨ ਬਦਲ ਸਕਦੇ ਹੋ ।\n"
+"\n"
+"ਤੁਸੀ ਪੈਨਲ ਵਿਚ ਪਾਇਲਟ-ਸੰਬੰਧ ਐਪਲਿਟ ਸ਼ਾਮਿਲ ਕਰਕੇ ਗਨੋਮ ਪਾਇਲਟ \n"
+"ਦੀ syncing ਨੂੰ ਵਰਤ ਸਕਦੇ ਹੋ ।"
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "ਕਰਡਲੀ ਨਿਰਧਾਰਨ "
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "ਮਿਟਾਓ"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "ਯੰਤਰ ਨਿਰਧਾਰਨ "
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "ਯੰਤਰ"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "ਅਯੋਗ"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "ਅਯੋਗ ਕੀਤਾ"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "ਸੋਧ਼"
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "ਯੋਗ"
+
+#: capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "ਉਪਯੋਗੀ ਨਾਉ ਦਿਉ ਜਿਹਡ਼ਾ ਤੁਸੀ ਆਪਣੇ ਪਾਇਲਟ ਉਪੱਰ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr "ਮੌਜੂਦ ਪਾਇਲਟ ਵਿਚੋ ਉਪਯੋਗੀ ਨਾਉ ਅਤੇ ਸੰਨ ਨੰ ਪ੍ਾਪਤ ਕਰੋ ਜਿਹਡ਼ਾ ਪਹਿਲਾ ਵਰਤਿਆ ਸੀ ।"
+
+#: capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "ਪਾਇਲਟ ਤੋ ਪ੍ਾਪਤ ਕਰੋ"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਨਿਰਧਾਰਨ "
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "ਸ਼ੁਰੂਆਤੀ ਸਮਕਾਲ"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+msgid "IrDA"
+msgstr "IrDA"
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "ਲੋਕਲ ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr "ਨੈਟਵਰਕ"
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr "ਨਹੀ, ਮੈ ਪਹਿਲਾ ਕਦੇ ਵੀ ਇਸ ਪਾਇਲਟ ਨਾਲ ਸਮਕਾਲੀ ਸਾਫਟਵੇਅਰ ਨਹੀ ਵਰਤਿਆ ਹੈ "
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "ਕੋਈ ਨਹੀ"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr " ਇਕ ਸਮੇ ਦੀ ਕਾਰਵਾਈਃ"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "ਪਾਇਲਟ ਗੁਣ"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "ਪਾਇਲਟ ਦੀ ਸ਼ੰਨ ਨੰ"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "ਪਾਇਲਟ ਨਾਉ"
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "ਪਾਇਲਟ ਨਾਉ:"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "ਪਾਇਲਟ"
+
+#: capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "ਪਾਇਲਟ ਨੂੰ ਭੇਜੋ"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr "ਸੀਰੀਅਲ"
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "ਨਵੇ ਪਾਇਲਟ ਨੂੰ ਉਪਯੋਗੀ ਨਾਉ ਅਤੇ ਸ਼ੰਨ ਨੰ ਦਿਓ"
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "ਰੱਖੀਆ ਹੋਈਆ ਸਾਰੀਆ ਪਾਇਲਟ ਫਾਇਲਾ ਵਾਸਤੇ root ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ"
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "ਨਿਰਧਾਰਨ ਼"
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "ਸਫਲਤਾ"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "ਤੁਹਾਡੇ ਪਾਇਲਟ ਵਾਸਤੇ ਨਾਉ । ਇਹ ਸਿਰਫ ਪਛਾਣ ਲਈ ਵਰਤਿਆ ਜਾਦਾ ਹੈ"
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"ਇਹ ਪੂਰਣ ਅੰਕ ਸ਼ੰਨ ਨੰ ਤੁਹਾਡੇ ਪਾਇਲਟ ਨੂੰ ਦਰਸਾਉਦਾ ਹੈ ਅਤੇ ਇਹ ਵਰਤੇ ਜਾਦੇ ਸਾਰੇ ਪਾਇਲਟਾ ਵਿਚ ਨਿਰਾਲਾ "
+"ਹੋਣਾ ਜਰੂਰੀ ਹੈ"
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "ਸਮੇ ਤੋ ਬਾਹਰ"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr "USB"
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "ਉਪਯੋਗੀ ਨਾਉ"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "ਪਾਇਲਟ ਵਾਸਤੇ ਰੱਖਣ ਵਾਲਾ ਉਪਯੋਗੀ ਨਾਉ ਅਤੇ ਸ਼ੰਨ ਨੰ"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "ਉਪਯੋਗੀ ਨਾਉ:"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਵਲੋ ਜੀ ਆਇਆ ਨੂੰ!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "ਹਾਂ, ਮੈ ਪਹਿਲਾ ਇਸ ਪਾਇਲਟ ਨਾਲ ਸਮਕਾਲੀ ਸਾਫਟਵੇਅਰ ਵਰਤਿਆ ਹੈ"
+
+#: capplet/gpilotd-capplet.glade.h:67
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"ਤੁਸੀ ਗਨੋਮ ਪਾਇਲਟ ਪਹਿਲੀ ਵਾਰ ਚਲਾ ਰਹੇ ਲਗਦੇ ਹੋ ।\n"
+"ਹੇਠਲੇ ਕਦਮ syncing ਵਾਸਤੇ ਗਨੋਮ ਪਾਇਲਟ ਨੂੰ ਠੀਕ ਕਰਨਗੇ\n"
+"ਤੁਸੀ ਬਾਅਦ ਵਿਚ ਗਨੋਮ ਕੰਟਰੋਲ ਸੈਟਰ ਵਿਚ ਪਾਇਲਟ-ਸੰਬੰਧ ਤੋ\n"
+"ਹਮੇਸ਼ਾ ਕੋਈ ਵੀ ਚੋਣ ਬਦਲ ਸਕਦੇ ਹ਼ੋ\n"
+"\n"
+"ਜਾਰੀ ਕਰਨ ਲਈ 'ਅੱਗੇ' ਦਬਾਓ਼\n"
+"ਬਾਹਰ ਜਾਣ ਲਈ 'ਰੱਦ ਕਰੋ' ਦਬਾਉ"
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "ਸਿਰਫ druid ਸ਼ੁਰੂ ਕਰੋ"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਐਪਲਿਟ ਸ਼ੁਰੂ ਕਰਨ ਵਿਚ ਗਲਤੀ"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "ਪਾਇਲਟ ਸਥਿਤੀ ਲੋਡ ਕਰਨ ਵਿਚ ਗਲਤੀ, ਰੁਕਾਵਟ"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਨਾਲ ਜੁਡ਼ ਨਹੀ ਸਕਦਾ ਹੈ"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr "ਜੇ ਪਾਇਲਟ ਜਾਂ ਕਰਾਡਲੀ ਨੂੰ ਪਹਿਲਾ ਹੀ ਰੂਪ ਦਿਤਾ ਹੈ ਤਾ druid ਚੱਲ ਨਹੀ ਸਕਦਾ"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOS ਯੰਤਰ ਨੂੰ ਰੂਪ ਦਿਓ"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS ਯੰਤਰ"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "conduit ਨਿਰਧਾਰਨ "
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "ਸਮਕਾਲੀ ਬਣਾਉਣਾ"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "ਪਾਇਲਟ ਤੋ ਨਕਲ"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "ਪਾਇਲਟ ਵਿਚ ਨਕਲ"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "ਪਾਇਲਟ ਤੋ ਸ਼ਾਮਿਲ ਕਰਨਾ"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "ਪਾਇਲਟ ਵਿਚ ਸ਼ਾਮਿਲ ਕਰਨਾ"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "ਯੋਗ ਕੀਤਾ"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "ਤੁਹਾਡੇ ਕੋਲ ਘੱਟ-ਤੋ-ਘੱਟ ਇਕ ਯੰਤਰ ਕੰਟਰੋਲ ਜੋਣਾ ਜਰੂਰੀ ਹੈ"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"ਦੱਸੀ ਗਈ ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ ਮੌਜੂਦ ਹੈ ਪਰ ਅਧਿਕਾਰ ਗਲਤ ਹਨ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ ਜਾਂ ਪੱਕੀ ਕਰੋ ।"
+
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"ਦੱਸੀ ਗਈ ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ ਮੌਜੂਦ ਹੈ ਪਰ ਇਹ ਡਾਇਰੈਕਟਰੀ ਨਹੀ ਹੈ । \n"
+"ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਨੂੰ ਡਾਇਰੈਕਟਰੀ ਬਣਾਓ ਜਾਂ ਹੋਰ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ ।"
+
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"ਕਹੀ ਗਈ ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ ਬਣਾਓਣੀ ਸੰਭਵ ਨਹੀ ਸੀ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਦਸੇ ਗਏੲ ਰਸਤੇ ਉਪਰ ਅਧਿਕਾਰਾ ਦੀ ਜਾਚ ਕਰੋ ਜਾਂ ਹੋਰ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ ਲਈ ਦਿੱਤਾ ਗਿਆ ਰਸਤਾ ਗਲਤ ਹੈ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਹੋਰ ਡਾਇਰੈਕਟਰੀ ਚੁਣੋ ।"
+
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "ਪਡ਼੍ਰਨ/ਲਿਖਣ ਅਧਿਕਾਰ ਅਸਫਲ ਹੋਏੲ"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "ਯੰਤਰ ਅਧਿਕਾਰਾ ਦੀ ਜਾਚ ਕਰੋ ਅਤੇ ਫਿਰ ਯਤਨ ਕਰੋ"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr "ਹਟਾਏੲ ਗਏੲ ਡੈਟਾਬੇਸ ਦੀ ਜਾਂਚ "
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr "%s ਦੀ ਨਾਉ ਬਦਲੀ"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr "%s ਨੂੰ"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "ਪਿਛਲੀ ਵਾਰ ਸਮਕਾਲੀ ਕਰਨ ਤੇ %s ਨਹੀ ਬਦਲੀ"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "%s ਦਾ ਪਿਛੋਕਡ਼ ਬਣਾਉਣਾ"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "ਪਿਛੋਕਡ਼ ਫਾਇਲ %s ਨਹੀ ਬਣਾ ਸਕਿਆ"
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr "ਦੁਬਾਰਾ ਸੰਭਾਲੀ ਸੂਚਨਾ ਇਕੱਠੀ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ ਼"
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "ਪਿਛੋਕਡ਼ ਡਾਇਰੈਕਟਰੀ"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "ਸਿਰਫ ਪਿਛੋਕਡ਼ ਤਬਦੀਲੀ ਤੇ ਆਧਾਂਰਿਤ"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "ਜੇ ਪਾਇਲਟ ਉਪਰ ਮਿਟ ਗਈ ਤਾਂ ਲੋਕਲ ਆਧਾਰ ਹਟਾਓ"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr "# ਦਾ ਰੱਖਣ ਵਾਸਤੇ ਪੁਰਾਣਾ ਪਿਛੋਕਡ਼"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "%s ਦੀ ਇੰਸਟਾਲ ਅਸਫਲ"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "%s ਤੋ %s ਦੀ ਇੰਸਟਾਲ ਼ "
+
+#: conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "%s ਦੀ ਇੰਸਟਾਲ ਼"
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "ਤੁਰੰਤ ਹੀ ਇੰਸਟਾਲ ਕਰੋ"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "ਵਕਫੇ ਨਾਲ ਇੰਸਟਾਲ ਕਰੋ"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "ਇੰਸਟਾਲ ਲਈ ਪਾਇਲਟ"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "ਪਾਇਲਟ"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "ਪਾਇਲਟ ਨਾਉ ਪ੍ਾਪਤ ਕਰਨ ਵਿਚ ਅਸਮਰਥ"
+
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "ਹੇਠਲੀਆ ਫਾਇਲਾ ਅਸਫਲ ਹੋਈਆ·:\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "%s ਉਪਰ ਇੰਸਟਾਲ:\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "ਇੰਸਟਾਲ ਲਈ ਕੋਈ ਫਾਇਲ ਨਹੀ"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"ਦੁਬਾਰਾ ਲੋਡ ਕਰਨ ਲਈ ਕਰਡਲੀ ਉਪੱਰ ਸਮਕਾਲੀ ਦਬਾਓ\n"
+"ਜਾਂ ਕਿਰਿਆ ਰੱਦ ਕਰੋ ।"
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+msgid "Gnome Pilot File Manager"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਫਾਇਲ ਮੈਨੇਜਰ"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr "ਹੱਕ ਰਾਖਵੇ ਹਨ ਮਨੀਸ਼ ਅਤੇ ਨੀਲ ਵਛਰਜਨੀ ੧੯੯੮ ਲਈ"
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+"ਆਪਣੇ ਵਰਤਮਾਨ ਪਾਇਲਟ ਉਪਰ ਕਾਰਜ ਅਤੇ ਫਾਇਲਾ ਨੂੰ ਵੱਸ ਵਿਚ ਰਖੋ\n"
+"ਵਰਤਮਾਨ ਪਾਇਲਟ 3com·Inc ਦਾ ਮਾਨਤਾ ਪ੍ਾਪਤ ਮਾਰਕਾ ਹੈ ।"
+
+#: gpilot-fileman/fileman.c:71
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "ਯਕੀਨਨ ਗਨੋਮ ਫਾਇਲ ਮੈਨੇਜਰ ਵਿਚੋ ਬਾਹਰ ਆਉਣਾ?"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "Hmm, ਇਹ ਵਾਪਰਨਾ ਨਹੀ ਚਾਹੀਦਾ, ਫਾਇਲ ਨਾਉ ਕਾਫੀ ਨਹੀ\n"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr "ਛੱਡੋ ਼"
+
+#: gpilot-fileman/fileman.c:244
+msgid "No files to install!!"
+msgstr "ਇੰਸਟਾਲ ਲਈ ਕੋਈ ਫਾਇਲ ਨਹੀ!!"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr "ਇੰਸਟਾਲ ਦੀ ਤਰੱਕੀ"
+
+#: gpilot-fileman/fileman.c:256
+msgid "Installing... "
+msgstr "ਇੰਸਟਾਲਇੰਗ ਼"
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "ਹੁਣ ਆਪਣੇ ਪਾਇਲਟ ਉਪਰ ਤੇਜ਼ ਸਮਕਾਲੀ ਬਟਨ ਦਬਾਓ!"
+
+#: gpilot-fileman/fileman.c:442
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "ਚੁਣੇ ਨਾਉ ਨੂੰ ਡਾਇਰੈਕਟਰੀ ਵਾਂਗ ਖੋਲਣ ਜਾਂ ਬਣਾਉਣ ਲਈ ਅਸਮਰਥ!"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr "ਚੁਣੀ ਪਿਛੋਕਡ਼ ਸਥਿਤੀ ਡਾਇਰੈਕਟਰੀ ਨਹੀ ਹੈ!"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr "ਪਿਛੋਕਡ਼ ਤਰੱਕੀ"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr "ਪਿਛੋਕਡ਼ ਰੱਖਣ਼ਾ਼ "
+
+#: gpilot-fileman/fileman.c:484
+msgid "Unable to open status pipe"
+msgstr "ਦਰਜਾ ਪਾਈਪ ਖੋਲਣ ਲਈ ਅਸਮਰਥ"
+
+#: gpilot-fileman/fileman.c:495
+msgid "Unable to open message pipe"
+msgstr "ਸੁਨੇਹਾ ਪਾਈਪ ਖੋਲਣ ਲਈ ਅਸ਼ਮਰਥ"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr "ਵੱਖਰੇਂਵਾ ਕਰਨ ਲਈ ਅਸਮਰਥ"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr "ਪਿਛੋਕਡ਼ ਡਾਇਰੈਕਟਰੀ"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "ਇਸ ਬਾਰੇ"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਫਾਇਲ ਆਦਮੀ ਬਾਰੇ"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr "ਫਾਇਲਾ ਇੰਸਟਾਲ"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr "ਸੰਬੰਧਿਤ ਪਾਇਲਟ ਉਪਰ ਚੁਣੀਆ ਫਾਇਲਾ ਇੰਸਟਾਲ ਕਰੋ"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr "ਪਿਛੋਕਡ਼ ਪਾਇਲਟ"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr "ਸੰਬੰਧਿਤ ਪਾਇਲਟ ਵਿਚੋ ਚੁਣੀਆਂ ਫਾਇਲਾਂ ਦਾ ਪਿਛੋਕਡ਼ ਬਣਾਓ"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "ਵਿਸ਼ੇਸ਼ਤਾਵਾ"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਫਾਇਲ ਮੈਨੇਜਰ ਦੀਆ ਵਿਸ਼ੇਸ਼ਤਾਵਾ"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "ਬਾਹਰ"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr "ਕਾਰਜ ਵਿਚੋ ਬਾਹਰ ਜਾਦੇ ਹਾਂ"
+
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "ਫਾਇਲ"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "ਸਹਾਇਤਾ"
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr "ਜੋਡ਼ੋ ->"
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr "<- ਹਟਾਓ"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr "<- ਸਾਰੀਆ ਹਟਾਓ"
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr "ਚੁਣੀਆ ਫਾਇਲਾ"
+
+#: gpilot-fileman/pilotfunc.c:88
+msgid "Unable to bind to pilot\n"
+msgstr "ਪਾਇਲਟ ਨਾਲ ਜੋਡ਼ਨ ਲਈ ਅਸਮਰਥ\n"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr "ਰੱਦ ਕਰਨ ਤੇ ਬਾਹਰ ਜਾਣਾ"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, c-format
+msgid "Unable to open '%s'!"
+msgstr "'%s' ਨੂੰ ਖੋਲਣ ਲਈ ਅਸਮਰਥ!"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, c-format
+msgid "Install failed %s."
+msgstr "ਅਸਮਰਥ %s ਸਥਾਪਿਤ ਕਰੋ"
+
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "ਰੱਦ ਕਰਨ ਤੇ ਬਾਹਰ ਜਾਣਾ, ਸਾਰੇ ਅੰਕਡ਼ਿਆ ਦਾ ਪਿਛੋਕਡ਼ ਨਹੀ ਬਣਾਇਆ "
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr "ਅਸਫਲ, ਫਾਇਲ ਬਣਾਉਣ ਲਈ ਅਸਮਰਥ\n"
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr "ਅਸਫਲ, ਡੈਟਾ-ਬੇਸ ਦਾ ਪਿਛੋਕਡ਼ ਬਣਾਉਣ ਲਈ ਅਸਮਰਥ\n"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr "ਪਾਇਲਟ ਯੰਤਰ"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr "ਬਾਹਰ ਜਾਣ ਉਪਰੰਤ ਯਕੀਨਨ ਬਣਾਉਣਾ"
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "ਸਾਧਾਰਨ"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "ਮਿਟਾਏੲ ਪਾਇਲਟ ਰਿਕਾਰਡ ਸਥਾਨਿਕ ਤੌਰ ਤੇ ਬਦਲੇ ਗਏੲ, ਮਿਟਾਏੲ ਨਹੀ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "ਮਿਟਾਏੲ ਸਥਾਨਿਕ ਰਿਕਾਰਡ ਪਾਇਲਟ ਉਪਰ ਬਦਲੇ ਗਏੲ, ਮਿਟਾਏੲ ਨਹੀ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "ਅਦਲਾ-ਬਦਲੀ ਕੀਤੇ ਵਿਰੋਧੀ, ਪਾਇਲਟ ਅਤੇ ਸਥਾਨਿਕ ਰਿਕਾਰਡਾ ਨੂੰ ਇਕੱਠਾ ਕਰੋ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr "ਅਦਲਾ-ਬਦਲੀ ਕੀਤੇ ਵਿਰੋਧੀ, ਪਾਇਲਟ ਅਤੇ ਸਥਾਨਿਕ ਰਿਕਾਰਡਾਂ ਨੂੰ ਬਦਲੋ ਅਤੇ ਪਿਛੋਕਡ਼ ਰੱਖੋ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "ਪਾਇਲਟ ਨੂੰ ਭੇਜੇ ਵਿਰੋਧੀ ਸਥਾਨਿਕ ਰਿਕਾਰਡਾ ਨੂੰ ਬਦਲੋ ਅਤੇ ਪਿਛੋਕਡ਼ ਰੱਖੋ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr "ਸਥਾਨਿਕ ਸੰਭਾਲੇ,  ਵਿਰੋਧੀ, ਪਾਇਲਟ ਰਿਕਾਰਡਾ ਨੂੰ ਬਦਲੋ ਅਤੇ ਪਿਛੋਕਡ਼ ਰੱਖੋ\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Conduits ਸ਼ੁਰੂਆਤ ਅਸਫਲ, ਕਿਰਿਆ ਅਧੂਰੀ ਹੀ ਖਤਮ ਕੀਤੀ"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr ""
+"ਪਾਇਲਟ ਅੰਕਡ਼ਿਆ ਵਿਚਲੇ ਸਾਰੇ ਰਿਕਾਰਡਾ ਨੂੰ ਮਿਟਾਉਣ ਲਈ ਅਸਮਰਥ, ਕਿਰਿਆ ਅਧੂਰੀ ਹੀ ਖਤਮ ਕੀਤੀ ਹੈ"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "Conduit ਨੇ ਰਿਕਾਰਡ ਵਾਪਿਸ ਨਹੀ ਭੇਜੇ"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"ਸਥਾਨਿਕ ਅੰਕਡ਼ਿਆ ਵਿਚਲੇ ਸਾਰੇ ਰਿਕਾਰਡਾ ਨੂੰ ਮਿਟਾਉਣ ਲਈ ਅਸਮਰਥ, ਕਿਰਿਆ ਅਧੂਰੀ ਹੀ ਖਤਮ ਕੀਤੀ ਹੈ"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "conduit ਵਿਚ ਗਲਤੀ, ਨਵਾ ਸ਼ਾਮਿਲ ਕੀਤਾ ਰਿਕਾਰਡ ਨਹੀ ਲੱਭ ਸਕਿਆ ਹੈ"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "ਪਾਇਲਟ ਵਿੱਚ ਨਕਲ ਅਸਫਲ!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "ਪਾਇਲਟ ਤੋ ਨਕਲ ਅਸਫਲ!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "ਪਾਇਲਟ ਵਿਚ ਜੋਡ਼ਨਾ ਅਸਫਲ!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "ਪਾਇਲਟ ਤੋਂ ਜੋਡ਼ਨਾ ਅਸਫਲ!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "ਸਮਕਾਲੀ ਕਰਨਾ ਅਸਫਲ!"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "%s (%s) ਖੋਲ੍ਰ ਨਹੀ ਸਕਿਆ : ਕਾਰਨ: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"ਗਨੋਮ ਪਾਇਲਟ %s·(%s) ਯੰਤਰ ਨੂੰ ਖੋਲ ਨਹੀ ਸਕਿਆ\n"
+"ਕਾਰਨ: \"%s\" ।"
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "ਅਣਜਾਣੀ ਯੰਤਰ ਕਿਸਮ "
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "ਯੰਤਰਾ ਦੀ ਗਿਣਤੀ ਦੀ ਸੰਰਚਨਾ 0 ਕੀਤੀ ਗਈ ਹੈ"
+
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"ਕਿਸੇ ਕਰਡਲੀ  ਦੀ ਸੰਰਚਨਾ ਨਹੀ ਦਿੱਤੀ ਗਈ ਹੈ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਗਨੋਮ ਪਾਇਲਟ ਦੀ ਸੰਰਚਨਾ ਦੇਣ ਲਈ\n"
+"ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਚਲਾਓ (ਗਨੋਮ ਸ਼ੀ ਸੀ ਵਰਤੋ) ।"
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "ਕੋਈ ਵਰਤਣ ਯੋਗ ਯੰਤਰ ਉਪਲਬਧ ਨਹੀ"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "ਪਾਇਲਟਾ ਦੀ ਗਿਣਤੀ ਦੀ ਸੰਰਚਨਾ 0 ਕੀਤੀ ਗਈ"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"ਕਿਸੇ ਪਾਇਲਟ ਸੰਰਚਨਾ ਨਹੀ ਦਿੱਤੀ ਗਈ ਹੈ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਗਨੋਮ ਪਾਇਲਟ ਦੀ ਸੰਰਚਨਾ ਦੇਣ ਲਈ\n"
+"ਗਨੋਮ ਪਾਇਲਟ ਡੈਮਨ(gpilotd) ਚਲਾਓ (ਗਨੋਮ ਸ਼ੀ ਸੀ ਵਰਤੋ) ।"
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "ਪਾਇਲਟ ਨਾਲ ਜੋਡ਼ਨ ਲਈ ਅਸਮਰਥ"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr "ਅਣਜਾਣਾ ਪਾਇਲਟ, ਕੋਈ ਉਪਯੋਗੀ ਸ਼ੰਨ ਨੰ/ੳੋਪਯੋਗੀ ਨਾਉ %ld ਨਾਲ ਮੇਲ ਨਹੀ ਹੁੰਦਾ"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr "ਗਨੋਮ ਪਾਇਲਟ ਨੂੰ ਰੂਪ ਦੇਣ ਲਈ ਗਨੋਮ-ਸ਼ੀ ਸੀ (gnomecc) ਵਰਤੋ"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"ਅਣਜਾਣਾ ਪਾਇਲਟ - ਕੋਈ ਪਾਇਲਟ %ld ਨਾਲ ਨਹੀ ਮਿਲਦਾ ਹੈ ।\n"
+"ਪਾਇਲਟ ਸ਼ੰਨ ਨੰ ਦੇਣ ਲਈ ਗਨੋਮ ਸ਼ੀ ਸੀ·(gnomecc) ਵਰਤੋ "
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "%s ਕਰਡਲੀ  ਦੇ %d ਸਿੱਟੇ"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "ਉਪਯੋਗੀ ਦੀ ਜਾਣਕਾਰੀ ਦੀ ਵਿਵਸਥ਼ਾ਼"
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "ਸਮਕਾਲ ਜਾਰੀ ਹੈ"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "ਉਪਯੋਗੀ ਜਾਣਕਾਰੀ ਪ੍ਾਪਤ ਕਰਨ਼ਾ਼"
+
+#: gpilotd/gpilotd.c:463
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "ਅਸਲ ਸਮਕਾਲ ਮੰਗ ਪਤਾ ਲੱਗੀ, ਸਮਕਾਲੀ ਪਾਇਲਟ"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "ਤੇਜ਼ ਸਮਕਾਲ ਬਟਨ ਦਬਾਇਆ ਗਿਆ, ਸਮਕਾਲੀ ਪਾਇਲਟ"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "ਪਾਇਲਟ ਸ਼ੰਨ ਨੰ %ld ਹੈ, ਨਾਉ %s ਹੈ, ਮਾਲਕ %s ਹੈ"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "%s ਮੇਜ਼ਬਾਨ ਉਪੱਰ\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "%d ਮੇਜ਼ਬਾਨ ਉਪੱਰ\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "ਸਮਕਾਲ ਖਤਮ ਹੋਇਆ"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "ਸਮਕਾਲ ਪਹਿਲਾ ਹੀ ਖਤਮ ਹੋਇਆ"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"ਆਧਾਰ ਡਾਇਰੈਕਟਰੀ %s ਗਲਤ ਹੈ ।\n"
+"ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਨੂੰ ਪੱਕਾ ਕਰੋ ਜਾ ਹੋਰ ਡਾਇਰੈਕਟਰੀ ਚੁਣਨ ਲਈ ਗਨੋਮ ਸੀ ਸੀ(gnomecc) ਵਰਤ਼ੋ"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+msgid "An error occured while getting the pilot's system data"
+msgstr "ਪਾਇਲਟ ਦਾ ਸਿਸਟਮ ਅੰਕਡ਼ਾ ਪ੍ਾਪਤ ਕਰਨ ਉਪਰੰਤ ਇਕ ਗਲਤੀ ਵਾਪਰੀ ਹੈ "
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "ਪਾਇਲਟ ਦਾ ਉਪਯੋਗੀ ਅੰਕਡ਼ਾ ਪ੍ਾਪਤ ਕਰਨ ਉਪਰੰਤ ਇੱਕ ਗਲਤੀ ਵਾਪਰੀ ਹੈ ।"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "%s (%s) ਕਰਡਲੀ ਲਈ ਸੰਪੂਰਨ ਘਟਨਾਵਾ"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "%s ਉਪੱਰ ਕੰਮ"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "%s (%s, %s) ਦੀ ਨਿਗਰਾਨੀ"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s (%s) ਦੀ ਨਿਗਰਾਨੀ"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "ਬਾਹਰ ਜਾ ਰਿਹਾ ਹੈ (caught·SIGTERM)਼"
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "ਬਾਹਰ ਜਾ ਰਿਹਾ ਹੈ(caught·SIGINT)..."
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr "ਲਿਖਣ/ਪਡ਼੍ਰਨ ਦੀ ਇਜਾਜ਼ਤ ਨਾਲ %s ਫਾਇਲ ਨੂੰ ਖੋਲਣ ਜਾ ਬਣਾਉਣ ਲਈ ਅਸਮਰੱਥ ਹੈ"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "ਉਪਯੋਗੀ ਆਈ ਡੀ %d ਲਈ ਘਰ ਡਾਇਰੈਕਟਰੀ ਲੱਭਣ ਲਈ ਅਸਮਰੱਥ ਹੈ"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr "ਫਾਇਲ ਸਥਾਪਤੀ ਕਤਾਰ ਡਾਇਰੈਕਟਰੀ ਬਣਾਉਣ ਲਈ ਅਸਮਰੱਥ ਹੈ"
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr "ਬੰਦ ਕੀਤੇ ਯੰਤਰ"
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "ਸੰਰਚਨਾ ਵੇਖੀ ਜਾ ਰਹੀ ਹੈ ਼"
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr "ਪਿਛੋਕਡ਼ conduit ਲਡ਼ੀ ਵਿਚ ਪਿਛੋਕਡ਼ ਨਾ ਬਣਾਇਆ conduit"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s ਪਿਛੋਕਡ਼ ਬਣਾਈ\n"
+
+#: gpilotd/manager.c:275
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s ਦਾ ਪਿਛੋਕਡ਼ ਅਸਫਲ\n"
+
+#: gpilotd/manager.c:300
+msgid "Collecting synchronization info..."
+msgstr "ਸਮਕਾਲੀ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕਰਨ਼ੀ਼"
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s ਸਮਕਾਲੀ ਬਣਾਉਣਾ\n"
+
+#: gpilotd/manager.c:427
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "ਪਾਇਲਟ %s ਵਿੱਚ ਨਕਲ\n"
+
+#: gpilotd/manager.c:445
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "ਪਾਇਲਟ %s ਤੋਂ ਨਕਲ\n"
+
+#: gpilotd/manager.c:463
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "ਪਾਇਲਟ %s ਵਿੱਚ ਜੋਡ਼ਨਾ\n"
+
+#: gpilotd/manager.c:481
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "%s ਪਾਇਲਟ ਤੋ ਜੋਡ਼ਨਾ\n"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "%s Conduit ਦਾ ਪਹਿਲਾ ਸਮਕਾਲ਼"
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "ਅਣਜਾਣੀ ਸਮਕਾਲ ਕਿਰਿਆ (%d = %s) \n"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d conduits ਨੂੰ ਤਤਕਾਲੀ ਬਣਾਉਣ਼ਾ਼"
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "ਬਣਤਰ ਵਿਚ ਅਣਜਾਣ \"%s\" conduit !"
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "\"%s\" ਦੀ ਸਥਾਪਤੀ ਅਸਫਲ ਹੋਈ!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "\"%s\" ਦੀ ਲੋਡਿੰਗ ਅਸਫਲ ਹੋਈ!\n"
+
+#: gpilotd/manager.c:764
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "ਉਪਯੋਗੀ /id ਨੂੰ %d/%s ਬਣਾਉਣ਼ਾ਼"
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "%s Conduit ਦੀ ਮੰਗ ਕੀਤੀ ਗਈ, ਲੱਭੀ ਨਹੀ"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "%s Conduit ਦੀ ਮੰਗ ਨਹੀ ਕੀਤੀ ਗਈ ਹੈ "
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(ਅਣਜਾਣ DB)"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "ਕਤਾਰ ਵਿਚ ਗਲਤੀ, ਨਾ ਮੌਜੂਦ ਅੰਗ"
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "ਨੁਕਸ:ਪਾਇਲਟ %d ਲਈ ਕੋਈ ਮੰਗ ਨਹੀ ਲੱਭੀ, %d ਮੰਗ"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "ਮੈਡਿਊਲ ਸਥਾਪਤੀ ਸਹਾਰਾ ਪੂਰਨ ਨਹੀ ਹੈ, ਘਾਤਕ!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "ਸਿਸਟਮ ਜਾਣਕਾਰੀ ਪ੍ਾਪਤ ਕਰੋ"
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "ਡੈਮਨ ਨੂੰ ਵਿਰਾਮ ਕਰੋ"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "ਡੈਮਨ ਤੋਂ ਵਿਰਾਮ ਹਟਾਓ"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "ਡੈਮਨ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "ਉਪਯੋਗੀ ਆਈ ਡੀ ਅਤੇ ਨਾਉ ਦਿਓ"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "ਪਾਇਲਟ ਵਾਸਤੇ ਆਈ ਡੀ"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "ਫਾਇਲ ਸਥਾਪਿਤ ਕਰੋ"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "ਫਾਇਲ"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "ਡਾਇਰੈਕਟਰੀ ਦੁਬਾਰਾ ਲੋਡ ਕਰੋ"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "ਡਾਇਰੈਕਟਰੀ"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "conduit ਚਲਾਓ"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "ਦੇਣ ਵਾਸਤੇ ਉਪਯੋਗੀ ਨਾਉ"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "ਉਪਯੋਗੀ ਨਾਉ"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "ਦਰਸਾਈਆਂ ਗਈਆਂ ਪਾਇਲਟ ਕਿਰਿਆਵਾਂ ਨੂੰ ਸੰਭਾਲੋ"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "ਸਾਰੇ ਪਾਇਲਟਾਂ ਨੂੰ ਸੰਭਾਲੋ"
+
+#: utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "ਸਵਾਗਤੀ ਦਰ ਅਨੁਸਾਰ ਪਾਇਲਟ ਵਿਖਾਓ(ਸਾਰੇ ਪਾਇਲਟਾ ਲਈ ਸਾਰੇ)"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "ਸਵਾਗਤੀ ਦਰ"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "ਕੰਮ ਕਰਨ ਲਈ ਪਾਇਲਟ ਦਰਸਾਓ(ਮੇਰਾ ਪਾਇਲਟ(MyPilot) ਨੂੰ ਮੂਲ ਬਣਾਓ)"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "ਪਾਇਲਟ ਨਾਂਉ"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "ਕੰਮ ਕਰਨ ਲਈ ਕਰਡਲੀ ਦਰਸਾਓ(ਕਰਡਲੀ0(Cradle0) ਨੂੰ ਮੂਲ ਬਣਾਓ)"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "ਕਰਡਲੀ ਨਾਉ"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "ਦਸੇ ਗਏੲ ਪਾਇਲਟ ਦੇ ਮੂਲ ਵਿਖਾਓ"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"ਸਾਵਧਾਨ!!\n"
+"ਇਹ ਸੰਦ ਗਨੋਮ ਪਾਇਲਟ ਪੈਕੇਜ਼ ਦੇ ਕੁਝ ਭਾਗਾਂ ਵਾਸਤੇ ਹੈ ।\n"
+"ਜਿੰਨਾ ਚਿਰ ਤੁਸੀ ਨਹੀਂ ਜਾਣਦੇ ਕਿ ਕੀ ਕਰਨਾ ਹੈ, ਇਹ ਸੰਦ ਨਾ ਵਰਤੋ ॥"
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "ਉਪਲੱਬਧ conduits ਵਿਖਾਓ"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "ਕੰਮ ਕਰਨ ਲਈ conduits"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "ਸਾਰੇ ਗੁਣ ਵਿਖਾਓ"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "ਕੰਮ ਕਰਨ ਲਈ ਪਾਇਲਟ ਦਰਸਾਓ"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "ਪਾਇਲਟ ਆਈ ਡੀ"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "ਗੁਣ ਵਿਖਾਓ"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "ਉਪਲੱਬਧ conduits ਅਤੇ ਉਹਨਾਂ ਦੀ ਸਥਿਤੀ ਵਿਖਾਓ"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "ਦਰਸਾਏੲ ਗਏੲ conduit ਨੂੰ ਯੋਗ ਕਰੋ"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "ਦਰਸਾਏੲ ਗਏੲ conduit ਨੂੰ ਅਯੋਗ ਕਰੋ"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "ਪਹਿਲੇ ਸਮਕਾਲ ਨੂੰ ਹੌਲੀ ਕਰੋ ਅਤੇ ਯੋਗ ਬਣਾਓ"
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "conduit ਨੂੰ ਤਤਕਾਲੀ ਬਣਾਓ ਅਤੇ ਖਤਮ ਕਰੋ"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "ਵਾਸਤੇ ਰਸਤੇ ਦੀ ਪਡ਼ਤਾਲ ਨਹੀ ਕਰ ਸਕਿਆ"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "ਪੋਰਟ USB ਲਡ਼ੀਵਾਰ ਰਸਤੇ ਨੂੰ ਦਰਸਾਵੇ"
+
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "ਪੋਰਟ ਖਾਸ ਅੱਖਰ ਯੰਤਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਪਰ ਵਾਸਤੇ ਨਹੀ "

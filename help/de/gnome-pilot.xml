@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY appversion "2.0">
+<!ENTITY docversion "2.0.1">
+<!ENTITY pubdate "May, 2003">
+]>
+<article id="index" lang="de">
+  <articleinfo>
+    <title>GNOME Abgleichwerkzeuge für PalmOS</title>
+    <abstract role="description">
+	<para>Ein Benutzerhandbuch für die GNOME Pilot-Werkzeuge zur Verwendung mit den Handheld-Geräten mit PalmOS.</para>
+    </abstract>
+    
+    <authorgroup>
+      <author><firstname>Aaron</firstname><surname>Weber</surname></author>
+    </authorgroup>
+
+    <publisher role="maintainer">
+      <publishername>Ximian, Inc.</publishername>
+    </publisher>
+
+    <copyright>
+      <year>2003</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright><copyright><year>2009, 2011</year><holder>Mario Blättermann (mariobl@freenet.de)</holder></copyright>
+
+    <title>Handbuch für die GNOME-Abgleichwerkzeuge für PalmOS</title>
+    
+   <releaseinfo>Dies ist Version 2.0.1 des Handbuchs für gnome-pilot. Es beschreibt Version 2.0 des Pakets gnome-pilot, welches zum Einstellen und Ausführen von Abgleichvorgängen zwischen PalmOS-Geräten und Ihrer GNOME-Arbeitsumgebung dient.</releaseinfo>
+
+    <revhistory>
+      <revision>
+        <revnumber>GNOME Abgleichwerkzeuge für PalmOS</revnumber>
+        <date>Mai 2003</date>
+      </revision>
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="ghelp:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+        <para>Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und Dienstleistungen verwendeten Namen handelt es sich um Marken. An den Stellen, an denen derartige Namen in einer GNOME-Dokumentation vorkommen und wenn die Mitglieder des GNOME-Dokumentationsprojekts über diese Marken informiert wurden, sind die Namen in Großbuchstaben oder mit großen Anfangsbuchstaben geschrieben.</para>
+    </legalnotice>
+  </articleinfo>
+
+  <para>Das <systemitem>gnome-pilot</systemitem>-Paket, zusammen mit den optionalen Conduits in <systemitem>evolution-pilot</systemitem>, ermöglicht Ihnen das Übertragen von Informationen zwischen Ihrem Handheld-PalmOS-Gerätes und Ihrer GNOME-Arbeitsumgebung. Sie müssen vor dem ersten Abgleich das Einrichtungswerkzeug ausführen. Dieses wird normalerweise auch den GNOME Pilot-Hintergrunddienst starten, namens <systemitem>gpilotd</systemitem>. Falls dieser Hintergrunddienst dennoch nicht läuft, können Sie ihn mit dem Befehl <command>/usr/libexec/gpilotd</command> starten. Sie können auch das GNOME Pilot-Panel-Applet dazu verwenden. Um das Applet zu Ihrem GNOME-Panel hinzuzufügen, klicken Sie mit der rechten Maustaste auf einen freien Platz im Panel und wählen Sie <menuchoice><guimenu>Zum Panel hinzufügen</guimenu><guisubmenu>Hilfsprogramm</guisubmenu><guimenuitem>Pilot-Applet</guimenuitem></menuchoice>.</para>
+
+
+
+
+  <sect1 id="conftool">
+    <title>GNOME Pilot-Einstellungswerkzeug</title>
+  <para>Um das GNOME Pilot-Einstellungswerkzeug zu starten, doppelklicken Sie auf das Palm-Pilot-Symbol im GNOME-Kontrollzentrum, oder geben Sie den Befehl <command>gpilotd-control-applet</command> ein. Sie können das Konfigurationswerkzeug auch starten, indem Sie auf das GNOME Pilot-Applet in Ihrem Panel klicken.</para>
+  
+  <para>Im Einrichtungswerkzeug <interface>gnome-pilot Einstellungen</interface> finden Sie drei Reiter: <guilabel>PDAs</guilabel>, <guilabel>Geräte</guilabel> und <guilabel>Conduits</guilabel>. Außerdem wird Sie beim ersten Start der GNOME-Pilotwerkzeuge ein Assistent durch die Einrichtung führen.</para>
+
+  <sect2 id="assistant">
+    <title>Der GNOME Pilot-Einrichtungsassistent</title>
+      <para>Der Einrichtungsassistent ermöglicht Ihnen, Ihr PalmOS-Gerät für den Abgleich mit Ihrer Arbeitsumgebung vorzubereiten. Geben Sie in jedem Schritt die geforderten Informationen ein und klicken Sie dann auf <guibutton>Weiter</guibutton>.</para>
+      <para>Geben Sie im ersten Schritt an, wie Ihr PDA mit Ihrem Rechner verbunden ist. In <xref linkend="setup-conftool-devices"/> finden Sie weitere Angaben über die in diesem Schritt einzugebenden Daten.</para>
+      <para>Anschließend müssen Sie Ihr identifizieren. Falls sie zuvor bereits Abgleichsoftware mit Ihrem PDA verwendet haben, wird Ihr Gerät schon eine Abgleichkennung haben, die Ihr System ermitteln kann. Falls nicht, können Sie auf dem PDA einen Namen des Eigentümers und eine Kennung von Ihrem Rechner aus eingeben.</para>
+
+      <para>Sobald Sie dies abgeschlossen haben, nimmt die GNOME Pilot-Software Kontakt zu Ihrem PalmOS-Gerät auf und ermittelt den Eigentümernamen und die Gerätekennung oder richtet diese Daten ein.</para>
+      <para>Im letzten Schritt vergeben Sie einen Namen für das eingerichtete PalmOS-Gerät und richten einen Ordner auf Ihrem System ein, in welchem Sicherungsdateien und sonstige Daten gespeichert werden können.</para>
+
+    </sect2>
+
+
+  <sect2 id="conftool-pilots">
+    <title>Hinzufügen oder Bearbeiten eines PDA-Eintrags: Der Reiter »PDA«</title>
+    <para>Der Reiter <guilabel>PDAs</guilabel> listet die Handheld-Geräte auf, die Sie bereits eingerichtet haben. Falls Sie das GNOME Pilot-Einrichtungswerkzeug nie zuvor verwendet haben, werden in der Liste keine Einträge zu finden sein. Ein neues Fenster wird geöffnet, in welchem Sie ein Gerät anlegen können. Um einen neuen PDA hinzuzufügen, klicken Sie auf <guibutton>Hinzufügen …</guibutton>. Um einen bestehenden PDA-Eintrag zu bearbeiten, wählen Sie ihn aus und klicken Sie auf <guibutton>Bearbeiten …</guibutton>. Um einen vorhandenen PDA-Eintrag zu löschen, wählen Sie ihn aus und klicken Sie auf <guibutton>Löschen</guibutton>.</para>
+
+    <para>Beim Bearbeiten oder Erstellen eines Eintrages werden Sie nach vier Angaben gefragt: <variablelist>
+        <varlistentry>
+          <term>Eigentümer</term>
+          <listitem>
+            <para>Dies ist der auf Ihrem PDA verwendete Eigentümername. Falls für Ihren PDA bereits ein solcher Name festgelegt wurde, können Sie ihn vom PDA auslesen, indem Sie auf den Knopf <guibutton>Vom PDA empfangen</guibutton> klicken. Alternativ können Sie einen Eigentümernamen einrichten oder ändern, indem Sie ihn eingeben und auf den Knopf <guibutton>An PDA senden</guibutton> klicken.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>PDA-Kennung</term>
+          <listitem>
+            <para>Dies ist die auf Ihrem PDA verwendete Kennungsnummer. Falls für Ihren PDA bereits eine solche Kennung festgelegt wurde, können Sie sie vom PDA auslesen, indem Sie auf den Knopf <guibutton>Vom PDA empfangen</guibutton> klicken. Alternativ können Sie eine Kennungsnummer einrichten oder ändern, indem Sie sie eingeben und auf den Knopf <guibutton>An PDA senden</guibutton> klicken.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Name des PDAs</term>
+          <listitem>
+            <para>Dies ist der Name, anhand dessen Ihr PDA identifiziert wird. Sie können ihn beispielsweise MeinPilot, oder Palm5 oder Karlheinz nennen.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Lokaler Ordner</term>
+          <listitem>
+            <para>In diesem Ordner werden Informationen gespeichert, die als Sicherheitskopie Ihres PDAs erstellt werden.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist></para>
+  </sect2>
+  <sect2 id="setup-conftool-devices">
+    <title>Hinzufügen oder Bearbeiten eines Eintrages im Reiter »Geräteeinstellungen«</title>
+    <para>Im Reiter für die Geräteeinstellungen wird festgelegt, wie Ihre Rechner den Handheld als Hardware identifiziert. Um einen Eintrag zur Liste hinzuzufügen, klicken Sie auf <guibutton>Hinzufügen …</guibutton>. Wenn Sie einen Eintrag bearbeiten wollen, wählen Sie ihn aus und klicken Sie auf <guibutton>Bearbeiten …</guibutton>. Um einen Eintrag zu löschen, wählen Sie ihn aus und klicken Sie auf <guibutton>Löschen</guibutton>.</para>
+    <para>Für jeden Eintrag können Sie wählen:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Name</term>
+        <listitem>
+          <para>Dies ist der Name des Gerätes, wie er in der Liste angezeigt wird. Sie können hier ganz nach Belieben einen Namen wählen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Typ</term>
+        <listitem>
+          <para>Wählen Sie Ihren Verbindungstyp: Seriell, USB, IrDA (Infrarot), Netzwerk oder Bluetooth. Für Bluetooth-Verbindungen ist es erforderlich, dass das Paket pilot-link mit Unterstützung für Bluetooth erstellt wurde.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Wartezeit</term>
+        <listitem>
+          <para>Zeitspanne für Verbindungsversuche des Systems in Sekunden. Falls innerhalb dieser Zeitspanne keine Kommunikation zwischen dem Desktop und dem PDA stattfindet, gibt das System den Verbindungsversuch auf.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Gerät</term>
+        <listitem>
+          <para>Für USB-, serielle und Infrarot-Geräte verbindet sich Ihr Handheld mit dem Rechner über eine spezielle Datei im Ordner <systemitem>/dev</systemitem>. Der Dateiname ist vom jeweiligen System abhängig. In den meisten Fällen dürfte es <systemitem>/dev/pilot</systemitem> sein. Weitere mögliche Werte sind <systemitem>/dev/ttyS0</systemitem> oder <systemitem>/dev/ttyS1</systemitem> für serielle Dockingstationen (unter Windows werden diese als COM-Schnittstellen behandelt) und <systemitem>/dev/ttyUSB0</systemitem> oder <systemitem>/dev/ttyUSB1</systemitem> für USB-Dockingstationen. Der spezielle Gerätename <systemitem>usb:</systemitem> kann verwendet werden, um libusb-Abgleich zu nutzen (im Gegensatz zu usbserial). Diese Option könnte nicht verfügbar sein, abhängig von der verwendeten Version von pilot-link.</para>
+        
+          <para>Sie müssen sicherstellen, dass von Ihrem Benutzerkonto aus das Lesen, Schreiben und Ausführen dieser Gerätedatei möglich ist. Um diese Zugriffsrechte hinzuzufügen, werden Sie mit dem Befehl <command>su</command> zum Systemverwalter und führen Sie anschließend den Befehl <command>chmod a+wrx /dev/ttyS0</command> aus. Ersetzen Sie den Namen der Gerätedatei anhand Ihrer Einstellung.</para>
+
+	  <para>Einige Geräte, wie <systemitem>/dev/ttyUSB1</systemitem>, sind nur vorhanden, wenn der PDA einen Abgleichversuch ausführt. In solchen Fällen müssen Sie die Zugriffsrechte mit dem <systemitem>udev</systemitem>-System anpassen.</para>
+          <para>Falls Sie nicht das korrekte Gerät gewählt haben, erhalten Sie beim Klicken auf <guibutton>OK</guibutton> eine Fehlermeldung.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Geschwindigkeit</term>
+        <listitem>
+          <para>Wählen Sie für USB-, serielle und Infrarotverbindungen eine Zahl in der Auswahlliste aus. Je größer die Zahl, umso höher ist die Geschwindigkeit, mit der das System die Informationen übertragen soll. Normalerweise braucht dieser Wert nicht geändert zu werden. Als Vorgabe gilt die höchste Geschwindigkeit, mit der das System mit dem gewählten Verbindungstyp Daten übertragen kann. Sie können jedoch auc Wunsch einen höheren oder niedrigeren Wert festlegen. Falls höhere Übertragungsgeschwindigkeiten Probleme verursachen, kann ein Verringern des Wertes unter Umständen Abhilfe schaffen.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </sect2>
+  <sect2 id="setup-conduits">
+    <title>Conduit-Einstellungen</title>
+
+    <para>Ein Conduit ist ein spezielles Programm, das einen Datenkanal zwischen Ihrem Rechner und Ihrem Handheld-Gerät bereitstellt. Das Paket <application>gnome-pilot</application> liefert bereits einige solcher Conduits mit, und Sie können zusätzliche installieren, beispielsweise für <application>Evolution</application>.</para>
+
+    <para>Jedes eingerichtete Handheld-Gerät kann über eigene Conduits und Conduit-Einstellungen verfügen.</para>
+
+    <para>Falls ein Conduit deaktiviert ist, wird dieser Datentyp beim automatischen Abgleich ignoriert. Falls ein Conduit aktiviert ist, werden dessen Daten entsprechend den Einstellungen abgeglichen. Um einen Conduit zu aktivieren oder zu deaktivieren, wählen Sie ihn aus und klicken Sie auf den Knopf <guilabel>Aktivieren</guilabel> oder <guilabel>Deaktivieren</guilabel> an der rechten Seite der Conduit-Liste.</para>
+    
+    <para>Um die Einstellungen zu bearbeiten, wählen Sie einen Conduit aus und klicken Sie anschließend auf den Knopf <guilabel>Einstellungen …</guilabel>. Jeder Conduit verfügt über mindestens zwei Einstellungen: eine <guilabel>Aktion</guilabel>, die bei jedem Abgleich ausgeführt wird, und eine <guilabel>Einmalige Aktion</guilabel>, die beim nächsten bevorstehenden Abgleichvorgang ausgeführt wird.</para>
+
+    <para>Nicht alle Aktionen sind für alle Conduits verfügbar. Folgende Aktionen sind möglich: <variablelist>
+      <varlistentry>
+        <term>Deaktiviert</term>
+        <listitem>
+          <para>Nichts tun.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Abgleichen</term>
+        <listitem>
+          <para>Stellen Sie sicher, dass die Daten an beiden Orten die gleichen sind, wenn die Daten vom PDA auf den Rechner oder vom Rechner auf den PDA kopiert werden.</para>
+        </listitem>
+      </varlistentry> 
+
+      <varlistentry>
+        <term>Auf Pilot kopieren</term>
+        <listitem>
+          <para>Alle Daten vom Rechner auf den PDA kopieren. Auf dem PDA neu hinzugefügte Dateien werden auf den Rechner zurück kopiert.</para>
+        </listitem>
+      </varlistentry> 
+
+
+      <varlistentry>
+        <term>Von Pilot kopieren</term>
+        <listitem>
+          <para>Alle Daten vom PDA auf den Rechner kopieren. Auf dem Rechner neu hinzugefügte Dateien werden auf den PDA zurück kopiert.</para>
+        </listitem>
+      </varlistentry> 
+
+    </variablelist></para>
+
+  <para>Weitere Einstellungen können möglich sein, beispielsweise die Conduit-Priorität, welche die Reihenfolge festlegt, in der die Conduits verwendet werden, und <guilabel>Private Daten abgleichen</guilabel>, worin festgelegt wird, ob private Informationen als öffentlich kopiert werden sollen, oder nur die öffentlichen Daten.</para>
+</sect2>
+<!--
+<sect1 id="advanced">
+  <title>The Advanced Tab</title>
+  <para>
+    The advanced tab allows you to set the Sync PCId. If you know this
+    number and wish to change it, enter it and then click
+    <guibutton>Close</guibutton>.
+  </para>
+</sect1>
+-->
+</sect1>
+
+<sect1 id="pilot-applet">
+  <title>Das Pilot-Applet</title>
+  <para>Das GNOME Pilot-Applet befindet sich in Ihrem Panel, bis Sie bereit sind, Ihr PalmOS-Gerät abzugleichen. Falls der Pilot-Hintergrunddienst läuft, erscheint das Applet in Schwarzweiß. Falls der Dienst nicht läuft, erscheint es in Rot und Schwarz. Falls der Hintergrunddienst unterbrochen ist, erscheint es in Gelb und Schwarz.</para>
+  <para>Klicken Sie auf das Applet, um das GNOME Pilot-Einstellungswerkzeug zu starten.</para>
+  <para>Folgende weitere Aktionen für das Applet sind über das Kontextmenü erreichbar:</para>
+  <variablelist>
+      <varlistentry>
+        <term>Wiederherstellen</term>
+        <listitem>
+          <para>Falls Ihr PalmOS-Gerät völligen Datenverlust erlitten hat, wählen Sie diesen Eintrag, um die Daten aus einer vorher erstellten Sicherheitskopie wiederherzustellen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dämon unterbrechen</term>
+        <listitem>
+          <para>Den Hintergrunddienst <application>gpilotd</application> unterbrechen. Falls die Ausführung des Dienstes unterbrochen ist, wird hier <guilabel>Fortfahren</guilabel> angezeigt.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Neustart</term>
+        <listitem>
+          <para>Den Hintergrunddienst anhalten und neu starten.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Letztes Protokoll</term>
+        <listitem>
+          <para>Die Ergebnisse des zuletzt ausgeführten Abgleichvorgangs anzeigen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Einstellungen</term>
+        <listitem>
+          <para>Klicken Sie auf diesen Eintrag, um auszuwählen, was beim Anklicken des Applets ausgeführt werden soll, und ob Hinweise in Dialogfeldern angezeigt werden sollen.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Hilfe</term>
+        <listitem>
+          <para>Zeigt diese Hilfe an.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Info</term>
+        <listitem>
+          <para>Informationen über die Anwendung und deren Autoren.</para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term>Aus dem Panel entfernen</term>
+        <listitem>
+          <para>Entfernt das Applet aus dem Panel.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Verschieben</term>
+        <listitem>
+          <para>Verschieben Sie das Applet mit der Maus. Um den Verschiebevorgang zu beenden, klicken Sie einmal mit der Maus.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+</sect1>
+
+
+
+</article>

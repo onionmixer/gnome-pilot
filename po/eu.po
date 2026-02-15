@@ -1,0 +1,1787 @@
+# translation of eu_to_be_translate.po to Basque
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2006, 2008, 2010.
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu_to_be_translate\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-08 00:05+0200\n"
+"PO-Revision-Date: 2010-10-08 00:14+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot-en miniaplikazioa"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "Sinkronizatu PalmOS gailuko zure datuak"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "Utilitatea"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "Aukeratu PDA"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync-en propietateak"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "Leheneratu PDA"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "_Direktorioa"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "_Bistaratu abisuak"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "_Exekutatu klik egitean"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "_PDAren IDa"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "_Sink. eustoina"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot-en progresioa"
+
+#: ../applet/pilot.c:153
+msgid "Synchronizing..."
+msgstr "Sinkronizatzen..."
+
+#: ../applet/pilot.c:186
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s sinkronizatzen"
+
+#: ../applet/pilot.c:191
+msgid "Connecting..."
+msgstr "Konektatzen..."
+
+#: ../applet/pilot.c:211 ../applet/pilot.c:915 ../applet/pilot.c:1059
+msgid "Ready to synchronize"
+msgstr "Sinkronizatzeko prest"
+
+#: ../applet/pilot.c:292
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "%ld eskaera osatu da\n"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s sinkronizatzen : %s"
+
+#: ../applet/pilot.c:319
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: abiarazita\n"
+
+#: ../applet/pilot.c:334
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s amaituta : %s"
+
+#: ../applet/pilot.c:339
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: amaituta\n"
+
+#: ../applet/pilot.c:364
+#, c-format
+msgid "%d of %d records"
+msgstr "%d / %d erregistro"
+
+#: ../applet/pilot.c:384
+#, c-format
+msgid "Database %d of %d"
+msgstr "Datu-basea - %d / %d"
+
+#: ../applet/pilot.c:445
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA sinkronizatzen ari da une honetan.\n"
+"Itxaron amaitu arte."
+
+#: ../applet/pilot.c:450
+msgid "Not connected. Please restart daemon."
+msgstr "Konektatu gabe. Berrabiarazi daemon-a."
+
+#: ../applet/pilot.c:454
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Gpilotd-era konektatu gabe.\n"
+"Berrabiarazi daemon-a."
+
+#: ../applet/pilot.c:484
+msgid "gnome-pilot applet"
+msgstr "'gnome-pilot'-en applet-a"
+
+#: ../applet/pilot.c:486
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Copyright-a 2000-2006 Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:487
+msgid "A PalmOS PDA monitor.\n"
+msgstr "PalmOS PDA monitorea.\n"
+
+#: ../applet/pilot.c:585 ../applet/pilot.c:612
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Errorea laguntza bistaratzean: %s"
+
+#: ../applet/pilot.c:698
+#, c-format
+msgid "Restoring %s"
+msgstr "%s leheneratzen"
+
+#: ../applet/pilot.c:741
+msgid "No directory to restore from."
+msgstr "Ez dago leheneratzeko direktoriorik."
+
+#: ../applet/pilot.c:753
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Sakatu 'sinkronizatu' sehaskan,\n"
+" edo bertan behera utzi eragiketa."
+
+#: ../applet/pilot.c:759
+#, c-format
+msgid "cancelling %d"
+msgstr "%d bertan behera uzten"
+
+#: ../applet/pilot.c:764
+msgid "Restore request failed"
+msgstr "Huts egin du leheneratzeko eskaerak"
+
+#: ../applet/pilot.c:805
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"PDA sinkronizazioa egiten ari da.\n"
+"Ziur zaude daemon-a berrabiarazi nahi duzula?"
+
+#: ../applet/pilot.c:820 ../applet/pilot.c:1379
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "GnomePilot daemon-arekin konektatzen saiatzen"
+
+#: ../applet/pilot.c:837
+msgid "There's no last sync on record."
+msgstr "Azken sinkronizaziorik ez dago erregistroan."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:860
+msgid "Restore..."
+msgstr "Leheneratu..."
+
+#: ../applet/pilot.c:860
+msgid "Restart"
+msgstr "Berrabiarazi"
+
+#: ../applet/pilot.c:860
+msgid "Last log..."
+msgstr "Azken egunkaria..."
+
+#: ../applet/pilot.c:861
+msgid "Preferences..."
+msgstr "Hobespenak..."
+
+#: ../applet/pilot.c:861
+msgid "Help"
+msgstr "Laguntza"
+
+#: ../applet/pilot.c:861
+msgid "About"
+msgstr "Honi buruz"
+
+#: ../applet/pilot.c:883
+msgid "Continue"
+msgstr "Jarraitu"
+
+#: ../applet/pilot.c:885
+msgid "Pause Daemon"
+msgstr "Pausarazi daemon-a"
+
+#: ../applet/pilot.c:906
+msgid "Daemon paused..."
+msgstr "Daemon-a pausarazita..."
+
+#: ../applet/pilot.c:1047
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Konektatu gabe. Berrabiarazi daemon-a birkonektatzeko"
+
+#: ../applet/pilot.c:1218
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Huts egin du %s exekutatzean"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1344
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "instalatzen: \"%s\" --> \"%s\""
+
+#: ../applet/pilot.c:1354
+msgid "unknown dnd type"
+msgstr "dnd mota ezezaguna"
+
+#: ../applet/pilot.c:1362
+msgid "destroy gpilot-applet"
+msgstr "deuseztatu gpilot applet-a"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Applet-ean klik egitean exekutatuko den komandoa"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Bistaratu abisuak laster-leihoetan"
+
+#: ../capplet/gnome-pilot-capplet.c:228 ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot: ezarpenak"
+
+#: ../capplet/gnome-pilot-capplet.c:394 ../capplet/gnome-pilot-capplet.c:470
+msgid "Name"
+msgstr "Izena"
+
+#: ../capplet/gnome-pilot-capplet.c:396 ../utils/gpilotd-client.c:43
+msgid "ID"
+msgstr "IDa"
+
+#: ../capplet/gnome-pilot-capplet.c:398
+msgid "Owner"
+msgstr "Jabea"
+
+#: ../capplet/gnome-pilot-capplet.c:472
+msgid "Type"
+msgstr "Mota"
+
+#: ../capplet/gnome-pilot-capplet.c:574
+msgid "Conduit"
+msgstr "Kanala"
+
+#: ../capplet/gnome-pilot-capplet.c:576
+msgid "Sync Action"
+msgstr "Sinkronizatzeko ekintza"
+
+#: ../capplet/gnome-pilot-capplet.c:790
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Ziur zaude '%s' PDA ezabatu nahi duzula?"
+
+#: ../capplet/gnome-pilot-capplet.c:814
+msgid "_Edit this PDA..."
+msgstr "_Editatu PDA hau..."
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "Edit the currently selected PDA"
+msgstr "Editatu unean hautatutako PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "_Delete this PDA"
+msgstr "_Ezabatu PDA hau"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "Delete the currently selected PDA"
+msgstr "Ezabatu unean hautatutako PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:969
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Ziur zaude %s gailua ezabatu nahi duzula?"
+
+#: ../capplet/gnome-pilot-capplet.c:990
+msgid "_Edit this device..."
+msgstr "_Editatu gailu hau..."
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "Edit the currently selected device"
+msgstr "Editatu une honetan hautatutako pilot-a"
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "_Delete this device"
+msgstr "_Ezabatu gailu hau"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "Delete the currently selected device"
+msgstr "Ezabatu une honetan hautatutako gailua"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Ezin da %s kanala instantziatu."
+
+#: ../capplet/gnome-pilot-capplet.c:1217
+msgid "_Enable this conduit"
+msgstr "_Gaitu kanal hau"
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "Disable the currently selected conduit"
+msgstr "Desgaitu une honetan hautatutako kanala"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "_Disable this conduit"
+msgstr "_Desgaitu kanal hau"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "Enable the currently selected conduit"
+msgstr "Gaitu une honetan hautatutako kanala"
+
+#: ../capplet/gnome-pilot-capplet.c:1221 ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "_Ezarpenak..."
+
+#: ../capplet/gnome-pilot-capplet.c:1222
+msgid "Modify the currently selected conduit's settings"
+msgstr "Aldatu une honetan hautatutako kanalaren ezarpenak"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:204
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "Ezin da sortu PDA-ezarpenen leihoa. Kanal-konfigurazioa okerra da."
+
+#: ../capplet/gnome-pilot-assistant.c:519
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Konfigurazioa ez da burutu, eta ezarpenak ez\n"
+"dira gordeko. Ziur zaude irten nahi duzula?"
+
+#: ../capplet/gnome-pilot-assistant.c:738
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Ondorengo datuak PDAra bidaltzera doa.\n"
+"Erabiltzaile-izena: %s\n"
+"PDAren IDa: %d\n"
+"Konektatu PDA %s(e)n (%s), eta sakatu HotSync botoia."
+
+#: ../capplet/gnome-pilot-assistant.c:759
+#: ../capplet/gnome-pilot-assistant.c:780
+msgid "Failed sending request to gpilotd"
+msgstr "Huts egin du eskaera gpilotd-era bidaltzean"
+
+#: ../capplet/gnome-pilot-assistant.c:767
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"PDAtik erabiltzaile-izena eta IDa berreskuratzera doa.\n"
+"Konektatu PDA %s(e)n (%s), eta sakatu HotSync botoia."
+
+#: ../capplet/gnome-pilot-assistant.c:953
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Behar bezala eskuratu dira erabiltzaile-izena eta IDa PDAtik.\n"
+"Erabiltzaile-izena: %s\n"
+"PDAren IDa: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:460
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Konektatu PDA %s (%s)(e)n, eta sakatu HotSync botoia, edo eten eragiketa."
+
+#: ../capplet/gnome-pilot-pdialog.c:495
+msgid "The request to get PDA ID failed"
+msgstr "Huts egin du PDAren IDa lortzeko eskaerak"
+
+#: ../capplet/gnome-pilot-pdialog.c:539
+msgid "The request to set PDA ID failed"
+msgstr "Huts egin du PDAren IDa ezartzeko eskaerak"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Kanal-ekintzak</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Kanal-ezarpenak</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDAren atributuak</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDAren identifikazioa</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Zein gailu erabili behar da eragiketa "
+"honetan?</span>\n"
+"\n"
+"Ordenagailu honekin gailu bat baino gehiago konektatuta duzunez, eragiketan "
+"erabiltzea nahi duzun gailua zehaztu beharko duzu."
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "PDAren _karaktere-multzoa:"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "_Kanalak"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "Aukeratu gailua"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Hautatu aukera hau sinkronizatzeko softwarea erabili baduzu aurretik, nahiz "
+"eta beste ordenagailu batean gertatu"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "Kanal-ezarpenak"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Zorionak, gnome-pilot konfiguratu duzu!\n"
+"\n"
+"Edozein unetan alda ditzakezu gnome-pilot-en ezarpenak\n"
+"kontrol-zentroko PilotLink eta Kanalak fitxetan.\n"
+"\n"
+"'Gnome-pilot'en sinkronizazioa kontrola dezakezu \n"
+"panelean PilotLink applet-a gehituz."
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "_Desgaitu"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "_Gailuak"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "Azalpena:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "Gailuaren ezarpenak"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "Gailua:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Sartu PDAn gorde nahi duzun jabearen izena"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Eskuratu jabearen izena eta IDa PDAtik"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "Hasierako sinkronizazioa"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "_Sarea"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "_Jabea:"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Jabearen izena eta IDa PDAn ezartzeko"
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "Jabea:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "PDAren atributuak"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "PDAren identifikazioa"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "PDAren ezarpenak"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "P_DA:"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "Mesedez, konpondu honako arazoa..."
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "_Abiadura:"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"Bidali jabearen izena eta IDa PDAri, existi daitekeen identitatean "
+"gainidatziz"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Ezarri erro-direktorioa gordetzeko PDA-fitxategi guztientzat."
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "Behar bezala egin da"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Zure PDAren izena. Identifikatzeko bakarrik erabiltzen da."
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"Osoko ID honek PDA identifikatzen du, eta bakarra izan behar du erabiltzen "
+"dituzun PDA gailuen artean."
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "_Denbora-muga:"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "Ongi etorri 'gnome-pilot'era!"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"gnome-pilot lehen aldiz erabiltzen ari zarela dirudi.\n"
+"Ondorengo urratsek sinkronizatzeko konfiguratuko dute gnome-pilot. \n"
+"Gero edozein unetan alda ditzakezu aukerak PilotLink panela gehituz\n"
+"Gnome-ren kontrol-zentroan.\n"
+"\n"
+"Jarraitzeko, sakatu 'Aurrera'.\n"
+"Irteteko, sakatu 'Utzi'."
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "_Ekintza:"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "_Gehitu..."
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "E_zabatu"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "_Gailua:"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "_Editatu..."
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "_Gaitu"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "_Hartu PDAtik"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "_Karpeta lokala:"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "PDAren _izena:"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "_Izena:"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Ez, inoiz ez dut erabili sinkronizazio-softwarerik PDA honekin."
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "_Aldi bakarreko ekintza:"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "_Jabea:"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "_PDAren IDa:"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "_PDAk"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "_Bidali PDAri"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "_Seriekoa"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "_Mota:"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Bai, dagoeneko erabili dut sinkronizazio-softwarea PDA honekin."
+
+#: ../capplet/gpilotd-control-applet.c:84
+msgid " - configure gnome-pilot settings"
+msgstr " - konfiguratu gnome-pilot-en ezarpenak"
+
+#: ../capplet/gpilotd-control-applet.c:86
+#: ../capplet/gpilotd-control-applet.c:95
+#, c-format
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "Errorea gpilotd capplet-a hasieratzean: %s"
+
+#: ../capplet/gpilotd-control-applet.c:101
+#: ../capplet/gpilotd-control-applet.c:102
+msgid "Error loading PDA state, aborting"
+msgstr "Errorea PDAren egoera kargatzean; abortatzen"
+
+#: ../capplet/gpilotd-control-applet.c:109
+#: ../capplet/gpilotd-control-applet.c:110
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Ezin da konektatu GnomePilot daemon-era"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Konfiguratu PalmOS gailuak"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS gailuak"
+
+#: ../capplet/pilot.c:118
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "Ezin da gpilotd/General/sync_PC_Id gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:132
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr "Ezin da gpilotd/General/progress_stepping gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:166
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "Ezin da gpilotd/%s/type gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:188
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "Ezin da gpilotd/%s/name gakoa kargatu: iDevice, %s"
+
+#: ../capplet/pilot.c:206
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "Ezin da gpilotd/%s/speed gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:215
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "Ezin da gpilotd/%s/timeout gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:257
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr "Ezin da gpilotd/%s/name gakoa kargatu: %s"
+
+#: ../capplet/pilot.c:267
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "Ezin da gpilotd/%s/pilotid gakoa kargatu: %s"
+
+#: ../capplet/util.c:123 ../capplet/util.c:517
+msgid "Disabled"
+msgstr "Desgaituta"
+
+#: ../capplet/util.c:129 ../capplet/util.c:519
+msgid "Enabled"
+msgstr "Gaituta"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "Bat ere ez"
+
+#: ../capplet/util.c:315
+msgid "You must have at least one device setup"
+msgstr "Gutxienez gailu bat eduki behar duzu konfiguratuta"
+
+#: ../capplet/util.c:490
+msgid "Synchronize"
+msgstr "Sinkronizatu"
+
+#: ../capplet/util.c:491
+msgid "Copy from PDA"
+msgstr "Kopiatu PDAtik"
+
+#: ../capplet/util.c:492
+msgid "Copy to PDA"
+msgstr "Kopiatu PDAn"
+
+#: ../capplet/util.c:493
+msgid "Merge from PDA"
+msgstr "Batu PDAtik"
+
+#: ../capplet/util.c:494
+msgid "Merge to PDA"
+msgstr "Batu PDAn"
+
+#: ../capplet/util.c:497
+msgid "Use conduit settings"
+msgstr "Erabili kanal-ezarpenak"
+
+#: ../capplet/util.c:505
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:506
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:507
+msgid "Network"
+msgstr "Sarea"
+
+#: ../capplet/util.c:508
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:509
+msgid "Serial"
+msgstr "Seriekoa"
+
+#: ../capplet/util.c:556
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Zehaztutako oinarri-direktorioa badago, baina baimen okerrak ditu.\n"
+"Konpondu direktorioa, edo aukeratu beste bat"
+
+#: ../capplet/util.c:561
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Zehaztutako oinarri-direktorioa badago, baina ez da direktorioa.\n"
+"Bihurtu direktorio, edo hautatu beste direktorio bat."
+
+#: ../capplet/util.c:568
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Ezin izan da zehaztutako oinarri-direktorioa sortu.\n"
+"Egiaztatu zehaztutako bide-izeneko baimenak, edo hautatu beste direktorio bat"
+
+#: ../capplet/util.c:573
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Oinarri-direktorioarentzat hautatutako bide-izena ez da baliozkoa.\n"
+"Aukeratu beste direktorio bat"
+
+#: ../capplet/util.c:600
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"'%s' ez da karaktere-multzo baten baliozko identifikatzailea. Sartu baliozko "
+"identifikatzailea edo hautatu aukera erabilgarrietatik."
+
+#: ../capplet/util.c:723
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "'usb' gailua: USB motako gailuentzako bakarrik da erabilgarri"
+
+#: ../capplet/util.c:732
+msgid "Read/Write permissions failed on"
+msgstr "Irakurtzeko/idazteko baimenek huts egin dute hemen:"
+
+#: ../capplet/util.c:734
+msgid "Check the permissions on the device and retry"
+msgstr "Egiaztatu gailuaren baimenak, eta saiatu berriro"
+
+#: ../capplet/util.c:747 ../gpilotd/gpilot-daemon.c:1408
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Huts egin du %s direktorioa aurkitzean edo %s fitxategia irakurtzean. "
+"Egiaztatu usbfs edo sysfs muntatuta dagoela."
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr "Ezin da backup-conduit/%s/updated_only gakoa kargatu: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr "Ezin da backup-conduit/%s/remove_deleted gakoa kargatu: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "Kendutako datu-baseak begiratzen"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:274
+#, c-format
+msgid "Renaming %s"
+msgstr "Izena aldatzen: %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:282
+#, c-format
+msgid "to %s"
+msgstr "--> %s"
+
+#: ../conduits/backup/backup_conduit.c:461
+#: ../conduits/backup/backup_conduit.c:465
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s ez da aldatu azken sinkronizazioaz geroztik"
+
+#: ../conduits/backup/backup_conduit.c:477
+#: ../conduits/backup/backup_conduit.c:479
+#, c-format
+msgid "Making backup of %s"
+msgstr "%s babeskopia egiten"
+
+#: ../conduits/backup/backup_conduit.c:486
+#: ../conduits/backup/backup_conduit.c:488
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Ezin izan da %s babeskopia-fitxategia sortu"
+
+#: ../conduits/backup/backup_conduit.c:764
+msgid "Collecting restore information..."
+msgstr "Leheneratzeko informazioa biltzen..."
+
+#: ../conduits/backup/backup_conduit.c:891
+msgid "_Backup directory:"
+msgstr "_Babeskopiaren direktorioa:"
+
+#: ../conduits/backup/backup_conduit.c:905
+msgid "Backup directory"
+msgstr "Babeskopiaren direktorioa"
+
+#: ../conduits/backup/backup_conduit.c:907
+msgid "O_nly backup changed bases"
+msgstr "Aldatutako baseen babeskopia _bakarrik egin"
+
+#: ../conduits/backup/backup_conduit.c:917
+msgid "Only backup changed bases"
+msgstr "Aldatutako baseen babeskopia bakarrik egin"
+
+#: ../conduits/backup/backup_conduit.c:919
+msgid "_Remove local base if deleted on pilot"
+msgstr "_Kendu lokaleko basea, pilot-a ezabatzean"
+
+#: ../conduits/backup/backup_conduit.c:929
+msgid "Remove local base if deleted on pilot"
+msgstr "Kendu lokaleko basea, pilot-a ezabatzean"
+
+#: ../conduits/backup/backup_conduit.c:931
+msgid "# of old backups to _keep"
+msgstr "Babeskopia zaharren kopurua _mantzentzeko"
+
+#: ../conduits/backup/backup_conduit.c:942
+msgid "# of old backups to keep"
+msgstr "Babeskopia zaharren kopurua mantzentzeko"
+
+#: ../conduits/backup/backup_conduit.c:980
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Zehaztutako babeskopiako direktorioa badago, baina baimen okerrak ditu.\n"
+"Konpondu direktorioa, edo aukeratu beste bat"
+
+#: ../conduits/backup/backup_conduit.c:985
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Zehaztutako babeskopiako direktorioa badago, baina ez da direktorioa.\n"
+"Bihurtu direktorio, edo hautatu beste direktorio bat."
+
+#: ../conduits/backup/backup_conduit.c:992
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Ezin izan da zehaztutako babeskopiako direktorioa sortu.\n"
+"Egiaztatu zehaztutako bide-izeneko baimenak, edo hautatu beste direktorio bat"
+
+#: ../conduits/backup/backup_conduit.c:997
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Babeskopiaren direktorioarentzat hautatutako bide-izena ez da baliozkoa.\n"
+"Aukeratu beste direktorio bat"
+
+#: ../conduits/evolution-data-server/address-conduit.c:593
+msgid "Default Sync Address:"
+msgstr "Sinkronizatzeko helbide lehenetsia:"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1636
+#: ../conduits/evolution-data-server/address-conduit.c:1637
+msgid "Could not load address book"
+msgstr "Ezin izan da helbide-liburua kargatu"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1714
+#: ../conduits/evolution-data-server/address-conduit.c:1717
+msgid "Could not read pilot's Address application block"
+msgstr "Ezin izan da pilot-en helbideen aplikazioaren daturik irakurri"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:250
+msgid "Split Multi-Day Events:"
+msgstr "Zatitu egun anitzeko gertaerak:"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1538
+#: ../conduits/evolution-data-server/calendar-conduit.c:1539
+#: ../conduits/evolution-data-server/memo-conduit.c:826
+#: ../conduits/evolution-data-server/memo-conduit.c:827
+#: ../conduits/evolution-data-server/todo-conduit.c:1027
+#: ../conduits/evolution-data-server/todo-conduit.c:1028
+msgid "Could not start evolution-data-server"
+msgstr "Ezin izan da evolution-data-server abiarazi"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1646
+#: ../conduits/evolution-data-server/calendar-conduit.c:1649
+msgid "Could not read pilot's Calendar application block"
+msgstr "Ezin izan da pilot-en egutegiaren aplikazioaren daturik irakurri"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:95
+msgid "Sync with:"
+msgstr "Sink. honekin:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:103
+msgid "Sync Private Records:"
+msgstr "Sink. erregistro pribatuak:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:112
+msgid "Sync Categories:"
+msgstr "Sink. kategoriak:"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:920
+#: ../conduits/evolution-data-server/memo-conduit.c:923
+msgid "Could not read pilot's Memo application block"
+msgstr "Ezin izan da pilot-en zirkularren aplikazioaren daturik irakurri"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:967
+#: ../conduits/evolution-data-server/memo-conduit.c:970
+msgid "Could not write pilot's Memo application block"
+msgstr "Ezin izan da pilot-en zirkularren aplikazioaren daturik idatzi idatzi"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:227
+msgid "Default Priority:"
+msgstr "Lehentasun lehenetsia:"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1111
+#: ../conduits/evolution-data-server/todo-conduit.c:1114
+msgid "Could not read pilot's ToDo application block"
+msgstr "Ezin izan da pilot-en atazen aplikazioaren daturik irakurri"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1156
+#: ../conduits/evolution-data-server/todo-conduit.c:1159
+msgid "Could not write pilot's ToDo application block"
+msgstr "Ezin izan da pilot-en atazen aplikazioaren daturik idatzi"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Huts egin du %s instalatzeak"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Instalatzen: %s / %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "%s instalatzen..."
+
+#: ../conduits/file/gpilot_install_file.c:41
+msgid "Install immediately"
+msgstr "Instalatu berehala"
+
+#: ../conduits/file/gpilot_install_file.c:42
+msgid "Install delayed"
+msgstr "Instalatzea atzeratuta"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA to install to"
+msgstr "Instalatu PDA honetan:"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "[FILE...]"
+msgstr "[FITXATEGIA...]"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "list of files"
+msgstr "fitxategien zerrenda"
+
+#: ../conduits/file/gpilot_install_file.c:97 ../utils/gpilotd-client.c:466
+#: ../utils/gpilotdcm-client.c:107
+#, c-format
+msgid "Error parsing commandline arguments: %s"
+msgstr "Errorea komando-lerroko argumentuak analizatzean: %s"
+
+#: ../conduits/file/gpilot_install_file.c:113
+#: ../conduits/file/gpilot_install_file.c:114
+msgid "Unable to get PDA names"
+msgstr "Ezin dira lortu PDA izenak"
+
+#: ../conduits/file/gpilot_install_file.c:149
+msgid "Following files failed :\n"
+msgstr "Huts egin dute fitxategi hauek:\n"
+
+#: ../conduits/file/gpilot_install_file.c:161
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Instalatzen - %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:182
+msgid "No files to install"
+msgstr "Ez dago fitxategirik instalatzeko"
+
+#: ../conduits/file/gpilot_install_file.c:185
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Instalatzeko, sakatu sinkronizatu eustoinean,\n"
+" edo bertan behera utzi eragiketa."
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:684
+msgid "module loading not supported, fatal!"
+msgstr "modulu-kargatzea ez da onartzen. Konponezina!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "ezabatutako PDA-erregistroa lokalki aldatu da; ez da ezabatuko\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "ezabatutako erregistro lokala PDAn aldatu da; ez da ezabatuko\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:143
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr ""
+"batze-gatazka, PDA-erregistroa eta erregistro lokala trukatu egin dira\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr ""
+"artxibatze- eta batze-gatazka, PDA-erregistroa eta lokala trukatu egin dira\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr ""
+"artxibatze- eta aldaketa-gatazka; erregistro lokala PDAri bidali zaio\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "artxibatze- eta aldaketa-gatazka; PDA-erregistroa lokalki gorde da\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:459
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:534
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:599
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:628
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:657
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Huts egin du kanal-hasieratzeak; eragiketa abortatzen"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:472
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Ezin dira ezabatu PDAren datu-baseko erregistro guztiak; eragiketa abortatzen"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:483
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1077
+msgid "Conduit did not return a record"
+msgstr "Kanalak ez du erregistrorik itzuli"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:540
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Ezin dira ezabatu datu-base lokaleko erregistro guztiak; eragiketa abortatzen"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1482
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Errorea kanalean; berriki gehitutako erregistroa ezin izan da aurkitu"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:517
+msgid "Copy to PDA failed!"
+msgstr "Huts egin du PDAn kopiatzean."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:541
+msgid "Copy from PDA failed!"
+msgstr "Huts egin du PDAtik kopiatzean."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:565
+msgid "Merge to PDA failed!"
+msgstr "Huts egin du PDAn batzean."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:589
+msgid "Merge from PDA failed!"
+msgstr "Huts egin du PDAtik batzean."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:644
+msgid "Synchronization failed!"
+msgstr "Sinkronizazioak huts egin du."
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Ezin izan da gailua ireki: %s (%s): arrazoia: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot-ek ezin izan du gailua ireki: %s (%s).\n"
+"Arrazoia: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+"Bluetooth gailua [%s]: ezin da socket-a lotu: %d. errorea (egiaztatu "
+"bluetooth euskarriarekin konpilatu dela pilot-link)"
+
+#: ../gpilotd/gnome-pilot-structures.c:469
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Gailua [%s, %s]: ezin da socket-a lotu: %d. errorea"
+
+#: ../gpilotd/gnome-pilot-structures.c:549
+#: ../gpilotd/gnome-pilot-structures.c:602
+#: ../gpilotd/gnome-pilot-structures.c:633
+#: ../gpilotd/gnome-pilot-structures.c:661
+msgid "Unknown device type"
+msgstr "Gailu-mota ezezaguna"
+
+#: ../gpilotd/gnome-pilot-structures.c:679
+msgid "Number of devices is configured to 0"
+msgstr "Konfiguratutako gailu-kopurua: 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:681
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Gailurik ez dago konfiguratuta.\n"
+"Exekutatu gpilotd-control-applet (erabili gnomecc),\n"
+"gnome-pilot konfiguratzeko."
+
+#: ../gpilotd/gnome-pilot-structures.c:702
+msgid "No accessible devices available"
+msgstr "Ez dago gailu atzigarririk erabilgarri"
+
+#: ../gpilotd/gnome-pilot-structures.c:721
+msgid "Number of PDAs is configured to 0"
+msgstr "Konfiguratutako PDA kopurua: 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:723
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"PDArik ez dago konfiguratuta.\n"
+"Exekutatu gpilotd-control-applet (erabili gnomecc),\n"
+"gnome-pilot konfiguratzeko."
+
+#: ../gpilotd/gnome-pilot-structures.c:786 ../gpilotd/gpilot-daemon.c:968
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Ez da pilot-aren karaktere-multzorik zehaztu. '%s' erabiltzen"
+
+#: ../gpilotd/gpilot-daemon.c:513
+msgid "Unable to bind to PDA"
+msgstr "Ezin da PDArekin lotu"
+
+#: ../gpilotd/gpilot-daemon.c:653
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+"Huts egin du '%s' gailua '%s' atakan konektatzean. Egiaztatu konfigurazioa, "
+"libusb estilo berriko 'usb:' sinkronizazioa eskatu duzun arabera, baina "
+"estilo zaharreko kernelaren 'visor' modulua kargatu da. 'ttyUSB...' gailua "
+"hautatu beharko zenuke."
+
+#: ../gpilotd/gpilot-daemon.c:668
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+"Huts egin du '%s' gailua '%s' atakan konektatzean. Egiaztatu konfigurazioa, "
+"usbserial estilo zaharreko 'ttyUSB' sinkronizazioa eskatu duzun arabera, "
+"baina ez du kerneleko 'usbserial' modulua kargatu. 'usb:' gailua hautatu "
+"beharko zenuke."
+
+#: ../gpilotd/gpilot-daemon.c:761
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr ""
+"PDA ezezaguna; erabiltzaileID/erabiltzaile-izenik ez dator bat honekin: %ld"
+
+#: ../gpilotd/gpilot-daemon.c:768
+msgid "Use gnomecc to configure PDA"
+msgstr "Erabili gnomecc PDA konfiguratzeko"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilot-daemon.c:773
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"PDA ezezaguna - PDArik ez dator %ld IDarekin\n"
+"Erabili gnomecc gnome-pilot konfiguratzeko"
+
+#: ../gpilotd/gpilot-daemon.c:797
+#, c-format
+msgid "Device %s has %d events"
+msgstr "%s gailuak %d gertaera ditu"
+
+#: ../gpilotd/gpilot-daemon.c:810
+msgid "Setting userinfo..."
+msgstr "Erabiltzaile-informazioa ezartzen..."
+
+#: ../gpilotd/gpilot-daemon.c:815
+msgid "Sync continues"
+msgstr "Sinkronizazioak jarraitu egiten du"
+
+#: ../gpilotd/gpilot-daemon.c:834
+msgid "Getting userinfo..."
+msgstr "Erabiltzaile-informazioa hartzen..."
+
+#: ../gpilotd/gpilot-daemon.c:896
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync eskaera detektatuta da; PDA sinkronizatzen"
+
+#: ../gpilotd/gpilot-daemon.c:898
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Bluetooth eskaera detektatuta da; PDA sinkronizatzen"
+
+#: ../gpilotd/gpilot-daemon.c:900
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync botoia sakatu da; PDA sinkronizatzen"
+
+#: ../gpilotd/gpilot-daemon.c:902
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDAren IDa %ld da, izena %s , jabea %s"
+
+#: ../gpilotd/gpilot-daemon.c:912
+#, c-format
+msgid "On host %s\n"
+msgstr "%s ostalarian\n"
+
+#: ../gpilotd/gpilot-daemon.c:914
+#, c-format
+msgid "On host %d\n"
+msgstr "%d ostalarian\n"
+
+#: ../gpilotd/gpilot-daemon.c:933
+msgid "Synchronization ended"
+msgstr "Sinkronizazioa amaitu da"
+
+#: ../gpilotd/gpilot-daemon.c:936
+msgid "Synchronization ended early"
+msgstr "Sinkronizazioa espero baino lehenago amaitu da"
+
+#: ../gpilotd/gpilot-daemon.c:982
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "'%s' ez da onartutako iconv karaktere-multzo bat. '%s' erabiliko da."
+
+#: ../gpilotd/gpilot-daemon.c:1005
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"%s oinarri-direktorioa ez da baliozkoa.\n"
+"Konpondu, edo erabili gnomecc beste direktorio bat aukeratzeko."
+
+#: ../gpilotd/gpilot-daemon.c:1018
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"PDA ezezaguna - PDArik ez dator %ld IDarekin\n"
+"Erabili gpilotd-control-applet PDAren IDa konfiguratzeko"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1150
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Errorea gertatu da PDAren sistemako datuak hartzean"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1157
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Errorea gertatu da PDAren erabiltzaile-datuak eskuratzean"
+
+#: ../gpilotd/gpilot-daemon.c:1162
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Osatu dira %s (%s) gailuaren gertaerak"
+
+#: ../gpilotd/gpilot-daemon.c:1227
+#, c-format
+msgid "Woke on %s"
+msgstr "Jaikita - %s"
+
+#: ../gpilotd/gpilot-daemon.c:1308
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Sarea jaikita: %s"
+
+#: ../gpilotd/gpilot-daemon.c:1578
+#, c-format
+msgid "Watching %s (network)"
+msgstr "%s behatzen (sarea)"
+
+#: ../gpilotd/gpilot-daemon.c:1580
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "%s behatzen (bluetooth)"
+
+#: ../gpilotd/gpilot-daemon.c:1582
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Behatzen: %s (%s)"
+
+#: ../gpilotd/gpilot-daemon.c:1714
+msgid "Shutting down devices"
+msgstr "Gailuak itzaltzen"
+
+#: ../gpilotd/gpilot-daemon.c:1716
+msgid "Rereading configuration..."
+msgstr "Konfigurazioa berrirakurtzen..."
+
+#: ../gpilotd/gpilot-daemon.c:2623
+msgid "(unknown DB)"
+msgstr "(DB ezezaguna)"
+
+#: ../gpilotd/gpilotd.c:54
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Irteten (SIGTERM hartuta)..."
+
+#: ../gpilotd/gpilotd.c:62
+msgid "Exiting (caught SIGINT)..."
+msgstr "Irteten (SIGINT hartuta)..."
+
+#: ../gpilotd/gpilotd.c:93
+msgid "Unable to create file installation queue directory"
+msgstr "Ezin da fitxategi-instalazioaren ilara-direktorioa sortu"
+
+#: ../gpilotd/gpilotd.c:209
+msgid "gpilotd already running; exiting ...\n"
+msgstr "gpilotd jadanik exekutatzen ari da: irtetzen...\n"
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "babeskopia ez den kanala babeskopia-kanalen zerrendan"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s - babeskopia egin da\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s - babeskopiak huts egin du\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "Sinkronizazio-informazioa biltzen..."
+
+#: ../gpilotd/manager.c:428
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s sinkronizatzen\n"
+
+#: ../gpilotd/manager.c:447
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Kopiatu %s PDAn\n"
+
+#: ../gpilotd/manager.c:465
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Kopiatu %s PDAtik\n"
+
+#: ../gpilotd/manager.c:483
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Batu %s PDAn\n"
+
+#: ../gpilotd/manager.c:501
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Batu %s PDAtik\n"
+
+#: ../gpilotd/manager.c:529
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "%s kanalaren lehen sinkronizazioa..."
+
+#: ../gpilotd/manager.c:553
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "sinkronizazio-ekintza ezezaguna (%d = %s).\n"
+
+#: ../gpilotd/manager.c:679
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d kanal instantziatzen..."
+
+#: ../gpilotd/manager.c:684 ../gpilotd/manager.c:685
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "\"%s\" kanal ezezaguna konfigurazioan."
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Huts egin du \"%s\" kanala kargatzeak."
+
+#: ../gpilotd/manager.c:695
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Huts egin du \"%s\" kanala kargatzeak.\n"
+
+#: ../gpilotd/manager.c:785
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Jabea/IDa ezartzen - > %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:817
+#, c-format
+msgid "Conduit %s requested, but not found.  Is it enabled?"
+msgstr "%s kanala eskatu da, baina ez da aurkitu. Gaituta dago?"
+
+#: ../gpilotd/manager.c:827
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "%s kanala ezin da eskatu"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "Errorea ilaran; sarrera ez dago"
+
+#: ../gpilotd/queue_io.c:454
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "akatsa: ez da %d. PDAren eskaerarik ez da aurkitu , %d eskaera"
+
+#: ../utils/gpilotd-client.c:38
+msgid "Get System Info"
+msgstr "Hartu sistema-informazioa"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Pause daemon"
+msgstr "Pausarazi daemon-a"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Unpause daemon"
+msgstr "Jarraitu daemon-arekin"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Restart daemon"
+msgstr "Berrabiarazi daemon-a"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Set user id and name"
+msgstr "Ezarri erabiltzailearen id-a eta izena"
+
+#: ../utils/gpilotd-client.c:43
+msgid "ID for the PDA"
+msgstr "PDAren IDa"
+
+#: ../utils/gpilotd-client.c:44
+msgid "Install file"
+msgstr "Instalatu fitxategia"
+
+#: ../utils/gpilotd-client.c:44
+msgid "FILE"
+msgstr "FITXATEGIA"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Restore directory"
+msgstr "Leheneratu direktorioa"
+
+#: ../utils/gpilotd-client.c:45
+msgid "DIRECTORY"
+msgstr "DIREKTORIOA"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Run conduit"
+msgstr "Exekutatu kanala"
+
+#: ../utils/gpilotd-client.c:46 ../utils/gpilotdcm-client.c:26
+msgid "CONDUIT"
+msgstr "KANALA"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Username to set"
+msgstr "Ezartzeko erabiltzaile-izena"
+
+#: ../utils/gpilotd-client.c:47
+msgid "USERNAME"
+msgstr "ERABILTZAILE-IZENA"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Monitor all PDAs"
+msgstr "Kontrolatu PDA guztiak"
+
+#: ../utils/gpilotd-client.c:49
+msgid "list PDAs by login (all for all pilots)"
+msgstr "zerrendatu PDAk saio-hasieren arabera (denak pilot guztientzat)"
+
+#: ../utils/gpilotd-client.c:49
+msgid "LOGIN"
+msgstr "SAIO-HASIERA"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Zehaztu erabili beharreko PDA (lehenetsia: MyPDA)"
+
+#: ../utils/gpilotd-client.c:50
+msgid "PILOTNAME"
+msgstr "PILOT-IZENA"
+
+#: ../utils/gpilotd-client.c:51
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Zehaztu erabili beharreko eustoina (lehenetsia: Cradle0)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "CRADLENAME"
+msgstr "EUSTOIN-IZENA"
+
+#: ../utils/gpilotd-client.c:52
+msgid "List users"
+msgstr "Zerrendatu erabiltzaileak"
+
+#: ../utils/gpilotd-client.c:53
+msgid "List cradles"
+msgstr "Zerrendatu sehaskak"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Zerrendatu zehaztutako PDAren baseak"
+
+#: ../utils/gpilotd-client.c:472 ../utils/gpilotdcm-client.c:113
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"KONTUZ!!\n"
+"Tresna hau gnome-pilot paketearen zati jakin batzuei dagokie.\n"
+"Ez badakizu zer egiten ari zaren, ez erabili tresna hau."
+
+#: ../utils/gpilotdcm-client.c:25
+msgid "lists available conduits"
+msgstr "zerrendatu kanal erabilgarriak"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "conduit to operate on"
+msgstr "erabili beharreko kanala - "
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "list all attributes"
+msgstr "zerrendatu atributu guztiak"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "specify PDA to operate on"
+msgstr "zehaztu erabili beharreko PDA"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "PDA_ID"
+msgstr "PDAren IDa"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list attributes"
+msgstr "zerrendatu atributuak"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list available conduits and their state"
+msgstr "zerrendatu kanal erabilgarriak eta bakoitzaren egoera"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "enable specified conduit"
+msgstr "gaitu zehaztutako kanala"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "disable specified conduit"
+msgstr "desgaitu zehaztutako kanala"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable, and set firstsync to slow"
+msgstr "gaitu, eta ezarri 'motela' lehen sinkronizazioarentzat"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "instantiate and destroy the conduit"
+msgstr "instantziatu eta deuseztatu kanala"
+
+#~ msgid "Error initializing gpilotd"
+#~ msgstr "Errorea gpilotd hasieratzean"
+
+#~ msgid "Gnome-Pilot daemon"
+#~ msgstr "Gnome-Pilot daemon-a"
+
+#~ msgid "Monitor the specified PDA's actions"
+#~ msgstr "Kontrolatu zehaztutako PDAren ekintzak"
+
+#~ msgid "Error initializing gpilotd-client"
+#~ msgstr "Errorea gpilotd-client hasieratzean"
+
+#~ msgid "Error initializing gpilotdcm-client"
+#~ msgstr "Errorea gpilotdcm-client hasieratzean"

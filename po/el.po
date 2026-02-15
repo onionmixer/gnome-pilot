@@ -1,0 +1,1767 @@
+# translation of el.po to Greek
+# gnome-pilot Greek translation.
+# Copyright (C) 2000, 2008 Free Software Foundation, Inc.
+#
+# spyros:
+#   Did initial 270 messages (approx.).
+# simos:
+#   Updated the above, now done 294 messages.
+#
+# Spiros Papadimitriou <spapadim+@cs.cmu.edu>, 2000.
+# Simos Xenitellis <simos@hellug.gr>, 2000.
+#   250 mensajes traducidos, 19 traducciones difusas, 25 mensajes sin traducir.
+# simos: 319 messages, 17Feb2001. (sgpbea).
+# Simos Xenitellis <simos@gnome.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-13 14:06+0000\n"
+"PO-Revision-Date: 2008-03-13 14:13+0000\n"
+"Last-Translator: Simos Xenitellis <simos@gnome.org>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Μικροεφαρμογή για συσκευές Pilot"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr ""
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr ""
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr ""
+
+#: ../applet/pilot-applet.glade.h:2
+#, fuzzy
+msgid "Choose PDA"
+msgstr "Επιλέξτε Πιλότου"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "GNOME PilotSync Properties"
+msgstr "Ιδιότητες ΣυγχρονΠιλότου του GNOME"
+
+#: ../applet/pilot-applet.glade.h:4
+#, fuzzy
+msgid "Restore PDA"
+msgstr "Αποκατάσταση Πιλότου"
+
+#: ../applet/pilot-applet.glade.h:5
+#, fuzzy
+msgid "_Directory"
+msgstr "Κατάλογος"
+
+#: ../applet/pilot-applet.glade.h:6
+#, fuzzy
+msgid "_Display notices"
+msgstr "Εμφάνιση σημειωμάτων"
+
+#: ../applet/pilot-applet.glade.h:7
+#, fuzzy
+msgid "_Execute when clicked"
+msgstr "Εκτέλεση όταν γίνει κλίκ"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "_PDA ID"
+msgstr ""
+
+#: ../applet/pilot-applet.glade.h:9
+#, fuzzy
+msgid "_Sync cradle"
+msgstr "Φατνίο συγχρονισμού"
+
+#: ../applet/pilot-applet.glade.h:10
+#, fuzzy
+msgid "gnome-pilot progress"
+msgstr "Πρόοδος Συγχρονισμού Πιλότου GNOME"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s Συγχρονισμός"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr ""
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Η αίτηση %ld ολοκληρώθηκε\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Συγχρονισμός : %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Ξεκίνησε\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Τελείωσε : %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Τερματίστηκε\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr ""
+
+#: ../applet/pilot.c:419
+#, fuzzy
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Ο πιλότος συγχρονίζεται.\n"
+"Παρακαλώ περιμένετε να τελειώσει."
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "Αποσυνδεδεμένος.  Παρακαλώ επανεκκινήστε το δαίμονα."
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Αποσυνδεδεμένος από το gpilotd.\n"
+"Παρακαλώ επανεκκινήστε το δαίμονα."
+
+#: ../applet/pilot.c:442
+#, fuzzy
+msgid "gnome-pilot applet"
+msgstr "Εφαρμογίδιο Πιλότου του Gnome"
+
+#: ../applet/pilot.c:444
+#, fuzzy
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "(C) 2000 Free Software Foundation "
+
+#: ../applet/pilot.c:445
+msgid "A PalmOS PDA monitor.\n"
+msgstr ""
+
+#: ../applet/pilot.c:541 ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr ""
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "ακύρωση του %d"
+
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "Αποκατάσταση του %s"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "Δεν υπάρχει κατάλογος για αποκατάσταση από."
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Πιέστε το HotSync στο φατνίο για αποκατάσταση\n"
+"ή ακυρώστε τη διαδικασία."
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "Αίτηση αποκατάστασης απέτυχε"
+
+#: ../applet/pilot.c:754
+#, fuzzy
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Ο συγχρονισμός του Πιλότου είναι σε εξέλιξη.\n"
+"Είσαστε βέβαιοι ότι θέλετε επανεκκίνηση του δαίμονα;"
+
+#: ../applet/pilot.c:764 ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Απόπειρα σύνδεσης με το δαίμονα του GnomePilot"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "Δεν υπάρχει εγγραφή τελευταίου συνχρονισμού."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:803
+msgid "Restore..."
+msgstr "Αποκατάσταση..."
+
+#: ../applet/pilot.c:803
+#, fuzzy
+msgid "Restart"
+msgstr "Επανεκκίνηση δαίμονα"
+
+#: ../applet/pilot.c:803
+#, fuzzy
+msgid "Last log..."
+msgstr "Μητρώο τελευταίου συχγρονισμού..."
+
+#: ../applet/pilot.c:804
+#, fuzzy
+msgid "Preferences..."
+msgstr "Ιδιότητες..."
+
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr ""
+
+#: ../applet/pilot.c:804
+#, fuzzy
+msgid "About"
+msgstr "Περί..."
+
+#: ../applet/pilot.c:826
+#, fuzzy
+msgid "Continue"
+msgstr "Ο συγχρονισμός συνεχίζετε"
+
+#: ../applet/pilot.c:828
+#, fuzzy
+msgid "Pause Daemon"
+msgstr "Παύση δαίμονα"
+
+#: ../applet/pilot.c:848
+#, fuzzy
+msgid "Daemon paused..."
+msgstr "Δαίμονας σε παύση"
+
+#: ../applet/pilot.c:855 ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "Έτοιμος για συγχρονισμό"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Αποσυνδεδεμένος.  Επανεκκινήστε το δαίμονα για επανασύνδεση"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Εκτέλεση του %s αποτυχής"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1300
+#, fuzzy, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "εγκατάσταση του \"%s\""
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "άγνωστος τύπος dnd"
+
+#: ../applet/pilot.c:1318
+#, fuzzy
+msgid "destroy gpilot-applet"
+msgstr "καταστροφή του pilot_applet"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "Δε βρέθηκε το pilot-applet.glade"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr ""
+
+#: ../applet/pilot.schemas.in.h:2
+#, fuzzy
+msgid "Display notices in popup windows"
+msgstr "Εμφάνιση σημειωμάτων"
+
+#: ../capplet/gnome-pilot-capplet.c:215 ../capplet/gpilotd-capplet.glade.h:89
+#, fuzzy
+msgid "gnome-pilot Settings"
+msgstr "Ρυθμίσεις Πιλότου Gnome"
+
+#: ../capplet/gnome-pilot-capplet.c:383 ../capplet/gnome-pilot-capplet.c:463
+msgid "Name"
+msgstr "Όνομα"
+
+#: ../capplet/gnome-pilot-capplet.c:385 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:387
+msgid "Owner"
+msgstr ""
+
+#: ../capplet/gnome-pilot-capplet.c:465
+msgid "Type"
+msgstr "Είδος"
+
+#: ../capplet/gnome-pilot-capplet.c:571
+#, fuzzy
+msgid "Conduit"
+msgstr "Όνομα Αγωγού"
+
+#: ../capplet/gnome-pilot-capplet.c:573
+msgid "Sync Action"
+msgstr "Ενέργεια Συγχρονισμού"
+
+#: ../capplet/gnome-pilot-capplet.c:783
+#, fuzzy, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Είσαστε βέβαιοι ότι θέλετε να διαγράψετε τον πιλότο %s;"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+#, fuzzy
+msgid "_Edit this PDA..."
+msgstr "Επεξεργασία αυτού του πιλότου..."
+
+#: ../capplet/gnome-pilot-capplet.c:808
+#, fuzzy
+msgid "Edit the currently selected PDA"
+msgstr "Διαγραφή αυτού του πιλότου"
+
+#: ../capplet/gnome-pilot-capplet.c:810
+#, fuzzy
+msgid "_Delete this PDA"
+msgstr "Διαγραφή αυτού του πιλότου"
+
+#: ../capplet/gnome-pilot-capplet.c:811
+#, fuzzy
+msgid "Delete the currently selected PDA"
+msgstr "Διαγραφή αυτού του πιλότου"
+
+#: ../capplet/gnome-pilot-capplet.c:944
+#, fuzzy, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Είσαστε βέβαιοι ότι θέλετε να διαγράψετε τη συσκευή %s (%s);"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+#, fuzzy
+msgid "_Edit this device..."
+msgstr "Επεξεργασία αυτής της συσκευής..."
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Edit the currently selected device"
+msgstr ""
+
+#: ../capplet/gnome-pilot-capplet.c:968
+#, fuzzy
+msgid "_Delete this device"
+msgstr "Διαγραφή αυτής της συσκευής"
+
+#: ../capplet/gnome-pilot-capplet.c:969
+#, fuzzy
+msgid "Delete the currently selected device"
+msgstr "Διαγραφή αυτής της συσκευής"
+
+#: ../capplet/gnome-pilot-capplet.c:1131
+#, fuzzy, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Εκκίνηση αγωγού αδύνατη"
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+#, fuzzy
+msgid "_Enable this conduit"
+msgstr "ενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+#, fuzzy
+msgid "Disable the currently selected conduit"
+msgstr "απενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../capplet/gnome-pilot-capplet.c:1174
+#, fuzzy
+msgid "_Disable this conduit"
+msgstr "απενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../capplet/gnome-pilot-capplet.c:1175
+#, fuzzy
+msgid "Enable the currently selected conduit"
+msgstr "ενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../capplet/gnome-pilot-capplet.c:1180 ../capplet/gpilotd-capplet.glade.h:85
+#, fuzzy
+msgid "_Settings..."
+msgstr "Ρθυμίσεις"
+
+#: ../capplet/gnome-pilot-capplet.c:1181
+msgid "Modify the currently selected conduit's settings"
+msgstr ""
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:210
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr ""
+
+#: ../capplet/gnome-pilot-druid.c:488
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Η εγκατάσταση δεν ολοκληρώθηκε και οι ρυθμίσεις δε\n"
+"θα αποθηκευτούν. Σίγουρα τερματισμός;"
+
+#: ../capplet/gnome-pilot-druid.c:611
+#, fuzzy, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Τα ακόλουθα δεδομένα πρόκειται να σταλούν στον πιλότο.\n"
+"Όνομα χρήστη: %s\n"
+"ID: %d\n"
+"Παρακαλώ τοποθετήστε το πιλότο στο %s (%s) και πιέστε το κουμπί HotSync."
+
+#: ../capplet/gnome-pilot-druid.c:636
+#, fuzzy, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Επίκειται ανάκτηση ΟνόματοςΧρήστη και Ταυτότητα από τον πιλότο.\n"
+"Παρακαλώ τοποθετήστε τον Πιλότο στο %s (%s) και πιέστε το κουμπί HotSync."
+
+#: ../capplet/gnome-pilot-druid.c:652
+msgid "Failed sending request to gpilotd"
+msgstr "Αποτυχία αποστολής αίτησης στον gpilotd"
+
+#: ../capplet/gnome-pilot-druid.c:803
+#, fuzzy, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Επιτυχής ανάκτηση ΟνόματοςΧρήστη και Ταυτότητα από τον πιλότο.\n"
+"ΌνομαΧρήστη: %s\n"
+"Ταυτότητα: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:432
+#, c-format
+msgid "Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+
+#: ../capplet/gnome-pilot-pdialog.c:467
+#, fuzzy
+msgid "The request to get PDA ID failed"
+msgstr "Αποτυχία της αίτησης ανάκτησης της ταυτότητας του πιλότου"
+
+#: ../capplet/gnome-pilot-pdialog.c:511
+#, fuzzy
+msgid "The request to set PDA ID failed"
+msgstr "Αποτυχία της αίτησης καθορισμού της ταυτότητας του πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+#, fuzzy
+msgid "/dev/ttyS0"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+#, fuzzy
+msgid "/dev/ttyS1"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+#, fuzzy
+msgid "/dev/ttyUSB0"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+#, fuzzy
+msgid "/dev/ttyUSB1"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+#, fuzzy
+msgid "<b>Conduit Actions</b>"
+msgstr "Επιλογές Αγωγού Σημειωμάτων"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+#, fuzzy
+msgid "<b>Conduit Settings</b>"
+msgstr "Ρυθμίσεις Αγωγού..."
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+#, fuzzy
+msgid "<b>PDA Attributes</b>"
+msgstr "Ιδιότητες Πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+#, fuzzy
+msgid "<b>PDA Identification</b>"
+msgstr "Προσδιορισμός Πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "BIG5"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "CP1252"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+#, fuzzy
+msgid "C_harset of PDA:"
+msgstr "ανάκτηση από τον πιλότο"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+#, fuzzy
+msgid "C_onduits"
+msgstr "Όνομα Αγωγού"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Choose Device"
+msgstr "Επιλέξτε Συσκευή"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:20
+#, fuzzy
+msgid "Conduit Settings"
+msgstr "Ρυθμίσεις Αγωγού..."
+
+#: ../capplet/gpilotd-capplet.glade.h:21
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+#, fuzzy
+msgid "D_isable"
+msgstr "Απενεργ."
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+#, fuzzy
+msgid "De_vices"
+msgstr "Συσκευές"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+#, fuzzy
+msgid "Description:"
+msgstr "Επιλογές Αγωγού Σημειωμάτων"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Device Settings"
+msgstr "Ρυθμίσεις συσκευής"
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+#, fuzzy
+msgid "Device:"
+msgstr "Συσκευές"
+
+#: ../capplet/gpilotd-capplet.glade.h:33 ../capplet/util.c:74
+#: ../capplet/util.c:438
+msgid "Disabled"
+msgstr "Ανενεργό"
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+#, fuzzy
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Είσαστε βέβαιοι ότι θέλετε να διαγράψετε τον πιλότο %s;"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "GB18030"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "GBK"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Get the Owner's name and ID from the PDA"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+#, fuzzy
+msgid "I_rDA"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Initial Sync"
+msgstr "Αρχικός Συγχρονισμός"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:115
+msgid "None"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+#, fuzzy
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Όνομα Χρήστη και Ταυτότητα για αποθήκευση στον Πιλότο."
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+#, fuzzy
+msgid "PDA Attributes"
+msgstr "Ιδιότητες Πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+#, fuzzy
+msgid "PDA Identification"
+msgstr "Προσδιορισμός Πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+#, fuzzy
+msgid "PDA Settings"
+msgstr "Ρυθμίσεις Πιλότου"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+#, fuzzy
+msgid "P_DA:"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Θύρα"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "S_peed:"
+msgstr "Τα_χύτητα:"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid "Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set the character set used on your PDA."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all PDA files to be stored."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "Επιτυχία"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "The name for your PDA.  It is only used for identification."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "Ti_meout:"
+msgstr "_Λήξη χρόνου:"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "Καλωσορίσατε στο gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Όπως φαίνεται, εκτελείτε το gnome-pilot για πρώτη φορά.\n"
+"Τα ακόλουθα βήματα θα ρυθμίσουν το gnome-pilot για συγχρονισμό.\n"
+"Μπορείτε πάντα να αλλάξετε τις επιλογές αργότερα από τη\n"
+"μικροεφαρμογή Συσκευές PalmOS στις Προτιμίσεις συστήματος.\n"
+"\n"
+"Πιέστε 'Επόμενο' για συνέχεια.\n"
+"Πιέστε 'Άκυρο' για έξοδο."
+
+#: ../capplet/gpilotd-capplet.glade.h:66
+#, fuzzy
+msgid "_Action:"
+msgstr "Ενέργεια Συγχρονισμού"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+#, fuzzy
+msgid "_Add..."
+msgstr "Νέο..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Bluetooth"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+#, fuzzy
+msgid "_Delete"
+msgstr "Διαγραφή"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Device:"
+msgstr "_Συσκευή:"
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Edit..."
+msgstr "_Επεξεργασία..."
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+#, fuzzy
+msgid "_Enable"
+msgstr "Ενεργ."
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+#, fuzzy
+msgid "_Get from PDA"
+msgstr "ανάκτηση από τον πιλότο"
+
+#: ../capplet/gpilotd-capplet.glade.h:74
+#, fuzzy
+msgid "_IrDA"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:75
+#, fuzzy
+msgid "_Local folder:"
+msgstr "Τοπική μορφή"
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_Name of PDA:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_Name:"
+msgstr "Ό_νομα:"
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+#, fuzzy
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "Όχι, δεν έχω ξαναχρησιμοποιήσει λογισμικό συγχρονισμού με αυτόν τον πιλότο."
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+#, fuzzy
+msgid "_One time action:"
+msgstr "Επιλογές Αγωγού Σημειωμάτων"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_Owner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_PDA ID:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+#, fuzzy
+msgid "_PDAs"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:83
+#, fuzzy
+msgid "_Send to PDA"
+msgstr "αποστολή στο πιλότο"
+
+#: ../capplet/gpilotd-capplet.glade.h:84
+msgid "_Serial"
+msgstr "_Σειριακό"
+
+#: ../capplet/gpilotd-capplet.glade.h:86
+msgid "_Type:"
+msgstr "_Είδος:"
+
+#: ../capplet/gpilotd-capplet.glade.h:87
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:88
+#, fuzzy
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "Ναί, έχω ξαναχρησιμοποιήσει λογισμικό συγχρονισμού με αυτόν τον πιλότο."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Εκκίνηση δρυίδη μόνο"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Σφάλμα αρχικοποίησης του εφαρμογιδίου ελέγχου gpilotd"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+#, fuzzy
+msgid "Error loading PDA state, aborting"
+msgstr "Σφάλμα ανάγνωσης κατάστασης του πιλότου, διακοπή"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Σύνδεση με δαίμονα του ΠιλότοςGNOME αδύνατη"
+
+#: ../capplet/gpilotd-control-applet.c:132
+#, fuzzy
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr "Εκτέλεση δρυίδη αδύνατη εάν υπάρχουν ήδη ρυθμίσεις φατνίων ή πιλότων"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Ρύθμιση συσκευών PalmOS"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "Συσκευές PalmOS"
+
+#: ../capplet/util.c:81 ../capplet/util.c:440
+msgid "Enabled"
+msgstr "Ενεργό"
+
+#: ../capplet/util.c:238
+msgid "You must have at least one device setup"
+msgstr "Πρέπει να έχετε ρυθμίσεις για μια τουλάχιστον συσκευή"
+
+#: ../capplet/util.c:411
+msgid "Synchronize"
+msgstr "Συγχρονισμός"
+
+#: ../capplet/util.c:412
+#, fuzzy
+msgid "Copy from PDA"
+msgstr "Αντιγραφή από τον πιλότο"
+
+#: ../capplet/util.c:413
+#, fuzzy
+msgid "Copy to PDA"
+msgstr "Αντιγραφή Σε Πιλότο"
+
+#: ../capplet/util.c:414
+#, fuzzy
+msgid "Merge from PDA"
+msgstr "Συγχώνευση Από Πιλότο"
+
+#: ../capplet/util.c:415
+#, fuzzy
+msgid "Merge to PDA"
+msgstr "Συγχώνευση Σε Πιλότο"
+
+#: ../capplet/util.c:418
+msgid "Use conduit settings"
+msgstr "Χρήση ρυθμίσεων αγωγού"
+
+#: ../capplet/util.c:426
+msgid "USB"
+msgstr ""
+
+#: ../capplet/util.c:427
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:428
+msgid "Network"
+msgstr "Δίκτυο"
+
+#: ../capplet/util.c:429
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:430
+msgid "Serial"
+msgstr "Σειριακό"
+
+#: ../capplet/util.c:478
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Ο βασικός κατάλογος υπάρχει αλλά δεν έχετε κατάλληλα δικαιώματα.\n"
+"Παρακαλώ διορθώστε τα ή επιλέξτε άλλο κατάλογο"
+
+#: ../capplet/util.c:483
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Ο βασικός κατάλογος υπάρχει αλλά δεν είναι κατάλογος.\n"
+"Παρακαλώ κάντε τον κατάλογο ή επιλέξτε άλλον"
+
+#: ../capplet/util.c:490
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Η δημιουργία του βασικού καταλόγου απέτυχε.  Παρακαλώ βεβαιωθείτε\n"
+"ότι έχετε κατάλληλα δικαιώματα στη δοσμένη διαδρομή ή επιλέξτε άλλο κατάλογο"
+
+#: ../capplet/util.c:495
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Η διαδρομή για το βασικό κατάλογο είναι άκυρη.\n"
+"Παρακαλώ επιλέξτε άλλο κατάλογο"
+
+#: ../capplet/util.c:523
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.  Please enter a valid "
+"identifier or select from the available options."
+msgstr ""
+
+#: ../capplet/util.c:647
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr ""
+
+#: ../capplet/util.c:658
+msgid "Read/Write permissions failed on"
+msgstr "Δεν έχετε δικαιώματα εγγραφής/ανάγνωσης στο"
+
+#: ../capplet/util.c:660
+msgid "Check the permissions on the device and retry"
+msgstr "Ελέγξτε τα δικαιώματα πρόσβασης συσκευής και ξαναπροσπαθήστε"
+
+#: ../capplet/util.c:675 ../gpilotd/gpilotd.c:1332
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "Έλεγχος για διεγραμμένες βάσεις δεδομένων"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "Μετανομασία του %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "σε %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "Το %s δεν έχει τροποποιηθεί από τον τελευταίο συγχρονισμό"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "Αντιγραφή του %s"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Δημιουργία αρχείου %s για αντίγραφο ανεπιτυχής"
+
+#: ../conduits/backup/backup_conduit.c:736
+msgid "Collecting restore information..."
+msgstr ""
+
+#: ../conduits/backup/backup_conduit.c:860
+#, fuzzy
+msgid "_Backup directory:"
+msgstr "Κατάλογος αντιγράφων"
+
+#: ../conduits/backup/backup_conduit.c:873
+#, fuzzy
+msgid "Backup directory"
+msgstr "Κατάλογος αντιγράφων"
+
+#: ../conduits/backup/backup_conduit.c:875
+#, fuzzy
+msgid "O_nly backup changed bases"
+msgstr "Αντιγραφή μόνο αλλαγμένων αρχείων"
+
+#: ../conduits/backup/backup_conduit.c:885
+#, fuzzy
+msgid "Only backup changed bases"
+msgstr "Αντιγραφή μόνο αλλαγμένων αρχείων"
+
+#: ../conduits/backup/backup_conduit.c:887
+#, fuzzy
+msgid "_Remove local base if deleted on pilot"
+msgstr "Διαγραφή τοπικού αρχείου όταν διαγραφεί στον πιλότο"
+
+#: ../conduits/backup/backup_conduit.c:897
+#, fuzzy
+msgid "Remove local base if deleted on pilot"
+msgstr "Διαγραφή τοπικού αρχείου όταν διαγραφεί στον πιλότο"
+
+#: ../conduits/backup/backup_conduit.c:899
+#, fuzzy
+msgid "# of old backups to _keep"
+msgstr "# από παλαιά αντίγραφα ασφαλείας να διατηρηθούν"
+
+#: ../conduits/backup/backup_conduit.c:910
+#, fuzzy
+msgid "# of old backups to keep"
+msgstr "# από παλαιά αντίγραφα ασφαλείας να διατηρηθούν"
+
+#: ../conduits/backup/backup_conduit.c:948
+#, fuzzy
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Ο βασικός κατάλογος υπάρχει αλλά δεν έχετε κατάλληλα δικαιώματα.\n"
+"Παρακαλώ διορθώστε τα ή επιλέξτε άλλο κατάλογο"
+
+#: ../conduits/backup/backup_conduit.c:953
+#, fuzzy
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Ο βασικός κατάλογος υπάρχει αλλά δεν είναι κατάλογος.\n"
+"Παρακαλώ κάντε τον κατάλογο ή επιλέξτε άλλον"
+
+#: ../conduits/backup/backup_conduit.c:960
+#, fuzzy
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Η δημιουργία του βασικού καταλόγου απέτυχε.  Παρακαλώ βεβαιωθείτε\n"
+"ότι έχετε κατάλληλα δικαιώματα στη δοσμένη διαδρομή ή επιλέξτε άλλο κατάλογο"
+
+#: ../conduits/backup/backup_conduit.c:965
+#, fuzzy
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Η διαδρομή για το βασικό κατάλογο είναι άκυρη.\n"
+"Παρακαλώ επιλέξτε άλλο κατάλογο"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, fuzzy, c-format
+msgid "Install of %s failed"
+msgstr "Η εγκατάσταση του %s απέτυχε"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Εγκατάσταση του %s από το %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Εγκατάσταση του %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Άμεση εγκατάσταση"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Η εγκατάσταση αναβλήθηκε"
+
+#: ../conduits/file/gpilot_install_file.c:46
+#, fuzzy
+msgid "PDA to install to"
+msgstr "Πιλότος για εγκατάσταση προς"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr ""
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+#, fuzzy
+msgid "Unable to get PDA names"
+msgstr "Ανάκτηση ονομάτων πιλότων ανεπιτυχής"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Αποτυχία στα ακόλουθα αρχεία :\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Εγκατάσταση στο %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Δεν υπάρχουν αρχεία προς εγκατάσταση"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Πιέστε το HotSync στο φατνίο για εγκατάσταση\n"
+"ή ακυρώστε τη διαδικασία."
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+#, fuzzy
+msgid "Gnome-Pilot daemon"
+msgstr "Ρυθμίσεις Πιλότου Gnome"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Η αρχικοποίηση των αγωγών απέτυχε, ακύρωση διαδικασίας"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+#, fuzzy
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Η διαγραφή όλων των εγγραφών από τη βάση δεδομένων του πιλότου απέτυχε, "
+"ακύρωση."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Ο αγωγός δεν επέστρεψε εγγραφή"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Η διαγραφή όλων των εγγραφών από την τοπική βάση δεδομένων απέτυχε, ακύρωση."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Σφάλμα στον αγωγό, δε βρέθηκε η εγγραφή που μόλις δημιουργήθηκε"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+#, fuzzy
+msgid "Copy to PDA failed!"
+msgstr "Αντιγραφή στο πιλότο"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+#, fuzzy
+msgid "Copy from PDA failed!"
+msgstr "Αντιγραφή από τον πιλότο"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+#, fuzzy
+msgid "Merge to PDA failed!"
+msgstr "Συγχώνευση στο πιλότο"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+#, fuzzy
+msgid "Merge from PDA failed!"
+msgstr "Συγχώνευση από τον πιλότο"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+#, fuzzy
+msgid "Synchronization failed!"
+msgstr "Τέλος συγχρονισμού"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Δεν μπόρεσα να ανοίξω τη συσκευή %s (%s): αιτία: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"Το GnomePilot δε μπόρεσε να ανοίξει τη συσκευή %s (%s).\n"
+"Αιτία: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:449
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr ""
+
+#: ../gpilotd/gnome-pilot-structures.c:539
+#: ../gpilotd/gnome-pilot-structures.c:590
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Άγνωστος τύπος συσκευής"
+
+#: ../gpilotd/gnome-pilot-structures.c:663
+msgid "Number of devices is configured to 0"
+msgstr "Ο αριθμός συσκευών είναι 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:665
+#, fuzzy
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Δεν υπάρχουν ρυθμίσεις για κανένα φατνίο.\n"
+"Παρακαλώ εκτελέστε το εφαρμογίδιο ελέγχου του gpilotd (με gnomecc)\n"
+"για ρύθμιση του gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:686
+msgid "No accessible devices available"
+msgstr "Δεν υπάρχουν προσβάσιμες συσκευές"
+
+#: ../gpilotd/gnome-pilot-structures.c:701
+#, fuzzy
+msgid "Number of PDAs is configured to 0"
+msgstr "Ο αριθμός των ρυθμισμένων πιλότων είναι 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:703
+#, fuzzy
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Δεν υπάρχουν ρυθμίσεις για κανένα πιλότο.\n"
+"Παρακαλώ εκτελέστε το εφαρμογίδιο ελέγχου του gpilotd (με gnomecc)\n"
+"για ρύθμιση του gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:764 ../gpilotd/gpilotd.c:687
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:236
+#, fuzzy
+msgid "Unable to bind to PDA"
+msgstr "Ανεπιτυχής σύνδεση στο πιλότο"
+
+#: ../gpilotd/gpilotd.c:374
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:389
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:480
+#, fuzzy, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Άγνωστος πιλότος, κανένα όνομα χρήστη/ταυτότητα δε συμφωνεί με το %ld"
+
+#: ../gpilotd/gpilotd.c:487
+msgid "Use gnomecc to configure PDA"
+msgstr ""
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:492
+#, fuzzy, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Άγνωστος πιλότος - κανένας πιλότος δε συμφωνεί με την ταυτότητα %ld\n"
+"Χρησιμοποιείστε το gnomecc για τη ρύθμιση της ταυτότητας του πιλότου."
+
+#: ../gpilotd/gpilotd.c:516
+#, fuzzy, c-format
+msgid "Device %s has %d events"
+msgstr "Το φατνίο %s έχει %d γεγονότα"
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Setting userinfo..."
+msgstr "Αποθήκευση πληροφ. χρήστη..."
+
+#: ../gpilotd/gpilotd.c:534
+msgid "Sync continues"
+msgstr "Ο συγχρονισμός συνεχίζετε"
+
+#: ../gpilotd/gpilotd.c:553
+msgid "Getting userinfo..."
+msgstr "Ανάκτηση πληροφ. χρήστη..."
+
+#: ../gpilotd/gpilotd.c:615
+#, fuzzy
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "Το κουμπί HotSync πιέσθηκε, συγχρονισμός του πιλότου"
+
+#: ../gpilotd/gpilotd.c:617
+#, fuzzy
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Το κουμπί HotSync πιέσθηκε, συγχρονισμός του πιλότου"
+
+#: ../gpilotd/gpilotd.c:619
+#, fuzzy
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "Το κουμπί HotSync πιέσθηκε, συγχρονισμός του πιλότου"
+
+#: ../gpilotd/gpilotd.c:621
+#, fuzzy, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "Η Ταυτότητα Πιλότου είναι %ld, το όνομα είναι %s, ο ιδιοκτήτης είναι %s"
+
+#: ../gpilotd/gpilotd.c:631
+#, c-format
+msgid "On host %s\n"
+msgstr "Στον Η/Υ %s\n"
+
+#: ../gpilotd/gpilotd.c:633
+#, c-format
+msgid "On host %d\n"
+msgstr "Στον Η/Υ %d\n"
+
+#: ../gpilotd/gpilotd.c:652
+msgid "Synchronization ended"
+msgstr "Τέλος συγχρονισμού"
+
+#: ../gpilotd/gpilotd.c:655
+msgid "Synchronization ended early"
+msgstr "Πρόωρο τέλος συγχρονισμού"
+
+#: ../gpilotd/gpilotd.c:701
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:724
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Ο βασικός κατάλογος %s είναι άκυρος.\n"
+"Παρακαλώ διορθώστε τον ή χρησιμοποιήστε το gnomecc για να επιλέξετε άλλον."
+
+#: ../gpilotd/gpilotd.c:737
+#, fuzzy, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Άγνωστος πιλότος - κανένας πιλότος δε συμφωνεί με την ταυτότητα %ld\n"
+"Χρησιμοποιείστε το gnomecc για τη ρύθμιση της ταυτότητας του πιλότου."
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:788
+#, fuzzy
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Προέκυψε σφάλμα κατά την ανάκτηση την πληροφ. χρήστη από τον πιλότο"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:797
+#, fuzzy
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Προέκυψε σφάλμα κατά την ανάκτηση την πληροφ. χρήστη από τον πιλότο"
+
+#: ../gpilotd/gpilotd.c:802
+#, fuzzy, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Ολοκλήρωση γεγονότων για το φατνίο %s (%s)"
+
+#: ../gpilotd/gpilotd.c:863
+#, c-format
+msgid "Woke on %s"
+msgstr "Αφύπνηση σε %s"
+
+#: ../gpilotd/gpilotd.c:944
+#, fuzzy, c-format
+msgid "Woke on network: %s"
+msgstr "Αφύπνηση σε %s"
+
+#: ../gpilotd/gpilotd.c:1504
+#, fuzzy, c-format
+msgid "Watching %s (network)"
+msgstr "Παρακολούθηση του %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1506
+#, fuzzy, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "Παρακολούθηση του %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1508
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Παρακολούθηση του %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1522
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Τερματισμός (σήμα SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1531
+msgid "Exiting (caught SIGINT)..."
+msgstr "Τερματισμός (σήμα SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1563
+msgid "Unable to create file installation queue directory"
+msgstr "Αδύνατη η δημιουργία καταλόγου ουράς εγκατάστασης αρχείων"
+
+#: ../gpilotd/gpilotd.c:1613
+msgid "Shutting down devices"
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:1615
+msgid "Rereading configuration..."
+msgstr "Επανανάγνωση ρυθμίσεων..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "αγωγός μη-αντιγραφή στον κατάλογο αγωγών αντιγραφής"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr ""
+
+#: ../gpilotd/manager.c:279
+#, fuzzy, c-format
+msgid "%s backup failed\n"
+msgstr "Η αντιγραφή του %s απέτυχε!"
+
+#: ../gpilotd/manager.c:305
+#, fuzzy
+msgid "Collecting synchronization info..."
+msgstr "Πρώτος συγχρονισμός αγωγού %s..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Συγχρονισμός με %s\n"
+
+#: ../gpilotd/manager.c:446
+#, fuzzy, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Αντιγραφή στο πιλότο"
+
+#: ../gpilotd/manager.c:464
+#, fuzzy, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Αντιγραφή από τον πιλότο"
+
+#: ../gpilotd/manager.c:482
+#, fuzzy, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Συγχώνευση στο πιλότο"
+
+#: ../gpilotd/manager.c:500
+#, fuzzy, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Συγχώνευση από τον πιλότο"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Πρώτος συγχρονισμός αγωγού %s..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "άγνωστη ενέργεια συγχρονισμού (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Εκκίνηση %d αγωγών..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Άγνωστος αγωγός \"%s\" στη ρύθμιση!"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Εκκίνηση του αγωγού \"%s\" ανεπιτυχής!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Εκκίνηση του αγωγού \"%s\" ανεπιτυχής!\n"
+
+#: ../gpilotd/manager.c:783
+#, fuzzy, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Αποθήκευση πληροφ. χρήστη..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Αίτηση για αγωγό %s, ο οποίος δε βρέθηκε"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Δεν επιτρέπεται αίτηση για τον αγωγό %s"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(άγνωστη βάση δεδομένων)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr ""
+
+#: ../gpilotd/queue_io.c:436
+#, fuzzy, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "σφάλμα: δε βρέθηκε αίτηση για τον πιλότο %d, αίτηση %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "δεν υποστηρίζεται ανάγνωση αρθρωμάτων, τερματισμός!"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Λήψη Πληροφοριών Συστήματος"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Παύση δαίμονα"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Συνέχιση του δαίμονα"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Επανεκκίνηση δαίμονα"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Ορίστε ταυτότητα χρήστη και όνομα"
+
+#: ../utils/gpilotd-client.c:44
+#, fuzzy
+msgid "ID for the PDA"
+msgstr "Ταυτότητα για τον πιλότο"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Εγκατάσταση αρχείου"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "ΑΡΧΕΙΟ"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Κατάλογος επαναφοράς"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "ΚΑΤΑΛΟΓΟΣ"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Εκτέλεση αγωγού"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "ΑΓΩΓΟΣ"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Χρήστης για να τεθεί"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "ΧΡΗΣΤΗΣ"
+
+#: ../utils/gpilotd-client.c:49
+#, fuzzy
+msgid "Monitor the specified PDA's actions"
+msgstr "Παρακολούθηση των ορισμένων ενεργειών του πιλότου"
+
+#: ../utils/gpilotd-client.c:50
+#, fuzzy
+msgid "Monitor all PDAs"
+msgstr "Παρακολούθηση όλων των πιλότων"
+
+#: ../utils/gpilotd-client.c:51
+#, fuzzy
+msgid "list PDAs by login (all for all pilots)"
+msgstr "παράθεση όλων των πιλότων κατά τη σύνδεσή τους (όλα για όλους του πιλότους)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "ΣΥΝΔΕΣΗ"
+
+#: ../utils/gpilotd-client.c:52
+#, fuzzy
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Ορισμός πιλότου πάνω στον οποίο να λειτουργήσει (εξ' ορισμού το ΟΠιλότοςΜου)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "ΌΝΟΜΑΠΙΛΌΤΟΥ"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Ορισμός φατνίου πάνω στο οποίο να λειτουργήσει (εξ ορισμού το Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "ΟΝΟΜΑΦΑΤΝΙΟΥ"
+
+#: ../utils/gpilotd-client.c:54
+#, fuzzy
+msgid "List the specified PDA's bases"
+msgstr "Εμφάνιση λίστας με ορισμένες βάσεις του πιλότου"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"ΠΡΟΣΕΞΤΕ!!!\n"
+"Αυτό το εργαλείο είναι συγκεκριμμένες λειτουργείες του πακέτου gnome-pilot.\n"
+"Αν δεν είστε σίγουρος για το τί κάνετε, μη χρησιμοποιείτε αυτό το εργαλείο."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "εμφάνιση λίστας με διαθέσιμους αγωγούς"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "αγωγος προς χρήση"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "εμφάνιση λίστας με όλες τις ιδιότητες"
+
+#: ../utils/gpilotdcm-client.c:29
+#, fuzzy
+msgid "specify PDA to operate on"
+msgstr "ορισμός πιλότου προς χρήση"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PDA_ID"
+msgstr ""
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "εμφάνιση ιδιοτήτων"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "εμφάνιση διαθέσιμων αγωγών και της κατάστασής των"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "ενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "απενεργοποίηση συγκεκριμένου αγωγού"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "ενεργοποίηση και ορισμός αρχικού συνχρονιμού σε αργό"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "αρχικοποίηση και καταστροφή του αγωγού"
+
+#: ../applet/gpilot-applet.desktop.in.h:1
+#, fuzzy
+msgid "PilotSync"
+msgstr "Πιλότοι"
+
+#: ../applet/gpilot-applet.desktop.in.h:2
+msgid "Synchroniser for PalmOS PDAs"
+msgstr ""
+

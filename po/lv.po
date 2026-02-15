@@ -1,0 +1,1655 @@
+# translation of gnome-pilot.HEAD.po to Latviešu
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Raivis Dejus <orvils@gmail.com>, 2007.
+# Didzis <didzisputris@inbox.lv>, 2007.
+# Ansis <ansisa@kernel.lv>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-07-27 16:09+0300\n"
+"PO-Revision-Date: 2007-05-12 22:01+0300\n"
+"Last-Translator: Ansis <ansisa@kernel.lv>\n"
+"Language-Team: Latviešu <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot aplets"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "Sinhronizē jūsu datus uz PalmOS ierīces"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "Utilītes"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose PDA"
+msgstr "Izvēlieties PDA"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "GNOME PilotSync Properties"
+msgstr "GMONE Pilot sinhronizācijas parametri"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Restore PDA"
+msgstr "Atjaunot PDA"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "_Directory"
+msgstr "_Direktorija"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "_Display notices"
+msgstr "De_monstrēt paziņojumus"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "_Execute when clicked"
+msgstr "_Izpildīt, kad uzklikšķināts"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "_PDA ID"
+msgstr "_PDA ID"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "_Sync cradle"
+msgstr "_Sinhronizēt graudošanas veltnīti"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot progress"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s sinhronizē"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr "Datubāze %v no %u"
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Pieprsījums %ld ir izpildīts\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s sinhronizē : %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s sākas\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s izpildīts : %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: beidzas\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr "%v no %u ieraksts"
+
+#: ../applet/pilot.c:419
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA sinhronizējas.\n"
+"Lūdzu uzgaidiet."
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "Nav savienots. Lūdzu pārlādējiet dēmonu."
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Nav savienots ar gpilotd.\n"
+"Lūdzu pārlādējiet dēmonu."
+
+#: ../applet/pilot.c:442
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot aplets"
+
+#: ../applet/pilot.c:444
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Autortiesības 2000-2006 brīvās programmatūras fonds."
+
+#: ../applet/pilot.c:445
+msgid "A PalmOS PDA monitor.\n"
+msgstr "PalmOS PDA pārraugs.\n"
+
+#: ../applet/pilot.c:541 ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Kļūda parādot palīdzību: %s"
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "Atceļ %d"
+
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "Atjauno %s"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "Nav direktorijas no kuras atjaunot."
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Spiediet sinhronizēt uz graudošanas veltnīti lai atjaunotu\n"
+" vai atceliet darbību."
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "Atjaunošanas pieprasījums neizdevās"
+
+#: ../applet/pilot.c:754
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Notiek PDA sinhronizācija.\n"
+"Vai tiešām vēlaties pārlādēt dēmonu?"
+
+#: ../applet/pilot.c:764 ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Mēģina savienoties ar GnomePilot dēmonu"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "Ierakstā nav pēdējā sinhronizācija."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:803
+msgid "Restore..."
+msgstr "Atjaunot..."
+
+#: ../applet/pilot.c:803
+msgid "Restart"
+msgstr "Pārlādēt"
+
+#: ../applet/pilot.c:803
+msgid "Last log..."
+msgstr "Pēdējā reģistrācija..."
+
+#: ../applet/pilot.c:804
+msgid "Preferences..."
+msgstr "Uzstādījumi..."
+
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr "Palīdzība"
+
+#: ../applet/pilot.c:804
+msgid "About"
+msgstr "Par"
+
+#: ../applet/pilot.c:826
+msgid "Continue"
+msgstr "Turpināt"
+
+#: ../applet/pilot.c:828
+msgid "Pause Daemon"
+msgstr "Apturēt dēmonu"
+
+#: ../applet/pilot.c:848
+msgid "Daemon paused..."
+msgstr "Dēmons apturēts..."
+
+#: ../applet/pilot.c:855 ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "Gatavs sinhronizācijai"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Nav savienots. Pārlādējiet dēmonu, lai savienotos"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s izpilde neizdevās"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1300
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "instalē \"%s\" uz \"%s\""
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "nezināms dnd tips"
+
+#: ../applet/pilot.c:1318
+msgid "destroy gpilot-applet"
+msgstr "Likvidēt gpilot-apletu"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "Nevar atrast pilot-aplet.glade"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Pavēliet izpildīt, kad aplets ir uzklikšķināts"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Demonstrēt paziņojumus izlecošā logā"
+
+#: ../capplet/gnome-pilot-capplet.c:212 ../capplet/gpilotd-capplet.glade.h:88
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot uzstādījumi"
+
+#: ../capplet/gnome-pilot-capplet.c:380 ../capplet/gnome-pilot-capplet.c:460
+msgid "Name"
+msgstr "Nosaukums"
+
+#: ../capplet/gnome-pilot-capplet.c:382 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:384
+msgid "Owner"
+msgstr "Īpašnieks"
+
+#: ../capplet/gnome-pilot-capplet.c:462
+msgid "Type"
+msgstr "Tips"
+
+#: ../capplet/gnome-pilot-capplet.c:568
+msgid "Conduit"
+msgstr "Slēgums"
+
+#: ../capplet/gnome-pilot-capplet.c:570
+msgid "Sync Action"
+msgstr "Sinhronizācijas darbība"
+
+#: ../capplet/gnome-pilot-capplet.c:780
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Vai tiešām vēlaties izdzēst PDA `%s'?"
+
+#: ../capplet/gnome-pilot-capplet.c:804
+msgid "_Edit this PDA..."
+msgstr "R_ediģēt PDA..."
+
+#: ../capplet/gnome-pilot-capplet.c:805
+msgid "Edit the currently selected PDA"
+msgstr "Rediģēt izvēlēto PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+msgid "_Delete this PDA"
+msgstr "D_zēst PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:808
+msgid "Delete the currently selected PDA"
+msgstr "Dzēst izvēlēto PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:941
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Vai tiešām vēlaties dzēst %s ierīci?"
+
+#: ../capplet/gnome-pilot-capplet.c:962
+msgid "_Edit this device..."
+msgstr "R_ediģēt ierīci..."
+
+#: ../capplet/gnome-pilot-capplet.c:963
+msgid "Edit the currently selected device"
+msgstr "Rediģēt izvēlēto ierīci"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+msgid "_Delete this device"
+msgstr "D_zēst ierīci"
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Delete the currently selected device"
+msgstr "Dzēst izvēlēto ierīci"
+
+#: ../capplet/gnome-pilot-capplet.c:1128
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Nav iespējams piemērot %s slēgumu."
+
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "_Enable this conduit"
+msgstr "_Ieslēgt šo slēgumu"
+
+#: ../capplet/gnome-pilot-capplet.c:1169
+msgid "Disable the currently selected conduit"
+msgstr "Izslēgt pašlaik atzīmēto slēgumu"
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+msgid "_Disable this conduit"
+msgstr "I_zslēgt šo slēgumu"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+msgid "Enable the currently selected conduit"
+msgstr "Ieslēgt pašlaik atzīmēto slēgumu"
+
+#: ../capplet/gnome-pilot-capplet.c:1177 ../capplet/gpilotd-capplet.glade.h:84
+msgid "_Settings..."
+msgstr "_Uzstādījumi..."
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+msgid "Modify the currently selected conduit's settings"
+msgstr "Izmainīt pašlaik atzīmētā slēguma konfigurāciju"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:207
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr ""
+"Nav iespējams izveidot PDA konfigurācijas logu - nepareiza slēgumu "
+"konfigurācija."
+
+#: ../capplet/gnome-pilot-druid.c:478
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Iestatīšana nav izpildīta un uzstādijumi netiks saglabāti. Vai tiešām "
+"vēlaties beigt darbu?"
+
+#: ../capplet/gnome-pilot-druid.c:600
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Par sūtīšanu sekojošos datus uz PDA.\n"
+"Īpašnieka nosaukums: %s\n"
+"PDA ID: %d\n"
+"Lūdzu ielieciet PDA %s (%s) un nospiediet karsto sinhronizācijas pogu."
+
+#: ../capplet/gnome-pilot-druid.c:624
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Par PDA īpašnieka nosaukuma un ID iegūšanu.\n"
+"Lūdzu ielieciet PDA %s (%s) un nospiediet karsto sinhronizācijas pogu."
+
+#: ../capplet/gnome-pilot-druid.c:640
+msgid "Failed sending request to gpilotd"
+msgstr "Sūtīšanas pieprasījums uz gpilotd nav izdevies"
+
+#: ../capplet/gnome-pilot-druid.c:791
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Veiksmīgi iegūts īpašnieka nosaukums un ID no PDA\n"
+"Īpašnieka nosaukums: %s\n"
+"PDA ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:429
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Lūdzu ielieciet PDA %s (%s) un spiediet karsto sinhronizācijas pogu vai "
+"atceliet darbību."
+
+#: ../capplet/gnome-pilot-pdialog.c:464
+msgid "The request to get PDA ID failed"
+msgstr "Pieprasījums dabūt PDA neizdevies"
+
+#: ../capplet/gnome-pilot-pdialog.c:508
+msgid "The request to set PDA ID failed"
+msgstr "Pieprasījums uzstādīt PDA ID neizdevies"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyUSB0"
+msgstr "/dev/ttyUSB0"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyUSB1"
+msgstr "/devttyUSB1"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Slēguma darbības</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Slēguma konfigurācija</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA atribūti</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA identifikācija </b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\"> Kura ierīce jālieto šij darbībai? </"
+"span>\n"
+"\n"
+"Jo jums ir vairākas savienojumu ierīces definētas, jums nepieciešams norādīt "
+"kura tiks lietota priekš šīs operācijas."
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "BIG5"
+msgstr "BIG5"
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "CP1252"
+msgstr "CP1252"
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid "C_harset of PDA:"
+msgstr "Raks_tuzīmju kopa no PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid "C_onduits"
+msgstr "_Slēgumi"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Choose Device"
+msgstr "Izvēlieties ierīci"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Izvēlieties šo opciju, ja jūs esat izmantojis sinhronizācijas programmatūru "
+"kaut vai uz cita datora"
+
+#: ../capplet/gpilotd-capplet.glade.h:20
+msgid "Conduit Settings"
+msgstr "Slēguma konfigurācija"
+
+#: ../capplet/gpilotd-capplet.glade.h:21
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Apsveicam, gnome-pilot ir nokonfigurēts!\n"
+"\n"
+"Jūs varat jebkurā brīdī izmainīt gnome-pilot konfigurāciju no \n"
+"PilotLink un Slēguma šķirkļa kontroles centrā.\n"
+"\n"
+"Jūs varat novērot gnome-pilot sinhronizāciju, pievienojot \n"
+"PilotLink apletu savam panelim."
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "D_isable"
+msgstr "_Atslēgt"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "De_vices"
+msgstr "Ierī_ces"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Description:"
+msgstr "Apraksts:"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Device Settings"
+msgstr "Iesīces uzstādījumi"
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+msgid "Device:"
+msgstr "Iekārta:"
+
+#: ../capplet/gpilotd-capplet.glade.h:33 ../capplet/util.c:74
+#: ../capplet/util.c:434
+msgid "Disabled"
+msgstr "Deaktivizēts"
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Ierakstiet īpašnieka nosaukumu, kuru jūs vēlaties saglabāt uz jūsu PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "GB18030"
+msgstr "GB18030"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "GBK"
+msgstr "GBK"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Dabūt īpašnieka nosaukumu un ID no PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Initial Sync"
+msgstr "Sākotnējā sinhronizācija"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr "Tī_ks"
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:115
+msgid "None"
+msgstr "Neviens"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr "_Īpašnieks:"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Īpašnieka nosaukuma un ID uzstādīšana uz PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr "Īpašnieks:"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "PDA Attributes"
+msgstr "PDA atribūti"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "PDA Identification"
+msgstr "PDA identifikācija"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+msgid "PDA Settings"
+msgstr "PDA uzstādījumi"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "P_DA:"
+msgstr "P_DA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Ports"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "S_peed:"
+msgstr "Āt_rums:"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"Sūtīt īpašnieka nosaukumu un ID uz PDA, pārrakstīt jebkuru pašreizējo "
+"identitāti"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set the character set used on your PDA."
+msgstr "Uzstādiet rakstuzīmju kopu uz sava PDA."
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all PDA files to be stored."
+msgstr ""
+"Uzstādiet saknes direktoriju priekš visiem PDA failiem, kas tiks saglabāti."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "Veiksmīgi"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Jūsu PDA nosaukums.   Tas tiks lietots tikai identifikācijai."
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"Šis veselo skaiļu ID identificē jūsu PDA un tam jābūt unikālam starp "
+"dažādiem PDA, kurus jūs lietojat."
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "Ti_meout:"
+msgstr "Tai_mouts:"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "Laipni lūgti gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Jūs esat palaidis gnome-pilot pirmo reizi.\n"
+"Sekojošie soļi iestatīs gnome-pilot priekš sinhronizācijas.\n"
+"Jūs vienmēr varēsiet mainīt jebkuru opciju no\n"
+"Pilot saites paneļa Gnome kontroles centrā.\n"
+"\n"
+"Spiediet 'Tālāk', lai turpinātu.\n"
+"Spiediet 'Atcelt', lai izietu."
+
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "_Action:"
+msgstr "D_arbība:"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Add..."
+msgstr "_Pievienot..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Delete"
+msgstr "_Dzēst"
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+msgid "_Device:"
+msgstr "_Iekārta:"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Edit..."
+msgstr "_Rediģēt..."
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Enable"
+msgstr "_Aktivizēt"
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+msgid "_Get from PDA"
+msgstr "Dabūt no PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_IrDA"
+msgstr "_irDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:74
+msgid "_Local folder:"
+msgstr "_Vietējā mape:"
+
+#: ../capplet/gpilotd-capplet.glade.h:75
+msgid "_Name of PDA:"
+msgstr "PDA _nosaukums:"
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_Name:"
+msgstr "_Nosaukums:"
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Nē, neesmu lietojis sinhronizēšanas programmatūru ar šo PDA."
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_One time action:"
+msgstr "_Vienas reizes darbība:"
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+msgid "_Owner:"
+msgstr "_Īpašnieks:"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_PDA ID:"
+msgstr "_PDA ID:"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_PDAs"
+msgstr "_PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_Send to PDA"
+msgstr "_Sūtīt uz PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:83
+msgid "_Serial"
+msgstr "_Virkne"
+
+#: ../capplet/gpilotd-capplet.glade.h:85
+msgid "_Type:"
+msgstr "_Tips:"
+
+#: ../capplet/gpilotd-capplet.glade.h:86
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:87
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Jā, esmu izmantojis sinhronizācijas programmatūru ar šo PDA."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Sākt gudrais tikai"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Kļūda inicializējot gpilotd graudošanās veltnīti"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading PDA state, aborting"
+msgstr "Kļūda ielādējot PDA stāvokli, atliekam"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Nevar savienot ar GnomePilot dēmonu"
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr "Nevar palaist gudro, ja PDA vai ierīce jau ir konfigurēta"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Konfigurēt PalmOS ierīces"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS ierīces"
+
+#: ../capplet/util.c:81 ../capplet/util.c:436
+msgid "Enabled"
+msgstr "Aktivizēts"
+
+#: ../capplet/util.c:235
+msgid "You must have at least one device setup"
+msgstr "Ir jābūt iestatītai vismaz vienai ierīcei"
+
+#: ../capplet/util.c:408
+msgid "Synchronize"
+msgstr "Sinhronizēt"
+
+#: ../capplet/util.c:409
+msgid "Copy from PDA"
+msgstr "Kopēt no PDA"
+
+#: ../capplet/util.c:410
+msgid "Copy to PDA"
+msgstr "Kopēt uz PDA"
+
+#: ../capplet/util.c:411
+msgid "Merge from PDA"
+msgstr "Sapludināt no PDA"
+
+#: ../capplet/util.c:412
+msgid "Merge to PDA"
+msgstr "Sapludināt uz PDA"
+
+#: ../capplet/util.c:415
+msgid "Use conduit settings"
+msgstr "Izmantot gudrā uzstādījumus"
+
+#: ../capplet/util.c:423
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:424
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:425
+msgid "Network"
+msgstr "Tīkls"
+
+#: ../capplet/util.c:426
+msgid "Serial"
+msgstr "Virkne"
+
+#: ../capplet/util.c:474
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Norādītā pamatdirektorija pastāv, bet tai nav pareizās atļaujas.\n"
+"Lūdzu salabojiet vai arī izvēlieties citu direktoriju"
+
+#: ../capplet/util.c:479
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Norādītā pamatdirektorija pastāv, bet nav direktorija.\n"
+"Lūdzu izveidojiet to par direktoriju vai izvēlieties citu direktoriju"
+
+#: ../capplet/util.c:486
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Nebija iespējams izveidot norādīto pamatdirektoriju.\n"
+"Lūdzu pārbaudiet atļauju norādītam ceļam vai izvēlieties citu direktoriju"
+
+#: ../capplet/util.c:491
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Norādītais ceļš pamatdirektorijai ir nederīgs.\n"
+"Lūdzu izvēlieties citu direktoriju"
+
+#: ../capplet/util.c:519
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.  Please enter a valid "
+"identifier or select from the available options."
+msgstr ""
+"`%s' nav derīga rakstu zīmju kopas identifikātors.  Lūdzu ievadiet derīgu "
+"identifikātoru vai izvēlieties no derīgām opcijām."
+
+#: ../capplet/util.c:638
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Ierīce 'usb': ir tikai derīga priekš ierīcēm no USB tipa"
+
+#: ../capplet/util.c:649
+msgid "Read/Write permissions failed on"
+msgstr "Lasīšanas/Rakstīšanas atļauja neveiksmīga"
+
+#: ../capplet/util.c:651
+msgid "Check the permissions on the device and retry"
+msgstr "Pārbaudiet ierīces atļauju un mēģiniet vēlreiz"
+
+#: ../capplet/util.c:666 ../gpilotd/gpilotd.c:1323
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Neizdevās atrast direktoriju %s vai nolasīt failu %s.  Pārbaudiet vai usbfs "
+"vai sysfs ir samontēts."
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "Pārbauda novāktās datubāzes"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "Pārdēvē %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "uz %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s nav modificēts kopš pēdējās sinhronizācijas"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "Veido dublējumu no %s"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Nevarēja izveidot dublējumu failam %s"
+
+#: ../conduits/backup/backup_conduit.c:733
+msgid "Collecting restore information..."
+msgstr "Kolekcionē atjaunoto informāciju..."
+
+#: ../conduits/backup/backup_conduit.c:857
+msgid "_Backup directory:"
+msgstr "Du_blējuma direktorija:"
+
+#: ../conduits/backup/backup_conduit.c:870
+msgid "Backup directory"
+msgstr "Dublējuma direktorija"
+
+#: ../conduits/backup/backup_conduit.c:872
+msgid "O_nly backup changed bases"
+msgstr "_Tikai dublējuma izmainītās bāzes"
+
+#: ../conduits/backup/backup_conduit.c:882
+msgid "Only backup changed bases"
+msgstr "Tikai dublējuma izmainītās bāzes"
+
+#: ../conduits/backup/backup_conduit.c:884
+msgid "_Remove local base if deleted on pilot"
+msgstr "_Likvidēt vietējās bāzes, ja izdzēstas no pilot"
+
+#: ../conduits/backup/backup_conduit.c:894
+msgid "Remove local base if deleted on pilot"
+msgstr "Likvidēt vietējās bāzes, ja izdzēstas no pilot"
+
+#: ../conduits/backup/backup_conduit.c:896
+msgid "# of old backups to _keep"
+msgstr "# no veciem dublējumiem _saglabāt"
+
+#: ../conduits/backup/backup_conduit.c:907
+msgid "# of old backups to keep"
+msgstr "no veciem dublējumiem _saglabāt"
+
+#: ../conduits/backup/backup_conduit.c:945
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Norādītā dublējuma direktorija pastāv, bet satur nepareizu atļauju.\n"
+"Lūdzu salabojiet vai izvēlieties citu direktoriju"
+
+#: ../conduits/backup/backup_conduit.c:950
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Norādītā dublējums direktorija pastāv, bet nav direktorija.\n"
+"Lūdzu izveidojiet to par direktoriju vai izvēlieties citu direktoriju"
+
+#: ../conduits/backup/backup_conduit.c:957
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Nebija iespējams izveidot norādīto dublējuma direktoriju.\n"
+"Lūdzu pārbaudiet atļauju norādītam ceļam vai izvēlieties citu direktoriju"
+
+#: ../conduits/backup/backup_conduit.c:962
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Norādītais ceļš dublējuma direktorijai ir nedrīgs.\n"
+"Lūdzu ievēlieties citu direktoriju"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Instalācija no %s neizdevās"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Instalē %s no %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Instalē %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Instalējiet nekavējoties"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Instalējiet novilcināti"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA to install to"
+msgstr "Instalēt PDA uz"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get PDA names"
+msgstr "Neiespējami iegūt PDA nosaukumus"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Sekojošie faili neizdevušies:\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Instalē no %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Nav faili ko instalēt"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Spiediet sinhronizēt uz graudošanas veltnīša lai instalētu\n"
+"vai atceltiet operāciju."
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-pilot dēmons"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "Izdzēstais PDA ieraksts modificēts vietēji, nedzēš\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "Izdzēstais vietējais ieraksts modificēts uz PDA, nedzēs\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "sapludīnāšanas konflikts, PDA un vietējais ieraksts apmainīts\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "Arhīva un izmaiņu konflikts, PDA un vietējais ieraksts apmainīti\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "Arhīva un izmaiņu konflikts, vietējais ieraksts aizsūtīts uz PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "Arhīva un izmaiņu konflikts, PDA ieraksts saglabāts vietēji\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Slēgumu inicializācija neizdevās, atceļam darbību"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Neiespējami izdzēst visus ierakstus no PDA datubāzes, pārtrauc operāciju."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Slēgums neatgrieza nekādu ierakstu"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Neiespējami izdzēst visus ierakstus no vietējās datubāzes, pārtrauc "
+"operāciju."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Kļūda slēgumā, jaunpievienotais ieraksts netika atrasts"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "Kopēšana uz PDA neizdevās!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "Kopēšana no PDA neizdevās!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "Sapludināšana uz PDA neizdevās!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "Sapludināšana no PDA neizdevās!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Sinhronizācija neizdevās!"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Nevar atvērt ierīci %s (%s): iemesls: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot nevar atvērt ierīci %s(%s).\n"
+"Iemesls:\"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:517
+#: ../gpilotd/gnome-pilot-structures.c:566
+#: ../gpilotd/gnome-pilot-structures.c:594
+#: ../gpilotd/gnome-pilot-structures.c:620
+msgid "Unknown device type"
+msgstr "Nezināms ierīces tips"
+
+#: ../gpilotd/gnome-pilot-structures.c:635
+msgid "Number of devices is configured to 0"
+msgstr "Skaits ierīču ir nokonfigurētas uz 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:637
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nav nokonfigurēta neviena ierīce.\n"
+"Lūdzu palaidiet gpilotd-kontrole-aplets (izmantojiet gnomecc),\n"
+"lai nokonfigurētu gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:658
+msgid "No accessible devices available"
+msgstr "Nav sasniedzamas ierīces pieejamas"
+
+#: ../gpilotd/gnome-pilot-structures.c:673
+msgid "Number of PDAs is configured to 0"
+msgstr "PDA numurs ir nokonfigurēts uz 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:675
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Nav nokonfigurēs PDA.\n"
+"Lūdzu palaidiet gpilotd-kontroles-apletu (izmantojiet gnomecc),\n"
+"lai konfigurētu gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:738 ../gpilotd/gpilotd.c:680
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Nav norādītā pilot_rakstuzīmju kopa.  Izmantoju `%s."
+
+#: ../gpilotd/gpilotd.c:233
+msgid "Unable to bind to PDA"
+msgstr "Neiespējami "
+
+#: ../gpilotd/gpilotd.c:369
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+"Neizdevās savienot ierīci `%s', uz porta `%s'.  Pārbaudiet savu "
+"konfigurāciju, jūs pieprasījāt jaunā stila libusb `usb:' sinhronizēšanu, bet "
+"vecā stila `visor' kodols joprojām ir ielādēts.  Jums iespējams nepieciešams "
+"izvēlēties `ttyUSB...' ierīci."
+
+#: ../gpilotd/gpilotd.c:384
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+"Neveiksmīgs savienojums izmantojot ierīci `%s, uz portu `%s.  Pārbaudiet "
+"jūsu konfigurāciju, kā jūs pieprasījāt vecā-stila usbvirkni ` "
+"ttyUSB'sinhronizējas, bet nesatur usbvirkni sejsega kodola modulis "
+"ielādēts.  Jums iespējams būs nepieciešams izvēlēties `usb:' ierīci."
+
+#: ../gpilotd/gpilotd.c:475
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Nezināms PDA, nav lietotāja ID/ lietotāja nosaukuma sakritība %ld"
+
+#: ../gpilotd/gpilotd.c:482
+msgid "Use gnomecc to configure PDA"
+msgstr "Izmantojiet gnomecc, lai konfigurētu PDA"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:487
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Nezināms PDA - nav PDa sakritība ar ID %ld\n"
+"Izmantojiet gnomecc, lai konfigurētu gnome-pilt"
+
+#: ../gpilotd/gpilotd.c:511
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Ierīce %s satur %d notikumus"
+
+#: ../gpilotd/gpilotd.c:524
+msgid "Setting userinfo..."
+msgstr "Uzstāda lietotāja informāciju..."
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Sync continues"
+msgstr "Sinhronizācija turpinās"
+
+#: ../gpilotd/gpilotd.c:548
+msgid "Getting userinfo..."
+msgstr "Dabūt lietotāja informāciju..."
+
+#: ../gpilotd/gpilotd.c:610
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "Tīkla sinhronizācijas pieprasījums uztverts, sinhronizē PDA"
+
+#: ../gpilotd/gpilotd.c:612
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "Karstā sinhronizācijas poga nospiesta, sinhronizē PDA "
+
+#: ../gpilotd/gpilotd.c:614
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA ID ir %ld, nosaukums ir %s, īpašnieks ir %s"
+
+#: ../gpilotd/gpilotd.c:624
+#, c-format
+msgid "On host %s\n"
+msgstr "Uz saimnieku %s\n"
+
+#: ../gpilotd/gpilotd.c:626
+#, c-format
+msgid "On host %d\n"
+msgstr "Uz saimnieku %d\n"
+
+#: ../gpilotd/gpilotd.c:645
+msgid "Synchronization ended"
+msgstr "Sinhronizācija beidzās"
+
+#: ../gpilotd/gpilotd.c:648
+msgid "Synchronization ended early"
+msgstr "Pāragra sinhrnizācijas beigšana"
+
+#: ../gpilotd/gpilotd.c:694
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "`%s nav atpazīts rakstuzīmju kopas ikonav, izmanto `%s' vietā."
+
+#: ../gpilotd/gpilotd.c:717
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Pamatdirektorija %s ir nederīga.\n"
+"Lūdzu salabojiet vai izmantojiet gnomecc, lai izvēlētos citu direktoriju."
+
+#: ../gpilotd/gpilotd.c:730
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Nezināms PDA - nav sakritība ar ID %ld\n"
+"Izmantojiet gpilotd-kontrole-aplets, lai uzstādītu PDA ID"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:781
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Notika kļūda kamēr tika dabūta PDA sistēmas dati"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:790
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Notika kļūda kamēr tika dabūta PDA lietotāja dati"
+
+#: ../gpilotd/gpilotd.c:795
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Pabeigtie notikumi priekš ierīcēm %s (%s)"
+
+#: ../gpilotd/gpilotd.c:854
+#, c-format
+msgid "Woke on %s"
+msgstr "Pamodina %s"
+
+#: ../gpilotd/gpilotd.c:935
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Pamodina tīlu: %s"
+
+#: ../gpilotd/gpilotd.c:1494
+#, c-format
+msgid "Watching %s (network)"
+msgstr "Noskatās %s (tīkls)"
+
+#: ../gpilotd/gpilotd.c:1496
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Noskatās %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1510
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Iziet (notverts SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1519
+msgid "Exiting (caught SIGINT)..."
+msgstr "Iziet(notverts SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1551
+msgid "Unable to create file installation queue directory"
+msgstr "Neiespējami izveidot failu istalējot rindas direktorijā"
+
+#: ../gpilotd/gpilotd.c:1601
+msgid "Shutting down devices"
+msgstr "Ierīces tiek beidzētas"
+
+#: ../gpilotd/gpilotd.c:1603
+msgid "Rereading configuration..."
+msgstr "Pārlasa konfigurāciju..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "nav dublētais slēgums dublējumu slēguma sarakstā"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s dublējas\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s dublējums neizdevās\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "Kolekcionē sinhronizācijas informāciju..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Sinhronizē %s\n"
+
+#: ../gpilotd/manager.c:446
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Kopē uz PDA %s\n"
+
+#: ../gpilotd/manager.c:464
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Kopē no PDA %s\n"
+
+#: ../gpilotd/manager.c:482
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Sapludina uz PDA %s\n"
+
+#: ../gpilotd/manager.c:500
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Sapludina no PDA %s\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Slēguma %s pirmā sinhronizācija..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "nezināma sinhronizācijas darbība (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Piemēro %d slēgumus..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Nezināms slēgums \"%s\" konfigurācijā!"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Ielādēt slēgumu \"%s\" neizdevās!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Ielādēt slēgumu \"%s\" neizdevās!\n"
+
+#: ../gpilotd/manager.c:783
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Uzstādīt id/īpašnieks uz %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Slēgums %s pieprasīts, bet netika atrasts"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Slēgums %s neva tikt pieprasīts"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(nezināma DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Kļūda rindā, neeksistējošs ieraksts"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "Defekts: nav atrasts pieprasījums priekš PDA %d, pieprasa %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "Moduļa ielāde nav atbalstīta, fatāla kļūda!"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Dabūt sistēmas informāciju"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Apturēt dēmonu"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Palaist dēmonu"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Pārlādēt dēmonu"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Uzstādīt lietotāja id un nosaukumu"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "ID priekš PDA"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Instalēt failu"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "Fails"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Atjaunot direktoriju"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIREKTORIJA"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Iedarbināt slēfumu"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "SLĒGUMS"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Uzstādiet lietotājnosaukumu"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "Lietotājvārds"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "Pārrauga noteiktas PDA darbības"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "Pārrauga visus PDA"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr "Sakārto PDA pēc pieteikšanās (viss priekš visiem pilot)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "PIETEIKŠANĀS"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Specifizē PDA lai operētu "
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOT NOSAUKUMS"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr ""
+"Specifizēt graudošanas veltnti, lai operētu uz (noklusētais uzstādīts uz "
+"graudošanās veltnīti0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "GRAUDOŠANAS VELTNĪŠA NOSAUKUMS"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specifed PDA's bases"
+msgstr "Specifisku PDA bāžu sarakts"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"Sargieties!!\n"
+"Šis ir rīks priekš noteiktiem gnome-pilot izlaiduma komplektiem.\n"
+"Ja jūs nezinat ko jūs dariet, neizmntojiet ;so rīku."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "uzskaitīt pieejamos slēgumus"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "slēgums, ar kuru darboties"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "uzskaitīt visus atribūtus"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify PDA to operate on"
+msgstr "Specifizēt PDA, lai operētu uz"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "uzskaitīt atribūtus"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "uzskaitīt pieejamos slēgumus un to stāvokli"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "iedarbināt norādīto slēgumu"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "izslēgt norādīto slēgumu"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "Aktivizēt un uzstādīt pirmo sinhronizāciju uz lēnu"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "piemērot un iznīcināt slēgumu"
+
+#: ../applet/gpilot-applet.desktop.in.h:1
+msgid "PilotSync"
+msgstr "Pilot sinhronizētājs"
+
+#: ../applet/gpilot-applet.desktop.in.h:2
+msgid "Synchroniser for PalmOS PDAs"
+msgstr "PalmOS PDA sinhronizētājs"

@@ -1,0 +1,1605 @@
+# Malay Translation of Gnome-pilot HEAD.
+# Copyright (C) 2003 MIMOS Open Source Developement Group
+# This file is distributed under the same license as the PACKAGE package.
+# MIMOS Open Source Development Group <opensource@mimos.my>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gnome-pilot HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2003-09-01 09:45+0800\n"
+"Last-Translator: MIMOS Open Source Development Group <ismas@mimos.my>\n"
+"Language-Team: Projek Gabai <gabai-penyumbang@lists.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "Utiliti"
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Pilih Pilot"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Direktori"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Paparkan notis"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Laksanakan apabila mengklik"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "Ciri GNOME PilotSync"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "ID Pilot"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Simpan semula Pilot"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Segerakkan endul"
+
+#: applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "kemajuan gnome-pilot"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "Menyegerakkan..."
+
+#: applet/pilot.c:163
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s Menyegerakkan"
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr "Pangkalan data %v daripada %u"
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "Sedia untuk disegerakkan"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Permintaan %ld sudah diselesaikan\n"
+
+#: applet/pilot.c:228
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Menyegerakkan : %s"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Bermula\n"
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Tamat : %s"
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Berakhir\n"
+
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr "%v daripada %u rekod"
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Pilot sedang disegerakkan.\n"
+"Sila tunggu hingga tamat."
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "Tidak disambungkan. Sila mulakan semula demon."
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Tidak disambungkan ke gpilotd.\n"
+"Sila mulakan semula demon."
+
+#: applet/pilot.c:373
+msgid "gnome-pilot applet"
+msgstr "aplet gnome-pilot"
+
+#: applet/pilot.c:375
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "Hak cipta 2000-2003 Free Software Foundation, Inc."
+
+#: applet/pilot.c:376
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "Pengawas dnd dan gui untuk gpilotd.\n"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr "membatalkan %d"
+
+#: applet/pilot.c:524
+#, c-format
+msgid "Restoring %s"
+msgstr "Menyimpan semula %s"
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "Tiada direktori untuk disimpan semula dari."
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Tekan segerakkan pada endul untuk menyimpan semula\n"
+" atau membatalkan operasi."
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "Permintaan menyimpan semula gagal"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Penyegerakan Pilot sedang dijalankan.\n"
+"Adakah anda pasti anda ingin menyimpan semula demon?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Cuba untuk disambungkan ke Demon GnomePilot"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "Tidak terdapat penyegerakan terakhir pada rekod."
+
+#: applet/pilot.c:687
+msgid "Continue"
+msgstr "Teruskan"
+
+#: applet/pilot.c:689
+msgid "Pause Daemon"
+msgstr "Hentikan seketika Demon"
+
+#: applet/pilot.c:709
+msgid "Daemon paused..."
+msgstr "Demon dihentikan seketika..."
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Tidak disambungkan. Mulakan semula demon untuk menyambung semula"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Pelaksanaan sebanyak %s gagal"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "memasang \"%s\" pada \"%s\""
+
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr "jenis dnd yang tak diketahui"
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr "musnahkan aplet gpilot"
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "Pilot-applet.glade tidak dijumpai"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Arahan untuk melaksanakan apabila aplet diklik"
+
+#: applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Paparkan notis dalam tetingkap Pop-up"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Seting Pilot"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Nama"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "Nama Pengguna"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Port"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Kelajuan"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Jenis"
+
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Conduit"
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Segerakkan Tindakan"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Adakah anda pasti anda ingin menghapuskan %s pilot?"
+
+#: capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "_Edit pilot ini..."
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "Edit pilot yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "_Hapuskan pilot ini"
+
+#: capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "Hapuskan pilot yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Adakah anda pasti anda ingin menghapuskan %s peranti?"
+
+#: capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "_Edit peranti ini..."
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "Edit peranti yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "_Hapuskan peranti ini"
+
+#: capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "Hapuskan peranti yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Tidak dapat menyegerakkan %s conduit."
+
+#: capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "_Membolehkan conduit ini"
+
+#: capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "Lumpuhkan conduit yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "_Lumpuhkan conduit ini"
+
+#: capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "Membolehkan conduit yang dipilih buat masa ini"
+
+#: capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "_Seting..."
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "Ubah suai seting conduit yang dipilih buat masa ini"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr ""
+"Tidak dapat mewujudkan tetingkap seting pilot. Konfigurasi conduit tidak "
+"betul."
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Persediaan belum selesai dan seting tidak akan\n"
+"disimpan. Adakah anda pasti anda ingin keluar?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Baru saja hendak menghantar data berikut ke pilot.\n"
+"Nama Pengguna: %s\n"
+"ID: %d\n"
+"Sila letakkan pilot dalam %s (%s) dan tekan butang HotSync."
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Baru saja hendak dapatkan semula Nama dan ID Pengguna dari pilot.\n"
+"Sila letakkan pilot dalam %s (%s) dan tekan butang HotSync."
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "Gagal menghantar permintaan ke gpilotd"
+
+#: capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"Berjaya mendapatkan semula Nama dan ID Pengguna dari pilot.\n"
+"Nama Pengguna: %s\n"
+"ID: %d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Sila letakkan pilot dalam %s (%s) dan tekan butang HotSync atau batalkan "
+"operasi."
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "Permintaan untuk mendapatkan id pilot gagal"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "Permintaan untuk mengeset id pilot gagal"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "Tindakan:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Tambah..."
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Pilih Peranti"
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Tindakan Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Huraian Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Seting Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Conduit"
+
+#: capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Tahniah, gnome-pilot telah dibuat konfigurasi!\n"
+"\n"
+"Anda boleh menukar seting gnome-pilot pada bila-bila masa dari \n"
+"Tab PilotLink dan Conduit di pusat kawalan.\n"
+"\n"
+"Anda boleh mengawasi penyegerakan gnome-pilot dengan menambah \n"
+"Aplet PilotLink pada panel anda."
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Seting Endul"
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Hapus"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Seting Peranti"
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Peranti"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Lumpuh"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "Lumpuh"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Edit..."
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Boleh"
+
+#: capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "Masukkan nama pengguna yang ingin anda simpankan pada pilot anda"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr ""
+"Dapatkan Nama dan ID Pengguna dari pilot yang wujud yang digunakan sebelum "
+"ini."
+
+#: capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "Dapatkan dari pilot"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Seting Gnome Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Penyegerakan Awal"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+msgid "IrDA"
+msgstr "IrDA"
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Direktori asas setempat"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr "Rangkaian"
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr ""
+"Tidak, saya tidak pernah menggunakan perisian segerak dengan pilot ini "
+"sebelum ini."
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "Tiada"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr "Tindakan Satu Masa:"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Atribut Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "Pengecaman Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Nama Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "Nama Pilot:"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "Hantar ke pilot"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr "Siri"
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Setkan Nama dan ID Pengguna pada pilot baru."
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "Setkan direktori akar bagi semua fail pilot yang hendak disimpan."
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Seting..."
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Berjaya"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "Nama bagi pilot anda. Ia hanya digunakan untuk pengecaman."
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"ID integer ini mengecam pilot anda dan mestilah unik antara pilot berbeza "
+"yang anda gunakan."
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Tamat masa"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr "USB"
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Nama Pengguna"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Nama dan ID Pengguna untuk disetkan pada Pilot"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Nama Pengguna:"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "Selamat datang ke gnome-pilot!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr ""
+"Ya, saya pernah menggunakan perisian segerak dengan pilot ini sebelum ini."
+
+#: capplet/gpilotd-capplet.glade.h:67
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Anda nampaknya sedang menjalankan gnome-pilot bagi pertama kali.\n"
+"Langkah berikut akan menyediakan gnome-pilot untuk penyegerakan. \n"
+"Anda sentiasa boleh menukar mana-mana opsyen kemudian dari\n"
+"Panel PilotLink di Pusat Kawalan Gnome.\n"
+"\n"
+"Tekan 'Ke depan' untuk meneruskan.\n"
+"Tekan 'Batal' untuk keluar."
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Mulakan druid sahaja"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Ralat dalam memulakan kaplet gpilotd"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Ralat dalam memuatkan keadaan pilot, dihenti paksa"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Tidak boleh disambungkan ke Daemon GnomePilot"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr ""
+"Tidak boleh menjalankan druid jika pilot atau endul telah dibuat konfigurasi"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Buat konfigurasi pada peranti PalmOS"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "Peranti PalmOS"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "Gunakan seting conduit"
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "Segerak"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "Salin dari pilot"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "Salin ke pilot"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "Cantum dari pilot"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "Cantum ke pilot"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "Dibolehkan"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "Anda mesti mempunyai sekurang-kurangnya satu persediaan peranti"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Direktori asas tertentu wujud tetapi mempunyai kebenaran yang salah.\n"
+"Sila betulkan atau pilih direktori lain"
+
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Direktori asas tertentu wujud tetapi bukannya direktori.\n"
+"Sila jadikannya direktori atau pilih direktori lain"
+
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Mustahil untuk mewujudkan direktori asas tertentu.\n"
+"Sila sahkan kebenaran pada laluan yang ditentukan atau pilihdirektori lain"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Laluan yang ditentukan untuk direktori asas tidak sah.\n"
+"Sila pilih direktori lain"
+
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "Kebenaran Membaca/Menulis gagal pada"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "Semak kebenaran pada peranti dan cuba sekali lagi"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr "Menyemak untuk mengeluarkan pangkalan data"
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr "Menamakan semula %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr "ke %s"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s tidak diubah suai sejak penyegerakan terakhir"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "Membuat salinan sandar bagi %s"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Tidak dapat mewujudkan fail sandar %s"
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr "Mengumpulkan maklumat yang disimpan semula..."
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "Direktori sandar"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "Hanya sandar yang mengubah pangkalan"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "Keluarkan pangkalan setempat jika dihapuskan pada pilot"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr "# daripada sandar lama yang dikekalkan"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "Memasang daripada %s gagal"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Memasang %s dari %s..."
+
+#: conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "Memasang %s..."
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Pemasangan segera"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Pemasangan dilengahkan"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Pilot untuk dipasangkan pada"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PILOT"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Tidak dapat memperoleh nama pilot"
+
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Fail berikut gagal :\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Memasang pada %s:\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Tiada fail yang dipasang"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Tekan penyegerakan pada endul untuk memasang\n"
+" atau membatalkan operasi."
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+msgid "Gnome Pilot File Manager"
+msgstr "Pengurus Fail Gnome Pilot"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr "Hak cipta Manish dan Neil Vachharajani (C) 1998"
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+"Uruskan fail dan aplikasi pada Palm Pilot anda\n"
+"Palm Pilot ialah cap dagang berdaftar bagi 3com Inc."
+
+#: gpilot-fileman/fileman.c:71
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Adakah anda benar-benar ingin keluar dari Pengurus Fail Gnome Pilot"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "Hmm, ini tidak sepatutnya berlaku, tidak cukup nama fail\n"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr "Menghenti paksa..."
+
+#: gpilot-fileman/fileman.c:244
+msgid "No files to install!!"
+msgstr "Tiada fail yang dipasang!!"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr "Pasangkan Kemajuan"
+
+#: gpilot-fileman/fileman.c:256
+msgid "Installing... "
+msgstr "Memasang..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "Tekan butang Hot Sync pada pilot anda sekarang!"
+
+#: gpilot-fileman/fileman.c:442
+msgid "Unable to open or create chosen name as a directory!"
+msgstr ""
+"Tidak dapat membuka atau mewujudkan nama yang dipilih sebagai direktori!"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr "Memilih lokasi sandar bukannya direktori!"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr "Sandar Kemajuan"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr "Membuat sandaran... "
+
+#: gpilot-fileman/fileman.c:484
+msgid "Unable to open status pipe"
+msgstr "Tidak dapat membuka paip status"
+
+#: gpilot-fileman/fileman.c:495
+msgid "Unable to open message pipe"
+msgstr "Tidak dapat membuka paip mesej"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr "Tidak dapat mencabangkan"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr "Sandar Direktori"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "Tentang"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr "Tentang gpilot-fileman"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr "Pasangkan Fail"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr "Pasangkan fail yang dipilih pada Pilot yang disambungkan"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr "Sandar Pilot"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr "Sandar fail yang dipilih dari Pilot yang disambungkan"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "Ciri"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "Ciri bagi Pengurus Fail Gnome Pilot"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "Keluar"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr "Keluar dari aplikasi"
+
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "Fail"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "Bantuan"
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr "Tambah ->"
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr "<- Keluarkan"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr "<- Keluarkan Semua"
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr "Fail yang Dipilih"
+
+#: gpilot-fileman/pilotfunc.c:88
+msgid "Unable to bind to pilot\n"
+msgstr "Tidak dapat diikat dengan pilot\n"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr "Keluar selepas menekan batal"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, c-format
+msgid "Unable to open '%s'!"
+msgstr "Tidak dapat membuka '%s'!"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, c-format
+msgid "Install failed %s."
+msgstr "Pemasangan gagal %s."
+
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "Keluar selepas menekan batal, semua data TIDAK disandar."
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr "Gagal, tidak dapat mewujudkan fail\n"
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr "Gagal, tidak dapat menyandar pangkalan data\n"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr "Peranti Pilot"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr "Sahkan semasa keluar"
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "Am"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Daemon Gnome-Pilot"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr ""
+"rekod pilot yang dihapuskan telah diubah suai secara setempat, tidak "
+"dihapuskan\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr ""
+"rekod setempat yang dihapuskan telah diubah suai pada pilot, tidak "
+"dihapuskan\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "cantum konflik, pilot dan rekod setempat yang dipilih\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+#, fuzzy
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr "arkibkan dan tukar konflik, pilot dan rekod setempat yang dipilih\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+#, fuzzy
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "arkibkan dan tukar konflik, rekod setempat yang dihantar ke pilot\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+#, fuzzy
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr ""
+"arkibkan dan tukar konflik, rekod pilot yang disimpan secara setempat\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Pengawalan conduit gagal, menghenti paksa operasi"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr ""
+"Tidak dapat menghapuskan semua rekod dalam pangkalan data pilot, operasi "
+"dihenti paksa"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "Conduit tidak mengembalikan rekod"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Tidak dapat menghapuskan semua rekod dalam pangkalan data setempat, operasi "
+"dihenti paksa"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Ralat pada conduit, rekod yang baru ditambah tidak dijumpai"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "Salin ke pilot gagal!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "Salin dari pilot gagal!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "Cantum ke pilot gagal!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "Cantum dari pilot gagal"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Penyegerakan gagal"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Tidak boleh membuka peranti %s (%s): alasan: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot tidak dapat membuka peranti %s (%s).\n"
+"Alasan: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "Jenis peranti yang tak diketahui"
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Bilangan peranti dibuat konfiguras hingga 0"
+
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Endul tidak dibuat konfigurasi.\n"
+"Sila jalankan gpilotd-kawalan-aplet (guna gnomecc)\n"
+"untuk membuat konfigurasi pada gnome-pilot."
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Peranti boleh dicapai tidak dapat digunakan"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Bilangan pilot dibuat konfigurasi hingga 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Pilot tidak dibuat konfigurasi.\n"
+"Sila jalankan gpilotd-kawalan-aplet (guna gnomecc)\n"
+"untuk membuat konfigurasi pada gnome-pilot."
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "Tidak dapat diikat dengan pilot"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr ""
+"Pilot tak diketahui, tiada ID pengguna/nama pengguna yang padan dengan %ld"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr "Guna gnomecc untuk membuat konfigurasi pada pilot"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Pilot tak diketahui - tiada pilot yang padan dengan ID %ld\n"
+"Guna gnomecc untuk mengeset ID pilot"
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "Endul %s mempunyai %d peristiwa"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "Mengeset maklumat pengguna..."
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "Penyegerakan diteruskan"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "Mendapatkan maklumat pengguna..."
+
+#: gpilotd/gpilotd.c:463
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Permintaan NetSync dikesan, pilot disegerakkan"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Butang HotSync ditekan, pilot disegerakkan"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "ID Pilot ialah %ld, nama ialah %s, pemilik ialah %s"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "Pada hos %s\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "Pada hos %d\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "Penyegerakan berakhir"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "Penyegerakan berakhir awal"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Direktori asas %s tidak sah.\n"
+"Sila betulkannya atau guna gnomecc untuk memilih direktori lain."
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+msgid "An error occured while getting the pilot's system data"
+msgstr "Ralat berlaku semasa mendapatkan data sistem pilot"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "Ralat berlaku semasa mendapatkan data pengguna pilot"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Peristiwa diselesaikan untuk endul %s (%s)"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "Gunakan %s"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "Memerhatikan %s (%s, %s)"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Memerhatikan %s (%s)"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Keluar (terkena SIGTERM)..."
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "Keluar (terkena SIGINT)..."
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr ""
+"Tidak dapat membuka atau mewujudkan fail %s dengan keistimewaan baca/tulis"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Tidak dapat mencari direktori rerumah untuk uid %d"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr "Tidak dapat mewujudkan direktori gilir pemasangan fail"
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr "Tutup peranti"
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "Membaca semula konfigurasi..."
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr "conduit bukan sandaran dalam senarai conduit sandaran"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s disandar\n"
+
+#: gpilotd/manager.c:275
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s gagal disandar\n"
+
+#: gpilotd/manager.c:300
+msgid "Collecting synchronization info..."
+msgstr "Mengumpulkan maklumat penyegerakan..."
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Menyegerakkan %s\n"
+
+#: gpilotd/manager.c:427
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Salin ke pilot %s\n"
+
+#: gpilotd/manager.c:445
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Salin dari pilot %s\n"
+
+#: gpilotd/manager.c:463
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Cantum ke pilot %s\n"
+
+#: gpilotd/manager.c:481
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Cantum dari pilot %s\n"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Penyegerakan pertama conduit %s..."
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "tindakan penyegerakan tak diketahui (%d = %s).\n"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Menyegerakan %d conduit..."
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Conduit tak diketahui \"%s\" sedang dibuat konfigurasi!"
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Memuatkan conduit \"%s\" gagal!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Memuatkan conduit \"%s\" gagal!\n"
+
+#: gpilotd/manager.c:764
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Mengeset id/pengguna kepada %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Conduit %s diminta, tetapi tidak dijumpai"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Conduit %s tidak boleh diminta"
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(DB tak diketahui)"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Ralat dalam gilir, entri tidak wujud"
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "kesalahan: permintaan tidak dijumpai untuk pilot %d, permintaan %d"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "pemuatan modul tidak disokong, fatal!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Dapatkan Maklumat Sistem"
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Hentikan seketika daemon"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Jangan hentikan seketika daemon"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Mulakan semula daemon"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Setkan id dan nama pengguna"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "ID untuk pilot"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Pasangkan fail"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FAIL"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Menyimpan semula direktori"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIREKTORI"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Jalankan conduit"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Nama pengguna untuk disetkan"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "NAMA PENGGUNA"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Awasi tindakan pilot yang ditentukan"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Awasi semua pilot"
+
+#: utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "senaraikan pilot dengan log masuk (semua bagi semua pilot)"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOG MASUK"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Tentukan pilot untuk dikendalikan pada (piawai untuk MyPilot)"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "NAMA PILOT"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Tentukan endul untuk dikendalikan pada (piawai untuk Endul0)"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "NAMA ENDUL"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Senaraikan asas pilot yang ditentukan"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"AWAS!!\n"
+"Ini merupakan alat bagi bahagian tertentu pakej gnome-pilot.\n"
+"Melainkan anda tahu apa yang anda buat, jangan guna alat ini."
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "senaraikan conduit yang ada"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "conduit untuk dikendalikan pada"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "senaraikan semua atribut"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "tentukan pilot untuk dikendalikan pada"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "ID PILOT"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "senaraikan atribut"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "senaraikan conduit yang ada dan keadaannya"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "membolehkan conduit yang ditentukan"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "lumpuhkan conduit yang ditentukan"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "membolehkan, dan mengesetkan penyegerakan pertama kepada perlahan"
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "segerakan dan musnahkan conduit"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "Tidak dapat memeriksa port untuk"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "Port seharusnya menunjukkan port bersiri USB"
+
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "Port sepatutnya peranti khas aksara tetapi bukannya untuk"

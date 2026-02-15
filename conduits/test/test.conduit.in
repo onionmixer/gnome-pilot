@@ -1,0 +1,9 @@
+<gnome-pilot-conduit version="1.0">
+	<conduit id="test_conduit" type="shlib" location="@LIBDIR@/gnome-pilot/conduits/libtest_conduit-3.0.so"/>
+	<name value="Test"/>
+	<conduit-attribute name="description" value="Test conduit"/>
+     	<conduit-attribute name="default-synctype" value="synchronize"/>
+     	<conduit-attribute name="valid-synctypes" value="synchronize copy_from_pilot copy_to_pilot merge_from_pilot merge_to_pilot"/>
+     	<conduit-attribute name="settings" value="FALSE"/>
+     	<conduit-attribute name="icon" value="@DATADIR@/pixmaps/gnome-unknown.png"/>
+</gnome-pilot-conduit>

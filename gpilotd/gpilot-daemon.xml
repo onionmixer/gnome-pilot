@@ -1,0 +1,770 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.gnome.GnomePilot.Daemon">
+    <method name="Pause">
+      <arg name="on_off" direction="in" type="b"/>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to pause or continue the daemon.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="RereadConfig">
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to reload the configuration.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="Noop">
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method does nothing, used by client to occasionally check to see if the daemon has blown up.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="RequestInstall">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="filename" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The file name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="description" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The description</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to install a pilot.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="RequestRestore">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="directory" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot directory</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to restore a pilot.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="RequestConduit">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="operation" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The conduit operation type. Currently support following operations:
+        0 - SYNCHRONIZE
+        1 - CONDUIT_DEFAULT
+        2 - COPY_FROM_PILOT
+        3 - COPY_TO_PILOT
+        4 - MERGE_FROM_PILOT
+        5 - MERGE_TO_PILOT
+          </doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to restore a pilot.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="RemoveRequest">
+      <arg name="handle" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to remove a request.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetSystemInfo">
+      <arg name="cradle" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The cradle name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get system info.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetUsers">
+      <arg name="users" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of user names.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the users.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetCradles">
+      <arg name="cradles" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of cradles.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the cradles.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilots">
+      <arg name="pilots" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of pilot names.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the pilot names.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotIDs">
+      <arg name="pilots" direction="out" type="au">
+        <doc:doc>
+          <doc:summary>An array of pilot IDs.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the pilot IDs.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotsByUserName">
+      <arg name="username" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The user name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="pilots" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of pilot names.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the pilot names by given user name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotsByUserLogin">
+      <arg name="uid" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The user id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="pilots" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of pilot names.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get a list of all the pilot names by given user id.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetUserNameByPilotName">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="username" direction="out" type="s">
+        <doc:doc>
+          <doc:summary>The returned user name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get the user name by given pilot name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetUserLoginByPilotName">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="uid" direction="out" type="s">
+        <doc:doc>
+          <doc:summary>The returned user id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get the user id by given pilot name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotBaseDir">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="base_dir" direction="out" type="s">
+        <doc:doc>
+          <doc:summary>The returned base dir.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get the base dir by given pilot name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotIdFromName">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="pilot_id" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned pilot id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get the pilot id by given pilot name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetPilotNameFromId">
+      <arg name="pilot_id" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The pilot id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="pilot_name" direction="out" type="s">
+        <doc:doc>
+          <doc:summary>The returned pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get the pilot name by given pilot id.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetDatabasesFromCache">
+      <arg name="pilot_name" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The pilot name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="databases" direction="out" type="as">
+        <doc:doc>
+          <doc:summary>An array of databases.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get databases by given pilot name.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="GetUserInfo">
+      <arg name="cradle" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The cradle name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to get user infos.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <method name="SetUserInfo">
+      <arg name="cradle" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The cradle name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="continue_sync" direction="in" type="b">
+        <doc:doc>
+          <doc:summary>Indicate whether to continue synchronize.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="survival" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>Indicate how this operation survive. Currently 0 means immediate, 1 means persitent.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="timeout" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The time out by second.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="uid" direction="in" type="u">
+        <doc:doc>
+          <doc:summary>The returned user id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="username" direction="in" type="s">
+        <doc:doc>
+          <doc:summary>The returned user name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="handle" direction="out" type="u">
+        <doc:doc>
+          <doc:summary>The returned handle.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>This method initiates a request to set user infos.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+
+    <signal name="Connected">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="uid" type="u">
+        <doc:doc>
+          <doc:summary>The user id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="username" type="s">
+        <doc:doc>
+          <doc:summary>The user name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a pilot connected.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="Disconnected">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a pilot disconnected.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="RequestCompleted">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="request_id" type="u">
+        <doc:doc>
+          <doc:summary>The request id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a request completed.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="UserInfoRequested">
+      <arg name="device" type="s">
+        <doc:doc>
+          <doc:summary>The device</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="uid" type="u">
+        <doc:doc>
+          <doc:summary>The user id.</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="username" type="s">
+        <doc:doc>
+          <doc:summary>The user name.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when user info is requested.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="SysInfoRequested">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="rom_size" type="i">
+        <doc:doc>
+          <doc:summary>The rom size</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="ram_size" type="i">
+        <doc:doc>
+          <doc:summary>The ram size</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="ram_free" type="i">
+        <doc:doc>
+          <doc:summary>The free ram size</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="name" type="s">
+        <doc:doc>
+          <doc:summary>The name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="manufacturer" type="s">
+        <doc:doc>
+          <doc:summary>The manufacturer</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="creation" type="i">
+        <doc:doc>
+          <doc:summary>The creation time</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="rom_version" type="i">
+        <doc:doc>
+          <doc:summary>The rom version</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when sys info is requested.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="ConduitStart">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="database" type="s">
+        <doc:doc>
+          <doc:summary>The database name</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when conduit syncing start, used for progress bar.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="ConduitProgress">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="current" type="u">
+        <doc:doc>
+          <doc:summary>The current number</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="total" type="u">
+        <doc:doc>
+          <doc:summary>The total number</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when conduit syncing in progress, used for progress bar.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="ConduitEnd">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when conduit syncing end, used for progress bar.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="OverallProgress">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="current" type="u">
+        <doc:doc>
+          <doc:summary>The current number</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="total" type="u">
+        <doc:doc>
+          <doc:summary>The total number</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when the overall syncing in progress, used for progress bar.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="DaemonMessage">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="message" type="s">
+        <doc:doc>
+          <doc:summary>The message</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a daemon message appears.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="DaemonError">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="message" type="s">
+        <doc:doc>
+          <doc:summary>The message</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a daemon error appears.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="ConduitMessage">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="message" type="s">
+        <doc:doc>
+          <doc:summary>The message</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a conduit message appears.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="ConduitError">
+      <arg name="pilot_id" type="s">
+        <doc:doc>
+          <doc:summary>The pilot id</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="conduit" type="s">
+        <doc:doc>
+          <doc:summary>The conduit name</doc:summary>
+        </doc:doc>
+      </arg>
+      <arg name="message" type="s">
+        <doc:doc>
+          <doc:summary>The message</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when a conduit error appears.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+
+    <signal name="Paused">
+      <arg name="on_off" type="b">
+        <doc:doc>
+          <doc:summary>Indicate pause on or off.</doc:summary>
+        </doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>Emitted when to pause or unpaused.</doc:para>
+        </doc:description>
+      </doc:doc>
+    </signal>
+  </interface>
+</node>

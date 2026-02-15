@@ -1,0 +1,22 @@
+Passwords
+---------
+
+To set a password for a user, run utils/gnome-pilot-make-password
+/dev/cua?, press sync and you'll get an encrypted password.
+
+Add the encrypted password to the pilot, in the form of
+
+[Pilotxxx]
+...
+password=<encryptedpasswordhere>
+
+Note: the encryption is done by calling crypt on the already encrypted
+password in the pilot.  Verification is done be using the pilots
+password as an "cleartext" password.  Therefore if your encrypted
+pilotpassword is snooped, this password can be faked easily.  This
+implementation is a proof-of-concept workaround of issues raised by
+Dr. Mike. I'm looking at implementing a more secure system, if I can
+find someway to verify a cleartext password against the pilots
+encrypted.
+
+eskil

@@ -1,0 +1,1805 @@
+# German translation for gnome-pilot.
+# Copyright (C) 2000-2002 Free Software Foundation, Inc.
+# Christian Meyer <chrisime@gnome.org>, 2000-2002.
+# Christian Neumair <chris@gnome-de.org>, 2002.
+# Christian Neumair <chris@gnome-de.org>, 2004.
+# Hendrik Brandt <heb@gnome-de.org>, 2005.
+# Andre Klapper <ak-47@gmx.net>, 2009.
+# Mario Blättermann <mariobl@frenet.de>, 2009, 2011.
+# Christian Kirbach  <Christian.Kirbach@googlemail.com>, 2009, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"pilot&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-20 23:22+0000\n"
+"PO-Revision-Date: 2011-03-31 23:27+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "PDA wählen"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "Eigenschaften von GNOME-PilotSync"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "PDA wiederherstellen"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "Or_dner"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "_Bildschirmnotizen"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "Ausführen, wenn ange_klickt"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "_PDA-Kennung"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "_Docking-Station abgleichen"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "Gnome-Pilot-Fortschritt"
+
+#: ../applet/pilot.c:186
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s-Datenabgleich"
+
+#: ../applet/pilot.c:191
+msgid "Connecting..."
+msgstr "Verbinden läuft …"
+
+#: ../applet/pilot.c:209 ../applet/pilot.c:907 ../applet/pilot.c:1051
+msgid "Ready to synchronize"
+msgstr "Zum Datenabgleich bereit"
+
+#: ../applet/pilot.c:290
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "%ld-Anforderung wurde abgeschlossen\n"
+
+#: ../applet/pilot.c:312
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s-Datenabgleich: %s"
+
+#: ../applet/pilot.c:317
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Gestartet\n"
+
+#: ../applet/pilot.c:332
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s abgeschlossen: %s"
+
+#: ../applet/pilot.c:337
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Beendet\n"
+
+#: ../applet/pilot.c:362
+#, c-format
+msgid "%d of %d records"
+msgstr "%d von %d Datensätzen"
+
+#: ../applet/pilot.c:382
+#, c-format
+msgid "Database %d of %d"
+msgstr "Datenbank %d von %d"
+
+#: ../applet/pilot.c:443
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Pilot gleicht gerade ab.\n"
+"Bitte warten Sie, bis er fertig ist."
+
+#: ../applet/pilot.c:448
+msgid "Not connected. Please restart daemon."
+msgstr "Nicht verbunden. Bitte den Dämon neu starten."
+
+#: ../applet/pilot.c:452
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Nicht verbunden mit gpilotd.\n"
+"Bitte den Dämon neu starten."
+
+#: ../applet/pilot.c:481
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot-Applet"
+
+#: ../applet/pilot.c:483
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Copyright 2000-2006 Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:484
+msgid "A PalmOS PDA monitor.\n"
+msgstr "Ein PDA-Monitor für PalmOS-Geräte.\n"
+
+#: ../applet/pilot.c:582 ../applet/pilot.c:609
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Beim Anzeigen der Hilfe ist ein Fehler aufgetreten: %s"
+
+#: ../applet/pilot.c:695
+#, c-format
+msgid "Restoring %s"
+msgstr "%s wird wiederhergestellt"
+
+#: ../applet/pilot.c:738
+msgid "No directory to restore from."
+msgstr "Kein Ordner, aus dem geladen werden kann."
+
+#: ../applet/pilot.c:750
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Drücken Sie »Abgleichen« auf der Docking-Station \n"
+"zum Wiederherstellen oder brechen Sie den Vorgang ab."
+
+#: ../applet/pilot.c:756
+#, c-format
+msgid "cancelling %d"
+msgstr "%d wird abgebrochen"
+
+#: ../applet/pilot.c:761
+msgid "Restore request failed"
+msgstr "Wiederherstellung fehlgeschlagen."
+
+#: ../applet/pilot.c:802
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"PDA-Datenabgleich ist gerade im Gange.\n"
+"Wollen Sie den Dämon wirklich neu starten?"
+
+#: ../applet/pilot.c:817 ../applet/pilot.c:1371
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Versuch, mit dem GnomePilot-Dämon zu verbinden"
+
+#: ../applet/pilot.c:834
+msgid "There's no last sync on record."
+msgstr "Es gibt keinen letzten Datenabgleich in der Aufzeichnung."
+
+#: ../applet/pilot.c:839
+msgid "_Restore"
+msgstr "_Wiederherstellen"
+
+#: ../applet/pilot.c:840
+msgid "_Pause/Resume"
+msgstr "_Anhalten/Fortsetzen"
+
+#: ../applet/pilot.c:841
+msgid "R_estart"
+msgstr "N_eu starten"
+
+#: ../applet/pilot.c:842
+msgid "_Log"
+msgstr "Protoko_ll"
+
+#: ../applet/pilot.c:843
+msgid "_Props"
+msgstr "_Eigenschaften"
+
+#: ../applet/pilot.c:844
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../applet/pilot.c:845
+msgid "_About"
+msgstr "_Info"
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:856
+msgid "Restore..."
+msgstr "_Wiederherstellen …"
+
+#: ../applet/pilot.c:856
+msgid "Restart"
+msgstr "Neu starten"
+
+#: ../applet/pilot.c:856
+msgid "Last log..."
+msgstr "Letztes Protokoll …"
+
+#: ../applet/pilot.c:857
+msgid "Preferences..."
+msgstr "Einstellungen …"
+
+#: ../applet/pilot.c:857
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../applet/pilot.c:857
+msgid "About"
+msgstr "Info"
+
+#: ../applet/pilot.c:870
+msgid "Continue"
+msgstr "Fortfahren"
+
+#: ../applet/pilot.c:872
+msgid "Pause Daemon"
+msgstr "Dämon unterbrechen"
+
+#: ../applet/pilot.c:898
+msgid "Daemon paused..."
+msgstr "Dämon unterbrochen …"
+
+#: ../applet/pilot.c:1039
+msgid "Not connected. Restart daemon to reconnect"
+msgstr ""
+"Nicht verbunden. Laden Sie den Dämon neu, um es noch einmal zu versuchen"
+
+#: ../applet/pilot.c:1210
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Ausführen von %s fehlgeschlagen."
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1336
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "»%s« wird auf »%s« installiert"
+
+#: ../applet/pilot.c:1346
+msgid "unknown dnd type"
+msgstr "Unbekannter DND-Typ"
+
+#: ../applet/pilot.c:1354
+msgid "destroy gpilot-applet"
+msgstr "pilot-applet zerstören"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Auszuführender Befehl, wenn das Applet angeklickt wird"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Zeigt Notizen in einem aufklappenden Fenster an"
+
+#: ../capplet/gnome-pilot-capplet.c:228 ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "Einstellungen für gnome-pilot"
+
+#: ../capplet/gnome-pilot-capplet.c:395 ../capplet/gnome-pilot-capplet.c:471
+msgid "Name"
+msgstr "Name"
+
+#: ../capplet/gnome-pilot-capplet.c:397 ../utils/gpilotd-client.c:43
+msgid "ID"
+msgstr "Kennung"
+
+#: ../capplet/gnome-pilot-capplet.c:399
+msgid "Owner"
+msgstr "Eigentümer"
+
+#: ../capplet/gnome-pilot-capplet.c:473
+msgid "Type"
+msgstr "Typ"
+
+#: ../capplet/gnome-pilot-capplet.c:575
+msgid "Conduit"
+msgstr "Conduit"
+
+#: ../capplet/gnome-pilot-capplet.c:577
+msgid "Sync Action"
+msgstr "Datenabgleich"
+
+#: ../capplet/gnome-pilot-capplet.c:791
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Sind Sie sicher, dass Sie PDA »%s« löschen wollen?"
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "_Edit this PDA..."
+msgstr "Diesen PDA _bearbeiten …"
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "Edit the currently selected PDA"
+msgstr "Den derzeit gewählten PDA bearbeiten"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "_Delete this PDA"
+msgstr "Diesen PDA _löschen"
+
+#: ../capplet/gnome-pilot-capplet.c:818
+msgid "Delete the currently selected PDA"
+msgstr "Den derzeit gewählten PDA löschen"
+
+#: ../capplet/gnome-pilot-capplet.c:970
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Sind Sie sicher, dass Sie das Gerät %s löschen wollen?"
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "_Edit this device..."
+msgstr "Dieses Gerät _bearbeiten …"
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "Edit the currently selected device"
+msgstr "Das derzeitig gewählte Gerät bearbeiten"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "_Delete this device"
+msgstr "Dieses Gerät _löschen"
+
+#: ../capplet/gnome-pilot-capplet.c:994
+msgid "Delete the currently selected device"
+msgstr "Das derzeit gewählte Gerät löschen"
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%s Conduit kann nicht instanziert werden."
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "_Enable this conduit"
+msgstr "Dieses Conduit _aktivieren"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "Disable the currently selected conduit"
+msgstr "Das derzeit gewählte Conduit deaktivieren"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "_Disable this conduit"
+msgstr "Dieses Conduit _deaktivieren"
+
+#: ../capplet/gnome-pilot-capplet.c:1221
+msgid "Enable the currently selected conduit"
+msgstr "Das derzeit gewählte Conduit aktivieren"
+
+#: ../capplet/gnome-pilot-capplet.c:1222 ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "E_instellungen …"
+
+#: ../capplet/gnome-pilot-capplet.c:1223
+msgid "Modify the currently selected conduit's settings"
+msgstr "Die derzeit gewählten Conduit-Einstellungen verändern"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:204
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr ""
+"Fenster für PDA-Einstellungen kann nicht erzeugt werden. Fehlerhafte Conduit-"
+"Konfiguration."
+
+#: ../capplet/gnome-pilot-assistant.c:504
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Setup wurde nicht zu Ende ausgeführt und\n"
+"Einstellungen wurden nicht gespeichert. Wirklich beenden?"
+
+#: ../capplet/gnome-pilot-assistant.c:723
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Bereit zur Übertragung folgender Daten an den PDA.\n"
+"Benutzername: %s\n"
+"PDA-Kennung: %d\n"
+"Bitte stecken Sie den PDA in %s (%s) und drücken Sie den HotSync-Knopf."
+
+#: ../capplet/gnome-pilot-assistant.c:744
+#: ../capplet/gnome-pilot-assistant.c:765
+msgid "Failed sending request to gpilotd"
+msgstr "Senden der Anforderung an gpilotd fehlgeschlagen."
+
+#: ../capplet/gnome-pilot-assistant.c:752
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Bereit zum Empfang des Benutzernamen und der Kennung vom PDA.\n"
+"Bitte stecken Sie den PDA in %s (%s) und drücken Sie den HotSync-Knopf."
+
+#: ../capplet/gnome-pilot-assistant.c:936
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Benutzernamen und Kennung erfolgreich vom PDA empfangen.\n"
+"Benutzername: %s\n"
+"PDA-Kennung: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:438
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Bitte stecken Sie den PDA in %s (%s) und drücken Sie den HotSync-Knopf oder "
+"brechen Sie den Vorgang ab."
+
+#: ../capplet/gnome-pilot-pdialog.c:473
+msgid "The request to get PDA ID failed"
+msgstr "Die Anforderung die PDA-Kennung zu holen, ist fehlgeschlagen"
+
+#: ../capplet/gnome-pilot-pdialog.c:512
+msgid "The request to set PDA ID failed"
+msgstr "Die Anforderung, die Pilot-Kennung festzulegen, ist fehlgeschlagen"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Conduit-Aktionen</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Conduit-Einstellungen</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA-Attribute</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA-Identifikation</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Welches Gerät soll für diese Operation "
+"verwendet werden?</span>\n"
+"\n"
+"Da Sie mehrere verbundene Geräte für diesen Rechner definiert haben, müssen "
+"Sie das für diese Operation zu benutzende Gerät angeben."
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "Zeic_hensatz des PDAs:"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "C_onduits"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "Wählen Sie das Gerät aus"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Wählen Sie diese Option, falls Sie bereits Abgleichsoftware verwendet haben, "
+"auch auf einem anderen Rechner"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "Conduit-Einstellungen"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Herzlichen Glückwunsch, Sie haben gnome-pilot erfolgreich konfiguriert!\n"
+"\n"
+"Sie können die gnome-pilot-Einstellungen zu jeder Zeit in \n"
+"GNOME-Einstellungen unter PalmOS-Geräte ändern.\n"
+"\n"
+"Sie können den Datenabgleich von gnome-pilot überwachen, \n"
+"indem Sie das PilotLink-Applet zu Ihrem Panel hinzufügen."
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "Deakt_ivieren"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "_Geräte"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "Geräteeinstellungen"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "Gerät:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Geben Sie den Benutzernamen an, der auf dem PDA gespeichert werden soll"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Name des Eigentümers und Kennung aus dem PDA holen"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "Inf_rarot"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "Datenabgleich beginnen"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "Netz_werk"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "Ei_gentümer:"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Benutzername und Kennung zum Einstellen auf dem PDA."
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "Eigentümer:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "PDA-Attribute"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "PDA-Identifikation"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "PDA-Einstellungen"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "P_DA:"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "Bitte beseitigen Sie folgendes Problem …"
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "Ge_schwindigkeit:"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"Eigentümername und Kennung an den PDA senden, vorhandene Identität wird "
+"überschrieben"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Legen Sie den Basisordner für Ihre zu speichernden PDA-Dateien fest."
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "Erfolg"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Der Name für Ihren PDA. Er wird nur zur Identifikation verwendet."
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid ""
+"This integer ID identifies your PDA and must be unique between different PDAs "
+"that you use."
+msgstr ""
+"Diese Kennungs-Zeichenkette identifiziert Ihren PDA und muss eindeutig unter "
+"den verschiedenen PDAs sein, die Sie verwenden."
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "_Zeitüberschreitung:"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "Willkommen zu gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Sie scheinen gnome-pilot zum ersten Mal auszuführen.\n"
+"Die folgenden Schritte werden Einstellungen zum\n"
+"Datenabgleich treffen. Sie können später noch alle\n"
+"Einstellungen im GNOME-Kontrollzentrum unter PalmOS-Geräte ändern.\n"
+"\n"
+"Klicken Sie »Weiter«, um fortzufahren.\n"
+"Klicken Sie »Abbrechen«, um zu beenden."
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "_Aktion:"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "_Hinzufügen …"
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "_Löschen"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "_Gerät:"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "_Bearbeiten …"
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "A_ktivieren"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "Vom Pilot _empfangen"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "_Infrarot"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "_Lokaler Ordner:"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "_Name des PDAs:"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "_Name:"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr ""
+"_Nein, ich habe niemals eine Datenabgleich-Software mit diesem PDA verwendet."
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "_Einmalige Aktion:"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "Eigentümer:"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "_PDA-Kennung:"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "_PDAs"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "An PDA _senden"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "_Seriell"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "_Typ:"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr ""
+"_Ja, ich habe vorher eine Datenabgleich-Software mit dem Pilot verwendet."
+
+#: ../capplet/gpilotd-control-applet.c:84
+msgid " - configure gnome-pilot settings"
+msgstr " - Einstellungen für gnome-pilot"
+
+#: ../capplet/gpilotd-control-applet.c:86
+#: ../capplet/gpilotd-control-applet.c:95
+#, c-format
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "Fehler bei der Initialisierung des gpilotd-Capplets: %s"
+
+#: ../capplet/gpilotd-control-applet.c:101
+#: ../capplet/gpilotd-control-applet.c:102
+msgid "Error loading PDA state, aborting"
+msgstr "Fehler beim Laden des PDA-Status. Abbruch"
+
+#: ../capplet/gpilotd-control-applet.c:109
+#: ../capplet/gpilotd-control-applet.c:110
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Es kann keine Verbindung zum GnomePilot-Dämon hergestellt werden"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOS-Geräte konfigurieren"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS-Gerät"
+
+#: ../capplet/pilot.c:116
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "Schlüssel »gpilotd/General/sync_PC_Id« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:130
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr ""
+"Schlüssel »gpilotd/General/progress_stepping« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:164
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "Schlüssel »gpilotd/%s/type« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:186
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "Schlüssel »gpilotd/%s/name« kann nicht geladen werden: iDevice,%s"
+
+#: ../capplet/pilot.c:204
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "Schlüssel »gpilotd/%s/speed« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:213
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "Schlüssel »gpilotd/%s/timeout« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:254
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr "Schlüssel »gpilotd/%s/name« kann nicht geladen werden: %s"
+
+#: ../capplet/pilot.c:264
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "Schlüssel »gpilotd/%s/pilotid« kann nicht geladen werden: %s"
+
+#: ../capplet/util.c:123 ../capplet/util.c:513
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: ../capplet/util.c:129 ../capplet/util.c:515
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "Keines"
+
+#: ../capplet/util.c:315
+msgid "You must have at least one device setup"
+msgstr "Sie müssen mindestens eine Geräteeinstellung haben"
+
+#: ../capplet/util.c:486
+msgid "Synchronize"
+msgstr "Abgleichen"
+
+#: ../capplet/util.c:487
+msgid "Copy from PDA"
+msgstr "Von Pilot kopieren"
+
+#: ../capplet/util.c:488
+msgid "Copy to PDA"
+msgstr "Auf Pilot kopieren"
+
+#: ../capplet/util.c:489
+msgid "Merge from PDA"
+msgstr "Vom Pilot einfließen"
+
+#: ../capplet/util.c:490
+msgid "Merge to PDA"
+msgstr "Zum Pilot einfließen"
+
+#: ../capplet/util.c:493
+msgid "Use conduit settings"
+msgstr "Conduit-Einstellungen verwenden"
+
+#: ../capplet/util.c:501
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:502
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:503
+msgid "Network"
+msgstr "Netzwerk"
+
+#: ../capplet/util.c:504
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:505
+msgid "Serial"
+msgstr "Seriell"
+
+#: ../capplet/util.c:552
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Der angegebene Ordner existiert, aber die Zugriffsrechte sind falsch.\n"
+"Bitte korrigieren oder einen anderen Ordner wählen"
+
+#: ../capplet/util.c:557
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Der angegebene Ordner existiert, ist aber kein Ordner.\n"
+"Bitte ändern Sie ihn in einen Ordner oder wählen Sie einen anderen"
+
+#: ../capplet/util.c:564
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another directory"
+msgstr ""
+"Es war nicht möglich, den angegebenen Ordner anzulegen.\n"
+"Bitte überprüfen Sie die Rechte in diesem Pfad oder wählen Sie einen anderen "
+"Ordner"
+
+#: ../capplet/util.c:569
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Der angegebene Pfad für den Ordner ist ungültig.\n"
+"Bitte wählen Sie einen anderen Ordner"
+
+#: ../capplet/util.c:593
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"»%s« ist keine gültige Kennung für einen Zeichensatz.\n"
+"Bitte geben Sie eine gültige Bezeichnung aus den verfügbaren Optionen ein."
+
+#: ../capplet/util.c:706
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Gerät »usb« gilt nur für Geräte des Typs USB"
+
+#: ../capplet/util.c:714
+msgid "Read/Write permissions failed on"
+msgstr "Lese-/Schreibrechte fehlgeschlagen auf"
+
+#: ../capplet/util.c:716
+msgid "Check the permissions on the device and retry"
+msgstr "Überprüfen Sie die Rechte auf dem Gerät und wiederholen Sie den Vorgang"
+
+#: ../capplet/util.c:728 ../gpilotd/gpilot-daemon.c:1260
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Ordner %s oder Datei %s konnten nicht gefunden werden. Überprüfen Sie, ob "
+"usbfs oder sysfs eingehängt sind."
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr ""
+"Schlüssel »backup-conduit/%s/updated_only« kann nicht geladen werden: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr ""
+"Schlüssel »backup-conduit/%s/remove_deleted« kann nicht geladen werden: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "Überprüfung für gelöschte Datenbanken"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:274
+#, c-format
+msgid "Renaming %s"
+msgstr "%s wird umbenannt"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:282
+#, c-format
+msgid "to %s"
+msgstr "nach %s"
+
+#: ../conduits/backup/backup_conduit.c:457
+#: ../conduits/backup/backup_conduit.c:461
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s seit dem letzten Datenabgleich nicht verändert."
+
+#: ../conduits/backup/backup_conduit.c:473
+#: ../conduits/backup/backup_conduit.c:475
+#, c-format
+msgid "Making backup of %s"
+msgstr "Sicherung von %s wird angelegt"
+
+#: ../conduits/backup/backup_conduit.c:482
+#: ../conduits/backup/backup_conduit.c:484
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Sicherungsdatei %s konnte nicht angelegt werden"
+
+#: ../conduits/backup/backup_conduit.c:684
+msgid "Collecting restore information..."
+msgstr "Wiederherstellungsinformationen werden eingeholt"
+
+#: ../conduits/backup/backup_conduit.c:811
+msgid "_Backup directory:"
+msgstr "_Sicherungsordner:"
+
+#: ../conduits/backup/backup_conduit.c:825
+msgid "Backup directory"
+msgstr "Sicherungsordner"
+
+#: ../conduits/backup/backup_conduit.c:827
+msgid "O_nly backup changed bases"
+msgstr "_Nur die Wiederherstellung hat die Basis verändert"
+
+#: ../conduits/backup/backup_conduit.c:837
+msgid "Only backup changed bases"
+msgstr "Nur die Wiederherstellung hat die Basis verändert"
+
+#: ../conduits/backup/backup_conduit.c:839
+msgid "_Remove local base if deleted on pilot"
+msgstr "Lokale Basis entfe_rnen, wenn auf Pilot gelöscht"
+
+#: ../conduits/backup/backup_conduit.c:849
+msgid "Remove local base if deleted on pilot"
+msgstr "Lokale Basis entfernen, wenn auf Pilot gelöscht"
+
+#: ../conduits/backup/backup_conduit.c:851
+msgid "# of old backups to _keep"
+msgstr "Anzahl der alten Sicherungen, die nicht gelöscht werden sollen"
+
+#: ../conduits/backup/backup_conduit.c:862
+msgid "# of old backups to keep"
+msgstr "Anzahl der alten Sicherungen, die nicht gelöscht werden sollen"
+
+#: ../conduits/backup/backup_conduit.c:900
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Der angegebene Ordner existiert, aber die Rechte sind falsch.\n"
+"Bitte korrigieren oder einen anderen Ordner wählen"
+
+#: ../conduits/backup/backup_conduit.c:905
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Der angegebene Ordner existiert, aber ist kein Ordner.\n"
+"Bitte wandeln Sie ihn in einen Ordner um oder wählen Sie einen anderen"
+
+#: ../conduits/backup/backup_conduit.c:912
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Es war nicht möglich, den angegebenen Ordner anzulegen.\n"
+"Bitte überprüfen Sie die Rechte in diesem Pfad oder wählen Sie einen anderen "
+"Ordner"
+
+#: ../conduits/backup/backup_conduit.c:917
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Der angegebene Pfad für den Sicherungsordner ist ungültig.\n"
+"Bitte wählen Sie einen anderen Ordner"
+
+#: ../conduits/evolution-data-server/address-conduit.c:593
+msgid "Default Sync Address:"
+msgstr "Voreingestellte Adresse für den Abgleich:"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1594
+#: ../conduits/evolution-data-server/address-conduit.c:1595
+msgid "Could not load address book"
+msgstr "Adressbuch konnte nicht geladen werden"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1666
+#: ../conduits/evolution-data-server/address-conduit.c:1669
+msgid "Could not read pilot's Address application block"
+msgstr "Der Adressanwendungs-Block des Pilot konnte nicht gelesen werden"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:250
+msgid "Split Multi-Day Events:"
+msgstr "Ereignisse von mehreren Tagen aufteilen:"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1496
+#: ../conduits/evolution-data-server/calendar-conduit.c:1497
+#: ../conduits/evolution-data-server/memo-conduit.c:787
+#: ../conduits/evolution-data-server/memo-conduit.c:788
+#: ../conduits/evolution-data-server/todo-conduit.c:990
+#: ../conduits/evolution-data-server/todo-conduit.c:991
+msgid "Could not start evolution-data-server"
+msgstr "evolution-data-server konnte nicht gestartet werden"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1598
+#: ../conduits/evolution-data-server/calendar-conduit.c:1601
+msgid "Could not read pilot's Calendar application block"
+msgstr "Der Kalenderanwendungs-Block des Pilot konnte nicht gelesen werden"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:96
+msgid "Sync with:"
+msgstr "Datenabgleich mit:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:104
+msgid "Sync Private Records:"
+msgstr "Private Daten abgleichen:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:113
+msgid "Sync Categories:"
+msgstr "Kategorien abgleichen:"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:875
+#: ../conduits/evolution-data-server/memo-conduit.c:878
+msgid "Could not read pilot's Memo application block"
+msgstr "Der Notizanwendungs-Block des Pilot konnte nicht gelesen werden"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:918
+#: ../conduits/evolution-data-server/memo-conduit.c:921
+msgid "Could not write pilot's Memo application block"
+msgstr "Der Notizanwendungs-Block des Pilot konnte nicht geschrieben werden"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:227
+msgid "Default Priority:"
+msgstr "Voreingestellte Priorität:"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1068
+#: ../conduits/evolution-data-server/todo-conduit.c:1071
+msgid "Could not read pilot's ToDo application block"
+msgstr ""
+"Der Aufgabenlistenanwendungs-Block des Pilot konnte nicht gelesen werden"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1111
+#: ../conduits/evolution-data-server/todo-conduit.c:1114
+msgid "Could not write pilot's ToDo application block"
+msgstr ""
+"Der Aufgabenlistenanwendungs-Block des Pilot konnte nicht geschrieben werden"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "installation von %s fehlgeschlagen"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "%s von %s wird installiert …"
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "%s wird installiert …"
+
+#: ../conduits/file/gpilot_install_file.c:41
+msgid "Install immediately"
+msgstr "Sofort installieren"
+
+#: ../conduits/file/gpilot_install_file.c:42
+msgid "Install delayed"
+msgstr "Verzögert installieren"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA to install to"
+msgstr "PDA auf dem installiert wird"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "[FILE...]"
+msgstr "[DATEI …]"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "list of files"
+msgstr "Liste von Dateien"
+
+#: ../conduits/file/gpilot_install_file.c:97 ../utils/gpilotd-client.c:466
+#: ../utils/gpilotdcm-client.c:107
+#, c-format
+msgid "Error parsing commandline arguments: %s"
+msgstr "Fehler beim Verarbeiten der Argumente der Befehlszeile: %s"
+
+#: ../conduits/file/gpilot_install_file.c:113
+#: ../conduits/file/gpilot_install_file.c:114
+msgid "Unable to get PDA names"
+msgstr "Ermittlung des PDA-Namens war nicht möglich"
+
+#: ../conduits/file/gpilot_install_file.c:149
+msgid "Following files failed :\n"
+msgstr "Fehler bei folgenden Dateien:\n"
+
+#: ../conduits/file/gpilot_install_file.c:161
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Auf %s installieren\n"
+
+#: ../conduits/file/gpilot_install_file.c:182
+msgid "No files to install"
+msgstr "Keine zu installierenden Dateien"
+
+#: ../conduits/file/gpilot_install_file.c:185
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Drücken Sie »Abgleichen« an der Docking-Station, um zu installieren\n"
+" oder brechen Sie den Vorgang ab."
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:683
+msgid "module loading not supported, fatal!"
+msgstr "Laden des Conduits wird nicht unterstützt!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:135
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "gelöschte PDA-Aufzeichnung lokal verändert, wird nicht gelöscht\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "gelöschte lokale Aufzeichnung auf PDA verändert, wird nicht gelöscht\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "Konflikt beim Einfließen, PDA- und lokale Aufzeichnung vertauscht\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr ""
+"Archiv- und Änderungskonflikt, Pilot- und lokale Aufzeichnung vertauscht\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "Archiv- und Änderungskonflikt, lokale Aufzeichnung an PDA geschickt\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr ""
+"Archiv- und Änderungskonflikt, Aufzeichnung des PDAs lokal gespeichert\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:457
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:532
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:593
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:622
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:651
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Conduit-Initialisierung fehlgeschlagen. Abbruch"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:470
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Löschen aller Einträge in der Datenbank des PDAs war nicht möglich. Abbruch."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:481
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1071
+msgid "Conduit did not return a record"
+msgstr "Conduit schickte keine Aufzeichnung zurück"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:538
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Löschen aller Einträge in der lokalen Datenbank nicht möglich. Abbruch."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1472
+msgid "Error in conduit, newly added record could not be found"
+msgstr ""
+"Fehler im Conduit. Die neu hinzugefügte Aufzeichnung konnte nicht gefunden "
+"werden."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:517
+msgid "Copy to PDA failed!"
+msgstr "Das Kopieren auf den PDA ist fehlgeschlagen!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:541
+msgid "Copy from PDA failed!"
+msgstr "Das Kopieren vom PDA ist fehlgeschlagen!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:565
+msgid "Merge to PDA failed!"
+msgstr "Das Einfließen auf den PDA ist fehlgeschlagen!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:589
+msgid "Merge from PDA failed!"
+msgstr "Das Einfließen vom PDA ist fehlgeschlagen!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:644
+msgid "Synchronization failed!"
+msgstr "Datenabgleich ist fehlgeschlagen!"
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Gerät %s (%s) konnte nicht geöffnet werden: Grund: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot konnte Gerät %s (%s) nicht öffnen.\n"
+"Grund: »%s«."
+
+#: ../gpilotd/gnome-pilot-structures.c:446
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+"Bluetooth Gerät [%s]: Socket konnte nicht gebunden werden: Fehler %d "
+"(Überprüfen, ob pilot-link mit Bluetooth-Unterstützung kompiliert wurde)"
+
+#: ../gpilotd/gnome-pilot-structures.c:456
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Gerät [%s, %s]: Socket konnte nicht gebunden werden: Fehler %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:536
+#: ../gpilotd/gnome-pilot-structures.c:589
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Unbekannter Gerätetyp"
+
+#: ../gpilotd/gnome-pilot-structures.c:666
+msgid "Number of devices is configured to 0"
+msgstr "Es stehen keine Geräte zur Verfügung."
+
+#: ../gpilotd/gnome-pilot-structures.c:668
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Keine Geräte konfiguriert.\n"
+"Bitte gpilotd-control-applet ausführen (gnomecc),\n"
+"um gnome-pilot zu konfigurieren."
+
+#: ../gpilotd/gnome-pilot-structures.c:689
+msgid "No accessible devices available"
+msgstr "Keine Geräte verfügbar"
+
+#: ../gpilotd/gnome-pilot-structures.c:708
+msgid "Number of PDAs is configured to 0"
+msgstr "Anzahl der PDAs ist auf 0 gesetzt"
+
+#: ../gpilotd/gnome-pilot-structures.c:710
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Kein PDA konfiguriert.\n"
+"Bitte gpilotd-control-applet ausführen (gnomecc),\n"
+"um gnome-pilot zu konfigurieren."
+
+#: ../gpilotd/gnome-pilot-structures.c:772 ../gpilotd/gpilot-daemon.c:821
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Kein pilot_charset angegeben. »%s« wird verwendet."
+
+#: ../gpilotd/gpilot-daemon.c:372
+msgid "Unable to bind to PDA"
+msgstr "Es kann keine Verbindung zum PDA hergestellt werden."
+
+#: ../gpilotd/gpilot-daemon.c:502
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your configuration, "
+"as you requested new-style libusb `usb:' syncing, but have the old-style "
+"`visor' kernel module loaded.  You may need to select a `ttyUSB...' device."
+msgstr ""
+"Verbinden mit Hilfe des Gerätes »%s« auf Port »%s« schlug fehl. Überprüfen "
+"Sie Ihre Konfiguration, weil Sie einen Datenabgleich mit der neuartigen "
+"libusb durch »usb:« angefordert haben, aber das Kernel-Modul »visor« der "
+"alten Methode geladen ist. Eventuell müssen Sie ein Gerät des Typs »ttyUSB…« "
+"auswählen."
+
+#: ../gpilotd/gpilot-daemon.c:517
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your configuration, "
+"as you requested old-style usbserial `ttyUSB' syncing, but do not have the "
+"usbserial `visor' kernel module loaded.  You may need to select a `usb:' "
+"device."
+msgstr ""
+"Verbinden mit Hilfe des Gerätes »%s« auf Port »%s« schlug fehl. Überprüfen "
+"Sie Ihre Konfiguration, weil Sie einen Datenabgleich mit der veralteten "
+"usbserial-Methode mittels »ttyUSB« angefordert haben, aber das Kernel-Modul "
+"»visor« von usbserial geladen ist. Eventuell müssen Sie ein Gerät des Typs "
+"»usb:« auswählen."
+
+#: ../gpilotd/gpilot-daemon.c:607
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Unbekannter PDA. Keine Benutzer-Kennung/Benutzername passt zu %ld"
+
+#: ../gpilotd/gpilot-daemon.c:614
+msgid "Use gnomecc to configure PDA"
+msgstr "Verwenden Sie gnomecc, um den PDA zu konfigurieren"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilot-daemon.c:619
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Unbekannter PDA. Kein PDA stimmt mit Kennung %ld überein.\n"
+"Verwenden Sie gnomecc, um die PDA-Kennung einzustellen"
+
+#: ../gpilotd/gpilot-daemon.c:644
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Gerät %s hat %d Ereignisse"
+
+#: ../gpilotd/gpilot-daemon.c:657
+msgid "Setting userinfo..."
+msgstr "Benutzereinstellungen …"
+
+#: ../gpilotd/gpilot-daemon.c:669
+msgid "Sync continues"
+msgstr "Datenabgleich wird fortgesetzt"
+
+#: ../gpilotd/gpilot-daemon.c:688
+msgid "Getting userinfo..."
+msgstr "Benutzerinformationen werden empfangen. …"
+
+#: ../gpilotd/gpilot-daemon.c:750
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync-Anforderung erkannt, PDA wird abgeglichen"
+
+#: ../gpilotd/gpilot-daemon.c:752
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Bluetooth-Anforderung erkannt, PDA wird abgeglichen"
+
+#: ../gpilotd/gpilot-daemon.c:754
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync-Knopf gedrückt, PDA wird abgeglichen"
+
+#: ../gpilotd/gpilot-daemon.c:756
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA-Kennung ist %ld, Name ist %s, Besitzer ist %s"
+
+#: ../gpilotd/gpilot-daemon.c:766
+#, c-format
+msgid "On host %s\n"
+msgstr "Auf Rechner %s\n"
+
+#: ../gpilotd/gpilot-daemon.c:768
+#, c-format
+msgid "On host %d\n"
+msgstr "Auf Rechner %d\n"
+
+#: ../gpilotd/gpilot-daemon.c:787
+msgid "Synchronization ended"
+msgstr "Datenabgleich beendet"
+
+#: ../gpilotd/gpilot-daemon.c:790
+msgid "Synchronization ended early"
+msgstr "Datenabgleich zu früh beendet"
+
+#: ../gpilotd/gpilot-daemon.c:835
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr ""
+"»%s« ist kein anerkannter iconv-Zeichensatz, »%s« wird anstelle verwendet."
+
+#: ../gpilotd/gpilot-daemon.c:857
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Der Basisordner %s ist ungültig.\n"
+"Bitte berichtigen Sie es oder verwenden Sie gnomecc, um einen anderen Ordner "
+"zu wählen"
+
+#: ../gpilotd/gpilot-daemon.c:870
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Unbekannter PDA. Kein PDA stimmt mit Kennung %ld überein.\n"
+"Verwenden Sie gnomecc, um die PDA-Kennung einzustellen"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1002
+msgid "An error occurred while getting the PDA's system data"
+msgstr ""
+"Während des Empfangs der Systemdaten des PDAs ist ein Fehler aufgetreten"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1009
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Ein Fehler während des Empfangs der Benutzerdaten des PDAs trat auf"
+
+#: ../gpilotd/gpilot-daemon.c:1014
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Vorgang für Gerät %s (%s) beendet"
+
+#: ../gpilotd/gpilot-daemon.c:1079
+#, c-format
+msgid "Woke on %s"
+msgstr "Auf %s aufgewacht"
+
+#: ../gpilotd/gpilot-daemon.c:1160
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Auf Netzwerk %s aufgewacht"
+
+#: ../gpilotd/gpilot-daemon.c:1430
+#, c-format
+msgid "Watching %s (network)"
+msgstr "%s wird betrachtet (Netzwerk)"
+
+#: ../gpilotd/gpilot-daemon.c:1432
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "%s wird betrachtet (Bluetooth)"
+
+#: ../gpilotd/gpilot-daemon.c:1434
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s (%s) wird betrachtet"
+
+#: ../gpilotd/gpilot-daemon.c:1566
+msgid "Shutting down devices"
+msgstr "Geräte werden heruntergefahren"
+
+#: ../gpilotd/gpilot-daemon.c:1568
+msgid "Rereading configuration..."
+msgstr "Konfiguration wird neu eingelesen …"
+
+#: ../gpilotd/gpilot-daemon.c:2481
+msgid "(unknown DB)"
+msgstr "(unbekannte DB)"
+
+#: ../gpilotd/gpilotd.c:54
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Beenden (SIGTERM empfangen) …"
+
+#: ../gpilotd/gpilotd.c:62
+msgid "Exiting (caught SIGINT)..."
+msgstr "Beenden (SIGINT empfangen)"
+
+#: ../gpilotd/gpilotd.c:93
+msgid "Unable to create file installation queue directory"
+msgstr "Datei-Installationsordner konnte nicht angelegt werden"
+
+#: ../gpilotd/gpilotd.c:209
+msgid "gpilotd already running; exiting ...\n"
+msgstr "gpilotd läuft bereits. Abbruch …\n"
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "Nicht gesicherter Conduit in gesicherter Conduit-Liste"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s wurde gesichert\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s Datensicherung fehlgeschlagen\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "Datenabgleichsinformationen werden eingeholt …"
+
+#: ../gpilotd/manager.c:420
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s wird abgeglichen\n"
+
+#: ../gpilotd/manager.c:439
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Auf PDA %s kopieren\n"
+
+#: ../gpilotd/manager.c:457
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Von PDA %s kopieren\n"
+
+#: ../gpilotd/manager.c:475
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Zum PDA %s einfließen\n"
+
+#: ../gpilotd/manager.c:493
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Vom PDA %s einfließen\n"
+
+#: ../gpilotd/manager.c:521
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Erster Datenabgleich für Conduit %s …"
+
+#: ../gpilotd/manager.c:545
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "unbekannte Datenabgleichsmethode (%d = %s).\n"
+
+#: ../gpilotd/manager.c:671
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d Conduit instanzieren …"
+
+#: ../gpilotd/manager.c:676 ../gpilotd/manager.c:677
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Unbekanntes Conduit »%s« in Konfiguration!"
+
+#: ../gpilotd/manager.c:686
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Laden des Conduits »%s« fehlgeschlagen!"
+
+#: ../gpilotd/manager.c:687
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Laden des Conduits »%s« fehlgeschlagen!\n"
+
+#: ../gpilotd/manager.c:777
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Benutzer/Kennung wird auf %d/%s gesetzt …"
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:809
+#, c-format
+msgid "Conduit %s requested, but not found.  Is it enabled?"
+msgstr "Conduit %s angefordert, aber nicht gefunden. Ist es nicht aktiviert?"
+
+#: ../gpilotd/manager.c:819
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Conduit %s kann nicht angefordert werden"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "Fehler in Warteschlange, nicht existierender Eintrag"
+
+#: ../gpilotd/queue_io.c:454
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "Fehler: keine Anforderung für PDA %d gefunden, Anforderung %d"
+
+#: ../utils/gpilotd-client.c:38
+msgid "Get System Info"
+msgstr "Systeminfo holen"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Pause daemon"
+msgstr "Dämon unterbrechen"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Unpause daemon"
+msgstr "Dämon fortsetzen"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Restart daemon"
+msgstr "Dämon neu starten"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Set user id and name"
+msgstr "Benutzer-Kennung und Name festlegen"
+
+#: ../utils/gpilotd-client.c:43
+msgid "ID for the PDA"
+msgstr "Kennung für den PDA"
+
+#: ../utils/gpilotd-client.c:44
+msgid "Install file"
+msgstr "Datei installieren"
+
+#: ../utils/gpilotd-client.c:44
+msgid "FILE"
+msgstr "DATEI"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Restore directory"
+msgstr "Ordner wiederherstellen"
+
+#: ../utils/gpilotd-client.c:45
+msgid "DIRECTORY"
+msgstr "ORDNER"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Run conduit"
+msgstr "Conduit starten"
+
+#: ../utils/gpilotd-client.c:46 ../utils/gpilotdcm-client.c:26
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Username to set"
+msgstr "Festzulegender Benutzername"
+
+#: ../utils/gpilotd-client.c:47
+msgid "USERNAME"
+msgstr "BENUTZERNAME"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Monitor all PDAs"
+msgstr "Alle PDAs aufzeichnen"
+
+#: ../utils/gpilotd-client.c:49
+msgid "list PDAs by login (all for all pilots)"
+msgstr "PDAs nach Anmelden anzeigen (alle für alle PDAs)"
+
+#: ../utils/gpilotd-client.c:49
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr ""
+"Geben Sie den Pilot an, auf dem gearbeitet werden soll (Vorgabe ist MyPDA)"
+
+#: ../utils/gpilotd-client.c:50
+msgid "PILOTNAME"
+msgstr "PILOTNAME"
+
+#: ../utils/gpilotd-client.c:51
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Geben Sie eine Docking-Station an, mit der gearbeitet werden soll"
+
+#: ../utils/gpilotd-client.c:51
+msgid "CRADLENAME"
+msgstr "DOCKING-STATION"
+
+#: ../utils/gpilotd-client.c:52
+msgid "List users"
+msgstr "Benutzer auflisten"
+
+#: ../utils/gpilotd-client.c:53
+msgid "List cradles"
+msgstr "Docking-Stationen auflisten"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Die jeweiligen Basen der PDAs anzeigen"
+
+#: ../utils/gpilotd-client.c:472 ../utils/gpilotdcm-client.c:113
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"ACHTUNG!!\n"
+"Dies ist ein Werkzeug für bestimmte Teile des gnome-pilot Pakets.\n"
+"Wenn Sie nicht genau wissen was Sie tun, verwenden Sie es bitte nicht."
+
+#: ../utils/gpilotdcm-client.c:25
+msgid "lists available conduits"
+msgstr "zeigt zur Verfügung stehende Verbindungen"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "conduit to operate on"
+msgstr "Conduit auf dem gearbeitet wird"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "list all attributes"
+msgstr "alle Pilot-Attribute zeigen"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "specify PDA to operate on"
+msgstr "PDA angeben, auf dem gearbeitet werden soll"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "PDA_ID"
+msgstr "PDA-_Kennung"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list attributes"
+msgstr "Attribute zeigen"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list available conduits and their state"
+msgstr "zur Verfügung stehende Conduits und deren Status zeigen"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "enable specified conduit"
+msgstr "gewählten Conduit aktivieren"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "disable specified conduit"
+msgstr "gewählten Conduit deaktivieren"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable, and set firstsync to slow"
+msgstr "aktivieren und firstsync auf langsam setzen"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "instantiate and destroy the conduit"
+msgstr "das Conduit instanzieren und zerstören"
+

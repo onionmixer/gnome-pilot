@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+privincludedir=@privincludedir@
+gnomepilot_plversion=@PILOT_LINK_VERSION@
+
+Name: Gnome Pilot
+Description: 
+Version: @VERSION@
+Requires: gtk4 >= 4.6 gio-2.0 >= 2.72 @EDS_PC_REQUIRES@
+Libs: -L${libdir} -lgpilotd-@BASE_VERSION@ -lgpilotdcm-@BASE_VERSION@ -lgpilotdconduit-@BASE_VERSION@ @PISOCK_LIBS@
+Cflags: -I${privincludedir} @PISOCK_CFLAGS@

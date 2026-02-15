@@ -1,0 +1,1834 @@
+# Gnome Pilot Dutch Translation.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Almer S. Tigelaar <almer1@dds.nl>, 2000.
+# Tino Meinen <a.t.meinen@chello.nl>, 2005, 2006
+# ------------------------------------------
+# Overal: 'currently selected' vertaald door 'geselecteerde'
+# Het is synchroniseren, niet synchronizeren
+# net als initialiseren (ipv initializeren)
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Gnome Pilot CVS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-12-26 13:54+0100\n"
+"PO-Revision-Date: 2006-12-27 09:36+1000\n"
+"Last-Translator: Tino Meinen <a.t.meinen@chello.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot-applet"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "Uw gegevens op PalmOs-apparaten synchroniseren"
+
+# accesoire/hulpje
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "Hulpje"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose PDA"
+msgstr "PDA kiezen"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Map"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Opmerkingen weergeven"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Uitvoeren bij aanklikken"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync eigenschappen"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "PDA ID"
+msgstr "PDA ID"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "Restore PDA"
+msgstr "PDA herstellen"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Cradle synchroniseren"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot voortgang"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s synchroniseren"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr "Database %v van %u"
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Verzoek %ld is voltooid\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Synchroniseren: %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Gestart\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Voltooid : %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Beëindigd\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr "%v van %u records"
+
+# is aan het synchroniseren/wordt gesynchroniseerd/
+# /bezig met synchroniseren
+#: ../applet/pilot.c:419
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"De PDA is op dit moment bezig met synchroniseren\n"
+"Wacht tot dit is voltooid."
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "Niet verbonden. Herstart de daemon."
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Niet verbonden met gpilotd.\n"
+"Herstart de daemon."
+
+#: ../applet/pilot.c:442
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot applet"
+
+#: ../applet/pilot.c:444
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Copyright 2000-2006 Free Software Foundation, Inc."
+
+# volger/monitor
+#: ../applet/pilot.c:445
+msgid "A PalmOS PDA monitor.\n"
+msgstr "Een PalmOS PDA-monitor.\n"
+
+#: ../applet/pilot.c:541 ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Er was een fout bij het weergeven van de hulp: %s"
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "annuleren %d"
+
+# Herstellen of Terugzetten?
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "Herstellen %s"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "Geen map om van te herstellen."
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Druk op synchroniseren, op de cradle om terug te zetten\n"
+"of annuleer de bewerking"
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "Terugzetverzoek mislukt"
+
+#: ../applet/pilot.c:754
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"PDA sync is op dit moment bezig.\n"
+"Weet u zeker dat u de daemon wilt herstarten?"
+
+#: ../applet/pilot.c:764 ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Bezig met verbinden met de GnomePilot-daemon"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "Er is geen laatste sync beschikbaar."
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:803
+msgid "Restore..."
+msgstr "Herstellen..."
+
+#: ../applet/pilot.c:803
+msgid "Restart"
+msgstr "Herstarten"
+
+#: ../applet/pilot.c:803
+msgid "Last log..."
+msgstr "Laatste log..."
+
+#: ../applet/pilot.c:804
+msgid "Preferences..."
+msgstr "Voorkeuren..."
+
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr "Hulp"
+
+#: ../applet/pilot.c:804
+msgid "About"
+msgstr "Info"
+
+#: ../applet/pilot.c:826
+msgid "Continue"
+msgstr "Doorgaan"
+
+#: ../applet/pilot.c:828
+msgid "Pause Daemon"
+msgstr "Daemon pauzeren"
+
+#: ../applet/pilot.c:848
+msgid "Daemon paused..."
+msgstr "Daemon gepauzeerd..."
+
+#: ../applet/pilot.c:855 ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "Klaar voor synchronisatie"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Niet verbonden. Herstart de daemon om opnieuw te verbinden"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Uitvoering van %s mislukt"
+
+# gezien het code-voorbeeld: misschien moet dit zijn: installerens als, 
+# ipv installeren naar.
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1300
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "\"%s\" wordt geïnstalleerd naar \"%s\""
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "onbekend dnd-type"
+
+# vernietigen klink heftig
+#: ../applet/pilot.c:1318
+msgid "destroy gpilot-applet"
+msgstr "gpilot-applet vernietigen"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "Kan pilot-applet.glade niet vinden"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Opdracht die wordt uitgevoerd als het applet wordt aangeklikt"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Opmerkingen weergeven in popup-vensters"
+
+#: ../capplet/gnome-pilot-capplet.c:212 ../capplet/gpilotd-capplet.glade.h:84
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot instellingen"
+
+#: ../capplet/gnome-pilot-capplet.c:380 ../capplet/gnome-pilot-capplet.c:460
+msgid "Name"
+msgstr "Naam"
+
+#: ../capplet/gnome-pilot-capplet.c:382 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:384
+msgid "Owner"
+msgstr "Eigenaar"
+
+# soort/type
+#: ../capplet/gnome-pilot-capplet.c:462
+msgid "Type"
+msgstr "Type"
+
+#: ../capplet/gnome-pilot-capplet.c:568
+msgid "Conduit"
+msgstr "Kanaal"
+
+#: ../capplet/gnome-pilot-capplet.c:570
+msgid "Sync Action"
+msgstr "Sync-actie"
+
+#: ../capplet/gnome-pilot-capplet.c:780
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Weet u zeker dat u de PDA %s wilt verwijderen?"
+
+#: ../capplet/gnome-pilot-capplet.c:804
+msgid "_Edit this PDA..."
+msgstr "Deze PDA be_werken..."
+
+#: ../capplet/gnome-pilot-capplet.c:805
+msgid "Edit the currently selected PDA"
+msgstr "De geselecteerde PDA bewerken"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+msgid "_Delete this PDA"
+msgstr "Deze PDA verwij_deren"
+
+#: ../capplet/gnome-pilot-capplet.c:808
+msgid "Delete the currently selected PDA"
+msgstr "De geselecteerde PDA verwijderen"
+
+#: ../capplet/gnome-pilot-capplet.c:941
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Weet u zeker dat u het apparaat %s wilt verwijderen?"
+
+#: ../capplet/gnome-pilot-capplet.c:962
+msgid "_Edit this device..."
+msgstr "Dit apparaat be_werken..."
+
+#: ../capplet/gnome-pilot-capplet.c:963
+msgid "Edit the currently selected device"
+msgstr "Het geselecteerde apparaat bewerken"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+msgid "_Delete this device"
+msgstr "Dit apparaat verwij_deren"
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Delete the currently selected device"
+msgstr "Het geselecteerde apparaat verwijderen"
+
+#: ../capplet/gnome-pilot-capplet.c:1128
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Kan kanaal %s niet instantiëren."
+
+# inschakelen/uitschakelen? ipv aan/uitzetten?
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "_Enable this conduit"
+msgstr "Dit kanaal _aanzetten"
+
+#: ../capplet/gnome-pilot-capplet.c:1169
+msgid "Disable the currently selected conduit"
+msgstr "Het geselecteerde kanaal uitzetten"
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+msgid "_Disable this conduit"
+msgstr "Dit kanaal _uitzetten"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+msgid "Enable the currently selected conduit"
+msgstr "Het geselecteerde kanaal aanzetten"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+msgid "_Settings..."
+msgstr "In_stellingen..."
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+msgid "Modify the currently selected conduit's settings"
+msgstr "De instellingen van het geselecteerde kanaal aanpassen"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:207
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr ""
+"Kan instellingsvenster van PDA niet aanmaken. Onjuiste kanaalconfiguratie."
+
+#: ../capplet/gnome-pilot-druid.c:448
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Setup is niet compleet en de instellingen zullen niet\n"
+"worden opgeslagen. Weet u zeker dat u wilt stoppen?"
+
+#: ../capplet/gnome-pilot-druid.c:566
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"De volgende informatie zal naar de PDA worden verzonden.\n"
+"Naam eigenaar: %s\n"
+"PDA ID: %d\n"
+"Zet de PDA in %s (%s) en druk op de HotSync knop."
+
+#: ../capplet/gnome-pilot-druid.c:590
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Op het punt om de naam van de eigenaar en de ID van de PDA op te halen.\n"
+"Zet de PDA in %s (%s) en druk op de HotSync knop."
+
+#: ../capplet/gnome-pilot-druid.c:605
+msgid "Failed sending request to gpilotd"
+msgstr "Versturen van verzoek naar gpilotd is mislukt"
+
+#: ../capplet/gnome-pilot-druid.c:736
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Ophalen van de naam van de eigenaar en de ID van de PDA is gelukt.\n"
+"Naam eigenaar: %s\n"
+"PDA ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:395
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Zet de PDA in %s (%s) en druk op de HotSync-knop of annuleer de bewerking."
+
+#: ../capplet/gnome-pilot-pdialog.c:430
+msgid "The request to get PDA ID failed"
+msgstr "Het verzoek om de PDA-ID te verkrijgen is mislukt"
+
+#: ../capplet/gnome-pilot-pdialog.c:470
+msgid "The request to set PDA ID failed"
+msgstr "Het verzoek om de PDA-ID in te stellen is mislukt"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyUSB0"
+msgstr "/dev/ttyUSB0"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyUSB1"
+msgstr "/dev/ttyUSB1"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Kanaalacties</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Kanaalinstellingen</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA-attributen</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA-identificatie</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Welk apparaat moet gebruikt worden "
+"voor deze bewerking?</span>\n"
+"\n"
+"Omdat op deze computer meer dan één apparaatverbinding is gedefinieerd, "
+"dient u aan te geven welke verbinding gebruikt moet worden voor deze "
+"bewerking."
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "Add..."
+msgstr "Toevoegen..."
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "Choose Device"
+msgstr "Apparaat kiezen"
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Kies deze optie wanneer u eerder synchronisatie-software gebruikt heeft, "
+"zelfs op een andere computer"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid "Conduit Settings"
+msgstr "Kanaalinstellingen"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Conduits"
+msgstr "Kanalen"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Gefeliciteerd! gnome-pilot is geconfigureerd.\n"
+"\n"
+"U kunt gnome-pilot instellingen altijd aanpassen via\n"
+"de tabs: PilotLink en Kanalen in het control-center.\n"
+"\n"
+"U kunt het synchroniseren van gnome-pilot volgen door \n"
+"het applet: PilotLink aan uw paneel toe te voegen."
+
+#: ../capplet/gpilotd-capplet.glade.h:26
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ../capplet/gpilotd-capplet.glade.h:27
+msgid "Description:"
+msgstr "Omschrijving:"
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "Device Settings"
+msgstr "Apparaat-instellingen"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "Device:"
+msgstr "Apparaat:"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Devices"
+msgstr "Apparaten"
+
+# uitschakelen?
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Disable"
+msgstr "Uitzetten"
+
+#: ../capplet/gpilotd-capplet.glade.h:32 ../capplet/util.c:73
+#: ../capplet/util.c:419
+msgid "Disabled"
+msgstr "Uitgeschakeld"
+
+#: ../capplet/gpilotd-capplet.glade.h:33
+msgid "Edit..."
+msgstr "Bewerken..."
+
+# Inschakelen?
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Enable"
+msgstr "Aanzetten"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Voer de naam in van de eigenaar die u op uw PDA wilt opslaan"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Zoek de naam van de eigenaar en de ID van de PDA op"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "Initial Sync"
+msgstr "Eerste sync"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Ir_DA"
+msgstr "Ir_DA"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr "Net_werk"
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:114
+msgid "None"
+msgstr "Geen"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr "_Eigenaar:"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Gebruikersnaam en ID om op de PDA in te stellen"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr "Eigenaar:"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "PDA Attributes"
+msgstr "PDA attributen"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "PDA Identification"
+msgstr "PDA identificatie"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+msgid "PDA Settings"
+msgstr "PDA instellingen"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "PDA:"
+msgstr "PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "PDAs"
+msgstr "PDA's"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "S_peed:"
+msgstr "S_nelheid:"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr "De naam en ID van de eigenaar naar de PDA verzenden, zodat de oude identiteit overschreven wordt"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "De root-map instellen voor alle PDA-bestanden die worden opgeslagen."
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Settings..."
+msgstr "Instellingen..."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "Gelukt"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "De naam voor uw PDA. Deze wordt alleen ter identificatie gebruikt."
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"Dit getal identificeert uw PDA en moet dus uniek zijn indien u meerdere "
+"PDA's gebruikt."
+
+# tijdslimiet
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "Ti_meout:"
+msgstr "_Tijdslimiet:"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "Welkom bij gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"U gebruikt gnome-pilot kennelijk voor de eerste keer.\n"
+"De volgende stappen zullen gnome-pilot gereedmaken voor\n"
+"synchroniseren. U kunt de opties later altijd weer wijzigen\n"
+"via het paneel: PilotLink in Gnome Configuratie Centrum.\n"
+"\n"
+"Druk op 'Volgende' om verder te gaan.\n"
+"Druk op 'Annuleren' om af te sluiten."
+
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "_Action:"
+msgstr "A_ctie:"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Add..."
+msgstr "_Toevoegen..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Delete"
+msgstr "_Verwijderen"
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+msgid "_Device:"
+msgstr "_Apparaat:"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Edit..."
+msgstr "Be_werken..."
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Get from PDA"
+msgstr "_Ophalen van PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+msgid "_Local folder:"
+msgstr "_Lokale map:"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_Name of PDA:"
+msgstr "_Naam van de PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:74
+msgid "_Name:"
+msgstr "_Naam:"
+
+# ik heb nog nooit eerder gesynchroniseerd met deze pilot.
+#: ../capplet/gpilotd-capplet.glade.h:75
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Nee, ik heb nog nooit synchronisatiesoftware gebruikt met deze PDA."
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_One time action:"
+msgstr "_Eenmalige actie:"
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_Owner:"
+msgstr "_Eigenaar:"
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_PDA ID:"
+msgstr "_PDA ID:"
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+msgid "_Send to PDA"
+msgstr "Naar PDA ver_zenden"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_Serial"
+msgstr "_Serieel"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_Type:"
+msgstr "_Type:"
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_USB"
+msgstr "_USB"
+
+# ik heb eerder gesynchroniseerd met deze pilot.
+#: ../capplet/gpilotd-capplet.glade.h:83
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Ja, ik heb eerder synchronisatiesoftware gebruikt met deze PDA."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Alleen de assistent starten"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Fout bij initialiseren van gpilotd capplet"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading PDA state, aborting"
+msgstr "Fout bij laden PDA-status, automatisch geannuleerd"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Kan niet verbinden met de GnomePilot Daemon"
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr "Kan de assistent niet starten als PDA's of apparaten al geconfigureerd zijn"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOs-apparaten configureren"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS-apparaten"
+
+#: ../capplet/util.c:80 ../capplet/util.c:421
+msgid "Enabled"
+msgstr "Ingeschakeld"
+
+#: ../capplet/util.c:224
+msgid "You must have at least one device setup"
+msgstr "U moet tenminste één apparaat-setup hebben"
+
+#: ../capplet/util.c:393
+msgid "Synchronize"
+msgstr "Synchroniseren"
+
+#: ../capplet/util.c:394
+msgid "Copy from PDA"
+msgstr "Kopiëren van PDA"
+
+#: ../capplet/util.c:395
+msgid "Copy to PDA"
+msgstr "Kopiëren naar PDA"
+
+#: ../capplet/util.c:396
+msgid "Merge from PDA"
+msgstr "Samenvoegen van PDA"
+
+#: ../capplet/util.c:397
+msgid "Merge to PDA"
+msgstr "Samenvoegen naar PDA"
+
+#: ../capplet/util.c:400
+msgid "Use conduit settings"
+msgstr "Kanaal-instellingen gebruiken"
+
+#: ../capplet/util.c:408
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:409
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:410
+msgid "Network"
+msgstr "Netwerk"
+
+#: ../capplet/util.c:411
+msgid "Serial"
+msgstr "Serieel"
+
+#: ../capplet/util.c:459
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"De gegeven basismap bestaat, maar heeft de verkeerde toegangsrechten.\n"
+"Los dit op of kies een andere map"
+
+#: ../capplet/util.c:464
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"De gegeven basismap bestaat maar is geen map.\n"
+"Maak er een map van of kies een andere map."
+
+#: ../capplet/util.c:471
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Het was niet mogelijk om de gegeven basismap aan te maken.\n"
+"Verifiëer de toegangsrechten op de gegeven map of kies een andere map."
+
+#: ../capplet/util.c:476
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"De gegeven map voor de basismap is ongeldig.\n"
+"Kies een andere map."
+
+#: ../capplet/util.c:583
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Apparaat ‘usb:’ is alleen geldig voor apparaten van type USB"
+
+#: ../capplet/util.c:594
+msgid "Read/Write permissions failed on"
+msgstr "Lees/Schrijf toegang geweigerd op"
+
+#: ../capplet/util.c:596
+msgid "Check the permissions on the device and retry"
+msgstr "Controleer de rechten op het apparaat en probeer opnieuw"
+
+#: ../capplet/util.c:610 ../gpilotd/gpilotd.c:1286
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Kon map %s of bestand %s niet vinden.  Controleer of usbfs of sysfs "
+"aankoppeld is."
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "Controleren op verwijderde datatbases"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "%s hernoemen"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "naar %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s niet aangepast sinds laatste synchronisatie"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "Bezig met maken van backup van %s"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Kon backup bestand %s niet maken"
+
+#: ../conduits/backup/backup_conduit.c:733
+msgid "Collecting restore information..."
+msgstr "Herstel-informatie verzamelen..."
+
+#: ../conduits/backup/backup_conduit.c:856
+msgid "Backup directory:"
+msgstr "Backupmap:"
+
+#: ../conduits/backup/backup_conduit.c:867
+msgid "Only backup changed bases:"
+msgstr "Alleen backup maken van gewijzigde bases:"
+
+#: ../conduits/backup/backup_conduit.c:875
+msgid "Remove local base if deleted on PDA:"
+msgstr "Lokale basis verwijderen als deze op de PDA verwijderd wordt:"
+
+#: ../conduits/backup/backup_conduit.c:883
+msgid "# of old backups to keep:"
+msgstr "aantal oude backups voor archivering:"
+
+#: ../conduits/backup/backup_conduit.c:928
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"De gegeven backupmap bestaat, maar heeft niet de juiste toegangsrechten.\n"
+"Los dit op of kies een andere map."
+
+#: ../conduits/backup/backup_conduit.c:933
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"De gegeven backupmap bestaat, maar het is geen map.\n"
+"Maak er een map van of kies een andere map."
+
+#: ../conduits/backup/backup_conduit.c:940
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Het was niet mogelijk om de gegeven backupmap aan te maken.\n"
+"Verifiëer de toegangsrechten op de gegeven map of kies een andere map."
+
+#: ../conduits/backup/backup_conduit.c:945
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Het pad voor de gegeven backupmap is ongeldig.\n"
+"Kies een andere map."
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Installatie van %s mislukt"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Bezig met installeren %s van %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Bezig met installeren van %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Meteen installeren"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Vertraagd installeren"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA to install to"
+msgstr "PDA om naar te installeren"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get PDA names"
+msgstr "Kon PDA-namen niet verkrijgen"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Volgende bestanden zijn mislukt:\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Installeren naar %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Geen bestanden om te installeren"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Druk op synchroniseren om de cradle te installeren\n"
+"of annuleer de bewerking"
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilot daemon"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "verwijderde PDA-record was lokaal aangepast, zal niet verwijderen\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "verwijderde lokale record was op PDA aangepast, zal niet verwijderen\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "samenvoegingsconflict, PDA en lokale record verwisseld\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "Archiverings- en aanpassings-conflict, PDA en lokale record verwisseld\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "Archiverings- en aanpassings-conflict, lokale record naar PDA verzonden\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "Archiverings- en aanpassings-conflict, PDA-record  lokaal opgeslagen\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Kanaal initialisatie mislukt, bewerking afgebroken"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "Niet in staat om alle records in de PDA-database te verwijderen, bewerking afgebroken."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Kanaal gaf geen record terug"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Niet in staat om alle records in de lokale databank te verwijderen, "
+"bewerking afgebroken."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Fout in kanaal, nieuw toegevoegd record kon niet worden gevonden"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "Kopiëren naar PDA is mislukt!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "Kopiëren van PDA is mislukt!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "Samenvoegen naar PDA is mislukt!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "Samenvoegen van PDA is mislukt!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Synchronisatie mislukt!"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Kon apparaat %s (%s) niet openen: reden: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot kon het apparaat %s (%s) niet openen.\n"
+"Reden: \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:517
+#: ../gpilotd/gnome-pilot-structures.c:566
+#: ../gpilotd/gnome-pilot-structures.c:594
+#: ../gpilotd/gnome-pilot-structures.c:620
+msgid "Unknown device type"
+msgstr "Onbekend apparaattype"
+
+#: ../gpilotd/gnome-pilot-structures.c:635
+msgid "Number of devices is configured to 0"
+msgstr "Aantal apparaten is ingesteld op 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:637
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Geen apparaten geconfigureerd.\n"
+"Start de gpilotd-control-applet (gebruik gnomecc)\n"
+"om gnome-pilot te configureren."
+
+#: ../gpilotd/gnome-pilot-structures.c:658
+msgid "No accessible devices available"
+msgstr "Geen toegangelijke apparaten beschikbaar"
+
+#: ../gpilotd/gnome-pilot-structures.c:673
+msgid "Number of PDAs is configured to 0"
+msgstr "Aantal PDA's is ingesteld op 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:675
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Geen PDA's geconfigureerd.\n"
+"Start de gpilotd-control-applet (gebruik gnomecc)\n"
+"om gnome-pilot te configureren."
+
+#: ../gpilotd/gpilotd.c:233
+msgid "Unable to bind to PDA"
+msgstr "Niet in staat om te binden met de PDA"
+
+#: ../gpilotd/gpilotd.c:369
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr "Kon niet verbinden met apparaat `%s' op poort `%s'. Controleer uw configuratie, u heeft namelijk gevraagd om synchronisatie in de nieuwe stijl libusb `usb:' vorm, maar u werkt met een oude stijl `visor' kernelmodule. U moet mogelijk kiezen voor een `ttyUSB...' apparaat."
+
+#: ../gpilotd/gpilotd.c:384
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr "Kon niet verbinden met apparaat `%s' op poort `%s'. Controleer uw configuratie, u heeft namelijk gevraagd om synchronisatie in de oude stijl usbserial `ttyUSB' vorm, maar u werkt niet met een usbserial `visor' kernelmodule. U moet mogelijk kiezen voor een `usb:' apparaat."
+
+#: ../gpilotd/gpilotd.c:475
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Onbekende PDA, geen gebruikersID/gebruikersnaam %ld gevonden"
+
+#: ../gpilotd/gpilotd.c:482
+msgid "Use gnomecc to configure PDA"
+msgstr "Gebruik gnomecc om de PDA te configureren"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:487
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Onbekende PDA - geen PDA met ID %ld gevonden\n"
+"Gebruik gnomecc om gnome-pilot te configureren"
+
+#: ../gpilotd/gpilotd.c:511
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Apparaat %s heeft %d gebeurtenissen"
+
+#: ../gpilotd/gpilotd.c:524
+msgid "Setting userinfo..."
+msgstr "Instellen gebruikersinformatie..."
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Sync continues"
+msgstr "Sync gaat verder"
+
+#: ../gpilotd/gpilotd.c:548
+msgid "Getting userinfo..."
+msgstr "Vergaren gebruikersinformatie..."
+
+#: ../gpilotd/gpilotd.c:610
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync verzoek verkregen, PDA wordt nu gesynchroniseerd"
+
+#: ../gpilotd/gpilotd.c:612
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync knop ingedrukt, PDA wordt nu gesynchroniseerd"
+
+#: ../gpilotd/gpilotd.c:614
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA-ID is %ld, naam is %s, eigenaar is %s"
+
+#: ../gpilotd/gpilotd.c:624
+#, c-format
+msgid "On host %s\n"
+msgstr "Op host %s\n"
+
+#: ../gpilotd/gpilotd.c:626
+#, c-format
+msgid "On host %d\n"
+msgstr "Op host %d\n"
+
+#: ../gpilotd/gpilotd.c:645
+msgid "Synchronization ended"
+msgstr "Synchronisatie beëindigd"
+
+#: ../gpilotd/gpilotd.c:648
+msgid "Synchronization ended early"
+msgstr "Synchronisatie eerder beëindigd"
+
+#: ../gpilotd/gpilotd.c:680
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"De basismap %s is ongeldig.\n"
+"Los dit op of gebruik gnomecc om een andere map te kiezen."
+
+#: ../gpilotd/gpilotd.c:693
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Onbekende PDA - geen PDA met ID %ld gevonden\n"
+"Gebruik gpilot-control-applet om de ID van de PDA in te stellen"
+
+# "bij" ipv "tijdens". De fout heeft te maken met het ophalen.
+# Bij 'tijdens' suggereer je dat het toevallig gelijktijdig gebeurt
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:744
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Er was een fout bij het ophalen van de systeemgegevens van de PDA"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:753
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Er was een fout bij het ophalen van de gebruikersgegegevens van de PDA"
+
+# voltooide acties/acties voltooid
+#: ../gpilotd/gpilotd.c:758
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Acties voltooid voor apparaat %s (%s)"
+
+# opgewekt/gewekt bij/op?
+#: ../gpilotd/gpilotd.c:817
+#, c-format
+msgid "Woke on %s"
+msgstr "Gewekt op %s"
+
+# opgewekt bij? ipv op?
+#: ../gpilotd/gpilotd.c:898
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Gewekt op netwerk: %s"
+
+#: ../gpilotd/gpilotd.c:1448
+#, c-format
+msgid "Watching %s (network)"
+msgstr "%s (netwerk) volgen"
+
+#: ../gpilotd/gpilotd.c:1450
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s volgen (%s)"
+
+#: ../gpilotd/gpilotd.c:1464
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Afsluiten (SIGTERM ontvangen)..."
+
+#: ../gpilotd/gpilotd.c:1473
+msgid "Exiting (caught SIGINT)..."
+msgstr "Afsluiten (SIGINT ontvangen)..."
+
+# wat een nare zin om te vertalen. zo dubbelzinnig als't maar kan
+#: ../gpilotd/gpilotd.c:1505
+msgid "Unable to create file installation queue directory"
+msgstr "Kan map voor bestandsinstallatie-wachtrij niet aanmaken"
+
+#: ../gpilotd/gpilotd.c:1555
+msgid "Shutting down devices"
+msgstr "Apparaten worden uitgezet"
+
+#: ../gpilotd/gpilotd.c:1557
+msgid "Rereading configuration..."
+msgstr "Bezig met herlezen configuratie..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "geen-backup kanaal in backup kanaal lijst"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "backup van %s gemaakt\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "backup van %s mislukt!\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "Synchronisatie-informatie verzamelen..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Bezig met synchroniseren %s\n"
+
+#: ../gpilotd/manager.c:446
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Kopiëren naar PDA %s\n"
+
+#: ../gpilotd/manager.c:464
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Kopiëren van PDA %s\n"
+
+#: ../gpilotd/manager.c:482
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Samenvoegen naar PDA %s\n"
+
+#: ../gpilotd/manager.c:500
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Samenvoegen van PDA %s\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Eerste synchronisatie van kanaal %s..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "onbekende synchronisatie-actie (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Bezig met instantiëren van %d kanalen..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Onbekend kanaal \"%s\" in configuratie!"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Laden van kanaal \"%s\" mislukt!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Laden van kanaal \"%s\" mislukt!\n"
+
+#: ../gpilotd/manager.c:783
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Id/gebruiker instellen op %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Kanaal %s verzocht, maar niet gevonden"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Kanaal %s kan niet worden verzocht"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(onbekende DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Fout in wachtrij. Niet-bestaand item"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "fout: geen verzoek gevonden voor PDA %d, verzoek %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "Het laden van modules is niet mogelijk, ernstige fout!"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Systeeminformatie ophalen"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Daemon pauseren"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Daemon resumeren"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Herstart daemon"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Gebruikers-id en naam instellen"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "ID voor de PDA"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Bestand installeren"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "BESTAND"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Map terugzetten"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "MAP"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Kanaal starten"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "KANAAL"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Gebruikersnaam om in te stellen"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "GEBRUIKERSNAAM"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "De acties van de gespecificeerde PDA volgen"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "Alle PDA's volgen"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr "PDA's sorteren op login (alle voor alle pilots)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+# aangeven ipv specificeren
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "PDA waarmee gewerkt wordt specificeren (standaard MyPilot)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTNAAM"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Cradle waarmee wordt gewerkt specificeren (standaard Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "CRADLENAAM"
+
+# weergeven ipv opsommen?
+#: ../utils/gpilotd-client.c:54
+msgid "List the specifed PDA's bases"
+msgstr "De bases van de gespecificeerde PDA weergeven"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"LET OP!!\n"
+"Dit is een hulpmiddel voor bepaalde delen van gnome-pilot.\n"
+"Gebruik dit hulpmiddel alleen als u weet wat u doet."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "beschikbare kanalen weergeven"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "kanaal om te bewerken"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "alle attributen weergeven"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify PDA to operate on"
+msgstr "PDA om mee te werken specificeren"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "attributen weergeven"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "beschikbare kanalen en hun status weergeven"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "gespecificeerd kanaal aanzetten"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "gespecificeerd kanaal uitzetten"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "aanzetten, en eerste-sync op langzaam instellen"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "het kanaal instantiëren en vernietigen"
+
+#~ msgid "Pilot ID"
+#~ msgstr "Pilot ID"
+
+#~ msgid "PILOT"
+#~ msgstr "PILOT"
+
+# BUG: in het Engels staat nog: pilot ipv PDA
+#~ msgid "Copy from pilot failed!"
+#~ msgstr "Kopiëren van PDA is mislukt!"
+
+#~ msgid ""
+#~ "Unknown pilot - no pilots matches ID %ld\n"
+#~ "Use gnomecc to set pilot's ID"
+#~ msgstr ""
+#~ "Onbekende pilot - geen pilot met ID %ld gevonden\n"
+#~ "Gebruik gnomecc om het ID van de pilot in te stellen"
+
+#~ msgid "PILOTID"
+#~ msgstr "PILOTID"
+
+#~ msgid "Synchronizing..."
+#~ msgstr "Bezig met synchroniseren..."
+
+#~ msgid "A dnd and gui monitor for gpilotd.\n"
+#~ msgstr "Een dnd en gui monitor voor gpilotd.\n"
+
+#~ msgid "UserName"
+#~ msgstr "Gebruikersnaam"
+
+#~ msgid "/dev/ttyS2"
+#~ msgstr "/dev/ttyS2"
+
+#~ msgid "/dev/ttyS3"
+#~ msgstr "/dev/ttyS3"
+
+#~ msgid "/dev/ttyqe"
+#~ msgstr "/dev/ttyqe"
+
+#~ msgid "Cradle Settings"
+#~ msgstr "Cradle instellingen"
+
+#~ msgid "Get User Name and ID from existing pilot that was used before."
+#~ msgstr ""
+#~ "Haal Gebruikersnaam en ID van de bestaande pilot die eerder werd gebruikt."
+
+#~ msgid "Local basedir"
+#~ msgstr "Lokale basismap"
+
+#~ msgid "Pilot Name"
+#~ msgstr "Pilot naam"
+
+#~ msgid "Pilot Name:"
+#~ msgstr "Pilot naam:"
+
+#~ msgid "Pilots"
+#~ msgstr "Pilots"
+
+#~ msgid "Port"
+#~ msgstr "Poort"
+
+#~ msgid "Set User Name and ID to a new pilot."
+#~ msgstr "Gebruikersnaam en ID instellen voor een nieuwe pilot."
+
+#~ msgid "User Name"
+#~ msgstr "Gebruikersnaam"
+
+#~ msgid "User Name:"
+#~ msgstr "Gebruikersnaam:"
+
+# bestand lezen is mislukt/kon bestand niet lezen
+#~ msgid "Failed to read file"
+#~ msgstr "Kon het bestand niet lezen"
+
+#~ msgid "Check that usbfs is mounted."
+#~ msgstr "Controleer of usbfs wel aangekoppeld is."
+
+#~ msgid "Watching %s (%s, %s)"
+#~ msgstr "%s observeren (%s, %s)"
+
+#~ msgid "Unable to open or create file %s with read/write privs"
+#~ msgstr "Niet in staat om %s te openen of te maken met lees/schrijf rechten"
+
+#~ msgid "Unable to find home directory for uid %d"
+#~ msgstr "Kon persoonlijke map (home) voor uid %d niet vinden"
+
+#~ msgid "Gnome Pilot File Manager"
+#~ msgstr "Gnome Pilot bestandsbeheer"
+
+#~ msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+#~ msgstr "Copyright Manish en Neil Vachharajani © 1998"
+
+#~ msgid ""
+#~ "Manages files and applications on your Palm Pilot\n"
+#~ "Palm Pilot is a Registered trademark of 3com Inc."
+#~ msgstr ""
+#~ "Bestanden en toepassingen beheren op uw Palm Pilot\n"
+#~ "Palm Pilot is een geregistreerd handelsmerk van 3com Inc."
+
+#~ msgid "Really quit Gnome Pilot File Manager?"
+#~ msgstr "Gnome Pilot bestandsbeheer echt afsluiten?"
+
+#~ msgid "Hmm, this shouldn't happen, not enough filenames\n"
+#~ msgstr "Hmm, dit zou niet mogen gebeuren. Niet voldoende bestandsnamen\n"
+
+#~ msgid "Aborting..."
+#~ msgstr "Afbreken..."
+
+#~ msgid "No files to install!!"
+#~ msgstr "Geen bestande te installeren!!"
+
+#~ msgid "Install Progress"
+#~ msgstr "Installeer-voortgang"
+
+#~ msgid "Installing... "
+#~ msgstr "Installeren..."
+
+# ze noemen het overal de HotSync-knop
+# Het uitroepteken op het einde is lelijk in het Nederlands
+#~ msgid "Press the Hot Sync button on your pilot now!"
+#~ msgstr "Druk nu op de HotSync-knop van uw pilot."
+
+#~ msgid "Unable to open or create chosen name as a directory!"
+#~ msgstr "Kan gekozen naam niet als map openen of aanmaken!"
+
+#~ msgid "Chosen backup location is not a directory!"
+#~ msgstr "Aangegeven backup-locatie is geen map!"
+
+#~ msgid "Backup Progress"
+#~ msgstr "Backup-voortgang"
+
+#~ msgid "Backing up... "
+#~ msgstr "Backup maken..."
+
+#~ msgid "Unable to open status pipe"
+#~ msgstr "Kan status-pijp niet openen"
+
+#~ msgid "Unable to open message pipe"
+#~ msgstr "Kan bericht-pijp niet openen"
+
+#~ msgid "Unable to fork"
+#~ msgstr "Fork maken is mislukt"
+
+#~ msgid "Backup Directory"
+#~ msgstr "Backup-map"
+
+#~ msgid "About the gpilot-fileman"
+#~ msgstr "Over gpilot-bestandsbeheer"
+
+#~ msgid "Install Files"
+#~ msgstr "Bestanden installeren"
+
+#~ msgid "Installs selected files to the connected Pilot"
+#~ msgstr "De geselecteerde bestanden installeren op de Pilot"
+
+#~ msgid "Backup Pilot"
+#~ msgstr "Backup Pilot"
+
+#~ msgid "Back's up selected files from the connected Pilot"
+#~ msgstr "Backup maken van de op de Pilot geselecteerde bestanden"
+
+#~ msgid "Properties"
+#~ msgstr "Eigenschappen"
+
+#~ msgid "Properties for the Gnome Pilot File Manager"
+#~ msgstr "Eigenschappen van het Gnome Pilot bestandsbeheer"
+
+#~ msgid "Quit"
+#~ msgstr "Afsluiten"
+
+#~ msgid "Quits the application"
+#~ msgstr "De toepassing sluiten"
+
+#~ msgid "File"
+#~ msgstr "Bestand"
+
+#~ msgid "Add ->"
+#~ msgstr "Toevoegen ->"
+
+#~ msgid "<- Remove"
+#~ msgstr "<- Verwijderen"
+
+#~ msgid "<- Remove All"
+#~ msgstr "<- Alles verwijderen"
+
+#~ msgid "Selected Files"
+#~ msgstr "Geselecteerde bestanden"
+
+#~ msgid "Unable to bind to pilot\n"
+#~ msgstr "Kon geen binding maken met de pilot\n"
+
+#~ msgid "Exiting on cancel"
+#~ msgstr "Afsluiten bij annuleren"
+
+#~ msgid "Unable to open '%s'!"
+#~ msgstr "Kan '%s' niet openen!"
+
+# is dit lelijk?
+#~ msgid "Install failed %s."
+#~ msgstr "Installeren mislukt %s."
+
+#~ msgid "Exiting on cancel, all data NOT backed up."
+#~ msgstr "Afsluiten bij annuleren. GEEN backup van alle data"
+
+#~ msgid "Failed, unable to back up database\n"
+#~ msgstr "Mislukt, kon geen backup maken van database\n"
+
+#~ msgid "Pilot Device"
+#~ msgstr "Pilot apparaat"
+
+#~ msgid "Confirm on quit"
+#~ msgstr "Bevestigen bij afsluiten"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "Kon niet onderzoeken, de poort voor "
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "De poort zou moeten wijzen naar een USB seriële poort"
+
+# rare zin
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr ""
+#~ "De poort moet een teken-speciaal-apparaat zijn maar is dit niet voor"

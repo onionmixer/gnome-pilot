@@ -1,0 +1,43 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.TH GPILOT-INSTALL-FILE 1 "April 30, 2001"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+gpilot-install-file - gnome-pilot file conduit scheduler
+.SH SYNOPSIS
+.B gpilot-install-file
+.RI [ --now|--later ] " files" ...
+.SH DESCRIPTION
+.B gpilot-install-file
+is a command line tool for scheduling files to be installed on a Palm
+PDA by the gnome-pilot file conduilt.
+.SH OPTIONS
+In addition to a list of files to be installed
+.B gpilot-install-file
+takes the following options:
+.TP
+.B \-\-now
+Schedule the file(s) for installation and wait for the user to
+synchronise immediately.
+.TP
+.B \-\-later
+Schedule the file(s) for installation and exit.  The files will be
+installed at the next synchronization.
+.SH SEE ALSO
+.BR gpilot-applet (1),
+.BR gpilotd (1),
+.BR file-conduit-control-applet (1).
+.SH AUTHOR
+The file installation conduit was written by Eskil Olsen
+<eskil@eazel.com>.  This manual page was written by Mark Brown
+<broonie@sirena.org.uk>.

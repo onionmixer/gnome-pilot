@@ -1,0 +1,1390 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkListStore" id="assistant_pilot_charset_store">
+    <columns>
+      <!-- column-name item -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">CP1252</col>
+      </row>
+      <row>
+        <col id="0">GB18030</col>
+      </row>
+      <row>
+        <col id="0">GBK</col>
+      </row>
+      <row>
+        <col id="0">BIG5</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="assistant_device_port_store">
+    <columns>
+      <!-- column-name item -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">/dev/pilot</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB0</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB1</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyS0</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyS1</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="device_port_store">
+    <columns>
+      <!-- column-name item -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">/dev/pilot</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB0</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB1</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyS0</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyS1</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="pilot_charset_store">
+    <columns>
+      <!-- column-name item -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">CP1252</col>
+      </row>
+      <row>
+        <col id="0">GB18030</col>
+      </row>
+      <row>
+        <col id="0">GBK</col>
+      </row>
+      <row>
+        <col id="0">BIG5</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="device_speed_store">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">9600</col>
+      </row>
+      <row>
+        <col id="0">19200</col>
+      </row>
+      <row>
+        <col id="0">38400</col>
+      </row>
+      <row>
+        <col id="0">57600</col>
+      </row>
+      <row>
+        <col id="0">115200</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="assistant_device_speed_store">
+    <columns>
+      <!-- column-name label -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">9600</col>
+      </row>
+      <row>
+        <col id="0">19200</col>
+      </row>
+      <row>
+        <col id="0">38400</col>
+      </row>
+      <row>
+        <col id="0">57600</col>
+      </row>
+      <row>
+        <col id="0">115200</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkWindow" id="Capplet">
+    <property name="title" translatable="yes">gnome-pilot Settings</property>
+    <child>
+      <object class="GtkNotebook" id="CappletMain">
+        <property name="can_focus">True</property>
+        <property name="show_border">False</property>
+        <child>
+          <object class="GtkBox" id="vbox5">
+            <property name="orientation">vertical</property>
+            <property name="spacing">12</property>
+            <child>
+              <object class="GtkScrolledWindow" id="pilots_treeview">
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">automatic</property>
+                <property name="vscrollbar_policy">automatic</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="hbuttonbox3">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkButton" id="pilots_add_button">
+                    <property name="label" translatable="yes">_Add...</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="pilots_edit_button">
+                    <property name="label" translatable="yes">_Edit...</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="pilots_delete_button">
+                    <property name="label" translatable="yes">_Delete</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label4">
+            <property name="label" translatable="yes">_PDAs</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="vbox4">
+            <property name="orientation">vertical</property>
+            <property name="spacing">12</property>
+            <child>
+              <object class="GtkScrolledWindow" id="devices_treeview">
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">automatic</property>
+                <property name="vscrollbar_policy">automatic</property>
+                <child>
+                  <placeholder/>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="hbuttonbox2">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkButton" id="devices_add_button">
+                    <property name="label" translatable="yes">_Add...</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="devices_edit_button">
+                    <property name="label" translatable="yes">_Edit...</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkButton" id="devices_delete_button">
+                    <property name="label" translatable="yes">_Delete</property>
+                    <property name="use_underline">True</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label3">
+            <property name="label" translatable="yes">De_vices</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="vbox18">
+            <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkGrid" id="table13">
+                <property name="column_spacing">12</property>
+                <property name="row_spacing">6</property>
+                <child>
+                  <object class="GtkLabel" id="label156">
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">P_DA:</property>
+                    <property name="use_underline">True</property>
+                    <property name="justify">center</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="username_label">
+                    <property name="xalign">0</property>
+                    <property name="justify">center</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label157">
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">Owner:</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="pilots_combo">
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkGrid" id="table14">
+                <property name="column_spacing">6</property>
+                <property name="row_spacing">6</property>
+                <child>
+                  <object class="GtkBox" id="vbuttonbox5">
+                    <property name="orientation">vertical</property>
+                    <property name="spacing">6</property>
+                    <child>
+                      <object class="GtkButton" id="conduit_enable_button">
+                        <property name="label" translatable="yes">_Enable</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="conduit_disable_button">
+                        <property name="label" translatable="yes">D_isable</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="conduit_settings_button">
+                        <property name="label" translatable="yes">_Settings...</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkBox" id="hbox10">
+                    <property name="orientation">horizontal</property>
+                    <property name="spacing">12</property>
+                    <child>
+                      <object class="GtkLabel" id="label196">
+                        <property name="label" translatable="yes">Description:</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="description_label">
+                        <property name="wrap">True</property>
+                      </object>
+                    </child>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                      <property name="column-span">2</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="conduit_treeview">
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">automatic</property>
+                    <property name="vscrollbar_policy">automatic</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="label152">
+            <property name="label" translatable="yes">C_onduits</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkDialog" id="ConduitSettings">
+    <property name="title" translatable="yes">Conduit Settings</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="skip_taskbar_hint">True</property>
+    <child>
+      <object class="GtkGrid" id="master_table1">
+        <property name="column_spacing">6</property>
+        <property name="row_spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label169">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">&lt;b&gt;Conduit Actions&lt;/b&gt;</property>
+            <property name="use_markup">True</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="column-span">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label171">
+            <property name="xalign">0</property>
+            <property name="xpad">6</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkGrid" id="interior_table">
+            <property name="column_spacing">6</property>
+            <property name="row_spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="label172">
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">_Action:</property>
+                <property name="use_underline">True</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label173">
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">_One time action:</property>
+                <property name="use_underline">True</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="sync_one_actions_combo">
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="sync_actions_combo">
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid" id="settings_frame">
+        <property name="column_spacing">6</property>
+        <property name="row_spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label170">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">&lt;b&gt;Conduit Settings&lt;/b&gt;</property>
+            <property name="use_markup">True</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="column-span">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label174">
+            <property name="xalign">0</property>
+            <property name="xpad">6</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="options_frame">
+            <property name="orientation">horizontal</property>
+            <child>
+              <placeholder/>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancelbutton1">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="okbutton1">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">cancelbutton1</action-widget>
+      <action-widget response="-5">okbutton1</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="ChooseDevice">
+    <property name="title" translatable="yes">Choose Device</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="skip_taskbar_hint">True</property>
+    <child>
+      <object class="GtkBox" id="hbox7">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkImage" id="image2">
+            <property name="yalign">0</property>
+            <property name="stock">gtk-dialog-question</property>
+            <property name="icon-size">6</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="vbox19">
+            <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="label180">
+                <property name="yalign">0</property>
+                <property name="label" translatable="yes">&lt;span weight="bold" size="larger"&gt;Which device should be used for this operation?&lt;/span&gt;
+
+Since you have more than one connection device defined for this computer you need to identify which one is to be used for this operation.</property>
+                <property name="use_markup">True</property>
+                <property name="wrap">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox" id="hbox8">
+                <property name="orientation">horizontal</property>
+                <property name="spacing">6</property>
+                <child>
+                  <object class="GtkLabel" id="label181">
+                    <property name="label" translatable="yes">Device:</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="device_combo">
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancelbutton3">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="okbutton3">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">cancelbutton3</action-widget>
+      <action-widget response="-5">okbutton3</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="PilotSettings">
+    <property name="title" translatable="yes">PDA Settings</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="skip_taskbar_hint">True</property>
+    <child>
+      <object class="GtkGrid" id="table15">
+        <property name="column_spacing">12</property>
+        <property name="row_spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label183">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">O_wner:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">pilot_username_entry</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label184">
+            <property name="xalign">0</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label185">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_PDA ID:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">pilot_id_entry</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pilot_username_entry">
+            <property name="can_focus">True</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pilot_id_entry">
+            <property name="can_focus">True</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label182">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">&lt;b&gt;PDA Identification&lt;/b&gt;</property>
+            <property name="use_markup">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="column-span">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="hbox9">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkButton" id="get_from_pilot_button">
+                <property name="label" translatable="yes">_Get from PDA</property>
+                <property name="tooltip_text" translatable="yes">Get the Owner's name and ID from the PDA</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton" id="send_to_pilot_button">
+                <property name="label" translatable="yes">_Send to PDA</property>
+                <property name="tooltip_text" translatable="yes">Send the Owner's name and ID to the PDA, overwriting any existing identity</property>
+                <property name="use_underline">True</property>
+              </object>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">3</property>
+              <property name="column-span">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkGrid" id="table16">
+        <property name="column_spacing">12</property>
+        <property name="row_spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label189">
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
+            <property name="label" translatable="yes">&lt;b&gt;PDA Attributes&lt;/b&gt;</property>
+            <property name="use_markup">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+              <property name="column-span">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label190">
+            <property name="xalign">0</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label187">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Name of PDA:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">pilot_name_entry</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label197">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Local folder:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">pilot_basedir_entry</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pilot_name_entry">
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">The name for your PDA.  It is only used for identification.</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="pilot_basedir_entry">
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">Set the root directory for all PDA files to be stored.</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="pilot_charset_label">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">C_harset of PDA:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="pilot_charset_combo">
+            <property name="has_entry">True</property>
+            <property name="can_focus">True</property>
+            <property name="model">pilot_charset_store</property>
+            <child>
+              <object class="GtkCellRendererText" id="cellrenderertext1"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <layout>
+              <property name="column">2</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancelbutton4">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="okbutton4">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">cancelbutton4</action-widget>
+      <action-widget response="-5">okbutton4</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="DeviceSettings">
+    <property name="title" translatable="yes">Device Settings</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <child>
+      <object class="GtkGrid" id="table17">
+        <property name="column_spacing">12</property>
+        <property name="row_spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label191">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Name:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">device_name_entry</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="device_name_entry">
+            <property name="can_focus">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="device_speed_label">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">S_peed:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label195">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Type:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="hbox5">
+            <property name="orientation">horizontal</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkCheckButton" id="serial_radio">
+                <property name="label" translatable="yes">_Serial</property>
+                <property name="use_underline">True</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="usb_radio">
+                <property name="label" translatable="yes">_USB</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="irda_radio">
+                <property name="label" translatable="yes">I_rDA</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="network_radio">
+                <property name="label" translatable="yes">Net_work</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="bluetooth_radio">
+                <property name="label" translatable="yes">_Bluetooth</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">serial_radio</property>
+              </object>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="device_port_label">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Device:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label194">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Ti_meout:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">timeout_spinner</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="timeout_spinner">
+            <property name="can_focus">True</property>
+            <property name="adjustment">timeout_adjustment</property>
+            <property name="climb_rate">1</property>
+            <property name="numeric">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="device_speed_combo">
+            <property name="can_focus">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="device_port_combo">
+            <property name="has_entry">True</property>
+            <child>
+              <object class="GtkCellRendererText" id="cellrenderertext3"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancelbutton5">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="okbutton5">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-6">cancelbutton5</action-widget>
+      <action-widget response="-5">okbutton5</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkAssistant" id="Assistant">
+    <property name="title" translatable="yes">gnome-pilot Settings</property>
+    <property name="modal">True</property>
+    <child>
+      <object class="GtkLabel" id="page_welcome">
+        <property name="label" translatable="yes">You seem to be running gnome-pilot for the first time.
+The following steps will setup gnome-pilot for syncing.
+You can always change any options later from
+PilotLink panel in Gnome Control Center.
+
+Press 'Forward' to continue.
+Press 'Cancel' to exit.</property>
+      </object>
+      <packing>
+        <property name="page_type">intro</property>
+        <property name="title" translatable="yes">Welcome to gnome-pilot!</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkGrid" id="page_cradle">
+        <property name="column_spacing">9</property>
+        <property name="row_spacing">4</property>
+        <child>
+          <object class="GtkComboBox" id="assistant_device_port_combo">
+            <property name="has_entry">True</property>
+            <property name="can_focus">True</property>
+            <child>
+              <object class="GtkCellRendererText" id="cellrenderertext4"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="assistant_device_speed_combo">
+            <property name="can_focus">True</property>
+            <property name="model">assistant_device_speed_store</property>
+            <property name="active">3</property>
+            <child>
+              <object class="GtkCellRendererText" id="cellrenderertext5"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="assistant_device_name_entry">
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x2022;</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label105">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Name:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">assistant_device_name_entry</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="assistant_device_port_label">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Device:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="assistant_device_speed_label">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">S_peed:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label120">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Type:</property>
+            <property name="use_underline">True</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox" id="hbox4">
+            <property name="orientation">horizontal</property>
+            <child>
+              <object class="GtkCheckButton" id="assistant_serial_radio">
+                <property name="label" translatable="yes">_Serial</property>
+                <property name="use_underline">True</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="assistant_usb_radio">
+                <property name="label" translatable="yes">_USB</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">assistant_serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="assistant_irda_radio">
+                <property name="label" translatable="yes">_IrDA</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">assistant_serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="assistant_network_radio">
+                <property name="label" translatable="yes">Net_work</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">assistant_serial_radio</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="assistant_bluetooth_radio">
+                <property name="label" translatable="yes">_Bluetooth</property>
+                <property name="use_underline">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">assistant_serial_radio</property>
+              </object>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label149">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Ti_meout:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">assistant_device_timeout_spinner</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="assistant_device_timeout_spinner">
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x2022;</property>
+            <property name="adjustment">assistant_device_timeout_adjustment</property>
+            <property name="climb_rate">1</property>
+            <property name="numeric">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Device Settings</property>
+        <property name="header_image">gnome-palm.png</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="page_error">
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Please fix the following problem...</property>
+        <property name="header_image">gnome-palm.png</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_pilot1">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkCheckButton" id="yes_radio_button">
+            <property name="label" translatable="yes">_Yes, I've used sync software with this PDA before.</property>
+            <property name="has_tooltip">True</property>
+            <property name="tooltip_text" translatable="yes">Choose this option if you have used sync software before, even on another computer</property>
+            <property name="use_underline">True</property>
+            <property name="active">True</property>
+            <property name="draw_indicator">True</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="no_radio_button">
+            <property name="label" translatable="yes">_No, I've never used sync software with this PDA before.</property>
+            <property name="use_underline">True</property>
+            <property name="draw_indicator">True</property>
+            <property name="group">yes_radio_button</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkFrame" id="pilot_user_frame">
+            <property name="sensitive">False</property>
+            <child>
+              <object class="GtkGrid" id="table5">
+                <property name="column_spacing">9</property>
+                <property name="row_spacing">4</property>
+                <child>
+                  <object class="GtkEntry" id="assistant_pilot_username_entry">
+                    <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">Enter Owner Name you want stored on your PDA</property>
+                    <property name="invisible_char">&#x2022;</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="assistant_pilot_id_entry">
+                    <property name="can_focus">True</property>
+                    <property name="tooltip_text" translatable="yes">This integer ID identifies your PDA and must be unique between different PDAs that you use.</property>
+                    <property name="invisible_char">&#x2022;</property>
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label109">
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">_PDA ID:</property>
+                    <property name="use_underline">True</property>
+                    <property name="mnemonic_widget">assistant_pilot_id_entry</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label108">
+                    <property name="xalign">0</property>
+                    <property name="label" translatable="yes">_Owner:</property>
+                    <property name="use_underline">True</property>
+                    <property name="mnemonic_widget">assistant_pilot_username_entry</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="row">0</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child type="label">
+              <object class="GtkLabel" id="label166">
+                <property name="label" translatable="yes">Owner Name and ID to set on the PDA</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">PDA Identification</property>
+        <property name="header_image">gnome-palm.png</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_sync">
+        <property name="orientation">vertical</property>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Initial Sync</property>
+        <property name="header_image">gnome-palm.png</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkGrid" id="page_pilot2">
+        <property name="column_spacing">9</property>
+        <property name="row_spacing">4</property>
+        <child>
+          <object class="GtkEntry" id="assistant_pilot_name_entry">
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">The name for your PDA.  It is only used for identification.</property>
+            <property name="invisible_char">&#x2022;</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="assistant_pilot_basedir_entry">
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">Set the root directory for all PDA files to be stored.</property>
+            <property name="invisible_char">&#x2022;</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="assistant_pilot_charset_combo">
+            <property name="has_entry">True</property>
+            <property name="can_focus">True</property>
+            <property name="model">assistant_pilot_charset_store</property>
+            <child>
+              <object class="GtkCellRendererText" id="cellrenderertext6"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label115">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Local folder:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">assistant_pilot_basedir_entry</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label114">
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">_Name of PDA:</property>
+            <property name="use_underline">True</property>
+            <property name="mnemonic_widget">assistant_pilot_name_entry</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="assistant_pilot_charset_label">
+            <property name="label" translatable="yes">C_harset of PDA:</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">PDA Attributes</property>
+        <property name="header_image">gnome-palm.png</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkLabel" id="page_finish">
+        <property name="label" translatable="yes">Congratulations, gnome-pilot is configured!
+
+You can change gnome-pilot settings at any time from
+PilotLink and Conduits tabs in control center.
+
+You can monitor syncing of gnome-pilot by adding
+PilotLink applet to your panel.</property>
+      </object>
+      <packing>
+        <property name="page_type">summary</property>
+        <property name="title" translatable="yes">Success</property>
+      </packing>
+    </child>
+  </object>
+  <object class="GtkAdjustment" id="assistant_device_timeout_adjustment">
+    <property name="value">2</property>
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="timeout_adjustment">
+    <property name="value">2</property>
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+</interface>

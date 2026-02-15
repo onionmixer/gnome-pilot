@@ -1,0 +1,973 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2001-02-12  Ettore Perazzoli  <ettore@ximian.com>
+
+	* Makefile.am (gobfiles): `$(srcdir)' is your friend.
+	(EXTRA_DIST): Remove `$(idl_DATA)' here.
+	(idl_DATA): Don't define.
+	(idl_files): Define this instead.  And do it right, with
+	`$(top_srcdir)'.
+	($(CORBA_SRCLIST)): Use `$(idl_files)'.
+
+2001-01-18  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd.c (do_cradle_events): don't take pilot as a param
+	(sync_device): don't pass do_cradle_events the pilot as we don't know
+	what the pilot is at this point
+
+2001-01-14  JP Rosevear  <jpr@ximian.com>
+
+	* Makefile.am: build purified target
+
+2001-01-13  JP Rosevear  <jpr@ximian.com>
+
+	* Makefile.am: This will be reverted, but in the mean time make it
+	build the corba generated files.
+
+2001-01-11  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-client.[hc]: Reconstituted from .gob
+
+2000-12-31  Peter Williams  <peterw@helixcode.com>
+
+	* gpilotd.c (main): Add a gtk_type_init(). Without this and with
+	USING_OAF the gtk type system isn't initialized and nothing works.
+
+	* gpilot-structures.c (gpilot_device_init): Reorder the reading of
+	the speed variable as somehow something can happen that makes
+	gnome_config barf on the path (USB visor popping prefix?)
+
+2000-11-29  JP Rosevear  <jpr@helixcode.com>
+
+	* Makefile.am: Update build info
+
+2000-11-28  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.h: Remove free prepare signal
+	prototyp
+
+	* gnome-pilot-conduit-sync-abs.c 
+	(gnome_pilot_conduit_sync_abs_class_init): No more free_prepare signal
+	(sync_abs_new_sync_handler): No more free prepare call back in the
+	synchandler
+	(sync_abs_gpr_to_pr): Return a PilotRecord rather than PilotRecord*
+	(gnome_pilot_conduit_sync_abs_prepare): Accept a PilotRecord pointer
+	rather than a pointer to a pointer.
+	(gnome_pilot_conduit_sync_abs_free_prepare): Remove
+
+2000-11-27  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.h: Adjust free_prepare signal
+
+	* gnome-pilot-conduit-sync-abs.c 
+	(gnome_pilot_conduit_sync_abs_class_init): The free_prepare signal
+	only emits one parameter in the message
+
+2000-11-21  JP Rosevear  <jpr@helixcode.com>
+
+	* gpilotd.c: remove include, pthreads are not used here
+
+2000-10-31  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c (gtk_marshal_INT__POINTER_BOOL): 
+	New signal marshaller
+	(gnome_pilot_conduit_sync_abs_class_init): create set_status_cleared
+	signal and archive_record signal
+	(sync_abs_new_sync_handler): Map set status cleared and archive record
+	appropriately
+	(gnome_pilot_conduit_sync_abs_set_status_cleared): sync handler function
+	to issue new signal
+	(gnome_pilot_conduit_sync_abs_archive_record): ditto
+
+	* gnome-pilot-conduit-sync-abs.h: Add function pointers for
+	set_status_cleared and archive record signals
+
+2000-10-17  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c 
+	(gnome_pilot_conduit_sync_abs_set_num_deleted_local_records): Add
+	proper gtk-doc documentation for public functions
+
+2000-10-11  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.h: Add replace_record to struct
+
+	* gnome-pilot-conduit-sync-abs.c: Remove unused signal handler types
+	(gnome_pilot_conduit_sync_abs_replace_record): Call back for new
+	pi-sync callback.  There is a subtle difference between add/delete
+	and replace.
+	(gnome_pilot_conduit_sync_abs_class_init): Add replace_record signal
+
+2000-10-11  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c: Reflect the fact that the Pre 
+	callback now expects the slow sync flag passed back.
+
+2000-10-10  JP Rosevear  <jpr@helixcode.com>
+
+	* Makefile.am: Conditional compile
+
+2000-10-09  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c (sync_abs_fill_gdr): Fill in the actual
+	struct, not a copy
+	(sync_abs_fill_dr): ditto
+
+2000-10-08  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c 
+	(gnome_pilot_conduit_sync_abs_for_each): Make sure the desktop record
+	is actually returned and that we don't reset the iteration each time.
+	(gnome_pilot_conduit_sync_abs_for_each_modified): ditto
+	(gnome_pilot_conduit_sync_abs_prepare): Cast the right record to gdr
+
+2000-10-08  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c 
+	(gnome_pilot_conduit_sync_abs_for_each): Make sure the desktop record
+	is actually returned
+	(gnome_pilot_conduit_sync_abs_for_each_modified): ditto
+	(gnome_pilot_conduit_sync_abs_for_each): 
+
+	* gnome-pilot-conduit-sync-abs.h: Hide the pilot-link DesktopRecord
+	mostly in the GnomePilotDesktopRecord.  Might need to revisit this.
+
+	* gnome-pilot-conduit-sync-abs.c: Initialize the record and return
+	values to something sane. Transform PilotRecords to GnomePilotRecords,
+	DesktopRecords to GnomePilotDesktopRecords and vice-versa.
+
+2000-10-06  JP Rosevear  <jpr@helixcode.com>
+
+	* gnome-pilot-conduit-sync-abs.c: New sync abs conduit 
+	checked in for development purposes (not compiled in
+	during the CVS tree build)
+
+	* gnome-pilot-conduit-sync-abs.h: ditto
+
+2000-10-02  Russell Steinthal  <rms39@columbia.edu>
+
+	* gpilotd.c: Add a check to see if the daemon is paused to the
+	Visor activation code
+
+2000-07-10  Seth Alves  <alves@hungry.com>
+
+	* gnome-pilot-client.gob: call oaf_init instead of oaf_get_orb
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* gnome-pilot-client.gob: conditional code for using oaf instead
+	of goad
+	* lib-gpilotd.c: same
+	* orbit_daemon_glue.c: same
+
+	* Makefile.am (gpilotd_LDADD): added BONOBO_VFS_GNOME_LIBS
+
+2000-05-31  Eskil Heyn Olsen  <eskil@eazel.om>
+
+	* gpilotd/Makefile.am:
+	* gpilotd/gpilotd.c: (sync_device), (device_in):
+	I've tried some stuff to check if I can get rid of
+	bug 10983 and friends, which seem to be the worst
+	bug these days.
+	
+	* gpilotd/gnome-pilot-client.gob:
+	George told me that the full name usage in the
+	corba pointer hookups was no longer needed. Yay.
+
+2000-05-15  Eskil Heyn Olsen  <eskil@eazel.om>
+
+	* orbit_daemon_glue.c (gpilotd_corba_set_user_info): Urgh,
+	something got lost on the journey. set_user_info now uses the
+	continue_sync arg.
+
+	* gnome-pilot-client.gob: Fixed wrong ordering of args in
+	set_user_info call.
+
+	* gpilotd.c (do_cradle_events): Notifies if sync continues after
+	setting userid.
+
+2000-05-09  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilot-structures.c: Minor memory leak and potential free
+	memory access fixes.
+
+2000-04-07  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd.c: Include <sys/stat.h> that's needed by Solaris.
+
+2000-04-03  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* queue_io.c: removed all traces of revive, and added the
+	continue_sync flag to set_userinfo.
+
+	* gpilotd.c (do_cradle_events): set_userinfo now allows a sync to
+ 	continue.
+
+	* orbit_daemon_glue.c (gpilotd_corba_request_revive): Removed all
+	traces of revive, what a braindamage I must have had.
+
+	* manager.c (iterate_dbs): Trying to stabilize gpilotd when pilot
+	cancels/is removed (bug #4636)
+
+	* gpilot-structures.c (gpilot_context_new): Load and set the
+ 	conduit progress_setting when reading the config. Stored in the
+ 	GPilotContext.
+
+	* manager.c (gpilot_load_conduits): Sets the progress_stepping
+	when conduits are loaded.
+
+2000-03-29  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-client.gob: was missing some code in a return_code
+	check, fixes bug 7749.
+
+2000-03-28  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (GOB_LIBGPILOTD_BUILT_SRCS): Removed libgpilotdcndmgmtold
+
+2000-03-26  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gnome-pilot-conduit-standard-abs.c (standard_abs_merge_to_local):
+	Must allocate buffer for the record to be read in. Fixes bug #7746
+	
+2000-03-25  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd.c: Fail if basedir doesn't exist.
+	Based on suggestion/patch by Carlos Morgado <chbm@chbm.nu>.
+	
+	* gpilotd-app.h, lib-gpilotd.c: Remove unsed/unimplemented get_conduits call. 
+	It is actually in libgpilotdCM.
+
+2000-03-19  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c (gpilotd_corba_get_databases_from_cache):
+	finised the get_databases from cache. Decided to remove the one
+	that did required a sync.
+
+	* gnome-pilot-client.gob: implemented the get_databases_from_cache.
+
+2000-03-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c (gpilotd_corba_get_databases_from_cache):
+	Added first code for the get_databases call.
+
+2000-03-13  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-conduit-standard-abs.c
+	(standard_abs_delete_from_pilot): After deletion, add the id to
+	record_ids_to_ignore, to prevent trying to delete it again later.
+
+2000-03-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (do_sync): i18n the "On host..." log on the pilot.
+
+	* manager.c (conduit_synchronize): i18n the "Synchronizing..." log 
+	on the pilot.
+
+2000-03-12  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (conduit_sync_default): Changed a g_error to a g_warning.
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (INCLUDES): automake juju to make distcheck work.
+
+	* gnome-pilot-conduit.c: Moved the progress stepping here, should
+	save a lot of signal emits.
+
+	* gnome-pilot-client.gob: fixed return type of _new to
+	GnomePilotClient*.
+
+	* manager.c (gpilot_load_conduits): Vamped to use libgpilotdcm to
+	do conduit load/instantiate.
+
+2000-03-06  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot-structures.c (gpilot_device_init): Applied patch from
+	Fabrice.Bellet@creatis.insa-lyon.fr reg. opening NON_BLOCK for
+	irda devices.
+
+2000-03-05  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-conduit.c (gnome_pilot_conduit_class_init): Some
+	code beautification (pilot_conduit=conduit)
+
+2000-02-29  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am ($(GOB_BUILT_SRCS)): Automake juju
+
+2000-02-28  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-client.gob: A gnome_pilot_client_destroy call.
+
+2000-02-27  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gnome-pilot-client.gob: Implement get_user_info.
+
+2000-02-27  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-client.gob: CORBA methods signatures updated for
+	newer ORBit's, might cause warnings on older.
+
+	* orbit_daemon_glue.c (pilot_name_from_id): Don't print warnings
+	about unknown pilot ids when notifying completions.
+
+	* gnome-pilot-client.gob: implemened monitor_on_all_pilots and
+	off_all_pilots. Also changed some of the functions that took
+	gchar*** to take GList**, seems more "pure".
+	Also did restart_daemon.
+	And set_user_info.
+
+2000-02-26  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd.c (do_cradle_events): Make sure that we return FALSE
+	when there are no events.
+
+2000-02-25  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-conduit.c
+	(gnome_pilot_conduit_sync_type_int_to_str): if unknown sync_type,
+	type the int value, helps debugging.
+
+	* gpilotd.c (do_cradle_events): Initial support for the REVIVE
+ 	call.
+
+	* gnome-pilot-conduit-standard-abs.c (standard_abs_sync_record): 
+	reinserted the unfinished archieve stuff
+
+	* gpilotd.c (sync_foreach): Now only aborts sync on some cradle
+	events, in order to make revive work.
+
+2000-02-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* queue_io.h: Header for new request_revive idl thing.
+
+	* queue_io.c (gpc_queue_purge_request): Wrote code to write queue
+	stuff of request_revive
+
+	* orbit_daemon_glue.c (gpilotd_corba_request_revive): Wrote
+	implementation of request_revive.
+
+2000-02-15  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd.c (sync_foreach) : return FALSE only for really fatal
+	errors. We don't want to stop listening for cradle events on errors 
+	like connect timeout and alike.
+
+2000-02-11  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (pilot_connect): Takes an pointer to a int for passing 
+	error status instead of the returned filedescriptor.
+	(sync_foreach): More error handling, can now survice eg. XCopilot kills.
+
+2000-02-10  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.h: Removed the conduit_get_gpilot_conduit and friend definition.
+
+	* gnome-pilot-conduit.h: Defined two function types
+	(GnomePilotConduitLoadFunc and GnomePilotDestroyFunc), used in manager.c.
+
+2000-02-08  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gnome-pilot-conduit-standard-abs.c: Fix error check after
+	dlp_* calls.
+
+2000-02-02  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (libgpilotdincludedir): gnome-pilot-client.h is now
+ 	installed.
+
+2000-01-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (EXTRA_DIST): Builds libgpilotdOLD and
+	libgpilotd. Also renames gpilotdconduitmgmt to OLD, as it
+	hopefully soon will be. The gob file should in .tar.gz.
+	
+	* manager.c (gpilot_add_log_entry): Removed #defines that
+	corrected an old pilot-link bug
+
+2000-01-30  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilot-structures.c, gpilot-userinfo.c: Change structure
+	allocation to use g_new0 so that it is 0'd out correctly.
+
+2000-01-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c (gpilotd_corba_notify_off): Implemented an
+	empty notify_off, as not having it causes orbit crash when calling 
+	it.
+
+2000-01-21  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (iterate_dbs): use set_callbacks for progress bar
+ 	stuff...
+
+	* gnome-pilot-conduit-standard-abs.c
+ 	(gnome_pilot_conduit_standard_real_copy_to_pilot): Do progress bar
+ 	magic...
+
+2000-01-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (set_callbacks): Made a call to enable callbacks for a 
+	conduit. Given TRUE as first, sets them, given FALSE, removes
+	them. Tries to check for matches set/unset calls.
+
+	* gpilotd.c (main): Nuked a lot of the pid file stuff. Also
+	removed a lot of old code.
+
+	* orbit_daemon_glue.c: Implemented the pause call.
+
+	* gpilotd-app.h: Added pause, unpause, restart and get_pid calls.
+
+	* gpilot-structures.c (get_pilots): ifdeffed most of the
+ 	braindamaged gui output. Added a pause field to context, and some
+ 	handles in GPilotDevice (they are the result of
+ 	giochanneladdwatch), so I can remove the watch when paused.
+
+	* gnome-pilot-conduit.c: Fixed bug in gnome_pilot_conduit_error,
+	where the va_arg generated string wasn't used.
+
+2000-01-14  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd.c (pilot_connect): Use pi_accept_to with a timeout
+	of 1 second. This allows to cleanly breakout from the faulty wakeups
+	that otherwise cause gpilotd to hang. This should hopefully fix at least 
+	some of the hangups that people are having.
+	(sync_foreach): Clean up the error handling code a bit to only display
+	one error, and not to try to sync if some connection errors occur.
+
+
+2000-01-12  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot-structures.c (gpilot_device_init): Added O_NOCTTY to the
+ 	open() call. Thanks to Laurent Gauthier <lolo@seul.org> from
+ 	#gnome for helping with this one, this should hopefully fix the
+	SIGINTs and timeout bugs.
+
+2000-01-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (sync_foreach): Moved the gui code down to after the
+	disconnect call.
+	Also removed some debug code.
+
+2000-01-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* lib-gpilotd.c (gpilotd_get_pilot_basedir): If no basedir
+ 	avaiable, defaults to ~/pilot-name.
+	(gpilotd_get_pilot_basedir_by_id): Implemented a wrapper for
+ 	gpilotd_get_pilot_base_dir, that takes a pilot id number.
+
+2000-01-08  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gpilotd-conduit-mgmt.h, lib-conduitmgmt.c: Added pilotID argument
+	to gpilotd_conduit_mgmt_new.
+
+2000-01-06  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c: Removed a /* unimplemented */ comment from
+	an implemented function :)
+
+	* manager.c (iterate_dbs): Now disconnects the conduit messaging
+	signals after syncing the conduit.
+	(backup_foreach): Sets up messaging signals for the backup conduit.
+
+	* gnome-pilot-conduit-standard-abs.c: Fixed casts of conduit in
+	gnome_pilot_conduit calls.
+
+	* gnome-pilot-conduit.h: gnome_pilot_conduit_message/error now
+	takes ... printf arguments.
+
+	* gnome-pilot-conduit.c: implemented the ... feed to g_strdup_vprintf
+
+	* manager.c (iterate_dbs): More debug output for base
+	info. Commented out, as it is noisy
+
+	* lib-gpilotd.c (gpilotd_connect):
+	goad_server_activate_with_repo_id changed the activation flag to 0.
+
+2000-01-05  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-conduit-mgmt.h: Toggled a define off, to quench
+	libconduitmgmt output hell.
+
+	* gpilotd-app.h: Toggled a define off, to quench libgpilotd output 
+	hell.
+
+	* manager.c (conduit_progress_callback): Uses a define
+	PROGRESS_STEPPING (currently set to 10), to ensure that the corba
+	part of the prorgress stuff is only called for every
+	PROGRESS_STEPPING%. Set to 1 for highest resolution. This speeds
+	up the sync. 
+	(gpilot_load_conduits): Also wrote some stuff so we don't crash on 
+	missing/wrong lib*conduit.so files. Displays a warning dialog
+	saying bleh bleh problem blah blah.
+
+	* gpilotd.c (remove_device): A method to remove a device from the
+	context lists. Used when the device reports errors and stuff.
+	(pilot_connect): Unfortunately, after killing xcopilot and the
+	devices is nuked, gtk_main_iteration keeps returning signifying
+	there is data to read. Until I fix this, I have to call
+	gpilot_gui_error_dialog when the pi_bind fails.
+
+	* gpilot-gui.c (gpilot_gui_run_dialog): Uses the prober methods
+	from gnome-dialog-util. gpilot_gui_error_dialog now
+	results in a exit(-1), this may or may not be kool. 
+
+	* gnome-pilot-conduit-standard-abs.h (struct
+	_GnomePilotConduitStandardAbs): Many ints used for the progress
+	bar. They can be set by the conduit, if not, worst case scenarios
+	are used. Also a new methods
+	(gnome_pilot_conduit_standard_abs_set_db_open_mode) to set the
+	dlp_DbOpen mode, used for gaining access to secret records.
+
+	* gnome-pilot-conduit-standard-abs.c: Progress stuff called at
+	various places. Do a search on "progress", and thats basically
+	it. Also changed the standard_abs_db_open, so the
+	gtk_object_set_data("db_open_mode") no longer works.
+
+1999-12-23  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c : Lots of warnings crushed.
+
+	* gpilot-structures.c (gpilot_context_new): Nasty comparision bug
+	reg. sync_PC_Id, not fatal.
+
+	* gnome-pilot-conduit-standard-abs.c: Adding progress stuff to
+ 	conduitAbs. It currently gets the totalRecords from the pilotDb,
+ 	and for synchronize, copy/merge from pilot, calls
+ 	gnome_pilot_conduit_progress. 
+
+1999-12-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (pilot_connect): Had to comment out the
+	gpilot_gui_error_dialog call when bind fails, somehow looped, kept 
+	popping up new windows, not that good.
+	Added debug output to device_in, so I might be able to track the
+	timeout problem.
+
+	* orbit_daemon_glue.c (orbed_notify_multi_purpose_foreach): Made
+ 	alterations to conduit callbacks. Fixed some bad copy and paste bugs.
+
+	* lib-gpilotd.c (cb_conduit_progress): Made alterations to conduit callbacks.
+
+	* gpilotd-app.h: Made alterations to conduit callbacks.
+
+	* gpilotd-app-dummy-callbacks.h: Made alterations to conduit callbacks.
+
+1999-12-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-conduit.[ch]: Added signals to GnomePilotConduit
+		"error" - sends an error message to all clients
+		"message" - sends a message to all clients
+		"progress" - sends progress info to all clients
+
+	* lib-gpilotd.c: Handlers for message/error/progress.
+
+	* gpilotd-app.h: Callbacks for message/error/progress.
+
+	* gpilotd-app-dummy-callbacks.h: Dummy callbacks for message/error/progress.
+
+	* manager.c (iterate_dbs): Connects signal handlers for
+	message/error/progress stuff.
+
+	* orbit_daemon_glue.c (orbed_notify_multi_purpose_foreach): Fixed
+	and finished the error/progress/message stuff.
+
+1999-12-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot-structures.c (gpilot_context_new): Uses g_strdup_printf now.
+
+	* orbit_daemon_glue.c: Support for the new corba calls, check
+	changelog in ../idl/
+	
+	* gpilotd-conduit-mgmt.h: Nuked gpilotd_conduit_mgmt_get_pilot_id
+	from lib conduitmgmt before it was to late... what was I thinking
+	when I did that.
+
+1999-12-10  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot-structures.c (gpilot_context_new): uses g_strdup_printf now.
+
+1999-12-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (do_restore_foreach): Finishing restore stuff.
+
+	* gpilotd.c: Fixed the _XOPEN_SOURCE def. Please add your platform
+ 	to configure.in's case on $target if your platform need this to be
+ 	defined. Also added some more ifdef USE_FORK to choke some warnings.
+
+1999-12-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (do_sync): Writes pilot Id, owner and name. Easier to
+	track when multiple pilots are used.
+
+	* manager.c: Did some work on the restore stuff.
+
+	* orbit_daemon_glue.c: added two more gpthrows,
+	gpthrow_with_settings and gpthrow_val_with_settings that takes
+	exception variable name and a set of statements as extra
+	arguments. Should fix bug#4143
+
+1999-12-07  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilot-gui.h: Added some gpilot_gui_type_dialog(char*...) calls.
+
+	* gpilotd.c (sync_foreach): Added call to
+	gpilot_gui_warning_dialog when encountering an unknown pilot.
+
+	* gpilotd.c (pilot_connect): Added call to
+	gpilot_gui_error_dialog when binding to the device fails.
+
+	* gpilot-structures.c (gpilot_device_init): Also a warning dialog
+	during start, if the device is unavailable.
+
+	* gpilot-structures.c (get_devices): Yet more warning dialogs
+	about unconfigured gpilotd.
+
+	* gpilot-structures.c (get_pilots): ditto
+
+	* gpilotd.c: ifdeffed signal(SIGCHLD...), as it is not used when
+	the fork stuff is disabled.
+
+1999-12-03  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (iterate_dbs): Commented out the DB info printing.
+
+	* gpilotd.c (do_sync): Adds a log entry to pilot when done.
+
+1999-11-30  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* queue_io.c: Fixed GREQ_CONDUIT, the conduit name was wrongly
+	written and the sync type not written at all. Duh! This queue
+	stuff still has to change, it will come back and haunt me.
+
+	* gnome-pilot-conduit-standard-abs.c (standard_abs_sync_record):
+	Wrote sketches for case 11-15 (archiving). More dlp_AddSync log calls.
+
+	* gnome-pilot-conduit-standard.h: Added a
+	gnome_pilot_conduit_standard_set_slow which sets conduit->slow =
+	TRUE, thereby causing next synchronize to be a slowsync. Conduits
+	can call this in pre_sync if they need to sync slow. Also removed
+	the boolean argument to synchronize.
+
+	* gnome-pilot-conduit-standard-abs.c
+	(gnome_pilot_conduit_standard_real_synchronize): sets
+	conduit->slow = FALSE so only 1 sync after set_slow is slow.
+
+	* manager.c (conduit_sync_default): Use
+	gnome_pilot_conduit_standard_set_slow now.
+	
+	* gnome-pilot-conduit-standard-abs.c
+	(gnome_pilot_conduit_standard_real_copy_to_pilot): sets
+	pilotassigned record id on copy_to_pilot.
+
+1999-11-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* orbit_daemon_glue.c: corba stuff to notify clients on conduit start/end.
+
+	* manager.c (conduit_synchronize): Code that asks the corba stuff
+	to notify clients on conduit start/end
+
+	* lib-gpilotd.c (cb_conduit_start): added conduit_start and
+	conduit_end support. Also initial conduit_message/error/progress.
+
+	* gpilotd.c (pilot_connect): Added an exit -1 if binding to the
+	pilot device fails. This prevents a cpu hog loop, plus this is
+	actually fatal. (no its not, it's only fatal when there is only
+	one device)
+
+	* gpilotd-app-dummy-callbacks.h (gpilotd_conduit_start): dummy
+	callbacks for conduit start/end
+
+	* gpilotd-app.h: added externs for the new callbacks (conduit start/end)
+
+	* gnome-pilot-dbinfo.h (struct _GnomePilotDBInfo): Added a gchar
+	pilotId, carries the pilot string name.
+
+	* gnome-pilot-conduit.h: Added some prototypes for the progress
+	bar stuff. No code yet.
+
+	* gnome-pilot-conduit.c (gnome_pilot_conduit_init): does some
+ 	g_return_if_fails.
+
+	* gnome-pilot-conduit-standard.c
+	(gnome_pilot_conduit_standard_finalize): Changed a cast to remove
+	a compiler warning.
+
+	* Makefile.am (gpilotd_SOURCES): Removed gnome-pilot-conduit* and
+	added libgconduit instead. Now we should be able to LGPL
+	libgconduit and keep gpilotd GPL'ed.
+
+1999-11-20  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* manager.c, gpilotd.c, queue_io.c: Fix minor memory leaks
+	as reported by memprof. There are some more but I either can't 
+	figure them out or they are false positives.
+
+1999-11-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (gpilot_load_conduits): removed conduit_sync_type,
+	unused variable.
+
+	* gnome-pilot-conduit-standard-abs.h (struct
+	_GnomePilotConduitStandardAbsClass): Added GSList recordsToIgnore
+	and removed the post_sync decl.
+
+	* gnome-pilot-conduit-standard-abs.c (standard_abs_add_to_pilot):
+	adds record it to recordIdsToIgnore. This makes sync_record ignore 
+	these records later during the sync. Needed since adding/updating
+	the record on the pilot sets its dirty bit, thus a later iteration 
+	over modified records will re-sync the record, which eg. in case
+	10 causes data loss.
+	(standard_abs_sync_record):  check id in recordIdsToIgnore and
+	return immediately if match.
+
+1999-11-05  Vadim Strizhevsky  <vadim@optonline.net>
+	
+	* manager.c: Fix typo of config entry, It should be "slow_sync". Also
+	reverse the if to call conduit_slow_synchronize when slow_sync=TRUE
+	
+	* gnome-pilot-conduit-standard-abs.c: Use enum dlpOpenReadWrite instead
+	of 0x40|0x80 for readability
+
+1999-11-05  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* manager.c (gpilot_load_conduits): If no first_sync_type
+	specified, default to NotSet, otherwise sync_default's switch ends 
+	up in default:...
+
+	* lib-gpilotd.c: shutdown doens't make a call got
+	goad_server_unregister anymore.
+
+1999-11-02  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* lib-conduitmgmt.c (USE_GMODULE): Quick patch to output
+	errormessage from g_module_open/dlopen. Makes it easier to find
+	out why a conduit .so cannot be loaded.
+
+	* manager.c (gpilot_load_conduits): Suppress CRITICAL warning by
+	calling gnome_pilot_conduit_sync_type_str_to_int with a NULL pointer.
+
+1999-11-02  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am: added G_LOG_DOMAIN="gpilotd"
+
+	* gnome-pilot-conduit-standard-*: the synchronize now takes a
+	extra bool argument. if TRUE, slow sync is forced.
+
+	* manager.c: added a conduit_slow_synchronize that calls a forced
+	slow synchronization. Also added a
+	gpilot_remove_first_sync_settings call, removes the first_sync
+	info in the conduitsPILOTID file. More calls are needed.
+	
+1999-10-31  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* manager.c: fix calls to install_foreach to pass correct
+	second argument.
+
+1999-11-01  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-conduit.*[ch]: Added
+	GnomePilotConduitSyncTypeNotSet, indicates a NULL sync type.
+
+	* gnome-pilot-dbinfo.h: insert the PilotUser structure in the
+	comment, as reference.
+
+	* gpilotd-conduit-mgmt.h,lib-conduitmgmt.h: Added
+ 	gpilotd_conduit_mgmt_enable_with_first_sync, as
+	gpilotd_conduit_mgmt_enable, but with parameters that specify what 
+	to do on the first sync after enabling.
+
+	* manager.c: Added support for the first sync after enabling stuff 
+	from gpilotd-conduit-mgmt.h. Also slaughtered gpilot_load_conduit
+	to take a manager info object as parameter.
+
+1999-10-26 Vadim Strizhvesky <vadim@optonline.net>
+
+	* gnome-pilot-conduit.c: Fix sync_type conversion routines to
+	return GnomePilotConduitSyncTypeCustom for "custom" case. It matters
+	now. Also fix handling potential invalid arguments.
+
+	
+1999-10-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c (pilot_connect): Fixed the set baud rate thingy.
+
+	* gnome-pilot-conduit-standard-abs.c: Added a
+ 	standard_abs_close_db_and_purge_local, called at the end of every
+ 	sync type to close db on the pilot, and make the conduit purge is
+ 	deleted records. Improved generel code readability (I hope), fixed
+ 	intitial conduit cast and check in the sync type calls
+ 	(gnome_pilot_conduit_statnd_abs_real_*).
+
+	* gnome-pilot-conduit.[ch]: Added the
+	gnome_pilot_conduit_sync_type_str_to_int and int_to_str. Returns
+	strings/int when given a GnomePilotConduitSyncType as int/string.
+
+	* gpilot-userinfo.c: uses
+	gnome_pilot_conduit_sync_type_str_to_int.
+
+	* gpilotd.c: code readability modifications. Revamps to make the
+	default_sync_action usage work.
+
+	* manager.c: revamped for the default_sync_action. Added support
+	for merge_to/from_pilot.
+
+	* orbit_daemon_glue.c: modified according to changes in idl. Also
+	uses GnomePilotConduitSyncType enum now.
+
+	* queue_io.[ch]: Uses GnomePilotConduitSyncType enum now. Support
+	for merge_to/from_pilot when doing a conduit request.
+
+	Basically heres how syncing works now:
+
+	- first manager.c: gpilot_initial_synchronize_operations is
+ 	called. This handles get_sysinfo, restore and conduit
+ 	requests. The two latter causes synchronization to be stopped
+ 	after they're completed.
+
+	- then one of the six manager.c: gpilot_synchronize,
+ 	gpilot_copy_to_pilot, gpilot_copy_from_pilot,
+ 	gpilot_merge_to_pilot, gpilot_merge_from_pilot,
+ 	gpilot_sync_default is called. This depends on the
+ 	default_sync_action set for the pilot. The first five call the
+ 	corresponding method in the conduit, thereby dictating how to
+ 	synchronize. The last (sync_default) is used when
+	default_sync_action is set to "custom", and uses the
+	synchronization specified in conduitsPILOTID to decide how to
+	synchronize. This setting therefore lets each conduit have its own 
+	specified way to do the sync.
+
+	File installation happens on synchronize, copy_to_pilot,
+	merge_to_pilot and default.
+
+	Hope this clears up the mess.
+		
+	
+1999-10-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd.c: Moved Alan Shutko's baudrate thing to
+ 	pilot_set_baud_rate.
+
+	* gnome-pilot-conduit-standard-abs.c (gpilot_sync_pc_match): as
+	the 3Com conduit techinfo says, fast sync is solely defined using
+	the sync_pc_id.
+
+1999-10-22  Alan Shutko  <ats@acm.org>
+ 
+       * gpilotd.c (pilot_connect): Set PILOTRATE env variable before
+       calling pi_bind.  Added new argument to specify the desired rate.
+       (sync_foreach): Pass device->speed to pilot_connect for above change.
+
+1999-10-23 Vadim Strizhvesky <vadim@optonline.net>
+
+	* gpilotd-conduit-mgmt.h, lib-conduitmgmt.c: added 
+	gpilotd_conduit_mgmt_get_sync_type for conduits to figure out
+	current sync_type
+
+Sat Oct 23 19:44:55 CEST 1999, Eskil Olsen <deity@eskil.dk>
+ 	
+	* gnome-pilot-conduit.h: now has the GnomePilotConduitSyncType
+	enum, added enums for the Merge types. Will hack manager to use
+	this enum instead.
+
+	* gpilotd-conduit-mgmt.h: removed the GnomePilotConduitSyncType.
+
+1999-10-22  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd-conduit-mgmt.h: revamped all call to take a pilotId
+	instead of pilotName as argument.
+
+	* lib-conduitmgmt.h: same as gpilotd-conduit-mgmt.h, also uses
+	g_strdup_printf instead of g_snprintf now.
+
+	* lib-gpilotd.c: implemented the get_pilot_ids function. Also
+	updated to match the idl sequences renaming.
+
+	* orbit_daemon_glue.c: implemented the get_pilot_ids
+ 	function. Also updated to match the idl sequences renaming.
+	
+	* manager.c:gpilot_load_conduits: moved some g_free code around in 
+	the if blocks, prevents a sigsegv during errors. Also changed to
+	uses conduits%pilotid instead of conduits%pilotenumeration as
+	config file for determining conduits to load.
+	
+1999-10-21  Eskil Olsen <deity@eskil.dk>
+
+	* gnome-pilot-conduit-standard-abs.c: Fixed bugs in sync logic
+ 	found by Vadim Strizhevsky. Also fixed bug in sync_records, where
+ 	the id in the newly read remote records wasn't set.
+
+	* manager.c: checks db flags before handing over to
+ 	conduits, doesn't use g_module now... (must find that bug...)
+
+1999-09-28  Jonathan Blandford  <jrb@redhat.com>
+
+	* gnome-pilot-conduit*.c (*_finalize): Added finalize calls.
+
+1999-08-07  Peter Teichman  <pat4@acpub.duke.edu>
+
+	* gnome-pilot-conduit-standard-abs.c
+	(SyncRecord): reverted my last change to SyncRecord - it was
+	completely wrong	
+
+1999-08-03  Peter Teichman  <pat4@acpub.duke.edu>
+
+	* gnome-pilot-conduit-standard-abs.c
+	(gnome_pilot_conduit_standard_real_synchronize): open & close the
+	database at appropriate times.. makes the FastSync & SlowSync
+	loops work
+
+	(SyncRecord): call store_remote when we change a record on the
+	pilot, but not the desktop
+	
+	* gnome-pilot-conduit-standard.c
+	(gnome_pilot_conduit_standard_get_type): fixed a nasty object
+	creation bug
+
+	* orbit_daemon_glue.c: removed some cleanup code that appeared to
+	do nothing but segfault
+
+1999-07-30  Jonathan Blandford  <jrb@redhat.com>
+
+	* Makefile.am (libconduitincludedir): install the libconduit headers.
+
+Tue Nov 24 20:44:03 EST 1998
+        *conduit_support.c: 
+	*conduit_support.h: Added support for conduits
+	                    getting CORBA_ORB struct from gpilotd
+	
+Wed Nov  4 14:34:34 EST 1998 Jonathan Blandford <jrb@redhat.com>
+	*gpilotd.c: Moved out GPilot* structure manipulations.
+	*gpilot-structure.c: Added file.
+	*gpilot-userinfo.c: Added file.	
+
+Fri Aug 21 10:21:35 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+	*gpilotd.c: Added support for pid files
+	*gpilotd.c: Added SIGHUP reread of config files
+	
+Tue Aug 18 20:35:07 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+	*manager.c:
+	*manager.h: Make gpilotd use gmodule for better portability
+	*Makefile.am: Make gmodule link to gpilotd
+	
+Fri Aug  7 01:11:32 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+	*gpilotd.c: Add missing "lock" around a list
+
+Fri Aug  7 00:11:46 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+
+	*gpilotd.c: Fixed lots of race conditions.  A few are left but
+	hopefully they never happen :).
+	*gpilotd.c: Add support for last sync PC
+	*manager.c: same as above
+	*manager.h: same as above	
+	*conduit_support.c: same as above
+	*Makefile.am: Changed gpilotd's link flags to solve conduit 
+	loading problems.
+	
+Thu Aug  6 20:57:59 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+
+	*gpilotd.c: Fork for each syncing device so simultaneous syncs on
+	different cradles works.
+	

@@ -1,0 +1,7 @@
+<gnome-pilot-conduit version="1.0">
+	<conduit id="gpbackup1" type="shlib" location="@LIBDIR@/gnome-pilot/conduits/libbackup_conduit-3.0.so"/>
+	<name value="Backup"/>
+	<conduit-attribute name="description" value="Backs up changed databases"/>
+	<conduit-attribute name="default-synctype" value="custom"/>
+	<conduit-attribute name="settings" value="TRUE"/>
+</gnome-pilot-conduit>

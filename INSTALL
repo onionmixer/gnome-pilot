@@ -1,0 +1,94 @@
+Installation Instructions for GNOME Pilot 4.0.1
+================================================
+
+Prerequisites
+-------------
+
+The following libraries and tools are required:
+
+  - GTK 4 (>= 4.6)
+  - GLib / GIO (>= 2.72)
+  - libxml2
+  - GUDev (gudev-1.0)
+  - pilot-link (>= 0.13.1)     — https://github.com/onionmixer/pilot-link
+  - libdbusmenu-glib (>= 0.4)  — required for gpilot-tray
+  - pkg-config
+  - autoconf, automake, libtool
+  - gettext
+  - gdbus-codegen
+
+On Debian/Ubuntu, install all build dependencies with:
+
+    sudo apt install build-essential autoconf automake libtool pkg-config \
+        libgtk-4-dev libglib2.0-dev libgudev-1.0-dev libxml2-dev \
+        libdbusmenu-glib-dev gettext
+
+pilot-link must be installed separately (see its own INSTALL instructions).
+
+Building from Source
+--------------------
+
+  1. Generate the configure script (if building from git):
+
+        autoreconf -fi
+
+  2. Configure the build:
+
+        ./configure --prefix=/usr \
+            --enable-tray \
+            --enable-usb \
+            --enable-network
+
+  3. Compile:
+
+        make
+
+  4. Install (may require root):
+
+        make install
+
+Configure Options
+-----------------
+
+    --enable-tray           Build gpilot-tray system tray application
+                            using StatusNotifierItem D-Bus protocol.
+                            Requires libdbusmenu-glib. (default: auto)
+
+    --enable-usb            Enable USB cradle support. (default: yes)
+
+    --enable-network        Enable network synchronization. (default: yes)
+
+    --enable-eds-conduits   Enable Evolution-Data-Server conduits.
+                            Requires libebook-1.2, libecal-2.0,
+                            libedataserver-1.2. (default: yes)
+
+Building Debian/Ubuntu Packages
+-------------------------------
+
+  1. Install packaging tools:
+
+        sudo apt install debhelper dh-autoreconf devscripts
+
+  2. Build the .deb package:
+
+        dpkg-buildpackage -us -uc -b
+
+  3. Install the resulting package:
+
+        sudo dpkg -i ../gnome-pilot_4.0.1-1_*.deb
+        sudo apt -f install   # resolve any missing dependencies
+
+Installed Components
+--------------------
+
+    /usr/bin/gpilot-tray                    System tray application
+    /usr/bin/gpilotd-control-applet         Settings control panel
+    /usr/lib/*/gnome-pilot/gpilotd          Synchronization daemon
+    /usr/lib/*/libgpilotd-4.0.so*          Client library
+    /usr/lib/*/libgpilotdconduit-4.0.so*   Conduit library
+    /usr/lib/*/libgpilotdcm-4.0.so*        Conduit management library
+    /usr/include/gnome-pilot-4.0/           Development headers
+    /usr/lib/*/pkgconfig/gnome-pilot-4.0.pc Pkg-config file
+    /usr/share/pixmaps/sync_*.png           Tray icons
+    /usr/share/gnome-pilot/ui/              UI definition files
+    /usr/share/dbus-1/services/             D-Bus service file for gpilotd

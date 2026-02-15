@@ -1,0 +1,1644 @@
+# gnome-pilot yn Gymraeg.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk <kyfieithu@kyfieithu.co.uk>, 2003.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# Dafydd Harries <daf@parnassus.ath.cx>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-26 22:03-0400\n"
+"PO-Revision-Date: 2003-08-14 21:03+0100\n"
+"Last-Translator: Dafydd Harries\n"
+"Language-Team: Cymraeg <gnome-cy@www.linux.org.uk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "Cyfleuster"
+
+#: applet/pilot-applet.glade.h:1 capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "Dewis Peilot"
+
+#: applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "Cyfeiriadur"
+
+#: applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "Dangos Negeseuon"
+
+#: applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "Gweithredu pan gliciwyd"
+
+#: applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "Atodion GNOME PilotSync"
+
+#: applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "ID Peilot"
+
+#: applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "Adfer Peilot"
+
+#: applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "Crud cysoni"
+
+#: applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "cynnydd gnome-pilot"
+
+#: applet/pilot.c:135
+msgid "Synchronizing..."
+msgstr "Cysoni..."
+
+#: applet/pilot.c:163
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s Cysoni"
+
+#: applet/pilot.c:168
+msgid "Database %v of %u"
+msgstr "Cronfa ddata %v o %u"
+
+#: applet/pilot.c:187 applet/pilot.c:716 applet/pilot.c:868
+msgid "Ready to synchronize"
+msgstr "Barod i gysoni"
+
+#: applet/pilot.c:207
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Cyflawnwyd gofyniad %ld\n"
+
+#: applet/pilot.c:228
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Cysoni: %s"
+
+#: applet/pilot.c:233
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Wedi cychwyn\n"
+
+#: applet/pilot.c:247
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Wedi gorffen: %s"
+
+#: applet/pilot.c:252
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Gorffenwyd\n"
+
+#: applet/pilot.c:277
+msgid "%v of %u records"
+msgstr "cofnodion %v o %u"
+
+#: applet/pilot.c:353
+msgid ""
+"Pilot is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Mae'r Peilot yn gysoni ar hyn o bryd.\n"
+"Byddwch cystal ac aros iddo orffen"
+
+#: applet/pilot.c:356
+msgid "Not connected. Please restart daemon."
+msgstr "Dim cyswllt.  Byddwch cystal ac ail-gychwyn y daemon."
+
+#: applet/pilot.c:358
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Dim cyswllt gyda gpilotd.\n"
+"Byddwch cystal ac ail-gychwyn y daemon."
+
+#: applet/pilot.c:373
+msgid "gnome-pilot applet"
+msgstr "rhaglennig gnome-pilot"
+
+#: applet/pilot.c:375
+msgid "Copyright 2000-2003 Free Software Foundation, Inc."
+msgstr "Hawlfraint 2000-2003 Free Software Foundation, Inc."
+
+#: applet/pilot.c:376
+msgid "A dnd and gui monitor for gpilotd.\n"
+msgstr "Arsylwr llusgo-a-derbyn a rhyngwyneb ar gyfer gpilotd.\n"
+
+#: applet/pilot.c:472
+#, c-format
+msgid "cancelling %d"
+msgstr "diddymu %d"
+
+#: applet/pilot.c:524
+#, c-format
+msgid "Restoring %s"
+msgstr "Adfer %s"
+
+#: applet/pilot.c:566
+msgid "No directory to restore from."
+msgstr "Dim cyfeiriadur i'w adfer"
+
+#: applet/pilot.c:574
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Gwasgwch synchronize ar y gawell i adfer\n"
+" neu diddymu'r gweithrediad"
+
+#: applet/pilot.c:583
+msgid "Restore request failed"
+msgstr "Methodd cais adfer"
+
+#: applet/pilot.c:621
+msgid ""
+"Pilot sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Mae cysoni peilot ar waith.\n"
+"Ydych yn siwr bod eisiau ail-gychwyn daemon?"
+
+#: applet/pilot.c:631 applet/pilot.c:1160
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Ceisio cysylltu a'r Daemon GnomePilot"
+
+#: applet/pilot.c:647
+msgid "There's no last sync on record."
+msgstr "Does dim cofnod o'r cysoniad diwethaf"
+
+#: applet/pilot.c:687
+msgid "Continue"
+msgstr "Parhau"
+
+#: applet/pilot.c:689
+msgid "Pause Daemon"
+msgstr "Seibio'r Daemon"
+
+#: applet/pilot.c:709
+msgid "Daemon paused..."
+msgstr "Daemon wedi seibio"
+
+#: applet/pilot.c:849
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Dim cyswllt.  Ail-gychwynnwch y daemon i ail-gysylltu"
+
+#: applet/pilot.c:1041
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Methodd gweithrediad %s"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: applet/pilot.c:1118
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "gosod \"%s\" i \"%s\""
+
+#: applet/pilot.c:1129
+msgid "unknown dnd type"
+msgstr "math dnd anhysbys"
+
+#: applet/pilot.c:1137
+msgid "destroy gpilot-applet"
+msgstr "dinistrio rhaglennig-gpilot"
+
+#: applet/pilot.c:1224
+msgid "Cannot find pilot-applet.glade"
+msgstr "Methu dod o hyd i pilot-applet.glade"
+
+#: applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Y gorchymyn i'w weithredu pan caiff y rhaglennig ei glicio"
+
+#: applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Dangos hysbysiadau mewn ffenestri naid"
+
+#: capplet/gnome-pilot-capplet.c:211 capplet/gpilotd-capplet.glade.h:47
+msgid "Pilot Settings"
+msgstr "Gosodiadau Peilot"
+
+#: capplet/gnome-pilot-capplet.c:378 capplet/gnome-pilot-capplet.c:460
+#: capplet/gpilotd-capplet.glade.h:38
+msgid "Name"
+msgstr "Enw"
+
+#: capplet/gnome-pilot-capplet.c:380 capplet/gpilotd-capplet.glade.h:34
+#: utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: capplet/gnome-pilot-capplet.c:382
+msgid "UserName"
+msgstr "EnwDefnyddiwr"
+
+#: capplet/gnome-pilot-capplet.c:462 capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Porth"
+
+#: capplet/gnome-pilot-capplet.c:464 capplet/gpilotd-capplet.glade.h:55
+msgid "Speed"
+msgstr "Cyflymder"
+
+#: capplet/gnome-pilot-capplet.c:466 capplet/gpilotd-capplet.glade.h:60
+msgid "Type"
+msgstr "Math"
+
+#: capplet/gnome-pilot-capplet.c:572
+msgid "Conduit"
+msgstr "Cwndid"
+
+#: capplet/gnome-pilot-capplet.c:574
+msgid "Sync Action"
+msgstr "Gweithrediad Cysoni"
+
+#: capplet/gnome-pilot-capplet.c:775
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "Ydych yn siwr eich bod am ddileu %s peilot?"
+
+#: capplet/gnome-pilot-capplet.c:799
+msgid "_Edit this pilot..."
+msgstr "_Golygu'r peilot yma..."
+
+#: capplet/gnome-pilot-capplet.c:800
+msgid "Edit the currently selected pilot"
+msgstr "Golygu'r peilot sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:802
+msgid "_Delete this pilot"
+msgstr "_Dileu'r peilot yma"
+
+#: capplet/gnome-pilot-capplet.c:803
+msgid "Delete the currently selected pilot"
+msgstr "Dileu'r peilot sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:938
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Ydych yn siwr eich bod am ddileu %s dyfeis?"
+
+#: capplet/gnome-pilot-capplet.c:959
+msgid "_Edit this device..."
+msgstr "_Golygu'r dyfais yma..."
+
+#: capplet/gnome-pilot-capplet.c:960
+msgid "Edit the currently selected device"
+msgstr "Golygu'r dyfais sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:962
+msgid "_Delete this device"
+msgstr "_Dileu'r dyfais yma"
+
+#: capplet/gnome-pilot-capplet.c:963
+msgid "Delete the currently selected device"
+msgstr "Dileu'r dyfais sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:1125
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Methu enghraifftio cwndid %s."
+
+#: capplet/gnome-pilot-capplet.c:1165
+msgid "_Enable this conduit"
+msgstr "_Galluogi'r cwndid yma"
+
+#: capplet/gnome-pilot-capplet.c:1166
+msgid "Disable the currently selected conduit"
+msgstr "Analluogi'r cwndid sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:1168
+msgid "_Disable this conduit"
+msgstr "_Analluogu'r cwndid yma"
+
+#: capplet/gnome-pilot-capplet.c:1169
+msgid "Enable the currently selected conduit"
+msgstr "Galluogu'r cwndid sydd wedi ei dewis"
+
+#: capplet/gnome-pilot-capplet.c:1174
+msgid "_Settings..."
+msgstr "_Gosodiadau"
+
+#: capplet/gnome-pilot-capplet.c:1175
+msgid "Modify the currently selected conduit's settings"
+msgstr "Newid gosodiadau'r cwndid sydd wedi ei dewis"
+
+#. < 0) {
+#: capplet/gnome-pilot-cdialog.c:209
+msgid ""
+"Unable to create pilot settings window. Incorrect conduit configuration."
+msgstr "Methu creu ffenest gosodiadau peilot. Cyfluniad cwndid anghywir."
+
+#: capplet/gnome-pilot-druid.c:411
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Ni chwblhaodd gosodiad ac ni fydd\n"
+"gosodiadau yn cael eu arbed.  Ydych yn siwr eich bod am adael?"
+
+#: capplet/gnome-pilot-druid.c:503
+#, c-format
+msgid ""
+"About to send the following data to the pilot.\n"
+"UserName: %s\n"
+"ID: %d\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Ar fin anfon y data canlynol i'r peilot.\n"
+"EnwDefnyddiwr: %s\n"
+"ID: %d\n"
+"Byddwch cystal a rhoi'r peilot yn %s(%s) a gwasgu'r botwm HotSync."
+
+#. do get_from_pilot
+#: capplet/gnome-pilot-druid.c:525
+#, c-format
+msgid ""
+"About to retrieve UserName and ID from the pilot.\n"
+"Please put pilot in %s (%s) and press HotSync button."
+msgstr ""
+"Ar fin adennill EnwDefnyddiwr ac ID o'r peilot.\n"
+"Byddwch cystal a rhoi'r peilot yn %s(%s) a gwasgu'r botwm HotSync."
+
+#: capplet/gnome-pilot-druid.c:538
+msgid "Failed sending request to gpilotd"
+msgstr "Methu anfon cais i gpilotd"
+
+#: capplet/gnome-pilot-druid.c:669
+#, c-format
+msgid ""
+"Successfully retrieved UserName and ID from pilot.\n"
+"UserName: %s\n"
+"ID: %d"
+msgstr ""
+"Llwyddwyd adennill EnwDefnyddiwr ac ID o'r peilot.\n"
+"EnwDefnyddiwr: %s\n"
+"ID: %d"
+
+#: capplet/gnome-pilot-pdialog.c:371
+#, c-format
+msgid ""
+"Please put pilot in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"Byddwch cystal a rhoi'r peilot yn %s (%s) a gwasgu'r botwm HotSync neu "
+"diddymu'r weithrediad"
+
+#: capplet/gnome-pilot-pdialog.c:407
+msgid "The request to get pilot id failed"
+msgstr "Methodd y cais i gael id peilot"
+
+#: capplet/gnome-pilot-pdialog.c:446
+msgid "The request to set pilot id failed"
+msgstr "Methodd y cais i osod id peilot"
+
+#: capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: capplet/gpilotd-capplet.glade.h:8
+msgid "Action:"
+msgstr "Gweithred:"
+
+#: capplet/gpilotd-capplet.glade.h:9
+msgid "Add..."
+msgstr "Ychwanegu..."
+
+#: capplet/gpilotd-capplet.glade.h:10
+msgid "Choose Device"
+msgstr "Dewiswch Dyfais"
+
+#: capplet/gpilotd-capplet.glade.h:11
+msgid "Conduit Actions"
+msgstr "Gweithredau Cwndid"
+
+#: capplet/gpilotd-capplet.glade.h:12
+msgid "Conduit Description"
+msgstr "Disgrifiad Cwndid"
+
+#: capplet/gpilotd-capplet.glade.h:13
+msgid "Conduit Settings"
+msgstr "Gosodiadau Cwndid"
+
+#: capplet/gpilotd-capplet.glade.h:14
+msgid "Conduits"
+msgstr "Cwndidau"
+
+#: capplet/gpilotd-capplet.glade.h:15
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Llongyfarchiadau, rydych wedi llwydo i gyflunio gnome-pilot!\n"
+"\n"
+"Gallwch newid gosodiadau gnome-pilot ar unryw adeg o'r tabiau\n"
+"LincPeilot a Cwndidau yn y ganolfan rheoli.\n"
+"Gallwch monitro cysoni gnome-pilot trwy ychwanegu\n"
+"rhaglennig LincPeilot i'ch panel"
+
+#: capplet/gpilotd-capplet.glade.h:22
+msgid "Cradle Settings"
+msgstr "Gosodiadau Cawell"
+
+#: capplet/gpilotd-capplet.glade.h:23
+msgid "Delete"
+msgstr "Dileu"
+
+#: capplet/gpilotd-capplet.glade.h:24
+msgid "Device Settings"
+msgstr "Gosodiadau Dyfais"
+
+#: capplet/gpilotd-capplet.glade.h:25
+msgid "Devices"
+msgstr "Dyfeisiau"
+
+#: capplet/gpilotd-capplet.glade.h:26
+msgid "Disable"
+msgstr "Analluogi"
+
+#: capplet/gpilotd-capplet.glade.h:27 capplet/util.c:88 capplet/util.c:418
+msgid "Disabled"
+msgstr "Analluog"
+
+#: capplet/gpilotd-capplet.glade.h:28
+msgid "Edit..."
+msgstr "Golygu..."
+
+#: capplet/gpilotd-capplet.glade.h:29
+msgid "Enable"
+msgstr "Galluogi"
+
+#: capplet/gpilotd-capplet.glade.h:30
+msgid "Enter user name you want stored on your pilot"
+msgstr "Mewnosodwch enw defnyddiwr rydych am ei gadw ar eich peilot"
+
+#: capplet/gpilotd-capplet.glade.h:31
+msgid "Get User Name and ID from existing pilot that was used before."
+msgstr ""
+"Estyn enw defnyddiwr a chôd ID wrth beilot cyfredol a ddefnyddiwyd eisoes."
+
+#: capplet/gpilotd-capplet.glade.h:32
+msgid "Get from pilot"
+msgstr "Estyn wrth beilot"
+
+#: capplet/gpilotd-capplet.glade.h:33
+msgid "Gnome Pilot Settings"
+msgstr "Gosodiadau Peilot Gnome"
+
+#: capplet/gpilotd-capplet.glade.h:35
+msgid "Initial Sync"
+msgstr "Cydweddu Cychwynnol"
+
+#: capplet/gpilotd-capplet.glade.h:36 capplet/util.c:408
+msgid "IrDA"
+msgstr "IrDA (cysylltiad is-goch)"
+
+#: capplet/gpilotd-capplet.glade.h:37
+msgid "Local basedir"
+msgstr "Cyfeiriadur sail lleol"
+
+#: capplet/gpilotd-capplet.glade.h:39 capplet/util.c:409
+msgid "Network"
+msgstr "Rhwydwaith"
+
+#: capplet/gpilotd-capplet.glade.h:40
+msgid "No, I've never used sync software with this pilot before."
+msgstr ""
+"Na, ddefnyddiais i erioed feddalwedd cydweddu â'r peilot yma o'r blaen."
+
+#: capplet/gpilotd-capplet.glade.h:41 capplet/util.c:129
+msgid "None"
+msgstr "Dim"
+
+#: capplet/gpilotd-capplet.glade.h:42
+msgid "One Time Action:"
+msgstr "Gweithred Un Tro:"
+
+#: capplet/gpilotd-capplet.glade.h:43
+msgid "Pilot Attributes"
+msgstr "Priodweddau Peilot"
+
+#: capplet/gpilotd-capplet.glade.h:44
+msgid "Pilot Identification"
+msgstr "Dynodiad Peilot"
+
+#: capplet/gpilotd-capplet.glade.h:45
+msgid "Pilot Name"
+msgstr "Enw Peilot"
+
+#: capplet/gpilotd-capplet.glade.h:46
+msgid "Pilot Name:"
+msgstr "Enw Peilot:"
+
+#: capplet/gpilotd-capplet.glade.h:48
+msgid "Pilots"
+msgstr "Peilotiaid"
+
+#: capplet/gpilotd-capplet.glade.h:50
+msgid "Send to pilot"
+msgstr "Anfon i'r peilot"
+
+#: capplet/gpilotd-capplet.glade.h:51 capplet/util.c:410
+msgid "Serial"
+msgstr "Cyfresol"
+
+#: capplet/gpilotd-capplet.glade.h:52
+msgid "Set User Name and ID to a new pilot."
+msgstr "Gosod Enw Defnyddiwr a chôd ID i beilot newydd."
+
+#: capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all pilot files to be stored."
+msgstr "Gosod y cyfeiriadur gwraidd sydd i gadw holl ffeiliau peilot."
+
+#: capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "Gosodiadau..."
+
+#: capplet/gpilotd-capplet.glade.h:56
+msgid "Success"
+msgstr "Llwyddiant"
+
+#: capplet/gpilotd-capplet.glade.h:57
+msgid "The name for your pilot. It is only used for identification."
+msgstr "Enw i'ch peilot. Defnyddir i ddynodi'n unig."
+
+#: capplet/gpilotd-capplet.glade.h:58
+msgid ""
+"This integer ID identifies your pilot and must be unique between different "
+"pilots that you use."
+msgstr ""
+"Mae'r ID cyfanrif yma'n dynodi eich peilot a rhaid iddo fod yn unigryw rhwng "
+"gwahanol beilotiaid y defnyddiwch."
+
+#: capplet/gpilotd-capplet.glade.h:59
+msgid "Timeout"
+msgstr "Goramser"
+
+#: capplet/gpilotd-capplet.glade.h:61 capplet/util.c:407
+msgid "USB"
+msgstr "USB"
+
+#: capplet/gpilotd-capplet.glade.h:62
+msgid "User Name"
+msgstr "Enw Defnyddiwr"
+
+#: capplet/gpilotd-capplet.glade.h:63
+msgid "User Name and ID to set on the Pilot"
+msgstr "Enw Defnyddiwr a chôd ID i osod ar y Peilot"
+
+#: capplet/gpilotd-capplet.glade.h:64
+msgid "User Name:"
+msgstr "Enw Defnyddiwr:"
+
+#: capplet/gpilotd-capplet.glade.h:65
+msgid "Welcome to gnome-pilot!"
+msgstr "Croeso i gnome-pilot!"
+
+#: capplet/gpilotd-capplet.glade.h:66
+msgid "Yes, I've used sync software with this pilot before."
+msgstr "Do, defnyddiais feddalwedd gydweddi gyda'r peilot yma o'r blaen."
+
+#: capplet/gpilotd-capplet.glade.h:67
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Ymddengys eich bod yn rhedeg gnome-pilot am y tro cyntaf.\n"
+"Gosoda'r camau canlynol gnome-pilot ar gyfer cydweddu. \n"
+"Gallwch bob amser newid unrhyw ddewisiadau o'r\n"
+"panel PilotLink yng Nghanolfan Reoli Gnome.\n"
+"\n"
+"Gwasgwch 'Nesaf' i fynd ymlaen.\n"
+"Gwasgwch 'Diddymu' am osodiad â llaw."
+
+#: capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Dechrau derwydd yn unig"
+
+#: capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Gwall tra'n ymgychwyn c-raglennig gpilotd"
+
+#: capplet/gpilotd-control-applet.c:114 capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "Gwall tra'n llwytho cyflwr y peilot, atelir"
+
+#: capplet/gpilotd-control-applet.c:122 capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Methu cysylltu â'r Ellyll GnomePilot"
+
+#: capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if pilots or cradles already configured"
+msgstr "Ni ellir rhedeg y derwydd os cyfluniwyd peilotiaid neu gawelli eisoes"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Cyflunio dyfeisiau PalmOS"
+
+#: capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "Dyfeisiau PalmOS"
+
+#. Default to 57600
+#: capplet/util.c:36 capplet/util.c:399
+msgid "Use conduit settings"
+msgstr "Defnyddio gosodiadau cwndid"
+
+#: capplet/util.c:37 capplet/util.c:392
+msgid "Synchronize"
+msgstr "Cydweddu"
+
+#: capplet/util.c:38 capplet/util.c:393
+msgid "Copy from pilot"
+msgstr "Copïo o'r peilot"
+
+#: capplet/util.c:39 capplet/util.c:394
+msgid "Copy to pilot"
+msgstr "Copïo i'r peilot"
+
+#: capplet/util.c:40 capplet/util.c:395
+msgid "Merge from pilot"
+msgstr "Cyfuno o'r peilot"
+
+#: capplet/util.c:41 capplet/util.c:396
+msgid "Merge to pilot"
+msgstr "Cyfuno i'r peilot"
+
+#: capplet/util.c:95 capplet/util.c:420
+msgid "Enabled"
+msgstr "Galluog"
+
+#: capplet/util.c:234
+msgid "You must have at least one device setup"
+msgstr "Rhaid bod gennych o leiaf un dyfais wedi'i cyflunio"
+
+#: capplet/util.c:458
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Bodola'r cyfeiriadur gwaelodol a benodwyd ond mae ganddo'r caniatadau "
+"anghywir.\n"
+"Trwsiwch os gwelwch yn dda, neu dewiswch cyfeiriadur arall"
+
+#: capplet/util.c:463
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Bodola'r cyfeiriadur gwaelodol a benodwyd ond nid cyfeiriadur mohono.\n"
+"Gwnewch e'n gyfeiriadur os gwelwch yn dda, neu dewiswch cyfeiriadur arall"
+
+#: capplet/util.c:470
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Nid oedd modd creu'r cyfeiriadur gwaelodol a benodwyd.\n"
+"Gwiriwch y caniatadau ar y llwybr a benodwyd neu dewiswch gyfeiriadur arall "
+"os gwelwch yn dda"
+
+#: capplet/util.c:475
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Mae'r llwybr a benodwyd i'r cyfeiriadur gwaelodol yn annilys.\n"
+"Dewiswch gyfeiriadur arall os gwelwch yn dda"
+
+#: capplet/util.c:577
+msgid "Read/Write permissions failed on"
+msgstr "Methodd caniatadau Darllen/Ysgrifennu ar"
+
+#: capplet/util.c:579
+msgid "Check the permissions on the device and retry"
+msgstr "Gwiriwch y caniatadau ar y ddyfais ac ail-geisiwch"
+
+#: conduits/backup/backup_conduit.c:236
+msgid "Checking for removed databases"
+msgstr "Edrych am cronfeydd data gwarededig"
+
+#. I18N note: this is printed when renaming a file %s
+#: conduits/backup/backup_conduit.c:243
+#, c-format
+msgid "Renaming %s"
+msgstr "Yn ail-enwi %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "to %s"
+msgstr "yn %s"
+
+#: conduits/backup/backup_conduit.c:422 conduits/backup/backup_conduit.c:426
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "Ni addaswyd %s ers y cydweddiad diwethaf"
+
+#: conduits/backup/backup_conduit.c:438 conduits/backup/backup_conduit.c:440
+#, c-format
+msgid "Making backup of %s"
+msgstr "Yn gwneud copi wrth gefn o %s"
+
+#: conduits/backup/backup_conduit.c:447 conduits/backup/backup_conduit.c:449
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Methwyd creu'r copi wrth gefn %s"
+
+#: conduits/backup/backup_conduit.c:646
+msgid "Collecting restore information..."
+msgstr "Yn casglu gwybodaeth adfer..."
+
+#: conduits/backup/backup_conduit.c:770
+msgid "Backup directory"
+msgstr "Cyfeiriadur copïau wrth gefn"
+
+#: conduits/backup/backup_conduit.c:780
+msgid "Only backup changed bases"
+msgstr "Copïo basau newidiedig wrth gefn yn unig"
+
+#: conduits/backup/backup_conduit.c:787
+msgid "Remove local base if deleted on pilot"
+msgstr "Gwaredu bas lleol os waredwyd ar y peilot"
+
+#: conduits/backup/backup_conduit.c:794
+msgid "# of old backups to keep"
+msgstr "Nifer o hen gopïau wrth gefn i'w cadw"
+
+#: conduits/file/file_conduit.c:240 conduits/file/file_conduit.c:250
+#, c-format
+msgid "Install of %s failed"
+msgstr "Methodd gosodiad %s"
+
+#: conduits/file/file_conduit.c:287
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Yn gosod %s o %s..."
+
+#: conduits/file/file_conduit.c:289
+#, c-format
+msgid "Installing %s..."
+msgstr "Yn gosod %s..."
+
+#: conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Gosod ar unwaith"
+
+#: conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Gosod wedi'i ohirio"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "Pilot to install to"
+msgstr "Peilot i osod iddo"
+
+#: conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PEILOT"
+
+#: conduits/file/gpilot_install_file.c:118
+#: conduits/file/gpilot_install_file.c:119
+msgid "Unable to get pilot names"
+msgstr "Methu cael enwau peilot"
+
+#: conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Methodd y ffeiliau canlynol:\n"
+
+#: conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Yn sefydlu i %s:\n"
+
+#: conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Dim ffeiliau i'w sefydlu"
+
+#: conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Gwasgwch cydweddu ar y gawell i sefydlu\n"
+" neu ddiddymu'r weithred."
+
+#: gpilot-fileman/fileman.c:29 gpilot-fileman/fileman.c:646
+msgid "Gnome Pilot File Manager"
+msgstr "Trefnydd Ffeiliau Peilot Gnome"
+
+#: gpilot-fileman/fileman.c:31
+msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+msgstr "Hawlfraint Manish a Neil Vachharajani (h)(C) 1998"
+
+#: gpilot-fileman/fileman.c:34
+msgid ""
+"Manages files and applications on your Palm Pilot\n"
+"Palm Pilot is a Registered trademark of 3com Inc."
+msgstr ""
+"Yn trefnu ffeiliau a cymhwysiadau ar eich Palm Pilot\n"
+"Mae Palm Pilot yn nod masnach cofrestredig i 3com Inc."
+
+#: gpilot-fileman/fileman.c:71
+msgid "Really quit Gnome Pilot File Manager?"
+msgstr "Gadael Trefnydd Ffeiliau Peilot Gnome, o ddifrif?"
+
+#: gpilot-fileman/fileman.c:173
+msgid "Hmm, this shouldn't happen, not enough filenames\n"
+msgstr "Hmm, dylai hwn ddim digwydd, dim digon o enwau ffeil\n"
+
+#: gpilot-fileman/fileman.c:207 gpilot-fileman/fileman.c:366
+msgid "Aborting..."
+msgstr "Atelir..."
+
+#: gpilot-fileman/fileman.c:244
+msgid "No files to install!!"
+msgstr "Dim ffeiliau i osod!!"
+
+#: gpilot-fileman/fileman.c:252
+msgid "Install Progress"
+msgstr "Cynnydd Gosod"
+
+#: gpilot-fileman/fileman.c:256
+msgid "Installing... "
+msgstr "Yn gosod..."
+
+#: gpilot-fileman/fileman.c:311 gpilot-fileman/fileman.c:476
+msgid "Press the Hot Sync button on your pilot now!"
+msgstr "Gwasgwch y botwm HotSync ar eich peilot nawr!"
+
+#: gpilot-fileman/fileman.c:442
+msgid "Unable to open or create chosen name as a directory!"
+msgstr "Methu agor neu greu'r enw dewisiedig fel cyfeiriadur!"
+
+#: gpilot-fileman/fileman.c:452
+msgid "Chosen backup location is not a directory!"
+msgstr "Nid yw'r lleoliad copi wrth gefn dewisiedig yn gyfeiriadur!"
+
+#: gpilot-fileman/fileman.c:463
+msgid "Backup Progress"
+msgstr "Cynnydd Copïo Wrth Gefn"
+
+#: gpilot-fileman/fileman.c:465
+msgid "Backing up... "
+msgstr "Yn Copïo Wrth Gefn..."
+
+#: gpilot-fileman/fileman.c:484
+msgid "Unable to open status pipe"
+msgstr "Methu agor pibell gyflwr"
+
+#: gpilot-fileman/fileman.c:495
+msgid "Unable to open message pipe"
+msgstr "Meth agor pibell neges"
+
+#: gpilot-fileman/fileman.c:506
+msgid "Unable to fork"
+msgstr "Methu fforchio"
+
+#: gpilot-fileman/fileman.c:573
+msgid "Backup Directory"
+msgstr "Cyfeiriadur Copïo Wrth Gefn"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About"
+msgstr "Ynghylch"
+
+#: gpilot-fileman/fileman.c:591
+msgid "About the gpilot-fileman"
+msgstr "Am y gpilot-fileman"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Install Files"
+msgstr "Gosod Ffeiliau"
+
+#: gpilot-fileman/fileman.c:602
+msgid "Installs selected files to the connected Pilot"
+msgstr "Yn gosod ffeiliau dewisiedig i'r Peilot cysylltiedig"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Backup Pilot"
+msgstr "Copïo Wrth Gefn o'r Peilot"
+
+#: gpilot-fileman/fileman.c:608
+msgid "Back's up selected files from the connected Pilot"
+msgstr "Yn gwneud copïau wrth gefn o ffeiliau dewisiedig o'r Peilot"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties"
+msgstr "Priodweddau"
+
+#: gpilot-fileman/fileman.c:615
+msgid "Properties for the Gnome Pilot File Manager"
+msgstr "Priodweddau i'r Trefnydd Ffeiliau Peilot Gnome"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quit"
+msgstr "Gadael"
+
+#: gpilot-fileman/fileman.c:623
+msgid "Quits the application"
+msgstr "Gadael y rhaglen"
+
+#: gpilot-fileman/fileman.c:631
+msgid "File"
+msgstr "Ffeil"
+
+#: gpilot-fileman/fileman.c:632
+msgid "Help"
+msgstr "Cymorth"
+
+#: gpilot-fileman/multifile.c:286
+msgid "Add ->"
+msgstr "Ychwanegu ->"
+
+#: gpilot-fileman/multifile.c:287
+msgid "<- Remove"
+msgstr "<- Tynnu"
+
+#: gpilot-fileman/multifile.c:288
+msgid "<- Remove All"
+msgstr "<- Gwaredu i gyd"
+
+#: gpilot-fileman/multifile.c:330
+msgid "Selected Files"
+msgstr "Ffeiliau dewisiedig"
+
+#: gpilot-fileman/pilotfunc.c:88
+msgid "Unable to bind to pilot\n"
+msgstr "Methu ymrwymo i'r peilot\n"
+
+#: gpilot-fileman/pilotfunc.c:113
+msgid "Exiting on cancel"
+msgstr "Yn gadael ar ddiddymu"
+
+#: gpilot-fileman/pilotfunc.c:119
+#, c-format
+msgid "Unable to open '%s'!"
+msgstr "Methu agor '%s'!"
+
+#: gpilot-fileman/pilotfunc.c:124
+#, c-format
+msgid "Install failed %s."
+msgstr "Methodd gosod %s."
+
+#: gpilot-fileman/pilotfunc.c:211
+msgid "Exiting on cancel, all data NOT backed up."
+msgstr "Yn gadael ar ddiddymu, NI gopïwyd pob data wrth gefn."
+
+#: gpilot-fileman/pilotfunc.c:246
+msgid "Failed, unable to create file\n"
+msgstr "Methwyd, methu creu ffeil\n"
+
+#: gpilot-fileman/pilotfunc.c:254
+msgid "Failed, unable to back up database\n"
+msgstr ""
+"Methwyd, methu gwneud gopïo'r gronfa ddata\n"
+"\n"
+
+#: gpilot-fileman/preferences.c:82
+msgid "Pilot Device"
+msgstr "Dyfais Peilot"
+
+#: gpilot-fileman/preferences.c:89
+msgid "Confirm on quit"
+msgstr "Cadarnhau ar adael"
+
+#: gpilot-fileman/preferences.c:118
+msgid "General"
+msgstr "Cyffredinol"
+
+#: gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Daemon Peilot Gnome"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:63
+msgid "deleted pilot record modified locally, not deleting\n"
+msgstr "addaswyd cofnod a ddileuwyd o'r peilot yn lleol, ddim yn ei ddileu\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:64
+msgid "deleted local record modified on pilot, not deleting\n"
+msgstr "addaswyd cofnod a ddileuwyd yn lleol ar y peilot, ddim yn ei ddileu\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:65
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:69
+msgid "merge conflict, pilot and local record swapped\n"
+msgstr "gwrthdaro cyfuno, cyfnewidiwyd y cofnod lleol a chofnod y peilot\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:66
+msgid "archive and change conflict, pilot and local record swapped\n"
+msgstr ""
+"gwrthdaro archif a newid, cyfnewidiwyd cofnod y peilor a'r cofnod lleol\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:67
+msgid "archive and change conflict, local record sent to pilot\n"
+msgstr "gwrthdaro archif a newid, anfonwyd y cofnod lleol i'r peilot\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:68
+msgid "archive and change conflict, pilot record saved locally\n"
+msgstr "gwrthdaro archif a newid, cadwyd cofnod y peilot yn lleol\n"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:350
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:425
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:486
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:515
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:544
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Methodd ymgychwyn y cwndidau, atelir gweithredu"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:363
+msgid "Unable to delete all records in pilot database, aborting operation."
+msgstr "Methu dileu pob cofnod yng nghronfa ddata y peilot, atelir gweithredu"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:374
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:948
+msgid "Conduit did not return a record"
+msgstr "Ni ddychwelodd y cwndid gofnod"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:431
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Methu dileu pob cofnod yn y gronfa ddata lleol, atelir gweithredu"
+
+#: gpilotd/gnome-pilot-conduit-standard-abs.c:1349
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Gwall mewn cwndid, methwyd canfod cofnod newydd ei ychwanegu"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to pilot failed!"
+msgstr "Methodd copïo i'r peilot!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "Methodd copïo o'r peilot!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to pilot failed!"
+msgstr "Methodd cyfuno i'r peilot!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from pilot failed!"
+msgstr "Methodd cyfuno o'r peilot!"
+
+#: gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Methodd y cydweddu!"
+
+#: gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Methwyd agor dyfais %s (%s): rheswm: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"Methodd GnomePilot agor dyfais %s (%s).\n"
+"Rheswm: \"%s\"."
+
+#: gpilotd/gnome-pilot-structures.c:665 gpilotd/gnome-pilot-structures.c:716
+#: gpilotd/gnome-pilot-structures.c:744 gpilotd/gnome-pilot-structures.c:770
+msgid "Unknown device type"
+msgstr "Math dyfais anhysbys"
+
+#: gpilotd/gnome-pilot-structures.c:785
+msgid "Number of devices is configured to 0"
+msgstr "Cyfluniwyd nifer y dyfeisau yn 0"
+
+#: gpilotd/gnome-pilot-structures.c:787
+msgid ""
+"No cradles configure.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Dim cawelli wedi eu cyflunio.\n"
+"Rhedwch gpilotd-control-applet (defnyddiwch gnomecc)\n"
+"er mwyn cyflunio gnome-pilot."
+
+#: gpilotd/gnome-pilot-structures.c:808
+msgid "No accessible devices available"
+msgstr "Dim dyfeisiau hygyrch ar gael"
+
+#: gpilotd/gnome-pilot-structures.c:823
+msgid "Number of pilots is configured to 0"
+msgstr "Cyfluniwyd nifer y peilotiaid yn 0"
+
+#: gpilotd/gnome-pilot-structures.c:825
+msgid ""
+"No pilots configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Dim peilotiaid wedi eu cyflunio.\n"
+"Rhedwch gpilotd-control-applet (defnyddiwch gnomecc)\n"
+"er mwyn cyflunio gnome-pilot."
+
+#: gpilotd/gpilotd.c:173
+msgid "Unable to bind to pilot"
+msgstr "Methu ymrwymo â'r peilot"
+
+#: gpilotd/gpilotd.c:329
+#, c-format
+msgid "Unknown pilot, no userID/username match %ld"
+msgstr ""
+"Peilot anhysbys, ni gydwedda unrhyw gôd ID defnyddiwr/enw defnyddiwr â %ld"
+
+#: gpilotd/gpilotd.c:336
+msgid "Use gnomecc to configure pilot"
+msgstr "Defnyddiwch gnomecc i gyflunio'r peilot"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: gpilotd/gpilotd.c:341 gpilotd/gpilotd.c:546
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"Peilot anhysbys - ni gydwedda unrhyw beilot â chod ID %ld\n"
+"Defnyddiwch gnomecc i osod côd ID y peilot"
+
+#: gpilotd/gpilotd.c:365
+#, c-format
+msgid "Cradle %s has %d events"
+msgstr "Mae gan gawell %s %d digwyddiad"
+
+#: gpilotd/gpilotd.c:377
+msgid "Setting userinfo..."
+msgstr "Gosodir gwybodaeth defnyddiwr..."
+
+#: gpilotd/gpilotd.c:382
+msgid "Sync continues"
+msgstr "Â'r cydweddu ymlaen"
+
+#: gpilotd/gpilotd.c:401
+msgid "Getting userinfo..."
+msgstr "Cyrchir gwybodaeth defnyddiwr..."
+
+#: gpilotd/gpilotd.c:463
+msgid "NetSync request detected, synchronizing pilot"
+msgstr "Darganfyddwyd cais cydweddu rhwyd (NetSync), cydweddir y peilot"
+
+#: gpilotd/gpilotd.c:465
+msgid "HotSync button pressed, synchronizing pilot"
+msgstr "Gwasgwyd botwm HotSync, cydweddir y peilot"
+
+#: gpilotd/gpilotd.c:467
+#, c-format
+msgid "Pilot ID is %ld, name is %s, owner is %s"
+msgstr "%ld yw côd ID'r peilot, %s ei enw, a %s ei berchennog"
+
+#: gpilotd/gpilotd.c:477
+#, c-format
+msgid "On host %s\n"
+msgstr "Ar westeiwr %s\n"
+
+#: gpilotd/gpilotd.c:479
+#, c-format
+msgid "On host %d\n"
+msgstr "Ar westeiwr %d\n"
+
+#: gpilotd/gpilotd.c:498
+msgid "Synchronization ended"
+msgstr "Gorffennodd y cydweddu"
+
+#: gpilotd/gpilotd.c:501
+msgid "Synchronization ended early"
+msgstr "Gorffennodd y cydweddu yn gynnar"
+
+#: gpilotd/gpilotd.c:533
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Mae'r cyfeiriadur gwaelodol %s yn annilys.\n"
+"Trwsiwch ef os gwelwch yn dda, neu defnyddiwch gnomecc i ddewis cyfeiriadur "
+"arall."
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:598
+msgid "An error occured while getting the pilot's system data"
+msgstr "Bu gwall tra'n cyrchu data defnyddiwr y peilot"
+
+#. no ? drop connection then
+#: gpilotd/gpilotd.c:603
+msgid "An error occured while getting the pilot's user data"
+msgstr "Bu gwall tra'n cyrchu data defnyddiwr y peilot"
+
+#: gpilotd/gpilotd.c:608
+#, c-format
+msgid "Completed events for cradle %s (%s)"
+msgstr "Cyflawnwyd y digwyddiadau i gawell %s (%s)"
+
+#: gpilotd/gpilotd.c:656 gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr "Dihunwyd ar %s"
+
+#: gpilotd/gpilotd.c:977
+#, c-format
+msgid "Watching %s (%s, %s)"
+msgstr "Gwylir %s(%s, %s)"
+
+#: gpilotd/gpilotd.c:979
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Gwylir %s(%s)"
+
+#: gpilotd/gpilotd.c:992
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Terfynir (dalwyd SIGTERM)"
+
+#: gpilotd/gpilotd.c:1000
+msgid "Exiting (caught SIGINT)..."
+msgstr "Terfynir (dalwyd SIGINT)"
+
+#: gpilotd/gpilotd.c:1055
+#, c-format
+msgid "Unable to open or create file %s with read/write privs"
+msgstr "Methu agor na chreu ffeil %s â chaniatadau darllen/ysgrifennu"
+
+#: gpilotd/gpilotd.c:1061
+#, c-format
+msgid "Unable to find home directory for uid %d"
+msgstr "Methu canfod cyfeiriadur cartref ar gyfer côd defnyddiwr (uid) %d"
+
+#: gpilotd/gpilotd.c:1065
+msgid "Unable to create file installation queue directory"
+msgstr "Methu creu cyfeiriadur rhes gosod ffeiliau"
+
+#: gpilotd/gpilotd.c:1090
+msgid "Shutting down devices"
+msgstr "Ceuir dyfeisiau i lawr"
+
+#: gpilotd/gpilotd.c:1092
+msgid "Rereading configuration..."
+msgstr "Yn ailddarllen y cyfluniad ..."
+
+#: gpilotd/manager.c:265
+msgid "non-backup conduit in backup conduit list"
+msgstr "Cwndid ddim-wrth-gefn yn y restr cwndidau wrth-gefn"
+
+#: gpilotd/manager.c:273
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s wedi'i gopïo wrth gefn\n"
+
+#: gpilotd/manager.c:275
+#, c-format
+msgid "%s backup failed\n"
+msgstr "Methodd copïo wrth gefn %s\n"
+
+#: gpilotd/manager.c:300
+msgid "Collecting synchronization info..."
+msgstr "Cesglir gwybodaeth cydweddu..."
+
+#: gpilotd/manager.c:408
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Cydweddir %s\n"
+
+#: gpilotd/manager.c:427
+#, c-format
+msgid "Copy to pilot %s\n"
+msgstr "Copïo i'r peilot %s\n"
+
+#: gpilotd/manager.c:445
+#, c-format
+msgid "Copy from pilot %s\n"
+msgstr "Copïo o'r peilot %s\n"
+
+#: gpilotd/manager.c:463
+#, c-format
+msgid "Merge to pilot %s\n"
+msgstr "Cyfuno i'r peilot %s\n"
+
+#: gpilotd/manager.c:481
+#, c-format
+msgid "Merge from pilot %s\n"
+msgstr "Cyfuno o'r peilot %s\n"
+
+#: gpilotd/manager.c:509
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Cydweddu cyntaf cwndid %s..."
+
+#: gpilotd/manager.c:533
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "gweithred gydweddu anhysbys (%d = %s).\n"
+
+#: gpilotd/manager.c:659
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Enghreifftir %d cwndid..."
+
+#: gpilotd/manager.c:664 gpilotd/manager.c:665
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Cwndid anhysbys \"%s\" yn y cyfluniad! "
+
+#: gpilotd/manager.c:674
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Methodd llwytho'r cwndid \"%s\"!"
+
+#: gpilotd/manager.c:675
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Methodd llwytho'r cwndid \"%s\"!\n"
+
+#: gpilotd/manager.c:764
+#, c-format
+msgid "Setting user/id to %d/%s..."
+msgstr "Gosodir y defnyddiwr/côd ID yn %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: gpilotd/manager.c:796
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Ceisiwyd cwndid %s, ond nis ganfyddwyd"
+
+#: gpilotd/manager.c:806
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Nid oes modd ceisio cwndid %s"
+
+#: gpilotd/orbit_daemon_glue.c:1753
+msgid "(unknown DB)"
+msgstr "(DB anhysbys)"
+
+#: gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Gwall mewn rhes, cofnod sydd ddim yn bodoli"
+
+#: gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for pilot %d, request %d"
+msgstr "gwall: ni ganfuwyd cais ar gyfer peilot %d, cais %d"
+
+#: libgpilotdCM/gnome-pilot-conduit-management.gob:656
+msgid "module loading not supported, fatal!"
+msgstr "ni chynhelir llwytho modiwlau: angheuol!"
+
+#: utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Cyrchu Gwybodaeth System"
+
+#: utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Seibio'r ellyll"
+
+#: utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Datseibio'r ellyll"
+
+#: utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Ail-cychwyn daemon"
+
+#: utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Gosod côd ID defnyddiwr ac enw"
+
+#: utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "Côd ID i'r peilot"
+
+#: utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Gosod ffeil"
+
+#: utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FFEIL"
+
+#: utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Adfer cyfeiriadur"
+
+#: utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "CYFEIRIADUR"
+
+#: utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Rhedeg cwndid"
+
+#: utils/gpilotd-client.c:47 utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CWNDID"
+
+#: utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Enw defnyddiwr i'w osod"
+
+#: utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "ENW DEFNYDDIWR"
+
+#: utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "Arsylwi gweithredau'r peilot penodol"
+
+#: utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "Arsylwi bob peilot"
+
+#: utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "Rhestru peilotiaid wrth mewngofnod (i bob peilot)"
+
+#: utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "MEWNGOFNOD"
+
+#: utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "Penodi peilot i weithredu arno (rhagosodwyd MyPilot)"
+
+#: utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "ENW PEILOT"
+
+#: utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Penodi gawell i weithredu arni (rhagosodwyd Cradle0)"
+
+#: utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "ENW CAWELL"
+
+#: utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "Rhestru basau'r peilotiaid penodol"
+
+#: utils/gpilotd-client.c:360 utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"GOFALWCH!!\n"
+"Erfyn yw hwn ar gyfer rhannau penodol o becyn gnome-pilot.\n"
+"Peidiwch a'i ddefnyddio os nad ydych yn sicr beth ydych yn ei wneud."
+
+#: utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "rhestru cwndidau ar gael"
+
+#: utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "cwndid i weithredu arno"
+
+#: utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "rhestru bob priodwedd"
+
+#: utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "penodi beilot i weithredu arno"
+
+#: utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "CÔD ID PEILOT"
+
+#: utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "rhestru bob priodwedd"
+
+#: utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "rhestru cwndidau ar gael a'u cyflwr"
+
+#: utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "galluogi cwndid penodol"
+
+#: utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "analluogi cwndid penodol"
+
+#: utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "galluogi, a gosod cydweddcyntaf (firstsync) yn araf (slow)"
+
+#: utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "enghreifftio a dinistrio'r cwndid"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "Methwyd archwilio'r borth am"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "Dylai'r borth bwyntio at borth gyfresol USB"
+
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "Dylai'r borth fod yn ddyfais arbennig nodau, ond nid yw ar gyfer"
+
+#~ msgid ""
+#~ " A dnd and gui monitor for gpilotd.\n"
+#~ " Visit Website at http://eskil.org/gnome-pilot\n"
+#~ msgstr ""
+#~ "Monitor dnd a gui ar gyfer gpilotd.\n"
+#~ " Ymwelwch a'r gwefan wrth http://eskil.org/gnome-pilot \n"
+
+#~ msgid "Restore..."
+#~ msgstr "Adfer..."
+
+#~ msgid "Last sync log..."
+#~ msgstr "Cofnod cysoni diwethaf"
+
+#~ msgid "Conduit Settings..."
+#~ msgstr "Gosodiadau Cwndid"
+
+#~ msgid "Pilot Link Settings..."
+#~ msgstr "Gosodiadau Linc Peilot..."
+
+#~ msgid "Properties..."
+#~ msgstr "Priodweddau..."
+
+#~ msgid "Sync Type"
+#~ msgstr "Math Cysoni"
+
+#~ msgid "Advanced"
+#~ msgstr "Pellach"
+
+#~ msgid ""
+#~ " Default conduit action for Synhronization. In most cases you dont want "
+#~ "to change this setting, but individual conduits instead."
+#~ msgstr ""
+#~ "Gweithred cwndid ragosodedig er Cydweddu. Gan amlaf ni fyddwch am newid y "
+#~ "gosodiad yma, ond cwndidau unigol yn lle hynny."
+
+#~ msgid "Sync PCId"
+#~ msgstr "PCId cydweddu"
+
+#~ msgid "Copying to pilot..."
+#~ msgstr "Copïo i'r peilot..."
+
+#~ msgid "Copying from pilot..."
+#~ msgstr "Copïo o'r peilot..."
+
+#~ msgid "Merging to pilot..."
+#~ msgstr "Cyfuno i'r peilot..."
+
+#~ msgid "Merging from pilot..."
+#~ msgstr "Cyfuno o'r peilot..."
+
+#~ msgid "Using conduit settings for sync..."
+#~ msgstr "Defnyddir gosodiadau cwndid ar gyfer cydweddu..."

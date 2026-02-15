@@ -1,0 +1,4980 @@
+2026-02-14
+       * configure.ac: bump version to 4.0.1 (GTK4/GNOME 42 port)
+       * Full migration: GTK3→GTK4, dbus-glib→GDBus, GConf→GSettings,
+         GOB2 removal, modern EDS API (ESourceRegistry, ECalClient, EBookClient),
+         panel applet and EDS conduits made optional.
+
+2011-09-10  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * gnome-pilot-3.0.pc.in: Fix for #647479. Thanks to Tamas Nemeth
+       * conduits/evolution-data-server/e-calendar.conduit.in: fix typo #657658.
+              Thanks Matt McCutchen.
+       * conduits/backup/Makefile.am: fix missing include path #657365
+       * conduits/test/Makefile.am: ditto.  Thanks Matt McCutchen.
+
+2011-03-20  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * configure.ac: post-release bump version to 2.91.93
+
+2011-03-20  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * configure.ac: Bump version to 2.91.92 and update NEWS for release.
+       * merge gtk3 branch to master
+       * conduits/evolution-data-server/e-pilot-settings.c: Fix
+	   #644319  Avoid registering a "EPilot_Settings" multiple
+	   times from different Evolution conduits, by calling
+	   g_type_from_name() to see if it's already registered.
+       * applet/Makefile.am: allow installation of libpanel applet
+	   files in non-system location, to support "make distcheck"
+           Also, add missing substitution for libexecdir for .service
+	   file.
+       * applet/pilot.c: Fix .xml for applet menu.  Need to use "action"
+	   instead of "verb".  Also, remove unsupported pixmap stuff.
+       * conduits/evolution-data-server/e-address.conduit.in: add -3.0 to
+	   .so name.
+       * conduits/evolution-data-server/e-calendar.conduit.in: ditto
+       * conduits/evolution-data-server/e-memo.conduit.in: ditto
+       * conduits/evolution-data-server/e-todo.conduit.in: ditto
+       * conduits/conduits/file/file.conduit.in: ditto
+       * conduits/conduits/test/test.conduit.in: ditto
+
+
+
+2011-03-13  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * gtk3 branch: merge changes from master
+       * capplet/pilot.c: Avoid sending non-UTF8 pilot-encoded username
+	over DBUS.  Store username as UTF8 and convert at the last moment
+	when sending/receiving from pda. #641289
+       * capplet/gnome-pilot-pdialog.c: ditto
+       * gpilotd/gnome-pilot-client.gob: ditto
+       * gpilotd/gpilot-daemon.c: ditto
+
+2011-03-13  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * gtk3 branch
+       * Migrate applet from bonobo to dbus: #592604, #630725
+       * NOTE: barely tested until I can get a version of gnome3/libusb to sync
+       * Makefile.am: return applet directory to the build, now it's migrated to gtk3
+       * applet/GNOME_PilotApplet.server.in.in: remove
+       * applet/Makefile.am: migrate from bonobo to libpanelapplet-4
+       * applet/pilot.c: ditto
+       * configure.ac: ditto
+       * po/POTFILES.in: ditto
+       * applet/org.gnome.applets.PilotApplet.panel-applet.in.in: added
+       * applet/org.gnome.panel.applet.PilotAppletFactory.service.in: added
+
+
+2011-01-29  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * gtk3 branch.
+       * configure.ac and various Makefile.am: bump libraries to v3.
+	  Update all dependencies to gtk3 versions.
+	  Require pilot-link 0.12, remove hal option, require gudev,
+	  rename libraries to append "-3.0", and reset libversions to 0.0.0.
+       * gnome-pilot-3.0.pc.in: renamed from gnome-pilot-2.0.pc.in
+       * Makefile.am: reference gnome-pilot-3.0.pc
+       * various: remove PILOT_LINK_0_12 #defines.  Ancient history
+       * various: remove references to GtkObject and friends.
+       * libgpilotdCM: get rid of this directory, put stuff in gpilotd/
+       * include files: reorganise installed includes into
+	"gnome-pilot-3.0" rather than include/gpilotd/.  Remove all
+	relative directory includes (<gpilotd/...h>).  Add appropriate
+	include flags to gnome-pilot-3.0.pc.in, instead.
+       * Note: at present, the applet is broken, as it needs to be
+	 ported to libpanelapplet-3.
+
+2011-01-03  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * applet/Makefile.am: fix gob rules to support
+		parallel builds.  Thanks Matt McCutchen.  #634874
+       * gpilotd/Makefile.am: ditto
+       * conduits/evolution-data-server/todo-conduit.c: Use
+		correct path to map file. #634869
+
+
+2011-01-03  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * applet/Makefile.am: #634880: fix include problem when
+		using a separate build directory.
+		Thanks to Matt McCutchen.
+       * capplet/Makefile.am: ditto
+       * conduits/evolution-data-server/Makefile.am: ditto
+       * conduits/file/Makefile.am: ditto
+       * gpilotd/Makefile.am: ditto
+       * utils/Makefile.am: ditto
+       * gpilotd/gpilot-daemon.c: remove unused variable.
+
+2011-01-02  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * gpilotd/Makefile.am: add gpmarshal.[ch] to BUILT_SRCS, so
+		they get built from a clean checkout, and whenever
+		gpmarshal.list changes. #634873 Thanks Matt McCutchen
+		Also, add support for gudev. #593936
+       * gpilotd/gpilot-daemon.c: add support for gudev to replace
+		libhal.  Keep libhal around for backwards compatibility,
+		but default to gudev. #593936
+       * gpilotd/configure.ac: default to not using libhal.  Add support
+		for using gudev. #593936
+		Also, put the GNOME_DOC_INIT instruction before config.status
+		and all the makefiles are created! #638557
+       * help/C/gnome-pilot.xml: fix markup so it passes xmlint test
+		in 'make dist' #638557
+       * .gitignore: add a few extra files, introduced during
+		gnome-doc-utils change recently.
+
+2010-09-26  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * configure.ac: Change version to 2.32.1
+
+2010-09-26  Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * configure.ac: Change version to 2.32.0, to reflect
+		significant code changes.  Bump versions of libraries.
+       * NEWS: update for version 2.32.0
+
+
+2010-08-07 Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * #594214:  Remove remaining deprecated symbols:
+	GTK_SIGNAL_FUNC, GTK_SIGNAL_OFFSET,
+	GtkSignalFunc, gtk_signal_connect, gtk_signal_disconnect,
+	gtk_signal_disconnect_by_data,
+	gtk_signal_emit, gtk_signal_emit_stop_by_name,
+	gtk_signal_new, g_strncasecmp
+       * gnome-pilot now compiles with G_DISABLE_DEPRECATED,
+	 GNOME_DISABLE_DEPRECATED, GTK_DISABLE_DEPRECATED, and
+	 -Werror.
+       * applet/pilot.c: fix broken use of g_file API, so that
+	 drag-and-drop of files to applet panel icon works again.
+
+
+2010-08-07 Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * #594214:  Remove GTK_CHECK_CAST, GTK_CHECK_CLASS_CAST,
+		GTK_CHECK_CLASS_TYPE, GTK_CHECK_TYPE, GtkClassInitFunc,
+		GtkObjectInitFunc, GtkTypeInfo, gdk_window_get_colormap,
+		gtk_about_dialog_set_name, gtk_entry_new_with_max_length,
+		gtk_menu_append, gtk_object_get_data, gtk_object_new,
+		gtk_object_ref, gtk_object_set, gtk_object_set_data,
+		gtk_object_sink, gtk_object_unref,
+		gtk_option_menu_get_menu, gtk_option_menu_set_history,
+		gtk_option_menu_set_menu, gtk_progress_configure,
+		gtk_progress_set_format_string, gtk_rc_style_unref,
+		gtk_toggle_button_set_state, gtk_tooltips_new,
+		gtk_tooltips_set_tip.
+       * applet/pilot.c: migrate from GtkProgress to GtkProgressBar.
+       * applet/gpilot-applet-progress.gob: ditto.
+       * backup_conduit.c: fix some printf type warnings.
+       * gpilotd/gnome-pilot-client.gob: use a timeout for Noop, so applet
+		doesn't wait ages before getting a CONNECTED signal.
+		Also, fix a couple of compiler warnings.
+       * utils/gpilotd-client.c:  Fix a couple of compiler warnings.
+       * Makefile.am: remove reference to idl/OChangelog
+       * po/POTFILES.in: update file list in line with dbus branch changes
+       * .gitignore: ignore po/gnome-pilot.pot
+
+
+2010-08-07 Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * #619315  Thanks to Matthew Barnes.  Handle new Evolution
+		directory locations in evo >= 2.31.6.
+       * #594214:  Remove GtkType, gtk_type_unique, gtk_type_class,
+		gtk_type_new
+       * gnome-pilot-assistant.c: fix some printf type warnings.
+       * gpilot-daemon.c:         ditto.
+
+
+2010-07-31 Matt Davey <mcdavey@mrao.cam.ac.uk>
+       * #619315  Thanks to Matthew Barnes.  Move Evolution conduits into gnome-pilot
+		codebase.
+
+2010-07-31 Matt Davey <mcdavey@mrao.cam.ac.uk>
+    Initialise gtk in gpilotd.  Remove gnome_program_init.  Some other cleanups.
+
+       applet/pilot.c: Add Halton to Authors credits; Add more consistent state-change
+          messages to console output.
+       conduits/file/gpilot_install_file.c: remove gnome_program_init
+       configure.ac: remove libgnome requirement (still included via gnome-panel)
+       gpilotd/gpilotd.c: Add gtk_init for dialogs (gpilotd-ui)
+       gpilotd/manager.c: Improve error message.
+       utils/gpilotd-client.c: remove gnome_program_init and a CORBA function call.
+       utils/gpilotdcm-client.c: remove gnome_program_init
+       help/C/gnome-pilot.xml: fix a typo.
+
+2010-06-16 Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* #611531.  Fix segfault when shutting down applet.  Thanks to
+	Marc Delauriers.
+	*  applet/pilot.c
+
+
+2010-02-01 Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* removed a few more deprecated Glib symbols.
+		#594214, with thanks to Javier Jardon.
+	* bugzilla #607142. Clean up build system, thanks to  H.Habighorst 
+	  #	modified:   Makefile.am
+	  #	deleted:    acinclude.m4
+	  #	modified:   applet/Makefile.am
+	  #	modified:   autogen.sh
+	  #	modified:   capplet/Makefile.am
+	  #	modified:   conduits/backup/Makefile.am
+	  #	modified:   conduits/file/Makefile.am
+	  #	modified:   conduits/test/Makefile.am
+	  #	deleted:    configure.in
+	  #	modified:   gpilotd/Makefile.am
+	  #	modified:   macros/gob2.m4
+	  #	modified:   utils/Makefile.am
+
+
+2009-10-26 Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* removed gnome-vfs from gnome-pilot-client.  Still involved via libgnome
+		pkgconfig.  Also, removed obsolete gnome-pilot.spec
+	* gpilotd/gnome-pilot-client.gob: removed gnome-vfs.
+	* configure.in: ditto.
+	* gnome-pilot.spec: removed
+
+2009-10-25 Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* complete removal of libgnomeui.  simply had to change from
+	    LIBGNOMEUI_MODULE to LIBGNOME_MODULE
+	* conduits/file/gpilot_install_file.c: remove libgnomeui
+	* configure.in: ditto.
+	* gpilotd/gpilotd.c: ditto.
+	* utils/gpilotd-client.c: ditto.
+	* utils/gpilotdcm-client.c: ditto.
+
+2009-10-22 Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* work on migration away from libgnomeui, libgnome and libglade.
+	* capplet/gnome-pilot-assistant.c: convert GnomeDruid to
+	     GtkAssistant, migrate from libglade to gtkbuilder,
+	     and remove most use of libgnomeui
+	* capplet/gnome-pilot-capplet.c: avoid libgnomeui
+	* capplet/gnome-pilot-capplet.h: ditto
+	* capplet/gnome-pilot-cdialog.c: ditto
+	* capplet/gnome-pilot-ddialog.c: ditto
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/gpilotd-capplet.ui: ditto
+	* capplet/gpilotd-control-applet.c: ditto
+	* capplet/util.c: ditto
+	* capplet/util.h: ditto
+	* conduits/backup/backup_conduit.c: fix incorrect use of
+	    g_strfreev (double free), and fix exclude_files key.
+	* conduits/file/gpilot_install_file.c: avoid popt.
+	* configure.in: remove gconf dependency.
+	* gpilotd/gnome-pilot-config.c: fix typo "migarate_conf"
+	* gpilotd/gpilotd.c: use gnome_program_init instead of gnome_init
+	* gpilotd/orbit_daemon_glue.c: fix incorrect use of g_strfreev()
+	* po/POTFILES.in: add assistant and remove druid.
+	* utils/gpilotd-client.c: remove popt
+	* utils/gpilotdcm-client.c: remove popt
+
+
+2009-10-18  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* po/POTFILES.in: remove obsolete gpilotd-conduit-mgmt.h #597328
+		This was missed in change on 2009-08-28
+
+2009-09-05  Robert Ancell  <robert.ancell@gmail.com>
+	* applet/Makefile.am: Partial fix for bug #589501.
+	     Convert applet to GtkBuilder.
+	* applet/pilot-applet.glade: ditto.
+	* applet/pilot-applet.ui: ditto.
+	* applet/pilot.c: ditto.
+	* po/POTFILES.in: ditto.
+
+2009-09-03  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* applet/pilot.c: minor cleanup of migration to
+	        GtkAboutDialog
+
+2009-08-28  Halton Huo
+	* remove unused gpilotd-conduit-mgmt.h
+
+2009-08-28  Halton Huo
+	* Use GKeyFile instead of gnome-config:
+	    - use same file format as before
+	    - migrate files from ~/.gnome2/gnome-pilot.d/ to
+	      ~/.gnome-pilot/ when accessed.  Note that files
+	      created by other conduits (such as evolution)
+	      must be migrated by those applications.
+
+2009-08-27  Halton Huo
+	* remove obsolete 'drafts/' folder.
+	
+2009-08-26  Halton Huo
+	* Replace GnomeAbout with GtkAboutDialog:
+	     part of bug #590215
+	* Replace g_file_exists() with g_file_test() and
+	     replace g_concat_dir_and_file() with g_build_filename().
+
+2009-08-25  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* Makefile.am:	removed gpilot-fileman.  Obsolete.
+	* applet/pilot.c: fix some bugs with restore feature, plus
+		remove gnome_message_box use.
+	* conduits/backup/backup_conduit.c: ditto.
+	* conduits/file/gpilot_install_file.c: remove gnome_message_box.
+	* gpilotd/gpilot-gui.c: ditto.
+
+
+2009-08-20  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* gnome-pilot.doap: Added doap file.  See http://live.gnome.org/Git/FAQ
+	* Makefile.am: Remove obsolete references to compiler-flags.m4,
+		which used to be in the old gnome macros/ directory.
+		This is superceded by gnome-compiler-flags.m4 from
+		gnome-common.  This might be a problem for tarball
+		users, so we might need to copy the macro.
+	* Fix signedness compiler warnings, and remove blanket
+	     gnome/ includes.  #590215
+	* applet/pilot.c: ditto
+	* capplet/gnome-pilot-capplet.c: ditto
+	* capplet/gnome-pilot-capplet.h: ditto
+	* capplet/gnome-pilot-cdialog.h: ditto
+	* capplet/gnome-pilot-ddialog.h: ditto
+	* capplet/gnome-pilot-druid.c: ditto
+	* capplet/gnome-pilot-druid.h: ditto
+	* capplet/gnome-pilot-pdialog.h: ditto
+	* capplet/gpilotd-control-applet.c: ditto
+	* capplet/pilot.c: ditto
+	* capplet/util.c: ditto
+	* capplet/util.h: ditto
+	* conduits/backup/backup_conduit.c: ditto
+	* conduits/file/file_conduit.c: ditto
+	* conduits/file/gpilot_install_file.c: ditto
+	* conduits/test/test_conduit.c: ditto
+	* drafts/idl/main.c: ditto
+	* drafts/idl/orbit-daemon-glue.c: ditto
+	* drafts/idl/test_client.c: ditto
+	* gpilot-fileman/fileman.c: ditto
+	* gpilot-fileman/gpilot-fileman.h: ditto
+	* gpilot-fileman/multifile.c: ditto
+	* gpilot-fileman/preferences.c: ditto
+	* gpilotd/gnome-pilot-client.gob: ditto
+	* gpilotd/gnome-pilot-conduit-backup.gob: ditto
+	* gpilotd/gnome-pilot-conduit-config.gob: ditto
+	* gpilotd/gnome-pilot-conduit-file.gob: ditto
+	* gpilotd/gnome-pilot-conduit-management.gob: ditto
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: ditto
+	* gpilotd/gnome-pilot-conduit-standard-abs.h: ditto
+	* gpilotd/gnome-pilot-conduit-standard.gob: ditto
+	* gpilotd/gnome-pilot-conduit-sync-abs.c: ditto
+	* gpilotd/gnome-pilot-conduit-sync-abs.h: ditto
+	* gpilotd/gnome-pilot-conduit.gob: ditto
+	* gpilotd/gnome-pilot-structures.c: ditto
+	* gpilotd/gpilot-gui.c: ditto
+	* gpilotd/gpilotd-conduit-mgmt.h: ditto
+	* gpilotd/gpilotd-session-wrapper.c: ditto
+	* gpilotd/gpilotd.c: ditto
+	* gpilotd/manager.c: ditto
+	* gpilotd/orbit_daemon_glue.c: ditto
+	* gpilotd/queue_io.c: ditto
+	* po/cat-id-tbl.c: ditto
+	* utils/gpilotd-client.c: ditto
+	* utils/gpilotdcm-client.c: ditto
+	* utils/make-password.c: ditto
+
+2009-08-06  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* COPYING: Added a COPYING file for GPLv2 #590232
+	* .gitignore: Added .gitignore #590230
+	Thanks to Halton Huo.
+
+2009-08-06  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* applet/pilot.c: Fix for bug #584894.  gnome panel-applet code
+		was changed in gnome-2.25 and now it does not call
+		gnome_program_init, which the gnome-pilot applet code assumed
+
+2009-02-08  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* capplet/gpilotd-control-applet.desktop.in.in: use stock
+		gnome pda icon. #569481. Thanks Andrew Higginson.
+	* gpilotd/gnome-pilot-conduit-management.gob: remove obsolete
+		SUSE-specific GNOMEPATH. #569193. Thanks Vincent Untz.
+	* gpilotd/gnome-pilot-conduit-management.gob: avoid using
+		deprecated gnome-i18n in favour or glib-i18n. #570724.
+	* utils/gpilotdcm-client.c: ditto.  Thanks Andre Klapper.
+	* configure.in, gpilotd/Makefile.am: only gpilotd binary
+		needs to be linked with libhal. #568404.  Thanks Mandriva.
+	* gnome-pilot-2.0.pc.in: don't add the pilot-link version to
+		the gnome-pilot Version string. #567343.
+
+2009-01-08  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* configure.in: bump version to 2.0.18
+
+2009-01-07  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* 2.0.17 release
+	* Updated NEWS file
+	* gpilotd/Makefile.am: remove trailing slashes from libsdir names,
+	   to prevent rpath problems (#491921)
+	* gpilotd/gpilotd.c: fix string leak (thanks to Bruce Schultz)
+	* gpilotd/Makefile.am: reorganise libgpilotdCM stuff so that the include
+	   files continue to be provided in prefix/include/libgpilotdCM instead of
+	   prefix/include/gpilotd.  This is a partial revert of change 2008-10-07
+	* po/POTFILES.skip: ditto
+	* capplet/pilot.h: ditto
+	* utils/gpilotdcm-client.c: ditto
+	* gpilotd/gpilotd.c: ditto
+	* gpilotd/manager.c: ditto
+	* gpilotd/gnome-pilot-conduit-config.gob: ditto
+
+2008-10-07  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* po/POTFILES.in: move libgpilotdcm into gpilotd/ dir,
+		to fix long standing build order bug that was
+		caused by circular dependencies (#508262)
+	* po/POTFILES.skip: ditto
+	* configure.in: ditto
+	* capplet/Makefile.am: ditto
+	* capplet/pilot.h: ditto
+	* utils/gpilotdcm-client.c: ditto
+	* utils/Makefile.am: ditto
+	* gpilotd/gpilotd.c: ditto
+	* gpilotd/manager.c: ditto
+	* gpilotd/Makefile.am: ditto
+	* Makefile.am: ditto
+	* libgpilotdcm/gnome-pilot-conduit-config.gob: moved to gpilotd/
+	* libgpilotdcm/gnome-pilot-conduit-management.gob: ditto
+	* libgpilotdcm/Makefile.am: removed
+
+2008-06-26  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* gpilotd.c: Add support for hal pda.platform property, and
+		keep info.bus for backwards compatibility.  With
+		thanks to Frederic Crozat. Fixes #484509
+	* capplet/Makefile.am: Add gpilotd/ to INCLUDES, to support VPATH builds
+	* conduits/backup/Makefile.am: ditto
+	* conduits/file/Makefile.am: ditto
+	* conduits/test/Makefile.am: ditto
+	* utils/Makefile.am: ditto
+	* applet/Makefile.am: remove unused applet desktop file (fixes #528701)
+	* applet/.cvsignore: ditto
+	* po/POTFILES.in: ditto
+	* applet/gpilot-applet.desktop.in: removed.
+	* po/POTFILES.skip: added libgpilotdCM/gnome-pilot-conduit-management.c,
+		to fix distcheck target.  intltool checks seem to have
+		become more strict...
+
+
+2008-02-27  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+	* configure.in: bump version to 2.0.17
+
+2008-02-27  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* configure.in: Release 2.0.16.  Bumped library version numbers.  libgpilotdCM
+		has got two new functions (see 2007-04-22), so increase
+		CURRENT and AGE.
+	* gpilotd/gnome-pilot-structures.c: refactor to avoid breaking
+		binary compatibility with the addition of charset support.
+	* gpilotd/gnome-pilot-structures.h: ditto
+	* gpilotd/gpilotd.c: ditto
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/util.c: ditto
+	* capplet/pilot.c: ditto
+
+2008-01-23  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gnome-pilot-druid.c:
+	* capplet/gnome-pilot-pdialog.c:
+	* capplet/gnome-pilot-capplet.c:
+	* capplet/gnome-pilot-cdialog.c:
+	* capplet/gnome-pilot-ddialog.c: Support loading glade
+		files from current directory, to support running
+		capplet from capplet/ dir before installation.
+		Patch by Bastien Nocera. #508268
+
+2008-01-06  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gnome-pilot-structures.c: give GUI warning if we fail
+		to create a bluetooth socket, to warn of possible pilot-link
+		incompatibility.
+	* gpilotd/Makefile.am: put gpilotd-gui.o into libgpilotdconduit.so
+	* help/C/gnome-pilot.xml: update for bluetooth
+
+2008-01-03  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* conduits/backup/backup_conduit.c: don't close a database if we
+	    got an error when opening it.  Probably cause of Ubuntu
+	    bug #81396
+	* utils/gpilotd-client.c: typo in string (#506861)
+	* capplet/gnome-pilot-druid.c: add support for bluetooth
+	* capplet/util.c: ditto
+	* capplet/gpilotd-capplet.glade: ditto
+	* capplet/pilot.c: ditto
+	* capplet/gnome-pilot-ddialog.c: ditto
+	* utils/gpilotd-client.c: ditto
+	* gpilotd/gpilotd.c: ditto
+	* gpilotd/gnome-pilot-structures.c: ditto
+	* gpilotd/gnome-pilot-structures.h: ditto
+
+2007-10-14  Yannig Marchegay  <yannig@marchegay.org>
+
+	* po/LINGUAS: Added 'oc' to ALL_LINGUAS.
+
+2007-09-14  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* Migrate to using LINGUAS file (live.gnome.org/GnomeGoals/PoLinguas)
+	* configure.in: #464385.  remove ALL_LINGUAS (Gilles
+	    Dartiguelongue).
+	* po/LINGUAS: #464385.  added LINGUAS file (Gilles
+	    Dartiguelongue)
+
+2007-07-27  Raivis Dejus  <orvils@gmail.com>
+
+        * configure.in: Added Latvian Translation.
+
+2007-05-12  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* conduits/file/file_conduit.c: bug #410666.  file_conduit
+	    was using int instead of size_t for a file offset in calling
+	    pi_file_get_app_info, which naturally caused trouble on
+	    64 bit systems.  Thanks to Devin Carraway.
+	* gpilotd/gnome-pilot-conduit-sync-abs.c: fix typo in the post_sync
+	    signal creation code (thanks to dbet1 in bug 429423).  Not
+	    sure what effect this had - it may have meant the pre_sync
+	    default signal handler was overwritten by the post_sync one?)
+
+2007-04-24  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: #431145.
+	    Missed during previous commit.
+	* conduits/file/Makefile.am: link to builddir libgpilotdconduit,
+	    not the system copy.  (Matthew Barnes)
+	* conduits/test/Makefile.am: ditto
+	* conduits/backup/Makefile.am: ditto
+
+2007-04-22  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* libgpilotdCM/gnome-pilot-conduit-config.gob: #431145.  Hack to
+	    fix nasty circular dependency.  libgpilotdcm gets built first,
+	    and is required for building gpilotd and
+	    gpilotd-control-applet.  However, libgpilotdcm called two
+	    functions that only got built later on.  Real solution would
+	    probably have been to have merged libgpilotdcm and libgpilotd.
+	    libgpilotdcm depends on the structures defined in gpilotd
+	    stuff anyway, so it doesn't make much sense to split it out.
+	    Anyway, the hack this time was to effectively duplicate a
+	    small amount of code to avoid the dependency.	  
+	* libgpilotdCM/Makefile.am: ditto
+	* gpilotd/gnome-pilot-structures.c: ditto
+	* gpilotd/gnome-pilot-structures.h: ditto
+	* gpilotd/Makefile.am: ditto
+	* conduits/file/Makefile.am: link conduit with libgpilotdconduit
+	* conduits/test/Makefile.am: ditto
+	* conduits/backup/Makefile.am: ditto
+	* capplet/pilot.c: include util.h for get_default_pilot_charset()
+	* gpilotd/gpilotd.c: fix bogus #else syntax (could affect Solaris)
+
+
+2007-04-14  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* applet/gpilot-applet.desktop: Bug #400554.  With
+		thanks to Kjarten Maraas with distcheck
+		support added by Matt Davey.  Add intltool
+		support to the gnome-pilot applet.
+	* applet/gpilot-applet.desktop.in: ditto.
+	* applet/Makefile.am: ditto.
+	* applet/.cvsignore: ditto.
+	* po/pt_BR.po: ditto.
+	* po/es.po: ditto.
+	* po/POTFILES.in: ditto.
+	* po/sk.po: ditto.
+	* po/el.po: ditto.
+	* po/gl.po: ditto.
+	* po/fr.po: ditto.
+	* po/ChangeLog: ditto.
+	* po/da.po: ditto.
+	* po/tr.po: ditto.
+	* po/sv.po: ditto.
+	* po/fi.po: ditto.
+	* configure.in: ditto.
+	* add macros directory to svn:externals property.
+
+2007-02-09  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gpilotd-control-applet.desktop.in.in: remove
+	  Application category.
+
+2007-01-22  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gpilotd-control-applet.desktop.in.in: add
+	  HardwareSettings to categories, so that capplet
+	  shows up correctly in new control-center layout.
+	  #399039, thanks to Denis Washington.
+
+2007-01-14  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gnome-pilot-druid.c: support per-pilot charset
+	    specification.  Check charset is a valid iconv identifier.
+	    Use PILOT_CHARSET environment variable as a default,
+	    or CP1252 if PILOT_CHARSET is unset. #385443  (Jerry Yu
+	    and Matt Davey)
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/gpilotd-capplet.glade: ditto
+	* capplet/pilot.c: ditto
+	* capplet/util.c: ditto
+	* capplet/util.h: ditto
+	* gpilotd/gpilotd.c: ditto
+	* gpilotd/gnome-pilot-structures.c: ditto
+	* gpilotd/gnome-pilot-structures.h: ditto
+
+2007-01-11  Matt Davey  <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/util.c: make sysfs/usbfs check linux-specific.
+	    #385434, thanks to Jerry Yu.
+	* gpilotd/gpilotd.c: [solaris] attempt to sync every
+	    visor_devices_timeout interval.  Placeholder support
+	    for Solaris until we have working HAL support or
+	    equivalent. #385444, thanks to Jerry Yu.
+
+2007-01-10  Pema Geyleg  <pema.geyleg@gmail.com>
+
+	* configure.in: Added 'dz' to ALL_LINGUAS.
+
+2006-12-27  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* capplet/gpilotd-capplet.glade:
+	* applet/pilot-applet.glade:
+	* conduits/backup/backup_conduit.c:
+	     Accessibility improvements.  Patch by Jerry Yu.
+	     Adds missing mnemonics, primarily. #385439
+	* capplet/gnome-pilot-druid.c: fix for #386219.
+	     Retrieve the creation date and rom version in the
+	     druid.
+	* configure.in: update version to 2.0.16
+	* NEWS: Reinstate text for 2.0.14 accidentally deleted.
+
+
+2006-11-22  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* capplet/gnome-pilot-capplet.c: fix #365181
+	     Avoid accessing freed memory when using the
+	     pilot-dialog to add multiple pilots.
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/gnome-pilot-pdialog.h: ditto
+	* capplet/util.c: ditto
+	* applet/pilot.c: #364589.  fix for multihead, and add
+	   window icon to applet sync progress dialog.  Thanks
+	   to Glynn Foster.
+	* applet/GNOME_PilotApplet.server.in.in: add description
+	   to applet, and internationalise.
+	* configure.in: update version to 2.0.15   
+	* NEWS: update for 2.0.15
+
+2006-11-18  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* gpilotd/gpilotd.c: Add a 400ms delay before device sync in HAL
+	  case.  Reported to fix bug #362565.
+
+2006-11-01  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* TODO: 
+	* applet/README:
+	* po/ChangeLog: Fix a few typos.
+
+2006-10-14  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* MAINTAINERS: hand over from JP to Matt.
+	* configure.in: bump patchlevel to 15pre1
+	                add new server.mk rule
+	* capplet/gpilotd-control-applet.desktop.in.in:
+	                new file, to allow VERSION to be substituted.
+			fixes #358288.
+	* po/POTFILES.in: s/desktop.in/desktop.in.in/;
+	* gpilotd/gpilot-gui.c, gpilotd/gpilot-gui.h:
+	     fix bug introduced in version 2.0.3, with va_list
+	     confusion.  Fixes problem with corrupted text in
+	     dialogs popped up by gpilotd (e.g.: 'Unknown conduit !@$%&* ')
+	* fix distcheck target:
+	* - Makefile.am: ignore scrollkeeper files for distuninstallcheck
+	               add generated intltool files to DISTCLEANFILES
+	               add new server.mk file to EXTRA_DIST
+	* - applet/Makefile.am: changes to server.in.in rule, etc. to
+	               ensure clean targets work
+	* - capplet/Makefile.am: ditto.
+	* - conduits/file/Makefile.am: add to CLEANFILES
+	* - gpilotd/Makefile.am: add to CLEANFILES, and fix server rule.
+	* - help/C/Makefile.am: add to CLEANFILES
+	* gpilotd/gpilotd.c: minor change to log message for net sync.
+	
+
+
+2006-09-27  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* gpilotd/gpilotd.c: Fix for #357602.  Memory leak in the usbfs
+	  scanning code.
+
+2006-09-05  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* 2.0.14 release
+	* Updated NEWS file
+
+2006-09-05  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* configure.in: set version to 2.0.14
+	* gpilotd/gpilotd.c: Add gui and console warning if we detect
+	  a libusb/visor configuration mismatch.  We don't attempt
+	  any automatic configuration at this stage, but we do give
+	  a message to indicate there may be a configuration error.
+
+2006-08-30  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* Patch from Nathan Owens:
+	* applet/pilot.c: scroll to bottom of message area on updates.
+	* applet/pilot-applet.glade: enlarge message area
+
+	* configure.in: bump patchlevel to 14pre6.  This is the first
+	  version to support pilot-link 0.12.0 'usb:' libusb device.
+	  We should probably add a popup message box on usb: failure,
+	  to remind people to configure libusb syncing properly...
+
+
+2006-08-25  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* applet/pilot-applet.glade: Change a few more strings from 'pilot'
+	  to 'PDA' missed by update on 2006-06-01.  Thanks to Clytie,
+	  Vietnamese translator.  Fixes #352648.
+	* capplet/gnome-pilot-capplet.c: ditto
+	* capplet/gpilotd-control-applet.c: ditto
+	* capplet/util.c: ditto
+	* conduits/file/gpilot_install_file.c: ditto
+	* gpilotd/gnome-pilot-conduit-sync-abs.c: ditto
+	* gpilotd/gpilotd.c: ditto
+	* utils/gpilotd-client.c: ditto
+	* utils/gpilotdcm-client.c: ditto
+	* help/C/gnome-pilot.xml: document the 'usb:' device name.
+
+2006-08-19  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/util.c:  Update insert_device_callback to allow devices
+	  starting with 'u' and containing colons. This allows people to use
+	  'usb:' for libusb sync with pilot-link 0.12.0.  Don't allow
+	  'usb:' to be selected for serial or irda devices.  Fixes #322904.
+	* capplet/gnome-pilot-ddialog.c: for pilot-link 0.12.0, offer
+	  'usb:' as a device port option in the combo.
+	* capplet/gnome-pilot-druid.c: ditto.  Also, call
+	  check_device_settings from the druid.
+	* capplet/gpilotd-capplet.glade: remove ttyS2 and ttyS3 from the
+	  hardcoded list of devices in the combo.  Add ttyUSB0 and ttyUSB1
+	  instead.
+
+2006-08-14  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* applet/pilot.c: Patch from Nathan Owens.  Avoid unnecessary
+	  and incorrect use of gtk_text_buffer_place_cursor.
+
+2006-08-08  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* applet/pilot.c: Help intltool find strings for popup menu,
+	  which don't seem to be found when embedded in bonobo xml string.
+	  Fixes #138628.
+
+2006-07-24  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* README, AUTHORS: minor changes, mainly to contact info. dusty
+	  dusty text.
+	* gpilotd/devices.xml: added Hagenuk S200 phone (aka GSPDA m68)
+	  with thanks to Hendrik Schweppe
+
+
+2006-07-12  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* NEWS: initial draft of changes for 2.0.14.
+	* gpilotd/gnome-pilot-structures.h: restore netmask/host entries
+	  in _GPilotDevice, as they're part of the public API, so don't
+	  break ABI uneccesarily.
+
+2006-07-10  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	* configure.in: Add "zh_HK" to ALL_LINGUAS.
+	
+2006-07-03  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* applet/pilot.c: Fix some broken stuff missed during the gnome2
+	  port (attempts to cast PilotApplet to GtkWidget, and remember
+	  to initialise the message_buffer member variable.  This avoids
+	  various warnings/criticals from glib, and restores the
+	  functionality of the applet message area.
+
+2006-06-18  Matt Davey <mcdavey@mrao.cam.ac.uk>
+	* applet/pilot.c: avoid some deprecated API: GnomePixmap -->
+	  GtkImage.  Also, fix transparency: add callback for the
+	  'change_background' event, and avoid unnecessary GtkEventBox
+	  that was blocking the background changes (GtkEventBox wasn't
+	  invisible).
+	* configure.in: bump patchlevel to 14pre5
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: wasn't setting the
+	  length of retrieved records when using pilot-link 0.12 API,
+	  in several places (oops!). 
+	* conduits/backup/backup_conduit.c: align labels properly.
+
+2006-06-02  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: patch by Nathan Owens: attempt pi_bind
+	  multiple times, to allow for case where device files are
+	  slow to appear (eg. HAL, where on some kernel/udev versions
+	  we get the HAL notification before the device file can be used).
+	* gpilotd/gpilotd.c: if HAL doesn't initialise correctly, log
+	  a warning but failover to the legacy sysfs/usbfs polling code.
+	
+2006-06-01  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	HIG-compliance changes, with thanks to Daniel Thompson:
+	* capplet/gnome-pilot-capplet.c: eliminated the separator from the
+	capplet.
+	 * capplet/gnome-pilot-ddialog.c: switch DeviceSettings dialog
+	from (deprecated) GnomeDialog to GtkDialog, and don't hide widgets
+	when not relevant - make them insensitive.
+	* capplet/gnome-pilot-pdialog.c: switch PilotSettings dialog from
+	(deprecated) GnomeDialog to GtkDialog. Switch internal
+	GnomeMessageBox to GtkMessageBox.
+	* capplet/gpilotd-capplet.glade: HIGrifying all the other dialogs.
+	* capplet/gnome-pilot-cdialog.c: switch ConduitSettings dialog
+	from (deprecated) GnomeDialog to GtkDialog.
+	* capplet/gpilotd-capplet.glade: HIGrification
+	* capplet/util.c: switch ChooseDevice dialog from (deprecated)
+	GnomeDialog to GtkDialog.
+	* capplet/gnome-pilot-druid.c: allow exit without confirm
+	  until we've progressed beyond the device settings page.
+
+	* help/C/gnome-pilot.xml: Convert many many strings from 'pilot'
+	 to 'PDA', and update Help file in line with changes.
+	* applet/pilot.c:
+	* applet/gpilot-applet.desktop:
+	* gpilotd/gpilotd.c: ditto.
+	* gpilotd/manager.c:
+	* gpilotd/queue_io.c:
+	* capplet/util.c:
+	* conduits/backup/backup_conduit.c:
+	* conduits/file/file.conduit.in:
+	* conduits/file/gpilot_install_file.c:
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	* gpilotd/gnome-pilot-structures.c:
+
+
+
+	
+
+2006-05-10  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/orbit_daemon_glue.c: avoid using a GSList element
+		after it has been removed from the list.
+		Addresses redhat bug #189294.
+	* applet/pilot.c: changed the 'about' text in line with #320858
+		and removed '...' from About button in line with #340451
+
+2006-04-20  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: Minor changes to avoid compiler warnings
+	* capplet/gnome-pilot-ddialog.c: ditto
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/gnome-pilot-druid.c: ditto
+	* capplet/util.c: ditto
+	* conduits/file/file_conduit.c: ditto
+        * conduits/file/gpilot_install_file.c: ditto
+	* conduits/backup/backup_conduit.c: ditto, and incorporate patch
+	  from bug #309130 (thanks Mark Adams) to avoid memory leak and
+	  use of unitialised memory.
+
+2006-04-18  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: Don't make use of the HAL 'pda capability' -
+		match the USB vendor/product ID pair using devices.xml
+		instead.  This will be compatible with direct libusb, too.
+	* Makefile.am: Distribute macros/compiler-flags.m4 for tarball
+		users.
+	* applet/pilot.c: fix a cast (compiler warning)
+	* gpilotd/gnome-pilot-structures.c: use PI_PF_DLP instead of
+		PI_PF_NET, to trigger protocol autodetect code in pilot-link.
+		type-punning warning.
+	* gpilotd/orbit_daemon_glue.c:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	  	minor changes to avoid compiler warnings.
+	
+2006-04-17  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Remove obsolete entry for no_NO
+	* po/no.po: And the translation.
+
+2006-04-09  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gpilotd-control-applet.desktop.in: added StartupNotify=true
+	* capplet/Makefile.am: put desktop file in non-deprecated
+	  location.  Addresses #313203
+
+2006-04-05  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: non-HAL case: read sysfs in preference to
+		usbfs.  based on patch supplied by tenco
+		(martin-ammermueller) to Ubuntu:
+		https://launchpad.net/distros/ubuntu/+source/gnome-pilot/+bug/25653
+	* capplet/util.c: ditto
+
+2006-04-02  Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: make hal/dbus code optional on WITH_HAL;
+		restore legacy usbfs code as non-HAL fallback.
+	* capplet/util.c: only check usbfs if WITH_HAL is undefined.
+	* configure.in: add --with{out}-hal option.  If nothing is
+		specified, use HAL if available, otherwise fallback
+		to usbfs code.  If HAL is requested but missing, fail.
+	* gpilotd/gpilotd.c: Restore changes between 1.143 and 1.145
+		relating to network sync that were lost in previous commit.
+	* gpilotd/gpilotd.c: Restore changes between 1.145 and 1.147
+		relating to usbfs handling, that were lost in previous commit.
+
+2006-03-15  Jeffrey Stedfast  <fejj@novell.com>
+
+	* gpilotd/gpilotd.c (main): Setup a HAL/DBus context.
+	(hal_device_added): Sync palm pda devices detected by HAL.
+	(remove_pid_file): Simplify. No need to check access rights before
+	trying to unlink(), unlink() does all that for us. Also, use
+	g_build_filename() - that's what it's there for. yuck @
+	strcat/strcpy
+	(write_pid_file): Same, but also fixed to make sure the write is
+	"complete" (well, at least as far as EINTR goes - write()s will
+	still be incomplete ifwe run out of disc space or something).
+	(monitor_channel): Removed the USB handling code, that is now
+	handled by the HAL callbacks.
+
+2006-03-13 Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* gpilotd/gpilotd.c: Fix for #322903. Avoid trying to sync more
+		than one USB device.
+	* capplet/gnome-pilot-pdialog.c: Check basedir before committing
+		pilot config changes.  Fixes #322905.
+	* conduits/backup/backup_conduit.c
+	  conduits/backup/backup_conduit.h: Patch supplied by
+	  	Jerry Yu (jijun.yu@sun.com).  Fixes #322906.
+		Check the supplied backup dir exists or can be created.
+		If it doesn't, pop up a warning dialog to the user,
+		encouraging them to re-edit the setting.
+
+2006-03-06 Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* capplet/gnome-pilot-capplet.c: hide device name and speed for
+		network devices.
+	* capplet/gnome-pilot-ddialog.c: ditto
+	* capplet/util.c: ensure usbfs is mounted for usb devices.
+	* gpilotd/gpilotd.c: log a warning if usbfs isn't accessible.
+
+
+2006-02-01 Matt Davey <mcdavey@mrao.cam.ac.uk>
+
+	* Makefile.am: add conduit.mk to dist files #328392
+
+	* conduits/backup/backup_conduit.c: add missing variable init #328392
+
+	* conduits/file/gpilot_install_file.c: add missing cast #328392
+
+	* gpilotd/gnome-pilot-structures.c: more pl 0.12 changes #328394
+	* gpilotd/gpilotd.c: ditto
+
+	* capplet/gnome-pilot-ddialog.c: prevent bogus serial device being
+	selected #328395
+
+	* capplet/gnome-pilot-druid.c: fix netsync #328396
+	* capplet/gnome-pilot-pdialog.c: ditto
+	* capplet/gpilotd-capplet.glade: ditto
+	* capplet/pilot.c: ditto
+	* capplet/util.c: ditto
+	* gpilotd/gnome-pilot-structures.c: ditto
+	* gpilotd/gnome-pilot-structures.h: ditto
+	* gpilotd/gpilotd.c: ditto
+
+2005-11-24  Žygimantas Beručka  <zygis@gnome.org>
+
+	* configure.in: Added Lithuanian to ALL_LINGUAS.
+
+2005-11-03  JP Rosevear  <jpr@novell.com>
+
+	Based on work by Dave Malcolm and Veerapuram Varadhan
+	
+	* conduits/backup/backup_conduit.c: port to pl 0.12
+
+	* utils/make-password.c: ditto
+
+	* gpilotd/manager.c: ditto
+
+	* gpilotd/gpilotd.c: ditto
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: ditto
+
+	* gnome-pilot-2.0.pc.in: export a variable describing the
+	pilot-link version
+	
+	* configure.in: subsitute version related variables and add a
+	define for building against 0.12
+
+	* acinclude.m4: created version related variables a bit
+	differently
+
+2005-09-19  JP Rosevear  <jpr@novell.com>
+
+	From Gordon Ingram <ggi@gingram.plus.com>
+	
+	* applet/GNOME_PilotApplet.server.in.in: use stock icon
+
+	Fixes #164728
+	
+2005-09-19  JP Rosevear  <jpr@novell.com>
+	
+	* libgpilotdCM/Makefile.am: Remove debugging gunk
+
+2005-09-07  Inaki Larranaga  <dooteo@euskalgnu.org>
+
+	* configure.in: Added "eu" (Basque) to ALL_LINGUAS.
+
+2005-09-04  Alessio Frusciante  <algol@firenze.linux.it>
+
+	* configure.in: Added "it" (Italian) to ALL_LINGUAS.
+
+2005-09-01  Pawan Chitrakar  <pchitrakar@gmail.com>
+
+	* configure.in: Added ne in ALL_LINGUAS
+
+2005-08-10  JP Rosevear  <gnome-212@rosevear.com>
+
+	From Mark G. Adams <mark.g.adams@sympatico.ca>
+	
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: fix leaks
+
+	Fixes #309077
+	
+2005-08-10  JP Rosevear  <jpr@novell.com>
+
+	Based on patch by Dennis Lambe Jr. <malsyned@cif.rochester.edu>
+	
+	* conduits/backup/backup_conduit.c (save_configuration): write
+	back exclude_files properly
+
+	Fixes #130520
+
+2005-08-10  JP Rosevear  <jpr@novell.com>
+
+	* capplet/Makefile.am: don't hard code static object files
+
+	Fixes #151179
+	
+2005-08-10  JP Rosevear  <jpr@novell.com>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: no need to put
+	"share" in the global relative path 
+
+	* libgpilotdCM/Makefile.am: define CONDUITDIR as datadir
+
+	* conduits/test/test.conduit.in: use LIBDIR and DATADIR for
+	substitution
+
+	* conduits/backup/test.conduit.in: use LIBDIR and DATADIR for
+	substitution
+
+	* conduits/file/test.conduit.in: use LIBDIR and DATADIR for
+	substitution
+
+	* conduits/test/Makefile.am: clean .conduit files properly; create
+	.conduit file with new rule
+
+	* conduits/backup/Makefile.am: clean .conduit files properly;
+	create .conduit file with new rule
+
+	* conduits/file/Makefile.am: clean .conduit files properly; create
+	.conduit file with new rule
+
+	* configure.in: load conduit rule
+
+	* conduit.mk: add rule for creating .conduit files
+
+2005-08-09  JP Rosevear  <jpr@novell.com>
+
+	* applet/pilot.c (gpilotd_conduit_error): NULL terminate arg list
+	(from Stanislav Brabec <sbrabec@suse.de>)
+
+2005-05-15  JP Rosevear  <jpr@novell.com>
+
+	* test_conduit.c: kill dead file
+
+2005-05-15  Kjartan Maraas  <kmaraas@gnome.org>
+	
+	* gpilotd/gpilotd.c: kill warnings
+
+2005-05-15  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* utils/gpilotd-client.c: kill warnings, use g_signal_connect
+
+	* utils/make-password.c: kill warnings
+	
+2005-05-15  JP Rosevear  <jpr@novell.com>
+	
+	* utils/gpilotdcm-client.c: kill warning
+
+2005-05-15  JP Rosevear  <jpr@novell.com>
+	
+	* configure.in: check $host rather than $target
+	
+2005-04-09  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version
+
+2005-04-04  David Malcolm  <dmalcolm@redhat.com>
+
+	* gpilotd/Makefile.am: remove gnome-pilot-structures.c and
+	CORBA_SRCLIST from gpilotd_SOURCES, and add libgpilotd.la to
+	gpilotd_LDADD.  We're not allowed to build the same module with
+	libtool (for a LTLIBRARY target) and without libtool (for a
+	PROGRAM target), so we need to link the binary with the library
+	instead.	
+
+2005-04-04  JP Rosevear  <jpr@ximian.com>
+
+	Fixes #148582 (prevents the crash anyhow)
+
+	* applet/pilot.c (pilot_execute_program): use
+	g_spawn_command_line_async which simplifies this and protects
+	against bad command lines
+
+2005-04-01  Steve Murphy  <murf@e-tools.com>
+
+        * configure.in: Added "rw" to ALL_LINGUAS.
+
+2005-04-01  Adi Attar  <aattar@cvs.gnome.org>
+
+	* configure.in: Added "xh" to ALL_LINGUAS.
+
+2005-03-28  JP Rosevear  <jpr@novell.com>
+
+	* capplet/gnome-pilot-druid.c: make sure the help button
+	sensitivity is always "TRUE" when calling
+	gnome_druid_set_buttons_sensitive
+
+2005-03-26  Dinoop Thomas <dinoop.thomas@wipro.com>
+
+ 	Fixes #161436
+	
+ 	* applet/Makefile.am: Update.
+ 	* applet/pilot.c: (pref_help_cb): Show help
+ 	for preferences.
+ 	(response_cb): Call pref_help_cb 
+ 	(help_cb): Make help to work.
+ 	* applet/pilot-applet.glade: update for help
+ 	button.
+	
+2005-03-26  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: remove pilot applet message, we force it to be
+	built
+
+2005-03-26  JP Rosevear  <jpr@ximian.com>
+	
+	* autogen.sh (REQUIRED_AUTOMAKE_VERSION): require automake 1.6 or
+	higher
+
+2005-03-26  JP Rosevear  <jpr@ximian.com>
+	
+	Fixes #168401, from Crispin Flowerday <gnome@flowerday.cx>
+	
+	* capplet/gpilotd-control-applet.desktop.in: clean up icon
+	.desktop items
+
+2005-03-25  JP Rosevear  <jpr@ximian.com>
+
+	Fixes #166024
+	
+	* applet/pilot.c (extract_uris): steal this from
+	g_uri_list_extract_uris in glib 2.6; we copied it because we want
+	to work with older versions still
+	(dnd_drop_internal): use above to get normalized uri's for
+	installation
+
+2005-03-25  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/devices.xml: add kyocerca 7135, zire 31
+
+2005-02-03  JP Rosevear  <jpr@novell.com>
+
+	From Dave Malcolm <dmalcolm@redhat.com>
+	
+	* capplet/pilot.h: fix proto
+
+	* capplet/pilot.c (free_conduit_list): fix declaration
+	
+	* utils/gpilotd-client.c (get_system_info): add void to function
+	declaration
+
+2004-09-11  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Added "mk" "ml" to ALL_LINGUAS.
+
+2004-09-03  JP Rosevear  <jpr@novell.com>
+
+	Fixes #142710
+	
+	* capplet/gpilotd-control-applet.desktop.in: insert missing '='
+
+2004-09-03  JP Rosevear  <jpr@novell.com>
+
+	* configure.in: bump version
+
+2004-09-03  Frederic Crozat  <fcrozat@mandrakesoft.com>
+
+	* capplet/gnome-pilot-pdialog.c: (gppd_userinfo_requested),
+	(gppd_pilot_send):
+	* capplet/pilot.c: (loadPilotPilot), (savePilotState):
+	* capplet/util.c: (insert_username_callback):
+	Fix handling of non ASCII Palm username.
+
+2004-09-02  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Add «nb» to ALL_LINGUAS.
+
+2004-09-02  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/manager.c (gpilot_initial_synchronize_operations): copy
+	the list when concatting so it doesn't get freed later on
+
+2004-09-02  JP Rosevear  <jpr@novell.com>
+	
+	From Frederic Crozat  <fcrozat@mandrakesoft.com>
+	
+	* gpilotd/gpilotd.c (visor_devices_timeout): extract the boolean
+	from the array properly
+
+2004-08-26  JP Rosevear  <jpr@novell.com>
+
+	* configure.in: bump version, libtool numbers
+
+	* applet/Makefile.am: install the schema file from the correct
+	spot when builddir != srcdir
+
+2004-08-26  JP Rosevear  <jpr@novell.com>
+	
+	* gpilotd/gnome-pilot-conduit-standard-abs.c
+	(standard_abs_open_db): revert change from change because the code
+	can't reach this point if the db doesn't exist
+
+2004-08-26  JP Rosevear  <jpr@novell.com>
+	
+	From Frederic Crozat  <fcrozat@mandrakesoft.com>
+	
+	* capplet/util.c (check_device_settings): don't check for USB
+	because with devfs and co. the device won't exist yet
+
+2004-08-24  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/Makefile.am: dist the device data
+
+2004-08-08  Changwoo Ryu  <cwryu@debian.org>
+
+	* configure.in: Added ko to ALL_LINGUAS.
+
+2004-08-04  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/devices.xml: add acer S50/S60 and Tapwave Zodiac
+
+2004-08-04  JP Rosevear  <jpr@novell.com>
+	
+	* configure.in: pull in libxml
+
+	* gpilotd/gpilotd.c (load_devices_xml): load device vendor/product
+	ids from disk
+	(visor_devices_timeout): call above and iterate over the pointer
+	array
+
+	* gpilotd/Makefile.am: install the devices.xml file
+
+	* gpilotd/devices.xml: an xml list of the devices available for
+	syncing via USB
+
+2004-08-04  JP Rosevear   <jpr@novell.com>
+
+	From Matt Davey <mcdavey@pobox.com>
+	
+	* gpilotd/gnome-pilot-conduit-standard-abs.c
+	(gnome_pilot_conduit_standard_abs_class_init): convert to new
+	marshallers from gpmarshal
+
+	* gpilotd/gpmarshal.list: add new marshallers
+
+2004-07-13  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/gpilotd.c (visor_devices_timeout): handle gracefully
+	when we don't open the devices file properly, also try
+	devices_please-use-sysfs-instead if we fail to open devices
+	
+2004-07-13  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/gpilotd.c (vendor_product_ids): add sony clie tj35 (from
+	Frederic Lespez)
+
+2004-07-13  JP Rosevear  <jpr@novell.com>
+
+	* gpilotd/gpilotd.c (vendor_product_ids): add the Treo 600 to the
+	list (from Dax Nelson)
+
+2004-07-08  Frederic Crozat  <fcrozat@mandrakesoft.com>
+
+	* capplet/gnome-pilot-capplet.c: (init):
+	* capplet/gnome-pilot-cdialog.c: (init):
+	* capplet/gnome-pilot-ddialog.c: (init):
+	* capplet/gnome-pilot-druid.c: (init):
+	* capplet/gnome-pilot-pdialog.c: (init):
+	Fix build with gcc 3.4.
+
+2004-06-09  Jeffrey Stedfast  <fejj@novell.com>
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c
+	(standard_abs_open_db): Fall back to creating the db if
+
+2004-04-26  Adam Weinberger  <adamw@gnome.org>
+
+	* configure.in: Added en_CA to ALL_LINGUAS.
+
+2004-04-10  Gareth Owen  <gowen72@yahoo.com>
+
+	* configure.in: Added en_GB to ALL_LINGUAS
+
+2004-03-22  Guntupalli Karunakar  <karunakar@freedomink.org>
+
+        * configure.in: Added "pa" (Punjabi) to ALL_LINGUAS.
+
+2004-02-06  Robert Sedak  <robert.sedak@sk.htnet.hr>
+
+        * configure.in: Added "hr" (Croatian) to ALL_LINGUAS.
+
+2003-09-07  Danilo Šegan  <dsegan@gmx.net>
+
+	* configure.in: Added "sr" and "sr@Latn" to ALL_LINGUAS.
+
+2003-09-02  Hasbullah Bin Pit <sebol@ikhlas.com>
+                                                                                
+        * configure.in: Added 'ms' (Malay) to ALL_LINGUAS.
+
+2003-08-14  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: Fix typos.
+	Reported by <alipiec@elka.pw.edu.pl>. Fixes bug #119315.
+
+2003-08-03  Wang Jian  <lark@linux.net.cn>
+
+	* configure.in: Added "zh_CN" to ALL_LINGUAS.
+
+2003-07-16  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version
+
+2003-07-16  JP Rosevear  <jpr@ximian.com>
+	
+	Rodney Dawes <dobey@ximian.com>
+	
+	* configure.in: separate out the panel applet libs so that the
+	aren't linked to everything, add stuff to kill acconfig.h
+
+	* applet/Makefile.am: add panel applet libs and cflags
+	
+2003-07-16  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/gpilotd.c (visor_devices_timeout): this is a timeout
+	callback now, no need to sleep() now
+	(monitor_channel): add a timeout for usb checking, rather than
+	watching /proc
+
+2003-06-13  Jeremy Katz  <katzj@redhat.com>
+
+	* gpilotd/gnome-pilot-client.gob: Use correct type in signal 
+	declaration.  
+	* conduits/file/gpilot_install_file.c (gpilotd_request_completed): 
+	Fix pointer/int conversion.
+	(main): Likewise.
+
+2003-06-11  Rodney Dawes  <dobey@ximian.com>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob
+	(get_conduit_file_names): Concatenate all our paths into one,
+	CONDUITDIR, GNOMEPATH (from SuSE) and GNOME2_PATH
+	
+2003-05-19  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version
+
+2003-05-13  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gnome-pilot-druid.c (gpd_help): display correct help
+
+2003-05-08  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/gpilotd.c: make product compares case insensitive
+
+2003-05-07  Telsa Gwynne  <hobbit@aloss.ukuu.org.uk>
+                                                                                
+        * configure.in: Added cy to ALL_LINGUAS
+        * po/cy.po: Added
+
+2003-05-05  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gpilotd-capplet.glade: correct druid screen info
+
+2003-05-05  JP Rosevear  <jpr@ximian.com>
+	
+	* configure.in: clean up a little, bump version
+
+	* acconfig.h: remove unused vars
+
+2003-05-05  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/Makefile.am: don't dist the built corba files
+
+2003-05-02  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump versions
+
+2003-05-02  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gpilotd-control-applet.c (response_cb): show help or
+	quit depending on response
+	(main): callback to above on dialog response
+
+	* capplet/gpilotd-capplet.glade: show help button in druid
+
+	* capplet/gnome-pilot-druid.c (init_widgets): listen for help signal
+	(gpd_help): call up help
+
+	* capplet/gnome-pilot-capplet.c: add a help button to ourselves
+
+	* configure.in: add help stuff to AC_OUTPUT
+
+	* help/C/Makefile.am: list entities
+
+2003-05-02  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/orbit_daemon_glue.c (gpilotd_corba_reread_config): send
+	SIGHUP to ourselves to reread the configuration
+
+	* gpilotd/gnome-pilot-client.gob: add call through to
+	reread_config
+
+	* idl/gnome-pilot.idl: add reread_config call
+
+	* capplet/util.c (save_config_and_restart): use reread_config call
+
+2003-04-30  JP Rosevear  <jpr@ximian.com>
+
+	* applet/Makefile.am: install glade files to the same spot as the
+	capplet
+
+2003-04-30  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gpilotd-control-applet.desktop.in: set to the right
+	category
+	
+2003-04-30  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gpilotd-control-applet.desktop.in: change name/comment
+	to be more accurate, add meta data for bugzilla and control center
+
+	* capplet/Makefile.am: intltool-ify the .desktop file
+
+2003-04-28  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version, update libtool numbers
+
+	* gpilotd/gnome-pilot-structures.h: add back default sync action
+	for bin compat
+
+2003-04-23  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gnome-pilot-capplet.c
+	(gnome_pilot_capplet_create_pilots_treeview): reduce the number of
+	columns
+
+2003-04-23  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gpilotd.c (do_sync): just sync based on what the conduit
+	says
+
+	* gpilotd/gnome-pilot-structures.h: remove default sync action
+	member
+
+	* gpilotd/gnome-pilot-structures.c (gpilot_pilot_init): no default
+	action to read
+
+	* capplet/util.c: kill dead function
+	(read_pilot_config): don't read default sync action
+
+	* capplet/pilot.c (copy_pilot): don't copy the default sync action
+	(loadPilotPilot): don't load it either
+	(savePilotState): don't save it either
+
+	* capplet/gnome-pilot-pdialog.c: kill the pilot_sync_type_menu
+	everywhere
+
+	* capplet/gnome-pilot-druid.c: kill the sync_type_menu everywhere
+
+	* capplet/gnome-pilot-capplet.c (append_pilots_treeview): the sync
+	type column is dead
+	(gnome_pilot_capplet_create_pilots_treeview): ditto
+	(gpcap_pilots_edit): ditto
+
+	* capplet/gpilotd-capplet.glade: remove pilot wide sync type menus
+
+2003-04-22  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gnome-pilot-capplet.c (gnome_pilot_capplet_new): set the
+	default window size
+
+2003-04-22  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gpilotd-control-applet.c (main): pass NULL to
+	error_dialog for parent argument
+
+	* capplet/gnome-pilot-cdialog.c (fill_widgets): pass dialog as
+	parent arg to error_dialog
+	
+	* capplet/gnome-pilot-pdialog.c: ditto
+
+	* capplet/gnome-pilot-druid.c (gpd_sync_page_prepare): ditto
+
+	* capplet/gnome-pilot-capplet.c: prototype custom widget
+	functions, pass dialog as parent arg to error_dialog
+	(gpcap_save_state): don't check device settings here
+
+	* capplet/util.c (error_dialog): convert to gtk_message_dialog and
+	take a parent argument
+	(check_device_settings): return FALSE if there was an error
+
+	* capplet/util.h: update protos
+
+2003-04-22  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gpilotd-capplet.glade: change message slightly so it
+	looks better
+
+	* gpilotd/gnome-pilot-client.gob: annoying hack to work around
+	activation problem after the sigterm signal is sent
+
+2003-04-21  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gpilotd-control-applet.c (main): bind to the utf-8 text
+	domain (Frederic Crozat <fcrozat@mandrakesoft.com>)
+	
+	* utils/gpilotdcm-client.c (main): ditto
+
+	* utils/gpilotd-client.c: ditto
+
+	* gpilotd/gpilotd.c (main): ditto
+
+	* conduits/file/gpilot_install_file.c (main): ditto
+
+2003-04-21  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/orbit_daemon_glue.c (gpilotd_corba_notify_on): kill
+	warning
+	(gpilotd_corba_notify_off): ditto
+
+2003-04-21  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gpilotd.c (visor_devices_in): check for device existence
+	based on product/vendor ids rather than name (Adam Powell
+	<hazelsct@mit.edu>)
+	
+2003-04-21  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/util.c: remove read_host_config
+
+	* capplet/util.h: remove proto
+
+	* capplet/gnome-pilot-ddialog.c
+	(gnome_pilot_ddialog_run_and_close): don't check the device
+	settings if we cancelled
+
+	* capplet/gpilotd-capplet.glade: remove syncpcid_entry and the
+	Advanced tab, set the druid colors to default
+
+	* capplet/gnome-pilot-capplet.c: remove sync_pcid, and cal
+	gpcap_save_state directly since we have instant apply now
+	(init): nothing to map any more
+	(get_widgets): no syncpcid_entry to get
+	(init_widgets): no need to listen for sync pc id changes
+	(fill_widgets): no pc id widget to fill
+
+2003-04-21  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gpilotd-control-applet.c (main): if the druid is
+	cancelled, don't show the main window
+
+	* capplet/gnome-pilot-druid.c (init_widgets): connect to the page
+	signals after
+
+	* capplet/gnome-pilot-capplet.c (gpcap_cap_try): only iterate over
+	the hash table if it exists
+
+2003-04-16  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/util.h: remove proto
+
+	* capplet/util.c: remove yes_no_dialog
+
+	* capplet/gpilotd-control-applet.c (main): remove unused vars
+
+	* capplet/gnome-pilot-druid.c (gpd_destroy): g_object_unref
+	instead of gtk_object_unref
+
+	* capplet/gnome-pilot-cdialog.h: add proto
+
+	* capplet/gnome-pilot-capplet.c: remove unused vars
+	(gpcap_pilots_delete): use gtk_message_dialog instead of
+	yes_no_dialog which used gnome_message dialog
+	(gpcap_devices_delete): ditto
+
+	* capplet/gnome-pilot-druid.c (cancel_dialog): use
+	gtk_message_dialog
+
+2003-04-14  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version
+
+2003-04-14  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version
+
+	* gpilotd/Makefile.am: build .server file correctly
+
+	* applet/Makefile.am: ditto
+
+2003-03-25  JP Rosevear  <jpr@ximian.com>
+
+	* applet/pilot.c (complete_restore): destroy the dialog if the
+	request completed
+	(restore_cb): listen for the completion signal
+
+2003-03-25  JP Rosevear  <jpr@ximian.com>
+
+	* applet/pilot.c: add back restore, restart, last log capabilities
+	of daemon
+
+	* applet/pilot-applet.glade: set correct response id's for restore
+	dialog
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+
+	* applet/pilot.c (about_cb): remove non-ascii char
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* configure.in: bump package and lib versions
+
+	* gpilotd/gnome-pilot-conduit.gob: remove isinf and isnan calls,
+	they appear to be useless
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* configure.in: define WITH_VFS if its enabled
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* conduits/test/test_conduit.c: make INFO and its calls ansi
+	compliant
+
+	* gpilotd/orbit_daemon_glue.c: update LOG calls
+	
+	* gpilotd/manager.c: ditto
+
+	* gpilotd/queue_io.c: ditto
+
+	* gpilotd/orbit_daemon_glue.h: make LOG macro ansi compliant
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gnome-pilot-structures.c (gpilot_context_new): use
+	standard srand and rand functions instead of bsd versions
+	(gpilot_hdb_uucp_lock): use g_snprintf instead of snprintf
+	(gpilot_network_device_init): remove unused variables
+	(gpilot_device_init): make sure we always set the result
+
+	* gpilotd/gnome-pilot-structures.h: remove // comments
+
+	* gpilotd/gpilot-gui.[hc]: convert macros to functions to become
+	ansi compliant
+
+	* gpilotd/manager.c: remove extraneous ;
+
+	* gpilotd/queue_io.h: remove extraneous ,
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* configure.in: put the warning flags in the right spot
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/Makefile.am: don't be stupid about setting CFLAGS
+
+2003-03-24  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gnome-pilot-client.gob: if not with vfs, make sure we
+	indicate the file was copied if we actually copied it
+
+	* conduits/file/gpilot_install_file.c (main): ref and sink the
+	pilot client
+	(main): unref the pilot client properly
+
+2003-03-21  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/orbit_daemon_glue.c
+	(gpilotd_corba_pause_notify_monitor): don't print null string
+
+2003-03-20  JP Rosevear  <jpr@ximian.com>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: remove use of
+	scandir and alphasort, it is not fully portable
+
+2003-03-20  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/Makefile.am: remove hard coded -W cflags
+
+2003-03-20  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/queue_io.c: remove extraneous ;
+
+2003-03-20  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/queue_io.h: add dummy members to empty structs
+
+2003-03-19  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version, lib versions
+
+2003-03-19  JP Rosevear  <jpr@ximian.com>
+	
+	* applet/pilot.c: use absolute paths to the icons, remove some
+	dead code
+
+	* gpilotd/orbit_daemon_glue.c (gpilotd_corba_monitor_on): don't
+	use uninitialised memory if there is an error
+
+	* gpilotd/gnome-pilot-conduit.gob: mark name argument as STRING
+	not POINTER so it gets dup'ed like in gob1
+
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+
+	* conduits/backup/backup_conduit.c
+	(gnome_real_pilot_conduit_backup_backup): remove dead code
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: change //
+	comment to /* */
+
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+	
+	* applet/pilot.c (about_cb): update about dialog
+	
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+	
+	* conduits/backup/backup_conduit.c (load_configuration): check for
+	readdir errors
+	(gnome_real_pilot_conduit_backup_backup): make sure the file is a
+	dir and exists, and trap an error when writing out the file to
+	disk
+
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gnome-pilot-capplet.c: remove dead code
+	(gnome_pilot_capplet_create_pilots_treeview): set mode to browse
+	(gpcap_set_changed_state): remove dead code
+	(gpcap_conduits_enable): restore commented out calls
+	(gpcap_conduits_disable): ditto
+	(gpcap_cap_try): no need to fill the conduit page again	
+
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gnome-pilot-cdialog.h: update proto
+
+	* capplet/gnome-pilot-pdialog.h: ditto
+
+	* capplet/gnome-pilot-ddialog.h: ditto
+	
+	* capplet/gnome-pilot-cdialog.c
+	(gnome_pilot_cdialog_run_and_close): make the parent arg a
+	GtkWindow
+
+	* capplet/gnome-pilot-ddialog.c
+	(gnome_pilot_ddialog_run_and_close): ditto
+
+	* capplet/gnome-pilot-pdialog.c
+	(gnome_pilot_pdialog_run_and_close): ditto
+	(gppd_sync_dialog): set the dialog parent
+	
+	* capplet/gnome-pilot-capplet.c (gpcap_pilots_add): cast parent to
+	GtkWindow
+	(gpcap_pilots_edit): ditto
+	(gpcap_devices_add): ditto
+	(gpcap_devices_edit): ditto
+	(gpcap_conduits_settings): ditto
+
+2003-03-18  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/gnome-pilot-cdialog.h: update proto, DECLS
+
+	* capplet/gnome-pilot-pdialog.h: ditto
+
+	* capplet/gnome-pilot-ddialog.h: ditto
+	
+	* capplet/gnome-pilot-cdialog.c
+	(gnome_pilot_cdialog_run_and_close): take a parent arg
+
+	* capplet/gnome-pilot-ddialog.c
+	(gnome_pilot_ddialog_run_and_close): ditto
+
+	* capplet/gnome-pilot-pdialog.c
+	(gnome_pilot_pdialog_run_and_close): ditto
+	
+	* capplet/gnome-pilot-capplet.c (gpcap_pilots_add): pass parent to
+	dialog run function
+	(gpcap_pilots_edit): ditto
+	(gpcap_devices_add): ditto
+	(gpcap_devices_edit): ditto
+	(gpcap_conduits_settings): ditto
+
+2003-03-14  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-2.0.pc.in: put the actual libs in the lib line
+
+	* configure.in: add the pisock cflags and libs to
+	GNOME_PILOT_CFLAGS/LIBS
+
+2003-03-12  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: bump version and library revision
+
+	* gpilotd/gpilotd.c: forward port some fixes from the 0.1.x branch
+
+2003-03-06  Gil "Dolfin" Osher <dolfin@rpg.org.il>
+
+	* configure.in: Added "he" (Hebrew) to ALL_LINGUAS.
+
+2003-03-04  Rodney Dawes  <dobey@ximian.com>
+
+	* capplet/Makefile.am: Install desktop file in cc2 directory
+	* capplet/Conduits.directory: Removed directory file
+	* capplet/PalmPilot.directory: Removed directory file
+	
+2003-02-27  Rodney Dawes  <dobey@ximian.com>
+
+	* configure.in: Only require panelapplet 2.0.6 for RH 8.0
+	
+2003-02-26  Miloslav Trmac  <mitr@volny.cz>
+
+	* configure.in: Add cs (Czech) to ALL_LINGUAS.
+
+2003-02-09  Christophe Merlet  <redfox@redfoxcenter.org>
+
+	* configure.in: Fix typos.
+	Use $withval instead of $enblaval.
+	Use ALL_LINGUAS instead of ALL-LINGUAS.
+
+2003-02-07  JP Rosevear  <jpr@ximian.com>
+
+	* bump version to 2.0.0
+	
+2003-02-07  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: AC_SUBST GETTEXT_PACKAGE
+
+2003-02-07  Chris Toshok  <toshok@ximian.com>
+
+	* gpilotd/.cvsignore: ignore GNOME_Pilot_Daemon.server.in
+
+	* configure.in: add gconf stuff.
+
+	* applet/Makefile.am: add rules to install the schema into the
+	right place.
+
+	* applet/.cvsignore: ignore pilot.schemas.
+
+	* applet/pilot.schemas.in: new file, for the gconf prefs.
+
+	* applet/pilot.c (handle_client_error): we don't inherit from
+	PanelApplet anymore, so use self->applet.  also remove the space
+	from the path of the icon.
+	(exec_on_click_changed_cb): un-ifdef.
+	(toggle_notices_cb): same.
+	(properties_cb): same.
+	(install_popup_menu): we don't inherit from PanelApplet.
+	(gpilotd_daemon_pause): same.
+	(timeout): same.
+	(load_properties): same.
+	(save_properties): same.
+	(create_pilot_widgets): same.
+	(pilot_applet_fill): same.
+	(pilot_applet_factory): same.
+	(applet_destroy): free the applet structure at least.
+
+2003-02-06  Daniel Yacob  <locales@geez.org>
+
+	* configure.ac: Added "am" (Amharic) to ALL_LINGUAS.
+
+2003-02-06  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/Makefile.am: dist marshaller stuff
+
+	* applet/Makefile.am: don't dist non-existent file
+
+	* Makefile.am: dist intltool not xml-i18n files
+
+2003-02-02  Chris Toshok  <toshok@ximian.com>
+
+	* applet/pilot-applet.glade: make the properties dialog a
+	GtkDialog.
+	
+	* applet/GNOME_PilotApplet.server.in.in: sync-icon => sync_icon.
+
+	* applet/pilot.c (install_popup_menu): new function, so we can
+	install the popup outside of the pause/resume code (i.e. so we can
+	install it when we start up the applet.)  Use the refresh/stop
+	stock icons like the original code did, at least for the time
+	being.
+	(gpilotd_daemon_pause): call install_popup_menu.
+	(create_pilot_widgets): same.
+
+2003-01-28  Rodney Dawes  <dobey@ximian.com>
+
+	* gpilotd/Makefile.am: Add a rule to create .server.in from the .in.in,
+	  Install gpilotd to $(libexecdir)
+	* gpilotd/GNOME_Pilot_Daemon.server.in.in: Add file, hardcode path
+	* gpilotd/GNOME_Pilot_Daemon.server.in: Remove from cvs, generated
+	
+2003-01-27  Chris Toshok  <toshok@ximian.com>
+
+	* applet/.cvsignore: ignore the generated .server and .server.in
+	files.
+
+	* applet/pilot.c (gpilotd_connect_cb): "applet->applet" ->
+	"applet", since we're a subclass of PanelApplet.  And track change
+	to pilot_draw.
+	(gpilotd_disconnect_cb): same.
+	(gpilotd_daemon_pause): same.
+	(timeout): same.
+	(pilot_draw): remove pixmap arg, as it's always self->pixmap we
+	draw.
+	(pilot_execute_program): add a g_return_if_fail (str != NULL)
+	here, so we don't go trying to exec nothing.
+	(create_pilot_widgets): uncomment this and create the proper
+	widgets for the applet.
+	(pilot_applet_fill): call create_pilot_widgets and show them.
+	(pilot_applet_factory): use the proper OAFIID.
+	(PANEL_APPLET_BONOBO_FACTORY): same.
+
+	* applet/pilot-applet.glade: convert this to libglade2 
+
+	* applet/Makefile.am (EXTRA_DIST): remove the .desktop file and
+	add the server.in.in.
+
+2003-01-26  Chris Toshok  <toshok@ximian.com>
+
+	* gpilotd/orbit_daemon_glue.c (gpilotd_corba_init): we don't need
+	to call bonobo_activation_init here, since that's already done.
+	just use bonobo_activation_orb_get.
+
+	* capplet/gnome-pilot-capplet.c
+	(gpcap_conduits_selection_changed): oops, un-ifdef this.
+
+2003-01-26  Chris Toshok  <toshok@ximian.com>
+
+	* configure.in: uncomment out the PILOT_LINK check.
+
+	* Makefile.am: add a rule to make gnome-pilot-2.0.pc, and nuke the
+	the gpilotConf.sh stuff.  Also, remove the macros/macros.dep stuff
+	as it breaks the build (and we aren't using anything in macros/
+	anymore anyway).
+
+	* acinclude.m4: add in the PILOT_LINK_HOOK/CHECK macros from the
+	old (now unnecessary) gnome-pilot.m4 file.
+
+	* gnome-pilot-2.0.pc.in (Version): report the pilot-link version.
+	(Libs): add PISOCK_LIBS
+	(Cflags): add PISOCK_CFLAGS
+
+2003-01-26  Chris Toshok  <toshok@ximian.com>
+
+	* capplet/.cvsignore: ignore *.gladep.
+
+	* capplet/gnome-pilot-capplet.c (struct
+	_GnomePilotCappletPrivate): remove window.
+	(gnome_pilot_capplet_get_type): parent class = GtkDialog.
+	(class_init): same.
+	(init): root the GladeXML at "CappletMain" so we don't get the
+	parent window.
+	(get_widgets): set our title and add a Close button. add the
+	CappletMain notebook to our vbox.
+	(gnome_pilot_capplet_show): remove.
+	(gpcap_dispose): don't need to destroy the window anymore, as we
+	are the window.
+
+	* capplet/gnome-pilot-capplet.h: derive from GtkDialog, and remove
+	the gnome_pilot_capplet_show_all prototype.
+
+	* capplet/gpilotd-control-applet.c (main): the capplet is a
+	GtkDialog now, just create/show it.  also, make sure we exit when
+	the Close button is clicked.
+
+2003-01-25  Chris Toshok  <toshok@ximian.com>
+
+	* capplet/Makefile.am (gpilotd_control_applet_LDFLAGS): add
+	-export-dynamic..  we don't need this on linux, but on other OS's
+	it's probably required to get at the custom glade funcs.
+
+	* capplet/gpilotd-capplet.glade: replace the gtkclists with
+	gtktreeview custom funcs.
+
+	* capplet/util.c (show_popup_menu): just return FALSE from here,
+	so the non-right button events still get through.  doesn't seem to
+	adversely affect event handling in the right button case.
+	(insert_device_callback): fix compiler warning.
+	(check_selection): remove.
+	(read_pilot_config): fix compiler warning.
+	(read_host_config): same.
+
+	* capplet/util.h: fix prototype for show_popup_menu (returns
+	gboolean so we can return that from the event handler.), remove
+	the check_selection prototype (since that's trivial to check with
+	gtktreeview), and read_host_config takes a GObject now (since the
+	capplet is a GObject.)
+
+	* capplet/gnome-pilot-capplet.c: convert all the GtkCLists to
+	GtkTreeView's.
+
+2003-01-25  Chris Toshok  <toshok@ximian.com>
+
+	* conduits/backup/backup_conduit.c (conduit_load_gpilot_conduit):
+	use the proper functions to connect our signals up.
+	(insert_dir_callback): fix compiler warning.
+
+2003-01-24  Chris Toshok  <toshok@ximian.com>
+
+	* utils/gpilotd-client.c: make the correct gnome_pilot_client_*
+	call for the conduit case.
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: change
+	gnome-xml to libxml.
+	(read_conduit_topdata): ->childs --> ->children.
+	(read_conduit_name): same.
+	(read_conduit_attributes): same.  also, ignore "text" nodes.
+	(read_conduit_xml): split up the checks for failure a bit, so we
+	can return without calling xmlFreeDoc with doc == NULL.
+
+	* gpilotd/orbit_daemon_glue.h (LOG): fix cpp warning.
+
+	* configure.in: AC_OUTPUT gnome-pilot-2.0.pc
+
+	* .cvsignore: ignore gnome-pilot-2.0.pc
+
+	* gnome-pilot-2.0.pc.in: new file.
+
+	* capplet/gpilotd-control-applet.c (main): call
+	gnome_pilot_capplet_show after creating it.
+
+	* capplet/gnome-pilot-capplet.h: add prototype for
+	gnome_pilot_capplet_show.
+
+	* capplet/gnome-pilot-capplet.c (gnome_pilot_capplet_show): new
+	function, just show the capplet window.
+
+2002-12-12  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* configure.in: Added Vietnamese (vi) to ALL_LINGUAS
+
+2002-12-04  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/orbit_daemon_glue.c (gpilotd_corba_init): register
+	correct object
+
+	* gpilotd/gpilotd.c (dump_build_info): remove dead info
+	(main): call gnome_init
+
+	* gpilotd/gnome-pilot-client.gob: check for version 2.0 of the
+	daemon interface
+
+	* applet/GNOME_PilotApplet.server.in.in: new .server file for
+	applet
+
+	* gpilotd/GNOME_Pilot_Daemon.server.in: new .server file for
+	daemon
+
+	* gpilotd/Makefile.am: install .server file
+
+	* idl/Makefile.am: kill oaf and gnorba files from install
+
+	* capplet/gpilotd-control-applet.c (main): use valid name for init
+
+	* applet/pilot-applet.glade: don't create a translatable strings
+	file
+
+	* applet/Makefile.am: build applet .server file, put applet in
+	libexecdir
+
+2002-11-22  JP Rosevear  <jpr@ximian.com>
+
+	* Initial commit of gnome2 porting effort
+
+2002-11-20  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: show network build status properly
+
+2002-11-06  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gpilotd-control-applet.c: remove bogus include
+
+	* configure.in: Bump version
+
+2002-11-06  JP Rosevear  <jpr@ximian.com>
+	
+	* capplet/Makefile.am: don't build obsolete source or install
+	extra .desktop file
+
+	* capplet/gpilotd-capplet.glade: merge in conduit capplet
+
+	* capplet/gnome-pilot-capplet.c: merge in conduit capplet
+
+	* capplet/gpilotd-control-applet.c (main): remove cap id handling
+
+2002-11-06  JP Rosevear  <jpr@ximian.com>
+	
+	* configure.in: Bump version
+
+2002-11-06  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gpilotd.c (pilot_connect): based on device type, select
+	the protocol family because we have a messy time with
+	autodetection
+
+2002-10-25  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gnome-pilot-druid.c (gpd_sync_page_back): reset the
+	config if the back button is hit after we changed it
+	
+2002-10-25  JP Rosevear  <jpr@ximian.com>
+
+	* capplet/gnome-pilot-druid.c (gpd_sync_page_prepare): only add
+	the device again if it isn't already added (because the back
+	button was pushed)
+
+	* Makefile.am: include capplet OChangeLog in dist
+
+2002-10-24  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/Makefile.am: use new library versioning stuff
+
+	* libgpilotdCM/Makefile.am: ditto
+
+	* Makefile.am: dist some xml-i18n stuff
+
+	* configure.in: bump version, split out library versioning for
+	each lib
+
+2002-10-24  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gpilotd.c (pilot_connect): set the network device port
+	to net:any
+
+2002-10-17  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd/gnome-pilot-structures.c (gpilot_network_device_init):
+	this still probably doesn't work, but atleast it doesn't crash now
+
+2002-10-17  JP Rosevear  <jpr@ximian.com>
+	
+	* Makefile.am: dist old changelogs
+
+	* Rename old changelogs so they aren't in the way
+
+2002-10-17  JP Rosevear  <jpr@ximian.com>
+	
+	* gpilotd/gpilotd.c (product_names): add Handspring Treo (Ricardo
+	Cerqueria <ricardo@cerqueira.org>)
+
+2002-10-03  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd-capplet.glade: rename Handspring USB to USB in druid
+
+2002-09-16  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: Check for pilot-link 0.11.4
+
+2002-09-13  JP Rosevear  <jpr@ximian.com>
+
+	* pilot.c (load_conduit_list): pull the sync_type directly from
+	the config structure
+
+2002-08-26  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: remove purify support, use xml-i18n-tools, bump
+	version, remove sa length check
+
+	* gpilotd/Makefile.am: remove purify target
+
+	* gpilotd/gpilotd.c (visor_devices_in): use an array of matching
+	device names to search
+
+	* capplet/util.c (device_type_to_str): ditto
+
+	* capplet/pilot.c (loadDeviceCfg): use USB rather than Handspring USB
+
+	* capplet/gpilotd-capplet.glade: ditto
+
+	* capplet/Makefile.am: don't extra dist the string file
+	
+2002-08-21  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: check for pilot-link 0.11.3
+
+	* gpilotd/gpilotd.c (pilot_connect): update for changes in
+	pilot-link
+	(visor_devices_in): search for "Palm Handheld" in the product list
+	as well
+
+	* utils/make-password.c (main): update for new pilot-link
+	
+2002-04-25  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-druid.c (init): don't add pilot, device to the state
+	here
+	(gpd_sync_page_prepare): add device to the state here
+	(gpd_finish_page_finished): add pilot to the state here
+
+	* util.c (save_config_and_restart): restart rather than
+	pausing/unpausing the daemon
+
+2002-04-22  JP Rosevear  <jpr@ximian.com>
+
+	* libgpilotdCM/Makefile.am: add built gob files to maintainer
+	clean files
+
+	* gpilotd/Makefile.am: ditto
+	
+2002-04-22  JP Rosevear  <jpr@ximian.com>
+
+	* util.h: new proto
+
+	* util.c (fill_conduit_sync_type_menu): set the menu and the
+	history properly
+	(fill_conduit_first_sync_type_menu): create first sync type option
+	menu
+
+	* pilot.h: new struct members
+
+	* pilot.c (load_conduit_list): set first sync type and the
+	original first sync type, load the config
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_settings): retrieve
+	first sync type
+	(conduit_try_foreach): save the first sync type
+	(conduit_revert_foreach): revert first sync type
+
+	* gnome-pilot-cdialog.c (get_widgets): get one time sync menu
+	(gnome_pilot_cdialog_first_sync_type): retrieve first sync type
+	(gpcd_action_activated): desensitize if syncing disabled
+
+	* gpilotd-capplet-strings.c: auto-updated
+
+	* gpilotd-capplet.glade: update gui
+
+	* gnome-pilot-conduit-config.gob (is_enabled): if there is a
+	"first_sync_type" set, pass that back
+
+2001-12-08  JP Rosevear  <jpr@ximian.com>
+ 
+ 	* gnome-pilot-pdialog.c (gppd_userinfo_requested): don't close the
+ 	dialog here
+ 	(gppd_system_info_requested): or here
+ 	(gppd_request_completed): close it here after both requests have
+ 	completed
+ 
+	* gnome-pilot-capplet.c (gpcap_destroy): free the states when
+	finished
+	(gnome_pilot_capplet_update): properly reload the states
+
+2001-12-03  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* configure.in:
+	prep for 0.1.65
+	
+2001-12-03  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* README:
+	note aobut the buildorder bug
+		
+	* TODO:
+	note to self about fixing the buildorder bug.
+	
+	* applet/pilot-applet.glade:
+	Set names for widgets, was playing with changing their styles.
+	
+	* applet/pilot.c: (gpilotd_set_style), (gpilotd_connect_cb),
+	(gpilotd_conduit_progress), (gpilotd_overall_progress),
+	(gpilotd_conduit_message), (gpilotd_daemon_message):
+	
+	* capplet/util.c: (fill_synctype_menu):
+	Tried to fix the "applet seems dead"-bug by calling
+	gtk_main_iteration occasionally (it's not the way to fix the bug,
+	but it seems to work). Also fiddled with making the font smaller
+	in the progress bar.
+
+	* applet/Makefile.am:
+	* capplet/Makefile.am:
+	* gpilotd/Makefile.am:
+	* libgpilotdCM/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* conduits/file/Makefile.am:
+	* conduits/test/Makefile.am:
+	* utils/Makefile.am:
+	include ORBIT_CFLAGS
+	
+	* configure.in:
+	0,1.64...
+	
+	* gnome-pilot.spec.in:
+	removed gpilotd-client. Never meant for "user consumption" anyhoo.
+	
+	* gpilotd/gpilotd.c:
+	Fought with includes.
+	
+	* gpilotd/manager.c: (gpilot_unload_conduit_foreach),
+	(gpilot_unload_conduits):
+	renamed a function (exciting, eh?)
+	
+	* idl/gnome-pilot.idl:
+	* gpilotd/gnome-pilot-client.gob:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	s/eskil@eazel.com/eskil@eskil.org/
+
+2001-11-21  Abel Cheung  <maddog@linuxhall.org>
+
+	* capplet/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* conduits/file/Makefile.am:
+	Add missing $DESTDIR in install-data-local.
+
+2001-11-21  Abel Cheung  <maddog@linuxhall.org>
+
+	* configure.in: Re-added "zh_TW" in ALL_LINGUAS, this time it
+	  shouldn't fail in any case. Please tell me if otherwise.
+
+2001-11-05  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+
+	* NEWS:
+	blabla
+
+	* applet/pilot.c:
+	Stuff done to progress thingy.
+
+	* applet/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* gpilotd/Makefile.am:
+	* conduits/file/Makefile.am:
+	* libgpilotdCM/Makefile.am:
+	Russels' patches and stuff.
+	
+	* conduits/backup/backup_conduit.c: (pi_unmktag),
+	(gnome_real_pilot_conduit_backup_backup):
+	Uff, fatal bug in the backupconduit fixed, it now reads and saves
+	the appblock.
+	
+
+	* configure.in:
+	0.1.63-1
+
+	* gpilotd/gpilotd.c: (remove_pid_file):
+	Reinserted the fun stat
+	
+	* gpilotd/queue_io.c: (set_section_num),
+	(request_type_from_string), (gpc_queue_load_requests_for_cradle),
+	(gpc_queue_load_request), (gpc_queue_purge_request_point):
+	Detect error in queue file. I really need to redo the queue_io
+	thing, since the gnome_config stuff is just not safe enough, and
+	I'm linking wiht libxml anyhoo.
+
+2001-10-31  JP Rosevear  <jpr@ximian.com>
+ 
+ 	* gnome-pilot-conduit-sync-abs.c
+ 	(gnome_pilot_conduit_sync_abs_compare): plug leak
+ 	(gnome_pilot_conduit_sync_abs_prepare): ditto
+	
+2001-10-30  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	Applied patch from Russell Steinthal <rms39@columbia.edu> to fix
+	automake 1.5 issues.
+
+2001-10-27  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduit-config.gob: start the iteration at 0 not 1
+
+2001-10-23  Jakub Steiner <jimmac@ximian.com>
+
+	* capplet/gnome-palm-conduit.png:
+	* capplet/gnome-palm.png: new icon to match the CC style
+
+2001-10-17  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* TODO:
+	blablabla
+	
+	* applet/Makefile.am:
+	* applet/gpilot-applet-progress.gob:
+	* applet/pilot.c: (gpilotd_connect_cb), (gpilotd_disconnect_cb),
+	(gpilotd_conduit_start), (gpilotd_conduit_end),
+	(gpilotd_conduit_progress), (handle_client_error):
+	Wonked a cyclon spinner into the applet when conduits aren't
+	emitting progress signals. Not optimal yet.
+	
+	* conduits/backup/backup_conduit.c:
+	(gnome_real_pilot_conduit_backup_backup):
+	Fixed a bug, where I didn't read/write the appinfo block, causing
+	loss of categori info.
+	
+	* conduits/file/file_conduit.c:
+	(gnome_real_pilot_conduit_file_install_db):
+	Cut down on the spam.
+	
+	* configure.in:
+	readded zh_TW, bonked to pre2
+	
+	* gpilotd/manager.c: (iterate_dbs):
+	Rewomped the spam pr. db, and now first emit progress after
+	running the conduit and before backup (no specific reason, I just
+	wanted to)
+	
+	* gpilotd/orbit_daemon_glue.c:
+	(gpilotd_corba_pause_notify_monitor):
+	mjamja
+	
+2001-10-14  Abel Cheung <maddog@linux.org.hk>
+
+	* {c,}applet/Makefile.am: Add LIBGLADE_CFLAGS since newer libglade
+	  headers are moved to another location.
+
+2001-10-13  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* NEWS:
+	* TODO:
+	mjamjamja
+	
+	* conduits/file/file_conduit.c: (pi_unmktag),
+	(gnome_real_pilot_conduit_file_install_db):
+	More fun noise on output, revamped some of the install stuff,
+	should fix some of the bugs in .62.
+	* conduits/file/gpilot_install_file.c: (main):
+	Do a File conduit request after scheduling file installs. Thereby
+	gpilotd won't do a normal sync after installing the files.
+	
+	* configure.in:
+	pre1
+	
+	* gpilotd/Makefile.am:
+	Patch from Mikhail Zabaluev <mhz@alt-linux.org>
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_hdb_uucp_lock),
+	(gpilot_hdb_uucp_unlock), (gpilot_serial_device_init):
+	less output
+	
+	* gpilotd/manager.c: (find_matching_conduit_compare_func_name),
+	(find_matching_conduit_name), (install_db_foreach),
+	(gpilot_load_conduits), (run_conduit_sync_foreach):
+	Fixed the "conduit_request" stuff
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_request_restore):	
+	* gpilotd/queue_io.c: (is_system_related), (set_section),
+	(request_type_from_string), (gpc_queue_load_requests),
+	(gpc_queue_load_request):
+	* idl/gnome-pilot.idl:
+	mjamjamja
+
+2001-10-08  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	Daemon now informs clients of pause/unpauses. Applet turns yellow
+	on pause.
+	
+	* NEWS:
+	* TODO:
+	moved items from todo to news
+	* applet/Makefile.am:
+	added sync_paused.png image
+	
+	* applet/pilot.c: (gpilotd_daemon_error), (gpilotd_daemon_pause),
+	(timeout):
+	* applet/sync_paused.png:
+	fucked with gimp to make a yellow sync button
+	
+	* gpilotd/gnome-pilot-client.gob:
+	gob voodoo to make a client cb function
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_pause_device),
+	(gpilotd_corba_pause_notify_monitor), (gpilotd_corba_pause):
+	* idl/gnome-pilot.idl:
+	Added a GNOME_Pilot_Client::pause that gets called when the daemon
+	pauses/unpauses.
+
+2001-10-07  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* configure.in:
+	Reinserted zh_TW and prepped for 0.1.63
+
+2001-10-07  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* configure.in:
+	Had to yoink zh_TW from the lang list, since it borks make dist.
+
+2001-10-07  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* TODO:
+	blablabla
+	
+	* configure.in:
+	1
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_context_new):
+	default stepping now 1
+	
+	* gpilotd/gpilotd.c: (pilot_connect), (do_cradle_events):
+	Still fucking around with the network sync.
+	
+	* gpilotd/manager.c: (backup_foreach):
+	removed log line.
+
+2001-10-07  Abel Cheung  <maddog@linux.org.hk>
+
+	* configure.in: Added zh_TW (traditional Chinese) in ALL_LINGUAS
+
+2001-10-02  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* applet/pilot-applet-strings.c:
+	* applet/pilot-applet.glade:
+	changed some strings to fuck with the translators
+	
+	* applet/pilot.c: (gpilotd_connect_cb), (lastlog_dialog):
+	Tried to make the progress box never be "dead". Enabled starting
+	conduit props from the applet menu (should talk to UI person about
+	this...)(
+	
+	* capplet/Makefile.am:
+	yoinked the extra Conduits/.directory thing
+	
+	* conduits/backup/backup_conduit.c:
+	(gnome_real_pilot_conduit_backup_backup):
+	Fixed so retval < 0 = bad, 0 = good, > 0 = good with comments.	
+	
+	* gpilotd/gnome-pilot-conduit-backup.gob:
+	* gpilotd/gnome-pilot-conduit-file.gob:
+	Woke up and didn't return NONE from the backup/file conduit
+	methods.
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_serial_device_deinit),
+	(gpilot_usb_device_deinit), (gpilot_irda_device_deinit),
+	(gpilot_network_device_deinit), (gpilot_device_deinit),
+	(gpilot_device_free):
+	* gpilotd/gnome-pilot-structures.h:
+	* gpilotd/gpilotd.c: (device_in):
+	Fiddle with the IRport reset. Unfortunately, I can't test it.
+	
+	* gpilotd/manager.c: (backup_foreach):
+	Don't make a pilot log entry for db's that didn't require backup
+	(if backup_conduit retval > 0)
+
+2001-09-18  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* applet/pilot.c:
+	spam
+	
+	* gpilotd/Makefile.am:
+	Rearranged build order to ensure build
+	
+	* gpilotd/gnome-pilot-client.gob:
+	dnd install from nautilus works again
+
+2001-09-18  Frederic Crozat  <fcrozat@mandrakesoft.com>
+
+	* conduits/file/Makefile.am: fix gnome-vfs compilation flags
+
+2001-09-16  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* NEWS:
+	Whats new in 0.1.62
+	
+	* applet/pilot.c: (timeout):
+	Dont restart the druid
+	
+	* capplet/pilot.c: (copyPilotState), (loadDeviceCfg),
+	(loadPilotState):
+	Dont accidently make a bogus entry
+	
+	* conduits/backup/backup_conduit.c:
+	(gnome_real_pilot_conduit_backup_backup), (compare),
+	(gnome_real_pilot_conduit_backup_restore):
+	Voodoo to use the file_conduit to do restore
+	
+	* conduits/file/file_conduit.c:
+	(gnome_real_pilot_conduit_file_install_db):
+	Slight file conduit api change
+	
+	* gpilotd/Makefile.am:
+	* configure.in:
+	* gnome-pilot.spec.in:
+	wukkawukka
+			
+	* gpilotd/gnome-pilot-conduit-backup.gob:	
+	* gpilotd/gnome-pilot-conduit-file.gob:
+	Backup conduits now take a file conduit as parameter to restore,
+	and. And file conduit install_db takes a bool to determine if the
+	installed file gets rm'd or not.
+	
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	(gnome_pilot_conduit_standard_abs_new),
+	(gnome_pilot_conduit_standard_real_copy_to_pilot),
+	(gnome_pilot_conduit_standard_real_copy_from_pilot),
+	(gnome_pilot_conduit_standard_real_merge_to_pilot),
+	(gnome_pilot_conduit_standard_real_merge_from_pilot),
+	(gnome_pilot_conduit_standard_real_synchronize),
+	(standard_abs_open_db), (standard_abs_close_db_and_purge_local):
+	Fixed bug in db opening/closing that could cause a db to not be
+	closed. 
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_hdb_uucp_unlock),
+	(gpilot_network_device_init):
+	* gpilotd/gpilot-gui.c: (gpilot_gui_restore):
+	Wukka.
+	
+	* gpilotd/gpilotd.c: (pilot_connect), (gpilot_attempt_restore),
+	(gpilot_syncing_unknown_pilot), (gpilot_syncing_known_pilot),
+	(sync_device):
+	Pass a PilotUser struct around... yadayada...
+	Muy stuff in the restore dept.
+	
+	* gpilotd/manager.c: (gnome_pilot_conduit_backup_func),
+	(conduit_progress_callback), (conduit_message_callback),
+	(conduit_error_callback), (iterate_dbs), (conduit_sync_default),
+	(install_db_foreach), (do_restore_foreach),
+	(gpilot_start_unknown_restore), (run_conduit_sync_foreach),
+	(gpilot_initial_synchronize_operations), (gpilot_synchronize),
+	(gpilot_copy_to_pilot), (gpilot_merge_to_pilot),
+	(gpilot_sync_default):
+	Muy stuff in the restore dept.
+	
+	* gpilotd/manager.h:
+	Moved the restore func here.
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_set_user_info),
+	(orbed_notify_conduit_error), (orbed_notify_conduit_message),
+	(orbed_notify_daemon_message), (orbed_notify_daemon_error),
+	(orbed_notify_conduit_progress), (orbed_notify_overall_progress):
+	Foo with messaging system for the install progress report.
+	
+	* gpilotd/queue_io.c: (gpc_queue_store_set_userinfo_request):
+	* gpilotd/queue_io.h:
+	Ehhh, I was doing something, got distracted... tits...
+
+2001-09-09  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	Quenched a warning
+	
+	* gpilotd/gnome-pilot-structures.h:
+	* gpilotd/gnome-pilot-structures.c: (gpilot_hdb_uucp_lock),
+	(gpilot_hdb_uucp_unlock), (gpilot_serial_device_init),
+	(gpilot_serial_device_free), (gpilot_usb_device_init),
+	(gpilot_usb_device_free), (gpilot_network_device_init):
+	Some UUCP locking, worthless, but fun if you're root. Ripped the
+	code from pppd.
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_init):
+	bop...
+	
+2001-09-09  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* NEWS:
+	* applet/pilot.c: (gpilotd_connect_cb):
+	* capplet/gnome-pilot-druid.c: (gpd_sync_page_prepare),
+	(gpd_userinfo_requested):
+	* capplet/gnome-pilot-pdialog.c: (gppd_userinfo_requested),
+	(gppd_pilot_send):
+	* configure.in:
+	* gpilotd/gnome-pilot-client.gob:
+	* gpilotd/gpilotd.c: (pilot_connect):
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_set_user_info),
+	(gpilotd_corba_set_user_info_if_not_set), (orbed_notify_connect),
+	(orbed_notify_userinfo):
+	* idl/gnome-pilot.idl:
+	s/GNOME_Pilot_PilotUser/GNOME_Pilot_UserInfo/
+
+	* utils/gpilotd-client.c: (pilot_connect), (pilot_disconnect),
+	(pilot_request_completed), (user_info), (the_loop), (list_bases),
+	(list_by_login), (print_err), (restore), (revive), (install),
+	(conduit), (set_user), (get_system_info), (main):
+	Tweaks for supporting multiple concurrent requests. Utterly
+	useless, but fun for me.
+
+2001-08-30  JP Rosevear  <jpr@ximian.com>
+	
+ 	* Makefile.am: fix typo, put built sources first
+	
+2001-08-30  JP Rosevear  <jpr@ximian.com>
+ 
+ 	* configure.in: Variables for library versioning
+ 
+ 	* gpilotd/Makefile.am: version libs
+ 
+ 	* libgpilotdCM/Makefile.am: version libs
+	
+2001-08-30  JP Rosevear  <jpr@ximian.com>
+ 
+ 	* conduits/*: disable the versioning information on the shared
+ 	libraries since we never need it
+
+2001-08-30  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-client.gob: prevent double oaf_init and accept
+	connections
+
+2001-08-30  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduit-standard-abs.c
+	(gnome_pilot_conduit_standard_abs_new): NULL terminate the
+	argument list
+	
+2001-08-02  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* configure.in:
+	* gnome-pilot.spec.in:
+	Flipping to 0.1.62
+
+2001-08-02  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* gnome-pilot.spec.in:
+	Building 0.1.61
+	
+2001-08-02  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* autogen.sh:
+	check for gpilotd instead gpilot-fileman
+	
+	* configure.in:
+	yadayadayadayadayadayadayadayadayadayadayadayadayadayadayadayada
+	
+	* gnome-pilot.spec.in:
+	Fixed urls...
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_network_device_init),
+	(gpilot_device_init), (gnome_pilot_conduit_sync_type_int_to_str):
+	* gpilotd/gpilotd.c: (pilot_connect), (monitor_channel),
+	(wait_for_sync_and_sync):
+	Fixed stuff for network, not that it works now, or I'm just dumb.
+
+2001-08-01  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	duh...
+
+2001-07-30  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	Missing terminating NULL (jpr@ximian.com)
+
+2001-07-27  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	ack, need to clobber build, so I'd better commit
+	this...
+
+	* NEWS:
+	blablabla
+	
+	* applet/pilot.c: (timeout), (handle_client_error):
+	applet uses the ping/pong to reconnect to daemon
+	
+	* capplet/Makefile.am:
+	* capplet/gnome-palm-conduit.png:
+	* capplet/pilot.c: (load_conduit_list):
+	Load icons for conduits
+	
+	* configure.in:
+	* gnome-pilot.spec.in:
+	* gpilotd/gnome-pilot-client.gob:
+	Added the noop call, which clients can periodically call to check
+	if the daemon is still alive.
+	
+	* gpilotd/gnome-pilot-conduit-standard.gob:
+	Creatorid is not a string, but a guint32
+	
+	* gpilotd/gpilotd.c: (pilot_connect), (monitor_channel):
+	Pwetti fwied...
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_noop),
+	(gpilotd_get_pilot_base_dir):
+	Added noop call
+	
+	* gpilotd/orbit_daemon_glue.h:
+	Expose the orbit_notify_daemon_error call
+	
+	* idl/gnome-pilot.idl:	
+	noop call...
+
+2001-06-27  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	Added the modified syncing and sync_broken
+	icons by Ben Liblit <liblit eecs berkeley edu> 
+
+2001-06-19  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* configure.in:
+	gob 1.0.10 required
+
+2001-06-19  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* applet/.cvsignore:
+	* gpilotd/.cvsignore:
+	Updated for all the new gob output
+
+2001-06-18  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* conduits/backup/backup_conduit.c: (conduit_load_gpilot_conduit):
+	* conduits/file/file_conduit.c: (conduit_load_gpilot_conduit):
+	* conduits/test/test_conduit.c: (conduit_get_gpilot_conduit):
+	Updated for the conduit api changes.
+	
+	* gpilotd/Makefile.am:
+	Better gob rules
+	
+	* gpilotd/gnome-pilot-conduit-backup.gob:
+	* gpilotd/gnome-pilot-conduit-file.gob:
+	* gpilotd/gnome-pilot-conduit-standard.gob:
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	(gnome_pilot_conduit_standard_abs_new):
+	* gpilotd/gnome-pilot-conduit-standard-abs.h:
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	* gpilotd/gnome-pilot-conduit-sync-abs.h:
+	* gpilotd/gnome-pilot-conduit.gob:
+	Twiddled the api so it doens't take a name when creating the
+	conduit. Name is read from the .conduit file where it also reads
+	the correct one depending on i18n.
+	
+	* libgpilotdCM/Makefile.am:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	Set the name when instantiating the conduit.
+	
+	* utils/gpilotdcm-client.c: (main):
+	foo
+
+2001-06-13  Eskil Heyn Olsen  <eskil@eskil.dk>
+
+	* applet/pilot-applet-strings.c:
+	* applet/pilot-applet.glade:
+	* applet/pilot.c: (gpilotd_connect_cb), (gpilotd_conduit_start),
+	(gpilotd_conduit_end), (gpilotd_conduit_progress),
+	(gpilotd_overall_progress), (gpilotd_daemon_message),
+	(gpilotd_daemon_error):
+	* conduits/backup/backup_conduit.c: (load_configuration),
+	(gnome_pilot_conduit_backup_remove_deleted),
+	(gnome_pilot_conduit_backup_create_backup_of_backup),
+	(gnome_pilot_conduit_backup_create_name),
+	(gnome_real_pilot_conduit_backup_backup),
+	(gnome_real_pilot_conduit_backup_restore),
+	(conduit_load_gpilot_conduit):
+	* conduits/file/file_conduit.c:
+	(gnome_real_pilot_conduit_file_install_db),
+	(conduit_load_gpilot_conduit):
+	* conduits/test/test_conduit.c: (conduit_get_gpilot_conduit):
+	* configure.in:
+	* gpilotd/Makefile.am:
+	* gpilotd/gnome-pilot-client.gob:
+	* gpilotd/gnome-pilot-conduit-backup.gob:
+	* gpilotd/gnome-pilot-conduit-file.c:
+	* gpilotd/gnome-pilot-conduit-file.gob:
+	* gpilotd/gnome-pilot-conduit-file.h:
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	(gnome_pilot_conduit_standard_abs_new),
+	(gnome_pilot_conduit_standard_real_copy_from_pilot),
+	(standard_abs_sync_record),
+	(standard_abs_check_locally_deleted_records),
+	(standard_abs_merge_to_remote), (standard_abs_merge_to_local),
+	(SlowSync), (FastSync):
+	* gpilotd/gnome-pilot-conduit-standard-abs.h:
+	* gpilotd/gnome-pilot-conduit-standard.c:
+	* gpilotd/gnome-pilot-conduit-standard.gob:
+	* gpilotd/gnome-pilot-conduit-standard.h:
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	* gpilotd/gnome-pilot-conduit-sync-abs.h:
+	* gpilotd/gnome-pilot-conduit.c:
+	* gpilotd/gnome-pilot-conduit.gob:
+	* gpilotd/gnome-pilot-conduit.h:
+	* gpilotd/gnome-pilot-structures.c:
+	(gnome_pilot_conduit_sync_type_str_to_int),
+	(gnome_pilot_conduit_sync_type_int_to_str):
+	* gpilotd/gnome-pilot-structures.h:
+	* gpilotd/gpilotd.c: (match_pilot_and_majick):
+	* gpilotd/manager.c: (set_callbacks), (backup_foreach),
+	(iterate_dbs), (write_sync_type_line_to_pilot),
+	(conduit_synchronize), (conduit_copy_to_pilot),
+	(conduit_copy_from_pilot), (conduit_merge_to_pilot),
+	(conduit_merge_from_pilot), (conduit_sync_default),
+	(gpilot_load_conduits), (gpilot_manager_save_databases):
+	* gpilotd/orbit_daemon_glue.c:
+	(orbed_notify_multi_purpose_foreach), (orbed_notify_conduit_start),
+	(orbed_notify_conduit_end), (orbed_notify_conduit_error),
+	(orbed_notify_conduit_message), (orbed_notify_daemon_message),
+	(orbed_notify_daemon_error), (orbed_notify_conduit_progress),
+	(orbed_notify_overall_progress):
+	* gpilotd/orbit_daemon_glue.h:
+	* idl/gnome-pilot.idl:
+	* macros/gnome-pilot.m4:
+	* po/POTFILES.in:
+
+	Converted gnome-pilot-conduit-file and gnome-pilot-conduit-standard
+	into gob. I plan to do that for a few more files as I suddenly have
+	to do something to them and get infuriated with the gtk+ stuff.
+
+	Moved restore functionality into the backupconduit, as it's the
+	conduit that knows where to restore from. Also did a lot of
+	housecleaning in the backupconduit.
+
+	Improved the applets sync progress, so the progress bars are much
+	more sane now. Still need to fix this for installing files.
+
+
+
+2001-05-11  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* conduits/file/Makefile.am:
+	Added man page for gpilot-install-file
+	
+	* configure.in:
+	Output "checking for vfs"
+	
+	* gnome-pilot.spec.in:
+	Updated various deps, files to include and whatnot. Haven't tested
+	yet (really need to release a new version soon)
+	
+	* gpilotd/Makefile.am:
+	Pwettyfwied
+	
+	* gpilotd/gpilot-gui.c: (gpilot_gui_restore):
+	Gah, need to finish the restore dialog hell.
+	
+2001-05-08  Pablo Saratxaga  <pablo@mandrakesoft.com>
+
+	* capplet/gpilotd-capplet-strings.c,utils/gpilotd-client.c,
+	  utils/gpilotdcm-client.c,po/*.po: corrected some English typos
+
+2001-05-01  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* README:
+	Fixed the pilot-link cvs thingy
+	
+	* capplet/gnome-pilot-capplet.c: (gpcap_cap_try):
+	* capplet/gnome-pilot-ddialog.c:
+	(gnome_pilot_ddialog_run_and_close):
+	* capplet/util.c: (check_device_settings):
+	* capplet/util.h:
+	Moved the code to check permissions on a device to util.c, and
+	made ddialog use it so you get a warning when you click try
+	
+	* conduits/backup/backup_conduit.c: (compare),
+	(gnome_real_pilot_conduit_backup_restore),
+	(conduit_load_gpilot_conduit):
+	Moved the restore code from the file conduit here to the backup conduit.
+	And got rid of the surplus backup_db and backup_prc calls.
+	
+	* conduits/file/Makefile.am:
+	Added the man page contributed by Mark Brown
+	<broonie@sirena.org.uk>
+	
+	* conduits/file/file_conduit.c: (conduit_load_gpilot_conduit):
+	Removed the restore_directory code.
+	
+	* gpilotd/Makefile.am:
+	Nicer....
+	
+	* gpilotd/gnome-pilot-conduit-backup.c:
+	* gpilotd/gnome-pilot-conduit-backup.gob:
+	* gpilotd/gnome-pilot-conduit-backup.h:
+	Changed gnome-pilot-conduit-backup.c into a gob file (went from
+	226+83 lines of gtk+ hell to a 69 lines of gob hell)
+	
+	* gpilotd/gnome-pilot-conduit-file.c:
+	(gnome_pilot_conduit_file_class_init),
+	(gnome_real_pilot_conduit_file_install_db),
+	(gnome_pilot_conduit_file_install_db):
+	* gpilotd/gnome-pilot-conduit-file.h:
+	Removed the restore call.
+	
+	* gpilotd/gnome-pilot-conduit.c: (gnome_pilot_conduit_set_arg),
+	(gnome_pilot_conduit_class_init), (gnome_pilot_conduit_set_name):
+	* gpilotd/gnome-pilot-conduit.h:
+	Added a gtk+ arg for conduit name.
+	
+	* gpilotd/gnome-pilot-structures.c: (gpilot_serial_device_init),
+	(gpilot_device_free), (gpilot_pilot_init):
+	Fixed g_io_channel close/unref usage.
+	
+	* gpilotd/gpilot-gui.h:
+	* gpilotd/gpilot-gui.c: (gpilot_gui_restore_callback),
+	(gpilot_gui_restore):
+	Adding a horrible ui for restoring an unknown/id=0 pilot (bug 8217
+	and 8218)
+	
+	* gpilotd/gpilotd.c: (match_pilot_and_majick),
+	(gpilot_start_restore), (gpilot_attempt_restore),
+	(gpilot_syncing_unknown_pilot), (gpilot_syncing_known_pilot),
+	(sync_device):
+	More code for handling an unknown pilot
+	
+	* gpilotd/manager.c: (conduit_sync_default), (install_db_foreach),
+	(do_restore_foreach), (gpilot_initial_synchronize_operations):
+	Updated for the move of restore from the file conduit to the
+	backup conduit.
+	
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	comments and debugoutput changes.
+
+2001-04-30  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* README:
+
+	Fixed bug # 8207
+	
+	* conduits/file/gpilot-install-file.1:
+
+	Added a manpage contributed by Mark Brown <broonie@sirena.org.uk>
+
+	* idl/Makefile.am:
+	* idl/gpilot-applet.gnorba:
+	* idl/gpilot-applet.oafinfo:
+	* idl/pilot_applet.gnorba:
+	* idl/pilot_applet.oafinfo:
+
+	Fixed the gnorba and oafinfo files (patch by Peter Williams
+	<peter@newton.cx>)
+
+2001-04-28  Vadim Strizhevsky  <vadim@strizhevsky.com>
+
+	* AUTHORS:
+	* capplet/AUTHORS:
+	* MAINTAINERS:
+
+	Change email to something that will allways work. 
+
+2001-04-25  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	This commit adds code to add two fields to a pilot, the sysinfo
+	romVersion and the cardinfo creation. Together, these should be
+	pretty unique and allow for "one-click restore"<tm>
+
+	I'm not entirely sure that creation/romversion are unique
+	pr. pilot, but I do hope so...
+	
+	* applet/pilot.c: (gpilotd_connect_cb), (gpilotd_disconnect_cb),
+	(gpilotd_request_completed), (gpilotd_conduit_start),
+	(gpilotd_conduit_end), (gpilotd_conduit_progress),
+	(gpilotd_conduit_message), (gpilotd_conduit_error):
+	Matches signal prototypes (no warnings)
+	
+	* capplet/gnome-pilot-capplet.c:
+	Removed a ^L
+	
+	* capplet/gnome-pilot-pdialog.c: (gnome_pilot_pdialog_new),
+	(gppd_request_completed), (gppd_userinfo_requested),
+	(gppd_system_info_requested), (gppd_cancel_sync),
+	(gppd_sync_dialog), (gppd_pilot_get), (gppd_pilot_send):
+	* capplet/pilot.c: (copy_pilot), (loadDeviceCfg), (loadPilotPilot),
+	(savePilotState):
+	Added code to get load write creation/romversion info when using
+	the capplet.
+	Uses gob signal prototypes.
+	
+	* gpilotd/gnome-pilot-client.gob:
+	changed a int to unsigned long to match the idl
+	
+	* gpilotd/gnome-pilot-structures.h:
+	Added creation and romversion idents to the GPilotPilot struc.
+	
+	* gpilotd/gpilotd.c: (gpilot_attempt_restore), (do_cradle_events),
+	(sync_device):
+	Code to intercepting a sync with a pilot id = 0.
+	
+	* gpilotd/orbit_daemon_glue.c: (orbed_notify_sysinfo):
+	* gpilotd/orbit_daemon_glue.h:
+	Transfer creation/romversion.
+	
+	* idl/gnome-pilot.idl:
+	Added creation and romversion.
+	
+	* utils/gpilotd-client.c: (system_info):
+	Dump the creation and romversion
+
+2001-04-12  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* applet/pilot.c: (gpilotd_connect_cb):
+	* capplet/Makefile.am:
+	* capplet/gnome-pilot-capplet.c: (gpcap_cap_try):
+	* capplet/gnome-pilot-conduitcap.c: (gpcc_conduits_settings):
+	* capplet/pilot.c: (newPilotState), (copy_device), (copy_pilot),
+	(copyPilotState), (dupPilotState), (freePilotState), (loadHostID),
+	(loadDeviceCfg), (loadPilotPilot), (loadPilotState),
+	(savePilotState), (load_conduit_list):
+	* capplet/pilot.h:
+	* conduits/backup/backup_conduit.c: (load_configuration),
+	(conduit_load_gpilot_conduit):
+	* conduits/file/file_conduit.c: (conduit_load_gpilot_conduit):
+	* conduits/file/gpilot_install_file.c: (gpilotd_request_completed),
+	(cancel_install), (show_warning_dialog), (main):
+	* configure.in:
+	* gpilotd/Makefile.am:
+	* gpilotd/gnome-pilot-conduit-backup.c:
+	(gnome_pilot_conduit_backup_new):
+	* gpilotd/gnome-pilot-conduit-backup.h:
+	* gpilotd/gnome-pilot-conduit-file.c:
+	(gnome_pilot_conduit_file_new):
+	* gpilotd/gnome-pilot-conduit-file.h:
+	* gpilotd/gnome-pilot-conduit-sync-abs.c:
+	(gnome_pilot_conduit_sync_abs_new):
+	* gpilotd/gnome-pilot-conduit.c: (gnome_pilot_conduit_set_arg),
+	(gnome_pilot_conduit_class_init), (gnome_pilot_conduit_init),
+	(gnome_real_pilot_conduit_display_settings),
+	(gnome_pilot_conduit_set_pilot),
+	(gnome_pilot_conduit_get_base_dir):
+	* gpilotd/gnome-pilot-conduit.h:
+	* gpilotd/gnome-pilot-dbinfo.h:
+	* gpilotd/gnome-pilot-structures.c: (gpilot_context_new),
+	(gpilot_context_init_user), (gpilot_context_free),
+	(gpilot_device_new), (gpilot_serial_device_init),
+	(gpilot_serial_device_free), (gpilot_usb_device_init),
+	(gpilot_usb_device_free), (gpilot_irda_device_init),
+	(gpilot_irda_device_free), (fetch_host),
+	(gpilot_network_device_init), (gpilot_network_device_free),
+	(gpilot_device_init), (gpilot_serial_device_load),
+	(gpilot_network_device_load), (gpilot_device_load),
+	(gpilot_device_free), (get_devices), (get_pilots),
+	(gpilot_pilot_new), (gpilot_pilot_init), (gpilot_pilot_free),
+	(gpilot_user_new), (gpilot_user_free), (gpilot_find_pilot_by_name),
+	(gpilot_find_pilot_by_id):
+	* gpilotd/gnome-pilot-structures.h:
+	* gpilotd/gpilot-structures.c:
+	* gpilotd/gpilot-structures.h:
+	* gpilotd/gpilot-userinfo.c:
+	* gpilotd/gpilot-userinfo.h:
+	* gpilotd/gpilotd.c:
+	* gpilotd/manager.c: (find_matching_conduit_compare_func),
+	(find_matching_conduit), (find_matching_conduit_compare_func_name),
+	(find_matching_conduit_name), (conduit_progress_callback),
+	(conduit_message_callback), (conduit_error_callback),
+	(set_callbacks), (backup_foreach), (iterate_dbs),
+	(conduit_synchronize), (conduit_copy_to_pilot),
+	(conduit_copy_from_pilot), (conduit_merge_to_pilot),
+	(conduit_merge_from_pilot), (conduit_sync_default),
+	(install_db_foreach), (install_foreach), (do_restore_foreach),
+	(unload_foreach), (gpilot_load_conduits), (gpilot_unload_conduits),
+	(run_conduit_sync_foreach),
+	(gpilot_initial_synchronize_operations), (gpilot_synchronize),
+	(gpilot_copy_to_pilot), (gpilot_copy_from_pilot),
+	(gpilot_merge_to_pilot), (gpilot_merge_from_pilot),
+	(gpilot_sync_default), (gpilot_add_log_entry),
+	(gpilot_manager_save_databases):
+	* gpilotd/manager.h:
+	* gpilotd/orbit_daemon_glue.h:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	* po/POTFILES.in:
+	* utils/Makefile.am:
+	* utils/gpilotdcm-client.c: (list_conduits), (list_attribs),
+	(main):
+
+	Nothing special...
+
+	Oh well, the pilot link capplet now properly loads pilot names.
+
+	Made some radical changes to conduit instantiation so they
+	basically now are instantiated with a GPilotPilot object instead
+	of just a guint32 ID. The conduit can then access some of the
+	fields in the GPilotPilot object, such as the basedir. You can
+	still instantiate the conduits by just creating a GPilotPilot
+	object and setting the pilot id (may provide a convinience
+	function for this later).
+
+	The big change then is, that the conduit_get_gpilot_conduit
+	function that is dlsym used needed to take a GPilotPilot pointer
+	instead of a guint32. So the function is now called
+	conduit_load_gpilot_conduit, but if no such symbol is found, it
+	loads the old one for backwardscompatibility (see bug # 8064)
+
+	Also did a lot of regexp search and replaces to make code more
+	readable.
+
+	Slaugthered gpilot-userinfo.[ch] and gpilot-structures.[ch] and
+	smacked the contents into gnome-pilot-structures.[ch]
+	
+2001-04-13  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_enable): pop up the
+	settings dialog when the conduit is enabled.
+
+2001-04-12  JP Rosevear  <jpr@ximian.com>
+
+	* conduits/backup/backup_conduit.c (load_configuration): only
+	calculate files_in_backup if there is a directory to prevent a
+	crash
+
+2001-04-03  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* applet/Makefile.am:
+	* applet/gpilot-applet.desktop:
+	* applet/pilot.c: (properties_dialog):
+	* applet/pilot_applet.desktop:
+
+	s/pilot_applet/gpilot-applet/ (pr. hint from
+	Bjørn Torkelsson).
+
+2001-03-22  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* applet/ChangeLog:
+	* capplet/ChangeLog:
+	* conduits/ChangeLog:
+	* conduits/backup/ChangeLog:
+	* conduits/file/ChangeLog:
+	* gpilot-fileman/ChangeLog:
+	* gpilotd/ChangeLog:
+	* idl/ChangeLog:
+	* libgpilotdCM/ChangeLog:
+	* utils/ChangeLog:
+	Added blurp about using this changelog instead of the local ones.
+	
+	* configure.in:
+	Require GOB 1.0.6
+	
+	* applet/Makefile.am:
+	Nicefied
+	
+	* applet/pilot.c:	
+	* utils/gpilotd-client.c: (pilot_connect), (pilot_disconnect),
+	(set_user), (get_system_info), (main):
+	Updated to use the typesafe(r) signal connections using the gob
+	1.0.6 feature.
+
+2001-03-12  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: don't ac_output removed dirs
+
+2001-03-08  Christophe Merlet  <redfox@eikonex.org>
+
+	* */*.desktop: Updated/Added french strings.
+
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* Moving non-essential conduits to gnome-pilot-conduits
+
+2001-02-28  JP Rosevear  <jpr@ximian.com>
+
+	* util.c (insert_device_callback): move here
+	(check_device_info): ditto
+	(check_pilot_info): ditto
+
+	* util.h: new protos
+
+	* gpilotd-control-applet.c: last of the dead code removed
+
+	* gnome-pilot-druid.c (init_widgets): filter port name input
+
+	* gnome-pilot-ddialog.c (init_widgets): ditto
+	
+2001-02-28  JP Rosevear  <jpr@ximian.com>
+
+	* pilot.c (load_conduit_list): default to using gnome-unknown.png
+	as the conduit icon
+
+	* gnome-pilot-conduitcap.c (append_conduit_clist): tidy
+
+2001-02-27  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* acconfig.h:
+	* capplet/gpilotd-capplet.glade:
+	* capplet/gpilotd-control-applet.c: (doTrySettings),
+	(run_sync_dialog), (devices_edit_cb), (devices_add_cb),
+	(configureDeviceDialog), (setDeviceCfg), (setDeviceDialogCfg),
+	(readDeviceDialogCfg):
+	* capplet/pilot.c: (loadDeviceCfg), (savePilotState):
+	* gpilotd/gpilot-structures.c: (gpilot_context_init_user),
+	(gpilot_serial_device_free), (fetch_host),
+	(gpilot_network_device_init), (gpilot_network_device_free),
+	(gpilot_serial_device_load), (gpilot_network_device_load),
+	(gpilot_device_load), (gpilot_device_free), (get_devices):
+	* gpilotd/gpilot-structures.h:
+	* gpilotd/gpilotd.c: (pilot_connect), (do_sync),
+	(network_device_in), (network_device_err), (monitor_channel),
+	(dump_build_info):
+	Applied patch from Evgeny Zislis <ezislis@email.com> to implement
+	network sync.
+
+	* configure.in:
+	Bonged to 0.1.58pre1
+	
+2001-02-27  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-pdialog.c (init_widgets): remove dead bits
+
+	* gpilotd-control-applet.c: ditto
+
+2001-02-27  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-druid.c: remove progress stepping related stuff
+
+	* util.c (read_host_config): ditto
+
+	* gpilotd-capplet.glade: ditto
+
+	* gnome-pilot-capplet.c: ditto
+
+	* gnome-pilot-conduitcap.c: ditto
+	
+2001-02-27  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd-capplet.glade: remove popup menu items
+
+	* gnome-pilot-capplet.c (init_widgets): listen for buttons signals
+	so the popup menu can be shown
+	(gpcap_pilots_popup): construct and show a popup menu
+
+	* gnome-pilot-conduitcap.c (init_widgets): listen for buttons
+	signals so the popup menu can be shown
+
+	* util.h: new proto
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_popup): construct and
+	show a popup menu
+
+	* util.c (show_popup_menu): new utility routine
+	
+2001-02-27  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-pdialog.c (gnome_pilot_pdialog_new): map/fill/init
+	here, listen for gpc signals
+	(gppd_request_completed): destroy dialog after user info set on
+	pilot
+	(gppd_userinfo_requested): update gui with pilot info and destroy
+	dialog
+	(gppd_cancel_sync): kill the client request and destroy dialog if
+	the cancel button is hit
+	(gppd_sync_dialog): instruct the user
+	(gppd_pilot_get): get user info
+	(gppd_pilot_send): ship info out to the pilot
+	(gppd_destroy): stop listening for signals when we are destroyed
+
+	* gnome-pilot-pdialog.h: fix proto
+
+	* gnome-pilot-druid.c: handles are gint's
+	(gpd_request_completed): ignore signals that don't include our
+	handle
+	(gpd_destroy): disconnect gpc signals when we are destroyed
+
+	* gnome-pilot-ddialog.c (gpdd_destroy): destroy dialog
+	(gnome_pilot_ddialog_new): map/fill/init in new, not init
+
+	* gnome-pilot-capplet.c: handles are gint's, not guint's
+
+	* gnome-pilot-conduitcap.c: ditto
+
+	* gpilotd-control-applet.c: remove dead functions/vars
+
+	* util.h: new proto
+
+	* util.c (choose_pilot_dialog): dialog to choose between a number
+	pilots, still needs a little work
+
+2001-02-26  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-druid.c (gnome_pilot_druid_new): listen for a
+	completed request as well
+	(gpd_sync_page_prepare): revert testing bits
+	(gpd_request_completed): sensitize button on return
+
+	* gpilotd-control-applet.c: remove some now unused functions
+	
+2001-02-26  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd-control-applet.c: 
+
+	* gnome-pilot-pdialog.c (init_widgets): use username callback for
+	correctness
+
+	* gnome-pilot-druid.c (init_widgets): ditto
+	
+	* util.h: new proto
+
+	* util.c (insert_username_callback): make util function correct
+	some bugs
+	
+2001-02-26  JP Rosevear  <jpr@ximian.com>
+
+	* util.c (insert_username_callback): move
+
+	* gnome-pilot-conduitcap.c: remove now util func
+
+	* util.h: new protos
+
+	* util.c (check_editable): make a util since it can/will be used
+	in multiple places
+	(check_selection): ditto
+
+	* gnome-pilot-druid.c: Remove now util func
+	(fill_widgets): remove dead code
+	
+	* gpilotd-capplet.glade: remove individual conduit setting list
+	
+2001-02-26  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-druid.c (fill_widgets): 
+
+	* gnome-pilot-pdialog.c (init_widgets): make sure pilot_id cannot
+	contain anything but numbers
+
+	* gnome-pilot-druid.c (get_widgets): get timeout
+	(map_widgets): map timeout
+	(init_widgets): make sure pilot_id cannot contain anything but
+	numbers
+
+	* gnome-pilot-capplet.c (init_widgets): tidy
+	(get_widgets): 
+
+	* util.c (insert_numeric_callback): move here
+
+	* util.h: new proto
+
+	* gpilotd-capplet.glade: Add timeout spinner to druid (this seems
+	to have disappeared)
+
+2001-02-23  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_settings): kill warning
+
+	* gnome-pilot-cdialog.c (init_widgets): listen to activate signals
+	in the option menu
+	(init): don't map, fill or init the widgets here
+	(gnome_pilot_cdialog_new): do it here instead
+	(gnome_pilot_cdialog_run_and_close): call
+	gnome_dialog_run_and_close only
+	(gpcd_action_activated): disable the options frame if the disabled
+	option is selected in the option menu
+
+2001-02-23  JP Rosevear  <jpr@ximian.com>
+
+	* pilot.h: add orig_enabled field to conduit state
+
+	* pilot.c (load_conduit_list): set the original enabled value
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_enable): don't
+	immediately write the config change out, record it for later.
+	(conduit_try_foreach): now we need to actually write the changes
+	out
+	(conduit_revert_foreach): write out the old values (in case we are
+	in a try)
+
+2001-02-23  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-conduitcap.c (gpcc_conduits_disable): don't actually
+	disable the conduit here
+	(gpcc_conduits_settings): load and show the cdialog properly
+	(conduit_try_foreach): actually set the conduit disable state here
+	if appropriate
+
+	* gnome-pilot-cdialog.c (gnome_pilot_cdialog_sync_type): new
+	routine to get the sync type from the option menu
+	(init): set close hides to TRUE
+
+	* gnome-pilot-cdialog.h: new proto
+
+	* util.c (fill_conduit_sync_type_menu): set object data on each
+	menu item
+
+2001-02-22  JP Rosevear  <jpr@ximian.com>
+
+	* gpilotd-capplet.glade: tweak
+
+	* gpilotd-control-applet.c (main): use new conduit capplet widget
+
+	* gnome-pilot-cdialog.[hc]: Implement the guts of the conduit
+	settings dialog
+
+	* gnome-pilot-conduitcap.[hc]: Implement the guts of the conduit
+	capplet
+
+	* gnome-pilot-capplet.c (init): load glade from a lower root
+
+	* Makefile.am: Build new files
+
+	* util.c (fill_conduit_sync_type_menu): move here
+	(display_sync_type_name): move here
+
+	* util.h: new protos
+
+	* pilot.c (free_conduit_list): free list of conduit state info
+	(load_conduit_list): get a conduit state list for a given pilot
+
+	* pilot.h: New proto, remove conduit hash table from pilot state
+
+2001-02-20  JP Rosevear  <jpr@ximian.com>
+
+	* gnome-pilot-pdialog.[hc]: new high level widget for a pilot
+	dialog
+
+	* gnome-pilot-ddialog.[hc]: new high level widget for a device
+	dialog
+
+	* gnome-pilot-capplet.[hc]: new high level widget that provides
+	the pilot capplet gui
+
+	* gnome-pilot-druid.c (init): default finished to FALSE, don't
+	show anything by default
+	(map_widgets): set some widgets properly
+	(gnome_pilot_druid_run_and_close): new method to show and destroy
+	the druid
+	(gpd_sync_page_back): kill the daemon request
+	(gpd_pilot_page_two_next): check the base dir
+	(gpd_finish_page_finished): save out the data and restart the daemon
+
+	* gnome-pilot-druid.h: new proto
+
+	* gpilotd-capplet.glade: tidy
+
+	* util.c (get_default_pilot): Create a pilot struct with sane defaults
+	(get_default_device): ditto for a device
+	(sync_type_to_str): move here
+	(device_type_to_str): convert a device type to a string
+	(check_base_directory): move here
+	(read_host_config): ditto
+
+	* util.h: new prototypes
+
+	* Makefile.am: Compile new files
+	
+2001-02-19  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* Makefile.am:
+	Don't display the sed command to generate gpilotConf.sh
+	
+	* capplet/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* conduits/email/Makefile.am:
+	* conduits/expense/Makefile.am:
+	* conduits/file/Makefile.am:
+	* conduits/memo/Makefile.am:
+	* conduits/memo_file/Makefile.am:
+	* conduits/test/Makefile.am:
+	* gpilot-fileman/Makefile.am:
+	* gpilotd/Makefile.am:
+	* libgpilotdCM/Makefile.am:
+	* utils/Makefile.am:
+	Did a cleanup of the makefiles wrt LIBADD stuff (PISOCK_LIBS now
+	contains the PISOCK_LIBDIR as well).
+	
+	* configure.in:
+	Use $GNOME_CONFIG
+	Shortened --enable-usb-visor to --enable-usb.
+	Nicifyed the config configuration output
+	
+	* gpilotd/gnome-pilot-client.gob:
+	Added a missing #ifdef around some VFS code
+	
+	* gpilotd/gpilot-structures.h:
+	* gpilotd/gpilot-structures.c: (gpilot_context_new),
+	(gpilot_context_init_user), (gpilot_context_free),
+	(gpilot_device_new), (gpilot_serial_device_init),
+	(gpilot_serial_device_free), (gpilot_usb_device_init),
+	(gpilot_usb_device_free), (gpilot_irda_device_init),
+	(gpilot_irda_device_free), (gpilot_device_init),
+	(gpilot_device_load), (gpilot_device_free), (get_devices),
+	(get_pilots):
+	Code indent.
+	Cleaned up the device destroy/init stuff.
+	
+	* gpilotd/gpilotd.c: (device_in), (wait_for_sync_and_sync),
+	(dump_build_info):
+	USB device destroy now closes the IO channels.
+	Output build options on start (usb, irda, vfs etc).
+	
+	* gpilotd/orbit_daemon_glue.c: (pause_device):
+	Added check in pause_device to see if it has io channels.
+	
+	* macros/gnome-pilot.m4:
+	Collapsed PISOCK_LIBS and PISOCK_LIBDIRS, removed PILOT_* and
+	renames PISOCK_INCLUDEDIR to PISOCK_CFLAGS (to be more conformant
+	to the normal trend).
+	Sprinkled in some magic to give the full pilot-link version - just
+	hope it wont break when the -preX part goes away.
+
+2001-02-15  JP Rosevear  <jpr@ximian.com>
+
+	* util.[hc]: move some routines out of gpilotd-control-applet.c so
+	that they are available to the druid
+
+	* gnome-pilot-druid.[hc]: new druid object
+
+	* Makefile.am: build new files
+	
+2001-02-13  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added Norwegian (nynorsk) to ALL_LINGUAS.
+	
+2001-02-06  Martin Norbäck  <d95mback@dtek.chalmers.se>
+
+	* applet/pilot.c: Marked more strings for translation
+	* capplet/Conduits.directory: Added Swedish translation
+	* capplet/PalmPilot.directory: Added Swedish translation
+
+2001-02-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* conduits/backup/backup_conduit.c: (load_configuration),
+	(destroy_configuration), (gnome_real_pilot_conduit_backup_backup):
+	Fixed some bad bad g_list usage that caused the "remove local if
+	removed on pilot" feature to work. Although I'm still not sure it
+	does excactly what people intented it to do...
+
+2001-02-04  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* configure.in:
+	Bonged to version 0.1.57-pre1
+	
+	* gpilotd/Makefile.am:
+	Fixed for make distcheck
+
+2001-02-04  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* gpilotConf.sh.in:
+	* Makefile.am:
+	Set OAF_CFLAGS, VFS_LIBS and VFS_CFLAGS in gpilotConf.sh
+	Don't built applet if --with-oaf, it won't work anyway.
+	
+	* NEWS:
+	Described the changes
+	
+	* acconfig.h:
+	Added WITH_VFS	
+	
+	* applet/pilot.c: (gpilotd_connect_cb), (gpilotd_disconnect_cb),
+	(gpilotd_request_completed), (gpilotd_conduit_start),
+	(gpilotd_conduit_end), (gpilotd_conduit_progress),
+	(gpilotd_conduit_message), (gpilotd_conduit_error),
+	(get_pilot_ids_from_gpilotd), (file_type), (file_size),
+	(pilot_draw), (timeout), (show_error_dialog),
+	(show_warning_dialog), (show_message_dialog),
+	(handle_client_error), (load_properties), (save_properties),
+	(apply_exec_when_clicked_cb), (toggle_notices_cb),
+	(apply_properties_cb), (cancel_restore), (activate_pilot_menu),
+	(pick_pilot), (restore_dialog), (properties_dialog),
+	(pilot_execute_program), (pilot_clicked_cb), (pilot_link_dialog),
+	(lastlog_dialog), (cancel_cb):
+	Made some changes nessecary for the VFS stuff.
+	Also s/\([a-z]\)(/\1 (/ style change.
+
+	* conduits/file/file_conduit.c:
+	(gnome_real_pilot_conduit_file_install_db):
+	Fixed the message stuff, more readable.
+	
+	* conduits/file/gpilot_install_file.c: (gpilotd_request_completed),
+	(cancel_install), (show_warning_dialog), (main):
+	gpilot-install-files doesn't do g_file_test anymore.
+	Also s/\([a-z]\)(/\1 (/ style change.
+
+	* conduits/memo_file/Makefile.am:
+	* conduits/test/Makefile.am:
+	* applet/Makefile.am:
+	* capplet/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* conduits/email/Makefile.am:
+	* conduits/expense/Makefile.am:
+	* conduits/file/Makefile.am:
+	* gpilotd/Makefile.am:
+	* libgpilotdCM/Makefile.am:
+	* utils/Makefile.am:
+	Added VFS libs to build.
+	Prettified some of them
+	
+	* configure.in:
+	Check for vfs libs.
+	
+	* gpilotd/gnome-pilot-client.gob:
+	Added VFS support to GnomePilotClient::install_file
+	Implemented some of the get_* functions.
+	
+	* gpilotd/gpilotd.c: (device_equal_by_io), (remove_device),
+	(pilot_set_baud_rate), (pilot_connect), (pilot_disconnect),
+	(write_sync_stamp), (do_cradle_events), (do_sync), (sync_device),
+	(device_in), (device_err), (visor_devices_in), (visor_devices_err),
+	(monitor_channel), (sig_hup_handler), (sig_term_handler),
+	(sig_int_handler), (remove_pid_file), (write_pid_file),
+	(wait_for_sync_and_sync), (dump_build_info), (main):
+	Output configure options on start.
+	Also s/\([a-z]\)(/\1 (/ style change.
+
+	* idl/gnome-pilot.idl:
+	* gpilotd/queue_io.h:
+	* gpilotd/queue_io.c: (is_system_related),
+	(gpc_queue_store_request):
+	* gpilotd/manager.h:
+	* gpilotd/manager.c: (gpilot_load_conduits),
+	(gpilot_initial_synchronize_operations):
+	Moved GET_SYSINFO into being a cradle operation.
+	
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_get_system_info),
+	(gpilotd_corba_get_pilots_by_login),
+	(gpilotd_corba_get_user_name_by_pilot),
+	(gpilotd_corba_get_user_login_by_pilot), (orbed_notify_sysinfo),
+	(accept_all_cookies), (gpilotd_corba_init):
+	Did get_sysinfo.
+	Added a accept_all_cookies patch that sets OAF to accept all
+	connections, doesn't solve the GOAD/OAF conflict in the applet.
+	Added some #warning to the unimplemented get_user_* functions.
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	Added GNOME_PATH environment support.
+	
+	* po/POTFILES.in:
+	Removed gpilotd-app*
+	
+	* utils/gpilotd-client.c: (system_info), (the_loop),
+	(list_by_login), (set_user), (get_system_info), (main):
+	Also s/\([a-z]\)(/\1 (/ style change.
+
+2001-01-23  JP Rosevear  <jpr@ximian.com>
+
+	* README: update requirements to include cvs pilot-link info for those
+	that need it
+
+	* AUTHORS: update email address
+
+2001-01-14  JP Rosevear  <jpr@ximian.com>
+
+	* configure.in: allow enabling of purify
+
+2001-01-13  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* HACKING:
+	* MAINTAINERS:
+	* README:
+	* README.visor:
+	* AUTHORS
+	* capplet/ChangeLog:
+	* capplet/Makefile.am:
+	* conduits/ChangeLog:
+	* conduits/Makefile.am:
+	* conduits/backup/Makefile.am:
+	* conduits/email/Makefile.am:
+	* conduits/file/Makefile.am:
+	* conduits/memo_file/Makefile.am:
+	* conduits/test/Makefile.am:
+	* configure.in:
+	* gpilotd/.cvsignore:
+	* gpilotd/ChangeLog:
+	* gpilotd/Makefile.am:
+	* gpilotd/gnome-pilot-client.c:
+	* gpilotd/gnome-pilot-client.gob:
+	* gpilotd/gnome-pilot-client.h:
+	* libgpilotdCM/.cvsignore:
+	* libgpilotdCM/ChangeLog:
+	* libgpilotdCM/Makefile.am:
+	* libgpilotdCM/gnome-pilot-conduit-config.c:
+	* libgpilotdCM/gnome-pilot-conduit-config.gob:
+	* libgpilotdCM/gnome-pilot-conduit-config.h:
+	* libgpilotdCM/gnome-pilot-conduit-management.c:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	* libgpilotdCM/gnome-pilot-conduit-management.h:
+	* po/ChangeLog:
+	* po/POTFILES.in:
+	Rolled back JP's degobification change.
+	Added blurp about gob in HACKING.
+	Updated README reg. bugreporting.
+	Fixed testconduit to pass makedistcheck.
+	configure now allows compile with no gob (for the tarballs).
+
+2000-12-17  JP Rosevear  <jpr@helixcode.com>
+
+	* configure.in: Don't need gnorba to build the test library
+
+2000-12-15  Stanislav Visnovsky  <visnovsky@nenya.ms.mff.cuni.cz>
+
+	* configure.in: Added sk to ALL_LINGUAS (Slovak)
+
+2000-12-02  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* capplet/gpilotd-control-applet.c: (configurePilotDialog):
+	Accept spaces in pilot user names.
+
+2000-11-29  JP Rosevear  <jpr@helixcode.com>
+
+	* configure.in: Have the new abs conduit stuff build by default
+
+2000-11-28  JP Rosevear  <jpr@helixcode.com>
+
+	* Documentation/conduits.sgml: Update
+
+2000-11-27  JP Rosevear  <jpr@helixcode.com>
+
+	* ABOUT-NLS: Remove generated file
+
+2000-10-31  Szabolcs Ban  <shooby@gnome.hu>
+
+	* configure.in: Added hu to ALL_LINGUAS (Hungarian support)
+
+2000-10-29  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* capplet/gpilotd-capplet-strings.c:
+	* capplet/gpilotd-capplet.glade:
+	* capplet/gpilotd-control-applet.c: (gpilotd_request_completed),
+	(gpilotd_userinfo_requested), (saveSettingsAndRestartDaemon),
+	(doTrySettings), (doSaveSettings), (doRevertSettings),
+	(insert_numeric_callback), (statechange_cb), (insert_syncpc_id),
+	(insert_username_callback), (insert_device_callback),
+	(activate_sync_type), (activate_speed), (cancel_sync),
+	(run_sync_dialog), (run_error_dialog), (run_question_dialog),
+	(activate_device_menu), (run_choose_dialog), (pick_pilot_device),
+	(get_from_pilot_cb), (send_to_pilot_cb), (pilots_selection_cb),
+	(clist_unselection_cb), (devices_selection_cb),
+	(clist_button_press), (sync_type_int_to_str), (compare_pilot_info),
+	(compare_device_info), (check_base_directory), (pilots_add_cb),
+	(pilots_edit_cb), (pilots_delete_cb), (devices_edit_cb),
+	(devices_add_cb), (devices_delete_cb), (createHostCfgWindow),
+	(setHostCfg), (readHostCfg), (build_speed_menu),
+	(configureDeviceDialog), (createDeviceCfgDialog), (setDeviceCfg),
+	(compare_device_name), (next_cradle_name), (compare_pilot_name),
+	(next_pilot_name), (setDeviceDialogCfg), (readDeviceDialogCfg),
+	(configurePilotDialog), (createPilotCfgDialog), (setPilotCfg),
+	(setPilotDialogCfg), (readPilotDialogCfg),
+	(pilot_capplet_glade_init), (pilot_capplet_setup),
+	(monitor_pilots), (main), (druid_gpilotd_userinfo_requested),
+	(druid_gpilotd_request_completed), (no_button_toggled),
+	(ask_to_cancel), (druid_canceled), (druid_finished),
+	(druid_sync_page_back), (druid_presync_page_next),
+	(druid_pilot2_page_next), (druid_delete_window),
+	(gpilotd_druid_show):
+	Did some regexp nicefications of the code. And added the 
+	timeout field.
+
+	* capplet/pilot.c: (copy_device), (loadDeviceCfg),
+	(savePilotState):
+	Added the timeout field to GPilotDevice
+
+	* configure.in:
+	Requires pilot-link 0.9.5
+
+	* gnome-pilot.spec.in:
+	Add ${prefix}/lib to /etc/ld.so.conf if not there
+
+	* gpilotd/gpilot-structures.c: (gpilot_device_init):
+	* gpilotd/gpilot-structures.h:
+	* gpilotd/gpilotd.c: (pilot_connect):
+	Added a timeout-field to the device, which is
+	passed to pi_accept_to.
+
+	* macros/gnome-pilot.m4:
+	Improved the check for libpisock
+	Bonged requied pilotlink version to 0.9.5
+
+2000-10-27  Miguel de Icaza  <miguel@helixcode.com>
+
+	* configure.in (LIBS): Use correctly the AC_CHECK_LIB macro and
+	include -nsl for pilot link (which is what this macro was used
+	for). 
+
+2000-10-24  Dave Camp  <dave@helixcode.com>
+
+	* configure.in: Set do_usb=yes by default.
+	
+	* gpilotd/gpilotd.c (visor_devices_in): Increase the length of the 
+ 	sleep().
+	(visor_devices_err): Typo fix.
+	(monitor_channel): Add a warning if the usbdevfs isn't properly
+	mounted.
+
+2000-10-23  JP Rosevear  <jpr@helixcode.com>
+
+	* configure.in: Revert the addition of hungarian since the po file
+	was not checked in.
+
+2000-10-20  JP Rosevear  <jpr@helixcode.com>
+
+	* Documentation/conduits.sgml: Add user_data param descriptions
+
+2000-10-20  JP Rosevear  <jpr@helixcode.com>
+
+	* Documentation/conduits.sgml: Typo corrections, correct 
+	sync abs conduit signalerrors.
+
+2000-10-17  JP Rosevear  <jpr@helixcode.com>
+
+	* Documentation/conduits.sgml: Update for new sync abs conduit
+
+2000-10-16  Szabolcs BAN <shooby@gnome.hu>
+
+	* po/hu.po: Initial support for Hungarian language.
+
+2000-10-15  Almer S. Tigelaar  <almer1@dds.nl>
+
+	* configure.in: Add 'nl' to ALL_LINGUAS.
+
+2000-10-12 Eskil Heyn Olsen  <eskil@eazel.com>
+	
+	prepping for 0.1.55 release
+
+2000-10-10  JP Rosevear  <jpr@helixcode.com>
+
+	* configure.in (try_newabs): with/without new abs conduit
+	option
+
+2000-09-06  Simos Xenitellis  <simos@hellug.gr>
+
+	* *.directory: Added Greek translations.
+
+	* *.desktop: Added Greek translations.
+
+2000-09-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* acconfig.h:
+	Added the WITH_IRDA define
+	
+	* capplet/gpilotd-capplet-strings.c:
+	IrDA has been added
+	
+	* capplet/gpilotd-capplet.glade:
+	Added buttons for setting up a port as irda
+	
+	* capplet/gpilotd-control-applet.c: (devices_edit_cb),
+	(devices_add_cb), (configureDeviceDialog), (setDeviceCfg),
+	(setDeviceDialogCfg), (readDeviceDialogCfg):
+	Added support for the IrDA prot
+	
+	* capplet/pilot.c: (loadDeviceCfg):
+	Load and check for irda port
+	
+	* configure.in:
+	Always set WITH_IRDA
+	
+	* gpilotd/gpilot-structures.c: (gpilot_device_init),
+	(gpilot_serial_device_init), (gpilot_usb_device_init),
+	(gpilot_irda_device_init), (gpilot_device_free), (get_devices):
+	Split up device init pr device type. Fixed a potentiel bug in
+	freeing a device.
+	
+	* gpilotd/gpilot-structures.h:
+	Added the IrDA device.
+	
+	* gpilotd/gpilotd.c: (sync_device), (device_in),
+	(visor_devices_err), (monitor_channel), (wait_for_sync_and_sync):
+	Added some funky hack that makes IrDA work on my
+	machine. Basically, I apparently need to close down the port after
+	sync, or I'll get port errors. So now, I close it, reopen and add
+	the io handlers.
+
+2000-08-17  Pablo Saratxaga <pablo@mandrakesoft.com>
+
+	* utils/{gpilotd-client.c,gpilotdcm-client.c}: corrected an error
+	on English string (s/certain certain/certain/).
+	Thanks to Quico Llach for pointing that out.
+
+2000-08-08  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* configure.in:
+	.55pre
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	(gnome_pilot_conduit_standard_real_synchronize):
+	Removed evil check before Fast/Slowsync
+
+	* gpilotd/gpilotd.c: (pilot_connect):
+	2 secs timeout again.
+
+2000-08-06  Eskil Heyn Olsen  <eskil@eazel.com>
+	
+	* configure.in
+	version 0.1.54
+
+2000-08-06  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* applet/pilot.c:
+	* capplet/gpilotd-capplet-strings.c:
+	* capplet/gpilotd-control-applet.c:
+	* capplet/pilot.c:
+	* capplet/pilot.h:
+	* conduits/backup/backup-conduit-control-applet.c:
+	* conduits/backup/backup_conduit.c:
+	* conduits/backup/backup_conduit.h:
+	* conduits/file/file-conduit-control-applet.c:
+	* conduits/file/file_conduit.c:
+	* conduits/file/file_conduit.h:
+	* conduits/file/gpilot_install_file.c:
+	* conduits/memo/memo-conduit-control-applet.c:
+	* conduits/memo/memo_conduit.c:
+	* conduits/memo/memo_conduit.h:
+	* conduits/memo/memo_conduit_abs.h:
+	* conduits/memo_file/memo_file_capplet.c:
+	* conduits/memo_file/memo_file_conduit.c:
+	* conduits/memo_file/memo_file_conduit.h:
+	* drafts/gpilotd-lib.idl:
+	* gpilotd/gnome-pilot-client.gob:
+	* gpilotd/gnome-pilot-conduit-backup.c:
+	* gpilotd/gnome-pilot-conduit-backup.h:
+	* gpilotd/gnome-pilot-conduit-file.c:
+	* gpilotd/gnome-pilot-conduit-file.h:
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	* gpilotd/gnome-pilot-conduit-standard-abs.h:
+	* gpilotd/gnome-pilot-conduit-standard.c:
+	* gpilotd/gnome-pilot-conduit-standard.h:
+	* gpilotd/gnome-pilot-conduit.c:
+	* gpilotd/gnome-pilot-conduit.h:
+	* gpilotd/gnome-pilot-dbinfo.h:
+	* gpilotd/gpilot-gui.c:
+	* gpilotd/gpilot-gui.h:
+	* gpilotd/gpilot-structures.c:
+	* gpilotd/gpilot-structures.h:
+	* gpilotd/gpilot-userinfo.c:
+	* gpilotd/gpilot-userinfo.h:
+	* gpilotd/gpilotd-app-dummy-callbacks.h:
+	* gpilotd/gpilotd-app.h:
+	* gpilotd/gpilotd-conduit-mgmt.h:
+	* gpilotd/gpilotd-session-wrapper.c:
+	* gpilotd/gpilotd.c:
+	* gpilotd/lib-gpilotd.c:
+	* gpilotd/manager.c:
+	* gpilotd/manager.h:
+	* gpilotd/orbit_daemon_glue.c:
+	* gpilotd/orbit_daemon_glue.h:
+	* gpilotd/queue_io.c:
+	* gpilotd/queue_io.h:
+	* idl/gnome-pilot.idl:
+	* libgpilotdCM/gnome-pilot-conduit-config.gob:
+	* libgpilotdCM/gnome-pilot-conduit-management.gob:
+	Added GPL licenses all over. Plus authors, I wasn't
+	thoughrough about getting all contributors in,
+	if you feel forgotten, add yourself or drop me
+	a note if you don't have cvs access.
+
+2000-08-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* TODO:
+	* gpilotd/gpilotd.c: (pilot_connect):
+	Ugh, pi_sockaddr has a max length on device names on 13 chars (it
+	has a char[14] for the name). Inserted a fix for it, it just calls
+	g_error, but we really need to fix pilot-link instead. This might
+	fix the IrDA problems.
+
+2000-08-04  Dave Camp  <campd@oit.edu>
+
+	* conduits/email/email_conduit.h: Added an mboxFile member to the 
+	ConduitCfg struct.
+	* conduits/email/email-conduit-control-applet.c:
+	(load_configuration), (save_configuration), (dupe_configuration),
+	(destroy_configuration), (createCfgWindow), (setOptionsCfg),
+	(readOptionsCfg): Deal with the mboxFile member and associated config 
+	key. Also added a label/textbox pair for configuring it.  
+	* conduits/email/email_conduit.c: (load_configuration),
+	(destroy_configuration): Deal with the mboxFile member.
+	(write_message_to_pilot): New function.
+	(synchronize): Deal with mbox, and make the mh sync code use 
+	write_message_to_pilot().
+
+2000-08-04  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* applet/pilot.c: (main):
+	* conduits/file/gpilot_install_file.c: (main):
+	Removed oaf_init call, as gnome-pilot-client.gob does that.
+	
+	* configure.in:
+	Bonged to 0.1.54pre
+	
+	* gpilotd/gpilotd.c: (pilot_connect), (monitor_channel):
+	Removed the horrendous close call, and switched the timeout to
+	1sec instead of 2secs.
+	
+	* idl/Makefile.am:
+	* idl/pilot_applet.oafinfo:
+	Added an oafinfo for the pilot_applet.
+	
+	* po/Makefile.in.in:
+	Ask me not...
+
+2000-08-03  Dave Camp  <campd@oit.edu>
+
+	* gpilotd/gpilot-structures.c: (gpilot_context_new): 
+	* gpilotd/gpilot-structures.h: s/visor_out_handle/visor_err_handle/
+	* gpilotd/gpilotd.c: (visor_devices_err), (monitor_channel): Added
+	a watch for visor_err_handle.
+
+2000-08-03  Dave Camp  <campd@oit.edu>
+
+	* gpilotd/gpilot-structures.c: #include <config.h>
+	* gpilotd/gpilotd.c: (visor_devices_in): use strncmp() to compare
+	the S line.
+
+2000-08-03  Dave Camp  <campd@oit.edu>
+
+	* MAINTAINERS: Added myself.
+
+2000-08-03  Chris Toshok  <toshok@helixcode.com>
+
+	* gpilotd.c: (visor_devices_in): ifdef with WITH_USB_VISOR, and
+	more specifically with linux since the visor code is linux
+	specific at the moment.
+	(monitor_channel): same.
+	
+	* gpilot-structures.h: same.
+
+	* gpilot-structures.c (gpilot_context_new): same.
+	
+2000-08-03  Dave Camp  <campd@oit.edu>
+
+	* gpilotd/gpilotd.c: (visor_devices_in): Check for the existence of
+	a visor in /proc/bus/usb/devices before blindly trying to sync all
+	of the devices.  For people with one visor, this means it will work
+	basically perfectly.  For people with two or more visors, you'll 
+	get occasional "Unable to bind to port" warnings.
+
+2000-08-02  Dave Camp  <campd@oit.edu>
+
+	* gpilotd/gpilot-structures.c (gpilot_context_new): Added some 
+	members to the GPilotContext, initialize them here.  These members 
+	are for watching /proc/bus/usb/devices, which will become ready for 
+	reading when the visor is activated.
+	* gpilotd/gpilotd.c (get_usb_procentry): Removed.
+	(check_usb): Removed.
+	(visor_devices_in): New function.  IO handler for 
+	/proc/bus/usb/devices.  
+	(monitor_channel): When monitoring a visor, setup the visor 
+	IO channels.
+
+2000-08-01  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* conduits/memo_file/memo_file_conduit.c: (spool_foreach):
+	Never right out 0 length files. Patch for bug #7816 from 
+	Christopher A. Craig
+
+2000-07-31  Eskil Heyn Olsen <eskil@eazel.com>
+
+	* conduits/backup/backup-conduit-control-applet.c: (adj_change_cb),
+	(createCfgWindow), (setOptionsCfg), (readOptionsCfg):
+	* conduits/backup/backup_conduit.c: (load_configuration),
+	(destroy_configuration), (gnome_real_pilot_conduit_backup_backup):
+	Applied more patches from Robert Mibus.
+
+2000-07-31  Dave Camp <campd@oit.edu>
+	
+	* configure.in: Added an --enable-usb-visor option.
+	* acconfig.h: Added HAVE_USB_VISOR
+	* gpilotd/gpilot-structures.c: (gpilot_device_init): Read the 
+	'type' configuration option for the device.  Only try to open the
+	device if it is a serial device.
+	* gpilotd/gpilot-structures.h: Added a 'type' field to GPilotDevice.
+	This field will be PILOT_DEVICE_SERIAL for a normal serial device, and
+	PILOT_DEVICE_USB_VISOR for a handspring usb device.
+	(get_usb_procentry): New function.
+	(check_usb): New function.  Stats the usb device to see if it is up
+	and starts a sync if so.
+	(monitor_channel): If the device is a usb visor, setup a timer to call
+	check_usb.
+	* capplet/gpilotd-control-applet.c: (devices_edit_cb),
+	(devices_add_cb), (configureDeviceDialog), (setDeviceCfg),
+	(setDeviceDialogCfg), (readDeviceDialogCfg):
+	* capplet/pilot.c: (copy_device), (loadDeviceCfg),
+	(savePilotState): Deal with the 'type' field.
+
+2000-07-18  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* conduits/backup/backup-conduit-control-applet.c:
+	(load_configuration), (save_configuration), (copy_configuration):
+	* conduits/backup/backup_conduit.c: (load_configuration),
+	(destroy_configuration), (gnome_real_pilot_conduit_backup_backup):
+	* conduits/backup/backup_conduit.h:
+	Applied patch from Robert Mibus <mibus@bigpond.com> to provide
+	multiple backups. Still needs a gui though.
+	
+	* gpilotd/gnome-pilot-conduit-standard-abs.c:
+	(gnome_pilot_conduit_standard_real_synchronize):
+	Small fix so it does not call FastSync or SlowSync if
+	pilot moddata < backupdate. I really hope this works,
+	or I'm in it for a world of pain and bugreports.
+	
+	* gpilotd/manager.c: (iterate_dbs):
+	Always backup db's, even if handled by a conduit.
+	
+2000-07-17  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* po/POTFILES.in:
+	remove memo-conduit-control-applet.c, since it's
+	not distributed anymore
+
+2000-07-17  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* configure.in:
+	Added pt_BR to ALL_LINGUAS.
+
+	* idl/Makefile.am:
+	Only distribute oafinfo if compiled with oaf support.
+
+2000-07-14  Chris Toshok  <toshok@helixcode.com>
+
+	* configure.in: correct AM_CONDITIONAL for USING_OAF to use $withval.
+
+2000-07-06  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* conduits/memo_file/memo_file_conduit.c: (spool_foreach):
+	Applied patch from Christopher A. Craig <ccraig@ccraig.org> reg.
+	memo_file explosions.
+
+2000-07-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* configure.in:
+	Fixing --with-oaf is no longer an assignment for
+	the reader, it is now done and works.
+
+2000-07-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* HACKING:
+	Changelog entries should now go to toplevel Changelog.
+	I now prefer this, because of the prepare-ChangeLog.pl
+	script used for Nautilus. See HACKING for more.
+
+	* applet/pilot.c: (main):
+	* configure.in:
+	* gpilotd/Makefile.am:
+	* gpilotd/gnome-pilot-client.gob:
+	* gpilotd/orbit_daemon_glue.c: (gpilotd_corba_init):
+	* macros/gnome-pilot.m4:
+	* utils/Makefile.am:
+	Done a lot of damagecontrol after the OAF collision
+	that happened. GNORBA is now the default object activator
+	even if bonobo/oaf/whatnot is installed. You can switch
+	to oaf if you configure with --with-oaf (up to the reader
+	to completely finish this).
+	The OAF code is still in CVS, it compiles (no longer
+	breaks gnome-pim), but still doens't work though.
+	(there a limit to my time).
+
+2000-07-05  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* Makefile.am:
+        * gpilotConf.sh.in:
+	The addition of the OAF check broke gnome-pim compile,
+	so I now add OAF_LIBS to gpilotConf.
+
+	* conduits/backup/Makefile.am:
+	Added GNOME_LIBS and LIBDIR.
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* configure.in: copied bonbo/oaf check from evolution
+
+	* acconfig.h: added USING_OAF
+
+2000-06-17  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* TODO: Added a blurp about doing some stuff for USB
+	cradles.
+	* conduits/memo_file/memo_file_conduit.c: 
+	(iterate_specific): Some ()'s around derefs, I like them.
+
+2000-05-31  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* gnome-pilot.spec.in: Update required libraries versions.
+
+	* configure.in, acconfig.h: Add GNOME_ICONDIR variable. Add
+	check (copied from gnome-pim's configure.in) for gnome-libs new
+ 	enough to have window-icon functions.  
+
+2000-05-29  Eskil Heyn Olsen  <set EMAIL_ADDRESS environment variable>
+
+	* gpilotd/gpilotd.c: (pilot_connect), (sync_foreach), (device_in),
+	(device_err), (monitor_channel), (remove_pid_file),
+	(write_pid_file), (wait_for_sync_and_sync):
+	Some minor cleaning, also inserted some more paranoia checks to
+	see if I can solve the mysterious sigsegvs in device_in.
+	
+	* utils/gpilotd-client.c: (main):
+	* utils/gpilotdcm-client.c: (main):
+	Put a warning in the tool, to let people know, that these
+	are not usertools. Prolly won't help.
+		
+	* configure.in:
+	* po/pt.po:
+	* po/pt_PT.po:
+	renamed pt_PT to pt, on request from  
+       Carlos Morgado <chbm@chbm.nu>
+
+2000-05-14  Eskil Heyn Olsen  <eskil@eazel.com>
+
+	* AUTHORS, MAINTAINERS, gnome-pilot.spec.in:
+	Changed my email to the new eazel.com adddress.
+
+2000-05-14  Jesus Bravo Alvarez  <jba@pobox.com>
+
+	* configure.in: Added gl (Galician) to ALL_LINGUAS
+	* *.desktop: Added Galician translations.
+
+2000-05-11  Pablo Saratxaga <pablo@mandrakesoft.com>
+
+	* capplet/gpilotd-capplet-strings.c: removed N_() from strings that
+	  must not be translatable
+	* configure.in: added Catalan language
+
+2000-04-14  Kjartan Maraas  <kmaraas@online.no>
+
+	* */*.desktop: Added Norwegian translations.
+	
+2000-04-10  Valek Filippov <frob@df.ru>
+
+	* configure.in: Added "ru" to ALL_LINGUAS.
+
+2000-03-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+        * configure.in: version now 0.1.50
+	* gnome-pilot.spec.in: requires libxml 1.8.0
+
+2000-03-29  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in: bonged version to 0.1.50pre
+
+2000-03-28  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in, gpilotConf.sh.in, Makefile.am: did the proper
+	gnome-config script. Needs to be used now.
+	configure.in: More libs for GPILOT_LIBS.
+
+2000-03-25  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* TODO: some updates.
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-config.in: fixed library names
+
+	* configure.in: version = 0.1.49
+
+2000-02-28  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gnome-pilot-config.in (libs): gnome-pilot-config now return
+	-lgpilotdcm instead of -lgpilotdconduitmgmtOILD
+
+2000-02-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in (gnome_cv_use_gnome): Added libgpilotdCM
+
+	* Makefile.am (SUBDIRS): Added libgpilotdCM
+
+2000-02-25  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in acconfig.h: remove the CONDUITDIR def. 
+
+	* TODO: the list for the 0.2.0 issues
+
+2000-02-25 Eskil Heyn Olsen  <deity@eskil.dk>
+	* Makefile.am, configure.in: compile libgpilotdCM again.
+
+2000-02-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: Finished
+	attribute loading and getting. Now for the enabling/disable rp
+	pilot and loading of the conduit.
+
+2000-02-15  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* Makefile.am: Commented out libgpilotdCM until compilation of it 
+	is fixed.
+
+2000-02-14  Eskil Heyn Olsen  <deity@praxis>
+
+	* libgpilotdCM/gnome-pilot-conduit-management.gob: Most xml
+	reading doing, gotta go now, have to commit...
+
+2000-02-13 Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Applied patch by Christopher A. Craig <ccraig@ccraig.org>
+	to gnome-pilot-config.in. Fixed libgpilotdconduitmgmt to 
+	libgpilotdconduitmgmt.old
+
+2000-02-12  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* configure.in: Use GNOME_COMPILE_WARNINGS macro to catch
+	all warnings. 
+
+	* *.*: Hunt down and destroy most warnings. Remove dead code and
+	unused variables. Caught a few booboos. Make things that should be 
+	static really be static. Only a few minor warnings remain.
+
+2000-02-07  Yuri Syrota <rasta@renome.rovno.ua>
+
+	* configure.in: Added "uk" to ALL_LINGUAS.
+
+2000-01-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in : check for GOB > 0.92.0
+
+2000-01-30  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* configure.in: Add check for libglade.
+
+	* Makefile.am: uncomment DRAFTS so that make dist works.
+
+2000-01-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in (gnome_cv_use_gnome): Removed some old
+	makefiles, and added an (commented out) ac_output
+	to build gob test thingies.
+
+	* Makefile.am: Also a commented out line to compile drafts stuff.
+
+	* TODO (gpilotd): Todo mods.
+
+2000-01-18  Eskil Heyn Olsen  <deity@eskil.dk>
+	* fixed my email in AUTHORS, added a MAINTAINERS
+	as pr. steintr's suggestion, listed vadim and I as
+	maintainers.
+
+2000-01-17  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* TODO: Conduits should create new categories on pilot if necessary.
+
+2000-01-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in (gnome_cv_use_gnome): am_path_glib now takes which
+	libs to use. (in preperation of using pthreads)
+
+2000-01-15  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in: Require pilot-link 0.9.3
+
+2000-01-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in (VERSION): Moved the CANONICAL_SYSTEM call up, as
+	autogen complained about it being after ac_arg_program.
+
+2000-01-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* drafts/gnome-pilot.gob: Slowly becomming a useable object.
+
+1999-12-27  Martin Norbäck  <d95mback@dtek.chalmers.se>
+
+	* sv.po: Updated Swedish translation
+
+1999-12-03  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Additions to TODO, and bonged version to 0.1.45 in configure.in
+	
+1999-11-13  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* TODO (gpilotd): updated with some user interaction things that
+	are needed.
+
+1999-11-01  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in: commented some makefile creations out. Moved the
+	pisock checks into gnome-pilot.m4, version 0.1.43
+
+	* README: Suggests people write the mailing list instead of me.
+
+	* ctypes: more types...
+
+1999-10-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* configure.in: bumper to version 0.1.42
+	* ctypes: more types for emacs people.
+
+1999-10-25  Yukihiro Nakai <nakai@gnome.gr.jp>
+
+	* configure.in: Added "ja" to ALL_LINGUAS.
+
+1999-10-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	*  HACKING: More info for gnome-pilot hackers.
+	
+1999-10-22  Alan Shutko  <ats@acm.org>
+
+      * capplet/pilot.c: Added 115200 to speedList, because PalmOS 3.3
+      supports the speed.
+
+1999-10-22  Eskil Olsen <deity@eskil.dk>
+
+	* configure.in: version = 0.1.38
+
+	* ctypes: more ctypes for you emacs dudes.
+	
+1999-10-21  Eskil Olsen <deity@eskil.dk>
+
+	* build.sh: builds the entire tree from scratch (calls autogen.sh) 
+	with the proper directory flags (meaning that .desktop files end
+	up correctly)
+
+	* configure.in: version = 0.1.37
+
+1999-10-21  Peter Teichman  <pat4@acpub.duke.edu>
+
+	* configure.in: merged some autoconf things back from the
+	newconduit branch, so gnome-pilot builds on Debian again
+
+Tue Oct 19 02:46:30 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: fixed some warnings
+
+	* gpilotd/manager.c: now rereads sync_PC_Id when sighupped
+
+	* gpilotd/gpilotd.c: no longer resets SIGHUP handler after sync.
+
+	* gpilotd/orbit_daemon_glue.c: reindented to gnome style.
+
+Mon Oct 18 23:46:51 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/gpilotd.c: writes a Exited on SIGXXX on signal catching.
+	
+	* configure.in: fixed bug #2675 i hope.
+	
+	* gpilotd/manager.c: Set #ifdefs around the code that adds a space 
+	to dlpLog calls. pilot-link 0.9.3 doesn't have that bug. Should be 
+	done via version checking in configure.in
+	
+	* gpilotd/orbit_daemon_glue.c: added a g_return_valued, fixes
+	crashes in notify_completion when the pilot_id is unknown.
+
+Sun Oct 17 20:51:30 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* conduits/[memo|email]/*-control-applet.c: Should now have fixed
+ 	bug#2659.
+	* gpilotd/*[ch]: reenable use of g_module calls, they don't appear 
+	to crash anymore, but be on the lookout.
+
+Fri Oct 15 01:39:51 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* capplet/gpilotd-control-applet.c: Apparently the userid was
+	originally destined to be logins ? It had a max length of 16, now
+	128 (bug #2654)
+
+	* gpilotd/lib-gpilotd.c: fixed epv struc generation, may be the
+	cause of bug #2728
+
+Fri Oct 15 00:54:03 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* fixed bug #2659.
+
+Fri Oct 15 00:35:02 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* README: added instructions on proper installing on 
+	RedHat systems.
+	
+	* capplet/gnome-palm.png: Michiel Toneman's new palm_pilot 
+	icon. Mmmm...
+
+	* conduits/backup/backup_conduit.c: added some output,
+	so now you get to see what it is doing.
+
+	* conduits/email/email_conduit.c: added a version output,
+	lets users see that it is starting.
+
+	* conduits/memo_file: reimported the old filebases
+	memo conduit.
+
+	* gpilotd/gpilotd.c: fixed bad gnome_get_get_int that
+	prevent FastSync from ever happening, since the lastsyncdate
+	was always -1. Niftyfied output.
+
+Fri Oct  8 16:11:52 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* configure.in: version skips to 0.1.33
+
+	* gpilotd/queue_io.c: client_id was not written for install
+	requests, also fixed nasty memory bug in gpc_queue_purge_request.
+
+	* applet/pilot.c: now popup (can be disabled) a notice when
+	a request is completed.
+
+	* capplet/PalmPilot.directory: added gnome-palm.png as icon
+
+	* capplet/gpilotd-control-applet.c: does a TrySettings when
+	clicking send to pilot.
+
+	* conduits/file/gpilot_install_file.c: heavily niftyfied. Now
+	displays which files are be installed, which failed, optional uses
+	PERSISTENT install. Cooperates with GMC via palm.keys.
+
+	* gpilotd/gpilotd.c: more checks on pi_* calls. Patched bug
+	#something, also moved do_sync call into the "else" part of the
+	pilot id check.
+
+	* gpilotd/lib-gpilotd.c: fixed a stupid <= to a > in a
+ 	g_return_if_fail. Prevented people from removing requests.
+
+	* gpilotd/manager.c: #ifdeffed g_module use out, uses dlopen
+	instead.
+
+	* orbit_daemon_glue.c: only call monitor_off_help with a non-null
+ 	pilot id.
+
+Thu Oct  7 23:18:44 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/orbit_daemon_glue.c: fixed a horrible g_free
+	mistake...
+	
+Thu Oct  7 21:21:14 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: 
+		-fixed more grave bugs again...
+		-prettyfied output
+
+	* gpilotd/gpilot-structures.c: fixed potentiel sigsegv where a
+	open(device) failed, but wasn't handle properly.
+
+	* gpilotd/gpilotd.c: Write entries to the pilots log, indicating
+	synchost and gnome-pilot version.
+
+	* gpilotd/manager.c: 
+		-Writes a log entry on the pilot for each conduit
+		-Added a gpilot_add_log_entry(int socket, gchar *,...)
+		 that write a log entry to the pilot.
+		
+Wed Oct  6 17:23:31 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: fixed grave
+	bug in Slognome-pim-SNAPSHOT-19991007.tar.gz 
+wSync and FastSync.
+
+	* gpilotd/lib-conduitmgmt.c: Checks that a conduit has a name,
+ 	otherwise it will call gnome_config_set_vector will null pointers.
+
+Wed Oct  6 13:21:50 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+	* applet/pilot.c: shows dialog if restore request fails
+
+	* gpilotd/lib-gpilotd.c: made sure all methods return 0 on
+ 	success, negative on failure (-10 if daemon is available, 
+	-11 if callback object failed to initialized)
+
+Wed Oct  6 12:37:22 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/lib-gpilotd.c: gpilotd_init/connect now both
+	adhere to return 0 success, negative on failure.
+
+	* capplet/gpilotd-control-applet.c: checks gpilotd_init/connect
+	return values, if they fail, now show an error dialog.
+
+	* applet/pilot.c: same as the capplet, except for the dialogs.
+
+	* utils/gpilotd-client.c: same as the applet
+	
+Tue Oct  5 17:43:40 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/gpilotd.c: more _("...") around relevant strings
+
+	* gpilotd/orbit_daemon_glue.c: 
+		- less noise on stdout
+	 	- throws more exceptions
+		- fixed bug regarding reconnecting clients
+		- fixed some leaks and potentiel sigsegvs
+	
+Tue Oct  5 01:59:53 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/orbit_daemon_glue.c, lib-gpilotd.c, gpilotd-app.h,
+	applet/pilot.c: Implemented restore, not tested, nor finished.
+
+	* gpilotd/gnome-pilot-conduit-backup.*[ch],
+	conduits/backup/backup_conduit.*[ch]: moved diverse variables from 
+	GnomePilotConduitBackup class to the backup conduit.
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: lots of work in the
+	sync logic. Most still untested, amongst these,
+	copy_to/from_pilot.
+
+	* This commit contains much untested code/bugfixes/leakfixes, beware.
+
+Thu Sep 30 17:17:06 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd/lib-gpilotd.c: Better exception handling.
+
+Wed Sep 29 14:59:43 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+
+	* conduits/*/*_conduit.c: They should all now use the return
+	values as described in Documentation/conduits.sgml.
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.[ch]: Changed the
+	parameters for transmit and free_transmit.
+
+	* gpilotd/lib-gpilotd.c: fixed a possibly return NULL through
+	corba. This should finally take care of bug#1870.
+
+	* gpilotd/orbit_daemon_glue.c: more exception checking when
+	receiving a client call, also fixed a leak in client_id handling
+	and better check for whether or not the client can be contacted.
+
+	* configure.in: AC_PROG_YACC fixes automake warning. Also moved to 
+	version 0.1.24.
+	
+Sat Sep 25 18:33:09 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+	* capplet: fixed so that a change to device enable Try/Ok buttons.
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: inserted some
+	comments and g_asserts.
+	
+1999-09-23  Kjartan Maraas  <kmaraas@online.no>
+
+	* configure.in: Added "da" to ALL_LINGUAS.
+	
+Sep 23 09:57:19 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+	* gpilotd/gpilotd-conduit-mgmt: added an enum to the
+	_enable call, that specifies sync type.
+
+Sep 22 22:29:19 CEST 1999,  Eskil Olsen <deity@eskil.dk>
+	* configure.in: ./configure --with-pisock should have effect now
+	* *+/Makefile.am: Uses PISOCK_LIBDIR and PISOCK_INCLUDEDIR
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: minor changes in
+	attr calculation when doing dlp_WriteRecord
+
+Sun Sep 20 22:36:25 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* Makefile.am: removed intl from subdir, this fixes making, hopes
+ 	its ok...
+
+	* configure.in: version 0.1.20-1
+
+	* conduits/email/Makefile.am: fixed, so bug #2150 doesn't reoccur.
+
+	* gpilotd/*[ch]: Record* attributes redefined as
+	GnomePilotRecord*, to avoid clashing with pilot-link
+
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: lots of rework in
+	the sync logic ; MergeToRemote should now notice locally changed
+	records, attributes should be demangled correctly everywhere,
+	SyncRecord more general now.
+
+	* gpilotd/gpilotd.c: fixed error the popped up when fork was
+	disabled, removed some superflous method calls.
+
+Sun Sep 19 15:36:25 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* closed bug #2150 and #1972. 
+	
+Wed Sep 15 13:21:37 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* gpilotd/gpilotd.c: ifdefs that disables fork(), preserves
+	ORBit's life.	
+
+Tue Sep 14 12:36:49 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* gpilotd/gpilotd.c, commented fork() out, preservers
+	ORBit integrity.
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: fixed some bugs
+	in the gtk_signal marshalling
+
+Thu Sep  9 12:23:49 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: removed all
+	things. reg. post_sync, since the purge call has the same
+	functionality.
+	* conduits/memo_conduit/memo_conduit.c: removed the post_sync cb
+		
+Wed Sep  8 18:02:49 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* conduits/email/*: applied patch from Mike Rowehl, should
+	now handle incoming email.
+
+Wed Sep  8 14:59:06 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* conduits/*/*control-applet.c: corrected my email
+	* gpilotd/gnome-pilot-dbinfo.h: added db_handle, the "file
+	descriptor" for an opened db.
+	* gpilotd/gnome-pilot-conduit-standard-abs.c: uses dbi->db_handle
+	instead of ->index.
+Wed Sep  1 18:41:49 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* idl/gnome-pilot.idl: s/persistant/persistent
+	* Makefile.am: added intl to subdirs
+	* configure.in: removed intl/Makefile (is that ok ?)
+	* applet/pilot.c: panel applet now terminates correctly (bug#1964)
+	* capplet/gpilotd-control-applet.c: narrowed the range of allowed
+	chars in device name.
+
+Wed Aug 25 15:09:33 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* orbit_daemon_glue.c: old code used when USER_GNORBA was not
+ 	defined.
+	* orbit_daemon_glue.c lib-gpilotd.c: Implemented
+ 	get_pilots_by_name and get_pilots_by_login.
+	* *[ch]: fixed a lot of warnings.
+	* orbit_daemon_glue.c: Added some ex_GNOME_Pilot_UnknownPilot
+ 	exceptions, and /* FIXME: */'s to other things that need check.
+	* Makefile.am: removed intl
+	* gnome-spec configure.in: version 0.1.13
+	* applet/pilot.c: fixed call to access
+	* */*[ch]: lot of warnings fixed.
+	* manager.c queue_io.c orbit_daemon_glue.c: implemented
+ 	request_conduit.
+	* utils/gpilotd-client.c: tests for pilotsbyname and
+ 	pilotsbyuid. GPilotPilot really needs an additional login name
+ 	field.
+	* gnome-pilot/ctypes: a emacs ctypes file with loads of types
+ 	defined in gnome-pilot.
+	
+Sun Aug 15 22:30:53 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* added a lot of yadayada to the README (bug#1846)
+	* the .spec files now moves /usr/etc to /etc (bug#1778)
+	* applied patch from Manuel A. McLure (mmclure@sac.verio.net)
+	  regarding sigsegv in gpilotd_corba_clean_up (bug#1801)
+	* fixed the ~/.gpilotd.pid stuff, should take care of
+	  bug#1764 and 1847.
+	* also fixed the queue deletion for file installs (bug#1746).
+1999-07-27  Tomas Ogren  <stric@ing.umu.se>
+
+	* configure.in: Added sv to ALL_LINGUAS
+
+Sun Jul 18 15:25:36 CEST 1999, Eskil Olsen <deity@eskil.dk>
+       	* gnome-pilot.spec: donged version to 0.1.11.
+	* capplet/gpilotd-control-applet: modfied text callbacks, added the
+	pilotname field.
+	* conduits/backup/backup-conduit-control-applet: uses the
+	conduit_mgmt_get_pilot_id call.
+	* gpilotd/gpilotd-app, gpilotd/orbit_daemon_glue,
+ 	gpilotd/queue_io, idl/gnome-pilot.idl: initials for
+ 	gpilotd_conduit call.
+	* gpilotd/gpilotd-conduit-mgmt: added
+	gpilotd_condiut_mgmt_get_pilot_id which returns the first pilots
+	id number.
+	* gpilotd/gpilotd.c: placed ifdefs around ugly_boolean.
+	* gpilotd/gpilotd.c: better pid file check to avoid multiple
+	instances, which really screws things up.
+Sat Jul 10 19:06:47 CEST 1999, Eskil Olsen <deity@eskil.dk>
+	* initial gpilotd_conduit call in lib-gpilot. Lets an application
+	ask that a specific conduit is run as the only thing on next
+	sync. Eg. GnomeCal could as that on next sync, the only operation
+	will be a sync of the calendar conduit.
+Tue Jun 22 02:06:08 CEST 1999 <deity@eskil.dk>
+	* conduits/email: added initial conduit by Mike Rowehl
+	* conduits/email/email-conduit-control-applet: womped up a capplet 
+	for email conduit
+Tue Jun 22 19:59:09 CEST 1999 <deity@eskil.dk>
+	* conduits/email/email_conduit.h: reads config with defaults, so
+	it doesn't coredump when there is no config.
+Mon Jun 21 22:57:28 CEST 1999 <deity@eskil.dk>	
+	* conduits/backup-conduit-control-applet.c: throws up a neat error
+ 	dialog if no pilots are specified.
+	* conduits/file/file-conduit-control-applet.c: the same...
+	* capplet/gpilotd-control-applet.c: used a wrong var in
+ 	gnome_message_box_call.
+	* gpilotd/manager.c: get_string("filename")->get_string("libfile")
+Mon Jun 21 20:28:41 CEST 1999 <deity@eskil.dk>
+	* conduits/file/Makefile.am: added the file-conduit-control-applet.
+	* conduits/file/file_conduit.h: removed some redundant stuff.
+	* gpilotd/lib-conduit-mgmt.h: debug is now enable, the conduit
+ 	capplets now generate loads of output.
+	* conduits/file/: added file_conduit_control_applet.c & .desktop,
+ 	capplet for the file conduit.
+Sun Jun 20 19:33:25 CEST 1999 <deity@dbc.dk>
+	* conduits/backup: backup-control-capplet now gets pilot id from
+ 	gpilotd.
+	* gpilotd/lib-conduit-mgmt: implemented is_enabled,enable and
+ 	disable. capplets can begin to use it.
+	* gpilotd/gpilotd-app-dummy-callbacks.h: a head with dummy
+ 	callbacks for gpilotd-apps.
+	* gpilotd/orbit-daemon-glue.c: throws exception when install and
+ 	access(file,R_OK) fails.
+Thu May 27 01:01:24 CEST 1999 <deity@dbc.dk>
+	* gpilotd/gpilot-structures.c: fixed leak when reloading config.
+	* gpilotd/orbit_daemon_glue.c: fixed ugly mem bug
+	* gpilotd/lib-coduitmgmt: initial lib for conduits mgmt, (well,
+	only enable/disable for a pilot)
+	* conduits/address/address_conduit_abs.*[ch]: updated for pilot-link-0.9.3
+	* conduits/backup: initial version of a capplet for the conduit,
+	fixed a leak or two plus corrected some g_list_remove_link calls
+	* conduits/memo/memo_conduit_abs.*[ch]: updated for
+	pilot-link-0.9.3, fixed check for new files so .ids isn't sent to pilot.
+
+Wed May 12 19:01:42 CEST 1999 <deity@dbc.dk>
+	* capplet/gpilotd-control-applet.c: get/set pilot id work,
+	and some nice dialogs
+	* applet/pilot.c: changes to reflect the changes in the idl file
+	* conduits/backup/backup_conduit.c: uses g_str methods
+	* conduits/memo/memo_conduit_abs.c: ditto
+	* gpilotd/gpilotd-app.h: changes to reflect the changes in the idl
+	file
+	* gpilotd/gpilotd-app.h: idl changes... surprise... added the
+	gpilotd_shutdown call, releases the objects.
+	* gpilotd/gpilotd.c: now terminates if there was cradle events,
+	thus does _not_ do the usual conduit stuff. Uses g_str*
+	calls. Fewer compile warnings. Removed all the !USE_NEW_IO code.
+	* gpilotd/gpilotd.c: Fixed _the_ horror bug, a g_free of
+	g_get_home_dir is simply unwise...
+	* gpilotd/lib-gpilotd.c: idl changes. All g_messages now done by a 
+	macro, that is easyli deffed to empty. Did the get/set
+	client_id. Removed all the !USE_GNORBA code. Now deletes the tmp
+	file if install fails.
+	* pilotd/orbit_daemon_glue.c: monitor_off now works, the client_id 
+	did the trick. Also did a LOG macro here. Fixed some leaks, theres 
+	probably a lot left. Stabilization using g_return* and also
+	inserted some g_asserts.
+	* /cvs/gnome/gnome-pilot/gpilotd/queue_io.c: all the .cfg file
+	entry strings are defined at the beginning. A lot of g_asserts and 
+	g_return*. Fixed some leaks.
+	* idl/gnome-pilot.idl: renamed the ns to GNOME/Pilot, nuked the
+	use of callback ior's, now passed Client objects.
+	* idl/*gnorba: changed the ns.
+	* utils/gpilotd-client.c: changes to reflect the changes in the
+	idl file.
+	
+	
+Thu Apr 29 22:14:05 CEST 1999 <deity@dbc.dk>
+	* applet/pilot.c: checks the .png files are loaded, prevents
+	sigsegv in gdk_imlib_render call.
+
+Fri Feb 19 19:39:54 CET 1999 <deity@dbc.dk>
+	* configure.in: raised patchlevel to 5
+
+	* gpilotd/gpilot-structures.[ch]: GPilotDevice now carries a 
+	GIOChannel*
+
+	* gpilotd/gpilotd-app.h: now includes gpilotd/gnome-pilot.h
+	instead
+
+	* gpilotd/gpilotd.c: currently uses USE_NEW_IO to use GIOChannels,
+	also carries a hideous global boolean... must kill it... Added
+	code to use GPilotDevices GIOChannel
+
+	* gpilotd/orbit_daemon_glue.c: ansi-c'ed comments, GNORBA'ed the
+ 	code.
+
+Tue Jan 26 20:45:08 CET 1999, <deity@dbc.dk>
+	* gpilotd/gpilotd-lib.idl: renamed to gnome-pilot.idl for name
+	consistency.
+
+	* configure.in: added idl/Makefile
+
+	* applet/pilot.c: slashed a lot, to add gnorba functionality
+
+	* gpilotd/Makefile.am: changes since I moved the idl file to
+	../idl
+
+	* capplet/Makefile.am: ditto. 
+
+	* gpilotd/gpilotd-app.h: renamed GPilotd_Callback to
+	GPilotd_Client, name consistency again.
+
+	* gpilotd/gpilotd.c: added temporary busywait poll, will remove
+	the whole select stuff and replace it with
+	g_io_channels... promise... Also hacked away to add gnorba
+	functionality.
+
+	* gpilotd/lib-gpilotd.c, gpilotd/orbit_daemon_glue.[ch]: Hacked to 
+	add gnorba functionality
+
+Tue Jan 19 22:53:36 CET 1999, <deity@dbc.dk>
+
+	* applet/pilot.c: Added some methods in the applet, so it uses the
+ 	file(1) call to identify the file type. Id like it eg.  to convert
+ 	convert textfiles over a certain size to Doc and other stuff like
+ 	that.  
+
+	* gpilotd/gpilotd-lib.idl: added the get_system_info, for
+	retrieving a structure like pilot_links CardInfo. 
+
+	* gpilotd/gpilotd.c: added context as argument to the sync
+	methods.
+
+	* gpilotd/lib-gpilotd.c: added a cb for the getsysinfo, added the
+	cb_ior to monitor_on/off calls.
+
+	* gpilotd/lib-gpilotd.c, gpilotd/gpilotd-lib.idl,
+	gpilotd/orbit_daemon_glue.c: added a description field (gchar*) to 
+	the install request. lib-gpilotd uses this to store the real file
+	name, but can contain anything.
+
+	* gpilotd/orbit_daemon_glue.[ch]: modified to support the monitor
+	on/off system.
+
+	* gpilotd/queue_io.[ch]: support for get_sysinfo. Now also calcs
+ 	the handle id as pilot_id*2^16 + num. Added a
+ 	gpc_queue_load_request(pilot_id,type,num). Loads a specific
+	request, type if true for system level, false for ordinary
+	request. (A system level request is one based on a cradle instead
+	of a pilot). Also added
+	gpc_queue_purge_request_point(pilot_id,num), deletes a specific
+	request from the queue.
+
+	* utils/gpilotd-client.c: added a call to gpilotd_geet_system_info 
+	for test.
+	
+	* gpilotd/gpilotd-app.h: implemented the wrapper
+ 	gpilotd_get_system_info, gpilotd_monitor_on_all_pilots,
+ 	gpilotd_monitor_off_all_pilots and gpilotd_remove_request.
+
+	* capplet/gpilotd-control-applet.c: fixed to work with new calls.
+
+	* applet/pilot.c: fixed to work with new calls
+	
+Thu Jan 07 14:47:18 1999  George Lebl  <jirka@5z.com>
+
+	* applet/pilot.c: don't include applet-lib.h
+
+	* applet/Makefile.am: link correctly if libgpilotd is not installed
+
+1998-10-26    <jrb@redhat.com>
+
+	* applet/pilot.c (dnd_drop_internal): changed it to work with the
+	new DnD stuff.  Don't know if it works (did it ever?) but it
+	compiles now.
+
+Tue Aug 18 20:35:07 EDT 1998 Manish Vachharajani <mvachhar@vger.rutgers.edu>
+	*configure.in: Added checks for gmodule
+	

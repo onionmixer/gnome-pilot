@@ -1,0 +1,163 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2000-12-15  Stanislav Visnovsky  <visnovsky@nenya.ms.mff.cuni.cz> 
+
+	* pilot_applet.desktop: Added Slovak desktop entries.
+
+2000-07-29  Fatih Demir  <kabalak@gmx.net> 
+
+	* pilot_applet.desktop: Added the Turkish desktop entries.
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* Makefile.am (pilot_applet_LDADD): added BONOBO_VFS_GNOME_LIBS
+
+2000-05-30  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c: Fix up restore dialog a bit to get cradle list from gpilotd. 
+	It doesn't actually use it in useful way yet. Add window icon to popups.
+	Other minor cleanups.
+
+2000-03-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Changed the authors in the about box, and added a GPL
+	license header.
+
+2000-03-12  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot-applet.glade: Minor updates to progress dialog.
+	
+	* pilot.c: Include conduit start/end notices in the message log.
+	Do some more error checking and don't popup unecessary error boxes.
+	Add an applet menu items for "Last sync log" and "Pilot Link settings",
+	same as clicking on the applet. Some minor cosmetic code cleanup.
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (INCLUDES): automake juju to make distcheck work.
+
+2000-03-04  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c, pilot-applet.glade : Add multi-pilot support.
+	If needed, a choose pilot dialog will popup on file dnd	
+	and restore request. Add initial restore dialog. Seting
+	of pilot id and choosing the cradle still to be done.
+
+2000-02-27  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c, Makefile.am: Switch to new libgpilotd.
+	Fix some tooltips messages to be consistent and allways call _()
+
+2000-02-08  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c: Add a scrolling message text area to the progress dialog. 
+	TODO: Make it a bit more estheticly pleasing.
+	TODO: Implement cancel sync button. Possible? Needs gpilotd changes?
+	TODO: Update all conduits to generates messages/errors appropriately.
+
+2000-01-31  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c: temporarily disable dialogs for warnings/errors
+	from conduits as these cause too many popups. TODO: add a scrolling
+	area to the progress dialog where these can go.
+
+2000-01-31  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (pilot_applet_LDADD): Link with libgpilotdOLD now
+
+	* pilot.c (main): pilot_applet.glade -> pilot-applet.glade
+
+2000-01-30  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c: Add progress bar to indicate syncing process.
+	Beginings of multi-pilot support, but more work is needed,
+	see all the FIXME.
+
+	* Makefile.am, pilot-applet.glade, pilot-applet-strings.c : 
+	Added new glade files.
+
+2000-01-17  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Added lot of code to enable restart and
+	pause/resume. Also shined up the restore stuff, so it
+	might actually work.
+
+2000-01-14  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* pilot.c: Fix the "display notices" toggle button behavior. 
+	It still doesn't effect anything, but this will change with future
+	addition of gui popups like errors, progress dialogs, etc...
+
+2000-01-06  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Type the conduit name in gpilotd_conduit_end callback.
+
+2000-01-05  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: gpilotd_conduit_progress writes a nice % number now. So 
+	people will figure out what to do with it.
+
+2000-01-04  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c (create_pilot_widget): Fixed the "session-save" GTK+
+	runtime warning.
+
+1999-12-27  Martin Norbäck <d95mback@dtek.chalmers.se>
+	
+	* pilot_applet.desktop: Added Swedish translation
+
+1999-12-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Made alterations to conduit callbacks.
+
+1999-12-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Added callbacks for the conduit error/message/progress stuff.
+
+1999-12-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: More work on the restore part. Now defaults restoredir
+	to ~/pilot. Needs to read it from the backup conduit config.
+
+1999-11-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c: Added callbacks for gpilotd_conduit_start/end
+
+1999-11-04  Alan Shutko  <ats@acm.org>
+
+	* pilot.c (create_pilot_widget): Put pixmap in an event_box, to
+	handle the click event.
+
+1999-11-03  Alan Shutko  <ats@acm.org>
+
+	* pilot.c (create_pilot_widget): Added space to tooltip.
+	(pixmaps): Created array to list icons, indexed by state.
+	(all): Got rid of darea and now using a GnomePixmap.
+	(pilot_expose): Removed.
+	(pilot_draw): Now just gnome_pixmap_load_file, instead of the
+	drawing area stuff.
+	(create_pilot_widget): Got rid of drawing area and now using a
+	GnomePixmap, because imlib loading wasn't giving us transparent
+	backgrounds.  Also, GNOME will be shifting to GdkPixBuf later on,
+	and GnomePixmap should be portable some time to come.
+
+1999-11-02  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c (pilot_clicked_cb): clicking should work now, also
+	defaults to gpilotd capplet instead of gpilot-file-man.
+
+1999-11-01  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c (pilot_clicked_cb): uses gnome_execute_async now.
+
+1999-10-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* pilot.c (properties_dialog): Fixed the help_entry in properties, 
+	now points to properties.html.
+
+1999-10-22  Eskil Olsen <deity@eskil.dk>
+
+	* pilot.c: Updated to use gpilotd_get_pilot_names instead of
+ 	gpilotd_get_pilots.
+	

@@ -1,0 +1,1872 @@
+# gnome-pilot ja.po.
+# Copyright (C) 1999-2005 Free Software Foundation, Inc.
+# Yuusuke Tahara <tahara@gnome.gr.jp>, 1999-2000.
+# Takeshi Aihana <aihana@gnome.g.rjp>, 2001-2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-12-13 00:30+0900\n"
+"PO-Revision-Date: 2005-04-11 23:58+0900\n"
+"Last-Translator:  Takao Fujiwara <Takao.Fujiwara@Sun.COM>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# SUN REVIEWED
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot アプレット"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+#, fuzzy
+msgid "Synchronize your data on PalmOS devices"
+msgstr "PalmOS デバイスの設定を行います"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "ユーティリティ"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+#, fuzzy
+msgid "Choose PDA"
+msgstr "パイロットの選択"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "フォルダ"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "警告を表示する"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "クリック時に起動するもの"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME パイロットシンクの設定"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "PDA ID"
+msgstr ""
+
+#: ../applet/pilot-applet.glade.h:8
+#, fuzzy
+msgid "Restore PDA"
+msgstr "パイロットを復帰させる"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "同期クレードル"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "GNOME パイロットの進行状況"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s の同期中"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr "データベース %v / %u"
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "要求 %ld は完了しました\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s の同期中 : %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: 開始\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s が終了 : %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: 完了\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr "%v / %u 個のデータ"
+
+#: ../applet/pilot.c:419
+#, fuzzy
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"同期中です。終了するまで\n"
+"しばらくお待ち下さい。"
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "接続されていません。デーモンを再起動して下さい。"
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"デーモンに接続できませんでした。\n"
+"デーモンを再起動して下さい。"
+
+#: ../applet/pilot.c:442
+msgid "gnome-pilot applet"
+msgstr "GNOME パイロット・アプレット"
+
+#: ../applet/pilot.c:444
+#, fuzzy
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Copyright 2000-2005 Free Software Foundation, Inc."
+
+# SUN REVIEWED
+#: ../applet/pilot.c:445
+#, fuzzy
+msgid "A PalmOS PDA monitor.\n"
+msgstr "PDA モニター"
+
+#: ../applet/pilot.c:541 ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "ヘルプを表示する際にエラーが発生しました: %s"
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "%d のキャンセル中"
+
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "%s の復元中"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "復元するフォルダがありません。"
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"クレードルのボタンを押して同期を開始するか、\n"
+"[キャンセル] で処理を中止できます。"
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "復元に失敗しました"
+
+#: ../applet/pilot.c:754
+#, fuzzy
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"ただいま同期中です。\n"
+"本当にデーモンを再起動してもよろしいですか？"
+
+#: ../applet/pilot.c:764 ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "GNOME パイロット・デーモンに接続中です"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "データの最後の同期がありません。"
+
+#
+# SUN REVIEWED
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:803
+msgid "Restore..."
+msgstr "復元..."
+
+#
+# SUN REVIEWED
+#: ../applet/pilot.c:803
+msgid "Restart"
+msgstr "再起動"
+
+# SUN REVIEWED
+#: ../applet/pilot.c:803
+msgid "Last log..."
+msgstr "前回のログ..."
+
+# SUN REVIEWED
+#: ../applet/pilot.c:804
+msgid "Preferences..."
+msgstr "設定..."
+
+# SUN REVIEWED
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr "ヘルプ"
+
+# SUN REVIEWED
+#: ../applet/pilot.c:804
+#, fuzzy
+msgid "About"
+msgstr "バージョン情報..."
+
+#: ../applet/pilot.c:826
+msgid "Continue"
+msgstr "続行"
+
+#: ../applet/pilot.c:828
+msgid "Pause Daemon"
+msgstr "デーモンの一時停止"
+
+#: ../applet/pilot.c:848
+msgid "Daemon paused..."
+msgstr "デーモンは一時停止中..."
+
+#: ../applet/pilot.c:855 ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "いつでも同期できます"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "接続されていません。再接続にはデーモンを再起動します。"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s の実行に失敗しました"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1300
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "\"%s\" -> \"%s\" のインストール中"
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "不明なドラッグ＆ドロップのタイプ"
+
+#: ../applet/pilot.c:1318
+msgid "destroy gpilot-applet"
+msgstr "gpilot-applet の強制終了"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "pilot-applet.glade ファイルが見つかりません"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "アプレットがクリックされたら実行するコマンドです。"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "ポップアップ・ウィンドウで警告を表示します。"
+
+#: ../capplet/gnome-pilot-capplet.c:212 ../capplet/gpilotd-capplet.glade.h:84
+#, fuzzy
+msgid "gnome-pilot Settings"
+msgstr "GNOME パイロットの設定"
+
+#: ../capplet/gnome-pilot-capplet.c:380 ../capplet/gnome-pilot-capplet.c:460
+msgid "Name"
+msgstr "名前"
+
+#: ../capplet/gnome-pilot-capplet.c:382 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:384
+msgid "Owner"
+msgstr ""
+
+#: ../capplet/gnome-pilot-capplet.c:462
+msgid "Type"
+msgstr "接続の種類"
+
+#: ../capplet/gnome-pilot-capplet.c:568
+msgid "Conduit"
+msgstr "コンジット"
+
+#: ../capplet/gnome-pilot-capplet.c:570
+msgid "Sync Action"
+msgstr "同期の動作"
+
+#: ../capplet/gnome-pilot-capplet.c:780
+#, fuzzy, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "本当にパイロット %s を削除しますか？"
+
+#: ../capplet/gnome-pilot-capplet.c:804
+#, fuzzy
+msgid "_Edit this PDA..."
+msgstr "パイロットの編集(_E)..."
+
+#: ../capplet/gnome-pilot-capplet.c:805
+#, fuzzy
+msgid "Edit the currently selected PDA"
+msgstr "指定されたパイロットを編集します"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+#, fuzzy
+msgid "_Delete this PDA"
+msgstr "パイロットの削除(_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:808
+#, fuzzy
+msgid "Delete the currently selected PDA"
+msgstr "指定されたパイロットを削除します"
+
+#: ../capplet/gnome-pilot-capplet.c:941
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "本当にデバイス %s を削除しますか？"
+
+#: ../capplet/gnome-pilot-capplet.c:962
+msgid "_Edit this device..."
+msgstr "デバイスの編集(_E)..."
+
+#: ../capplet/gnome-pilot-capplet.c:963
+msgid "Edit the currently selected device"
+msgstr "指定されたデバイスを編集します"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+msgid "_Delete this device"
+msgstr "デバイスの削除(_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Delete the currently selected device"
+msgstr "指定されたデバイスを削除します"
+
+#: ../capplet/gnome-pilot-capplet.c:1128
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%s コンジットを実体化できません。"
+
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "_Enable this conduit"
+msgstr "コンジットの有効化(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:1169
+msgid "Disable the currently selected conduit"
+msgstr "指定されたコンジットを無効にします"
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+msgid "_Disable this conduit"
+msgstr "コンジットの無効化(_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+msgid "Enable the currently selected conduit"
+msgstr "指定されたコンジットを有効にします"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+msgid "_Settings..."
+msgstr "設定(_S)..."
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+msgid "Modify the currently selected conduit's settings"
+msgstr "指定されたコンジットの設定を行います"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:207
+#, fuzzy
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr ""
+"パイロット設定ウィンドウを生成できません。コンジット設定が正しくありません。"
+
+#: ../capplet/gnome-pilot-druid.c:448
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"設定が完了してないのでファイルに保存されません。\n"
+"本当に終了してもよろしいですか？"
+
+#: ../capplet/gnome-pilot-druid.c:566
+#, fuzzy, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"次のデータをパイロットに送信する準備が整いました。\n"
+"ユーザ名: %s\n"
+"ID: %d\n"
+"パイロットを %s (%s) に接続して HotSync ボタンを押して下さい。"
+
+#: ../capplet/gnome-pilot-druid.c:590
+#, fuzzy, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"ユーザ名と ID をパイロットから取得する準備が整いました。\n"
+"パイロットを %s (%s) に接続して[HotSync] ボタンを押して下さい。"
+
+#: ../capplet/gnome-pilot-druid.c:605
+msgid "Failed sending request to gpilotd"
+msgstr "デーモンへのリクエスト送信に失敗しました"
+
+#: ../capplet/gnome-pilot-druid.c:736
+#, fuzzy, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"パイロットからユーザ名と ID の取得が完了しました。\n"
+"ユーザ名: %s\n"
+"ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:395
+#, fuzzy, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"パイロットを %s (%s) に置いて HotSync ボタンまたは取り消しボタンを押して下さ"
+"い。"
+
+#: ../capplet/gnome-pilot-pdialog.c:430
+#, fuzzy
+msgid "The request to get PDA ID failed"
+msgstr "パイロットID の取得に失敗しました"
+
+#: ../capplet/gnome-pilot-pdialog.c:470
+#, fuzzy
+msgid "The request to set PDA ID failed"
+msgstr "パイロットID の設定に失敗しました"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+#, fuzzy
+msgid "/dev/ttyUSB0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+#, fuzzy
+msgid "/dev/ttyUSB1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+#, fuzzy
+msgid "<b>Conduit Actions</b>"
+msgstr "コンジットの操作"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+#, fuzzy
+msgid "<b>Conduit Settings</b>"
+msgstr "コンジットの設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+#, fuzzy
+msgid "<b>PDA Attributes</b>"
+msgstr "パイロットの属性"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+#, fuzzy
+msgid "<b>PDA Identification</b>"
+msgstr "パイロットの識別情報"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "Add..."
+msgstr "追加..."
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "Choose Device"
+msgstr "デバイスの選択"
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid "Conduit Settings"
+msgstr "コンジットの設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Conduits"
+msgstr "コンジット"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"おめでとうございます。\n"
+"GNOME パイロットの設定が完了しました！\n"
+"\n"
+"GNOME パイロットの設定は、\n"
+"コントロールセンターの \"PalmOS のデバイス\" から\n"
+"いつでも変更することができます。\n"
+"\n"
+"パネルにパイロットリンクのアプレットを追加すると\n"
+"GNOME パイロットの同期を監視することができます。"
+
+#: ../capplet/gpilotd-capplet.glade.h:26
+msgid "Delete"
+msgstr "削除"
+
+#: ../capplet/gpilotd-capplet.glade.h:27
+#, fuzzy
+msgid "Description:"
+msgstr "コンジット・オプション"
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "Device Settings"
+msgstr "デバイスの設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+#, fuzzy
+msgid "Device:"
+msgstr "デバイス"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Devices"
+msgstr "デバイス"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Disable"
+msgstr "無効"
+
+#: ../capplet/gpilotd-capplet.glade.h:32 ../capplet/util.c:73
+#: ../capplet/util.c:419
+msgid "Disabled"
+msgstr "無効"
+
+#: ../capplet/gpilotd-capplet.glade.h:33
+msgid "Edit..."
+msgstr "編集..."
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Enable"
+msgstr "有効"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+#, fuzzy
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "パイロットに保存するユーザ名を入力して下さい"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "Get the Owner's name and ID from the PDA"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+#, fuzzy
+msgid "I_rDA"
+msgstr "IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "Initial Sync"
+msgstr "最初の同期"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+#, fuzzy
+msgid "Ir_DA"
+msgstr "IrDA"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr "ネットワーク(_W)"
+
+#: ../capplet/gpilotd-capplet.glade.h:41 ../capplet/util.c:114
+msgid "None"
+msgstr "なし"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+#, fuzzy
+msgid "Owner Name and ID to set on the PDA"
+msgstr "パイロットにセットするユーザ名と ID"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+#, fuzzy
+msgid "PDA Attributes"
+msgstr "パイロットの属性"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+#, fuzzy
+msgid "PDA Identification"
+msgstr "パイロットの識別情報"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+#, fuzzy
+msgid "PDA Settings"
+msgstr "パイロットの設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "PDA:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "PDAs"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+#, fuzzy
+msgid "S_peed:"
+msgstr "速度"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+#, fuzzy
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "パイロット関連のファイルを全て格納する親フォルダをセットして下さい"
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Settings..."
+msgstr "設定..."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "成功"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+#, fuzzy
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "パイロットの名前で、お使いのパイロットを識別するために使用されます"
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+#, fuzzy
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"この ID はお使いのパイロットを識別するもので、他のパイロットと区別するために"
+"重複しない数値にして下さい"
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+#, fuzzy
+msgid "Ti_meout:"
+msgstr "タイムアウト"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "GNOME パイロットにようこそ！"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"GNOME パイロットを初めて起動したようです。\n"
+"これ以降のステップで、\n"
+"GNOME パイロットを同期するための設定を行います。\n"
+"設定された項目は、コントロールセンターの\n"
+"\"PalmOS のデバイス\"でいつでも変更できます。\n"
+"\n"
+"'進む' で続行します。\n"
+"'キャンセル' で中止します。"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "_Action:"
+msgstr "操作(_A):"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Add..."
+msgstr "追加(_A)..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+#, fuzzy
+msgid "_Delete"
+msgstr "削除"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:69
+#, fuzzy
+msgid "_Device:"
+msgstr "デバイス(_D)"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Edit..."
+msgstr "編集(_E)..."
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:71
+#, fuzzy
+msgid "_Get from PDA"
+msgstr "パイロットから取得(_G)"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:72
+#, fuzzy
+msgid "_Local folder:"
+msgstr "ローカルベースディレクトリ(_L)"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_Name of PDA:"
+msgstr ""
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:74
+#, fuzzy
+msgid "_Name:"
+msgstr "名前(_N)"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:75
+#, fuzzy
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "いいえ。このパイロットで同期を行うのは初めてです。(_N)"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:76
+#, fuzzy
+msgid "_One time action:"
+msgstr "一回だけの操作(_O):"
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_Owner:"
+msgstr ""
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_PDA ID:"
+msgstr ""
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:79
+#, fuzzy
+msgid "_Send to PDA"
+msgstr "パイロットに送信(_S)"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+#, fuzzy
+msgid "_Serial"
+msgstr "シリアル"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+#, fuzzy
+msgid "_Type:"
+msgstr "接続の種類"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_USB"
+msgstr "USB(_U)"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../capplet/gpilotd-capplet.glade.h:83
+#, fuzzy
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "はい。このパイロットを用いて以前に同期を行なったことがあります。(_Y)"
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "ウィザードのみ起動"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "パイロットデーモンのアプレットの初期化に失敗しました"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+#, fuzzy
+msgid "Error loading PDA state, aborting"
+msgstr "パイロットの情報を読み取れません。強制終了します"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "パイロットデーモンに接続できません"
+
+#: ../capplet/gpilotd-control-applet.c:132
+#, fuzzy
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr ""
+"パイロットまたはクレードルが既に設定されている場合はウィザードが起動できませ"
+"ん。"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOS デバイスの設定を行います"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS のデバイス"
+
+#: ../capplet/util.c:80 ../capplet/util.c:421
+msgid "Enabled"
+msgstr "有効"
+
+#: ../capplet/util.c:224
+msgid "You must have at least one device setup"
+msgstr "少なくとも一つ以上のデバイスを設定する必要があります"
+
+#: ../capplet/util.c:393
+msgid "Synchronize"
+msgstr "同期"
+
+#: ../capplet/util.c:394
+#, fuzzy
+msgid "Copy from PDA"
+msgstr "パイロットからコピー"
+
+#: ../capplet/util.c:395
+#, fuzzy
+msgid "Copy to PDA"
+msgstr "パイロットへコピー"
+
+#: ../capplet/util.c:396
+#, fuzzy
+msgid "Merge from PDA"
+msgstr "パイロットから結合"
+
+#: ../capplet/util.c:397
+#, fuzzy
+msgid "Merge to PDA"
+msgstr "パイロットへ結合"
+
+#: ../capplet/util.c:400
+msgid "Use conduit settings"
+msgstr "現在の設定を使用する"
+
+#: ../capplet/util.c:408
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:409
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:410
+msgid "Network"
+msgstr "ネットワーク"
+
+#: ../capplet/util.c:411
+msgid "Serial"
+msgstr "シリアル"
+
+#: ../capplet/util.c:459
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"指定したフォルダは存在しますが、パーミッションが正しくありません。\n"
+"修正するか他のフォルダに変更して下さい。"
+
+#: ../capplet/util.c:464
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"指定したファイルは存在しますが、フォルダではないようです。\n"
+"フォルダを作成するか他のフォルダに変更して下さい。"
+
+#: ../capplet/util.c:471
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"指定したフォルダを作成することができません。\n"
+"パーミッションを修正するか他のフォルダに変更して下さい。"
+
+#: ../capplet/util.c:476
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"指定したフォルダは正しくありません。\n"
+"他のフォルダに変更して下さい。"
+
+#: ../capplet/util.c:583
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr ""
+
+#: ../capplet/util.c:594
+msgid "Read/Write permissions failed on"
+msgstr "読み/書きのアクセス権が不正です"
+
+#: ../capplet/util.c:596
+msgid "Check the permissions on the device and retry"
+msgstr "デバイスのアクセス権を確認してやり直して下さい。"
+
+#: ../capplet/util.c:610 ../gpilotd/gpilotd.c:1286
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "削除済みデータベースの確認"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "%s の名前変更"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "%s へ"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s は最後の同期から変更されていません"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "%s のバックアップ中"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "バックアップファイル %s が作れません"
+
+#: ../conduits/backup/backup_conduit.c:733
+msgid "Collecting restore information..."
+msgstr "リストア情報の収集中..."
+
+#: ../conduits/backup/backup_conduit.c:856
+#, fuzzy
+msgid "Backup directory:"
+msgstr "バックアップ・フォルダ"
+
+#: ../conduits/backup/backup_conduit.c:867
+#, fuzzy
+msgid "Only backup changed bases:"
+msgstr "変更があったものだけを保存する"
+
+#: ../conduits/backup/backup_conduit.c:875
+#, fuzzy
+msgid "Remove local base if deleted on PDA:"
+msgstr "パイロットで削除したら、ローカルのフォルダも削除する"
+
+#: ../conduits/backup/backup_conduit.c:883
+#, fuzzy
+msgid "# of old backups to keep:"
+msgstr "# 保持するための古いバックアップ"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../conduits/backup/backup_conduit.c:928
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"指定したバックアップディレクトリは存在しますが、アクセス権が正しく\n"
+"ありません。修正するかほかのディレクトリに変更してください。"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../conduits/backup/backup_conduit.c:933
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"指定したバックアップファイルは存在しますが、ディレクトリではありません。\n"
+"ディレクトリにするか、ほかのディレクトリに変更してください。"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../conduits/backup/backup_conduit.c:940
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"指定したバックアップディレクトリを作成できませんでした。\n"
+"指定したパスのアクセス権を確認するか、ほかのディレクトリに変更してください。"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../conduits/backup/backup_conduit.c:945
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"バックアップディレクトリとして指定したパスは正しくありません。\n"
+"ほかのディレクトリに変更してください。"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "%s のインストールに失敗しました"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "%2$s から %1$s のインストール中..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "%s のインストール中..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "直ちにインストールする"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "あとでインストールする"
+
+#: ../conduits/file/gpilot_install_file.c:46
+#, fuzzy
+msgid "PDA to install to"
+msgstr "パイロットにインストール"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr ""
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+#, fuzzy
+msgid "Unable to get PDA names"
+msgstr "パイロットの名前を取得できません"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "ファイルが見つかりません :\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "%s のインストール中:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "インストールするファイルがありません"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"クレードルの HotSync を押して開始するか、\n"
+"キャンセルボタンで処理を中止できます。"
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "GNOME パイロット・デーモン"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+#, fuzzy
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "ローカルで変更したパイロットのデータが削除されました。削除しません。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+#, fuzzy
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr ""
+"パイロット上で変更されたローカルのデータが削除されました。削除しません。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+#, fuzzy
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr ""
+"結合時に重複が発生しました。パイロットとローカルのデータがすり替わります。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+#, fuzzy
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr ""
+"アーカイブと変更箇所が重複しています。パイロットとローカルのデータがすり替わ"
+"ります。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+#, fuzzy
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr ""
+"アーカイブと変更箇所が重複しています。ローカルのデータをパイロットに送りまし"
+"た。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+#, fuzzy
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr ""
+"アーカイブと変更箇所が重複しています。パイロットのデータをローカルに保存しま"
+"した。\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "コンジットの初期化に失敗しました。処理を中止します。"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+#, fuzzy
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "パイロットデータベースからデータを削除できません。処理を終了します。"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "コンジットがデータを返しませんでした"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"ローカルのデータベースから全てのデータを削除できません。処理を終了します。"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "コンジットでエラーです。新しく追加されたデータが見つかりません。"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+#, fuzzy
+msgid "Copy to PDA failed!"
+msgstr "パイロットへのコピーに失敗しました！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+#, fuzzy
+msgid "Copy from PDA failed!"
+msgstr "パイロットからのコピーに失敗しました！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+#, fuzzy
+msgid "Merge to PDA failed!"
+msgstr "パイロットへの結合に失敗しました！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+#, fuzzy
+msgid "Merge from PDA failed!"
+msgstr "パイロットからの結合に失敗しました！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "同期に失敗しました！"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "デバイス %s (%s) を開けません: 理由 \"%s\"."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"デバイス %s (%s) を開けません。\n"
+"理由: \"%s\""
+
+#: ../gpilotd/gnome-pilot-structures.c:517
+#: ../gpilotd/gnome-pilot-structures.c:566
+#: ../gpilotd/gnome-pilot-structures.c:594
+#: ../gpilotd/gnome-pilot-structures.c:620
+msgid "Unknown device type"
+msgstr "不明なデバイス(種類)"
+
+#: ../gpilotd/gnome-pilot-structures.c:635
+msgid "Number of devices is configured to 0"
+msgstr "デバイスの数が 0 に設定されています"
+
+#: ../gpilotd/gnome-pilot-structures.c:637
+#, fuzzy
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"クレードルが未設定です。\n"
+"GNOME パイロットの設定を行なうには gpilotd-control-applet\n"
+"を起動します (またはコントロールセンターから)。"
+
+#: ../gpilotd/gnome-pilot-structures.c:658
+msgid "No accessible devices available"
+msgstr "利用可能なデバイスがありません"
+
+#: ../gpilotd/gnome-pilot-structures.c:673
+#, fuzzy
+msgid "Number of PDAs is configured to 0"
+msgstr "パイロットの数が 0 に設定されています"
+
+#: ../gpilotd/gnome-pilot-structures.c:675
+#, fuzzy
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"パイロットが設定されていません。\n"
+"gpilotd-control-applet (またはコントロールセンター)\n"
+"を起動して設定を行って下さい。"
+
+#: ../gpilotd/gpilotd.c:233
+#, fuzzy
+msgid "Unable to bind to PDA"
+msgstr "パイロットに接続できません"
+
+#: ../gpilotd/gpilotd.c:369
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:384
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+
+#: ../gpilotd/gpilotd.c:475
+#, fuzzy, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "不明なパイロットです。ID とユーザが %ld と一致しません"
+
+#: ../gpilotd/gpilotd.c:482
+#, fuzzy
+msgid "Use gnomecc to configure PDA"
+msgstr "パイロットを設定する場合はコントロールセンターを使用して下さい"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:487
+#, fuzzy, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"不明なパイロット - ID %ld にマッチするパイロットはありません。\n"
+"コントロールセンターでパイロットの ID を設定して下さい。"
+
+#: ../gpilotd/gpilotd.c:511
+#, fuzzy, c-format
+msgid "Device %s has %d events"
+msgstr "クレードル %s に %d 個のイベントがあります。"
+
+#: ../gpilotd/gpilotd.c:524
+msgid "Setting userinfo..."
+msgstr "ユーザ情報を設定中..."
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Sync continues"
+msgstr "同期の続行"
+
+#: ../gpilotd/gpilotd.c:548
+msgid "Getting userinfo..."
+msgstr "ユーザの情報を取得中..."
+
+#: ../gpilotd/gpilotd.c:610
+#, fuzzy
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync 要求が見つかりました。パイロットを同期します"
+
+#: ../gpilotd/gpilotd.c:612
+#, fuzzy
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HostSync ボタンで同期を開始します。"
+
+#: ../gpilotd/gpilotd.c:614
+#, fuzzy, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "パイロットの ID は %ld、名前は %s、所有者は %s です。"
+
+#: ../gpilotd/gpilotd.c:624
+#, c-format
+msgid "On host %s\n"
+msgstr "ホスト %s 上\n"
+
+#: ../gpilotd/gpilotd.c:626
+#, c-format
+msgid "On host %d\n"
+msgstr "ホスト %d 上\n"
+
+#: ../gpilotd/gpilotd.c:645
+msgid "Synchronization ended"
+msgstr "同期が終了しました。"
+
+#: ../gpilotd/gpilotd.c:648
+msgid "Synchronization ended early"
+msgstr "早すぎる最後の同期"
+
+#: ../gpilotd/gpilotd.c:680
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"基底フォルダ %s が正しくありません。\n"
+"修正するか、もしくはコントロールセンターで別のフォルダを選択して下さい。"
+
+#: ../gpilotd/gpilotd.c:693
+#, fuzzy, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"不明なパイロット - ID %ld にマッチするパイロットはありません。\n"
+"コントロールセンターでパイロットの ID を設定して下さい。"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:744
+#, fuzzy
+msgid "An error occurred while getting the PDA's system data"
+msgstr "パイロットのシステム情報を取得する際にエラーが発生しました"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:753
+#, fuzzy
+msgid "An error occurred while getting the PDA's user data"
+msgstr "パイロットのユーザ情報を取得する際にエラーが発生しました"
+
+#: ../gpilotd/gpilotd.c:758
+#, fuzzy, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "クレードル %s (%s) のイベントが完了しました"
+
+#: ../gpilotd/gpilotd.c:817
+#, c-format
+msgid "Woke on %s"
+msgstr "%s で起動しました。"
+
+#: ../gpilotd/gpilotd.c:898
+#, fuzzy, c-format
+msgid "Woke on network: %s"
+msgstr "%s で起動しました。"
+
+#: ../gpilotd/gpilotd.c:1448
+#, fuzzy, c-format
+msgid "Watching %s (network)"
+msgstr "%s (%s) の監視中です。"
+
+#: ../gpilotd/gpilotd.c:1450
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s (%s) の監視中です。"
+
+#: ../gpilotd/gpilotd.c:1464
+msgid "Exiting (caught SIGTERM)..."
+msgstr "終了します。(SIGTERM が発生)..."
+
+#: ../gpilotd/gpilotd.c:1473
+msgid "Exiting (caught SIGINT)..."
+msgstr "終了します。(SIGINT が発生)..."
+
+#: ../gpilotd/gpilotd.c:1505
+msgid "Unable to create file installation queue directory"
+msgstr "インストール待ちフォルダを生成できません。"
+
+#: ../gpilotd/gpilotd.c:1555
+msgid "Shutting down devices"
+msgstr "デバイスを shutdown します。"
+
+#: ../gpilotd/gpilotd.c:1557
+msgid "Rereading configuration..."
+msgstr "設定の再読み込み中..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "コンジットの一覧に非バックアップ用のコンジットがあります。"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s のバックアップをとりました。\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s のバックアップに失敗しました。\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "同期情報の収集中..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s の同期中です。\n"
+
+#: ../gpilotd/manager.c:446
+#, fuzzy, c-format
+msgid "Copy to PDA %s\n"
+msgstr "パイロット %s へコピー\n"
+
+#: ../gpilotd/manager.c:464
+#, fuzzy, c-format
+msgid "Copy from PDA %s\n"
+msgstr "パイロット %s からコピー\n"
+
+#: ../gpilotd/manager.c:482
+#, fuzzy, c-format
+msgid "Merge to PDA %s\n"
+msgstr "パイロット %s へ結合\n"
+
+#: ../gpilotd/manager.c:500
+#, fuzzy, c-format
+msgid "Merge from PDA %s\n"
+msgstr "パイロット %s から結合\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "コンジット %s の最初の同期です..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "不明な同期命令です (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d 個のコンジットを実体化しています..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "設定の中に不明なコンジット \"%s\" があります！"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "コンジット \"%s\" の読み込みに失敗しました！"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "コンジット \"%s\" の読み込みに失敗しました！\n"
+
+#: ../gpilotd/manager.c:783
+#, fuzzy, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "ユーザ/ID を %d/%s に設定中..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "コンジット %s が見つかりません"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "コンジット %s は使用できません"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(不明な DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "キューでエラーです。エントリが存在しません。"
+
+#: ../gpilotd/queue_io.c:436
+#, fuzzy, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "エラー: パイロット %d 用の要求がありません。(リクエスト %d)"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "モジュールはサポートされていません。致命的なエラーです！"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "システム情報の取得"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "デーモンを停止"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "デーモンを停止しない"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "デーモンを再起動"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "ユーザ ID とユーザ名のセット"
+
+#: ../utils/gpilotd-client.c:44
+#, fuzzy
+msgid "ID for the PDA"
+msgstr "パイロット用の ID"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "インストールファイル"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FILE"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "復帰するフォルダ"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIRECTORY"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "コンジットの起動"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "セットするユーザ名"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "USERNAME"
+
+#: ../utils/gpilotd-client.c:49
+#, fuzzy
+msgid "Monitor the specified PDA's actions"
+msgstr "指定したパイロットの動作を監視"
+
+#: ../utils/gpilotd-client.c:50
+#, fuzzy
+msgid "Monitor all PDAs"
+msgstr "全てのパイロットを監視"
+
+#: ../utils/gpilotd-client.c:51
+#, fuzzy
+msgid "list PDAs by login (all for all pilots)"
+msgstr "ログインされたパイロットの一覧表示 (全てのパイロットが対象)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:52
+#, fuzzy
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "操作するパイロットの指定 (デフォルトは MyPilot)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTNAME"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "操作するクレードルの指定 (デフォルトは Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "CRADLENAME"
+
+#: ../utils/gpilotd-client.c:54
+#, fuzzy
+msgid "List the specifed PDA's bases"
+msgstr "指定したパイロットベースの一覧表示"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"注意して下さい！！\n"
+"これは GNOME パイロットのパッケージに含まれるツールの一つです。\n"
+"何をするか分からない場合は、このツールを使わないで下さい。"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "有効なコンジットを一覧表示"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "操作するコンジット"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "全ての属性を一覧表示"
+
+#: ../utils/gpilotdcm-client.c:29
+#, fuzzy
+msgid "specify PDA to operate on"
+msgstr "操作するパイロットの指定"
+
+#
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+# SUN TECH REVIEWED
+#: ../utils/gpilotdcm-client.c:29
+#, fuzzy
+msgid "PDA_ID"
+msgstr "ID(_I)"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "属性の一覧表示"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "有効なコンジットと状態を一覧表示"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "指定したコンジットは有効"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "指定したコンジットは無効"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "有効です。ゆっくりと初期同期して下さい"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "コンジットの実体化と解放"
+
+#~ msgid "Pilot ID"
+#~ msgstr "パイロットID"
+
+#~ msgid "Synchronizing..."
+#~ msgstr "同期中..."
+
+#~ msgid "A dnd and gui monitor for gpilotd.\n"
+#~ msgstr "gpilotd 用のドラッグ＆ドロップ GUI モニタです。\n"
+
+#~ msgid "UserName"
+#~ msgstr "ユーザ名"
+
+#~ msgid "Port"
+#~ msgstr "デバイス"
+
+#~ msgid "/dev/ttyS2"
+#~ msgstr "/dev/ttyS2"
+
+#~ msgid "/dev/ttyS3"
+#~ msgstr "/dev/ttyS3"
+
+#~ msgid "/dev/ttyqe"
+#~ msgstr "/dev/ttyqe"
+
+#~ msgid "Action:"
+#~ msgstr "操作:"
+
+#~ msgid "Cradle Settings"
+#~ msgstr "クレードルの設定"
+
+#~ msgid "Get User Name and ID from existing pilot that was used before."
+#~ msgstr "パイロットから以前使用したユーザ名と ID を取得します"
+
+#~ msgid "Get from pilot"
+#~ msgstr "パイロットから取得"
+
+#~ msgid "Local basedir"
+#~ msgstr "ローカル・フォルダ"
+
+#~ msgid "No, I've never used sync software with this pilot before."
+#~ msgstr "いいえ。このパイロットで同期を行うのは初めてです。"
+
+#~ msgid "One Time Action:"
+#~ msgstr "一回だけの操作:"
+
+#~ msgid "Pilot Name"
+#~ msgstr "パイロットの名前"
+
+#~ msgid "Pilot Name:"
+#~ msgstr "パイロット名:"
+
+#~ msgid "Pilots"
+#~ msgstr "パイロット"
+
+#~ msgid "Send to pilot"
+#~ msgstr "パイロットに送信"
+
+#~ msgid "Set User Name and ID to a new pilot."
+#~ msgstr "ユーザ名と ID を新しいパイロットにセットします"
+
+#~ msgid "User Name"
+#~ msgstr "ユーザの名前"
+
+#~ msgid "User Name:"
+#~ msgstr "ユーザ名:"
+
+#~ msgid "Yes, I've used sync software with this pilot before."
+#~ msgstr "はい。このパイロットを用いて以前に同期を行ったことがあります。"
+
+#~ msgid "PILOT"
+#~ msgstr "PILOT"
+
+#~ msgid "Watching %s (%s, %s)"
+#~ msgstr "%s (%s, %s) を監視中です。"
+
+#~ msgid "Unable to open or create file %s with read/write privs"
+#~ msgstr "ファイル %s をオープンする許可がありません。"
+
+#~ msgid "Unable to find home directory for uid %d"
+#~ msgstr "UID が %d のホーム・フォルダを見つけられません。"
+
+#~ msgid "PILOTID"
+#~ msgstr "PILOTID"

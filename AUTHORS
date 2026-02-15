@@ -1,0 +1,17 @@
+These are the authors of the various programs in this distribution.
+Some have worked on all parts some of worked on only a few.  Please see 
+the AUTHORS file in each respective directory for more detailed 
+information.
+
+JP Rosevear  <jpr@novell.com>
+Matt Davey <mcdavey@mrao.cam.ac.uk>
+Halton Huo <haltonhuo@gnome.org>
+
+Previous authors:
+Manish Vachharajani <mvachhar@vger.rutgers.edu>
+Neil Vachharajani <nvachhar@pluto.njcc.com>
+Michael Fulbright <msf@redhat.com>
+Eskil Heyn Olsen <eskil@eazel.com> (lead developer)
+Jonathan <jrb@redhat.com>
+Vadim Strizhevsky <vadim@strizhevsky.com> (developer)
+Dave Camp <campd@oit.edu> (USB support)

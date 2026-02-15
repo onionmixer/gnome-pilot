@@ -1,0 +1,18 @@
+Source: gnome-pilot
+Section: gnome
+Priority: optional
+Maintainer: onion <onionmixer@gmail.com>
+Build-Depends: debhelper (>= 13), dh-autoreconf, autotools-dev, pkg-config,
+ pilot-link (>= 0.13.1),
+ libgtk-4-dev (>= 4.6), libglib2.0-dev (>= 2.72),
+ libgudev-1.0-dev, libxml2-dev, gettext,
+ libdbusmenu-glib-dev
+Standards-Version: 4.6.0
+
+Package: gnome-pilot
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, pilot-link (>= 0.13.1)
+Description: GNOME PalmOS device synchronization framework
+ gnome-pilot provides a framework for synchronizing PalmOS handheld
+ devices with the GNOME desktop. It includes the gpilotd daemon,
+ libraries, and conduit infrastructure.

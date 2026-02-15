@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY appversion "2.0">
+<!ENTITY docversion "2.0.1">
+<!ENTITY pubdate "May, 2003">
+]>
+<article id="index" lang="cs">
+  <articleinfo>
+    <title>Synchronizační nástroje GNOME PalmOS</title>
+    <abstract role="description">
+	<para>Uživatelská příručka k nástrojům gnome-pilot pro použití se zařízením PalmOS PDA.</para>
+    </abstract>
+    
+    <authorgroup>
+      <author><firstname>Aaron</firstname><surname>Weber</surname></author>
+    </authorgroup>
+
+    <publisher role="maintainer">
+      <publishername>Ximian, Inc.</publishername>
+    </publisher>
+
+    <copyright>
+      <year>2003</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <title>Příručka k synchronizačním nástrojům zařízení PalmOS</title>
+    
+   <releaseinfo>Tohle je příručka ve verzi 2.0.1 ke gnome-pilot. Popisuje balík gnome-pilot ve verzi 2.0. Ten se používá k nastavení a provádění synchronizace mezi zařízeními PalmOS a vaším pracovním prostředím GNOME.</releaseinfo>
+
+    <revhistory>
+      <revision>
+        <revnumber>Synchronizační nástroje GNOME PalmOS</revnumber>
+        <date>květen 2003</date>
+      </revision>
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License (GFDL) ve verzi 1.1 nebo v jakékoli další verzi vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopii licence GFDL naleznete ve stránkách s nápovědou GNOME nebo v souboru COPYING-DOCS dodávaném s tímto softwarem.</para>
+         <para>Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte přiložit kopii licence dle popisu v oddílu 6 dané licence.</para>
+
+        <para>Některé použité názvy produktů a služeb jsou ochranné nebo registrované známky různých firem a organizací. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+    </legalnotice>
+  </articleinfo>
+
+  <para>Balík <systemitem>gnome-pilot</systemitem> s volitelným modulem <systemitem>evolution-pilot</systemitem> vám umožňuje přesouvat informace mezi vaším PDA PalmOS a vaším pracovním prostředím GNOME. Než začnete synchronizovat, musíte spustit nástroj pro nastavení. Normálně nástroj pro nastavení spustí také démona GNOME Pilot – <systemitem>gpilotd</systemitem>. Pokud neběží, můžete jej spustit příkazem <command>/usr/libexec/gpilotd</command>. Případně můžete démona spustit přes aplet GNOME Pilot na panelu. Aplet na svůj panel GNOME přidáte tak, že na volné místo na panelu kliknete pravým tlačítkem a zvolíte <menuchoice><guimenu>Přidat na panel</guimenu><guimenuitem>Aplet Pilot</guimenuitem></menuchoice>.</para>
+
+
+
+
+  <sect1 id="conftool">
+    <title>Nástroj nastavení GNOME Pilot</title>
+  <para>Nástroj nastavení GNOME Pilot spustíte dvojitým kliknutím na ikonu Palm Pilot v Ovládacím centru GNOME nebo zadáním příkazu <command>gpilotd-control-applet</command>. Rovněž jej můžete spustit kliknutím na aplet GNOME Pilot na svém panelu.</para>
+  
+  <para>V nástroji <interface>Nastavení gnome-pilot</interface> jsou tři karty: <guilabel>PDA</guilabel>, <guilabel>Zařízení</guilabel> a <guilabel>Moduly</guilabel>. Při prvním spuštění nástroje GNOME Pilot budete navíc nastavením provedeni za pomoci průvodce.</para>
+
+  <sect2 id="assistant">
+    <title>Průvodce nastavením GNOME Pilot</title>
+      <para>Průvodce nastavením vás provede přípravou vašeho PalmOS pro synchronizaci s vaším pracovním systémem. V jednotlivých krocích zadávejte požadované informace a pak klikejte na tlačítko <guibutton>Vpřed</guibutton>.</para>
+      <para>Prvním krokem je uvést, jak je vaše PDA připojeno k vašemu počítači. Více informací o údajích požadovaných v tomto kroku najdete v oddíle <xref linkend="setup-conftool-devices"/>.</para>
+      <para>Druhým krokem je identifikace zařízení. Jestliže jste již dříve používali synchronizační software s PDA, tak má přiděleno synchronizační ID, které od něj může počítač získat. Pokud ne, můžete jméno vlastníka a ID v PDA nastavit ze svého počítače.</para>
+
+      <para>Když máte tento krok dokončen, software GNOME Pilot kontaktuje vaše zařízení PalmOS a získá nebo nastaví jméno vlastníka a další informace.</para>
+      <para>Posledním krokem je volba názvu, který se má použít k odkazování na nastavené zařízení PalmOS a složka ve vašem systému, ve které se budou uchovávat zálohy a další data.</para>
+
+    </sect2>
+
+
+  <sect2 id="conftool-pilots">
+    <title>Přidávání nebo úprava položek PDA: karta „PDA“</title>
+    <para>Na kartě <guilabel>PDAs</guilabel> jsou vypsána zařízení PDA, která máte nastavená. Pokud jste před tím nepoužili nástroj nastavení gnome-pilot, nebudete mít v tomto seznamu žádnou položku a nástroj otevře nové okno, které vás provedete procesem vytvoření nové. Pro přidání nového PDA, klikněte na <guibutton>Přidat…</guibutton>. Pro úpravu stávající položky PDA dotyčné PDA vyberte a klikněte na <guibutton>Upravit…</guibutton>. Pro smazání položky dotyčnou položku vyberte a klikněte na <guibutton>Odstranit</guibutton>.</para>
+
+    <para>Když upravujete nebo vytváříte položku, budete dotázáni na čtyři informace: <variablelist>
+        <varlistentry>
+          <term>Vlastník</term>
+          <listitem>
+            <para>Jde o jméno vlastníka použité ve vašem PDA. Pokud má váš pilot jméno již nastavené, můžete jej z něj získat kliknutím na tlačítko <guibutton>Získat z PDA</guibutton>. Případně můžete jméno vlastníka nastavit nebo změnit zadáním jména a kliknutím na tlačítko <guibutton>Odeslat do PDA</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>ID PDA</term>
+          <listitem>
+            <para>Jedná se o identifikační číslo z vašeho PDA. Jeho hodnotu můžete stáhnout z PDA kliknutím na tlačítko <guibutton>Získat z PDA</guibutton>. Případně můžete ID nastavit nebo změnit zadáním čísla a kliknutím na tlačítko <guibutton>Odeslat do PDA</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Název PDA</term>
+          <listitem>
+            <para>Jedná se o název, podle kterého budete PDA poznávat. Můžete jej nazvat třeba MůjPilot nebo Palm5 nebo Pepa.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Místní složka</term>
+          <listitem>
+            <para>Jde o složku, ve které se budou uchovávat informace zálohované z PDA.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist></para>
+  </sect2>
+  <sect2 id="setup-conftool-devices">
+    <title>Přidávání nebo úprava položek na kartě nastavení Zařízení</title>
+    <para>Karta nastavení zařízení řídí způsob, jakým systém vašeho počítač hledá váš PDA jako hardware. Pro přidání položky do seznamu klikněte na <guibutton>Přidat…</guibutton> nebo pro úpravu některé z položek klikněte na <guibutton>Upravit…</guibutton> Pro smazání položky ji vyberte a klikněte na <guibutton>Odstranit</guibutton>.</para>
+    <para>Pro každou položku můžete zvolit:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Název</term>
+        <listitem>
+          <para>Jde o název, pod kterým bude zařízení zobrazeno v seznamu. Můžete si zvolit jakékoliv jméno uznáte za vhodné.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Typ</term>
+        <listitem>
+          <para>Vyberte typ připojení, které máte: sériové, USB, IrDA (infračervené), síť nebo Bluetooth. Připojení Bluetooth vyžaduje, aby byl pilot-link přeložen s podporou Bluetooth.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Časový limit</term>
+        <listitem>
+          <para>Množství času v sekundách, po které se zkouší připojit do systému. Pokud ani po tomto čase není mezi počítačem a PDA žádná komunikace, systém pokusy vzdá.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Zařízení</term>
+        <listitem>
+          <para>Pro typy zařízení USB, sériová a IrDA se PDA připojuje k vašemu počítači jako speciální soubor ve složce <systemitem>/dev</systemitem>. Název souboru se liší systém od systému, většinou ale bude <systemitem>/dev/pilot</systemitem>. Další možné varianty jsou <systemitem>/dev/ttyS0</systemitem> nebo <systemitem>/dev/ttyS1</systemitem> pro sériové kolíbky (pod Windows by se jednalo o porty COM) a <systemitem>/dev/ttyUSB0</systemitem> nebo <systemitem>/dev/ttyUSB1</systemitem> pro kolíbky USB. Pro zapnutí synchronizace pomocí libusb (v protikladu k usbserial) můžete použít speciální název zařízení <systemitem>usb:</systemitem>. Tato možnost ale nemusí být dostupná, záleží na použité verzi pilot-link.</para>
+        
+          <para>Ujistěte se, že váš uživatelský účet má pro toto zařízení oprávnění číst, zapisovat, spouštět. V případě potřeby můžete oprávnění přidat – pomocí příkazu <command>su</command> se staňte superuživatelem root a zadejte příkaz <command>chmod a+wrx /dev/ttyS0</command>. Zařízení /dev/ttyS0 nahraďte názvem zařízení, které nastavujete.</para>
+
+	  <para>Některá zařízení, jako <systemitem>/dev/ttyUSB1</systemitem>, existují jen po dobu pokusu PDA o synchronizaci. V takovém případě budete muset oprávnění nastavit pomocí systému <systemitem>udev</systemitem>.</para>
+          <para>Pokud nemáte vybráno správné zařízení, obdržíte po kliknutí na <guibutton>OK</guibutton> chybovou zprávu.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Rychlost</term>
+        <listitem>
+          <para>Pro připojení USB, sériové a IrDA vyberte v rozbalovacím seznamu číslo. Vyšší číslo představuje požadavek na rychlejší přenos informací systémem. Normálně byste údaj neměli měnit, výchozí hodnota je nastavena na nejrychlejší hodnotu, kterou váš systém poskytuje. Přesto si ji můžete podle přání upravit na vyšší nebo nižší. Pokud se při vyšších rychlostech setkáte s problémy, může vám snížení rychlosti pomoci.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </sect2>
+  <sect2 id="setup-conduits">
+    <title>Nastavení modulů</title>
+
+    <para>Modul je specializovaný program, který přenáší data mezi vaším počítačem a vaším PDA. Balík <application>gnome-pilot</application> obsahuje několik modulů a můžete nainstalovat i další, jako třeba pro Ximian Evolution.</para>
+
+    <para>Každý nastavený PDA může mít svoji vlastní sadu přenosů a jejich nastavení.</para>
+
+    <para>Když je modul zakázán, je příslušný typ dat při synchronizaci ignorován. Když je modul povolen, jsou jeho data synchronizována v souladu s jeho nastaveními. Pokud chcete modul povolit nebo zakázat, vyberte jej a klikněte na tlačítko <guilabel>Povolit</guilabel> nebo <guilabel>Zakázat</guilabel> napravo od seznamu modulů.</para>
+    
+    <para>Pokud chcete upravit nastavení, vyberte modul a klikněte na tlačítko <guilabel>Nastavení…</guilabel> Každý z modulů má nejméně dvě nastavení: <guilabel>Akce</guilabel>, která se má provést při každé synchronizaci, a <guilabel>Jednorázová akce</guilabel>, která se má provést při příští synchronizaci.</para>
+
+    <para>Ne všechny moduly mají všechny akce. Seznam možných akcí je: <variablelist>
+      <varlistentry>
+        <term>Vypnuto</term>
+        <listitem>
+          <para>Nic nedělat.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Synchronizovat</term>
+        <listitem>
+          <para>Zajistí, že data budou stejná na obou místech, zkopíruje nová data z PDA do počítače a z počítače do PDA.</para>
+        </listitem>
+      </varlistentry> 
+
+      <varlistentry>
+        <term>Kopírovat do pilota</term>
+        <listitem>
+          <para>Kopírovat veškerá data z počítače do pilota. Nová data přidaná v pilotu nebudou zkopírována zpět do počítače.</para>
+        </listitem>
+      </varlistentry> 
+
+
+      <varlistentry>
+        <term>Kopírovat z pilota</term>
+        <listitem>
+          <para>Kopírovat veškerá data z pilota do počítače. Nová data přidaná v počítači nebudou zkopírována do pilota.</para>
+        </listitem>
+      </varlistentry> 
+
+    </variablelist></para>
+
+  <para>Mohou být dostupná i další nastavení, včetně Priorita modulu, které určuje pořadí, ve kterém jsou moduly použity, a <guilabel>Synchronizovat soukromé záznamy</guilabel>, které určuje, zda kopírovat nejen veřejné, ale i soukromé informace.</para>
+</sect2>
+<!--
+<sect1 id="advanced">
+  <title>The Advanced Tab</title>
+  <para>
+    The advanced tab allows you to set the Sync PCId. If you know this
+    number and wish to change it, enter it and then click
+    <guibutton>Close</guibutton>.
+  </para>
+</sect1>
+-->
+</sect1>
+
+<sect1 id="pilot-applet">
+  <title>Aplet Pilot</title>
+  <para>Aplet panelu GNOME Pilot sídlí na vašem panelu, dokud nejste připraveni k synchronizaci svého zařízení PalmOS. Pokud běží démon pro přístup k zařízením pilot, je ikona apletu vybarvena černo-bíle. Pokud démon neběží, je vybarvena černo-červeně. V případě pozastavení démona se objeví v černo-žlutém provedení.</para>
+  <para>Jednoduchým kliknutím levým tlačítkem na aplet se spustí nástroj nastavení GNOME Pilot.</para>
+  <para>K ostatním akcím se dostanete přes nabídku vyvolanou kliknutím pravým tlačítkem. Jsou to:</para>
+  <variablelist>
+      <varlistentry>
+        <term>Obnov…</term>
+        <listitem>
+          <para>Pokud ve svém zařízení PalmOS přijdete o všechna data, vyberte tuto položku, abyste je obnovili z dřívější zálohy.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Pozastavit démona</term>
+        <listitem>
+          <para>Pozastavit démona <application>gpilotd</application> aplikace GNOME Pilot. Když je démon pozastaven, změní se tato položka na <guilabel>Pokračovat</guilabel>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Restartovat</term>
+        <listitem>
+          <para>Zastavit a znovu spustit démona.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Poslední výsledek…</term>
+        <listitem>
+          <para>Zobrazit výsledky poslední provedené synchronizace.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Předvolby…</term>
+        <listitem>
+          <para>Zde klikněte, abyste mohli zvolit, co se má stát při kliknutí na aplet a zda se mají zobrazovat upozornění v dialogových oknech.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Nápověda</term>
+        <listitem>
+          <para>Zobrazit tuto přiručku.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>O aplikaci</term>
+        <listitem>
+          <para>Informace o aplikaci je jejích autorech.</para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term>Odstranit z panelu</term>
+        <listitem>
+          <para>Odstranit aplet z panelu.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Přesunout</term>
+        <listitem>
+          <para>Přesunou aplet myší. Pro zastavení přesouvání apletu myší klikněte.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+</sect1>
+
+
+
+</article>

@@ -1,0 +1,1704 @@
+# traditional Chinese translation of gnome-pilot
+# Copyright (C) 2001-2002, 2004 Free Software Foundation, Inc.
+# Jau-Shiung Liau <pesder@seed.net.tw>, 2001-2002.
+# Chao-Hsiung Liao <pesder.liao@msa.hinet.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot 2.0.14pre5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-07-10 00:41+0800\n"
+"PO-Revision-Date: 2006-07-02 23:05+0800\n"
+"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Utility"
+msgstr "公用程式"
+
+#: ../applet/pilot-applet.glade.h:1 ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose Pilot"
+msgstr "選擇 Pilot"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "Directory"
+msgstr "目錄"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Display notices"
+msgstr "顯示通知"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "Execute when clicked"
+msgstr "點選後執行"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync 內容"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "Pilot ID"
+msgstr "Pilot ID"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "Restore Pilot"
+msgstr "復原 Pilot"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "Sync cradle"
+msgstr "資料同步底座"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "gnome-Pilot 同步進度"
+
+#: ../applet/pilot.c:167
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s 正同步化中"
+
+#: ../applet/pilot.c:172
+msgid "Database %v of %u"
+msgstr "資料庫 %u 的 %v"
+
+#: ../applet/pilot.c:255
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "要求 %ld 已經完成\n"
+
+#: ../applet/pilot.c:276
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s 同步中：%s"
+
+#: ../applet/pilot.c:281
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s：開始\n"
+
+#: ../applet/pilot.c:295
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s 結束：%s"
+
+#: ../applet/pilot.c:300
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s：完成\n"
+
+#: ../applet/pilot.c:325
+msgid "%v of %u records"
+msgstr "%u 的 %v 筆資料"
+
+#: ../applet/pilot.c:401
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Pilot 現在正在同步化。\n"
+"請等候它結束。"
+
+#: ../applet/pilot.c:404
+msgid "Not connected. Please restart daemon."
+msgstr "尚未連線。請重新啟動伺服程式。"
+
+#: ../applet/pilot.c:406
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"無法連線至 gpilotd。\n"
+"請重新啟動伺服程式。"
+
+#: ../applet/pilot.c:422
+msgid "gnome-pilot applet"
+msgstr "gnome Pilot 面板程式"
+
+#: ../applet/pilot.c:424
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "版權所有 2000-2006 自由軟體基金會, Inc."
+
+#: ../applet/pilot.c:425
+msgid "A PalmOS PDA monitor.\n"
+msgstr "PalmOS PDA 監視器。\n"
+
+#: ../applet/pilot.c:517 ../applet/pilot.c:543
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "顯示說明文件時發生錯誤：%s"
+
+#: ../applet/pilot.c:581
+#, c-format
+msgid "cancelling %d"
+msgstr "正在取消 %d"
+
+#: ../applet/pilot.c:633
+#, c-format
+msgid "Restoring %s"
+msgstr "正在復原 %s"
+
+#: ../applet/pilot.c:675
+msgid "No directory to restore from."
+msgstr "沒有復原用之目錄。"
+
+#: ../applet/pilot.c:683
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"按下同步底座的同步化按鈕以便開始復原\n"
+"或取消此次操作。"
+
+#: ../applet/pilot.c:692
+msgid "Restore request failed"
+msgstr "復原的要求失敗了"
+
+#: ../applet/pilot.c:730
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Pilot 同步化正在進行中。\n"
+"確定要重新啟動伺服程式？"
+
+#: ../applet/pilot.c:740 ../applet/pilot.c:1309
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "嘗試連線至 GnomePolot 伺服程式"
+
+#: ../applet/pilot.c:756
+msgid "There's no last sync on record."
+msgstr "沒有最後一次同步化的記錄。"
+
+#: ../applet/pilot.c:796
+msgid "Continue"
+msgstr "繼續"
+
+#: ../applet/pilot.c:798
+msgid "Pause Daemon"
+msgstr "暫停伺服程式"
+
+#: ../applet/pilot.c:818
+msgid "Daemon paused..."
+msgstr "伺服程式已暫停..."
+
+#: ../applet/pilot.c:825 ../applet/pilot.c:978
+msgid "Ready to synchronize"
+msgstr "已準備好同步化"
+
+#: ../applet/pilot.c:959
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "尚未連線。重新啟動伺服程式以便再次連線"
+
+#: ../applet/pilot.c:1143
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s 的執行失敗了"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1269
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "正安裝“%s”到“%s”"
+
+#: ../applet/pilot.c:1279
+msgid "unknown dnd type"
+msgstr "未知的 Drag & Drop 種類"
+
+#: ../applet/pilot.c:1287
+msgid "destroy gpilot-applet"
+msgstr "刪除 gpilot-applet"
+
+#: ../applet/pilot.c:1372
+msgid "Cannot find pilot-applet.glade"
+msgstr "找不到 pilot-applet.glade"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "當按下小程式時要執行的指令"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "在彈出式選單中顯示通知"
+
+#: ../capplet/gnome-pilot-capplet.c:211 ../capplet/gpilotd-capplet.glade.h:85
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot 設定值"
+
+#: ../capplet/gnome-pilot-capplet.c:379 ../capplet/gnome-pilot-capplet.c:459
+msgid "Name"
+msgstr "名稱"
+
+#: ../capplet/gnome-pilot-capplet.c:381 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:383
+msgid "Owner"
+msgstr "擁有者"
+
+#: ../capplet/gnome-pilot-capplet.c:461
+msgid "Type"
+msgstr "類型"
+
+#: ../capplet/gnome-pilot-capplet.c:567
+msgid "Conduit"
+msgstr "Conduit"
+
+#: ../capplet/gnome-pilot-capplet.c:569
+msgid "Sync Action"
+msgstr "同步化動作"
+
+#: ../capplet/gnome-pilot-capplet.c:770
+#, c-format
+msgid "Are you sure you want to delete %s pilot?"
+msgstr "您確定要刪除 %s pilot？"
+
+#: ../capplet/gnome-pilot-capplet.c:794
+msgid "_Edit this PDA..."
+msgstr "編輯這個 P_DA..."
+
+#: ../capplet/gnome-pilot-capplet.c:795
+msgid "Edit the currently selected PDA"
+msgstr "編輯現在所選擇的 PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:797
+msgid "_Delete this PDA"
+msgstr "刪除這個 P_DA"
+
+#: ../capplet/gnome-pilot-capplet.c:798
+msgid "Delete the currently selected PDA"
+msgstr "刪除現在所選擇的 PDA"
+
+#: ../capplet/gnome-pilot-capplet.c:931
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "您確定要刪除 %s 裝置？"
+
+#: ../capplet/gnome-pilot-capplet.c:952
+msgid "_Edit this device..."
+msgstr "編輯這個設備(_E)..."
+
+#: ../capplet/gnome-pilot-capplet.c:953
+msgid "Edit the currently selected device"
+msgstr "編輯現在所選擇的設備"
+
+#: ../capplet/gnome-pilot-capplet.c:955
+msgid "_Delete this device"
+msgstr "刪除這個設備(_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:956
+msgid "Delete the currently selected device"
+msgstr "刪除現在所選擇的設備"
+
+#: ../capplet/gnome-pilot-capplet.c:1118
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "無法實體化 %s conduit。"
+
+#: ../capplet/gnome-pilot-capplet.c:1158
+msgid "_Enable this conduit"
+msgstr "啟動這個 conduit(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:1159
+msgid "Disable the currently selected conduit"
+msgstr "關閉現在所選擇的 conduit"
+
+#: ../capplet/gnome-pilot-capplet.c:1161
+msgid "_Disable this conduit"
+msgstr "關閉這個 conduit(_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:1162
+msgid "Enable the currently selected conduit"
+msgstr "啟動現在所選擇的 conduit"
+
+#: ../capplet/gnome-pilot-capplet.c:1167
+msgid "_Settings..."
+msgstr "設定(_S)..."
+
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "Modify the currently selected conduit's settings"
+msgstr "修改現在選擇 conduit 的設定"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:207
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "無法建立 PDA 設定視窗。不正確的 conduit 組態。"
+
+#: ../capplet/gnome-pilot-druid.c:434
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"設定尚未完畢而設定值將不會儲存。\n"
+"您確定要離開?"
+
+#: ../capplet/gnome-pilot-druid.c:539
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"即將傳送下面的資料至 PDA\n"
+"擁有者名稱：%s\n"
+"PDA ID：%d\n"
+"請將 PDA 放進 %s (%s) 並按下 HotSync 按鈕。"
+
+#: ../capplet/gnome-pilot-druid.c:563
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"即將自 PDA 接收擁有者名稱與 ID\n"
+"請將 PDA 放進 %s (%s) 並按下 HotSync 按鈕。"
+
+#: ../capplet/gnome-pilot-druid.c:578
+msgid "Failed sending request to gpilotd"
+msgstr "對 gpilotd 送出要求失敗"
+
+#: ../capplet/gnome-pilot-druid.c:709
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"完整地自 PDA 接收擁有者名稱與 ID。\n"
+"擁有者名稱：%s\n"
+"ID：%d"
+
+#: ../capplet/gnome-pilot-pdialog.c:385
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr "請將 PDA 放進 %s (%s) 並按下 HotSync 按鈕或取消此次操作。"
+
+#: ../capplet/gnome-pilot-pdialog.c:420
+msgid "The request to get PDA ID failed"
+msgstr "取得 PDA ID 的要求失敗了"
+
+#: ../capplet/gnome-pilot-pdialog.c:460
+msgid "The request to set PDA ID failed"
+msgstr "設定 PDA ID 的要求失敗了"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyS2"
+msgstr "/dev/ttyS2"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyS3"
+msgstr "/dev/ttyS3"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "/dev/ttyqe"
+msgstr "/dev/ttyqe"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Conduit 動作</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Conduit 設定</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA 屬性</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA 識別</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:12
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">要使用哪個裝置進行此項操作？</span>\n"
+"\n"
+"由於這臺電腦定義了一個以上的連線裝置，您需要指出要使用哪一個裝置進行此項操"
+"作。"
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "Add..."
+msgstr "新增..."
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid "Choose Device"
+msgstr "選擇設備"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr "如果您曾使用過同步化軟體(即使是在別臺電腦使用)，請選擇這個選項"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Conduit Settings"
+msgstr "Conduit 設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid "Conduits"
+msgstr "Conduits"
+
+#: ../capplet/gpilotd-capplet.glade.h:20
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"恭喜，您已經完成設定 gnome-pilot！\n"
+"\n"
+"您可以在任何時候自控制中心裡的\n"
+"PilotLink 和 Conduits 標籤改變 gnome-pilot 的設定。\n"
+"\n"
+"您也可以在板面中加入 PilotLink 面板程式 \n"
+"來監控 gnome-pilot 的同步狀況。"
+
+#: ../capplet/gpilotd-capplet.glade.h:27
+msgid "Delete"
+msgstr "刪除"
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "Description:"
+msgstr "描述:"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "Device Settings"
+msgstr "設備設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Device:"
+msgstr "裝置:"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Devices"
+msgstr "設備"
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+msgid "Disable"
+msgstr "關閉"
+
+#: ../capplet/gpilotd-capplet.glade.h:33 ../capplet/util.c:73
+#: ../capplet/util.c:414
+msgid "Disabled"
+msgstr "已失效"
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Edit..."
+msgstr "編輯..."
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "Enable"
+msgstr "啟動"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "輸入要儲存在 PDA 上的擁有者名稱"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "從 PDA 取得擁有者的名稱與 ID"
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Initial Sync"
+msgstr "最初的同步化"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Ir_DA"
+msgstr "Ir_DA"
+
+#: ../capplet/gpilotd-capplet.glade.h:41
+msgid "Net_work"
+msgstr "網路(_W)"
+
+#: ../capplet/gpilotd-capplet.glade.h:42 ../capplet/util.c:114
+msgid "None"
+msgstr "N"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "O_wner:"
+msgstr "擁有者(_W):"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner Name and ID to set on the PDA"
+msgstr "要設定至 PDA 的擁有者名稱與 ID"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "Owner:"
+msgstr "擁有者:"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "PDA Attributes"
+msgstr "PDA 屬性"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+msgid "PDA Identification"
+msgstr "PDA 識別"
+
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "PDA Settings"
+msgstr "PDA 設定"
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "PDA:"
+msgstr "PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "PDAs"
+msgstr "PDAs"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid "S_peed:"
+msgstr "速度(_P):"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr "傳送擁有者的名稱與 ID 至 PDA，覆寫任何既存的識別資料"
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "設定用於儲存所有 PDA 檔案的根目錄。"
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Settings..."
+msgstr "設定..."
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "Success"
+msgstr "完成"
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "您的 PDA 的名稱。僅使用於識別。"
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr "這個整數 ID 用以識別您的 PDA 而且必須不同於您所使用的其他 PDAs。"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Ti_meout:"
+msgstr "逾時(_M):"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid "Welcome to gnome-pilot!"
+msgstr "觀迎使用 gnome-pilot!"
+
+#: ../capplet/gpilotd-capplet.glade.h:60
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"您似乎是第一次執行 gnome-pilot。\n"
+"接下來的步驟會設定 gnome-pilot 以便同步。\n"
+"您稍後可以隨時在 Gnome 控制中心裡\n"
+"的 PilotLink 面更任何選項。\n"
+"\n"
+"按下「下一步」繼續。\n"
+"按下「取消」離開。"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Action:"
+msgstr "動作(_A):"
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Add..."
+msgstr "加入(_A)..."
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+msgid "_Delete"
+msgstr "刪除(_D)"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Device:"
+msgstr "裝置(_D):"
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Edit..."
+msgstr "編輯(_E)..."
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+msgid "_Get from PDA"
+msgstr "從 _PDA 取得"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_Local folder:"
+msgstr "本地端資料夾(_L):"
+
+#: ../capplet/gpilotd-capplet.glade.h:74
+msgid "_Name of PDA:"
+msgstr "PD_A 名稱:"
+
+#: ../capplet/gpilotd-capplet.glade.h:75
+msgid "_Name:"
+msgstr "名稱(_N):"
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "不，這個 PDA 以前沒有進行過同步化。"
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_One time action:"
+msgstr "一次性動作(_O):"
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_Owner:"
+msgstr "擁有者(_O):"
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+msgid "_PDA ID:"
+msgstr "_PDA ID:"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_Send to PDA"
+msgstr "傳送至 PD_A"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_Serial"
+msgstr "序列埠(_S)"
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_Type:"
+msgstr "類型(_T):"
+
+#: ../capplet/gpilotd-capplet.glade.h:83
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:84
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "是的，這個 PDA 以前曾經進行過同步化。"
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "只啟動精靈"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "初始化 gpilotd capplet 產生錯誤"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading pilot state, aborting"
+msgstr "讀取 pilot 狀態產生錯誤，取消"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "無法連線至 GnomePilot 伺服程式"
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr "無法執行精靈，PDAs 或裝置是否已經設定"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "設定 PalmOS 裝置"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS 裝置"
+
+#: ../capplet/util.c:80 ../capplet/util.c:416
+msgid "Enabled"
+msgstr "已啟動"
+
+#: ../capplet/util.c:224
+msgid "You must have at least one device setup"
+msgstr "您必須至少有一個設備的設定"
+
+#: ../capplet/util.c:388
+msgid "Synchronize"
+msgstr "同步化"
+
+#: ../capplet/util.c:389
+msgid "Copy from PDA"
+msgstr "從 PDA 複製"
+
+#: ../capplet/util.c:390
+msgid "Copy to PDA"
+msgstr "複製到 PDA"
+
+#: ../capplet/util.c:391
+msgid "Merge from PDA"
+msgstr "從 PDA 合併"
+
+#: ../capplet/util.c:392
+msgid "Merge to PDA"
+msgstr "合併至 PDA"
+
+#: ../capplet/util.c:395
+msgid "Use conduit settings"
+msgstr "使用 conduit 設定"
+
+#: ../capplet/util.c:403
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:404
+msgid "IrDA"
+msgstr "紅外線"
+
+#: ../capplet/util.c:405
+msgid "Network"
+msgstr "網路"
+
+#: ../capplet/util.c:406
+msgid "Serial"
+msgstr "序列埠"
+
+#: ../capplet/util.c:454
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"指定的基礎目錄存在但權限不正確。\n"
+"請修正或選擇其他目錄"
+
+#: ../capplet/util.c:459
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"指定的基礎目錄存在但並不是一個目錄。\n"
+"請確認它是一個目錄或選擇其他目錄"
+
+#: ../capplet/util.c:466
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"不可能建立指定的基礎目錄。\n"
+"請確認指定路徑的權限或選擇其他目錄"
+
+#: ../capplet/util.c:471
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"基礎目錄所指定的路徑是無效的。\n"
+"請選擇其他目錄"
+
+#: ../capplet/util.c:579
+msgid "Read/Write permissions failed on"
+msgstr "讀/寫權限不正確"
+
+#: ../capplet/util.c:581
+msgid "Check the permissions on the device and retry"
+msgstr "檢查設備的權限並再試一次"
+
+#: ../capplet/util.c:595 ../gpilotd/gpilotd.c:1204
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr "尋找目錄 %s 或讀取檔案 %s 失敗。請檢查 usbfs 或 sysfs 是否已掛載。"
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "確認刪除資料庫"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+msgid "Renaming %s"
+msgstr "正重新命名 %s"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+msgid "to %s"
+msgstr "到 %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s 自最後一次同步化後並未修改過"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "正在製作 %s 的備份"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "無法建立備份檔案 %s"
+
+#: ../conduits/backup/backup_conduit.c:733
+msgid "Collecting restore information..."
+msgstr "收集復原資訊..."
+
+#: ../conduits/backup/backup_conduit.c:856
+msgid "Backup directory:"
+msgstr "備份目錄:"
+
+#: ../conduits/backup/backup_conduit.c:867
+msgid "Only backup changed bases:"
+msgstr "只備份變更過的資料:"
+
+#: ../conduits/backup/backup_conduit.c:875
+msgid "Remove local base if deleted on PDA:"
+msgstr "如果在 PDA 上刪除，也移除本地端的資料:"
+
+#: ../conduits/backup/backup_conduit.c:883
+msgid "# of old backups to keep:"
+msgstr "要保留的舊備份數目:"
+
+#: ../conduits/backup/backup_conduit.c:928
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"指定的備份目錄存在但權限不正確。\n"
+"請修正或選擇其他目錄"
+
+#: ../conduits/backup/backup_conduit.c:933
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"指定的備份目錄存在但並不是一個目錄。\n"
+"請確認它是一個目錄或選擇其他目錄"
+
+#: ../conduits/backup/backup_conduit.c:940
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"不可能建立指定的備份目錄。\n"
+"請確認指定路徑的權限或選擇其他目錄"
+
+#: ../conduits/backup/backup_conduit.c:945
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"備份目錄所指定的路徑是無效的。\n"
+"請選擇其他目錄"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "安裝 %s 失敗了"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "正在安裝 %s(從 %s)..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "正在安裝 %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "立即安裝"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "稍後安裝"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA to install to"
+msgstr "要安裝的 PDA"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PILOT"
+msgstr "PILOT"
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get PDA names"
+msgstr "無法取得 PDA 名稱"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "下列檔案失敗：\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "安裝至 %s：\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "沒有要安裝的檔案"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"按下同步底座的同步化按鈕以開始安裝\n"
+"或取消此次操作。"
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilot 伺服程式"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "在 PDA 刪除的紀錄於本地端編輯過，不予刪除\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "在本地端刪除的紀錄於 PDA 編輯過，不予刪除\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "合併發生衝突，已交換 PDA 與本地端紀錄\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "檔案庫與變更衝突，已交換 PDA 與本地端紀錄\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "檔案庫與變更衝突，傳送本地端紀錄到 PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "檔案庫與變更衝突，將 PDA 紀錄儲存到本地端\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Conduits 初始化失敗，取消操作"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "無法刪除 PDA 資料庫中的所有資料，取消操作。"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Conduit 沒有傳回資料"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "無法刪除本地端資料庫中的所有資料，取消操作。"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "conduit 產生錯誤，無法找到新近加入的資料"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "複製到 PDA 失敗！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from pilot failed!"
+msgstr "自 pilot 複製失敗！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "合併至 PDA 失敗！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "從 PDA 合併失敗！"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "同步化失敗！"
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "無法開啟設備 %s (%s)：理由：“%s”。"
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot 無法開啟設備 %s (%s)。\n"
+"理由：“%s”。"
+
+#: ../gpilotd/gnome-pilot-structures.c:517
+#: ../gpilotd/gnome-pilot-structures.c:566
+#: ../gpilotd/gnome-pilot-structures.c:594
+#: ../gpilotd/gnome-pilot-structures.c:620
+msgid "Unknown device type"
+msgstr "未知的設備類型"
+
+#: ../gpilotd/gnome-pilot-structures.c:635
+msgid "Number of devices is configured to 0"
+msgstr "設備的數目被設定為 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:637
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"尚未設定。\n"
+"請執行 gpilotd-control-applet (使用 gnomecc)\n"
+"來設定 gnome-pilot。"
+
+#: ../gpilotd/gnome-pilot-structures.c:658
+msgid "No accessible devices available"
+msgstr "沒有可用的設備"
+
+#: ../gpilotd/gnome-pilot-structures.c:673
+msgid "Number of PDAs is configured to 0"
+msgstr "PDAs 的數目被設定為 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:675
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"尚未設定 PDAs。\n"
+"請執行 gpilotd-control-applet (使用 gnomecc)\n"
+"來設定 gnome-pilot。"
+
+#: ../gpilotd/gpilotd.c:231
+msgid "Unable to bind to PDA"
+msgstr "無法連結至 PDA"
+
+#: ../gpilotd/gpilotd.c:402
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "未知的 PDA，使用者 ID/名稱 與 %ld 不一致"
+
+#: ../gpilotd/gpilotd.c:409
+msgid "Use gnomecc to configure PDA"
+msgstr "使用 gnomecc 來設定 PDA"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:414
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"未知的 PDA - 沒有與 ID %ld 一致的 PDA\n"
+"使用 gnomecc 來設定 gnome-pilot"
+
+#: ../gpilotd/gpilotd.c:438
+#, c-format
+msgid "Device %s has %d events"
+msgstr "裝置 %s 含有 %d 個事件"
+
+#: ../gpilotd/gpilotd.c:451
+msgid "Setting userinfo..."
+msgstr "設定使用者資訊..."
+
+#: ../gpilotd/gpilotd.c:456
+msgid "Sync continues"
+msgstr "繼續同步化"
+
+#: ../gpilotd/gpilotd.c:475
+msgid "Getting userinfo..."
+msgstr "取得使用者資訊..."
+
+#: ../gpilotd/gpilotd.c:537
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "偵測到 NetSync 的要求，同步化 PDA"
+
+#: ../gpilotd/gpilotd.c:539
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "按下 HotSync 按鈕，同步化 PDA"
+
+#: ../gpilotd/gpilotd.c:541
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA ID 是 %ld，名稱是 %s，擁有者為 %s"
+
+#: ../gpilotd/gpilotd.c:551
+#, c-format
+msgid "On host %s\n"
+msgstr "在主機 %s 上\n"
+
+#: ../gpilotd/gpilotd.c:553
+#, c-format
+msgid "On host %d\n"
+msgstr "在主機 %d 上\n"
+
+#: ../gpilotd/gpilotd.c:572
+msgid "Synchronization ended"
+msgstr "同步化結束"
+
+#: ../gpilotd/gpilotd.c:575
+msgid "Synchronization ended early"
+msgstr "同步化提前結束"
+
+#: ../gpilotd/gpilotd.c:607
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"基礎目錄 %s 是無效的。\n"
+"請修正它或使用 gnomecc 選擇其他目錄。"
+
+#: ../gpilotd/gpilotd.c:620
+#, c-format
+msgid ""
+"Unknown pilot - no pilots matches ID %ld\n"
+"Use gnomecc to set pilot's ID"
+msgstr ""
+"未知的 pilot - 沒有與 ID %ld 一致的 pilot\n"
+"使用 gnomecc 來設定 pilot 的 ID"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:671
+msgid "An error occurred while getting the PDA's system data"
+msgstr "當取得 PDA 的系統資料時發生錯誤"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:676
+msgid "An error occurred while getting the PDA's user data"
+msgstr "當取得 PDA 的使用者資料時發生錯誤"
+
+#: ../gpilotd/gpilotd.c:681
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "裝置 %s (%s)完成的事件"
+
+#: ../gpilotd/gpilotd.c:740
+#, c-format
+msgid "Woke on %s"
+msgstr " %s 處理終了"
+
+#: ../gpilotd/gpilotd.c:821
+#, c-format
+msgid "Woke on network: %s"
+msgstr "網路喚醒：%s"
+
+#: ../gpilotd/gpilotd.c:1364 ../gpilotd/gpilotd.c:1366
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "正在監控 %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1380
+msgid "Exiting (caught SIGTERM)..."
+msgstr "正在離開 (發生 SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1389
+msgid "Exiting (caught SIGINT)..."
+msgstr "正在離開 (發生 SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1421
+msgid "Unable to create file installation queue directory"
+msgstr "無法建立檔案安裝排程目錄"
+
+#: ../gpilotd/gpilotd.c:1471
+msgid "Shutting down devices"
+msgstr "正在關閉設備"
+
+#: ../gpilotd/gpilotd.c:1473
+msgid "Rereading configuration..."
+msgstr "重新讀取組態..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "備份 conduit 列表中沒有非備份用的 conduit"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s 已備份\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s 備份失敗\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "收集同步化資訊..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "正在同步 %s\n"
+
+#: ../gpilotd/manager.c:446
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "複製到 PDA %s\n"
+
+#: ../gpilotd/manager.c:464
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "從 PDA %s 複製\n"
+
+#: ../gpilotd/manager.c:482
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "合併至 PDA %s\n"
+
+#: ../gpilotd/manager.c:500
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "從 PDA %s 合併\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Conduit %s 的初次同步化..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "未知的同步化動作 (%d = %s)。\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "實體化 %d 個 conduits..."
+
+#: ../gpilotd/manager.c:683 ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "組態中未知的導管“%s”！"
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "載入導管“%s”失敗！"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "載入導管“%s”失敗！\n"
+
+#: ../gpilotd/manager.c:783
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "設定 id/擁有者 至 %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:815
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "要求導管 %s ，但沒有找到"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "不能要求導管 %s"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(未知的 DB)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "佇列中發生錯誤，不存在的項目"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "失敗：在 PDA %d 中找不到要求，要求 %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "不支援載入模組，嚴重的錯誤！"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "取得系統資訊"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "暫停伺服程式"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "解除暫停伺服程式"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "重新啟動伺服程式"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "設定使用者 id 與名稱"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the pilot"
+msgstr "pilot 的 ID"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "安裝檔案"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FILE"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "復原目錄"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIRECTORY"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "執行導管"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "要設定的使用者名稱"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "USERNAME"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified pilots actions"
+msgstr "監控指定的 pilot 動作"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all pilots"
+msgstr "監控所有的 pilots"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list pilots by login (all for all pilots)"
+msgstr "依登入列出 pilots (所有的 pilots)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify pilot to operate on (defaults to MyPilot)"
+msgstr "指定要操作的 pilot (預設為 MyPilot)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTNAME"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "指定要操作的同步座 (預設為 Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "CRADLENAME"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specifed pilot's bases"
+msgstr "列出指定的 pilot 基礎"
+
+#: ../utils/gpilotd-client.c:359 ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"注意！！\n"
+"這是用於 gnome-pilot 套件的某部分零件的工具。\n"
+"除非您瞭解您在做什麼，否則不要使用這個工具。"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "列出可用的導管"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "要操作的導管"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "列出所有屬性"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify pilot to operate on"
+msgstr "指定要操作的 pilot"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PILOTID"
+msgstr "PILOTID"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "列出屬性"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "列出可用的導管及它們的狀態"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "啟用指定的導管"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "停用指定的導管"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "啟用，並設定初次同步化為慢速"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "實體化與消滅導管"
+
+#~ msgid "Synchronizing..."
+#~ msgstr "正在同步化..."
+
+#~ msgid "A dnd and gui monitor for gpilotd.\n"
+#~ msgstr "給 gpilotd 使用之 Drag & Drop 與 GUI 監視器。\n"
+
+#~ msgid "UserName"
+#~ msgstr "使用者名稱"
+
+#~ msgid "Port"
+#~ msgstr "連接埠"
+
+#~ msgid "Cradle Settings"
+#~ msgstr "同步底座設定"
+
+#~ msgid "Get User Name and ID from existing pilot that was used before."
+#~ msgstr "從之前既存已使用過的 pilot 取得使用者名稱與 ID。"
+
+#~ msgid "Local basedir"
+#~ msgstr "本地端基礎目錄"
+
+#~ msgid "Pilot Name"
+#~ msgstr "Pilot 名稱"
+
+#~ msgid "Pilot Name:"
+#~ msgstr "Pilot 名稱:"
+
+#~ msgid "Pilots"
+#~ msgstr "Pilots"
+
+#~ msgid "Set User Name and ID to a new pilot."
+#~ msgstr "設定使用者名稱與 ID 至新的 pilot。"
+
+#~ msgid "User Name"
+#~ msgstr "使用者名稱"
+
+#~ msgid "User Name:"
+#~ msgstr "使用者名稱:"
+
+#~ msgid "Gnome Pilot File Manager"
+#~ msgstr "Gnome Pilot 檔案管理員"
+
+#~ msgid "Copyright Manish and Neil Vachharajani (C) 1998"
+#~ msgstr "版權所有 Manish 與 Neil Vachharajani (C) 1998"
+
+#~ msgid ""
+#~ "Manages files and applications on your Palm Pilot\n"
+#~ "Palm Pilot is a Registered trademark of 3com Inc."
+#~ msgstr ""
+#~ "管理您的 Palm Pilot 上的檔案與應用程式\n"
+#~ "Palm Pilot 是 3com Inc. 的註冊商標"
+
+#~ msgid "Really quit Gnome Pilot File Manager?"
+#~ msgstr "確定要離開 Gnome Pilot 檔案管理員？"
+
+#~ msgid "Hmm, this shouldn't happen, not enough filenames\n"
+#~ msgstr "嗯，這不應該發生，檔案名稱不夠\n"
+
+#~ msgid "Aborting..."
+#~ msgstr "放棄..."
+
+#~ msgid "No files to install!!"
+#~ msgstr "沒有要安裝的檔案！！"
+
+#~ msgid "Install Progress"
+#~ msgstr "安裝程序"
+
+#~ msgid "Installing... "
+#~ msgstr "正在安裝..."
+
+#~ msgid "Press the Hot Sync button on your pilot now!"
+#~ msgstr "現在請按下您 pilot 上的同步化按鈕！"
+
+#~ msgid "Unable to open or create chosen name as a directory!"
+#~ msgstr "無法以選定的名稱開啟或建立目錄！"
+
+#~ msgid "Chosen backup location is not a directory!"
+#~ msgstr "選定的備份位置不是一個目錄！"
+
+#~ msgid "Backup Progress"
+#~ msgstr "備份程序"
+
+#~ msgid "Backing up... "
+#~ msgstr "備份中..."
+
+#~ msgid "Unable to open status pipe"
+#~ msgstr "無法開啟狀態管道"
+
+#~ msgid "Unable to open message pipe"
+#~ msgstr "無法開啟訊息管道"
+
+#~ msgid "Unable to fork"
+#~ msgstr "無法 fork"
+
+#~ msgid "Backup Directory"
+#~ msgstr "備份目錄"
+
+#~ msgid "About"
+#~ msgstr "關於"
+
+#~ msgid "About the gpilot-fileman"
+#~ msgstr "關於 gpilt-fileman"
+
+#~ msgid "Install Files"
+#~ msgstr "安裝檔案"
+
+#~ msgid "Installs selected files to the connected Pilot"
+#~ msgstr "安裝選定的檔案至連線的 Pilot"
+
+#~ msgid "Backup Pilot"
+#~ msgstr "備份 Pilot"
+
+#~ msgid "Back's up selected files from the connected Pilot"
+#~ msgstr "從連線的 Pilot 備份選定的檔案"
+
+#~ msgid "Properties"
+#~ msgstr "內容"
+
+#~ msgid "Properties for the Gnome Pilot File Manager"
+#~ msgstr "Gnome Pilot 檔案管理員內容"
+
+#~ msgid "Quit"
+#~ msgstr "離開"
+
+#~ msgid "Quits the application"
+#~ msgstr "離開此應用程式"
+
+#~ msgid "File"
+#~ msgstr "檔案"
+
+#~ msgid "Help"
+#~ msgstr "說明"
+
+#~ msgid "Add ->"
+#~ msgstr "新增 ->"
+
+#~ msgid "<- Remove"
+#~ msgstr "<- 移除"
+
+#~ msgid "<- Remove All"
+#~ msgstr "<- 全部移除"
+
+#~ msgid "Selected Files"
+#~ msgstr "選定的檔案"
+
+#~ msgid "Unable to bind to pilot\n"
+#~ msgstr "無法連結到 pilot\n"
+
+#~ msgid "Exiting on cancel"
+#~ msgstr "取消並離開"
+
+#~ msgid "Unable to open '%s'!"
+#~ msgstr "無法開啟‘%s′！"
+
+#~ msgid "Install failed %s."
+#~ msgstr "安裝 %s 失敗。"
+
+#~ msgid "Exiting on cancel, all data NOT backed up."
+#~ msgstr "取消並離開，所有資料不會備份。"
+
+#~ msgid "Failed, unable to create file\n"
+#~ msgstr "失敗，無法建立檔案\n"
+
+#~ msgid "Failed, unable to back up database\n"
+#~ msgstr "失敗，無法備份資料庫\n"
+
+#~ msgid "Pilot Device"
+#~ msgstr "Pilot 裝置"
+
+#~ msgid "Confirm on quit"
+#~ msgstr "離開時確認"
+
+#~ msgid "General"
+#~ msgstr "一般"
+
+#~ msgid "Watching %s (%s, %s)"
+#~ msgstr "正在監控 %s (%s, %s)"
+
+#~ msgid "Unable to open or create file %s with read/write privs"
+#~ msgstr "以現在的讀/寫權限無法開啟或建立檔案 %s"
+
+#~ msgid "Unable to find home directory for uid %d"
+#~ msgstr "找不到 uid %d 的家目錄"
+
+#~ msgid "Could not examine the port for"
+#~ msgstr "無法調查連接埠"
+
+#~ msgid "The port should point to a USB serial port"
+#~ msgstr "應指明連接埠為 USB 或序列埠"
+
+#~ msgid "The port should be a character special device but isn't for"
+#~ msgstr "連接埠應為特殊性質之設備"

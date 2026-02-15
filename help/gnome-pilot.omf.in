@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<omf>
+  <resource>
+    <subject category="Applications|Office"/>
+    <type>manual</type>
+    <relation seriesid="4b665ac2-7cb3-11d7-9af8-a0c7edebb5bb" />
+    <rights type="GNU FDL" license.version="1.1" license="http://www.gnu.org/licenses/fdl.html" holder="Ximian, Inc."/>
+  </resource>
+</omf>

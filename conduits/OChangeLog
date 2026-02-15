@@ -1,0 +1,24 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2001-03-01  JP Rosevear  <jpr@ximian.com>
+
+	* Makefile.am (SUBDIRS): don't build old dirs
+
+	* test/Makefile.am: Remove old capplet foo
+
+2001-02-28  JP Rosevear  <jpr@ximian.com>
+
+	* test/test.conduit.in: update
+
+2001-02-12  Ettore Perazzoli  <ettore@ximian.com>
+
+	* test/Makefile.am (INCLUDES): Put `$(includedir)' after our
+	distributed includes.  Add `-I$(top_srcdir)' as the code #includes
+	with <gpilotd/yaddayadda.h>, not <yaddayadda.h>.
+
+1999-10-21  Eskil Olsen <deity@eskil.dk>
+
+	* conduits/Makefile.am: don't compile the ThinkMemo conduit.
+
+

@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gnome-pilot
+Source: https://wiki.gnome.org/Apps/Pilot
+
+Files: *
+Copyright: 1999-2009 gnome-pilot contributors
+License: GPL-2
+
+License: GPL-2
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in /usr/share/common-licenses/GPL-2.

@@ -1,0 +1,674 @@
+# Czech translation for gnome-pilot.
+# Copyright (C) 2011 gnome-pilot's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-pilot package.
+#
+# Marek Černocký <marek@manet.cz>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot master\n"
+"POT-Creation-Date: 2011-04-10 11:57+0000\n"
+"PO-Revision-Date: 2011-06-06 17:30+0200\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Language: cs\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: C/gnome-pilot.xml:14(title) C/gnome-pilot.xml:47(revnumber)
+msgid "GNOME PalmOS Synchronization Tools"
+msgstr "Synchronizační nástroje GNOME PalmOS"
+
+#: C/gnome-pilot.xml:16(para)
+msgid ""
+"A user's guide to the gnome-pilot tools for use with PalmOS handheld devices."
+msgstr ""
+"Uživatelská příručka k nástrojům gnome-pilot pro použití se zařízením PalmOS "
+"PDA."
+
+#: C/gnome-pilot.xml:22(firstname)
+msgid "Aaron"
+msgstr "Aaron"
+
+#: C/gnome-pilot.xml:22(surname)
+msgid "Weber"
+msgstr "Weber"
+
+#: C/gnome-pilot.xml:26(publishername) C/gnome-pilot.xml:31(holder)
+msgid "Ximian, Inc."
+msgstr "Ximian, Inc."
+
+#: C/gnome-pilot.xml:30(year)
+msgid "2003"
+msgstr "2003"
+
+#: C/gnome-pilot.xml:34(title)
+msgid "Guide to PalmOS Device Synchronization Tools"
+msgstr "Příručka k synchronizačním nástrojům zařízení PalmOS"
+
+#: C/gnome-pilot.xml:38(releaseinfo)
+msgid ""
+"This is version 2.0.1 of the gnome-pilot manual. It describes version 2.0 of "
+"the gnome-pilot package, used to set up and perform synchronization between "
+"PalmOS devices and your GNOME desktop."
+msgstr ""
+"Tohle je příručka ve verzi 2.0.1 ke gnome-pilot. Popisuje balík gnome-pilot "
+"ve verzi 2.0. Ten se používá k nastavení a provádění synchronizace mezi "
+"zařízeními PalmOS a vaším pracovním prostředím GNOME."
+
+#: C/gnome-pilot.xml:48(date)
+msgid "May 2003"
+msgstr "květen 2003"
+
+#: C/gnome-pilot.xml:53(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL in the main GNOME help pages or in the file COPYING-DOCS "
+"distributed with this software."
+msgstr ""
+"Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU "
+"Free Documentation License (GFDL) ve verzi 1.1 nebo v jakékoli další verzi "
+"vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů "
+"předních desek a bez textů zadních desek. Kopii licence GFDL naleznete ve "
+"stránkách s nápovědou GNOME nebo v souboru COPYING-DOCS dodávaném s tímto "
+"softwarem."
+
+#: C/gnome-pilot.xml:62(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence "
+"GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte "
+"přiložit kopii licence dle popisu v oddílu 6 dané licence."
+
+#: C/gnome-pilot.xml:70(para)
+msgid ""
+"Some product and service names, are trademarks or registered trademarks of "
+"various companies or organizations. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Některé použité názvy produktů a služeb jsou ochranné nebo registrované "
+"známky různých firem a organizací. Na místech, kde jsou tato jména v "
+"dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi "
+"skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými "
+"písmeny celé nebo s velkým písmenem na začátku."
+
+#: C/gnome-pilot.xml:81(para)
+msgid ""
+"The <systemitem>gnome-pilot</systemitem> package, along with the optional "
+"conduits in <systemitem>evolution-pilot</systemitem>, allows you to move "
+"information between your handheld PalmOS device and your GNOME desktop. You "
+"must run the setup tool before synchronizing. The setup tool will normally "
+"also start the GNOME Pilot Daemon, <systemitem>gpilotd</systemitem>. If it "
+"is not running, you may need to start it with the command <command>/usr/"
+"libexec/gpilotd</command>. You can also start the daemon using the GNOME "
+"Pilot panel applet. To add the applet to your GNOME panel, right-click on "
+"any blank space in the panel and select <menuchoice><guimenu>Add to Panel</"
+"guimenu><guisubmenu>Utility</guisubmenu><guimenuitem>Pilot Applet</"
+"guimenuitem></menuchoice>."
+msgstr ""
+"Balík <systemitem>gnome-pilot</systemitem> s volitelným modulem "
+"<systemitem>evolution-pilot</systemitem> vám umožňuje přesouvat informace "
+"mezi vaším PDA PalmOS a vaším pracovním prostředím GNOME. Než začnete "
+"synchronizovat, musíte spustit nástroj pro nastavení. Normálně nástroj pro "
+"nastavení spustí také démona GNOME Pilot – <systemitem>gpilotd</systemitem>. "
+"Pokud neběží, můžete jej spustit příkazem <command>/usr/libexec/gpilotd</"
+"command>. Případně můžete démona spustit přes aplet GNOME Pilot na panelu. "
+"Aplet na svůj panel GNOME přidáte tak, že na volné místo na panelu kliknete "
+"pravým tlačítkem a zvolíte <menuchoice><guimenu>Přidat na panel</"
+"guimenu><guimenuitem>Aplet Pilot</guimenuitem></menuchoice>."
+
+#: C/gnome-pilot.xml:101(title)
+msgid "GNOME Pilot Configuration Tool"
+msgstr "Nástroj nastavení GNOME Pilot"
+
+#: C/gnome-pilot.xml:102(para)
+msgid ""
+"To start the GNOME Pilot configuration tool, double-click on the Palm Pilot "
+"icon in the GNOME Control Center, or enter the command <command>gpilotd-"
+"control-applet</command>. You can also start the configuration tool by "
+"clicking on the GNOME Pilot applet in your panel."
+msgstr ""
+"Nástroj nastavení GNOME Pilot spustíte dvojitým kliknutím na ikonu Palm "
+"Pilot v Ovládacím centru GNOME nebo zadáním příkazu <command>gpilotd-control-"
+"applet</command>. Rovněž jej můžete spustit kliknutím na aplet GNOME Pilot "
+"na svém panelu."
+
+#: C/gnome-pilot.xml:110(para)
+msgid ""
+"There are three tabs in the <interface>gnome-pilot Settings</interface> "
+"tool: <guilabel>PDAs</guilabel>, <guilabel>Devices</guilabel>, and "
+"<guilabel>Conduits</guilabel>. In addition, the first time you run the GNOME "
+"Pilot tools, you will be guided through setup by an assistant."
+msgstr ""
+"V nástroji <interface>Nastavení gnome-pilot</interface> jsou tři karty: "
+"<guilabel>PDA</guilabel>, <guilabel>Zařízení</guilabel> a <guilabel>Moduly</"
+"guilabel>. Při prvním spuštění nástroje GNOME Pilot budete navíc nastavením "
+"provedeni za pomoci průvodce."
+
+#: C/gnome-pilot.xml:120(title)
+msgid "The GNOME Pilot Setup Assistant"
+msgstr "Průvodce nastavením GNOME Pilot"
+
+#: C/gnome-pilot.xml:121(para)
+msgid ""
+"The setup assistant will guide you through getting your PalmOS device ready "
+"to synchronize with your desktop system. At each step, enter the information "
+"requested and then click <guibutton>Next</guibutton>."
+msgstr ""
+"Průvodce nastavením vás provede přípravou vašeho PalmOS pro synchronizaci s "
+"vaším pracovním systémem. V jednotlivých krocích zadávejte požadované "
+"informace a pak klikejte na tlačítko <guibutton>Vpřed</guibutton>."
+
+#: C/gnome-pilot.xml:127(para)
+msgid ""
+"The first step is to describe how your PDA is connected to your desktop. "
+"Check <xref linkend=\"setup-conftool-devices\"/> for more information about "
+"the data requested by this step."
+msgstr ""
+"Prvním krokem je uvést, jak je vaše PDA připojeno k vašemu počítači. Více "
+"informací o údajích požadovaných v tomto kroku najdete v oddíle <xref "
+"linkend=\"setup-conftool-devices\"/>."
+
+#: C/gnome-pilot.xml:132(para)
+msgid ""
+"The second step is device identification. If you have used synchronization "
+"software with the PDA before, it will already have a synchronization ID that "
+"your desktop can get from it. If you have not, you can set the owner name "
+"and ID on the PDA from your desktop."
+msgstr ""
+"Druhým krokem je identifikace zařízení. Jestliže jste již dříve používali "
+"synchronizační software s PDA, tak má přiděleno synchronizační ID, které od "
+"něj může počítač získat. Pokud ne, můžete jméno vlastníka a ID v PDA "
+"nastavit ze svého počítače."
+
+#: C/gnome-pilot.xml:140(para)
+msgid ""
+"Once you have completed this step, the GNOME Pilot software will contact "
+"your PalmOS device and get or set the owner name and other information."
+msgstr ""
+"Když máte tento krok dokončen, software GNOME Pilot kontaktuje vaše zařízení "
+"PalmOS a získá nebo nastaví jméno vlastníka a další informace."
+
+#: C/gnome-pilot.xml:145(para)
+msgid ""
+"The last step is to choose a name to use when referring to the configured "
+"PalmOS device, and a directory on your desktop system where you will store "
+"backups and other data."
+msgstr ""
+"Posledním krokem je volba názvu, který se má použít k odkazování na "
+"nastavené zařízení PalmOS a složka ve vašem systému, ve které se budou "
+"uchovávat zálohy a další data."
+
+#: C/gnome-pilot.xml:155(title)
+msgid "Adding or Editing a PDA Entry: The \"PDAs\" Tab"
+msgstr "Přidávání nebo úprava položek PDA: karta „PDA“"
+
+#: C/gnome-pilot.xml:156(para)
+msgid ""
+"The <guilabel>PDAs</guilabel> tab lists the handheld devices you have "
+"configured. If you have not used the gnome-pilot Settings tool before, you "
+"will not have any items in this list, and the tool will open a new window to "
+"walk you through the process of creating one. To add a new PDA, click "
+"<guibutton>Add...</guibutton>. To edit an existing PDA entry, select it and "
+"click the <guibutton>Edit...</guibutton>. To delete an entry, select it and "
+"click <guibutton>Delete</guibutton>."
+msgstr ""
+"Na kartě <guilabel>PDAs</guilabel> jsou vypsána zařízení PDA, která máte "
+"nastavená. Pokud jste před tím nepoužili nástroj nastavení gnome-pilot, "
+"nebudete mít v tomto seznamu žádnou položku a nástroj otevře nové okno, "
+"které vás provedete procesem vytvoření nové. Pro přidání nového PDA, "
+"klikněte na <guibutton>Přidat…</guibutton>. Pro úpravu stávající položky PDA "
+"dotyčné PDA vyberte a klikněte na <guibutton>Upravit…</guibutton>. Pro "
+"smazání položky dotyčnou položku vyberte a klikněte na <guibutton>Odstranit</"
+"guibutton>."
+
+#: C/gnome-pilot.xml:173(term)
+msgid "Owner"
+msgstr "Vlastník"
+
+#: C/gnome-pilot.xml:175(para)
+msgid ""
+"This is the Owner name used on your PDA. If your pilot already has a name "
+"configured, you can get it from the pilot by clicking the <guibutton>Get "
+"from PDA</guibutton> button. Alternatively, you can set or change the Owner "
+"name by entering a name and clicking the <guibutton>Send to PDA</guibutton> "
+"button."
+msgstr ""
+"Jde o jméno vlastníka použité ve vašem PDA. Pokud má váš pilot jméno již "
+"nastavené, můžete jej z něj získat kliknutím na tlačítko <guibutton>Získat z "
+"PDA</guibutton>. Případně můžete jméno vlastníka nastavit nebo změnit "
+"zadáním jména a kliknutím na tlačítko <guibutton>Odeslat do PDA</guibutton>."
+
+#: C/gnome-pilot.xml:188(term)
+msgid "PDA ID"
+msgstr "ID PDA"
+
+#: C/gnome-pilot.xml:190(para)
+msgid ""
+"This is the ID number from your PDA. You can get this value from the "
+"handheld by clicking the <guibutton>Get from PDA</guibutton> button. "
+"Alternatively, you can set or change the ID by entering a number and "
+"clicking the <guibutton>Send to PDA</guibutton> button."
+msgstr ""
+"Jedná se o identifikační číslo z vašeho PDA. Jeho hodnotu můžete stáhnout z "
+"PDA kliknutím na tlačítko <guibutton>Získat z PDA</guibutton>. Případně "
+"můžete ID nastavit nebo změnit zadáním čísla a kliknutím na tlačítko "
+"<guibutton>Odeslat do PDA</guibutton>."
+
+#: C/gnome-pilot.xml:202(term)
+msgid "Name of PDA"
+msgstr "Název PDA"
+
+#: C/gnome-pilot.xml:204(para)
+msgid ""
+"This is the name by which your handheld will be identified. For example, you "
+"could call it MyPilot, or Palm5, or Roger."
+msgstr ""
+"Jedná se o název, podle kterého budete PDA poznávat. Můžete jej nazvat třeba "
+"MůjPilot nebo Palm5 nebo Pepa."
+
+#: C/gnome-pilot.xml:214(term)
+msgid "Local folder"
+msgstr "Místní složka"
+
+#: C/gnome-pilot.xml:216(para)
+msgid ""
+"This is the directory where you will store information backed up from your "
+"handheld."
+msgstr "Jde o složku, ve které se budou uchovávat informace zálohované z PDA."
+
+#: C/gnome-pilot.xml:168(para)
+msgid ""
+"When editing or creating an entry, you will be asked for four pieces of "
+"information: <placeholder-1/>"
+msgstr ""
+"Když upravujete nebo vytváříte položku, budete dotázáni na čtyři informace: "
+"<placeholder-1/>"
+
+#: C/gnome-pilot.xml:227(title)
+msgid "Adding or Editing an entry under the Device Settings Tab"
+msgstr "Přidávání nebo úprava položek na kartě nastavení Zařízení"
+
+#: C/gnome-pilot.xml:228(para)
+msgid ""
+"The device settings tab controls the way your desktop system looks at your "
+"handheld as hardware. To add an entry to the list, click <guibutton>Add...</"
+"guibutton>, or, to edit one, select it and click <guibutton>Edit...</"
+"guibutton>. To delete an entry, select it and click <guibutton>Delete</"
+"guibutton>."
+msgstr ""
+"Karta nastavení zařízení řídí způsob, jakým systém vašeho počítač hledá váš "
+"PDA jako hardware. Pro přidání položky do seznamu klikněte na "
+"<guibutton>Přidat…</guibutton> nebo pro úpravu některé z položek klikněte na "
+"<guibutton>Upravit…</guibutton> Pro smazání položky ji vyberte a klikněte na "
+"<guibutton>Odstranit</guibutton>."
+
+#: C/gnome-pilot.xml:235(para)
+msgid "For each entry you may choose:"
+msgstr "Pro každou položku můžete zvolit:"
+
+#: C/gnome-pilot.xml:241(term)
+msgid "Name"
+msgstr "Název"
+
+#: C/gnome-pilot.xml:243(para)
+msgid ""
+"This is a name used to display the device in a list. You may choose almost "
+"any name you find convenient."
+msgstr ""
+"Jde o název, pod kterým bude zařízení zobrazeno v seznamu. Můžete si zvolit "
+"jakékoliv jméno uznáte za vhodné."
+
+#: C/gnome-pilot.xml:251(term)
+msgid "Type"
+msgstr "Typ"
+
+#: C/gnome-pilot.xml:253(para)
+msgid ""
+"Select the type of connection you have: Serial, USB, IrDA (infrared), "
+"Network or Bluetooth. Bluetooth connections require that pilot-link has been "
+"compiled with bluetooth support."
+msgstr ""
+"Vyberte typ připojení, které máte: sériové, USB, IrDA (infračervené), síť "
+"nebo Bluetooth. Připojení Bluetooth vyžaduje, aby byl pilot-link přeložen s "
+"podporou Bluetooth."
+
+#: C/gnome-pilot.xml:262(term)
+msgid "Timeout"
+msgstr "Časový limit"
+
+#: C/gnome-pilot.xml:264(para)
+msgid ""
+"Amount of time to try to connect to system, in seconds. If there is no "
+"communication between the desktop and the handheld for this many seconds, "
+"the system will give up trying."
+msgstr ""
+"Množství času v sekundách, po které se zkouší připojit do systému. Pokud ani "
+"po tomto čase není mezi počítačem a PDA žádná komunikace, systém pokusy vzdá."
+
+#: C/gnome-pilot.xml:273(term)
+msgid "Device"
+msgstr "Zařízení"
+
+#: C/gnome-pilot.xml:275(para)
+msgid ""
+"For USB, Serial and IrDA devices types, your handheld connects to the "
+"computer as a special file in the <systemitem>/dev</systemitem> directory. "
+"The name of the file will vary from system to system. In many cases however, "
+"it will be <systemitem>/dev/pilot</systemitem>. Other possible values are "
+"<systemitem>/dev/ttyS0</systemitem> or <systemitem>/dev/ttyS1</systemitem> "
+"for serial cradles (under Windows, these would be referred to as COM ports), "
+"and <systemitem>/dev/ttyUSB0</systemitem> or <systemitem>/dev/ttyUSB1</"
+"systemitem> for USB cradles. The special device name <systemitem>usb:</"
+"systemitem> can be used to enable libusb syncing (as opposed to usbserial). "
+"This option may not be available, depending on the version of pilot-link in "
+"use."
+msgstr ""
+"Pro typy zařízení USB, sériová a IrDA se PDA připojuje k vašemu počítači "
+"jako speciální soubor ve složce <systemitem>/dev</systemitem>. Název souboru "
+"se liší systém od systému, většinou ale bude <systemitem>/dev/pilot</"
+"systemitem>. Další možné varianty jsou <systemitem>/dev/ttyS0</systemitem> "
+"nebo <systemitem>/dev/ttyS1</systemitem> pro sériové kolíbky (pod Windows by "
+"se jednalo o porty COM) a <systemitem>/dev/ttyUSB0</systemitem> nebo "
+"<systemitem>/dev/ttyUSB1</systemitem> pro kolíbky USB. Pro zapnutí "
+"synchronizace pomocí libusb (v protikladu k usbserial) můžete použít "
+"speciální název zařízení <systemitem>usb:</systemitem>. Tato možnost ale "
+"nemusí být dostupná, záleží na použité verzi pilot-link."
+
+#: C/gnome-pilot.xml:293(para)
+msgid ""
+"You will need to make sure that your user account has read, write, and "
+"execute permissions on this device. To add those permissions, become root "
+"with the <command>su</command> command and enter the command <command>chmod a"
+"+wrx /dev/ttyS0</command>. Substitute the name of the device you are setting."
+msgstr ""
+"Ujistěte se, že váš uživatelský účet má pro toto zařízení oprávnění číst, "
+"zapisovat, spouštět. V případě potřeby můžete oprávnění přidat – pomocí "
+"příkazu <command>su</command> se staňte superuživatelem root a zadejte "
+"příkaz <command>chmod a+wrx /dev/ttyS0</command>. Zařízení /dev/ttyS0 "
+"nahraďte názvem zařízení, které nastavujete."
+
+#: C/gnome-pilot.xml:302(para)
+msgid ""
+"Some devices such as <systemitem>/dev/ttyUSB1</systemitem> only exist while "
+"the PDA is attempting to sync. In such cases, you will need to configure "
+"permissions using the <systemitem>udev</systemitem> system."
+msgstr ""
+"Některá zařízení, jako <systemitem>/dev/ttyUSB1</systemitem>, existují jen "
+"po dobu pokusu PDA o synchronizaci. V takovém případě budete muset oprávnění "
+"nastavit pomocí systému <systemitem>udev</systemitem>."
+
+#: C/gnome-pilot.xml:308(para)
+msgid ""
+"If you have not chosen the correct device, you will get an error message "
+"when you click <guibutton>OK</guibutton>."
+msgstr ""
+"Pokud nemáte vybráno správné zařízení, obdržíte po kliknutí na "
+"<guibutton>OK</guibutton> chybovou zprávu."
+
+#: C/gnome-pilot.xml:316(term)
+msgid "Speed"
+msgstr "Rychlost"
+
+#: C/gnome-pilot.xml:318(para)
+msgid ""
+"For USB, Serial and IrDA connections, select a number from the dropdown. The "
+"higher the number, the faster you are asking the system to transfer "
+"information. Normally, you should not change this; it is set, by default, "
+"for the fastest value that your connection type can provide. However, you "
+"may set it higher or lower if you wish. If you experience problems at high "
+"speeds, reducing the transfer speed sometimes helps."
+msgstr ""
+"Pro připojení USB, sériové a IrDA vyberte v rozbalovacím seznamu číslo. "
+"Vyšší číslo představuje požadavek na rychlejší přenos informací systémem. "
+"Normálně byste údaj neměli měnit, výchozí hodnota je nastavena na "
+"nejrychlejší hodnotu, kterou váš systém poskytuje. Přesto si ji můžete podle "
+"přání upravit na vyšší nebo nižší. Pokud se při vyšších rychlostech setkáte "
+"s problémy, může vám snížení rychlosti pomoci."
+
+#: C/gnome-pilot.xml:334(title)
+msgid "Conduit Settings"
+msgstr "Nastavení modulů"
+
+#: C/gnome-pilot.xml:336(para)
+msgid ""
+"A Conduit is a specialized program that channels data between your computer "
+"and your handheld. The <application>gnome-pilot</application> package "
+"includes several, and you can also install additional conduits such as those "
+"for Ximian Evolution."
+msgstr ""
+"Modul je specializovaný program, který přenáší data mezi vaším počítačem a "
+"vaším PDA. Balík <application>gnome-pilot</application> obsahuje několik "
+"modulů a můžete nainstalovat i další, jako třeba pro Ximian Evolution."
+
+#: C/gnome-pilot.xml:344(para)
+msgid ""
+"Each configured handheld may have its own set of conduits and conduit "
+"settings."
+msgstr ""
+"Každý nastavený PDA může mít svoji vlastní sadu přenosů a jejich nastavení."
+
+#: C/gnome-pilot.xml:349(para)
+msgid ""
+"If a conduit is disabled, that type of data will be ignored when you "
+"HotSync. If a conduit is enabled, its data will be synchronized according to "
+"its settings. To enable or disable a conduit, select it and click the "
+"<guilabel>Enable</guilabel> or <guilabel>Disable</guilabel> button on the "
+"right side of the list of conduits."
+msgstr ""
+"Když je modul zakázán, je příslušný typ dat při synchronizaci ignorován. "
+"Když je modul povolen, jsou jeho data synchronizována v souladu s jeho "
+"nastaveními. Pokud chcete modul povolit nebo zakázat, vyberte jej a klikněte "
+"na tlačítko <guilabel>Povolit</guilabel> nebo <guilabel>Zakázat</guilabel> "
+"napravo od seznamu modulů."
+
+#: C/gnome-pilot.xml:358(para)
+msgid ""
+"To edit the settings, select a conduit and click the <guilabel>Settings...</"
+"guilabel> button. Each conduit will have at least two settings: an "
+"<guilabel>Action</guilabel> to perform whenever you synchronize, and a "
+"<guilabel>One Time Action</guilabel>, performed only the next time you "
+"synchronize."
+msgstr ""
+"Pokud chcete upravit nastavení, vyberte modul a klikněte na tlačítko "
+"<guilabel>Nastavení…</guilabel> Každý z modulů má nejméně dvě nastavení: "
+"<guilabel>Akce</guilabel>, která se má provést při každé synchronizaci, a "
+"<guilabel>Jednorázová akce</guilabel>, která se má provést při příští "
+"synchronizaci."
+
+#: C/gnome-pilot.xml:371(term)
+msgid "Disabled"
+msgstr "Vypnuto"
+
+#: C/gnome-pilot.xml:373(para)
+msgid "Do nothing."
+msgstr "Nic nedělat."
+
+#: C/gnome-pilot.xml:380(term)
+msgid "Synchronize"
+msgstr "Synchronizovat"
+
+#: C/gnome-pilot.xml:382(para)
+msgid ""
+"Ensure that data is the same in both places, copying new data from the PDA "
+"to the desktop, and from the desktop to the PDA."
+msgstr ""
+"Zajistí, že data budou stejná na obou místech, zkopíruje nová data z PDA do "
+"počítače a z počítače do PDA."
+
+#: C/gnome-pilot.xml:391(term)
+msgid "Copy to pilot"
+msgstr "Kopírovat do pilota"
+
+#: C/gnome-pilot.xml:393(para)
+msgid ""
+"Copy all data from the desktop to the pilot. New data added on the pilot "
+"will not be copied back up to the desktop."
+msgstr ""
+"Kopírovat veškerá data z počítače do pilota. Nová data přidaná v pilotu "
+"nebudou zkopírována zpět do počítače."
+
+#: C/gnome-pilot.xml:402(term)
+msgid "Copy from pilot"
+msgstr "Kopírovat z pilota"
+
+#: C/gnome-pilot.xml:404(para)
+msgid ""
+"Copy all data from the pilot to the desktop. New data added on the desktop "
+"will not be copied down to the pilot."
+msgstr ""
+"Kopírovat veškerá data z pilota do počítače. Nová data přidaná v počítači "
+"nebudou zkopírována do pilota."
+
+#: C/gnome-pilot.xml:366(para)
+msgid ""
+"Not all conduits will have all of actions. The list of possible actions is: "
+"<placeholder-1/>"
+msgstr ""
+"Ne všechny moduly mají všechny akce. Seznam možných akcí je: <placeholder-1/>"
+
+#: C/gnome-pilot.xml:415(para)
+msgid ""
+"Other settings may be available as well, including Conduit Priority, which "
+"determines the order in which conduits will be used, and <guilabel>Sync "
+"Private Records</guilabel>, which determines whether to copy private "
+"information as well as public, or just the public data."
+msgstr ""
+"Mohou být dostupná i další nastavení, včetně Priorita modulu, které určuje "
+"pořadí, ve kterém jsou moduly použity, a <guilabel>Synchronizovat soukromé "
+"záznamy</guilabel>, které určuje, zda kopírovat nejen veřejné, ale i "
+"soukromé informace."
+
+#: C/gnome-pilot.xml:436(title)
+msgid "The Pilot Applet"
+msgstr "Aplet Pilot"
+
+#: C/gnome-pilot.xml:437(para)
+msgid ""
+"The GNOME Pilot panel applet sits in your panel until you are ready to "
+"synchronize your PalmOS device. If the pilot access daemon is running, the "
+"applet will appear in black and white. If it is not running, the applet will "
+"appear red and black. If the daemon is paused, the applet will be yellow and "
+"black."
+msgstr ""
+"Aplet panelu GNOME Pilot sídlí na vašem panelu, dokud nejste připraveni k "
+"synchronizaci svého zařízení PalmOS. Pokud běží démon pro přístup k "
+"zařízením pilot, je ikona apletu vybarvena černo-bíle. Pokud démon neběží, "
+"je vybarvena černo-červeně. V případě pozastavení démona se objeví v černo-"
+"žlutém provedení."
+
+#: C/gnome-pilot.xml:444(para)
+msgid ""
+"Click once on the applet with the left mouse button to start the GNOME Pilot "
+"configuration tool."
+msgstr ""
+"Jednoduchým kliknutím levým tlačítkem na aplet se spustí nástroj nastavení "
+"GNOME Pilot."
+
+#: C/gnome-pilot.xml:448(para)
+msgid ""
+"Other actions for the applet are available in the right-click menu. They are:"
+msgstr ""
+"K ostatním akcím se dostanete přes nabídku vyvolanou kliknutím pravým "
+"tlačítkem. Jsou to:"
+
+#: C/gnome-pilot.xml:454(term)
+msgid "Restore"
+msgstr "Obnov…"
+
+#: C/gnome-pilot.xml:456(para)
+msgid ""
+"If your PalmOS device has lost all data, select this item to restore it from "
+"a backup you made earlier."
+msgstr ""
+"Pokud ve svém zařízení PalmOS přijdete o všechna data, vyberte tuto položku, "
+"abyste je obnovili z dřívější zálohy."
+
+#: C/gnome-pilot.xml:464(term)
+msgid "Pause Daemon"
+msgstr "Pozastavit démona"
+
+#: C/gnome-pilot.xml:466(para)
+msgid ""
+"Pause the GNOME Pilot daemon <application>gpilotd</application>. If the "
+"daemon is paused, this item will read <guilabel>Continue</guilabel>."
+msgstr ""
+"Pozastavit démona <application>gpilotd</application> aplikace GNOME Pilot. "
+"Když je démon pozastaven, změní se tato položka na <guilabel>Pokračovat</"
+"guilabel>."
+
+#: C/gnome-pilot.xml:475(term)
+msgid "Restart"
+msgstr "Restartovat"
+
+#: C/gnome-pilot.xml:477(para)
+msgid "Stop and restart the daemon."
+msgstr "Zastavit a znovu spustit démona."
+
+#: C/gnome-pilot.xml:484(term)
+msgid "Last Log"
+msgstr "Poslední výsledek…"
+
+#: C/gnome-pilot.xml:486(para)
+msgid "Display the results of the last synchronization performed."
+msgstr "Zobrazit výsledky poslední provedené synchronizace."
+
+#: C/gnome-pilot.xml:493(term)
+msgid "Preferences"
+msgstr "Předvolby…"
+
+#: C/gnome-pilot.xml:495(para)
+msgid ""
+"Click this item to select what happens when you click the applet, and "
+"whether to display notices in dialog boxes."
+msgstr ""
+"Zde klikněte, abyste mohli zvolit, co se má stát při kliknutí na aplet a zda "
+"se mají zobrazovat upozornění v dialogových oknech."
+
+#: C/gnome-pilot.xml:503(term)
+msgid "Help..."
+msgstr "Nápověda"
+
+#: C/gnome-pilot.xml:505(para)
+msgid "Display this manual"
+msgstr "Zobrazit tuto přiručku."
+
+#: C/gnome-pilot.xml:512(term)
+msgid "About"
+msgstr "O aplikaci"
+
+#: C/gnome-pilot.xml:514(para)
+msgid "Information about the application and its authors."
+msgstr "Informace o aplikaci je jejích autorech."
+
+#: C/gnome-pilot.xml:522(term)
+msgid "Remove from Panel"
+msgstr "Odstranit z panelu"
+
+#: C/gnome-pilot.xml:524(para)
+msgid "Remove the applet from the panel."
+msgstr "Odstranit aplet z panelu."
+
+#: C/gnome-pilot.xml:531(term)
+msgid "Move"
+msgstr "Přesunout"
+
+#: C/gnome-pilot.xml:533(para)
+msgid "Move the applet with the mouse. To stop moving the applet, click once."
+msgstr "Přesunou aplet myší. Pro zastavení přesouvání apletu myší klikněte."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gnome-pilot.xml:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"

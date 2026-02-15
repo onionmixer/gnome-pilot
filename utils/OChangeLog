@@ -1,0 +1,101 @@
+PLEASE USE TOPLEVEL CHANGELOG 
+	eskil - March 22 2001
+
+2000-06-30  Seth Alves  <alves@hungry.com>
+
+	* gpilotd-client.c: conditional code for using oaf instead of goad
+	* gpilotdcm-client.c: same
+
+	* Makefile.am (gnome_pilot_make_password_LDADD): 
+	(gpilotd_client_LDADD): 
+	(gpilotdcm_client_LDADD): added BONOBO_VFS_GNOME_LIBS
+
+2000-03-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: implemented get_pilots_by_login
+
+2000-03-19  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: code to test get_databases_from_cache
+
+2000-03-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* Makefile.am (INCLUDES): automake juju to make distcheck pass
+
+2000-03-06  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: changed --id to --pilotid to be consistent
+	with gpilotdcm-client
+
+2000-02-27  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c (set_user): can now set user id (-S --userid="" 
+	--id=xx --cradle="")
+
+	* gpilotdcm-client.c: Updated to the new id stuff in libgpilotdcm
+
+2000-02-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotdcm-client.c (main): Test loading, instantiates, prints
+	name and destroys.
+
+2000-02-25  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotdcm-client.c (main): pwetty pwint the funky conduits.
+	Need to begin to add options to it.
+	(main): pwetty options fow da client...
+
+2000-02-24  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Some code to test the new revive stuff.
+
+	* gpilotdcm-client.c (main): Lists all conduits' attribute, then
+	lists them again but filters out the language stuff.
+
+2000-02-15  Vadim Strizhevsky  <vadim@optonline.net>
+
+	* Makefile.am: comment out gpilotdm-client temporary while
+	libgipoltdCM is broken.
+
+2000-02-14  Eskil Heyn Olsen  <deity@praxis>
+
+	* Makefile.am (gpilotdcm_client_LDADD): GNOME_XML_LIB added to
+	gpilotdcm-client (which I also added)
+
+2000-01-09  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: First steps in trying the .gob object.
+
+2000-01-08  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: basedirid XXX command to retrieve basedir via
+	id number.
+
+1999-12-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Made alterations to conduit callbacks.
+
+1999-12-20  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Handlers for the new message/progress/error stuff.
+
+1999-12-14  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Tests calls for the new corba calls.
+
+1999-11-30  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Uses arguments for gpilotd_conduit call.
+
+1999-11-22  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Added callbacks for gpilotd_conduit_start/end
+
+1999-10-26  Eskil Heyn Olsen  <deity@eskil.dk>
+
+	* gpilotd-client.c: Changed according to the idl changes.
+
+1999-10-22  Eskil Olsen <deity@eskil.dk>
+
+	* gpilotd-client.c: added support for testing the new
+	get_pilot_ids corba call.

@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.gnome.GnomePilot
+Exec=/usr/lib/x86_64-linux-gnu/gnome-pilot/gpilotd

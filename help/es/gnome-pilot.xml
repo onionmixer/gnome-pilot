@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY appversion "2.0">
+<!ENTITY docversion "2.0.1">
+<!ENTITY pubdate "May, 2003">
+]>
+<article id="index" lang="es">
+  <articleinfo>
+    <title>Herramientas de sincronización de GNOME PalmOS</title>
+    <abstract role="description">
+	<para>Una guía de usuario para las herramientas de gnome-pilot para usarlas con dispositivos de mano PalmOS.</para>
+    </abstract>
+    
+    <authorgroup>
+      <author><firstname>Aaron</firstname><surname>Weber</surname></author>
+    </authorgroup>
+
+    <publisher role="maintainer">
+      <publishername>Ximian, Inc.</publishername>
+    </publisher>
+
+    <copyright>
+      <year>2003</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright><copyright><year>2010</year><holder>Daniel Mustieles (daniel.mustieles@gmail.com)</holder></copyright>
+
+    <title>Guía de las herramientas de sincronización del dispositivo PalmOS</title>
+    
+   <releaseinfo>Esta es la versión 2.0.1 del manual de gnome-pilot. Describe la versión 2.0 del paquete gnome-pilot, usado para configurar y realizar la sincronización entre dispositivos PalmOs y su escritorio GNOME.</releaseinfo>
+
+    <revhistory>
+      <revision>
+        <revnumber>Herramientas de sincronización de GNOME PalmOS</revnumber>
+        <date>Mayo de 2003</date>
+      </revision>
+    </revhistory>
+
+    <legalnotice id="legalnotice">
+      <para>Se otorga permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL en las páginas principales de la ayuda de GNOME o en el archivo COPYING-DOCS distribuido con este software.</para>
+         <para>Este manual es parte de la colección de manuales GNOME distribuidos bajo la GFDL. Si quiere distribuir este manual separadamente de la colección, puede hacerlo añadiendo una copia de la licencia al manual, tal como se describe en la sección 6 de la licencia.</para>
+
+        <para>Algunos nombres de productos y servicios son marcas comerciales o marcas comerciales registradas de diversas empresas u organizaciones. Cuando estos nombres aparecen en la documentación de GNOME, y los miembros del Proyecto de documentación de GNOME están al corriente de esas marcas, los nombres están en mayúsculas o con letra inicial mayúscula.</para>
+    </legalnotice>
+  </articleinfo>
+
+  <para>El paquete <systemitem>gnome-pilot</systemitem>, junto con los conductos opcionales en <systemitem>evolution-pilot</systemitem>, le permite mover información entre su dispositivo PalmOS de mano y su escritorio GNOME. Debe ejecutar la herramienta de configuración antes de sincronizar. Normalmente, la herramienta de configuración también ejecutará el demonio de GNOME Pilot <systemitem>gpilotd</systemitem>. Si no está en ejecución, debe iniciarlo con el comando <command>/usr/libexec/gpilotd</command>. También puede iniciar el demonio usando el panel de la miniaplicación GNOME Pilot. Para añadir la miniaplicación a su panel de GNOME, pulse con el botón derecho en cualquier espacio vacío del panel y elija <menuchoice><guimenu>Añadir al panel</guimenu><guisubmenu>Utilidades</guisubmenu><guimenuitem>Miniaplicación Pilot</guimenuitem></menuchoice>.</para>
+
+
+
+
+  <sect1 id="conftool">
+    <title>Herramienta de configuración de GNOME Pilot</title>
+  <para>Para iniciar la herramienta de configuración de GNOME Pilot, pulse dos veces sobre el icono de Palm Pilot en el Centro de control de GNOME, o introduzca el comando <command>gpilotd-control-applet</command>. También puede iniciar la herramienta de configuración pulsando en la miniaplicación GNOME Pilot ensu panel.</para>
+  
+  <para>En la herramienta <interface>Configuración de gnome-pilot</interface> hay tres pestañas: <guilabel>PDA</guilabel>, <guilabel>Dispositivos</guilabel>, y <guilabel>Conductos</guilabel>. Además, la primera vez que ejecuta las herramientas de GNOME Pilot, un asistente le guiará a través de la configuración.</para>
+
+  <sect2 id="assistant">
+    <title>El asistente de configuración de GNOME Pilot</title>
+      <para>El asistente de configuración le guiará para dejar su dispositivo PalmOS listo para sincronizar con su sistema de escritorio. En cada paso, introduzca la información solicitada y pulse <guibutton>Siguiente</guibutton>.</para>
+      <para>El primer paso es describir cómo está conectado su PDA al escritorio. Consulte la <xref linkend="setup-conftool-devices"/> para obtener más información sobre los datos requeridos en este paso.</para>
+      <para>El segundo paso es la identificación del dispositivo. Si anteriormente ha usado el software de sincronización con el PDA, éste ya tendrá un ID de sincronización que su escritorio puede usar. Si no lo tiene, puede configurar el nombre del propietario y el ID en el PDA desde su escritorio.</para>
+
+      <para>Una vez que haya completado este paso, GNOME Pilot contactará con su dispositivo PalmOS y obtendrá o establecerá el nombre del propietario y otra información.</para>
+      <para>El último paso el elegir un nombre que usar para referirse al dispositivo PalmOS configurado, y una carpeta en su sistema de escritorio donde guardar copias de respaldo y otros datos.</para>
+
+    </sect2>
+
+
+  <sect2 id="conftool-pilots">
+    <title>Añadir o editar una entrada PDA: La pestaña «PDA»</title>
+    <para>La pestaña <guilabel>PDA</guilabel> lista los dispositivos de mano que tiene configurados. Si no ha usado antes la herramienta de configuración de gnome-pilot, no tendrá ningún elemento en la lista, y la herramienta abrirá una ventana nueva para guiarle en el proceso de crear uno. Para añadir un PDA nuevo, pulse <guibutton>Añadir...</guibutton>.. Para editar un PDA existente, selecciónelo y pulse <guibutton>Editar...</guibutton>. Para borrar una entrada, selecciónela y pulse <guibutton>Borrar</guibutton>.</para>
+
+    <para>Al crear o editar una entrada, se le pedirán cuatro datos: <variablelist>
+        <varlistentry>
+          <term>Propietario</term>
+          <listitem>
+            <para>Este es el nombre del propietario de su PDA. Si su pilot ya tiene un nombre configurado, puede obtenerlo del pilor pulsando el botón <guibutton>Obtener del PDA</guibutton>. Alternativamente, puede configurar o cambiar el nombre del propietario introduciendo un nombre y pulsando el botón <guibutton>Enviar al PDA</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>ID del PDA</term>
+          <listitem>
+            <para>Éste es el número identificador de su PDA. Puede obtener este valor desde el dispositivo de mano pulsando el botón <guibutton>Obtener del PDA</guibutton>. Alternativamente, puede configurar o cambiar este identificador introduciendo un número y pulsando el botón <guibutton>Enviar al PDA</guibutton>.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Nombre del PDA</term>
+          <listitem>
+            <para>Éste es el nombre con el que se identificará a su dispositivo de mano. Por ejemplo, puede llamarlo MiPilot, Palm5 o Roger.</para>
+          </listitem>
+        </varlistentry>
+
+
+        <varlistentry>
+          <term>Carpeta _local</term>
+          <listitem>
+            <para>Esta es la carpeta donde almacenará la información de respaldo de su dispositivo de mano.</para>
+          </listitem>
+        </varlistentry>
+
+      </variablelist></para>
+  </sect2>
+  <sect2 id="setup-conftool-devices">
+    <title>Añadir o editar una entrada en la pestaña «configuración del dispositivo»</title>
+    <para>La pestaña de configuración del dispositivo controla la forma en que su sistema de escritorio ve su dispositivo de mano como hardware. Para añadir una entrada a la lista, pulse <guibutton>Añadir...</guibutton> o pulse <guibutton>Editar...</guibutton> para editarla. Para borrar una entrada, selecciónela y pulse <guibutton>Borrar</guibutton>.</para>
+    <para>Para cada entrada debe elegir:</para>
+
+    <variablelist>
+      <varlistentry>
+        <term>Nombre</term>
+        <listitem>
+          <para>Esto es un nombre usado para mostrar el dispositivo en una lista. Puede elegir cualquier nombre que crea conveniente.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Tipo</term>
+        <listitem>
+          <para>Seleccione el tipo de conexión que tiene: Serie. USB, IrDA (infrarrojo), red o Bluetooth. Las conexiones Bluetooth requieren que el enlace con el pilot se haya compilado con soporte para Bluetooth.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Tiempo agotado</term>
+        <listitem>
+          <para>Cantidad de tiempo para tratar de conectarse al sistema, en segundos. Si en este tiempo no hay comunicación entre el escritorio y el dispositivo de mano, el sistema dejará de intentarlo.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Dispositivo</term>
+        <listitem>
+          <para>Para dispositivos USB, Serie e IrDA, su dispositivo de mano se conecta al equipo como un archivo especial en la carpeta <systemitem>/dev</systemitem>. El nombre del archivo varía de un sistema a otro. Sin embargo, en la mayoría de los casos será <systemitem>/dev/pilot</systemitem>. Otros valores posibles son  <systemitem>/dev/ttyS0</systemitem> o <systemitem>/dev/ttyS1</systemitem> para conectores serie (en Windows, se referencian como puertos COM), y <systemitem>/dev/ttyUSB0</systemitem> o <systemitem>/dev/ttyUSB1</systemitem> para conectores USB. El nombre del dispositivo especial <systemitem>usb:</systemitem> se puede usar para activar la sincronización libusb (contraria a usbserial). Esta opción puede no estar disponible, dependiendo de la versión de pilot-link usada.</para>
+        
+          <para>Deberá asegurarse de que su cuenta de usuario tiene permisos de lectura, escritura y ejecución en este dispositivo. Para añadir estos permisos, conviértase en root con el comando <command>su</command> e introduzca el comando <command>chmod a+wrx /dev/ttyS0</command>. Sustituya el nombre del dispositivo que está configurando.</para>
+
+	  <para>Algunos dispositivos como <systemitem>/dev/ttyUSB1</systemitem> sólo existen mientras el PDA intenta sincronizar. En estos casos, deberá configurar los permisos usando el sistema <systemitem>udev</systemitem>.</para>
+          <para>Si no ha seleccionado el dispositivo correcto, se mostrará un mensaje de error cuando pulse el botón <guibutton>Aceptar</guibutton>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Velocidad</term>
+        <listitem>
+          <para>Para conexiones USB, Serie e IrDA seleccione un número en el desplegable. Cuanto mayor sea el número, mayor será la velocidad de transferencia solicitada al sistema. Normalmente, no debería cambiar esto; de manera predeterminada, está configurado al valor más rápido que soporta su tipo de conexión. Sin embargo, puede aumentarlo o disminuirlo si quiere. Si tiene problemas con velocidades altas, reducir la velocidad de transferencia a veces ayuda.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </sect2>
+  <sect2 id="setup-conduits">
+    <title>Configuración del conducto</title>
+
+    <para>Un conducto es un programa especializado que canaliza los datos entre su equipo y el dispositivo de mano. El paquete <application>gnome-pilot</application> incluye varios, y usted puede instalar conductos adicionales como aquellos para Ximian Evolution.</para>
+
+    <para>Cada dispositivo de mano configurado puede tener su propio conjunto de conductos y configuración de los mismos.</para>
+
+    <para>Si un conducto está desactivado, se ignorará ese tipo de datos cuando haga un HotSync. Si un conducto está activado, sus datos se sincronizarán de acuerdo con su configuración. Para activar o desactivar un conducto, selecciónelo y pulse el botón <guilabel>Activar</guilabel> o <guilabel>Desactivar</guilabel> en el lado derecho de la lista de conductos.</para>
+    
+    <para>Para editar la configuración, seleccione un conducto y pulse el botón <guilabel>Configuración...</guilabel>. Cada conducto tendrá, al menos, dos parámetros: una <guilabel>Acción</guilabel> que ejecutar siempre que sincronice, y una <guilabel>Acción de una vez</guilabel>, ejecutada solamente la próxima vez que sincronice.</para>
+
+    <para>No todos los conductos tendrán todas las acciones. La lista de acciones posibles es: <variablelist>
+      <varlistentry>
+        <term>Desactivado</term>
+        <listitem>
+          <para>No hacer nada.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Sincronizar</term>
+        <listitem>
+          <para>Asegúrese de que los datos son los mismo en ambos sitios, copiando los datos nuevos del PDA al escritorio, y del escritorio al PDA.</para>
+        </listitem>
+      </varlistentry> 
+
+      <varlistentry>
+        <term>Copiar al Pilot</term>
+        <listitem>
+          <para>Copiar todos los datos del escritorio al pilot. Los datos nuevos añadidos al pilot no se copiarán al escritorio.</para>
+        </listitem>
+      </varlistentry> 
+
+
+      <varlistentry>
+        <term>Copiar del Pilot</term>
+        <listitem>
+          <para>Copiar todos los datos del pilot al escritorio. Los datos nuevos añadidos al escritorio no se copiarán al pilot.</para>
+        </listitem>
+      </varlistentry> 
+
+    </variablelist></para>
+
+  <para>También pueden estar disponibles otras configuraciones, incluyendo la «prioridad de los conductos», que determina el orden en que se usarán los conductos, y <guilabel>Sincr. registros privados</guilabel>, que determina si se debe copiar la información privada y pública, o sólo los datos públicos.</para>
+</sect2>
+<!--
+<sect1 id="advanced">
+  <title>The Advanced Tab</title>
+  <para>
+    The advanced tab allows you to set the Sync PCId. If you know this
+    number and wish to change it, enter it and then click
+    <guibutton>Close</guibutton>.
+  </para>
+</sect1>
+-->
+</sect1>
+
+<sect1 id="pilot-applet">
+  <title>La miniaplicación Pilot</title>
+  <para>El panel de la miniaplicación GNOME Pilot se sitúa en su panel hasta que usted está preparado para sincronizar su dispositivo PalmOS. Si el demonio de acceso al pilot está en ejecución, la miniaplicación aparecerá en blanco y negro. Si no está en ejecución, la miniaplicación aparecerá en rojo y negro. Si el demonio está en pausa, la miniapliación será amarilla y negra.</para>
+  <para>Pulsa una vez sobre la miniaplicación con el botón izquierdo para iniciar la herramienta de configuración de GNOME Pilot.</para>
+  <para>Hay otras acciones disponibles para la miniaplicación en el menú al pulsar con el botón derecho. Son:</para>
+  <variablelist>
+      <varlistentry>
+        <term>Restaurar</term>
+        <listitem>
+          <para>Si su PalmOS ha perdido todos los datos, seleccione este elemento para restaurarlos desde una copia de seguridad hecha anteriormente.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Pausar el demonio</term>
+        <listitem>
+          <para>Pausar el demonio de GNOME Pilot <application>gpilotd</application>. Si el demonio está parado, este elemento leerá<guilabel>Continuar</guilabel>.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Reiniciar</term>
+        <listitem>
+          <para>Parar y reiniciar el demonio.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Último registro</term>
+        <listitem>
+          <para>Mostrar los resultados de la última sincronización realizada.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Preferencias</term>
+        <listitem>
+          <para>Pulse en este elemento para ver qué pasa cuando pulsa sobre la miniaplicación, y si se muestran las notificaciones en cuadros de diálogo.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Ayuda…</term>
+        <listitem>
+          <para>Mostrar este manual</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Acerca de</term>
+        <listitem>
+          <para>Información acerca de la aplicación y de sus autores.</para>
+        </listitem>
+      </varlistentry>
+
+
+      <varlistentry>
+        <term>Quitar del panel</term>
+        <listitem>
+          <para>Quitar la miniaplicación del panel.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Mover</term>
+        <listitem>
+          <para>Mueva la miniaplicación con el ratón. Para dejar de moverla, pulse una vez.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+</sect1>
+
+
+
+</article>

@@ -1,0 +1,1685 @@
+# Vietnamese translation for GNOME Pilot.
+# Copyright © 2008 GNOME i18n Project for Vietnamese.
+# T.M.Thanh <tmthanh@yahoo.com>, 2002 - 2003.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot GNOME TRUNK\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-06 11:00+0000\n"
+"PO-Revision-Date: 2008-06-15 23:27+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.7b3\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Tiểu dụng Pilot"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "Đồng bộ hoá dữ liệu trên thiết bị PalmOS"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "Tiện ích"
+
+#: ../applet/pilot-applet.glade.h:1
+#: ../capplet/gpilotd-capplet.glade.h:1
+msgid "*"
+msgstr "*"
+
+#: ../applet/pilot-applet.glade.h:2
+msgid "Choose PDA"
+msgstr "Chọn PDA"
+
+#: ../applet/pilot-applet.glade.h:3
+msgid "GNOME PilotSync Properties"
+msgstr "Thuộc tính GNOME PilotSync"
+
+#: ../applet/pilot-applet.glade.h:4
+msgid "Restore PDA"
+msgstr "Phục hồi PDA"
+
+#: ../applet/pilot-applet.glade.h:5
+msgid "_Directory"
+msgstr "Thư _mục"
+
+#: ../applet/pilot-applet.glade.h:6
+msgid "_Display notices"
+msgstr "_Hiện thông báo"
+
+#: ../applet/pilot-applet.glade.h:7
+msgid "_Execute when clicked"
+msgstr "_Thực thi khi được nhấn"
+
+#: ../applet/pilot-applet.glade.h:8
+msgid "_PDA ID"
+msgstr "Mã số _PDA"
+
+#: ../applet/pilot-applet.glade.h:9
+msgid "_Sync cradle"
+msgstr "_Giá để đồng bộ"
+
+#: ../applet/pilot-applet.glade.h:10
+msgid "gnome-pilot progress"
+msgstr "Tiến hành gnome-pilot"
+
+#: ../applet/pilot.c:168
+#, c-format
+msgid "%s Synchronizing"
+msgstr "Đang đồng bộ hóa %s"
+
+#: ../applet/pilot.c:173
+msgid "Database %v of %u"
+msgstr "Cơ sở dữ liệu %v của %u"
+
+#: ../applet/pilot.c:267
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Yêu cầu %ld đã được hoàn thành\n"
+
+#: ../applet/pilot.c:289
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "Đang đồng bộ hóa %s : %s"
+
+#: ../applet/pilot.c:294
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: Đã bắt đầu\n"
+
+#: ../applet/pilot.c:309
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s Đã kết thúc : %s"
+
+#: ../applet/pilot.c:314
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: Đã chấm dứt\n"
+
+#: ../applet/pilot.c:340
+msgid "%v of %u records"
+msgstr "%v trên %u mục ghi"
+
+#: ../applet/pilot.c:419
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA đang đồng bộ hóa.\n"
+"Hãy đợi kết thúc."
+
+#: ../applet/pilot.c:422
+msgid "Not connected. Please restart daemon."
+msgstr "Chưa kết nối. Hãy khởi chạy lại trình nền."
+
+#: ../applet/pilot.c:424
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Chưa kết nối tới gpilotd.\n"
+"Hãy khởi chạy lại trình nền."
+
+#: ../applet/pilot.c:442
+msgid "gnome-pilot applet"
+msgstr "Tiểu dụng gnome-pilot"
+
+#: ../applet/pilot.c:444
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "Tác quyền © năm 2000-2006 của Tổ Chức Phần Mềm Tự Do."
+
+#: ../applet/pilot.c:445
+msgid "A PalmOS PDA monitor.\n"
+msgstr "Bộ theo dõi PDA PalmOS.\n"
+
+#: ../applet/pilot.c:541
+#: ../applet/pilot.c:567
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Gặp lỗi khi hiển thị trợ giúp: %s"
+
+#: ../applet/pilot.c:605
+#, c-format
+msgid "cancelling %d"
+msgstr "đang thôi %d"
+
+#: ../applet/pilot.c:657
+#, c-format
+msgid "Restoring %s"
+msgstr "Đang phục hồi %s"
+
+#: ../applet/pilot.c:699
+msgid "No directory to restore from."
+msgstr "Không có thư mục từ đó có thể phục hồi."
+
+#: ../applet/pilot.c:707
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Hãy ấn cái nút đồng bộ hóa trên giá để,\n"
+"để phục hồi hay thôi thao tác."
+
+#: ../applet/pilot.c:716
+msgid "Restore request failed"
+msgstr "Yêu cầu phục hồi bị lỗi"
+
+#: ../applet/pilot.c:754
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Tiến trình đồng bộ hóa PDA đang thực hiện.\n"
+"Bạn có chắc muốn khởi chạy lại trình nền không?"
+
+#: ../applet/pilot.c:764
+#: ../applet/pilot.c:1340
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Đang thử kết nối đến trình nền GnomePilot"
+
+#: ../applet/pilot.c:780
+msgid "There's no last sync on record."
+msgstr "Không có lần đồng bộ hóa cuối cùng trong bản ghi."
+
+#: ../applet/pilot.c:803
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+msgid "Restore..."
+msgstr "Phục hồi..."
+
+#: ../applet/pilot.c:803
+msgid "Restart"
+msgstr "Khởi chạy lại"
+
+#: ../applet/pilot.c:803
+msgid "Last log..."
+msgstr "Bản ghi cuối cùng..."
+
+#: ../applet/pilot.c:804
+msgid "Preferences..."
+msgstr "Tùy thích..."
+
+#: ../applet/pilot.c:804
+msgid "Help"
+msgstr "Trợ giúp"
+
+#: ../applet/pilot.c:804
+msgid "About"
+msgstr "Giới thiệu"
+
+#: ../applet/pilot.c:826
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#: ../applet/pilot.c:828
+msgid "Pause Daemon"
+msgstr "Tạm dừng trình nền"
+
+#: ../applet/pilot.c:848
+msgid "Daemon paused..."
+msgstr "Trình nền đã tạm dừng..."
+
+#: ../applet/pilot.c:855
+#: ../applet/pilot.c:1009
+msgid "Ready to synchronize"
+msgstr "Sẵn sàng đồng bộ hóa"
+
+#: ../applet/pilot.c:990
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Chưa kết nối. Hãy khởi chạy lại trình nền để tái kết nối"
+
+#: ../applet/pilot.c:1174
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Lỗi thực thi %s"
+
+#: ../applet/pilot.c:1300
+#, c-format
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+msgid "installing \"%s\" to \"%s\""
+msgstr "đang cài đặt « %s » vào « %s »"
+
+#: ../applet/pilot.c:1310
+msgid "unknown dnd type"
+msgstr "kiểu dnd không rõ"
+
+#: ../applet/pilot.c:1318
+msgid "destroy gpilot-applet"
+msgstr "hủy gpilot-applet"
+
+#: ../applet/pilot.c:1403
+msgid "Cannot find pilot-applet.glade"
+msgstr "Không tìm thấy tập tin pilot-applet.glade"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Câu lệnh cần thực thi khi nhấn chuột lên tiểu dụng"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Hiển thị thông báo trong cửa sổ tự mở"
+
+#: ../capplet/gnome-pilot-capplet.c:212
+#: ../capplet/gpilotd-capplet.glade.h:89
+msgid "gnome-pilot Settings"
+msgstr "Thiết lập gnome-pilot"
+
+#: ../capplet/gnome-pilot-capplet.c:380
+#: ../capplet/gnome-pilot-capplet.c:460
+msgid "Name"
+msgstr "Tên"
+
+#: ../capplet/gnome-pilot-capplet.c:382
+#: ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "Mã số"
+
+#: ../capplet/gnome-pilot-capplet.c:384
+msgid "Owner"
+msgstr "Chủ"
+
+#: ../capplet/gnome-pilot-capplet.c:462
+msgid "Type"
+msgstr "Kiểu"
+
+#: ../capplet/gnome-pilot-capplet.c:568
+msgid "Conduit"
+msgstr "Ống dẫn"
+
+#: ../capplet/gnome-pilot-capplet.c:570
+msgid "Sync Action"
+msgstr "Hàng vi đồng bộ hóa"
+
+#: ../capplet/gnome-pilot-capplet.c:780
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Bạn có chắc muốn xóa PDA « %s » không?"
+
+#: ../capplet/gnome-pilot-capplet.c:804
+msgid "_Edit this PDA..."
+msgstr "_Sửa PDA này..."
+
+#: ../capplet/gnome-pilot-capplet.c:805
+msgid "Edit the currently selected PDA"
+msgstr "Sửa PDA được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:807
+msgid "_Delete this PDA"
+msgstr "_Xóa PDA này"
+
+#: ../capplet/gnome-pilot-capplet.c:808
+msgid "Delete the currently selected PDA"
+msgstr "Xóa PDA được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:941
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Bạn có chắc muốn xóa thiết bị %s không?"
+
+#: ../capplet/gnome-pilot-capplet.c:962
+msgid "_Edit this device..."
+msgstr "_Sửa thiết bị này..."
+
+#: ../capplet/gnome-pilot-capplet.c:963
+msgid "Edit the currently selected device"
+msgstr "Sửa thiết bị được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:965
+msgid "_Delete this device"
+msgstr "_Xóa thiết bị này"
+
+#: ../capplet/gnome-pilot-capplet.c:966
+msgid "Delete the currently selected device"
+msgstr "Xóa thiết bị được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:1128
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Không thể sơ khởi ống dẫn %s."
+
+#: ../capplet/gnome-pilot-capplet.c:1168
+msgid "_Enable this conduit"
+msgstr "_Bật chạy ống dẫn này"
+
+#: ../capplet/gnome-pilot-capplet.c:1169
+msgid "Disable the currently selected conduit"
+msgstr "Tắt ống dẫn được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:1171
+msgid "_Disable this conduit"
+msgstr "Tắt ống _dẫn này"
+
+#: ../capplet/gnome-pilot-capplet.c:1172
+msgid "Enable the currently selected conduit"
+msgstr "Bật chạy ống dẫn được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+#: ../capplet/gpilotd-capplet.glade.h:85
+msgid "_Settings..."
+msgstr "Thiết lậ_p..."
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+msgid "Modify the currently selected conduit's settings"
+msgstr "Sửa đổi thiết lập của ống dẫn được chọn hiện thời"
+
+#: ../capplet/gnome-pilot-cdialog.c:207
+#. < 0) {
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "Không thể tạo cửa sổ thiết lập PDA. Cấu hình ống dẫn không đúng."
+
+#: ../capplet/gnome-pilot-druid.c:485
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Thiết lập chưa hoàn thành và sẽ không được lưu.\n"
+"Có chắc là bạn muốn thoát ra không?"
+
+#: ../capplet/gnome-pilot-druid.c:608
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Sắp gửi tới PDA dữ liệu theo đây.\n"
+"Tên người chủ : %s\n"
+"Mã số PDA: %d\n"
+"Hãy đặt PDA vào %s (%s), sau đó ấn nút HotSync."
+
+#: ../capplet/gnome-pilot-druid.c:633
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Sắp lấy lại Tên chủ và Má số từ PDA.\n"
+"Hãy đặt PDA vào %s (%s) và ấn nút HotSync."
+
+#: ../capplet/gnome-pilot-druid.c:649
+msgid "Failed sending request to gpilotd"
+msgstr "Lỗi gửi yêu cầu đến gpilotd"
+
+#: ../capplet/gnome-pilot-druid.c:800
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Tên chủ và Mã số đã được lấy từ PDA.\n"
+"Tên chủ: %s\n"
+"Mã số PDA: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:429
+#, c-format
+msgid ""
+"Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr "Hãy đặt PDA vào %s (%s), sau đó ấn nút HotSync hoặc thôi thao tác."
+
+#: ../capplet/gnome-pilot-pdialog.c:464
+msgid "The request to get PDA ID failed"
+msgstr "Yêu cầu lấy Mã số của PDA bị lỗi"
+
+#: ../capplet/gnome-pilot-pdialog.c:508
+msgid "The request to set PDA ID failed"
+msgstr "Yêu cầu đặt Mã số của PDA bị lỗi"
+
+#: ../capplet/gpilotd-capplet.glade.h:2
+msgid "/dev/pilot"
+msgstr "/dev/pilot"
+
+#: ../capplet/gpilotd-capplet.glade.h:3
+msgid "/dev/ttyS0"
+msgstr "/dev/ttyS0"
+
+#: ../capplet/gpilotd-capplet.glade.h:4
+msgid "/dev/ttyS1"
+msgstr "/dev/ttyS1"
+
+#: ../capplet/gpilotd-capplet.glade.h:5
+msgid "/dev/ttyUSB0"
+msgstr "/dev/ttyUSB0"
+
+#: ../capplet/gpilotd-capplet.glade.h:6
+msgid "/dev/ttyUSB1"
+msgstr "/dev/ttyUSB1"
+
+#: ../capplet/gpilotd-capplet.glade.h:7
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Hành vi ống dẫn</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:8
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Thiết lập ống dẫn</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:9
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>Thuộc tính PDA</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:10
+msgid "<b>PDA Identification</b>"
+msgstr "<b>Nhận diện PDA</b>"
+
+#: ../capplet/gpilotd-capplet.glade.h:11
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Trong thao tác này nên dùng thiết bị "
+"nào?</span>\n"
+"\n"
+"Vì bạn có nhiều thiết bị kết nối được xác định cho máy tính này, bạn cần "
+"phải chọn điều nào nên dùng trong thao tác này."
+
+#: ../capplet/gpilotd-capplet.glade.h:14
+msgid "BIG5"
+msgstr "BIG5"
+
+#: ../capplet/gpilotd-capplet.glade.h:15
+msgid "CP1252"
+msgstr "CP1252"
+
+#: ../capplet/gpilotd-capplet.glade.h:16
+msgid "C_harset of PDA:"
+msgstr "Bộ _ký tự của PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:17
+msgid "C_onduits"
+msgstr "Ống _dẫn"
+
+#: ../capplet/gpilotd-capplet.glade.h:18
+msgid "Choose Device"
+msgstr "Chọn thiết bị"
+
+#: ../capplet/gpilotd-capplet.glade.h:19
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"Hãy chọn tùy chọn này nếu bạn đã sử dụng phần mềm đồng bộ, ngay cả trên máy "
+"tính khác"
+
+#: ../capplet/gpilotd-capplet.glade.h:20
+msgid "Conduit Settings"
+msgstr "Thiết lập ống dẫn"
+
+#: ../capplet/gpilotd-capplet.glade.h:21
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Chúc mừng bạn, gnome-pilot đã được cấu hình.\n"
+"\n"
+"Bạn có khả năng thay đổi thiết lập gnome-pilot\n"
+"vào bất kỳ lúc nào từ thẻ « PilotLink » và « Ống dẫn »\n"
+"trong trung tâm điều khiển.\n"
+"\n"
+"Bạn cũng có khả năng theo dõi tiến trình đồng bộ hóa\n"
+"gnome-pilot bằng cách thêm tiểu dụng PilotLink\n"
+"vào bảng điều khiển của bạn."
+
+#: ../capplet/gpilotd-capplet.glade.h:28
+msgid "D_isable"
+msgstr "_Tắt"
+
+#: ../capplet/gpilotd-capplet.glade.h:29
+msgid "De_vices"
+msgstr "Thiết _bị"
+
+#: ../capplet/gpilotd-capplet.glade.h:30
+msgid "Description:"
+msgstr "Mô tả:"
+
+#: ../capplet/gpilotd-capplet.glade.h:31
+msgid "Device Settings"
+msgstr "Thiết lập thiết bị"
+
+#: ../capplet/gpilotd-capplet.glade.h:32
+msgid "Device:"
+msgstr "Thiết bị:"
+
+#: ../capplet/gpilotd-capplet.glade.h:33
+#: ../capplet/util.c:74
+#: ../capplet/util.c:438
+msgid "Disabled"
+msgstr "Bị tắt"
+
+#: ../capplet/gpilotd-capplet.glade.h:34
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Hãy nhập tên chủ bạn muốn lưu trong PDA của mình"
+
+#: ../capplet/gpilotd-capplet.glade.h:35
+msgid "GB18030"
+msgstr "GB18030"
+
+#: ../capplet/gpilotd-capplet.glade.h:36
+msgid "GBK"
+msgstr "GBK"
+
+#: ../capplet/gpilotd-capplet.glade.h:37
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Lấy tên chủ và Mã số từ PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:38
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:39
+msgid "Initial Sync"
+msgstr "Đồng bộ đầu tiên"
+
+#: ../capplet/gpilotd-capplet.glade.h:40
+msgid "Net_work"
+msgstr "Mạn_g"
+
+#: ../capplet/gpilotd-capplet.glade.h:41
+#: ../capplet/util.c:115
+msgid "None"
+msgstr "Không có"
+
+#: ../capplet/gpilotd-capplet.glade.h:42
+msgid "O_wner:"
+msgstr "C_hủ :"
+
+#: ../capplet/gpilotd-capplet.glade.h:43
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Tên chủ và Mã số cần đặt trên PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:44
+msgid "Owner:"
+msgstr "Chủ :"
+
+#: ../capplet/gpilotd-capplet.glade.h:45
+msgid "PDA Attributes"
+msgstr "Thuộc tính PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:46
+msgid "PDA Identification"
+msgstr "Nhận diện PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:47
+msgid "PDA Settings"
+msgstr "Thiết lập PDA"
+
+# Name: don't translate / Tên: đừng dịch
+#: ../capplet/gpilotd-capplet.glade.h:48
+msgid "P_DA:"
+msgstr "P_DA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:49
+msgid "Port"
+msgstr "Cổng"
+
+#: ../capplet/gpilotd-capplet.glade.h:50
+msgid "S_peed:"
+msgstr "_Tốc độ :"
+
+#: ../capplet/gpilotd-capplet.glade.h:51
+msgid ""
+"Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr ""
+"Gởi tên Chủ và Mã số tới PDA, ghi đè lên thông tin nhận diện đã có"
+
+#: ../capplet/gpilotd-capplet.glade.h:52
+msgid "Set the character set used on your PDA."
+msgstr "Đặt bộ ký tự dùng trên PDA."
+
+#: ../capplet/gpilotd-capplet.glade.h:53
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Đặt thư mục gốc sẽ chứa mọi tập tin PDA."
+
+#: ../capplet/gpilotd-capplet.glade.h:54
+msgid "Success"
+msgstr "Thành công"
+
+#: ../capplet/gpilotd-capplet.glade.h:55
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Tên cho PDA của bạn. Chỉ dùng để nhận diện."
+
+#: ../capplet/gpilotd-capplet.glade.h:56
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"Mã số kiểu số nguyên mà nhận diện PDA của bạn và phải là duy nhất giữa các PDA bạn "
+"dùng."
+
+#: ../capplet/gpilotd-capplet.glade.h:57
+msgid "Ti_meout:"
+msgstr "Thời _hạn:"
+
+#: ../capplet/gpilotd-capplet.glade.h:58
+msgid "Welcome to gnome-pilot!"
+msgstr "Chào mừng dùng gnome-pilot !"
+
+#: ../capplet/gpilotd-capplet.glade.h:59
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Có vẻ như bạn đang chạy trình gnome-PDA lần đầu tiên.\n"
+"Các bước sau đây sẽ thiết lập gnome-pilot để đồng bộ hóa.\n"
+"Bạn có thể thay đổi các tùy chọn sau này từ\n"
+"bảng điều khiển PilotLink ở Trung Tâm Điều Khiển Gnome.\n"
+"\n"
+"Ấn nút « Tới » để tiếp tục.\n"
+"Ấn nút « Thôi » để thoát."
+
+#: ../capplet/gpilotd-capplet.glade.h:66
+msgid "_Action:"
+msgstr "_Hành vi:"
+
+#: ../capplet/gpilotd-capplet.glade.h:67
+msgid "_Add..."
+msgstr "Thê_m..."
+
+#: ../capplet/gpilotd-capplet.glade.h:68
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.glade.h:69
+msgid "_Delete"
+msgstr "_Xóa"
+
+#: ../capplet/gpilotd-capplet.glade.h:70
+msgid "_Device:"
+msgstr "Thiết _bị:"
+
+#: ../capplet/gpilotd-capplet.glade.h:71
+msgid "_Edit..."
+msgstr "_Sửa..."
+
+#: ../capplet/gpilotd-capplet.glade.h:72
+msgid "_Enable"
+msgstr "_Bật"
+
+#: ../capplet/gpilotd-capplet.glade.h:73
+msgid "_Get from PDA"
+msgstr "_Lấy từ PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:74
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:75
+msgid "_Local folder:"
+msgstr "Thư _mục cục bộ :"
+
+#: ../capplet/gpilotd-capplet.glade.h:76
+msgid "_Name of PDA:"
+msgstr "Tê_n PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:77
+msgid "_Name:"
+msgstr "Tê_n:"
+
+#: ../capplet/gpilotd-capplet.glade.h:78
+msgid "_No, I've never used sync software with this PDA before."
+msgstr ""
+"Khô_ng, trước đây tôi chưa bao giờ dùng phần mềm đồng bộ hóa với PDA này."
+
+#: ../capplet/gpilotd-capplet.glade.h:79
+msgid "_One time action:"
+msgstr "Chỉ làm _một lần:"
+
+#: ../capplet/gpilotd-capplet.glade.h:80
+msgid "_Owner:"
+msgstr "_Chủ :"
+
+#: ../capplet/gpilotd-capplet.glade.h:81
+msgid "_PDA ID:"
+msgstr "Mã số _PDA:"
+
+#: ../capplet/gpilotd-capplet.glade.h:82
+msgid "_PDAs"
+msgstr "_PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:83
+msgid "_Send to PDA"
+msgstr "_Gửi đến PDA"
+
+#: ../capplet/gpilotd-capplet.glade.h:84
+msgid "_Serial"
+msgstr "_Nối tiếp"
+
+#: ../capplet/gpilotd-capplet.glade.h:86
+msgid "_Type:"
+msgstr "_Kiểu:"
+
+#: ../capplet/gpilotd-capplet.glade.h:87
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.glade.h:88
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "Có, tôi đã dùng phần mềm đồng bộ hóa với PDA nà_y trước đây."
+
+#: ../capplet/gpilotd-control-applet.c:81
+msgid "Start druid only"
+msgstr "Chỉ chạy đồ thuật"
+
+#: ../capplet/gpilotd-control-applet.c:103
+msgid "Error initializing gpilotd capplet"
+msgstr "Gặp lỗi khi sơ khởi tiểu dụng thoại gpilotd"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Error loading PDA state, aborting"
+msgstr "Gặp lỗi khi tải tình trạng PDA nên hủy bỏ"
+
+#: ../capplet/gpilotd-control-applet.c:122
+#: ../capplet/gpilotd-control-applet.c:123
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Không thể kết nối tới trình nền GnomePilot."
+
+#: ../capplet/gpilotd-control-applet.c:132
+msgid "Cannot run druid if PDAs or devices already configured"
+msgstr "Không thể chạy đồ thuật nếu các PDA hay thiết bị để đã được cấu hình."
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Cấu hình thiết bị dùng PalmOS"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "Thiết bị dùng PalmOS"
+
+#: ../capplet/util.c:81
+#: ../capplet/util.c:440
+msgid "Enabled"
+msgstr "Đã bật"
+
+#: ../capplet/util.c:238
+msgid "You must have at least one device setup"
+msgstr "Bạn phải có ít nhất một thiết bị đã thiết lập"
+
+#: ../capplet/util.c:411
+msgid "Synchronize"
+msgstr "Đồng bộ hóa"
+
+#: ../capplet/util.c:412
+msgid "Copy from PDA"
+msgstr "Chép từ PDA"
+
+#: ../capplet/util.c:413
+msgid "Copy to PDA"
+msgstr "Chép vào PDA"
+
+#: ../capplet/util.c:414
+msgid "Merge from PDA"
+msgstr "Trộn từ PDA"
+
+#: ../capplet/util.c:415
+msgid "Merge to PDA"
+msgstr "Trộn vào PDA"
+
+#: ../capplet/util.c:418
+msgid "Use conduit settings"
+msgstr "Dùng thiết lập ống dẫn"
+
+#: ../capplet/util.c:426
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:427
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:428
+msgid "Network"
+msgstr "Mạng"
+
+#: ../capplet/util.c:429
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:430
+msgid "Serial"
+msgstr "Nối tiếp"
+
+#: ../capplet/util.c:478
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Thư mục cơ sở được chỉ định tồn tại nhưng có các quyền hạn sai.\n"
+"Hãy sửa lại hay chọn thư mục khác."
+
+#: ../capplet/util.c:483
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Thư mục cơ sở được chỉ định tồn tại nhưng không phải là\n"
+"thư mục. Hãy tạo nó là thư mục hoặc chọn thư mục khác."
+
+#: ../capplet/util.c:490
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"Đã không thể tạo thư mục cơ sở được chỉ ra.\n"
+"Hãy kiểm tra quyền hạn trên đường dẫn đó hoặc chọn thư mục khác."
+
+#: ../capplet/util.c:495
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Đường dẫn chỉ ra cho thư mục cơ sở không có hợp lệ.\n"
+"Hãy chọn thư mục khác."
+
+#: ../capplet/util.c:523
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.  Please enter a valid "
+"identifier or select from the available options."
+msgstr "« %s » không phải là một mã phân biệt bộ ký tự hợp lệ. Hãy nhập một mã phân biệt hợp lệ, hoặc chọn trong những tùy chọn sẵn sàng."
+
+#: ../capplet/util.c:647
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "Thiết bị « usb » chỉ là hợp lệ cho thiết bị kiểu USB."
+
+#: ../capplet/util.c:658
+msgid "Read/Write permissions failed on"
+msgstr "Quyền hạn Đọc/Ghi bị lỗi trên"
+
+#: ../capplet/util.c:660
+msgid "Check the permissions on the device and retry"
+msgstr "Hãy kiểm tra lại quyền hạn trên thiết bị rồi thử lại"
+
+#: ../capplet/util.c:675
+#: ../gpilotd/gpilotd.c:1332
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"Không thể tìm thư mục %s hay đọc tập tin %s. Hãy kiểm tra xem usbfx hay "
+"sysfx có gắn kết chưa."
+
+#: ../conduits/backup/backup_conduit.c:243
+msgid "Checking for removed databases"
+msgstr "Đang kiểm tra các cơ sở dữ liệu được gỡ bỏ"
+
+#: ../conduits/backup/backup_conduit.c:250
+#, c-format
+#. I18N note: this is printed when renaming a file %s
+msgid "Renaming %s"
+msgstr "Đang thay tên %s"
+
+#: ../conduits/backup/backup_conduit.c:257
+#, c-format
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+msgid "to %s"
+msgstr "thành %s"
+
+#: ../conduits/backup/backup_conduit.c:435
+#: ../conduits/backup/backup_conduit.c:439
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s chưa biến đổi từ lần đồng bộ hóa cuối cùng"
+
+#: ../conduits/backup/backup_conduit.c:451
+#: ../conduits/backup/backup_conduit.c:453
+#, c-format
+msgid "Making backup of %s"
+msgstr "Đang tạo bản sao lưu cho %s"
+
+#: ../conduits/backup/backup_conduit.c:460
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Không thể tạo tập tin sao lưu %s"
+
+#: ../conduits/backup/backup_conduit.c:736
+msgid "Collecting restore information..."
+msgstr "Đang thu thập thông tin khôi phục..."
+
+#: ../conduits/backup/backup_conduit.c:860
+msgid "_Backup directory:"
+msgstr "Thư mục _sao lưu :"
+
+#: ../conduits/backup/backup_conduit.c:873
+msgid "Backup directory"
+msgstr "Thư mục sao lưu"
+
+#: ../conduits/backup/backup_conduit.c:875
+msgid "O_nly backup changed bases"
+msgstr "Chỉ s_ao lưu các cơ sở đã thay đổi"
+
+#: ../conduits/backup/backup_conduit.c:885
+msgid "Only backup changed bases"
+msgstr "Chỉ sao lưu các cơ sở đã thay đổi"
+
+#: ../conduits/backup/backup_conduit.c:887
+msgid "_Remove local base if deleted on pilot"
+msgstr "_Gỡ bỏ cơ sở cục bộ nếu bị xóa trên PDA:"
+
+#: ../conduits/backup/backup_conduit.c:897
+msgid "Remove local base if deleted on pilot"
+msgstr "Gỡ bỏ cơ sở cục bộ nếu bị xóa trên PDA"
+
+#: ../conduits/backup/backup_conduit.c:899
+msgid "# of old backups to _keep"
+msgstr "# các bản sao lưu _cũ cần giữ lại:"
+
+#: ../conduits/backup/backup_conduit.c:910
+msgid "# of old backups to keep"
+msgstr "# các bản sao lưu cũ cần giữ lại"
+
+#: ../conduits/backup/backup_conduit.c:948
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Thư mục sao lưu được chỉ định tồn tại nhưng có quyền hạn sai.\n"
+"Hãy sửa lại hay chọn thư mục khác."
+
+#: ../conduits/backup/backup_conduit.c:953
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Thư mục sao lưu được chỉ định tồn tại nhưng không phải là\n"
+"thư mục. Hãy làm cho nó là thư mục hoặc chọn thư mục khác."
+
+#: ../conduits/backup/backup_conduit.c:960
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"Đã không thể tạo thư mục sao lưu được chỉ ra.\n"
+"Hãy kiểm tra quyền hạn trên đường dẫn đó hoặc chọn thư mục khác."
+
+#: ../conduits/backup/backup_conduit.c:965
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Đường dẫn chỉ ra cho thư mục sao lưu không có hợp lệ.\n"
+"Hãy chọn thư mục khác."
+
+#: ../conduits/file/file_conduit.c:243
+#: ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Lỗi cài đặt %s"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Đang cài đặt %s từ %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Đang cài đặt %s..."
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "Install immediately"
+msgstr "Cài đặt ngay"
+
+#: ../conduits/file/gpilot_install_file.c:45
+msgid "Install delayed"
+msgstr "Cài đặt bị trễ"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA to install to"
+msgstr "PDA vào đó cần cài đặt"
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:118
+#: ../conduits/file/gpilot_install_file.c:119
+msgid "Unable to get PDA names"
+msgstr "Không thể lấy các tên PDA"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "Các tập tin sau bị lỗi:\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Đang cài đặt vào %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "Không có tập tin cần cài đặt"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Hãy ấn nút đồng bộ hóa trên giá để,\n"
+"để cài đặt hay thôi thao tác."
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Trình nền Gnome-Pilot"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr ""
+"bản ghi PDA đã xóa bỏ cũng đã được biến đổi cục bộ nên không xóa bỏ nó\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr ""
+"bản ghi PDA đã xóa bỏ cũng đã được biến đổi trên PDA nên không xóa bỏ nó\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "hòa trộn xung đột, trao đổi bản ghi cục bộ và PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "lưu trữ và thay đổi xung đột, tráo đổi bản ghi cục bộ và PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "lưu trữ và thay đổi xung đột, gửi bản ghi cục bộ tới PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "lưu trữ và thay đổi xung đột, lưu cục bộ bản ghi PDA\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:423
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:498
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:563
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:592
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:621
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Lỗi sơ khởi các ống dẫn nên hủy bỏ thao tác"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:436
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr ""
+"Không thể xóa bỏ mọi bản ghi trong cơ sở dữ liệu của PDA nên hủy bỏ thao tác."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:447
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1025
+msgid "Conduit did not return a record"
+msgstr "Ống dẫn chưa trả lại bản ghi"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:504
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr ""
+"Không thể xóa bỏ mọi bản ghi trong cơ sở dữ liệu cục bộ nên hủy bỏ thao tác."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1430
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Lỗi trong ống dẫn, không thể tìm được bản ghi vừa mới thêm"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "Lỗi sao chép vào PDA."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "Lỗi sao chép từ PDA !"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "Lỗi hoà trộn vào PDA."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "Lỗi hoà trộn từ PDA."
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "Lỗi đồng bộ hóa."
+
+#: ../gpilotd/gnome-pilot-structures.c:286
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Không thể mở thiết bị %s (%s): lý do : « %s »."
+
+#: ../gpilotd/gnome-pilot-structures.c:290
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot không thể mở thiết bị %s (%s).\n"
+"Lý do : « %s »."
+
+#: ../gpilotd/gnome-pilot-structures.c:449
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr "Thiết bị Bluetooth [%s]: không thể đóng kết ổ cắm: lỗi %d (kiểm tra pilot-link đã được biên dịch với hỗ trợ Bluetooth)"
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Thiết bị [%s, %s]: không thể đóng kết ổ cắm: lỗi %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:539
+#: ../gpilotd/gnome-pilot-structures.c:590
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Không rõ kiểu thiết bị"
+
+#: ../gpilotd/gnome-pilot-structures.c:663
+msgid "Number of devices is configured to 0"
+msgstr "Số các thiết bị được cấu hình thành 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:665
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Không có thiết bị được cấu hình.\n"
+"Hãy chạy tiểu dụng gpilotd-control-applet (dùng gnomecc)\n"
+"để cấu hình trình gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:686
+msgid "No accessible devices available"
+msgstr "Hiện không có thiết bị có thể truy cập"
+
+#: ../gpilotd/gnome-pilot-structures.c:701
+msgid "Number of PDAs is configured to 0"
+msgstr "Số các PDA được cấu hình thành 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:703
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Không có PDA được cấu hình.\n"
+"Hãy chạy tiểu dụng gpilotd-control-applet (dùng gnomecc)\n"
+"để cấu hình trình gnome-pilot."
+
+#: ../gpilotd/gnome-pilot-structures.c:766
+#: ../gpilotd/gpilotd.c:687
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Chưa ghi rõ bộ ký tự (pilot_charset) nên dùng « %s »."
+
+#: ../gpilotd/gpilotd.c:236
+msgid "Unable to bind to PDA"
+msgstr "Không thể đóng kết với PDA"
+
+#: ../gpilotd/gpilotd.c:374
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr "Lỗi kết nối dùng thiết bị « %s », trên cổng « %s ». Kiểm tra lại cấu hình, vì bạn đã yêu cầu chức năng đồng bộ hoá kiểu mới thư viện USB « usb: », nhưng đã nạp một mô-đun hạt nhân kiểu cũ « visor ». Bạn có thể cần chọn một thiết bị « ttyUSB... »."
+
+#: ../gpilotd/gpilotd.c:389
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr "Lỗi kết nối dùng thiết bị « %s », trên cổng « %s ». Kiểm tra lại cấu hình, vì bạn đã yêu cầu chức năng đồng bộ hoá kiểu cũ nối tiếp USB « ttyUSB », nhưng chưa nạp mô-đun hạt nhân USB nối tiếp « visor ». Bạn có thể cần chọn một thiết bị « usb: »."
+
+#: ../gpilotd/gpilotd.c:480
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Không rõ PDA, không có tên và ID người dùng khớp %ld"
+
+#: ../gpilotd/gpilotd.c:487
+msgid "Use gnomecc to configure PDA"
+msgstr "Dùng gnomecc để cấu hình PDA"
+
+#: ../gpilotd/gpilotd.c:492
+#, c-format
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Không biết PDA này — không có PDA nào khớp với ID %ld.\n"
+"Hãy dùng gnomecc để cấu hình trình gnome-pilot"
+
+#: ../gpilotd/gpilotd.c:516
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Thiết bị %s có %d sự kiện"
+
+#: ../gpilotd/gpilotd.c:529
+msgid "Setting userinfo..."
+msgstr "Đang đặt thông tin người dùng..."
+
+#: ../gpilotd/gpilotd.c:534
+msgid "Sync continues"
+msgstr "Việc đồng bộ hóa tiếp tục"
+
+#: ../gpilotd/gpilotd.c:553
+msgid "Getting userinfo..."
+msgstr "Đang lấy thông tin người dùng..."
+
+#: ../gpilotd/gpilotd.c:615
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "Phát hiện thấy yêu cầu NetSync nên đồng bộ hóa PDA"
+
+#: ../gpilotd/gpilotd.c:617
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Phát hiện thấy yêu cầu Bluetooth nên đồng bộ hóa PDA"
+
+#: ../gpilotd/gpilotd.c:619
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "Nút HotSync được ấn nên đồng bộ hóa PDA"
+
+#: ../gpilotd/gpilotd.c:621
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "ID của PDA là %ld, tên là %s, chủ là %s"
+
+#: ../gpilotd/gpilotd.c:631
+#, c-format
+msgid "On host %s\n"
+msgstr "Trên máy %s\n"
+
+#: ../gpilotd/gpilotd.c:633
+#, c-format
+msgid "On host %d\n"
+msgstr "Trên máy %d\n"
+
+#: ../gpilotd/gpilotd.c:652
+msgid "Synchronization ended"
+msgstr "Mới đồng bộ hóa xong"
+
+#: ../gpilotd/gpilotd.c:655
+msgid "Synchronization ended early"
+msgstr "Việc đồng bộ hóa kết thúc sớm"
+
+#: ../gpilotd/gpilotd.c:701
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "« %s » không phải là một bộ ký tự iconv đã biết nên dùng « %s » để thay thế."
+
+#: ../gpilotd/gpilotd.c:724
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Thư mục cơ sở %s không có hợp lệ.\n"
+"Hãy sửa lại hay dùng gnomecc để chọn thư mục khác."
+
+#: ../gpilotd/gpilotd.c:737
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Không biết PDA này — không có PDA nào khớp với ID %ld.\n"
+"Hãy dùng tiểu dụng « gpilotd-control-applet » để đặt ID của PDA"
+
+#: ../gpilotd/gpilotd.c:788
+#. no ? drop connection then
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Gặp lỗi khi lấy dữ liệu hệ thống của PDA"
+
+#: ../gpilotd/gpilotd.c:797
+#. no ? drop connection then
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Gặp lỗi khi lấy dữ liệu người dùng của PDA"
+
+#: ../gpilotd/gpilotd.c:802
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Hoàn thành các sự kiện cho thiết bị %s (%s)"
+
+#: ../gpilotd/gpilotd.c:863
+#, c-format
+msgid "Woke on %s"
+msgstr "Mới hoạt động vào %s"
+
+#: ../gpilotd/gpilotd.c:944
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Mới hoạt động trên mạng: %s"
+
+#: ../gpilotd/gpilotd.c:1504
+#, c-format
+msgid "Watching %s (network)"
+msgstr "Đang theo dõi %s (mạng)"
+
+#: ../gpilotd/gpilotd.c:1506
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "Đang theo dõi %s (Bluetooth)"
+
+#: ../gpilotd/gpilotd.c:1508
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Đang theo dõi %s (%s)"
+
+#: ../gpilotd/gpilotd.c:1522
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Đang thoát (bắt SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:1531
+msgid "Exiting (caught SIGINT)..."
+msgstr "Đang thoát (bắt SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:1563
+msgid "Unable to create file installation queue directory"
+msgstr "Không thể tạo thư mục sắp hàng đợi cài đặt tập tin"
+
+#: ../gpilotd/gpilotd.c:1613
+msgid "Shutting down devices"
+msgstr "Đang tắt các thiết bị"
+
+#: ../gpilotd/gpilotd.c:1615
+msgid "Rereading configuration..."
+msgstr "Đang đọc lại cấu hình..."
+
+#: ../gpilotd/manager.c:269
+msgid "non-backup conduit in backup conduit list"
+msgstr "có ống dẫn không sao lưu trong danh sách các ống dẫn sao lưu"
+
+#: ../gpilotd/manager.c:277
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s đã sao lưu\n"
+
+#: ../gpilotd/manager.c:279
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s lỗi sao lưu\n"
+
+#: ../gpilotd/manager.c:305
+msgid "Collecting synchronization info..."
+msgstr "Đang thu thập thông tin đồng bộ hóa..."
+
+#: ../gpilotd/manager.c:427
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Đang đồng bộ hóa %s\n"
+
+#: ../gpilotd/manager.c:446
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Chép sang PDA %s\n"
+
+#: ../gpilotd/manager.c:464
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Chép từ PDA %s\n"
+
+#: ../gpilotd/manager.c:482
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Trộn vào PDA %s\n"
+
+#: ../gpilotd/manager.c:500
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Trộn từ PDA %s\n"
+
+#: ../gpilotd/manager.c:528
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Việc đồng bộ hóa lần đầu của ống dẫn %s..."
+
+#: ../gpilotd/manager.c:552
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "hàng động đồng bộ không xác định (%d = %s).\n"
+
+#: ../gpilotd/manager.c:678
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Đang sơ khởi %d ống dẫn..."
+
+#: ../gpilotd/manager.c:683
+#: ../gpilotd/manager.c:684
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Ống dẫn không xác định « %s » trong cấu hình."
+
+#: ../gpilotd/manager.c:693
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Lỗi tải ống dẫn « %s » lỗi."
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Lỗi tải ống dẫn « %s ».\n"
+
+#: ../gpilotd/manager.c:783
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Đang đặt ID/chủ thành %d/%s..."
+
+#: ../gpilotd/manager.c:815
+#, c-format
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+msgid "Conduit %s requested, but not found"
+msgstr "Yêu cầu ống dẫn %s, nhưng không thấy nó"
+
+#: ../gpilotd/manager.c:825
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Ống dẫn %s không thể được yêu cầu"
+
+#: ../gpilotd/orbit_daemon_glue.c:1747
+msgid "(unknown DB)"
+msgstr "(co sở dữ liệu không xác định)"
+
+#: ../gpilotd/queue_io.c:96
+msgid "Error in queue, non-existing entry"
+msgstr "Gặp lỗi trong hàng đợi, mục nhập không tồn tại"
+
+#: ../gpilotd/queue_io.c:436
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "lỗi: không thấy yêu cầu cho PDA %d, yêu cầu %d"
+
+#: ../libgpilotdCM/gnome-pilot-conduit-management.gob:686
+msgid "module loading not supported, fatal!"
+msgstr "không hỗ trợ khả năng tải mô-đun: trầm trọng !"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "Lấy thông tin hệ thống"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "Tạm dừng trình nền"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "Thôi tạm dừng trình nền"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "Khởi chạy lại trình nền"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "Đặt tên và mã số người dùng"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "Mã số cho PDA"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "Cài đặt tập tin"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "TẬP TIN"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "Phục hồi thư mục"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "THƯ MỤC"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "Chạy ống dẫn"
+
+#: ../utils/gpilotd-client.c:47
+#: ../utils/gpilotdcm-client.c:27
+msgid "CONDUIT"
+msgstr "ỐNG DẪN"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "Tên người dùng cần đặt"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "TÊN NGƯỜI DÙNG"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "Theo dõi các hành động của PDA đã xác định"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "Theo dõi mọi PDA"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr "liệt kê mọi PDA theo đăng nhập (toàn bộ cho mọi PDA)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "ĐĂNG NHẬP"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Chỉ định PDA cần thao tác (mặc định là MyPDA)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "TÊN PDA"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Chỉ định một giá để cần thao tác (mặc định là Cradle0)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "TÊN GIÁ ĐỂ"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Liệt kê các cơ sở của PDA đã chỉ định"
+
+#: ../utils/gpilotd-client.c:359
+#: ../utils/gpilotdcm-client.c:106
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"••• Chú ý !! •••\n"
+"Đay là công cụ cho một số thành phần của gói gnome-pilot.\n"
+"Không dùng nó nếu bạn không biết cách sử dụng."
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "lists available conduits"
+msgstr "liệt kê các ống dẫn hiện có"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "conduit to operate on"
+msgstr "ống dẫn cần thao tác"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "list all attributes"
+msgstr "liệt kê mọi thuộc tính"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "specify PDA to operate on"
+msgstr "chỉ định PDA cần thao tác"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "PDA_ID"
+msgstr "_ID PDA"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list attributes"
+msgstr "liệt kê thuộc tính"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list available conduits and their state"
+msgstr "liệt kê mọi ống dẫn hiện có và tình trạng của chúng"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "enable specified conduit"
+msgstr "bật chạy ống dẫn chỉ định"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "disable specified conduit"
+msgstr "tắt ống dẫn chỉ định"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "enable, and set firstsync to slow"
+msgstr "bật chạy và đặt firstsync (đồng bộ đầu tiên) là chậm"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "instantiate and destroy the conduit"
+msgstr "sơ khởi và hủy ống dẫn"
+
+#: ../applet/gpilot-applet.desktop.in.h:1
+msgid "PilotSync"
+msgstr "PilotSync"
+
+#: ../applet/gpilot-applet.desktop.in.h:2
+msgid "Synchroniser for PalmOS PDAs"
+msgstr "Trình đồng bộ hoá cho máy PDA chạy PalmOS"

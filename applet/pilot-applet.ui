@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="GtkDialog" id="ChoosePilot">
+    <property name="title" translatable="yes">Choose PDA</property>
+    <child>
+      <object class="GtkFrame" id="frame9">
+        <child>
+          <object class="GtkComboBox" id="pilot_combo">
+          </object>
+        </child>
+        <child type="label">
+          <object class="GtkLabel" id="label1">
+            <property name="label" translatable="yes">Choose PDA</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button5">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button6">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">button5</action-widget>
+      <action-widget response="0">button6</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="ProgressDialog">
+    <property name="title" translatable="yes">gnome-pilot progress</property>
+    <property name="default_width">500</property>
+    <child>
+      <object class="GtkBox" id="inner_vbox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">4</property>
+        <child>
+          <object class="GtkLabel" id="sync_label">
+            <property name="justify">center</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="overall_progress_bar">
+          </object>
+        </child>
+        <child>
+          <object class="GtkProgressBar" id="conduit_progress_bar">
+          </object>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolled_window">
+            <property name="hscrollbar_policy">automatic</property>
+            <child>
+              <object class="GtkTextView" id="message_area">
+                <property name="height_request">153</property>
+                <property name="can_focus">True</property>
+                <property name="editable">False</property>
+                <property name="wrap_mode">word</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="cancel_button">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">cancel_button</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="RestoreDialog">
+    <property name="title" translatable="yes">Restore PDA</property>
+    <child>
+      <object class="GtkFrame" id="main_frame">
+        <child>
+          <object class="GtkGrid" id="table2">
+            <property name="column_spacing">6</property>
+            <property name="row_spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="label4">
+                <property name="label" translatable="yes">_Directory</property>
+                <property name="use_underline">True</property>
+                <property name="justify">center</property>
+                <property name="mnemonic_widget">dir_entry</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label5">
+                <property name="sensitive">False</property>
+                <property name="label" translatable="yes">_PDA ID</property>
+                <property name="use_underline">True</property>
+                <property name="justify">center</property>
+                <property name="mnemonic_widget">pilotid_entry</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="sync_label">
+                <property name="label" translatable="yes">_Sync cradle</property>
+                <property name="use_underline">True</property>
+                <property name="justify">center</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="dir_entry">
+                <property name="can_focus">True</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="pilotid_entry">
+                <property name="sensitive">False</property>
+                <property name="can_focus">True</property>
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="GtkComboBox" id="device_combo">
+                <layout>
+                  <property name="column">1</property>
+                  <property name="row">2</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button8">
+        <property name="label" translatable="yes">_OK</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="button10">
+        <property name="label" translatable="yes">_Cancel</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-5">button8</action-widget>
+      <action-widget response="-6">button10</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="PropertiesDialog">
+    <property name="title" translatable="yes">GNOME PilotSync Properties</property>
+    <child>
+      <object class="GtkGrid" id="table1">
+        <property name="column_spacing">6</property>
+        <property name="row_spacing">6</property>
+        <property name="homogeneous">True</property>
+        <child>
+          <object class="GtkLabel" id="label2">
+            <property name="label" translatable="yes">_Execute when clicked</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+            <property name="mnemonic_widget">exec_entry</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label3">
+            <property name="label" translatable="yes">_Display notices</property>
+            <property name="use_underline">True</property>
+            <property name="justify">center</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="exec_entry">
+            <property name="can_focus">True</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="notices_button">
+            <property name="draw_indicator">True</property>
+            <child>
+              <placeholder/>
+            </child>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="helpbutton">
+        <property name="label" translatable="yes">_Help</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkButton" id="closebutton1">
+        <property name="label" translatable="yes">_Close</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-11">helpbutton</action-widget>
+      <action-widget response="-7">closebutton1</action-widget>
+    </action-widgets>
+  </object>
+</interface>

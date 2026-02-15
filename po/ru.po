@@ -1,0 +1,1756 @@
+# Copyright (C) 2000 Free Software Foundation, Inc.
+#
+# Valek Filippov <frob@df.ru>, 2000.
+# Yulia <ypoyarko@redhat.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-pilot.master.ru\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-pilot&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-03-21 01:05+0000\n"
+"PO-Revision-Date: 2011-07-18 20:51+0300\n"
+"Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "Выбрать КПК"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "Свойства GNOME PilotSync"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "Восстановить КПК"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "_Каталог"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "_Показать предупреждения"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "_Выполнить по щелчку"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "_Идентификатор КПК"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "_Синхронизировать базу"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "Прогресс gnome-pilot"
+
+#: ../applet/pilot.c:186
+#, c-format
+msgid "%s Synchronizing"
+msgstr "Синхронизация %s..."
+
+#: ../applet/pilot.c:191
+#| msgid "_Settings..."
+msgid "Connecting..."
+msgstr "Соединение..."
+
+#: ../applet/pilot.c:209
+#: ../applet/pilot.c:907
+#: ../applet/pilot.c:1051
+msgid "Ready to synchronize"
+msgstr "Готов к синхронизации"
+
+#: ../applet/pilot.c:290
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "Обработка запроса %ld завершена\n"
+
+#: ../applet/pilot.c:312
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s Синхронизация: %s"
+
+#: ../applet/pilot.c:317
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: запущено\n"
+
+#: ../applet/pilot.c:332
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s: завершено: %s"
+
+#: ../applet/pilot.c:337
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: закончено\n"
+
+#: ../applet/pilot.c:362
+#, c-format
+#| msgid "%v of %u records"
+msgid "%d of %d records"
+msgstr "%d из %d записей"
+
+#: ../applet/pilot.c:382
+#, c-format
+#| msgid "Database %v of %u"
+msgid "Database %d of %d"
+msgstr "База данных %d из %d"
+
+#: ../applet/pilot.c:443
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"Выполняется синхронизация КПК.\n"
+"Пожалуйста, дождитесь завершения."
+
+#: ../applet/pilot.c:448
+msgid "Not connected. Please restart daemon."
+msgstr "Не подключен. Перезапустите службу."
+
+#: ../applet/pilot.c:452
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"Не подключен к gpilotd.\n"
+"Перезапустите службу."
+
+#: ../applet/pilot.c:481
+msgid "gnome-pilot applet"
+msgstr "Апплет gnome-pilot"
+
+#: ../applet/pilot.c:483
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "(C) 2000-2006 Фонд свободного программного обеспечения"
+
+#: ../applet/pilot.c:484
+msgid "A PalmOS PDA monitor.\n"
+msgstr "Мониторинг коммуникаторов PalmOS.\n"
+
+#: ../applet/pilot.c:582
+#: ../applet/pilot.c:609
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Ошибка при отображении справки: %s"
+
+#: ../applet/pilot.c:695
+#, c-format
+msgid "Restoring %s"
+msgstr "Восстановление %s"
+
+#: ../applet/pilot.c:738
+msgid "No directory to restore from."
+msgstr "Нет каталога для восстановления."
+
+#: ../applet/pilot.c:750
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"Нажмите кнопку синхронизации на базе для восстановления\n"
+"или отмените действие."
+
+#: ../applet/pilot.c:756
+#, c-format
+msgid "cancelling %d"
+msgstr "отмена %d"
+
+#: ../applet/pilot.c:761
+msgid "Restore request failed"
+msgstr "Запрос восстановления не удался"
+
+#: ../applet/pilot.c:802
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"Выполняется синхронизация КПК.\n"
+"Вы действительно хотите перезапустить службу?"
+
+#: ../applet/pilot.c:817
+#: ../applet/pilot.c:1371
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "Попытка подключения к демону GnomePilot"
+
+#: ../applet/pilot.c:834
+msgid "There's no last sync on record."
+msgstr "Нет сведений о последней синхронизации."
+
+#: ../applet/pilot.c:839
+#| msgid "Restore..."
+msgid "_Restore"
+msgstr "_Восстановить"
+
+#: ../applet/pilot.c:840
+msgid "_Pause/Resume"
+msgstr "_Приостановить/возобновить"
+
+#: ../applet/pilot.c:841
+#| msgid "Restart"
+msgid "R_estart"
+msgstr "_Перезапустить"
+
+#: ../applet/pilot.c:842
+msgid "_Log"
+msgstr "_Журнал"
+
+#: ../applet/pilot.c:843
+msgid "_Props"
+msgstr "_Свойства"
+
+#: ../applet/pilot.c:844
+#| msgid "Help"
+msgid "_Help"
+msgstr "_Справка"
+
+#: ../applet/pilot.c:845
+#| msgid "About"
+msgid "_About"
+msgstr "_О программе"
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:856
+msgid "Restore..."
+msgstr "Восстановление..."
+
+#: ../applet/pilot.c:856
+msgid "Restart"
+msgstr "Перезапустить"
+
+#: ../applet/pilot.c:856
+msgid "Last log..."
+msgstr "Последний журнал синхронизации..."
+
+#: ../applet/pilot.c:857
+msgid "Preferences..."
+msgstr "Свойства..."
+
+#: ../applet/pilot.c:857
+msgid "Help"
+msgstr "Справка"
+
+#: ../applet/pilot.c:857
+msgid "About"
+msgstr "О программе..."
+
+#: ../applet/pilot.c:870
+msgid "Continue"
+msgstr "Продолжить"
+
+#: ../applet/pilot.c:872
+msgid "Pause Daemon"
+msgstr "Приостановить службу"
+
+#: ../applet/pilot.c:898
+msgid "Daemon paused..."
+msgstr "Служба приостановлена..."
+
+#: ../applet/pilot.c:1039
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "Не подключен. Перезапустите службу для подключения"
+
+#: ../applet/pilot.c:1210
+#, c-format
+msgid "Execution of %s failed"
+msgstr "Выполнение %s не удалось"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1336
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "установка «%s» в «%s»"
+
+#: ../applet/pilot.c:1346
+msgid "unknown dnd type"
+msgstr "Неизвестный тип dnd"
+
+#: ../applet/pilot.c:1354
+msgid "destroy gpilot-applet"
+msgstr "уничтожить gpilot-applet"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "Команда, запускаемая по щелчку на апплете"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "Предупреждения в новом окне"
+
+#: ../capplet/gnome-pilot-capplet.c:228
+#: ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "Настройки gnome-pilot"
+
+#: ../capplet/gnome-pilot-capplet.c:395
+#: ../capplet/gnome-pilot-capplet.c:471
+msgid "Name"
+msgstr "Название"
+
+#: ../capplet/gnome-pilot-capplet.c:397
+#: ../utils/gpilotd-client.c:43
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:399
+msgid "Owner"
+msgstr "Пользователь"
+
+#: ../capplet/gnome-pilot-capplet.c:473
+msgid "Type"
+msgstr "Тип"
+
+#: ../capplet/gnome-pilot-capplet.c:575
+msgid "Conduit"
+msgstr "Кондуит"
+
+#: ../capplet/gnome-pilot-capplet.c:577
+msgid "Sync Action"
+msgstr "Синхронизация"
+
+#: ../capplet/gnome-pilot-capplet.c:791
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "Вы действительно хотите удалить КПК «%s»?"
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "_Edit this PDA..."
+msgstr "_Изменить КПК..."
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "Edit the currently selected PDA"
+msgstr "Изменить выбранный КПК"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "_Delete this PDA"
+msgstr "_Удалить этот КПК"
+
+#: ../capplet/gnome-pilot-capplet.c:818
+msgid "Delete the currently selected PDA"
+msgstr "Удалить выбранный КПК"
+
+#: ../capplet/gnome-pilot-capplet.c:970
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "Вы действительно хотите удалить устройство %s?"
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "_Edit this device..."
+msgstr "_Изменить это устройство..."
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "Edit the currently selected device"
+msgstr "Изменить выбранное устройство"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "_Delete this device"
+msgstr "_Удалить это устройство"
+
+#: ../capplet/gnome-pilot-capplet.c:994
+msgid "Delete the currently selected device"
+msgstr "Удалить выбранное устройство"
+
+#: ../capplet/gnome-pilot-capplet.c:1178
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "Не удалось создать кондуит %s."
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "_Enable this conduit"
+msgstr "_Включить этот кондуит"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "Disable the currently selected conduit"
+msgstr "Отключить выбранный кондуит"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "_Disable this conduit"
+msgstr "О_тключить этот кондуит"
+
+#: ../capplet/gnome-pilot-capplet.c:1221
+msgid "Enable the currently selected conduit"
+msgstr "Включить выбранный кондуит"
+
+#: ../capplet/gnome-pilot-capplet.c:1222
+#: ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "_Настройки..."
+
+#: ../capplet/gnome-pilot-capplet.c:1223
+msgid "Modify the currently selected conduit's settings"
+msgstr "Изменить настройки выбранного кондуита"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:204
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "Не удалось создать окно настроек КПК. Неверная конфигурация кондуита."
+
+#: ../capplet/gnome-pilot-assistant.c:504
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"Конфигурация не завершена и настройки не будут\n"
+"сохранены. Вы действительно хотите выйти?"
+
+#: ../capplet/gnome-pilot-assistant.c:723
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Следующие данные будут переданы КПК\n"
+"Имя пользователя: %s\n"
+"Идентификатор КПК: %d\n"
+"Пожалуйста, поставьте КПК в %s (%s) и нажмите кнопку «HotSync»."
+
+#: ../capplet/gnome-pilot-assistant.c:744
+#: ../capplet/gnome-pilot-assistant.c:765
+msgid "Failed sending request to gpilotd"
+msgstr "Не удалось отправить запрос к gpilotd"
+
+#: ../capplet/gnome-pilot-assistant.c:752
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"Для получения имени пользователя и идентификатора из КПК\n"
+"поместите устройство в %s (%s) и нажмите кнопку «HotSync»."
+
+#: ../capplet/gnome-pilot-assistant.c:936
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"Успешно получено имя пользователя и ID из КПК.\n"
+"Имя пользователя: %s\n"
+"Идентификатор: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:438
+#, c-format
+msgid "Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr "Вставьте КПК в %s (%s), нажмите кнопку «HotSync» или отмените действие."
+
+#: ../capplet/gnome-pilot-pdialog.c:473
+msgid "The request to get PDA ID failed"
+msgstr "Не удалось получить идентификатор КПК"
+
+#: ../capplet/gnome-pilot-pdialog.c:512
+msgid "The request to set PDA ID failed"
+msgstr "Не удалось установить идентификатор КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Действия кондуита</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Настройки кондуита</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>Атрибуты КПК</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>Идентификация КПК</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Какое устройство использовать для этого действия?</span>\n"
+"\n"
+"Для этого компьютера определено несколько устройств подключения. Выберите устройство, которое следует использовать для этого действия."
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "Ко_дировка КПК:"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "_Кондуиты"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "Выбрать устройство"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid "Choose this option if you have used sync software before, even on another computer"
+msgstr "Выберите, если вы раньше использовали программы синхронизации на этом или других компьютерах"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "Настройки кондуита"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"Поздравляем, настройка gnome-pilot успешно завершена.\n"
+"\n"
+"Параметры можно позднее изменить на вкладках «PilotLink» и «Кондуиты» в центре управления.\n"
+"\n"
+"Для наблюдения за синхронизацией gnome-pilot добавьте апплет PilotLink в область уведомлений."
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "О_тключить"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "_Устройства"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "Описание:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "Настройки устройства"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "Устройство:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "Введите имя пользователя для сохранения в КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "Получить имя пользователя и идентификатор из КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "I_rDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "Первоначальная синхронизация"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "_Сеть"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "_Пользователь:"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "Имя пользователя и ID для настройки в КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "Пользователь:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "Атрибуты КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "Идентификация КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "Настройки КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "_КПК:"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "Исправьте следующие проблемы..."
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "_Скорость:"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid "Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr "Отправить имя пользователя и идентификатор в КПК, переопределив существующие настройки"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "Задать корневой каталог для сохранения файлов КПК."
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "Успешно"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "Название вашего КПК. Используется только для идентификации."
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid "This integer ID identifies your PDA and must be unique between different PDAs that you use."
+msgstr "Уникальное целое значение для идентификации КПК."
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "_Таймаут:"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "Добро пожаловать в gnome-pilot"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"Похоже, вы запустили gnome-pilot в первый раз.\n"
+"Следующие шаги настроят синхронизацию с помощью gnome-pilot.\n"
+"Параметры можно изменить позднее из\n"
+"панели «PilotLink» в центре управления Gnome.\n"
+"\n"
+"Нажмите «Далее» для продолжения.\n"
+"Нажмите «Отмена» для выхода."
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "_Действие:"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "_Добавить..."
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "_Bluetooth"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "_Удалить"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "_Устройство:"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "_Правка..."
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "_Включить"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "_Получить из КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "_IrDA"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "_Локальный каталог:"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "_Имя КПК:"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "_Имя:"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "_Нет, я раньше не использовал программы синхронизации с этим КПК."
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "_Единоразовое действие:"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "_Пользователь:"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "ID _КПК:"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "_КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "О_тправить в КПК"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "_Последовательный"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "_Тип:"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "_USB"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "_Да, я использовал раньше программы синхронизации с этим КПК."
+
+#: ../capplet/gpilotd-control-applet.c:84
+msgid " - configure gnome-pilot settings"
+msgstr "&mdash; управление настройками gnome-pilot"
+
+#: ../capplet/gpilotd-control-applet.c:86
+#: ../capplet/gpilotd-control-applet.c:95
+#, c-format
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "Ошибка инициализации управляющего апплета gpilotd: %s"
+
+#: ../capplet/gpilotd-control-applet.c:101
+#: ../capplet/gpilotd-control-applet.c:102
+msgid "Error loading PDA state, aborting"
+msgstr "Ошибка загрузки состояния КПК. Прервано"
+
+#: ../capplet/gpilotd-control-applet.c:109
+#: ../capplet/gpilotd-control-applet.c:110
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "Не удалось подключиться к службе GnomePilot"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "Настроить устройства PalmOS"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "Устройства PalmOS"
+
+#: ../capplet/pilot.c:116
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "Не удалось загрузить ключ gpilotd/General/sync_PC_Id: %s"
+
+#: ../capplet/pilot.c:130
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr "Не удалось загрузить ключ gpilotd/General/progress_stepping: %s"
+
+#: ../capplet/pilot.c:164
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/type: %s"
+
+#: ../capplet/pilot.c:186
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/name: iDevice, %s"
+
+#: ../capplet/pilot.c:204
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/speed: %s"
+
+#: ../capplet/pilot.c:213
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/timeout: %s"
+
+#: ../capplet/pilot.c:254
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/name: %s"
+
+#: ../capplet/pilot.c:264
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "Не удалось загрузить ключ gpilotd/%s/pilotid: %s"
+
+#: ../capplet/util.c:123
+#: ../capplet/util.c:513
+msgid "Disabled"
+msgstr "Отключено"
+
+#: ../capplet/util.c:129
+#: ../capplet/util.c:515
+msgid "Enabled"
+msgstr "Включено"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "Нет"
+
+#: ../capplet/util.c:315
+msgid "You must have at least one device setup"
+msgstr "Должно быть настроено хотя бы одно устройство"
+
+#: ../capplet/util.c:486
+msgid "Synchronize"
+msgstr "Синхронизировать"
+
+#: ../capplet/util.c:487
+msgid "Copy from PDA"
+msgstr "Скопировать из КПК"
+
+#: ../capplet/util.c:488
+msgid "Copy to PDA"
+msgstr "Скопировать в КПК"
+
+#: ../capplet/util.c:489
+msgid "Merge from PDA"
+msgstr "Добавить из КПК"
+
+#: ../capplet/util.c:490
+msgid "Merge to PDA"
+msgstr "Добавить в КПК"
+
+#: ../capplet/util.c:493
+msgid "Use conduit settings"
+msgstr "Использовать настройки кондуита"
+
+#: ../capplet/util.c:501
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:502
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:503
+msgid "Network"
+msgstr "Сеть"
+
+#: ../capplet/util.c:504
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: ../capplet/util.c:505
+msgid "Serial"
+msgstr "Последовательный"
+
+#: ../capplet/util.c:552
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Указанный основной каталог существует, но его права доступа неверны.\n"
+"Исправьте или выберите другой каталог."
+
+#: ../capplet/util.c:557
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Указанный основной каталог существует, но не является каталогом.\n"
+"Создайте каталог или выберите другой."
+
+#: ../capplet/util.c:564
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another directory"
+msgstr ""
+"Не удалось создать указанный основной каталог.\n"
+"Проверьте права доступа или выберите другой каталог."
+
+#: ../capplet/util.c:569
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Недопустимый путь к основному каталогу.\n"
+"Выберите другой каталог"
+
+#: ../capplet/util.c:593
+#, c-format
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"`%s' не является допустимым идентификатором.\n"
+"Введите допустимый идентификатор или выберите из доступных параметров."
+
+#: ../capplet/util.c:706
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "«usb:» можно использовать только для устройств USB"
+
+#: ../capplet/util.c:714
+msgid "Read/Write permissions failed on"
+msgstr "Ошибка прав чтения/записи для"
+
+#: ../capplet/util.c:716
+msgid "Check the permissions on the device and retry"
+msgstr "Проверьте права доступа к устройству и повторите попытку"
+
+#: ../capplet/util.c:728
+#: ../gpilotd/gpilot-daemon.c:1261
+#, c-format
+msgid "Failed to find directory %s or read file %s.  Check that usbfs or sysfs is mounted."
+msgstr "Не удалось найти каталог %s или выполнить чтение файла %s. Проверьте подключение usbfs или sysfs."
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr "Не удалось загрузить ключ backup-conduit/%s/updated_only: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr "Не удалось загрузить ключ backup-conduit/%s/remove_deleted: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "Проверка удалённых баз данных"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:274
+#, c-format
+msgid "Renaming %s"
+msgstr "%s будет переименован"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:282
+#, c-format
+msgid "to %s"
+msgstr "в %s"
+
+#: ../conduits/backup/backup_conduit.c:457
+#: ../conduits/backup/backup_conduit.c:461
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "%s не изменялся со времени последней синхронизации"
+
+#: ../conduits/backup/backup_conduit.c:473
+#: ../conduits/backup/backup_conduit.c:475
+#, c-format
+msgid "Making backup of %s"
+msgstr "Выполняется резервное копирование %s"
+
+#: ../conduits/backup/backup_conduit.c:482
+#: ../conduits/backup/backup_conduit.c:484
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "Не удалось создать резервный файл %s"
+
+#: ../conduits/backup/backup_conduit.c:684
+msgid "Collecting restore information..."
+msgstr "Сбор информации для восстановления..."
+
+#: ../conduits/backup/backup_conduit.c:811
+msgid "_Backup directory:"
+msgstr "_Резервный каталог:"
+
+#: ../conduits/backup/backup_conduit.c:825
+msgid "Backup directory"
+msgstr "Резервный каталог"
+
+#: ../conduits/backup/backup_conduit.c:827
+msgid "O_nly backup changed bases"
+msgstr "_Создать резервные копии только для изменённых баз"
+
+#: ../conduits/backup/backup_conduit.c:837
+msgid "Only backup changed bases"
+msgstr "Создать резервные копии только для изменённых баз"
+
+#: ../conduits/backup/backup_conduit.c:839
+msgid "_Remove local base if deleted on pilot"
+msgstr "_Удалить локальную базу при удалении в КПК"
+
+#: ../conduits/backup/backup_conduit.c:849
+msgid "Remove local base if deleted on pilot"
+msgstr "Удалять локально при удалении в КПК"
+
+#: ../conduits/backup/backup_conduit.c:851
+msgid "# of old backups to _keep"
+msgstr "_Число поддерживаемых резервных копий"
+
+#: ../conduits/backup/backup_conduit.c:862
+msgid "# of old backups to keep"
+msgstr "Число поддерживаемых резервных копий"
+
+#: ../conduits/backup/backup_conduit.c:900
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"Указанный каталог резервирования существует, но его права доступа неверны.\n"
+"Исправьте или выберите другой каталог."
+
+#: ../conduits/backup/backup_conduit.c:905
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"Указанный каталог резервирования существует, но не является каталогом.\n"
+"Создайте каталог или выберите другой."
+
+#: ../conduits/backup/backup_conduit.c:912
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another directory"
+msgstr ""
+"Не удалось создать каталог резервирования.\n"
+"Проверьте права доступа или выберите другой каталог."
+
+#: ../conduits/backup/backup_conduit.c:917
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"Указан неверный путь к резервному каталогу.\n"
+"Выберите другой каталог"
+
+#: ../conduits/evolution-data-server/address-conduit.c:593
+msgid "Default Sync Address:"
+msgstr "Адрес синхронизации по умолчанию:"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1594
+#: ../conduits/evolution-data-server/address-conduit.c:1595
+msgid "Could not load address book"
+msgstr "Не удалось загрузить адресную книгу"
+
+#: ../conduits/evolution-data-server/address-conduit.c:1666
+#: ../conduits/evolution-data-server/address-conduit.c:1669
+msgid "Could not read pilot's Address application block"
+msgstr "Не удалось прочитать блок адреса приложения"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:250
+msgid "Split Multi-Day Events:"
+msgstr "Разделить многодневные события:"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1496
+#: ../conduits/evolution-data-server/calendar-conduit.c:1497
+#: ../conduits/evolution-data-server/memo-conduit.c:787
+#: ../conduits/evolution-data-server/memo-conduit.c:788
+#: ../conduits/evolution-data-server/todo-conduit.c:990
+#: ../conduits/evolution-data-server/todo-conduit.c:991
+msgid "Could not start evolution-data-server"
+msgstr "Не удалось запустить evolution-data-server"
+
+#: ../conduits/evolution-data-server/calendar-conduit.c:1598
+#: ../conduits/evolution-data-server/calendar-conduit.c:1601
+msgid "Could not read pilot's Calendar application block"
+msgstr "Не удалось прочитать блок приложения для календаря"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:96
+msgid "Sync with:"
+msgstr "Синхронизировать с:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:104
+msgid "Sync Private Records:"
+msgstr "Синхронизировать личные записи:"
+
+#: ../conduits/evolution-data-server/e-pilot-settings.c:113
+#| msgid "Sync continues"
+msgid "Sync Categories:"
+msgstr "Категории синхронизации:"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:875
+#: ../conduits/evolution-data-server/memo-conduit.c:878
+msgid "Could not read pilot's Memo application block"
+msgstr "Не удалось прочитать блок приложения для заметок"
+
+#: ../conduits/evolution-data-server/memo-conduit.c:918
+#: ../conduits/evolution-data-server/memo-conduit.c:921
+msgid "Could not write pilot's Memo application block"
+msgstr "Не удалось записать блок приложения для заметок"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:227
+msgid "Default Priority:"
+msgstr "Приоритет по умолчанию:"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1068
+#: ../conduits/evolution-data-server/todo-conduit.c:1071
+msgid "Could not read pilot's ToDo application block"
+msgstr "Не удалось прочитать блок приложения для задач"
+
+#: ../conduits/evolution-data-server/todo-conduit.c:1111
+#: ../conduits/evolution-data-server/todo-conduit.c:1114
+msgid "Could not write pilot's ToDo application block"
+msgstr "Не удалось прочитать блок приложения для задач"
+
+#: ../conduits/file/file_conduit.c:243
+#: ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "Не удалось установить %s"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "Установка %s c %s..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "Установка %s..."
+
+#: ../conduits/file/gpilot_install_file.c:41
+msgid "Install immediately"
+msgstr "Установить сейчас"
+
+#: ../conduits/file/gpilot_install_file.c:42
+msgid "Install delayed"
+msgstr "Отложенная установка"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA to install to"
+msgstr "КПК для установки"
+
+#: ../conduits/file/gpilot_install_file.c:43
+msgid "PDA"
+msgstr "КПК"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "[FILE...]"
+msgstr "[ФАЙЛ...]"
+
+#: ../conduits/file/gpilot_install_file.c:44
+msgid "list of files"
+msgstr "список файлов"
+
+#: ../conduits/file/gpilot_install_file.c:97
+#: ../utils/gpilotd-client.c:466
+#: ../utils/gpilotdcm-client.c:107
+#, c-format
+msgid "Error parsing commandline arguments: %s"
+msgstr "Ошибка разбора аргументов командной строки: %s"
+
+#: ../conduits/file/gpilot_install_file.c:113
+#: ../conduits/file/gpilot_install_file.c:114
+msgid "Unable to get PDA names"
+msgstr "Не удалось получить имена КПК"
+
+#: ../conduits/file/gpilot_install_file.c:149
+msgid "Following files failed :\n"
+msgstr "Ошибка файлов:\n"
+
+#: ../conduits/file/gpilot_install_file.c:161
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "Установка в %s:\n"
+
+#: ../conduits/file/gpilot_install_file.c:182
+msgid "No files to install"
+msgstr "Нет файлов для установки"
+
+#: ../conduits/file/gpilot_install_file.c:185
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"Нажмите кнопку синхронизации на базе для установки\n"
+"или отмените действие."
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:683
+msgid "module loading not supported, fatal!"
+msgstr "загрузка модулей не поддерживается!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:135
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "удалённая запись КПК изменена локально. Отмена удаления\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:136
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "удалённая локальная запись изменена в КПК. Отмена удаления\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "конфликт объединения. Обмен локальной записи и записи в КПК.\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "конфликт архивирования и изменения. Обмен локальной записи и записи в КПК.\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "конфликт архивирования и изменения. Локальная запись передана КПК.\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "конфликт архивирования и изменения. Запись КПК сохранена локально.\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:457
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:532
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:593
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:622
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:651
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Инициализация кондуита не удалась, операция прервана"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:470
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "Не удалось удалить все записи в базе данных КПК, операция прервана."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:481
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1071
+msgid "Conduit did not return a record"
+msgstr "Кондуит не вернул запись"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:538
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "Не удалось удалить все записи в локальной базе данных, операция прервана."
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1472
+msgid "Error in conduit, newly added record could not be found"
+msgstr "Ошибка в кондуите: вновь добавленная запись не может быть найдена"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:517
+msgid "Copy to PDA failed!"
+msgstr "Ошибка копирования в КПК"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:541
+msgid "Copy from PDA failed!"
+msgstr "Ошибка копирования из КПК"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:565
+msgid "Merge to PDA failed!"
+msgstr "Ошибка добавления в КПК"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:589
+msgid "Merge from PDA failed!"
+msgstr "Ошибка добавления из КПК"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:644
+msgid "Synchronization failed!"
+msgstr "Сбой синхронизации"
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "Не удалось открыть устройство %s (%s). Причина: «%s»."
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot не смог открыть устройство %s (%s).\n"
+"Причина: «%s»."
+
+#: ../gpilotd/gnome-pilot-structures.c:446
+#, c-format
+msgid "Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was compiled with bluetooth support)"
+msgstr "Устройство Bluetooth [%s]: ошибка сопоставления сокета: %d (убедитесь, что pilot-link скомпилирован с поддержкой Bluetooth)"
+
+#: ../gpilotd/gnome-pilot-structures.c:456
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "Устройство [%s, %s]: ошибка сопоставления сокета: %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:536
+#: ../gpilotd/gnome-pilot-structures.c:589
+#: ../gpilotd/gnome-pilot-structures.c:620
+#: ../gpilotd/gnome-pilot-structures.c:648
+msgid "Unknown device type"
+msgstr "Неизвестный тип устройства"
+
+#: ../gpilotd/gnome-pilot-structures.c:666
+msgid "Number of devices is configured to 0"
+msgstr "Число устройств определено как 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:668
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Устройства не настроены.\n"
+"Для настройки gnome-pilot запустите gpilotd-control-applet\n"
+"(используя gnomecc)."
+
+#: ../gpilotd/gnome-pilot-structures.c:689
+msgid "No accessible devices available"
+msgstr "Нет доступных устройств"
+
+#: ../gpilotd/gnome-pilot-structures.c:708
+msgid "Number of PDAs is configured to 0"
+msgstr "Число КПК-устройств определено как 0"
+
+#: ../gpilotd/gnome-pilot-structures.c:710
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"Нет настроенных КПК.\n"
+"Для настройки gnome-pilot запустите gpilotd-control-applet\n"
+"(используя gnomecc)."
+
+#: ../gpilotd/gnome-pilot-structures.c:772
+#: ../gpilotd/gpilot-daemon.c:822
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "Не задан pilot_charset. Будет использоваться «%s»."
+
+#: ../gpilotd/gpilot-daemon.c:373
+msgid "Unable to bind to PDA"
+msgstr "Не удалось сопоставить КПК"
+
+#: ../gpilotd/gpilot-daemon.c:503
+#, c-format
+msgid "Failed to connect using device `%s', on port `%s'.  Check your configuration, as you requested new-style libusb `usb:' syncing, but have the old-style `visor' kernel module loaded.  You may need to select a `ttyUSB...' device."
+msgstr "Не удалось подключиться с помощью устройства «%s» через порт «%s». Проверьте настройки, так как вы запросили синхронизацию libusb «usb:», в то время как загружен старый модуль ядра «visor». Возможно, надо выбрать устройство «ttyUSB»."
+
+#: ../gpilotd/gpilot-daemon.c:518
+#, c-format
+msgid "Failed to connect using device `%s', on port `%s'.  Check your configuration, as you requested old-style usbserial `ttyUSB' syncing, but do not have the usbserial `visor' kernel module loaded.  You may need to select a `usb:' device."
+msgstr "Не удалось подключиться с помощью устройства «%s» через порт «%s». Проверьте настройки, так как вы запросили синхронизацию usbserial «ttyUSB», в то время как загружен модуль ядра «visor» не загружен. Возможно, надо выбрать устройство «usb:»."
+
+#: ../gpilotd/gpilot-daemon.c:608
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "Неизвестный КПК, нет ID или имени пользователя, совпадающего с %ld"
+
+#: ../gpilotd/gpilot-daemon.c:615
+msgid "Use gnomecc to configure PDA"
+msgstr "Используйте gnomecc для настройки КПК"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilot-daemon.c:620
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"Неизвестный КПК: не соответствует идентификатору %ld\n"
+"Используйте gnomecc для настройки gnome-pilot"
+
+#: ../gpilotd/gpilot-daemon.c:645
+#, c-format
+msgid "Device %s has %d events"
+msgstr "Устройство %s имеет %d событий"
+
+#: ../gpilotd/gpilot-daemon.c:658
+msgid "Setting userinfo..."
+msgstr "Настройка пользовательской информации..."
+
+#: ../gpilotd/gpilot-daemon.c:670
+msgid "Sync continues"
+msgstr "Продолжение синхронизации"
+
+#: ../gpilotd/gpilot-daemon.c:689
+msgid "Getting userinfo..."
+msgstr "Получение пользовательской информации..."
+
+#: ../gpilotd/gpilot-daemon.c:751
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "Обнаружен запрос NetSync. Выполняется синхронизация КПК"
+
+#: ../gpilotd/gpilot-daemon.c:753
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "Обнаружен запрос Bluetooth. Выполняется синхронизация КПК"
+
+#: ../gpilotd/gpilot-daemon.c:755
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "Нажата кнопка «HotSync». Выполняется синхронизация КПК"
+
+#: ../gpilotd/gpilot-daemon.c:757
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "КПК ID &mdash; %ld, название &mdash; %s, пользователь &mdash; %s"
+
+#: ../gpilotd/gpilot-daemon.c:767
+#, c-format
+msgid "On host %s\n"
+msgstr "На хост %s\n"
+
+#: ../gpilotd/gpilot-daemon.c:769
+#, c-format
+msgid "On host %d\n"
+msgstr "На хост %d\n"
+
+#: ../gpilotd/gpilot-daemon.c:788
+msgid "Synchronization ended"
+msgstr "Синхронизация закончена"
+
+#: ../gpilotd/gpilot-daemon.c:791
+msgid "Synchronization ended early"
+msgstr "Синхронизация закончилась рано"
+
+#: ../gpilotd/gpilot-daemon.c:836
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "Не распознана кодировка iconv: «%s». Будет использоваться «%s»."
+
+#: ../gpilotd/gpilot-daemon.c:858
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"Неверный основной каталог %s.\n"
+"Исправьте или выберите другой каталог с помощью gnomecc."
+
+#: ../gpilotd/gpilot-daemon.c:871
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"Неизвестный КПК &mdash; нет КПК с идентификатором %ld\n"
+"Настройте идентификатор с помощью gpilotd-control-applet"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1003
+msgid "An error occurred while getting the PDA's system data"
+msgstr "Ошибка при получении системных данных КПК"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilot-daemon.c:1010
+msgid "An error occurred while getting the PDA's user data"
+msgstr "Ошибка при получении данных пользователя КПК"
+
+#: ../gpilotd/gpilot-daemon.c:1015
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "Завершены события для устройства %s (%s)"
+
+#: ../gpilotd/gpilot-daemon.c:1080
+#, c-format
+msgid "Woke on %s"
+msgstr "Пробуждение в %s"
+
+#: ../gpilotd/gpilot-daemon.c:1161
+#, c-format
+msgid "Woke on network: %s"
+msgstr "Пробуждение в сети: %s"
+
+#: ../gpilotd/gpilot-daemon.c:1431
+#, c-format
+msgid "Watching %s (network)"
+msgstr "Наблюдение за %s (сеть)"
+
+#: ../gpilotd/gpilot-daemon.c:1433
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "Наблюдение за %s (bluetooth)"
+
+#: ../gpilotd/gpilot-daemon.c:1435
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "Наблюдение за %s (%s)"
+
+#: ../gpilotd/gpilot-daemon.c:1567
+msgid "Shutting down devices"
+msgstr "Выключение устройств"
+
+#: ../gpilotd/gpilot-daemon.c:1569
+msgid "Rereading configuration..."
+msgstr "Повторное чтение конфигурации..."
+
+#: ../gpilotd/gpilot-daemon.c:2482
+msgid "(unknown DB)"
+msgstr "(неизвестная база данных)"
+
+#: ../gpilotd/gpilotd.c:54
+msgid "Exiting (caught SIGTERM)..."
+msgstr "Завершение (получен SIGTERM)..."
+
+#: ../gpilotd/gpilotd.c:62
+msgid "Exiting (caught SIGINT)..."
+msgstr "Завершение (получен SIGINT)..."
+
+#: ../gpilotd/gpilotd.c:93
+msgid "Unable to create file installation queue directory"
+msgstr "Не удалось создать каталог очереди установки файлов"
+
+#: ../gpilotd/gpilotd.c:209
+msgid "gpilotd already running; exiting ...\n"
+msgstr "gpilotd уже запущен; выход ...\n"
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "в списке кондуитов резверного копирования обнаружен кондуит другого типа"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "Резервная копия %s создана\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "Не удалось создать резервную копию %s\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "Выполняется сбор сведений синхронизации..."
+
+#: ../gpilotd/manager.c:420
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "Синхронизация %s\n"
+
+#: ../gpilotd/manager.c:439
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "Скопировать в КПК %s\n"
+
+#: ../gpilotd/manager.c:457
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "Скопировать из КПК %s\n"
+
+#: ../gpilotd/manager.c:475
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "Добавить в КПК %s\n"
+
+#: ../gpilotd/manager.c:493
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "Добавить из КПК %s\n"
+
+#: ../gpilotd/manager.c:521
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Первая синхронизация кондуита %s..."
+
+#: ../gpilotd/manager.c:545
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "неизвестное действие синхронизации (%d = %s).\n"
+
+#: ../gpilotd/manager.c:671
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "Создание %d кондуитов..."
+
+#: ../gpilotd/manager.c:676
+#: ../gpilotd/manager.c:677
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "Неизвестный кондуит «%s» в настройках!"
+
+#: ../gpilotd/manager.c:686
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "Загрузка кондуита «%s» не удалась!"
+
+#: ../gpilotd/manager.c:687
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "Не удалось загрузить кондуит «%s»!\n"
+
+#: ../gpilotd/manager.c:777
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "Идентификатор и пользователь будут определены как %d/%s..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:809
+#, c-format
+#| msgid "Conduit %s requested, but not found"
+msgid "Conduit %s requested, but not found.  Is it enabled?"
+msgstr "Запрошен кондуит %s , но он не найден. Проверьте, включён ли он?"
+
+#: ../gpilotd/manager.c:819
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Кондуит %s не может быть запрошен"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "Ошибка в очереди: несуществующая запись."
+
+#: ../gpilotd/queue_io.c:454
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "ошибка: не найден запрос для КПК %d, запрос %d"
+
+#: ../utils/gpilotd-client.c:38
+msgid "Get System Info"
+msgstr "Получить информацию о системе"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Pause daemon"
+msgstr "Приостановить службу"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Unpause daemon"
+msgstr "Продолжить работу службы"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Restart daemon"
+msgstr "Перезапустить службу"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Set user id and name"
+msgstr "Установить ID и имя пользователя"
+
+#: ../utils/gpilotd-client.c:43
+msgid "ID for the PDA"
+msgstr "ID для КПК"
+
+#: ../utils/gpilotd-client.c:44
+msgid "Install file"
+msgstr "Установить файл"
+
+#: ../utils/gpilotd-client.c:44
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Restore directory"
+msgstr "Восстановить каталог"
+
+#: ../utils/gpilotd-client.c:45
+msgid "DIRECTORY"
+msgstr "КАТАЛОГ"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Run conduit"
+msgstr "Запустить кондуит"
+
+#: ../utils/gpilotd-client.c:46
+#: ../utils/gpilotdcm-client.c:26
+msgid "CONDUIT"
+msgstr "КОНДУИТ"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Username to set"
+msgstr "Имя пользователя для установки"
+
+#: ../utils/gpilotd-client.c:47
+msgid "USERNAME"
+msgstr "ИМЯ ПОЛЬЗОВАТЕЛЯ"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Monitor all PDAs"
+msgstr "Отслеживать все КПК"
+
+#: ../utils/gpilotd-client.c:49
+msgid "list PDAs by login (all for all pilots)"
+msgstr "список КПК по регистрационным именам (все для всех КПК)"
+
+#: ../utils/gpilotd-client.c:49
+msgid "LOGIN"
+msgstr "РЕГ.ИМЯ"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "Указать КПК для работы (по умолчанию MyPDA)"
+
+#: ../utils/gpilotd-client.c:50
+msgid "PILOTNAME"
+msgstr "ИМЯ КПК"
+
+#: ../utils/gpilotd-client.c:51
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr "Указать базу для работы (по умолчанию Cradle0)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "CRADLENAME"
+msgstr "БАЗА"
+
+#: ../utils/gpilotd-client.c:52
+msgid "List users"
+msgstr "Показать список пользователей"
+
+#: ../utils/gpilotd-client.c:53
+msgid "List cradles"
+msgstr "Показать список баз"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "Показать базы для указанного КПК"
+
+#: ../utils/gpilotd-client.c:472
+#: ../utils/gpilotdcm-client.c:113
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"ВНИМАНИЕ!\n"
+"Это инструмент для доступа к определённым функциям пакета gnome-pilot.\n"
+"Если вы не уверены, что делать, не используйте его."
+
+#: ../utils/gpilotdcm-client.c:25
+msgid "lists available conduits"
+msgstr "список доступных кондуитов"
+
+#: ../utils/gpilotdcm-client.c:26
+msgid "conduit to operate on"
+msgstr "кондуит для работы"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "list all attributes"
+msgstr "список всех атрибутов"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "specify PDA to operate on"
+msgstr "определение КПК для работы"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list attributes"
+msgstr "список атрибутов"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "list available conduits and their state"
+msgstr "список доступных кондуитов и их состояний"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "enable specified conduit"
+msgstr "включить указанный кондуит"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "disable specified conduit"
+msgstr "отключить указанный кондуит"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable, and set firstsync to slow"
+msgstr "включить и установить первую синхронизацию в «медленно»"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "instantiate and destroy the conduit"
+msgstr "создать или удалить кондуит"
+

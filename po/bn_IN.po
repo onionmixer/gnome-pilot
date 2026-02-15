@@ -1,0 +1,1699 @@
+# translation of bn_IN.po to Bengali INDIA
+# Bengali (India) translation of gnome-pilot.
+# Copyright (C) 2009 gnome-pilot's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-pilot package.
+#
+# Runa Bhattacharjee <runab@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn_IN\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-pilot&component=general\n"
+"POT-Creation-Date: 2009-10-22 10:00+0000\n"
+"PO-Revision-Date: 2009-10-26 14:04+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali INDIA <anubad@lists.ankur.org.in>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:1
+msgid "Pilot Applet"
+msgstr "Pilot অ্যাপ্লেট"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:2
+msgid "Synchronize your data on PalmOS devices"
+msgstr "PalmOS ডিভাইসের মধ্যে তথ্য সুসংগত করুন"
+
+#: ../applet/GNOME_PilotApplet.server.in.in.h:3
+msgid "Utility"
+msgstr "কার্যকারিতা"
+
+#: ../applet/pilot-applet.ui.h:1
+msgid "Choose PDA"
+msgstr "PDA নির্বাচন করুন"
+
+#: ../applet/pilot-applet.ui.h:2
+msgid "GNOME PilotSync Properties"
+msgstr "GNOME PilotSync-র বৈশিষ্ট্য"
+
+#: ../applet/pilot-applet.ui.h:3
+msgid "Restore PDA"
+msgstr "PDA পুনরুদ্ধার করুন"
+
+#: ../applet/pilot-applet.ui.h:4
+msgid "_Directory"
+msgstr "ডিরেক্টরি (_D)"
+
+#: ../applet/pilot-applet.ui.h:5
+msgid "_Display notices"
+msgstr "সূচনা প্রদর্শন করা হবে (_D)"
+
+#: ../applet/pilot-applet.ui.h:6
+msgid "_Execute when clicked"
+msgstr "ক্লিক করা হলে সঞ্চালিত হবে (_E)"
+
+#: ../applet/pilot-applet.ui.h:7
+msgid "_PDA ID"
+msgstr "PDA ID (_P)"
+
+#: ../applet/pilot-applet.ui.h:8
+msgid "_Sync cradle"
+msgstr "ক্র্যাডেল থেকে সুসংগতি (_S)"
+
+#: ../applet/pilot-applet.ui.h:9
+msgid "gnome-pilot progress"
+msgstr "gnome-pilot-র প্রগতি"
+
+#: ../applet/pilot.c:185
+#, c-format
+msgid "%s Synchronizing"
+msgstr "%s সুসংগত করা হচ্ছে"
+
+#: ../applet/pilot.c:190
+msgid "Database %v of %u"
+msgstr "%v ডাটাবেস, সর্বমোট %u"
+
+#: ../applet/pilot.c:284
+#, c-format
+msgid "Request %ld has been completed\n"
+msgstr "%ld অনুরোধ পূর্ণ করা হয়েছে\n"
+
+#: ../applet/pilot.c:306
+#, c-format
+msgid "%s Synchronizing : %s"
+msgstr "%s সুসংগত করা হচ্ছে : %s"
+
+#: ../applet/pilot.c:311
+#, c-format
+msgid "%s: Started\n"
+msgstr "%s: আরম্ভ করা হয়েছে\n"
+
+#: ../applet/pilot.c:326
+#, c-format
+msgid "%s Finished : %s"
+msgstr "%s সম্পন্ন : %s"
+
+#: ../applet/pilot.c:331
+#, c-format
+msgid "%s: Ended\n"
+msgstr "%s: সমাপ্ত\n"
+
+#: ../applet/pilot.c:357
+msgid "%v of %u records"
+msgstr "%v রেকর্ড, সর্বমোট %u"
+
+#: ../applet/pilot.c:437
+msgid ""
+"PDA is currently synchronizing.\n"
+"Please wait for it to finish."
+msgstr ""
+"PDA বর্তমানে সুসংগত করা হচ্ছে।\n"
+"অনুগ্রহ করে কর্ম সম্পন্ন না হওয়া অবধি অপেক্ষা করুন।"
+
+#: ../applet/pilot.c:440
+msgid "Not connected. Please restart daemon."
+msgstr "সংযুক্ত নয়। অনুগ্রহ করে ডেমন পুনরারম্ভ করুন।"
+
+#: ../applet/pilot.c:443
+msgid ""
+"Not connected to gpilotd.\n"
+"Please restart daemon."
+msgstr ""
+"gpilotd-র সাথে সংযুক্ত নয়।\n"
+"অনুগ্রহ করে ডেমন পুনরারম্ভ করুন।"
+
+#: ../applet/pilot.c:472
+msgid "gnome-pilot applet"
+msgstr "gnome-pilot applet"
+
+#: ../applet/pilot.c:474
+msgid "Copyright 2000-2006 Free Software Foundation, Inc."
+msgstr "স্বত্বাধিকার ২০০০-২০০৬ Free Software Foundation, Inc."
+
+#: ../applet/pilot.c:475
+msgid "A PalmOS PDA monitor.\n"
+msgstr "একটি PalmOS PDA মনিটর।\n"
+
+#: ../applet/pilot.c:573 ../applet/pilot.c:600
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "সহায়তা প্রদর্শন করতে সমস্যা: %s"
+
+#: ../applet/pilot.c:686
+#, c-format
+msgid "Restoring %s"
+msgstr "%s পুনরুদ্ধার করা হচ্ছে"
+
+#: ../applet/pilot.c:729
+msgid "No directory to restore from."
+msgstr "পুনরুদ্ধারের জন্য কোনো ডিরেক্টরি উপলব্ধ নয়।"
+
+#: ../applet/pilot.c:741
+msgid ""
+"Press synchronize on the cradle to restore\n"
+" or cancel the operation."
+msgstr ""
+"পুনরুদ্ধারের জন্য ক্র্যাডেলের উপর সুসংগতির বাটন টিপুন\n"
+" অথবা কর্ম বাতিল করুন।"
+
+#: ../applet/pilot.c:747
+#, c-format
+msgid "cancelling %d"
+msgstr "%d বাতিল করা হচ্ছে"
+
+#: ../applet/pilot.c:752
+msgid "Restore request failed"
+msgstr "পুনরুদ্ধারের অনুরোধ ব্যর্থ"
+
+#: ../applet/pilot.c:793
+msgid ""
+"PDA sync is currently in progress.\n"
+"Are you sure you want to restart daemon?"
+msgstr ""
+"বর্তমানে PDA সুসংগত করা হচ্ছে।\n"
+"আপনি কি নিশ্চিতরূপে ডেমন পুনরারম্ভ করতে ইচ্ছুক?"
+
+#: ../applet/pilot.c:806 ../applet/pilot.c:1375
+msgid "Trying to connect to the GnomePilot Daemon"
+msgstr "GnomePilot ডেমনের সাথে সংযোগ করার প্রচেষ্টা করা হচ্ছে"
+
+#: ../applet/pilot.c:823
+msgid "There's no last sync on record."
+msgstr "সর্বশেষ কোনো সুসংগতির রেকর্ড বর্তমানে নেই।"
+
+#. ensure the label strings are extracted by intltool.  This list of
+#. * strings should match the list in the menu_template below
+#.
+#: ../applet/pilot.c:846
+msgid "Restore..."
+msgstr "পুনরুদ্ধার..."
+
+#: ../applet/pilot.c:846
+msgid "Restart"
+msgstr "পুনরারম্ভ"
+
+#: ../applet/pilot.c:846
+msgid "Last log..."
+msgstr "সর্বশেষ লগ..."
+
+#: ../applet/pilot.c:847
+msgid "Preferences..."
+msgstr "পছন্দ..."
+
+#: ../applet/pilot.c:847
+msgid "Help"
+msgstr "সহায়তা"
+
+#: ../applet/pilot.c:847
+msgid "About"
+msgstr "পরিচিতি"
+
+#: ../applet/pilot.c:869
+msgid "Continue"
+msgstr "এগিয়ে চলুন"
+
+#: ../applet/pilot.c:871
+msgid "Pause Daemon"
+msgstr "ডেমন স্থগিত করুন"
+
+#: ../applet/pilot.c:891
+msgid "Daemon paused..."
+msgstr "ডেমন স্থগিত করা হয়েছে..."
+
+#: ../applet/pilot.c:898 ../applet/pilot.c:1052
+msgid "Ready to synchronize"
+msgstr "সুসংগত করার জন্য প্রস্তুত"
+
+#: ../applet/pilot.c:1033
+msgid "Not connected. Restart daemon to reconnect"
+msgstr "সংযুক্ত নয়। পুনরায় সংযোগ স্থাপনের জন্য ডেমন পুনরারম্ভ করুন"
+
+#: ../applet/pilot.c:1210
+#, c-format
+msgid "Execution of %s failed"
+msgstr "%s সঞ্চালন করতে ব্যর্থ"
+
+#.
+#. if (strstr (file_type (ptr),"text")) {
+#. if (file_size (ptr)>properties.text_limit)
+#. g_message ("installing textfile as Doc (not implemented)");
+#. else
+#. g_message ("installing textfile as Memo (not implemented)");
+#. }
+#.
+#: ../applet/pilot.c:1336
+#, c-format
+msgid "installing \"%s\" to \"%s\""
+msgstr "\"%s\"-কে \"%s\"-এ ইনস্টল করা হচ্ছে"
+
+#: ../applet/pilot.c:1346
+msgid "unknown dnd type"
+msgstr "অজানা ধরনের dnd"
+
+#: ../applet/pilot.c:1354
+msgid "destroy gpilot-applet"
+msgstr "gpilot-applet ধ্বংশ করুন"
+
+#: ../applet/pilot.schemas.in.h:1
+msgid "Command to execute when the applet is clicked"
+msgstr "অ্যাপ্লেটের উপর ক্লিক করার ফলে সঞ্চালিত কমান্ড"
+
+#: ../applet/pilot.schemas.in.h:2
+msgid "Display notices in popup windows"
+msgstr "পপ-আপ উইন্ডোর মধ্যে সূচনা প্রদর্শন করা হয়"
+
+#: ../capplet/gnome-pilot-capplet.c:228 ../capplet/gpilotd-capplet.ui.h:76
+msgid "gnome-pilot Settings"
+msgstr "gnome-pilot সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../capplet/gnome-pilot-capplet.c:394 ../capplet/gnome-pilot-capplet.c:470
+msgid "Name"
+msgstr "নাম"
+
+#: ../capplet/gnome-pilot-capplet.c:396 ../utils/gpilotd-client.c:44
+msgid "ID"
+msgstr "ID"
+
+#: ../capplet/gnome-pilot-capplet.c:398
+msgid "Owner"
+msgstr "মালিক"
+
+#: ../capplet/gnome-pilot-capplet.c:472
+msgid "Type"
+msgstr "ধরন"
+
+#: ../capplet/gnome-pilot-capplet.c:574
+msgid "Conduit"
+msgstr "Conduit"
+
+#: ../capplet/gnome-pilot-capplet.c:576
+msgid "Sync Action"
+msgstr "সুসংগতি কর্ম"
+
+#: ../capplet/gnome-pilot-capplet.c:790
+#, c-format
+msgid "Are you sure you want to delete PDA `%s'?"
+msgstr "আপনি কি নিশ্চিতরূপে PDA `%s' মুছে ফেলতে ইচ্ছুক?"
+
+#: ../capplet/gnome-pilot-capplet.c:814
+msgid "_Edit this PDA..."
+msgstr "এই PDA-টি সম্পাদনা করুন...(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:815
+msgid "Edit the currently selected PDA"
+msgstr "বর্তমানে নির্বাচিত PDA-র তথ্য সম্পাদনা করুন"
+
+#: ../capplet/gnome-pilot-capplet.c:816
+msgid "_Delete this PDA"
+msgstr "এই PDA-টি মুছে ফেলুন (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:817
+msgid "Delete the currently selected PDA"
+msgstr "বর্তমানে নির্বাচিত PDA-টি মুছে ফেলুন"
+
+#: ../capplet/gnome-pilot-capplet.c:969
+#, c-format
+msgid "Are you sure you want to delete %s device?"
+msgstr "আপনি কি নিশ্চিতরূপে %s ডিভাইস মুছে ফেলতে ফেলতে ইচ্ছুক?"
+
+#: ../capplet/gnome-pilot-capplet.c:990
+msgid "_Edit this device..."
+msgstr "এই ডিভাইসটির তথ্য সম্পাদন করুন...(_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:991
+msgid "Edit the currently selected device"
+msgstr "বর্তমানে নির্বাচিত ডিভাইসের তথ্য সম্পাদনা করুন"
+
+#: ../capplet/gnome-pilot-capplet.c:992
+msgid "_Delete this device"
+msgstr "এই ডিভাইসটি মুছে ফেলুন (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:993
+msgid "Delete the currently selected device"
+msgstr "বর্তমানে নির্বাচিত ডিভাইসটি মুছে ফেলুন"
+
+#: ../capplet/gnome-pilot-capplet.c:1177
+#, c-format
+msgid "Unable to instantiate %s conduit."
+msgstr "%s conduit আরম্ভ করতে ব্যর্থ।"
+
+#: ../capplet/gnome-pilot-capplet.c:1217
+msgid "_Enable this conduit"
+msgstr "এই conduit-টি সক্রিয় করুন (_E)"
+
+#: ../capplet/gnome-pilot-capplet.c:1218
+msgid "Disable the currently selected conduit"
+msgstr "বর্তমানে নির্বাচিত conduit-টি নিষ্ক্রিয় করুন"
+
+#: ../capplet/gnome-pilot-capplet.c:1219
+msgid "_Disable this conduit"
+msgstr "এই conduit-টি নিষ্ক্রিয় করুন (_D)"
+
+#: ../capplet/gnome-pilot-capplet.c:1220
+msgid "Enable the currently selected conduit"
+msgstr "বর্তমানে নির্বাচিত conduit-টি সক্রিয় করুন"
+
+#: ../capplet/gnome-pilot-capplet.c:1221 ../capplet/gpilotd-capplet.ui.h:72
+msgid "_Settings..."
+msgstr "বিবিধ বৈশিষ্ট্য...(_S)"
+
+#: ../capplet/gnome-pilot-capplet.c:1222
+msgid "Modify the currently selected conduit's settings"
+msgstr "বর্তমানে নির্বাচিত conduit-টির বৈশিষ্ট্য পরিবর্তন করুন"
+
+#. < 0) {
+#: ../capplet/gnome-pilot-cdialog.c:205
+msgid "Unable to create PDA settings window. Incorrect conduit configuration."
+msgstr "PDA-র বৈশিষ্ট্য সংক্রান্ত উইন্ডো নির্বাচন করতে ব্যর্থ। conduit-র কনফিগারেশন সঠিক নয়।"
+
+#: ../capplet/gnome-pilot-assistant.c:518
+msgid ""
+"Setup did not complete and settings will not\n"
+"be saved. Are you sure you want to quit?"
+msgstr ""
+"প্রস্তুতি পর্ব সমাপ্ত হয়নি ও বৈশিষ্ট্যগুলি সংরক্ষিত\n"
+"হবে না। আপনি কি নিশ্চিতরূপে প্রস্থান করতে ইচ্ছুক?"
+
+#: ../capplet/gnome-pilot-assistant.c:737
+#, c-format
+msgid ""
+"About to send the following data to the PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"নিম্নলিখিত তথ্যগুলি PDA-র মধ্যে প্রেরণ করা হবে।\n"
+"মালিকের নাম: %s\n"
+"PDA ID: %d\n"
+"অনুগ্রহ করে %s (%s)-র মধ্যে PDA-টি স্থাপন করুন ও হট-সিঙ্ক শীর্ষক বাটনটি টিপুন।"
+
+#: ../capplet/gnome-pilot-assistant.c:762
+#, c-format
+msgid ""
+"About to retrieve Owner Name and ID from the PDA.\n"
+"Please put PDA in %s (%s) and press HotSync button."
+msgstr ""
+"PDA থেকে মালিকের নাম ও ID এখন প্রাপ্ত করা হবে।\n"
+"অনুগ্রহ করে %s (%s)-র মধ্যে PDA স্থাপন করে HotSync বাটন ক্লিক করুন।"
+
+#: ../capplet/gnome-pilot-assistant.c:778
+msgid "Failed sending request to gpilotd"
+msgstr "gpilotd-এ অনুরোধ পাঠাতে ব্যর্থ"
+
+#: ../capplet/gnome-pilot-assistant.c:948
+#, c-format
+msgid ""
+"Successfully retrieved Owner Name and ID from PDA.\n"
+"Owner Name: %s\n"
+"PDA ID: %d"
+msgstr ""
+"সাফল্যের সাথে PDA থেকে মালিকের নাম ও ID প্রাপ্ত করা হয়েছে।\n"
+"মালিকের নাম: %s\n"
+"PDA ID: %d"
+
+#: ../capplet/gnome-pilot-pdialog.c:460
+#, c-format
+msgid "Please put PDA in %s (%s) and press HotSync button or cancel the operation."
+msgstr ""
+"অনুগ্রহ করে %s (%s)-র মধ্যে PDA স্থাপন করে HotSync বাটন ক্লিক করুন অথবা কর্ম বাতিল "
+"করুন।"
+
+#: ../capplet/gnome-pilot-pdialog.c:495
+msgid "The request to get PDA ID failed"
+msgstr "PDA ID প্রাপ্তির অনুরোধ বিফল"
+
+#: ../capplet/gnome-pilot-pdialog.c:539
+msgid "The request to set PDA ID failed"
+msgstr "PDA ID নির্ধারণের অনুরোধ বিফল"
+
+#: ../capplet/gpilotd-capplet.ui.h:1
+msgid "<b>Conduit Actions</b>"
+msgstr "<b>Conduit সংক্রান্ত কর্ম</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:2
+msgid "<b>Conduit Settings</b>"
+msgstr "<b>Conduit-র বৈশিষ্ট্য</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:3
+msgid "<b>PDA Attributes</b>"
+msgstr "<b>PDA সংক্রান্ত বৈশিষ্ট্য</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:4
+msgid "<b>PDA Identification</b>"
+msgstr "<b>PDA সনাক্তকরণ</b>"
+
+#: ../capplet/gpilotd-capplet.ui.h:5
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Which device should be used for this "
+"operation?</span>\n"
+"\n"
+"Since you have more than one connection device defined for this computer you "
+"need to identify which one is to be used for this operation."
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">এই কাজের জন্য কী ডিভাইস ব্যবহার করা হবে?"
+"</span>\n"
+"\n"
+"এই কম্পিউটারের ক্ষেত্রে সংযোগের জন্য একাধিক ডিভাইস নির্ধারিত হওয়ার ফলে এই কাজের "
+"জন্য ব্যবহারযোগ্য ডিভাইসটি চিহ্নিত করা আবশ্যক।"
+
+#: ../capplet/gpilotd-capplet.ui.h:8
+msgid "C_harset of PDA:"
+msgstr "PDA-তে ব্যবহৃত ক্যার-সেট: (_h)"
+
+#: ../capplet/gpilotd-capplet.ui.h:9
+msgid "C_onduits"
+msgstr "Conduits (_o)"
+
+#: ../capplet/gpilotd-capplet.ui.h:10
+msgid "Choose Device"
+msgstr "ডিভাইস নির্বাচন করুন"
+
+#: ../capplet/gpilotd-capplet.ui.h:11
+msgid ""
+"Choose this option if you have used sync software before, even on another "
+"computer"
+msgstr ""
+"সুসংগত করার সফ্টওয়্যার পূর্বে (অন্য কোনো কম্পিউটারে ব্যবহৃত হলেও প্রযোজ্য) ব্যবহার করা "
+"হলে এই বিকল্পটি নির্বাচন করুন।"
+
+#: ../capplet/gpilotd-capplet.ui.h:12
+msgid "Conduit Settings"
+msgstr "Conduit সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../capplet/gpilotd-capplet.ui.h:13
+msgid ""
+"Congratulations, gnome-pilot is configured!\n"
+"\n"
+"You can change gnome-pilot settings at any time from \n"
+"PilotLink and Conduits tabs in control center.\n"
+"\n"
+"You can monitor syncing of gnome-pilot by adding \n"
+"PilotLink applet to your panel."
+msgstr ""
+"অভিনন্দন, gnome-pilot এখন কনফিগার করা সমাপ্ত হয়েছে!\n"
+"\n"
+"নিয়ন্ত্রণের কেন্দ্র থেকে PilotLink ও Conduits ট্যাব থেকে \n"
+"যে কোনো সময়ে gnome-pilot-র বৈশিষ্ট্য পরিবর্তন করা যাবে।\n"
+"\n"
+"প্যানেলের মধ্যে PilotLink অ্যাপ্লেট যোগ করে gnome-pilot-র\n"
+"সুসংগতি কর্ম নিরীক্ষণ করা যাবে।"
+
+#: ../capplet/gpilotd-capplet.ui.h:20
+msgid "D_isable"
+msgstr "নিষ্ক্রিয় করুন (_i)"
+
+#: ../capplet/gpilotd-capplet.ui.h:21
+msgid "De_vices"
+msgstr "ডিভাইস (_v)"
+
+#: ../capplet/gpilotd-capplet.ui.h:22
+msgid "Description:"
+msgstr "বিবরণ:"
+
+#: ../capplet/gpilotd-capplet.ui.h:23
+msgid "Device Settings"
+msgstr "ডিভাইস সংক্রান্ত বৈশিষ্ট্য"
+
+#: ../capplet/gpilotd-capplet.ui.h:24
+msgid "Device:"
+msgstr "ডিভাইস:"
+
+#: ../capplet/gpilotd-capplet.ui.h:25
+msgid "Enter Owner Name you want stored on your PDA"
+msgstr "আপনার PDA-র মধ্যে সংরক্ষণের উদ্দেশ্যে মালিকের নাম ধার্য করুন"
+
+#: ../capplet/gpilotd-capplet.ui.h:26
+msgid "Get the Owner's name and ID from the PDA"
+msgstr "মালিকরে নাম ও ID-র তথ্য PDA থেকে প্রাপ্ত করুন"
+
+#: ../capplet/gpilotd-capplet.ui.h:27
+msgid "I_rDA"
+msgstr "IrDA (_r)"
+
+#: ../capplet/gpilotd-capplet.ui.h:28
+msgid "Initial Sync"
+msgstr "প্রারম্ভিক সুসংগতি"
+
+#: ../capplet/gpilotd-capplet.ui.h:29
+msgid "Net_work"
+msgstr "নেটওয়ার্ক (_w)"
+
+#: ../capplet/gpilotd-capplet.ui.h:30
+msgid "O_wner:"
+msgstr "মালিক: (_w)"
+
+#: ../capplet/gpilotd-capplet.ui.h:31
+msgid "Owner Name and ID to set on the PDA"
+msgstr "PDA-র মধ্যে ধার্য করার উদ্দেশ্যে মালিকের নাম ও ID"
+
+#: ../capplet/gpilotd-capplet.ui.h:32
+msgid "Owner:"
+msgstr "মালিক:"
+
+#: ../capplet/gpilotd-capplet.ui.h:33
+msgid "PDA Attributes"
+msgstr "PDA-র বৈশিষ্ট্য"
+
+#: ../capplet/gpilotd-capplet.ui.h:34
+msgid "PDA Identification"
+msgstr "PDA সনাক্তকরণ"
+
+#: ../capplet/gpilotd-capplet.ui.h:35
+msgid "PDA Settings"
+msgstr "PDA-র বৈশিষ্ট্য"
+
+#: ../capplet/gpilotd-capplet.ui.h:36
+msgid "P_DA:"
+msgstr "PDA: (_D)"
+
+#: ../capplet/gpilotd-capplet.ui.h:37
+msgid "Please fix the following problem..."
+msgstr "অনুগ্রহ করে নিম্নলিখিত সমস্যাটি সংশোধন করুন..."
+
+#: ../capplet/gpilotd-capplet.ui.h:38
+msgid "S_peed:"
+msgstr "গতি: (_p)"
+
+#: ../capplet/gpilotd-capplet.ui.h:39
+msgid "Send the Owner's name and ID to the PDA, overwriting any existing identity"
+msgstr "পরিচয় সংক্রান্ত উপস্থিত কোনো তথ্য মুছে ফেলে PDA-র মধ্যে মালিকের নাম ও ID প্রেরণ করুন"
+
+#: ../capplet/gpilotd-capplet.ui.h:40
+msgid "Set the root directory for all PDA files to be stored."
+msgstr "PDA ফাইল সংরক্ষণের জন্য সকল ফাইলের root ডিরেক্টরি ধার্য করুন।"
+
+#: ../capplet/gpilotd-capplet.ui.h:41
+msgid "Success"
+msgstr "সফল"
+
+#: ../capplet/gpilotd-capplet.ui.h:42
+msgid "The name for your PDA.  It is only used for identification."
+msgstr "PDA-র নাম। শুধুমাত্র সনাক্ত করার জন্য এই নামটি ব্যবহার করা হবে।"
+
+#: ../capplet/gpilotd-capplet.ui.h:43
+msgid ""
+"This integer ID identifies your PDA and must be unique between different "
+"PDAs that you use."
+msgstr ""
+"প্রতিটি PDA-কে স্বত্বন্ত্র ভাবে সনাক্ত করার জন্য এই পূর্ণসংখ্যা ID ধার্য করা হয় ও "
+"প্রতিটি PDA-র জন্য চিহ্নিত ID সংখ্যা পৃথক হওয়া আবশ্যক।"
+
+#: ../capplet/gpilotd-capplet.ui.h:44
+msgid "Ti_meout:"
+msgstr "সময়সীমা: (_m)"
+
+#: ../capplet/gpilotd-capplet.ui.h:45
+msgid "Welcome to gnome-pilot!"
+msgstr "gnome-pilot-এ স্বাগত্বম!"
+
+#: ../capplet/gpilotd-capplet.ui.h:46
+msgid ""
+"You seem to be running gnome-pilot for the first time.\n"
+"The following steps will setup gnome-pilot for syncing. \n"
+"You can always change any options later from\n"
+"PilotLink panel in Gnome Control Center.\n"
+"\n"
+"Press 'Forward' to continue.\n"
+"Press 'Cancel' to exit."
+msgstr ""
+"সম্ভবত gnome-pilot প্রথমবার সঞ্চালিত হচ্ছে।\n"
+"নিম্নলিখিত ধাপগুলি অনুসরণ করা হলে তথ্য সুসংগতির জন্য gnome-pilot প্রস্তুত করা হবে। \n"
+"Gnome Control Center-র PilotLink ট্যাব থেকে \n"
+"যে কোনো সময়ে বৈশিষ্ট্যগুলি পরিবর্তন করা যাবে।\n"
+"\n"
+"'পরবর্তী' টিপে এগিয়ে চলুন।\n"
+"প্রস্থান করার জন্য 'বাতিল' টিপুন।"
+
+#: ../capplet/gpilotd-capplet.ui.h:53
+msgid "_Action:"
+msgstr "কর্ম: (_A)"
+
+#: ../capplet/gpilotd-capplet.ui.h:54
+msgid "_Add..."
+msgstr "যোগ করুন...(_A)"
+
+#: ../capplet/gpilotd-capplet.ui.h:55
+msgid "_Bluetooth"
+msgstr "ব্লু-টুথ (_B)"
+
+#: ../capplet/gpilotd-capplet.ui.h:56
+msgid "_Delete"
+msgstr "মুছে ফেলুন (_D)"
+
+#: ../capplet/gpilotd-capplet.ui.h:57
+msgid "_Device:"
+msgstr "ডিভাইস: (_D)"
+
+#: ../capplet/gpilotd-capplet.ui.h:58
+msgid "_Edit..."
+msgstr "সম্পাদনা...(_E)"
+
+#: ../capplet/gpilotd-capplet.ui.h:59
+msgid "_Enable"
+msgstr "সক্রিয় করুন (_E)"
+
+#: ../capplet/gpilotd-capplet.ui.h:60
+msgid "_Get from PDA"
+msgstr "PDA থেকে প্রাপ্ত করুন (_G)"
+
+#: ../capplet/gpilotd-capplet.ui.h:61
+msgid "_IrDA"
+msgstr "IrDA (_I)"
+
+#: ../capplet/gpilotd-capplet.ui.h:62
+msgid "_Local folder:"
+msgstr "স্থানীয় ফোল্ডার: (_L)"
+
+#: ../capplet/gpilotd-capplet.ui.h:63
+msgid "_Name of PDA:"
+msgstr "PDA: (_N)"
+
+#: ../capplet/gpilotd-capplet.ui.h:64
+msgid "_Name:"
+msgstr "নাম: (_N)"
+
+#: ../capplet/gpilotd-capplet.ui.h:65
+msgid "_No, I've never used sync software with this PDA before."
+msgstr "না, এই PDA-র সাথে পূর্বে কোনো সুসংগতির সফ্টওয়্যার ব্যবহার করা হয়নি। (_N)"
+
+#: ../capplet/gpilotd-capplet.ui.h:66
+msgid "_One time action:"
+msgstr "একবার সঞ্চালনযোগ্য কর্ম: (_O)"
+
+#: ../capplet/gpilotd-capplet.ui.h:67
+msgid "_Owner:"
+msgstr "মালিকানা: (_O)"
+
+#: ../capplet/gpilotd-capplet.ui.h:68
+msgid "_PDA ID:"
+msgstr "PDA ID: (_P)"
+
+#: ../capplet/gpilotd-capplet.ui.h:69
+msgid "_PDAs"
+msgstr "PDAs (_P)"
+
+#: ../capplet/gpilotd-capplet.ui.h:70
+msgid "_Send to PDA"
+msgstr "PDA-তে পাঠিয়ে দিন (_S)"
+
+#: ../capplet/gpilotd-capplet.ui.h:71
+msgid "_Serial"
+msgstr "সিরিয়াল (_S)"
+
+#: ../capplet/gpilotd-capplet.ui.h:73
+msgid "_Type:"
+msgstr "ধরন: (_T)"
+
+#: ../capplet/gpilotd-capplet.ui.h:74
+msgid "_USB"
+msgstr "USB (_U)"
+
+#: ../capplet/gpilotd-capplet.ui.h:75
+msgid "_Yes, I've used sync software with this PDA before."
+msgstr "হ্যাঁ, এই PDA-টির সাথে পূর্বে সুসংগতির সফ্টওয়্যার ব্যবহার করা হয়েছে। (_Y)"
+
+#: ../capplet/gpilotd-control-applet.c:89
+#| msgid "gnome-pilot Settings"
+msgid " - configure gnome-pilot settings"
+msgstr " - gnome-pilot সংক্রান্ত বৈশিষ্ট্য কনফিগার করুন"
+
+#: ../capplet/gpilotd-control-applet.c:91
+#: ../capplet/gpilotd-control-applet.c:100
+#, c-format
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd capplet : %s"
+msgstr "gpilotd capplet আরম্ভ করতে সমস্যা : %s"
+
+#: ../capplet/gpilotd-control-applet.c:106
+#: ../capplet/gpilotd-control-applet.c:107
+msgid "Error loading PDA state, aborting"
+msgstr "PDA-র অবস্থার সংক্রান্ত তথ্য লোড করতে সমস্যা, পরিত্যাগ করা হচ্ছে"
+
+#: ../capplet/gpilotd-control-applet.c:114
+#: ../capplet/gpilotd-control-applet.c:115
+msgid "Cannot connect to the GnomePilot Daemon"
+msgstr "GnomePilot ডেমনের সাথে সংযোগ স্থাপন করা সম্ভব নয়"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:1
+msgid "Configure PalmOS devices"
+msgstr "PalmOS ডিভাইস কনফিগার করুন"
+
+#: ../capplet/gpilotd-control-applet.desktop.in.in.h:2
+msgid "PalmOS Devices"
+msgstr "PalmOS ডিভাইস"
+
+#: ../capplet/pilot.c:118
+#, c-format
+msgid "Unable load key gpilotd/General/sync_PC_Id: %s"
+msgstr "gpilotd/General/sync_PC_Id কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:132
+#, c-format
+msgid "Unable load key gpilotd/General/progress_stepping: %s"
+msgstr "gpilotd/General/progress_stepping কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:166
+#, c-format
+msgid "Unable load key gpilotd/%s/type: %s"
+msgstr "gpilotd/%s/type কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:188
+#, c-format
+msgid "Unable load key gpilotd/%s/name: iDevice, %s"
+msgstr "gpilotd/%s/name কি লোড করতে ব্যর্থ: iDevice, %s"
+
+#: ../capplet/pilot.c:206
+#, c-format
+msgid "Unable load key gpilotd/%s/speed: %s"
+msgstr "gpilotd/%s/speed কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:215
+#, c-format
+msgid "Unable load key gpilotd/%s/timeout: %s"
+msgstr "gpilotd/%s/timeout কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:257
+#, c-format
+msgid "Unable load key gpilotd/%s/name: %s"
+msgstr "gpilotd/%s/name কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/pilot.c:267
+#, c-format
+msgid "Unable load key gpilotd/%s/pilotid: %s"
+msgstr "gpilotd/%s/pilotid কি লোড করতে ব্যর্থ: %s"
+
+#: ../capplet/util.c:123 ../capplet/util.c:512
+msgid "Disabled"
+msgstr "নিষ্ক্রিয়"
+
+#: ../capplet/util.c:129 ../capplet/util.c:514
+msgid "Enabled"
+msgstr "সক্রিয়"
+
+#: ../capplet/util.c:180
+msgid "None"
+msgstr "শূণ্য"
+
+#: ../capplet/util.c:310
+msgid "You must have at least one device setup"
+msgstr "প্রস্তুত করার জন্য অন্তত একটি ডিভাইস উপস্থিত থাকা আবশ্যক"
+
+#: ../capplet/util.c:485
+msgid "Synchronize"
+msgstr "সুসংগত করুন"
+
+#: ../capplet/util.c:486
+msgid "Copy from PDA"
+msgstr "PDA থেকে কপি করুন"
+
+#: ../capplet/util.c:487
+msgid "Copy to PDA"
+msgstr "PDA-তে কপি করুন"
+
+#: ../capplet/util.c:488
+msgid "Merge from PDA"
+msgstr "PDA থেকে একত্রিত করুন"
+
+#: ../capplet/util.c:489
+msgid "Merge to PDA"
+msgstr "PDA-র সাথে একত্রিত করুন"
+
+#: ../capplet/util.c:492
+msgid "Use conduit settings"
+msgstr "conduit সংক্রান্ত বৈশিষ্ট্য প্রয়োগ করা হবে"
+
+#: ../capplet/util.c:500
+msgid "USB"
+msgstr "USB"
+
+#: ../capplet/util.c:501
+msgid "IrDA"
+msgstr "IrDA"
+
+#: ../capplet/util.c:502
+msgid "Network"
+msgstr "নেটওয়ার্ক"
+
+#: ../capplet/util.c:503
+msgid "Bluetooth"
+msgstr "ব্লু-টুথ"
+
+#: ../capplet/util.c:504
+msgid "Serial"
+msgstr "সিরিয়াল"
+
+#: ../capplet/util.c:551
+msgid ""
+"The specified base directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"উল্লিখিত মূল ডিরেক্টরি উপস্থিত রয়েছে কিন্তু এই ডিরেক্টরির অনুমতি সঠিক নয়।\n"
+"অনুগ্রহ করে এটি সংশোধন করুন অথবা ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../capplet/util.c:556
+msgid ""
+"The specified base directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"উল্লিখিত মূল ডিরেক্টরিটি, ডিরেক্টরি রূপে উপস্থিত নেই।\n"
+"অনুগ্রহ করে এটিকে ডিরেক্টরি রূপে গঠন করুন অথবা ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../capplet/util.c:563
+msgid ""
+"It wasn't possible to create the specified base directory.\n"
+"Please verify the permitions on the specified path or choose another "
+"directory"
+msgstr ""
+"উল্লিখিত মূল ডিরেক্টরিটি নির্মাণ করা যায়নি।\n"
+"অনুগ্রহ করে নির্ধারিত পাথের অনুমতি পরীক্ষা করুন অথবা একটি পৃথক ডিরেক্টরি নির্বাচন করুন"
+
+#: ../capplet/util.c:568
+msgid ""
+"The path specified for the base directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"উল্লিখিত মূল ডিরেক্টরির পাথ সঠিক নয়।\n"
+"অনুগ্রহ করে একটি ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../capplet/util.c:595
+#, c-format
+#| msgid ""
+#| "`%s' is not a valid character set identifier.  Please enter a valid "
+#| "identifier or select from the available options."
+msgid ""
+"`%s' is not a valid character set identifier.\n"
+"Please enter a valid identifier or select from the available options."
+msgstr ""
+"`%s' বৈধ ক্যারেক্টার-সেট সনাক্তকারী নয়। \n"
+"অনুগ্রহ করে বৈধ সনাক্তকারীর তথ্য লিখুন অথবা উপলব্ধ বিকল্পগুলি থেকে নির্বাচন করুন।"
+
+#: ../capplet/util.c:718
+msgid "Device 'usb:' is only valid for devices of type USB"
+msgstr "ডিভাইস 'usb:' শুধুমাত্র USB প্রকৃতির ডিভাইসের ক্ষেত্রে প্রযোজ্য"
+
+#: ../capplet/util.c:727
+msgid "Read/Write permissions failed on"
+msgstr "চিহ্নিত ডিভাইস পড়া/লেখার অনুমতি ব্যর্থ"
+
+#: ../capplet/util.c:729
+msgid "Check the permissions on the device and retry"
+msgstr "ডিভাইসের অনুমতি পরীক্ষা করে পুনরায় প্রচেষ্টা করুন"
+
+#: ../capplet/util.c:742 ../gpilotd/gpilotd.c:1350
+#, c-format
+msgid ""
+"Failed to find directory %s or read file %s.  Check that usbfs or sysfs is "
+"mounted."
+msgstr ""
+"ডিরেক্টরি %s পাওয়া যায়নি অথবা %s ফাইল পড়া যায়নি।  usbfs অথবা sysfs মাউন্ট করা "
+"হয়েছে কি না পরীক্ষা করুন।"
+
+#: ../conduits/backup/backup_conduit.c:111
+#, c-format
+msgid "Unable load key backup-conduit/%s/updated_only: %s"
+msgstr "backup-conduit/%s/updated_only কি লোড করতে ব্যর্থ: %s"
+
+#: ../conduits/backup/backup_conduit.c:119
+#, c-format
+msgid "Unable load key backup-conduit/%s/remove_deleted: %s"
+msgstr "backup-conduit/%s/remove_deleted কি লোড করতে ব্যর্থ: %s"
+
+#: ../conduits/backup/backup_conduit.c:266
+msgid "Checking for removed databases"
+msgstr "অপসারিত ডাটাবেস পরীক্ষা করা হচ্ছে"
+
+#. I18N note: this is printed when renaming a file %s
+#: ../conduits/backup/backup_conduit.c:273
+#, c-format
+msgid "Renaming %s"
+msgstr "%s-র নাম"
+
+#. I18N note: this message follow a "Renaming %s". The
+#. %s is a file name
+#: ../conduits/backup/backup_conduit.c:280
+#, c-format
+msgid "to %s"
+msgstr "%s-এ পরিবর্তন করা হচ্ছে"
+
+#: ../conduits/backup/backup_conduit.c:458
+#: ../conduits/backup/backup_conduit.c:462
+#, c-format
+msgid "%s not modified since last sync"
+msgstr "সর্বশেষ সুসংগতির পরে %s পরিবর্তিত হয়নি"
+
+#: ../conduits/backup/backup_conduit.c:474
+#: ../conduits/backup/backup_conduit.c:476
+#, c-format
+msgid "Making backup of %s"
+msgstr "%s-র ব্যাক-আপ তৈরি করা হচ্ছে"
+
+#: ../conduits/backup/backup_conduit.c:483
+#: ../conduits/backup/backup_conduit.c:485
+#, c-format
+msgid "Could not create backup file %s"
+msgstr "ব্যাক-আপ ফাইল %s তৈরি করতে ব্যর্থ"
+
+#: ../conduits/backup/backup_conduit.c:761
+msgid "Collecting restore information..."
+msgstr "পুনরুদ্ধার সংক্রান্ত তথ্য সংগ্রহ করা হচ্ছে..."
+
+#: ../conduits/backup/backup_conduit.c:888
+msgid "_Backup directory:"
+msgstr "ব্যাক-আপ ডিরেক্টরি: (_B)"
+
+#: ../conduits/backup/backup_conduit.c:901
+msgid "Backup directory"
+msgstr "ব্যাক-আপ ডিরেক্টরি"
+
+#: ../conduits/backup/backup_conduit.c:903
+msgid "O_nly backup changed bases"
+msgstr "শুধুমাত্র পরিবর্তিত অবস্থানের তথ্য ব্যাক-আপ করা হবে (_n)"
+
+#: ../conduits/backup/backup_conduit.c:913
+msgid "Only backup changed bases"
+msgstr "শুধুমাত্র পরিবর্তিত অবস্থানের তথ্য ব্যাক-আপ করা হবে"
+
+#: ../conduits/backup/backup_conduit.c:915
+msgid "_Remove local base if deleted on pilot"
+msgstr "pilot-র মধ্যে স্থানীয় অবস্থানটি মুছে ফেপলা হলে সংশ্লিষ্ট অবস্থান মুছে ফেলা হবে (_R)"
+
+#: ../conduits/backup/backup_conduit.c:925
+msgid "Remove local base if deleted on pilot"
+msgstr "pilot-র মধ্যে স্থানীয় অবস্থানটি মুছে ফেপলা হলে সংশ্লিষ্ট অবস্থান মুছে ফেলা হবে"
+
+#: ../conduits/backup/backup_conduit.c:927
+msgid "# of old backups to _keep"
+msgstr "সংরক্ষণের জন্য চিহ্নিত ব্যাক-আপের সংখ্যা # (_k)"
+
+#: ../conduits/backup/backup_conduit.c:938
+msgid "# of old backups to keep"
+msgstr "সংরক্ষণের জন্য চিহ্নিত ব্যাক-আপের সংখ্যা #"
+
+#: ../conduits/backup/backup_conduit.c:976
+msgid ""
+"The specified backup directory exists but has the wrong permissions.\n"
+"Please fix or choose another directory"
+msgstr ""
+"উল্লিখিত ব্যাক-আপ ডিরেক্টরি উপস্থিত রয়েছে কিন্তু ডিরেক্টরিটরি অনুমতি সঠিক নয়।\n"
+"অনুগ্রহ করে এটি সংশোধন করুন অথবা ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../conduits/backup/backup_conduit.c:981
+msgid ""
+"The specified backup directory exists but is not a directory.\n"
+"Please make it a directory or choose another directory"
+msgstr ""
+"উল্লিখিত ব্যাক-আপ ডিরেক্টরিটি, ডিরেক্টরি রূপে উপস্থিত নেই।\n"
+"অনুগ্রহ করে এটিকে ডিরেক্টরি রূপে গঠন করুন অথবা ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../conduits/backup/backup_conduit.c:988
+msgid ""
+"It wasn't possible to create the specified backup directory.\n"
+"Please verify the permissions on the specified path or choose another "
+"directory"
+msgstr ""
+"উল্লিখিত ব্যাক-আপ ডিরেক্টরিটি নির্মাণ করা যায়নি।\n"
+"অনুগ্রহ করে নির্ধারিত পাথের অনুমতি পরীক্ষা করুন অথবা একটি পৃথক ডিরেক্টরি নির্বাচন করুন"
+
+#: ../conduits/backup/backup_conduit.c:993
+msgid ""
+"The path specified for the backup directory is invalid.\n"
+"Please choose another directory"
+msgstr ""
+"উল্লিখিত ব্যাক-আপ ডিরেক্টরির পাথ সঠিক নয়।\n"
+"অনুগ্রহ করে একটি ভিন্ন ডিরেক্টরি নির্বাচন করুন"
+
+#: ../conduits/file/file_conduit.c:243 ../conduits/file/file_conduit.c:253
+#, c-format
+msgid "Install of %s failed"
+msgstr "%s ইনস্টল করতে ব্যর্থ"
+
+#: ../conduits/file/file_conduit.c:290
+#, c-format
+msgid "Installing %s from %s..."
+msgstr "%s ইনস্টল করা হচ্ছে %s থেকে..."
+
+#: ../conduits/file/file_conduit.c:292
+#, c-format
+msgid "Installing %s..."
+msgstr "%s ইনস্টল করা হচ্ছে..."
+
+#: ../conduits/file/gpilot_install_file.c:46
+msgid "Install immediately"
+msgstr "অবিলম্বে ইনস্টল করা হবে"
+
+#: ../conduits/file/gpilot_install_file.c:47
+msgid "Install delayed"
+msgstr "বিলম্বে ইনস্টল করা হবে"
+
+#: ../conduits/file/gpilot_install_file.c:48
+msgid "PDA to install to"
+msgstr "চিহ্নিত PDA-তে ইনস্টল করা হবে"
+
+#: ../conduits/file/gpilot_install_file.c:48
+msgid "PDA"
+msgstr "PDA"
+
+#: ../conduits/file/gpilot_install_file.c:49
+#| msgid "FILE"
+msgid "[FILE...]"
+msgstr "[FILE...]"
+
+#: ../conduits/file/gpilot_install_file.c:49
+#| msgid "Install of %s failed"
+msgid "list of files"
+msgstr "ফাইলের তালিকা"
+
+#: ../conduits/file/gpilot_install_file.c:107
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd"
+msgstr "gpilotd আরম্ভ করতে সমস্যা"
+
+#: ../conduits/file/gpilot_install_file.c:122
+#: ../conduits/file/gpilot_install_file.c:123
+msgid "Unable to get PDA names"
+msgstr "PDA-র নাম প্রাপ্ত করতে ব্যর্থ"
+
+#: ../conduits/file/gpilot_install_file.c:158
+msgid "Following files failed :\n"
+msgstr "নিম্নলিখিত ফাইলগুলি বিফল হয়েছে :\n"
+
+#: ../conduits/file/gpilot_install_file.c:170
+#, c-format
+msgid "Installing to %s:\n"
+msgstr "%s-এ ইনস্টল করতে ব্যর্থ:\n"
+
+#: ../conduits/file/gpilot_install_file.c:191
+msgid "No files to install"
+msgstr "ইনস্টল করার যোগ্য কোনো ফাইল নেই"
+
+#: ../conduits/file/gpilot_install_file.c:194
+msgid ""
+"Press synchronize on the cradle to install\n"
+" or cancel the operation."
+msgstr ""
+"ইনস্টল করার জন্য ক্র্যাডেলের উপর সুসংগতির বাটন টিপুন\n"
+" অথবা কর্ম বাতিল করুন।"
+
+#: ../gpilotd/GNOME_Pilot_Daemon.server.in.in.h:1
+msgid "Gnome-Pilot daemon"
+msgstr "Gnome-Pilot ডেমন"
+
+#: ../gpilotd/gnome-pilot-conduit-management.gob:684
+msgid "module loading not supported, fatal!"
+msgstr "মডিউল লোড করার প্রক্রিয়া সমর্থিত নয়, গুরুতর সমস্যা!"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:137
+msgid "deleted PDA record modified locally, not deleting\n"
+msgstr "অপসারণের জন্য PDA-র রেকর্ড স্থানীয় অবস্থানে পরিবর্তিত হয়েছে, এটি মুছে ফেলা হবে না\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:138
+msgid "deleted local record modified on PDA, not deleting\n"
+msgstr "মুছে ফেলা স্থানীয় রেকর্ডটি PDA-র মধ্যে পরিবর্তন করা হয়েছে, মুছে ফেলা হয়নি\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:139
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:143
+msgid "merge conflict, PDA and local record swapped\n"
+msgstr "একত্রিত করতে দ্বন্দ্ব, PDA ও স্থানীয় অবস্থানের রেকর্ড অদল বদল করা হয়েছে\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:140
+msgid "archive and change conflict, PDA and local record swapped\n"
+msgstr "আর্কাইভ ও পরিবর্তন সংক্রান্ত দ্বন্দ্ব, PDA ও স্থানীয় রেকর্ডের মধ্যে অদল-বদল হয়েছে\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:141
+msgid "archive and change conflict, local record sent to PDA\n"
+msgstr "আর্কাইভ ও পরিবর্তন সংক্রান্ত দ্বন্দ্ব, স্থানীয় রেকর্ডটি PDA-তে প্রেরিত হয়েছে\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:142
+msgid "archive and change conflict, PDA record saved locally\n"
+msgstr "আর্কাইভ ও পরিবর্তন সংক্রান্ত দ্বন্দ্ব, PDA-র রেকর্ড স্থানীয় অবস্থানে সংরক্ষিত হয়েছে\n"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:424
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:499
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:564
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:593
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:622
+msgid "Conduits initialization failed, aborting operation"
+msgstr "Conduits আরম্ভ করতে ব্যর্থ, কর্ম পরিত্যাগ করা হচ্ছে"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:437
+msgid "Unable to delete all records in PDA database, aborting operation."
+msgstr "PDA ডাটাবেসের মধ্যে উপস্থিত সকল রেকর্ড মুছে ফেলতে ব্যর্থ, কর্ম পরিত্যাগ করা হচ্ছে।"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:448
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1026
+msgid "Conduit did not return a record"
+msgstr "Conduit থেকে কোনো রেকর্ড প্রাপ্ত হয়নি"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:505
+msgid "Unable to delete all records in local database, aborting operation."
+msgstr "স্থানীয় ডাটাবেসের মধ্যে উপস্থিত সকল রেকর্ড মুছে ফেলতে ব্যর্থ, কর্ম পরিত্যাগ করা হচ্ছে।"
+
+#: ../gpilotd/gnome-pilot-conduit-standard-abs.c:1431
+msgid "Error in conduit, newly added record could not be found"
+msgstr "conduit সংক্রান্ত ত্রুটি, নতুন সংযোজিত রেকর্ড পাওয়া যায়নি"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:487
+msgid "Copy to PDA failed!"
+msgstr "PDA-তে কপি করতে ব্যর্থ!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:511
+msgid "Copy from PDA failed!"
+msgstr "PDA থেকে কপি করতে ব্যর্থ!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:535
+msgid "Merge to PDA failed!"
+msgstr "PDA-র সাথে একত্রিত করতে ব্যর্থ!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:559
+msgid "Merge from PDA failed!"
+msgstr "PDA থেকে একত্রিত করতে ব্যর্থ!"
+
+#: ../gpilotd/gnome-pilot-conduit-sync-abs.c:614
+msgid "Synchronization failed!"
+msgstr "সুসংগত করতে ব্যর্থ"
+
+#: ../gpilotd/gnome-pilot-structures.c:296
+#, c-format
+msgid "Could not open device %s (%s): reason: \"%s\"."
+msgstr "ডিভাইস %s (%s) খুলতে ব্যর্থ: কারণ: \"%s\"।"
+
+#: ../gpilotd/gnome-pilot-structures.c:300
+#, c-format
+msgid ""
+"GnomePilot could not open device %s (%s).\n"
+"Reason: \"%s\"."
+msgstr ""
+"GnomePilot দ্বারা %s (%s) ডিভাইস খোলা সম্ভব হয়নি।\n"
+"কারণ: \"%s\"।"
+
+#: ../gpilotd/gnome-pilot-structures.c:459
+#, c-format
+msgid ""
+"Bluetooth Device [%s]: Unable to bind socket: err %d (check pilot-link was "
+"compiled with bluetooth support)"
+msgstr ""
+"ব্লু-টুথ ডিভাইস [%s]: সকেটের সাথে বাইন্ড করতে ব্যর্থ: ত্রুটি %d (ব্লু-টুথ সমর্থন সহ "
+"pilot-link কম্পাইল করা হয়েছে কি না পরীক্ষা করুন)"
+
+#: ../gpilotd/gnome-pilot-structures.c:469
+#, c-format
+msgid "Device [%s, %s]: Unable to bind socket: err %d"
+msgstr "ব্লু-টুথ ডিভাইস [%s, %s]: সকেটের সাথে বাইন্ড করতে ব্যর্থ: ত্রুটি %d"
+
+#: ../gpilotd/gnome-pilot-structures.c:549
+#: ../gpilotd/gnome-pilot-structures.c:602
+#: ../gpilotd/gnome-pilot-structures.c:633
+#: ../gpilotd/gnome-pilot-structures.c:661
+msgid "Unknown device type"
+msgstr "অজানা ধরনের ডিভাইস"
+
+#: ../gpilotd/gnome-pilot-structures.c:679
+msgid "Number of devices is configured to 0"
+msgstr "ডিভাইসের সংখ্যা 0 হিসাবে কনফিগার করা হয়েছে"
+
+#: ../gpilotd/gnome-pilot-structures.c:681
+msgid ""
+"No devices configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"কোনো ডিভাইস কনফিগার করা হয়নি।\n"
+"অনুগ্রহ করে gnome-pilot কনফিগার করার জন্য \n"
+"gpilotd-control-applet সঞ্চালন করুন (gnomecc প্রয়োগ করুন)।"
+
+#: ../gpilotd/gnome-pilot-structures.c:702
+msgid "No accessible devices available"
+msgstr "ব্যবহারযোগ্য কোনো ডিভাইস উপস্থিত নেই"
+
+#: ../gpilotd/gnome-pilot-structures.c:721
+msgid "Number of PDAs is configured to 0"
+msgstr "PDA-র সংখ্যা 0 হিসাবে কনফিগার করা হয়েছে"
+
+#: ../gpilotd/gnome-pilot-structures.c:723
+msgid ""
+"No PDAs configured.\n"
+"Please run gpilotd-control-applet (use gnomecc)\n"
+"to configure gnome-pilot."
+msgstr ""
+"কোনো PDA কনফিগার করা হয়নি।\n"
+"অনুগ্রহ করে gnome-pilot কনফিগার করার জন্য \n"
+"gpilotd-control-applet সঞ্চালন করুন (gnomecc প্রয়োগ করুন)।"
+
+#: ../gpilotd/gnome-pilot-structures.c:786 ../gpilotd/gpilotd.c:695
+#, c-format
+msgid "No pilot_charset specified.  Using `%s'."
+msgstr "কোনো pilot_charset উল্লিখিত হয়নি।  `%s' ব্যবহার করা হচ্ছে।"
+
+#: ../gpilotd/gpilotd.c:241
+msgid "Unable to bind to PDA"
+msgstr "PDA-র সাথে বাইন্ড করতে ব্যর্থ"
+
+#: ../gpilotd/gpilotd.c:382
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested new-style libusb `usb:' syncing, but have "
+"the old-style `visor' kernel module loaded.  You may need to select a "
+"`ttyUSB...' device."
+msgstr ""
+"ডিভাইস `%s' প্রয়োগ করে `%s'-র মাধ্যমে সংযোগ করতে ব্যর্থ।  অনুগ্রহ করে কনফিগারেশন "
+"পরীক্ষা করুন। পুরোনো ধরনের `visor' কার্নেল মডিউল লোড করার অবস্থায় নতুন ধরনের "
+"libusb `usb:' সুসংগতির অনুরোধ জানানো হয়েছে। একটি `ttyUSB...' ডিভাইস নির্বাচনের "
+"প্রয়োজন দেখা দিতে পারে।"
+
+#: ../gpilotd/gpilotd.c:397
+#, c-format
+msgid ""
+"Failed to connect using device `%s', on port `%s'.  Check your "
+"configuration, as you requested old-style usbserial `ttyUSB' syncing, but do "
+"not have the usbserial `visor' kernel module loaded.  You may need to select "
+"a `usb:' device."
+msgstr ""
+"ডিভাইস `%s' প্রয়োগ করে `%s'-র মাধ্যমে সংযোগ করতে ব্যর্থ।  অনুগ্রহ করে কনফিগারেশন "
+"পরীক্ষা করুন। usbserial `visor' কার্নেল মডিউল লোড না করা অবস্থায় পুরোনো ধরনের "
+"usbserial `ttyUSB' সুসংগতির অনুরোধ জানানো হয়েছে। একটি `usb:' ডিভাইস নির্বাচনের "
+"প্রয়োজন দেখা দিতে পারে।"
+
+#: ../gpilotd/gpilotd.c:488
+#, c-format
+msgid "Unknown PDA, no userID/username match %ld"
+msgstr "অজানা PDA, কোনো ব্যবহারকারীর-ID/ব্যবহারকারীর নামের সাথে %ld-র মিল পাওয়া যায়নি"
+
+#: ../gpilotd/gpilotd.c:495
+msgid "Use gnomecc to configure PDA"
+msgstr "PDA কনফিগার করার জন্য gnomecc ব্যবহার করুন"
+
+#. FIXME: here we should offer to create a profile for the pilot,
+#. bug # 8218
+#: ../gpilotd/gpilotd.c:500
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gnomecc to configure gnome-pilot"
+msgstr ""
+"অজানা PDA - ID %ld-র সাথে কোনো PDA-র মিল পাওয়া যায়নি\n"
+"gnome-pilot কনফিগার করার জন্য gnomecc ব্যবহার করুন"
+
+#: ../gpilotd/gpilotd.c:524
+#, c-format
+msgid "Device %s has %d events"
+msgstr "%s ডিভাইসের মধ্যে %d-টি ইভেন্ট উপস্থিত রয়েছে"
+
+#: ../gpilotd/gpilotd.c:537
+msgid "Setting userinfo..."
+msgstr "ব্যবহারকারীর তথ্য নির্ধারণ করা হচ্ছে..."
+
+#: ../gpilotd/gpilotd.c:542
+msgid "Sync continues"
+msgstr "সুসংগতি কর্ম চলছে"
+
+#: ../gpilotd/gpilotd.c:561
+msgid "Getting userinfo..."
+msgstr "ব্যবহারকারীর তথ্য প্রাপ্ত করা হচ্ছে..."
+
+#: ../gpilotd/gpilotd.c:623
+msgid "NetSync request detected, synchronizing PDA"
+msgstr "NetSync-র অনুরোধ প্রাপ্ত হয়েছে, PDA সুসংগত করা হচ্ছে"
+
+#: ../gpilotd/gpilotd.c:625
+msgid "Bluetooth request detected, synchronizing PDA"
+msgstr "ব্লু-টুথের অনুরোধ প্রাপ্ত হয়েছে, PDA সুসংগত করা হচ্ছে"
+
+#: ../gpilotd/gpilotd.c:627
+msgid "HotSync button pressed, synchronizing PDA"
+msgstr "HotSync বাটন টেপা হয়েছে, PDA সুসংগত করা হচ্ছে"
+
+#: ../gpilotd/gpilotd.c:629
+#, c-format
+msgid "PDA ID is %ld, name is %s, owner is %s"
+msgstr "PDA ID হল %ld, নাম %s, %s-র মালিকানাধীন"
+
+#: ../gpilotd/gpilotd.c:639
+#, c-format
+msgid "On host %s\n"
+msgstr "%s হোস্টে স্থাপিত\n"
+
+#: ../gpilotd/gpilotd.c:641
+#, c-format
+msgid "On host %d\n"
+msgstr "%d হোস্টে স্থাপিত\n"
+
+#: ../gpilotd/gpilotd.c:660
+msgid "Synchronization ended"
+msgstr "সুসংগতি কর্ম সমাপ্ত হয়েছে"
+
+#: ../gpilotd/gpilotd.c:663
+msgid "Synchronization ended early"
+msgstr "সুসংগতি কর্ম অতিশীঘ্র সমাপ্ত হয়েছে"
+
+#: ../gpilotd/gpilotd.c:709
+#, c-format
+msgid "`%s' is not a recognised iconv charset, using `%s' instead."
+msgstr "`%s' পরিচিত iconv ক্যার-সেট নয়, পরিবর্তে `%s' ব্যবহার করা হচ্ছে।"
+
+#: ../gpilotd/gpilotd.c:732
+#, c-format
+msgid ""
+"The base directory %s is invalid.\n"
+"Please fix it or use gnomecc to choose another directory."
+msgstr ""
+"মূল ডিরেক্টরি %s বৈধ নয়।\n"
+"অনুগ্রহ করে এটি সংশোধন করুন অথবা gnomecc সহযোগে একটি পৃথক ডিরেক্টরি নির্বাচন করুন।"
+
+#: ../gpilotd/gpilotd.c:745
+#, c-format
+msgid ""
+"Unknown PDA - no PDA matches ID %ld\n"
+"Use gpilotd-control-applet to set PDA's ID"
+msgstr ""
+"অজানা PDA - ID %ld-র সাথে কোনো PDA মেলানো যায়নি\n"
+"PDA-র ID নির্ধারণের জন্য gpilotd-control-applet ব্যবহার করুন"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:796
+msgid "An error occurred while getting the PDA's system data"
+msgstr "PDA-র সিস্টেম সংক্রান্ত তথ্য প্রাপ্ত করতে ত্রুটি দেখা দিয়েছে"
+
+#. no ? drop connection then
+#: ../gpilotd/gpilotd.c:805
+msgid "An error occurred while getting the PDA's user data"
+msgstr "PDA-র ব্যবহারকারী সংক্রান্ত তথ্য প্রাপ্ত করতে ত্রুটি দেখা দিয়েছে"
+
+#: ../gpilotd/gpilotd.c:810
+#, c-format
+msgid "Completed events for device %s (%s)"
+msgstr "ডিভাইস %s (%s)-র ক্ষেত্রে সমাপ্ত ইভেন্ট"
+
+#: ../gpilotd/gpilotd.c:871
+#, c-format
+msgid "Woke on %s"
+msgstr "%s-এ সজাগ হয়েছে"
+
+#: ../gpilotd/gpilotd.c:952
+#, c-format
+msgid "Woke on network: %s"
+msgstr "নেটওয়ার্কে সজাগ হয়েছে: %s"
+
+#: ../gpilotd/gpilotd.c:1522
+#, c-format
+msgid "Watching %s (network)"
+msgstr "%s পর্যবেক্ষণ করা হচ্ছে (নেটওয়ার্ক)"
+
+#: ../gpilotd/gpilotd.c:1524
+#, c-format
+msgid "Watching %s (bluetooth)"
+msgstr "%s পর্যবেক্ষণ করা হচ্ছে (ব্লু-টুথ)"
+
+#: ../gpilotd/gpilotd.c:1526
+#, c-format
+msgid "Watching %s (%s)"
+msgstr "%s পর্যবেক্ষণ করা হচ্ছে (%s)"
+
+#: ../gpilotd/gpilotd.c:1540
+msgid "Exiting (caught SIGTERM)..."
+msgstr "প্রস্থান করা হচ্ছে (SIGTERM প্রাপ্ত হয়েছে)..."
+
+#: ../gpilotd/gpilotd.c:1549
+msgid "Exiting (caught SIGINT)..."
+msgstr "প্রস্থান করা হচ্ছে (SIGINT প্রাপ্ত হয়েছে)..."
+
+#: ../gpilotd/gpilotd.c:1581
+msgid "Unable to create file installation queue directory"
+msgstr "ফাইল ইনস্টলেশনের সারির ডিরেক্টরি নির্মাণ করতে ব্যর্থ"
+
+#: ../gpilotd/gpilotd.c:1631
+msgid "Shutting down devices"
+msgstr "ডিভাইস বন্ধ করা হচ্ছে"
+
+#: ../gpilotd/gpilotd.c:1633
+msgid "Rereading configuration..."
+msgstr "কনফিগারেশন পুনরায় পড়া হচ্ছে..."
+
+#: ../gpilotd/manager.c:270
+msgid "non-backup conduit in backup conduit list"
+msgstr "ব্যাক-আপ conduit-র তালিকার মধ্যে নন-ব্যাক-আপ conduit উপস্থিত রয়েছে"
+
+#: ../gpilotd/manager.c:278
+#, c-format
+msgid "%s backed up\n"
+msgstr "%s ব্যাক-আপ করা হয়েছে\n"
+
+#: ../gpilotd/manager.c:280
+#, c-format
+msgid "%s backup failed\n"
+msgstr "%s ব্যাক-আপ করতে ব্যর্থ\n"
+
+#: ../gpilotd/manager.c:306
+msgid "Collecting synchronization info..."
+msgstr "সুসংগতি সংক্রান্ত তথ্য সংগ্রহ করা হচ্ছে..."
+
+#: ../gpilotd/manager.c:428
+#, c-format
+msgid "Synchronizing %s\n"
+msgstr "%s সুসংগত করা হচ্ছে\n"
+
+#: ../gpilotd/manager.c:447
+#, c-format
+msgid "Copy to PDA %s\n"
+msgstr "PDA %s-এ কপি করুন\n"
+
+#: ../gpilotd/manager.c:465
+#, c-format
+msgid "Copy from PDA %s\n"
+msgstr "PDA %s থেকে কপি করুন\n"
+
+#: ../gpilotd/manager.c:483
+#, c-format
+msgid "Merge to PDA %s\n"
+msgstr "PDA %s-র সাথে একত্রিত করুন\n"
+
+#: ../gpilotd/manager.c:501
+#, c-format
+msgid "Merge from PDA %s\n"
+msgstr "PDA %s থেকে একত্রিত করুন\n"
+
+#: ../gpilotd/manager.c:529
+#, c-format
+msgid "Conduit %s's first synchronization..."
+msgstr "Conduit %s দ্বারা সঞ্চালিত প্রথম সুসংগতি কর্ম..."
+
+#: ../gpilotd/manager.c:553
+#, c-format
+msgid "unknown syncing action (%d = %s).\n"
+msgstr "সুসংগতি সংক্রান্ত অজানা কর্ম (%d = %s)।\n"
+
+#: ../gpilotd/manager.c:679
+#, c-format
+msgid "Instantiating %d conduits..."
+msgstr "%d conduit আরম্ভ করা হচ্ছে..."
+
+#: ../gpilotd/manager.c:684 ../gpilotd/manager.c:685
+#, c-format
+msgid "Unknown conduit \"%s\" in configure!"
+msgstr "কনফিগারের মধ্যে অজানা conduit \"%s\"!"
+
+#: ../gpilotd/manager.c:694
+#, c-format
+msgid "Loading conduit \"%s\" failed!"
+msgstr "conduit \"%s\" লোড করতে ব্যর্থ!"
+
+#: ../gpilotd/manager.c:695
+#, c-format
+msgid "Loading conduit \"%s\" failed!\n"
+msgstr "conduit \"%s\" লোড করতে ব্যর্থ!\n"
+
+#: ../gpilotd/manager.c:785
+#, c-format
+msgid "Setting id/owner to %d/%s..."
+msgstr "id/মালিকের ক্ষেত্রে %d/%s মান ধার্য করা হচ্ছে..."
+
+#. FIXME: remove the bloody request, or the user will get this
+#. message every time
+#: ../gpilotd/manager.c:817
+#, c-format
+msgid "Conduit %s requested, but not found"
+msgstr "Conduit %s-র অনুরোধ জানানো হয়েছে কিন্তু পাওয়া যায়নি"
+
+#: ../gpilotd/manager.c:827
+#, c-format
+msgid "Conduit %s cannot be requested"
+msgstr "Conduit %s-র অনুরোধ জানানো সম্ভব নয়"
+
+#: ../gpilotd/orbit_daemon_glue.c:1748
+msgid "(unknown DB)"
+msgstr "(অজানা DB)"
+
+#: ../gpilotd/queue_io.c:104
+msgid "Error in queue, non-existing entry"
+msgstr "সারির মধ্যে সমস্যা, অন্তর্ভুক্ত মান অনুপস্থিত"
+
+#: ../gpilotd/queue_io.c:453
+#, c-format
+msgid "fault: no request found for PDA %d, request %d"
+msgstr "fault: PDA %d-র কোনো অনুরোধ পাওয়া যায়নি, অনুরোধ %d"
+
+#: ../utils/gpilotd-client.c:39
+msgid "Get System Info"
+msgstr "সিস্টেম সংক্রান্ত তথ্য প্রাপ্ত করা হচ্ছে"
+
+#: ../utils/gpilotd-client.c:40
+msgid "Pause daemon"
+msgstr "ডেমন স্থগিত করুন"
+
+#: ../utils/gpilotd-client.c:41
+msgid "Unpause daemon"
+msgstr "ডেমন পুনরায় চালু করুন"
+
+#: ../utils/gpilotd-client.c:42
+msgid "Restart daemon"
+msgstr "ডেমন পুনরারম্ভ করুন"
+
+#: ../utils/gpilotd-client.c:43
+msgid "Set user id and name"
+msgstr "ব্যবহারকারীর id ও নাম নির্ধারণ করুন"
+
+#: ../utils/gpilotd-client.c:44
+msgid "ID for the PDA"
+msgstr "PDA-র ID"
+
+#: ../utils/gpilotd-client.c:45
+msgid "Install file"
+msgstr "ফাইল ইনস্টল করুন"
+
+#: ../utils/gpilotd-client.c:45
+msgid "FILE"
+msgstr "FILE"
+
+#: ../utils/gpilotd-client.c:46
+msgid "Restore directory"
+msgstr "ডিরেক্টরি পুনরুদ্ধার করুন"
+
+#: ../utils/gpilotd-client.c:46
+msgid "DIRECTORY"
+msgstr "DIRECTORY"
+
+#: ../utils/gpilotd-client.c:47
+msgid "Run conduit"
+msgstr "conduit সঞ্চালনা করুন"
+
+#: ../utils/gpilotd-client.c:47 ../utils/gpilotdcm-client.c:28
+msgid "CONDUIT"
+msgstr "CONDUIT"
+
+#: ../utils/gpilotd-client.c:48
+msgid "Username to set"
+msgstr "ধার্য করার জন্য চিহ্নিত ব্যবহারকারীর নাম"
+
+#: ../utils/gpilotd-client.c:48
+msgid "USERNAME"
+msgstr "USERNAME"
+
+#: ../utils/gpilotd-client.c:49
+msgid "Monitor the specified PDA's actions"
+msgstr "নির্ধারিত PDA-র কর্ম নিরীক্ষণ করুন"
+
+#: ../utils/gpilotd-client.c:50
+msgid "Monitor all PDAs"
+msgstr "সকল PDA নিরীক্ষণ করুন"
+
+#: ../utils/gpilotd-client.c:51
+msgid "list PDAs by login (all for all pilots)"
+msgstr ""
+"লগ-ইন অনুযায়ী PDA-র তালিকা নির্মাণ করা হবে (সকল pilot-র মধ্যে উপস্থিত সকল লগ-"
+"ইনের জন্য)"
+
+#: ../utils/gpilotd-client.c:51
+msgid "LOGIN"
+msgstr "LOGIN"
+
+#: ../utils/gpilotd-client.c:52
+msgid "Specify PDA to operate on (defaults to MyPDA)"
+msgstr "সঞ্চালনার জন্য PDA চিহ্নিত করুন (ডিফল্টরূপে MyPDA নির্ধারণ করা হয়)"
+
+#: ../utils/gpilotd-client.c:52
+msgid "PILOTNAME"
+msgstr "PILOTNAME"
+
+#: ../utils/gpilotd-client.c:53
+msgid "Specify a cradle to operate on (defaults to Cradle0)"
+msgstr ""
+"সঞ্চালনার জন্য ব্যবহারযোগ্য একটি ক্র্যাডেল নির্ধারণ করুন (ডিফল্টরূপে Cradle0 ব্যবহার "
+"করা হয়)"
+
+#: ../utils/gpilotd-client.c:53
+msgid "CRADLENAME"
+msgstr "CRADLENAME"
+
+#: ../utils/gpilotd-client.c:54
+msgid "List the specified PDA's bases"
+msgstr "নির্ধারিত PDA-র বেসের তালিকা নির্মাণ করুন"
+
+#: ../utils/gpilotd-client.c:365
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotd-client"
+msgstr "gpilotd-client আরম্ভ করতে সমস্যা"
+
+#: ../utils/gpilotd-client.c:369 ../utils/gpilotdcm-client.c:118
+#, c-format
+msgid ""
+"\n"
+"BEWARE!!\n"
+"This is a tool for certain parts of the gnome-pilot package.\n"
+"Unless you know what you're doing, don't use this tool."
+msgstr ""
+"\n"
+"সাবধান!!\n"
+"gnome-pilot প্যাকেজের কিছু অংশের সাথে এই সামগ্রীটি ব্যবহার করা হয়।\n"
+"সম্পূর্ণরূপে অবগত না থাকলে এই সামগ্রীটি ব্যবহার না করা বাঞ্ছনীয়।"
+
+#: ../utils/gpilotdcm-client.c:27
+msgid "lists available conduits"
+msgstr "উপলব্ধ conduits-র তালিকা নির্মাণ করা হবে"
+
+#: ../utils/gpilotdcm-client.c:28
+msgid "conduit to operate on"
+msgstr "ব্যবহারযোগ্য conduit"
+
+#: ../utils/gpilotdcm-client.c:29
+msgid "list all attributes"
+msgstr "সকল বৈশিষ্ট্যের তালিকা নির্মাণ করুন"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "specify PDA to operate on"
+msgstr "কর্ম সঞ্চালনার জন্য PDA নির্ধারণ করুন"
+
+#: ../utils/gpilotdcm-client.c:30
+msgid "PDA_ID"
+msgstr "PDA_ID"
+
+#: ../utils/gpilotdcm-client.c:31
+msgid "list attributes"
+msgstr "সকল বৈশিষ্ট্যের তালিকা"
+
+#: ../utils/gpilotdcm-client.c:32
+msgid "list available conduits and their state"
+msgstr "উপলব্ধ conduits ও সেগুলির অবস্থা সম্পর্কে তালিকা নির্মাণ করা হবে"
+
+#: ../utils/gpilotdcm-client.c:33
+msgid "enable specified conduit"
+msgstr "চিহ্নিত conduit সক্রিয় করা হবে"
+
+#: ../utils/gpilotdcm-client.c:34
+msgid "disable specified conduit"
+msgstr "চিহ্নিত conduit নিষ্ক্রিয় করা হবে"
+
+#: ../utils/gpilotdcm-client.c:35
+msgid "enable, and set firstsync to slow"
+msgstr "সক্রিয় করুন, ও firstsync-র ধীর গতি নির্ধারণ করুন"
+
+#: ../utils/gpilotdcm-client.c:36
+msgid "instantiate and destroy the conduit"
+msgstr "আরম্ভ করুন ও conduit ধ্বংশ করুন"
+
+#: ../utils/gpilotdcm-client.c:114
+#| msgid "Error initializing gpilotd capplet"
+msgid "Error initializing gpilotdcm-client"
+msgstr "gpilotdcm-client আরম্ভ করতে সমস্যা"
+
