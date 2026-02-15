@@ -1,8 +1,117 @@
-2026-02-14
-       * configure.ac: bump version to 4.0.1 (GTK4/GNOME 42 port)
-       * Full migration: GTK3→GTK4, dbus-glib→GDBus, GConf→GSettings,
-         GOB2 removal, modern EDS API (ESourceRegistry, ECalClient, EBookClient),
-         panel applet and EDS conduits made optional.
+2026-02-15  gnome-pilot 4.0.1 — GTK4 / GNOME 42+ port
+
+	Complete modernisation of the codebase from the GNOME 2/3 era
+	(last release 2.91.93, 2011) to GNOME 42+ technologies.
+
+	Build system:
+	* configure.ac: bump version to 4.0.1, BASE_VERSION to 4.0.
+	  Require GTK 4 >= 4.6, GIO >= 2.72, gudev-1.0, pilot-link >= 0.12.
+	  Add GDBUS_CODEGEN, GLIB_GSETTINGS macros.
+	  Remove GOB2, Intltool, gnome-doc-utils, dbus-glib, GConf, HAL
+	  dependency checks.
+	* Makefile.am (top-level): install gnome-pilot-4.0.pc.
+	* gnome-pilot-4.0.pc.in: new pkg-config file replacing gnome-pilot-3.0.pc.
+	  Requires gtk4, gio-2.0, libxml-2.0, gudev-1.0, optional EDS.
+	* All Makefile.am: library SO names bumped to -4.0 (libgpilotd-4.0,
+	  libgpilotdconduit-4.0, libgpilotdcm-4.0).
+
+	GTK3 → GTK4 migration:
+	* capplet/gnome-pilot-capplet.c, gnome-pilot-assistant.c,
+	  gnome-pilot-pdialog.c, gnome-pilot-ddialog.c, gnome-pilot-cdialog.c:
+	  replace deprecated GtkTable with GtkGrid, update all widget creation
+	  to GTK4 API.
+	* capplet/gpilotd-control-applet.c: use gtk_init() (GTK4 style, no
+	  option group), GOptionContext for CLI parsing.
+	* capplet/gpilotd-capplet.ui: convert to GTK4 GtkBuilder format.
+	* conduits/evolution-data-server/e-pilot-settings.c: GtkComboBoxText
+	  replaces deprecated e_source_combo_box_new, GtkGrid layout.
+	* conduits/file/gpilot_install_file.c: GTK4 widget updates.
+
+	dbus-glib → GDBus migration:
+	* gpilotd/gpilot-daemon.xml: new D-Bus introspection XML defining the
+	  org.gnome.GnomePilot.Daemon interface (15 methods, 12 signals).
+	* gpilotd/gpilot-daemon-generated.c, gpilot-daemon-generated.h: new
+	  auto-generated GDBus bindings via gdbus-codegen (namespace GpilotDaemon).
+	* gpilotd/gpilot-daemon.c: rewrite D-Bus registration to use
+	  GDBusConnection, g_bus_own_name(); define GP_DBUS_NAME
+	  "org.gnome.GnomePilot", GP_DBUS_PATH "/org/gnome/GnomePilot/Daemon".
+	* gpilotd/gnome-pilot-client.c: rewrite to use GDBusProxy for daemon
+	  communication and GDBus signal handlers.
+	* gpilotd/Makefile.am: add gdbus-codegen rule for gpilot-daemon-generated
+	  from gpilot-daemon.xml; install D-Bus service org.gnome.GnomePilot.service.
+	* utils/gpilotd-client.c, gpilotdcm-client.c: GDBus usage for CLI tools.
+
+	GConf → GSettings migration:
+	* applet/org.gnome.GnomePilot.applet.gschema.xml: new GSettings schema
+	  (schema id org.gnome.GnomePilot.applet, path /org/gnome/gnome-pilot/applet/)
+	  with keys: pop-ups (boolean), exec-when-clicked (string).
+
+	HAL → GUDev migration:
+	* gpilotd/gpilot-daemon.c: use GUDev client (gudev-1.0) for USB device
+	  detection, replacing deprecated HAL.
+
+	GOB2 removal:
+	* gpilotd/gnome-pilot-client.c, gnome-pilot-client.h: converted from
+	  gnome-pilot-client.gob to hand-maintained C.
+	* gpilotd/gnome-pilot-conduit.c/h,
+	  gnome-pilot-conduit-management.c/h,
+	  gnome-pilot-conduit-config.c/h,
+	  gnome-pilot-conduit-file.c/h,
+	  gnome-pilot-conduit-backup.c/h,
+	  gnome-pilot-conduit-standard.c/h,
+	  gnome-pilot-conduit-standard-abs.c/h,
+	  gnome-pilot-conduit-sync-abs.c/h: all converted from .gob to
+	  hand-maintained C source.
+	* applet/gpilot-applet-progress.c/h: ditto.
+
+	Intltool → native gettext:
+	* capplet/Makefile.am: use $(MSGFMT) --desktop for .desktop file
+	  generation, replacing Intltool.
+
+	Panel applet → standalone system tray (StatusNotifierItem):
+	* applet/gpilot-tray.c: new standalone GApplication-based system tray
+	  application replacing the old GNOME Panel / libpanelapplet-4.0 applet.
+	  Implements org.kde.StatusNotifierItem D-Bus protocol; uses
+	  libdbusmenu-glib-0.4 for menu export.  State machine: INITIALISING,
+	  PAUSED, CONNECTING_TO_DAEMON, SYNCING, WAITING.
+	* applet/gpilot-tray-sni.h: new header with StatusNotifierItem D-Bus
+	  introspection XML (properties, methods, signals).
+	* applet/pilot-applet.ui: new GTK4 UI definition for sync/restore/progress
+	  dialogs.
+	* applet/Makefile.am: conditional ENABLE_TRAY; binary gpilot-tray linked
+	  against dbusmenu-glib; install GSettings schema.
+	* configure.ac: --enable-tray option (default: auto, requires
+	  dbusmenu-glib-0.4).
+
+	Evolution Data Server conduits modernisation:
+	* conduits/evolution-data-server/address-conduit.c: migrate from
+	  deprecated EBook to ESourceRegistry + EBookClient;
+	  use e_book_client_connect_sync().
+	* conduits/evolution-data-server/calendar-conduit.c: migrate from
+	  deprecated ECal to ESourceRegistry + ECalClient;
+	  use e_cal_client_connect_sync().
+	* conduits/evolution-data-server/memo-conduit.c: ditto (journal entries).
+	* conduits/evolution-data-server/todo-conduit.c: ditto (tasks).
+	* conduits/evolution-data-server/libecalendar-common-conduit.c/h:
+	  shared calendar conduit code updated for modern EDS API.
+	* conduits/evolution-data-server/e-pilot-settings.c: use
+	  e_source_registry_list_sources() for source enumeration.
+	* conduits/evolution-data-server/e-pilot-util.c/h: ESourceRegistry helper
+	  functions.
+	* conduits/evolution-data-server/Makefile.am: require libedataserver-1.2,
+	  libebook-1.2, libecal-2.0.
+	* configure.ac: --enable-eds-conduits option (default: yes); EDS conduits
+	  are no longer mandatory.
+	* conduits/Makefile.am: conditional ENABLE_EDS_CONDUITS for
+	  evolution-data-server subdirectory.
+
+	Conduit modules renamed to -4.0:
+	* conduits/backup/Makefile.am: libbackup_conduit-4.0.la.
+	* conduits/file/Makefile.am: libfile_conduit-4.0.la.
+	* conduits/test/Makefile.am: libtest_conduit-4.0.la.
+	* conduits/evolution-data-server/Makefile.am:
+	  libeaddress_conduit-4.0.la, libecalendar_conduit-4.0.la,
+	  libememo_conduit-4.0.la, libetodo_conduit-4.0.la.
 
 2011-09-10  Matt Davey <mcdavey@mrao.cam.ac.uk>
        * gnome-pilot-3.0.pc.in: Fix for #647479. Thanks to Tamas Nemeth
